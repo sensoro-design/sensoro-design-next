@@ -6,7 +6,7 @@ import { LinkProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
 const defaultProps: LinkProps = {
-  hoverable: true,
+  hoverable: false,
 };
 
 function Link(baseProps: PropsWithChildren<LinkProps>, ref) {
