@@ -15,7 +15,7 @@ You can specify the `selectedKeys` or `checkedKeys` or `expandedKeys` property o
 
 ```js
 import { useState } from 'react';
-import { Tree, Button } from '@arco-design/web-react';
+import { Tree, Button } from '@sensoro-design/react';
 
 const TreeNode = Tree.Node;
 

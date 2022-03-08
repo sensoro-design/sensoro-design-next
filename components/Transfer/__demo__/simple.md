@@ -14,7 +14,7 @@ title:
 Specify `simple` to turn on simple mode, click the option to move.
 
 ```js
-import { Transfer } from '@arco-design/web-react';
+import { Transfer } from '@sensoro-design/react';
 
 function Demo() {
   const dataSource = new Array(8).fill(null).map((_, index) => ({

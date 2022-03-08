@@ -14,7 +14,7 @@ title:
 Set tooltip with different background colors through the `color` property
 
 ```js
-import { Tooltip, Button } from '@arco-design/web-react';
+import { Tooltip, Button } from '@sensoro-design/react';
 
 const colors = ['#3491FA', '#165DFF', '#722ED1']
 

@@ -14,7 +14,7 @@ title:
 Buttons can be `mini`, `small`, `medium` and `large` in size, with corresponding height of `24px/28px/32px/36px`. The recommended and default size is `medium`. The suitable size can be selected in different scenarios and different business needs.
 
 ```js
-import { Button, Space } from '@arco-design/web-react';
+import { Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

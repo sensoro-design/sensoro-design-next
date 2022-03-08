@@ -14,8 +14,8 @@ title:
 Button group can be used to group together operation buttons at the same level.
 
 ```js
-import { Button, Space } from '@arco-design/web-react';
-import { IconLeft, IconRight, IconMore, IconStar, IconSettings, IconMessage, IconDown } from '@arco-design/web-react/icon';
+import { Button, Space } from '@sensoro-design/react';
+import { IconLeft, IconRight, IconMore, IconStar, IconSettings, IconMessage, IconDown } from '@sensoro-design/react/icon';
 
 const ButtonGroup = Button.Group;
 

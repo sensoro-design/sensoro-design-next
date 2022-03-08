@@ -14,7 +14,7 @@ title:
 `children` can be nested in `columns` for group columns.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

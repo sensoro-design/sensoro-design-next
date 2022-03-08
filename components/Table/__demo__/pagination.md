@@ -15,7 +15,7 @@ Custom pagination, by setting `total`, `pageSize`, and `onChange` to dynamically
 
 ```js
 import { useState, useEffect } from 'react';
-import { Table, Space, Button } from '@arco-design/web-react';
+import { Table, Space, Button } from '@sensoro-design/react';
 
 const columns = [
   {

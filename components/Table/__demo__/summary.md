@@ -14,7 +14,7 @@ title:
 The usage of summary.
 
 ```js
-import { Table, Typography, Button } from '@arco-design/web-react';
+import { Table, Typography, Button } from '@sensoro-design/react';
 
 const columns = [
   {

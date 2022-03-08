@@ -14,7 +14,7 @@ title:
 Enter the page number to quickly jump to the specified page.
 
 ```js
-import { Pagination } from '@arco-design/web-react';
+import { Pagination } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Pagination total={200} showJumper />,

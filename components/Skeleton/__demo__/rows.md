@@ -14,7 +14,7 @@ title:
 Set the number of text lines and text width.
 
 ```js
-import { Skeleton } from '@arco-design/web-react';
+import { Skeleton } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Skeleton text={{ rows: 3, width: ['100%', 600, 400] }} image></Skeleton>,

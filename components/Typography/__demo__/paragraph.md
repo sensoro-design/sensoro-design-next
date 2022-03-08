@@ -14,7 +14,7 @@ title:
 Paragraph style.
 
 ```js
-import { Typography, Divider } from '@arco-design/web-react';
+import { Typography, Divider } from '@sensoro-design/react';
 
 const { Title, Paragraph } = Typography;
 

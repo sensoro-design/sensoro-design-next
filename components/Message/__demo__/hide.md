@@ -14,7 +14,7 @@ title:
 `Message.xxx()` will return a function, use this function to close the notification.
 
 ```js
-import { Message, Button } from '@arco-design/web-react';
+import { Message, Button } from '@sensoro-design/react';
 
 function updateMessage() {
   const close = Message.info({ content: 'Close after 2 seconds...', duration: 0 });

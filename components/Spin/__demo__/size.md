@@ -14,7 +14,7 @@ title:
 Set `size` to get different sizes of loading icons.
 
 ```js
-import { Spin, Space } from '@arco-design/web-react';
+import { Spin, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size={40}>

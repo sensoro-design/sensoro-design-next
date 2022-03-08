@@ -14,8 +14,8 @@ title:
 Dropdown with SubMenu.
 
 ```js
-import { Dropdown, Menu, Button } from '@arco-design/web-react';
-import { IconDown } from '@arco-design/web-react/icon';
+import { Dropdown, Menu, Button } from '@sensoro-design/react';
+import { IconDown } from '@sensoro-design/react/icon';
 
 const SubMenu = Menu.SubMenu;
 const MenuItem = Menu.Item;

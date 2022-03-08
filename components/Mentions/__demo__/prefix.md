@@ -14,7 +14,7 @@ title:
 Specify `prefix` to customize the trigger character. The default is `@`, which can be customized to any character.
 
 ```js
-import { Mentions, Space } from '@arco-design/web-react';
+import { Mentions, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size={40}>

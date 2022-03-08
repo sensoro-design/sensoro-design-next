@@ -14,8 +14,8 @@ title:
 When `labelInValue` is `true`, the format of `value` is: `{ label: string, value: string }`.
 
 ```js
-import { TreeSelect } from '@arco-design/web-react';
-import { IconCalendar } from '@arco-design/web-react/icon';
+import { TreeSelect } from '@sensoro-design/react';
+import { IconCalendar } from '@sensoro-design/react/icon';
 
 const treeData = [
   {

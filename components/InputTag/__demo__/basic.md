@@ -14,7 +14,7 @@ title:
 Basic usage
 
 ```js
-import { InputTag } from '@arco-design/web-react';
+import { InputTag } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

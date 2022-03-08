@@ -12,7 +12,7 @@ title:
 A link text.
 
 ```js
-import { Link, Space } from '@arco-design/web-react';
+import { Link, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
 

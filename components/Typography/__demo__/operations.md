@@ -15,7 +15,7 @@ Provide functions such as copying and editing text.
 
 ```js
 import { useState } from 'react';
-import { Typography, Divider } from '@arco-design/web-react';
+import { Typography, Divider } from '@sensoro-design/react';
 
 function Demo() {
   const [str, setStr] = useState('Click the icon to edit this text.');

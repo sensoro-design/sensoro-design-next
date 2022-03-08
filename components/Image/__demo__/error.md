@@ -14,7 +14,7 @@ title:
 Content displayed when the image fails to load. 
 
 ```js
-import { Image, Space } from '@arco-design/web-react';
+import { Image, Space } from '@sensoro-design/react';
 
 function Demo() {
   return <Space size={20}>

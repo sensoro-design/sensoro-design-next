@@ -14,7 +14,7 @@ title:
 There are four arrangement modes: horizontal, vertical, inline horizontal, and inline vertical.
 
 ```js
-import { Descriptions } from '@arco-design/web-react';
+import { Descriptions } from '@sensoro-design/react';
 
 const data = [{
   label: 'Name',

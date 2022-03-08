@@ -14,7 +14,7 @@ title:
 Advanced usage of shuttle frame, configurable operation copy, and customizable width and height.
 
 ```js
-import { Transfer } from '@arco-design/web-react';
+import { Transfer } from '@sensoro-design/react';
 
 function Demo() {
   const dataSource = new Array(10).fill(null).map((_, index) => ({

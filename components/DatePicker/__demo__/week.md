@@ -14,7 +14,7 @@ title:
 The basic usage of WeekPicker.
 
 ```js
-import { DatePicker } from '@arco-design/web-react';
+import { DatePicker } from '@sensoro-design/react';
 
 const { WeekPicker } = DatePicker;
 

@@ -10,7 +10,7 @@ skip: true
 
 ```js
 import { useState } from 'react';
-import { ConfigProvider, Button, Input, Radio } from '@arco-design/web-react';
+import { ConfigProvider, Button, Input, Radio } from '@sensoro-design/react';
 
 const themes = {
   blue: {

@@ -15,7 +15,7 @@ Use `Table` component as a custom rendering list.
 
 ```js
 import { useState } from 'react';
-import { Transfer, Table } from '@arco-design/web-react';
+import { Transfer, Table } from '@sensoro-design/react';
 
 const TableTransfer = ({ sourceColumns, targetColumns, ...restProps }) => (
   <Transfer {...restProps}>

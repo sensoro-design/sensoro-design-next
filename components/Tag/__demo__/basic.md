@@ -14,8 +14,8 @@ title:
 Basic usage of tags.
 
 ```js
-import { Tag, Space } from '@arco-design/web-react';
-import { IconCheckCircleFill } from '@arco-design/web-react/icon';
+import { Tag, Space } from '@sensoro-design/react';
+import { IconCheckCircleFill } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space size="large">

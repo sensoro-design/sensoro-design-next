@@ -15,7 +15,7 @@ Set `size` field to use different sizes.
 
 ```js
 import { useState } from 'react';
-import { Pagination, Radio } from '@arco-design/web-react';
+import { Pagination, Radio } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 

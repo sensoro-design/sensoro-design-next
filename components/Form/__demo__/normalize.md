@@ -15,7 +15,7 @@ title:
 First, when using a controlled form, the values ​​of all form items will be collected by `Form` when they change. If you need to process the value of the form item and store it in the `Form`, you can use the `normalize` attribute. In contrast, when the form item is rendered, the value is taken from the `Form` and passed to the corresponding form item as the `value` attribute. If the value taken from the `Form` needs to be converted and then passed to For form items, you can use the `formatter` attribute.
 
 ```js
-import { Form, DatePicker, Input, Button } from '@arco-design/web-react';
+import { Form, DatePicker, Input, Button } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

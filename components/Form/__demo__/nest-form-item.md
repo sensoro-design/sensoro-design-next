@@ -15,8 +15,8 @@ title:
 
 ```js
 
-import { Form, Input, Button, Grid, Select, InputNumber, Tooltip } from '@arco-design/web-react';
-import { IconExclamationCircle } from '@arco-design/web-react/icon';
+import { Form, Input, Button, Grid, Select, InputNumber, Tooltip } from '@sensoro-design/react';
+import { IconExclamationCircle } from '@sensoro-design/react/icon';
 
 import { useRef, useState } from 'react';
 

@@ -14,7 +14,7 @@ title:
 By setting `disabledHours` `disabledMinutes` `disabledSeconds`, you can disable some options of hour/minute/second.
 
 ```js
-import { TimePicker } from '@arco-design/web-react';
+import { TimePicker } from '@sensoro-design/react';
 
 const style = { width: 194, margin: '0 24px 24px 0' };
 

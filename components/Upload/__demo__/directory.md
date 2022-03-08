@@ -15,7 +15,7 @@ title:
 Upload directory.
 
 ```js
-import { Upload } from '@arco-design/web-react';
+import { Upload } from '@sensoro-design/react';
 
 
 ReactDOM.render(<div>

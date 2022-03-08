@@ -14,8 +14,8 @@ title:
 You can add an icon to the tab through a custom title.
 
 ```js
-import { Tabs, Typography } from '@arco-design/web-react';
-import { IconCalendar, IconClockCircle, IconUser } from '@arco-design/web-react/icon';
+import { Tabs, Typography } from '@sensoro-design/react';
+import { IconCalendar, IconClockCircle, IconUser } from '@sensoro-design/react/icon';
 
 const TabPane = Tabs.TabPane;
 

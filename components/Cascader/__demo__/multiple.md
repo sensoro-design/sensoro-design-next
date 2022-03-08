@@ -14,7 +14,7 @@ title:
 Allow multiple selection.
 
 ```js
-import { Cascader } from '@arco-design/web-react';
+import { Cascader } from '@sensoro-design/react';
 
 const options = [
   {

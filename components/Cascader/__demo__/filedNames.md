@@ -14,7 +14,7 @@ title:
 Custom field name for label, value, isLeaf, disabled and children.
 
 ```js
-import { Cascader } from '@arco-design/web-react';
+import { Cascader } from '@sensoro-design/react';
 
 const options = [
   {

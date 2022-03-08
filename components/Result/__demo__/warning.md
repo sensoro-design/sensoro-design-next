@@ -12,7 +12,7 @@ title: warning
 The result of the warning.
 
 ```js
-import { Result, Button } from '@arco-design/web-react';
+import { Result, Button } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div >

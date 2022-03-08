@@ -14,7 +14,7 @@ title:
 Use `lineless=true` to hide axis line on the left.
 
 ```js
-import { Anchor } from '@arco-design/web-react';
+import { Anchor } from '@sensoro-design/react';
 
 const AnchorLink = Anchor.Link;
 

@@ -14,7 +14,7 @@ title:
 More pages.
 
 ```js
-import { Pagination } from '@arco-design/web-react';
+import { Pagination } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Pagination defaultCurrent={5} total={200} sizeCanChange />,

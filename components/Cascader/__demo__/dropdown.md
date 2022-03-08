@@ -15,7 +15,7 @@ Customize the popup content by `dropdownRender`
 
 
 ```js
-import { Cascader, Divider, Space } from '@arco-design/web-react';
+import { Cascader, Divider, Space } from '@sensoro-design/react';
 
 const options = [
   {

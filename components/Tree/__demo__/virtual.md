@@ -14,7 +14,7 @@ title:
 By specifying `virtualListProps` to turn on the virtual list, high performance can be obtained when a large amount of data is used.
 
 ```js
-import { Tree, Button } from '@arco-design/web-react';
+import { Tree, Button } from '@sensoro-design/react';
 
 function loop(path = '0', level = 2) {
   const list = [];

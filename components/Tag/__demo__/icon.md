@@ -14,8 +14,8 @@ title:
 An icon can be added to the label by setting `icon`.
 
 ```js
-import { Tag, Space } from '@arco-design/web-react';
-import { IconGitlab, IconTwitter, IconGithub, IconFacebook } from '@arco-design/web-react/icon';
+import { Tag, Space } from '@sensoro-design/react';
+import { IconGitlab, IconTwitter, IconGithub, IconFacebook } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space size="large">

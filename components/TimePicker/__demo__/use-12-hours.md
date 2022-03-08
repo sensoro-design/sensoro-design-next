@@ -14,7 +14,7 @@ title:
 By setting `use12Hours`, you can customize the hours, minutes, and seconds.
 
 ```js
-import { TimePicker } from '@arco-design/web-react';
+import { TimePicker } from '@sensoro-design/react';
 import dayjs from 'dayjs';
 
 const style = { width: 194, margin: '0 24px 24px 0' };

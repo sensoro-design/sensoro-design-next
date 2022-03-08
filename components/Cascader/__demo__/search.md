@@ -14,7 +14,7 @@ title:
 Specify `showSearch=true`, you can enter text to search for options.
 
 ```js
-import { Cascader, Space } from '@arco-design/web-react';
+import { Cascader, Space } from '@sensoro-design/react';
 
 const options = [
   {

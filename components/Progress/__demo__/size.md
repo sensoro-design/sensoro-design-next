@@ -14,7 +14,7 @@ title:
 There are four sizes available: `min`, `small`, `default`, `large`.
 
 ```js
-import { Progress, Slider, Grid, Radio, Typography } from '@arco-design/web-react';
+import { Progress, Slider, Grid, Radio, Typography } from '@sensoro-design/react';
 
 const Row = Grid.Row;
 const Col = Grid.Col;

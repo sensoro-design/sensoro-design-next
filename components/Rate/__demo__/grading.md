@@ -14,7 +14,7 @@ title:
 Use `grading` to show score with smiley icons.
 
 ```js
-import { Rate } from '@arco-design/web-react';
+import { Rate } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

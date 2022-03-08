@@ -15,8 +15,8 @@ Display vertical slider by setting `vertical={true}`.
 
 ```js
 import { useState } from 'react';
-import { Slider } from '@arco-design/web-react';
-import { IconSound, IconMute } from '@arco-design/web-react/icon';
+import { Slider } from '@sensoro-design/react';
+import { IconSound, IconMute } from '@sensoro-design/react/icon';
 
 function Demo() {
   const [value, setValue] = useState(10);

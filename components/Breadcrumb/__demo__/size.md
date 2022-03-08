@@ -14,7 +14,7 @@ title:
 Customize the size of various breadcrumbs by specifying the style.
 
 ```js
-import { Breadcrumb, Space } from '@arco-design/web-react';
+import { Breadcrumb, Space } from '@sensoro-design/react';
 
 const BreadcrumbItem = Breadcrumb.Item;
 

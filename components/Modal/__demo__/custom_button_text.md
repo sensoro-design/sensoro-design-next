@@ -14,7 +14,7 @@ title:
 Set `okText` and `cancelText` to customize the button text.
 
 ```js
-import { Modal, Button } from '@arco-design/web-react';
+import { Modal, Button } from '@sensoro-design/react';
 
 function Demo () {
   const [visible, setVisible] = React.useState(false);

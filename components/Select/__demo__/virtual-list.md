@@ -18,7 +18,7 @@ title:
 **When `triggerProps.autoAlignPopupWidth = false` and `Option.label` is a non-text type, virtual scrolling will be automatically closed because the maximum width of the option cannot be obtained when the option list is first rendered.**
 
 ```js
-import { Select, Typography } from '@arco-design/web-react';
+import { Select, Typography } from '@sensoro-design/react';
 
 const Option = Select.Option;
 const options = new Array(10000).fill(null).map((value, index) => `Item ${index}`);

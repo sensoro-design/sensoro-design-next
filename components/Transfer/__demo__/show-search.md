@@ -14,7 +14,7 @@ title:
 Specify `showSearch` to use the Transfer with search box.
 
 ```js
-import { Transfer } from '@arco-design/web-react';
+import { Transfer } from '@sensoro-design/react';
 
 function Demo() {
   const dataSource = new Array(8).fill(null).map((_, index) => ({

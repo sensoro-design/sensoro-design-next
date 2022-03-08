@@ -14,7 +14,7 @@ title:
 With border and background color.
 
 ```js
-import { Descriptions } from '@arco-design/web-react';
+import { Descriptions } from '@sensoro-design/react';
 
 const data = [{
   label: 'Name',

@@ -14,7 +14,7 @@ title:
 You can externally control the error status of form entries by using the `error` parameter of the `setFields` method.
 
 ```js
-import { Form, Input, Button, InputNumber } from '@arco-design/web-react';
+import { Form, Input, Button, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

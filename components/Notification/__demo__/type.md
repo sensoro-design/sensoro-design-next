@@ -14,7 +14,7 @@ title:
 There are 5 different types of Notification: `info`, `success`, `warning`, `error`, `normal`.
 
 ```js
-import { Notification, Button, Space } from '@arco-design/web-react';
+import { Notification, Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

@@ -14,7 +14,7 @@ title:
 Use `Select.Group` to group the drop-down menu options.
 
 ```js
-import { Select } from '@arco-design/web-react';
+import { Select } from '@sensoro-design/react';
 
 const Option = Select.Option;
 const groups = [

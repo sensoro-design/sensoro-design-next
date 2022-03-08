@@ -14,7 +14,7 @@ title:
 Use `labelInValue=true` to get label of the selected option
 
 ```js
-import { InputTag } from '@arco-design/web-react';
+import { InputTag } from '@sensoro-design/react';
 
 ReactDOM.render(
   <InputTag

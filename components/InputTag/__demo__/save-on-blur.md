@@ -14,7 +14,7 @@ title:
 Set `saveOnBlur` to automatically save the text being entered as a label when it loses focus.
 
 ```js
-import { InputTag } from '@arco-design/web-react';
+import { InputTag } from '@sensoro-design/react';
 
 ReactDOM.render(
   <InputTag

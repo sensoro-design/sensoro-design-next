@@ -26,7 +26,7 @@ Load options lazily with `loadMore`.
 如果使用搜索功能，将只从已加载数据的`label`属性进行关键字匹配。
 
 ```js
-import { Cascader, Space } from '@arco-design/web-react';
+import { Cascader, Space } from '@sensoro-design/react';
 
 const options = [
   {

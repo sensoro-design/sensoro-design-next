@@ -14,7 +14,7 @@ title:
 Buttons can be in `warning`, `danger`, and `success` status. Status can co-exist with `type` but with higher priority.
 
 ```js
-import { Button, Switch } from '@arco-design/web-react';
+import { Button, Switch } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div style={{ 

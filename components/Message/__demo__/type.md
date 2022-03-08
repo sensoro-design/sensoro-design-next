@@ -14,7 +14,7 @@ title:
 There are 5 different types of Message, `info`, `success`, `warning`, `error`, `normal`.
 
 ```js
-import { Message, Button, Space } from '@arco-design/web-react';
+import { Message, Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

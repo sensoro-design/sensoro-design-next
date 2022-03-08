@@ -14,7 +14,7 @@ title:
 If `autoUpload` equals `false`, files will not be uploaded automatically after being selected. You can submit them by `uploadRef.submit` method.
 
 ```js
-import { Upload, Button, Space } from '@arco-design/web-react';
+import { Upload, Button, Space } from '@sensoro-design/react';
 
 function Demo () {
   const uploadRef = React.useRef()

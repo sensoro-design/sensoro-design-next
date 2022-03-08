@@ -14,7 +14,7 @@ title:
 Basic usage of Select.
 
 ```js
-import { Select, Message, Space } from '@arco-design/web-react';
+import { Select, Message, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
 

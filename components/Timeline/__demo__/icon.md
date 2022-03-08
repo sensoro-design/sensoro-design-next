@@ -14,8 +14,8 @@ title:
 Custom node content
 
 ```js
-import { Switch, Timeline, Grid } from '@arco-design/web-react';
-import { IconExclamationCircleFill } from '@arco-design/web-react/icon';
+import { Switch, Timeline, Grid } from '@sensoro-design/react';
+import { IconExclamationCircleFill } from '@sensoro-design/react/icon';
 
 const TimelineItem = Timeline.Item;
 

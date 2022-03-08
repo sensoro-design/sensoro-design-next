@@ -15,7 +15,7 @@ browser: true
 You can customize the button to return to the top.
 
 ```js
-import { BackTop, Button, Typography } from '@arco-design/web-react';
+import { BackTop, Button, Typography } from '@sensoro-design/react';
 
 const { Paragraph } = Typography;
 

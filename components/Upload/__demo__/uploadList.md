@@ -14,7 +14,7 @@ title:
 Default upload list.
 
 ```js
-import { Upload, Radio, Modal } from '@arco-design/web-react';
+import { Upload, Radio, Modal } from '@sensoro-design/react';
 
 const defaultFileList = [
   {

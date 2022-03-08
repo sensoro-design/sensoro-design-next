@@ -14,7 +14,7 @@ title:
 Use `precision` to set the number precision. When `precision` is less than the decimal place of `step`, the precision is taken as the number of decimal places of `step`.
 
 ```js
-import { InputNumber } from '@arco-design/web-react';
+import { InputNumber } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

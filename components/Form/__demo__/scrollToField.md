@@ -7,7 +7,7 @@ title:
 
 ```js
 import { useRef, useState } from 'react';
-import { Form, Input, Button } from '@arco-design/web-react';
+import { Form, Input, Button } from '@sensoro-design/react';
 
 function Demo () {
   const formRef = useRef();

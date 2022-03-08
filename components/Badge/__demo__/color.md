@@ -14,7 +14,7 @@ We provide a variety of preset colors for the badge. You can also set a custom c
 
 
 ```js
-import { Badge, Divider } from '@arco-design/web-react';
+import { Badge, Divider } from '@sensoro-design/react';
 
 const COLORS = [
   'red',

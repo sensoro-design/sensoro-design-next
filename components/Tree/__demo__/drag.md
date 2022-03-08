@@ -15,7 +15,7 @@ Draggable nodes.
 
 ```js
 import { useState } from 'react'
-import { Tree, Checkbox } from '@arco-design/web-react'
+import { Tree, Checkbox } from '@sensoro-design/react'
 
 const TreeNode = Tree.Node
 

@@ -14,7 +14,7 @@ title:
 A mini progress bar.
 
 ```js
-import { Progress, Slider } from '@arco-design/web-react';
+import { Progress, Slider } from '@sensoro-design/react';
 
 function Demo () {
   return (

@@ -14,7 +14,7 @@ title:
 Usage of uncontrolled mode.
 
 ```js
-import { Form, Input, Button, Checkbox } from '@arco-design/web-react';
+import { Form, Input, Button, Checkbox } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

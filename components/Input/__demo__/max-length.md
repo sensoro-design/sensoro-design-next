@@ -23,7 +23,7 @@ It is worth noting that if `showWordLimit` is configured, then you cannot use `s
 
 
 ```js
-import { Input, Space } from '@arco-design/web-react';
+import { Input, Space } from '@sensoro-design/react';
 
 function Demo() {
   return (

@@ -14,7 +14,7 @@ title:
 Specify `mode=multiple` to use multiple selection. Set the maximum number of tags displayed through `maxTagCount`, and customize the rendering method of tags through the `renderTag` property to achieve more complex customization.
 
 ```js
-import { Select, Space, Tag } from '@arco-design/web-react';
+import { Select, Space, Tag } from '@sensoro-design/react';
 
 const Option = Select.Option;
 const options = ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Chengdu', 'Wuhan'];

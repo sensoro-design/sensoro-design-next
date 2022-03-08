@@ -14,7 +14,7 @@ title:
 Specifying `id` to update the existing notification.
 
 ```js
-import { Notification, Button } from '@arco-design/web-react';
+import { Notification, Button } from '@sensoro-design/react';
 
 function updateNotification() {
   Notification.warning({

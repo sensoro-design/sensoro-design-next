@@ -15,7 +15,7 @@ Use `react-dnd` to realize the drag and drop of tabs.
 
 ```js
 import { useState, useRef } from 'react';
-import { Tabs } from '@arco-design/web-react';
+import { Tabs } from '@sensoro-design/react';
 import { DndProvider, DragSource, DropTarget, createDndContext } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 

@@ -14,7 +14,7 @@ title:
 Use `formatterTooltip` to format the content of Tooltip.
 
 ```js
-import { Slider } from '@arco-design/web-react';
+import { Slider } from '@sensoro-design/react';
 
 function Demo () {
 

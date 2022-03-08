@@ -14,7 +14,7 @@ title:
 Basic usage of `ResizeBox`. By setting `directions`, you can specify which of the four sides can be stretched.
 
 ```js
-import { ResizeBox, Divider, Typography } from '@arco-design/web-react';
+import { ResizeBox, Divider, Typography } from '@sensoro-design/react';
 
 const { Paragraph } = Typography;
 

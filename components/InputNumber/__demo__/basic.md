@@ -14,7 +14,7 @@ title:
 Use the mouse or keyboard to enter standard values within the range.
 
 ```js
-import { InputNumber } from '@arco-design/web-react';
+import { InputNumber } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

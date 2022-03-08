@@ -15,8 +15,8 @@ Custom filter dropdown.
 
 ```js
 import { useState, useRef } from 'react';
-import { Table, Input, Button } from '@arco-design/web-react';
-import { IconSearch } from '@arco-design/web-react/icon';
+import { Table, Input, Button } from '@sensoro-design/react';
+import { IconSearch } from '@sensoro-design/react/icon';
 
 const data = [
   {

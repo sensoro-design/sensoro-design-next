@@ -20,8 +20,8 @@ If too many `expandedRowRender` calculations block page render, it is recommende
 
 ```js
 import { useState } from 'react';
-import { Table } from '@arco-design/web-react';
-import { IconRight, IconDown } from '@arco-design/web-react/icon';
+import { Table } from '@sensoro-design/react';
+import { IconRight, IconDown } from '@sensoro-design/react/icon';
 
 const columns = [
   {

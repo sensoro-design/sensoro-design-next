@@ -13,7 +13,7 @@ title:
 There are three types of status available: `error`, `success`, `warning`.
 
 ```js
-import { Link } from '@arco-design/web-react';
+import { Link } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div

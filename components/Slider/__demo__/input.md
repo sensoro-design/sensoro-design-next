@@ -14,7 +14,7 @@ title:
 When `showInput` is set to true, the input box will be displayed. But when setting `onlyMarkValue` to `true`, the input box will never be displayed.
 
 ```js
-import { Slider } from '@arco-design/web-react';
+import { Slider } from '@sensoro-design/react';
 
 function Demo() {
   return <>

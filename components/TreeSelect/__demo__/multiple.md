@@ -14,8 +14,8 @@ title:
 Multiple Selection
 
 ```js
-import { TreeSelect, Space } from '@arco-design/web-react';
-import { IconCalendar } from '@arco-design/web-react/icon';
+import { TreeSelect, Space } from '@sensoro-design/react';
+import { IconCalendar } from '@sensoro-design/react/icon';
 
 const treeData = [
   {

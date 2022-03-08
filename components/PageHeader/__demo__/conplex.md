@@ -14,7 +14,7 @@ title:
 Complete capabilities provided by components
 
 ```js
-import { PageHeader, Button, Tag, Message, Typography } from '@arco-design/web-react';
+import { PageHeader, Button, Tag, Message, Typography } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div style={{ background: 'var(--color-fill-2)', padding: 40 }}>

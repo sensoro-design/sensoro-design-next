@@ -18,7 +18,7 @@ The anchor in the example will appear on the right side of the page.
 Use `affix=true` to wrap the anchor within [Affix](/react/components/affix) component. `affixStyle` can be used to set the style of `Affix` component.
 
 ```js
-import { Anchor } from '@arco-design/web-react';
+import { Anchor } from '@sensoro-design/react';
 
 const AnchorLink = Anchor.Link;
 

@@ -14,7 +14,7 @@ title:
 `content` is turned into auxiliary introduction text with presence of `title`.
 
 ```js
-import { Alert, Grid } from '@arco-design/web-react';
+import { Alert, Grid } from '@sensoro-design/react';
 
 const { Row, Col } = Grid;
 

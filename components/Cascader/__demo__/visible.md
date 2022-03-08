@@ -16,7 +16,7 @@ Use `popupVisible` and `onVisibleChange` to control the visibility of the dropdo
 More examples can be found in [Trigger](/react/en-US/components/trigger).
 
 ```js
-import { Cascader, Message, Link, Button } from '@arco-design/web-react';
+import { Cascader, Message, Link, Button } from '@sensoro-design/react';
 
 const options = [
   {

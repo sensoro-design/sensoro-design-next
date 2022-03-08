@@ -18,7 +18,7 @@ By specifying `virtualListProps` to turn on the virtual list, high performance c
 **Because the virtual list uses the `ref` of ListItem internally, if you return a custom function component through `render`, please use `React.forwardRef` to wrap it.**
 
 ```js
-import { List, Avatar } from '@arco-design/web-react';
+import { List, Avatar } from '@sensoro-design/react';
 
 ReactDOM.render(
   <>

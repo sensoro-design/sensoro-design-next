@@ -14,8 +14,8 @@ title:
 You can add icons before menu items.
 
 ```js
-import { Dropdown, Menu, Button } from '@arco-design/web-react';
-import { IconDown, IconLocation } from '@arco-design/web-react/icon';
+import { Dropdown, Menu, Button } from '@sensoro-design/react';
+import { IconDown, IconLocation } from '@sensoro-design/react/icon';
 
 const iconStyle = {
   marginRight: 8,

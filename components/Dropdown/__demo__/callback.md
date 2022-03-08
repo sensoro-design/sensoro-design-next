@@ -14,8 +14,8 @@ title:
 Use `Menu.onClickMenuItem` to specify the callback function to be triggered when the menu item is clicked.
 
 ```js
-import { Dropdown, Menu, Button, Message } from '@arco-design/web-react';
-import { IconDown } from '@arco-design/web-react/icon';
+import { Dropdown, Menu, Button, Message } from '@sensoro-design/react';
+import { IconDown } from '@sensoro-design/react/icon';
 
 const dropList = (
   <Menu onClickMenuItem={(key) => Message.info(`You clicked ${key}`)}>

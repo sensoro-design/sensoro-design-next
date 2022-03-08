@@ -14,7 +14,7 @@ title:
 Use `Avatar.Group` to group a list of avatars. `size` can be used to specify the size of each avatar.
 
 ```js
-import { Avatar } from '@arco-design/web-react';
+import { Avatar } from '@sensoro-design/react';
 
 const AvatarGroup = Avatar.Group;
 

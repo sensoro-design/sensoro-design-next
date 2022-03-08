@@ -14,7 +14,7 @@ title:
 The basic usage of DatePicker.
 
 ```js
-import { DatePicker } from '@arco-design/web-react';
+import { DatePicker } from '@sensoro-design/react';
 
 ReactDOM.render(<DatePicker style={{ width: 200 }} />, CONTAINER);
 ```

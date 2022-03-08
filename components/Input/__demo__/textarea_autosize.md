@@ -14,7 +14,7 @@ title:
 Specify `autoSize`, the text field will automatically adjust the height of the text field according to the input text. If you specify `autoSize={{ minRows, maxRows }}`, you can also specify the minimum/maximum number of rows.
 
 ```js
-import { Input, Space } from '@arco-design/web-react';
+import { Input, Space } from '@sensoro-design/react';
 
 const TextArea = Input.TextArea;
 

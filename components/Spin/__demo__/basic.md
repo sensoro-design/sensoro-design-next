@@ -14,7 +14,7 @@ title:
 A simple loading state.
 
 ```js
-import { Spin } from '@arco-design/web-react';
+import { Spin } from '@sensoro-design/react';
 
 ReactDOM.render(<Spin />, CONTAINER);
 ```

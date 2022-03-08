@@ -14,8 +14,8 @@ Button 可以嵌入图标，在只设置图标而没有 children 时，按钮的
 Icons can be used in buttons. When `icon` is set and there are no children, the height and width of the button are equal.
 
 ```js
-import { Button, Space } from '@arco-design/web-react';
-import { IconPlus, IconDelete } from '@arco-design/web-react/icon';
+import { Button, Space } from '@sensoro-design/react';
+import { IconPlus, IconDelete } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space size="large">

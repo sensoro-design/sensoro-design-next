@@ -14,8 +14,8 @@ title:
 A red dot will be displayed instead of the count when `dot=true`. If count equals 0, the dot will be hidden.
 
 ```js
-import { Badge, Space } from '@arco-design/web-react';
-import { IconNotification } from '@arco-design/web-react/icon';
+import { Badge, Space } from '@sensoro-design/react';
+import { IconNotification } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space size={40}>

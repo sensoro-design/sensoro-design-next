@@ -14,7 +14,7 @@ title:
 `onPreview` will be executed when user click preview icon.
 
 ```js
-import { Upload, Modal } from '@arco-design/web-react';
+import { Upload, Modal } from '@sensoro-design/react';
 
 ReactDOM.render(<div>
   <Upload

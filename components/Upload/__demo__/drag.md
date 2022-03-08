@@ -14,7 +14,7 @@ title:
 Drag files to a specific area, to upload.
 
 ```js
-import { Upload } from '@arco-design/web-react';
+import { Upload } from '@sensoro-design/react';
 
 
 ReactDOM.render(

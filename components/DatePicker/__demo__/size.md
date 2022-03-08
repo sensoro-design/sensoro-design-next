@@ -14,7 +14,7 @@ title:
 Setting `size` can use four sizes (`mini` `small` `default` `large`). The height corresponds to 24px, 32px, 36px, 40px.
 
 ```js
-import { Radio, DatePicker } from '@arco-design/web-react';
+import { Radio, DatePicker } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 

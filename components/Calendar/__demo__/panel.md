@@ -14,7 +14,7 @@ title:
 Use `panel=true` to display date in card format.
 
 ```js
-import { Calendar } from '@arco-design/web-react';
+import { Calendar } from '@sensoro-design/react';
 import dayjs from 'dayjs';
 
 ReactDOM.render(

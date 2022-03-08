@@ -18,8 +18,8 @@ Use `renderFormat` to customize the content what will be rendered in select box.
 **Note: In scenarios such as remote loading of option data, the corresponding option in value may not exist at some point. It is necessary to determine if the option does not exist, return the value as the displayed content.**
 
 ```js
-import { Select, Space } from '@arco-design/web-react';
-import { IconStar, IconDelete } from '@arco-design/web-react/icon';
+import { Select, Space } from '@sensoro-design/react';
+import { IconStar, IconDelete } from '@sensoro-design/react/icon';
 
 const Option = Select.Option;
 

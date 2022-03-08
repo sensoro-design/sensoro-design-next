@@ -14,7 +14,7 @@ title:
 `children` will override the default select box node.
 
 ```js
-import { Cascader, Link, Typography } from '@arco-design/web-react';
+import { Cascader, Link, Typography } from '@sensoro-design/react';
 
 const options = [
   {

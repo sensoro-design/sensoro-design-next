@@ -14,7 +14,7 @@ title:
 By setting `range.draggableBar` to `true`, the range scale can be dragged.
 
 ```js
-import { Slider } from '@arco-design/web-react';
+import { Slider } from '@sensoro-design/react';
 
 function Demo () {
 

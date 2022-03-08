@@ -17,7 +17,7 @@ The form field can be validated through the `form.validate` method. You can spec
 
 
 ```js
-import { Form, Input, Button, Message, InputNumber } from '@arco-design/web-react';
+import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

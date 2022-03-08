@@ -14,7 +14,7 @@ title:
 Basic usage. If the fixed position is not set, the element will be fixed at the top of the page when it scrolls outside the page.
 
 ```js
-import { Affix, Button } from '@arco-design/web-react';
+import { Affix, Button } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Affix>

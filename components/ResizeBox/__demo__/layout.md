@@ -14,7 +14,7 @@ title:
 The `ResizeBox` component is integrated in the [Layout](/react/components/ResizeBox) component, so a scalable sidebar can be used in the layout.
 
 ```js
-import { Layout } from '@arco-design/web-react';
+import { Layout } from '@sensoro-design/react';
 
 const Sider = Layout.Sider;
 const Header = Layout.Header;

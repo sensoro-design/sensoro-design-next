@@ -18,7 +18,7 @@ If `expandTrigger` is `'hover'`, next level menu will be expanded when current o
 
 
 ```js
-import { Cascader, Space } from '@arco-design/web-react';
+import { Cascader, Space } from '@sensoro-design/react';
 
 const options = [
   {

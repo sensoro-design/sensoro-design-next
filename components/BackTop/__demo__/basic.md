@@ -15,7 +15,7 @@ browser: true
 When scrolling to a certain height, a button to return to the top will appear in the lower right corner.
 
 ```js
-import { BackTop, Typography } from '@arco-design/web-react';
+import { BackTop, Typography } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div style={{ position: 'relative', padding: '8px 12px' }}>

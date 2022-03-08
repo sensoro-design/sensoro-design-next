@@ -14,7 +14,7 @@ title:
 Use `renderTag` to customize Tags will be rendered in select box.
 
 ```js
-import { Select, Tag } from '@arco-design/web-react';
+import { Select, Tag } from '@sensoro-design/react';
 
 const options = [
   'red',

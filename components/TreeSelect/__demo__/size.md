@@ -15,7 +15,7 @@ Four sizes (small, default, large, huge) can be selected through `size`. The hei
 
 ```js
 import { useState } from 'react';
-import { TreeSelect, Radio } from '@arco-design/web-react';
+import { TreeSelect, Radio } from '@sensoro-design/react';
 
 const TreeNode = TreeSelect.Node;
 const RadioGroup = Radio.Group;

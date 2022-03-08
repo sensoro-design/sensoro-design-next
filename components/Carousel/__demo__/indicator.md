@@ -14,7 +14,7 @@ title:
 You can specify the indicator type: `dot` | `line` | `slider` and position `left` | `right` | `top` | `bottom` | `outer`.
 
 ```js
-import { Carousel, Radio } from '@arco-design/web-react';
+import { Carousel, Radio } from '@sensoro-design/react';
 import { useState } from 'react';
 
 const RadioGroup = Radio.Group;

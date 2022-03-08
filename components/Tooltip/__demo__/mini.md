@@ -14,7 +14,7 @@ title:
 Suitable for small scenes or digital bubble styles.
 
 ```js
-import { Tooltip, Typography } from '@arco-design/web-react';
+import { Tooltip, Typography } from '@sensoro-design/react';
 
 const { Text } = Typography;
 

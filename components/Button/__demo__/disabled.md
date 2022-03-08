@@ -14,7 +14,7 @@ title:
 The disabled state of the button.
 
 ```js
-import { Button, Space } from '@arco-design/web-react';
+import { Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large" direction="vertical">

@@ -25,7 +25,7 @@ import {
   Space,
   Empty,
   Typography,
-} from '@arco-design/web-react';
+} from '@sensoro-design/react';
 
 function renderEmpty(componentName) {
   switch (componentName) {

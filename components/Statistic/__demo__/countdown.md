@@ -14,7 +14,7 @@ title:
 Countdown component. You can use `now` to correct the initialization time.
 
 ```js
-import { Statistic, Message, Button } from '@arco-design/web-react';
+import { Statistic, Message, Button } from '@sensoro-design/react';
 
 const Countdown = Statistic.Countdown;
 

@@ -14,7 +14,7 @@ title:
 `Image.Preview` can be used alone, you need to set `src` and control `visible`.
 
 ```js
-import { Image, Button } from '@arco-design/web-react';
+import { Image, Button } from '@sensoro-design/react';
 
 function Demo() {
   const [visible, setVisible] = React.useState(false);

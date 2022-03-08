@@ -15,7 +15,7 @@ Use `Size` to set the size of the tab.
 
 ```js
 import { useState } from 'react';
-import { Tabs, Radio, Typography } from '@arco-design/web-react';
+import { Tabs, Radio, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 

@@ -15,7 +15,7 @@ The display value of the input box can be defined through the use of `formatter`
 
 ```js
 import { useState } from 'react';
-import { InputNumber } from '@arco-design/web-react';
+import { InputNumber } from '@sensoro-design/react';
 
 function Demo() {
   const [value, setValue] = useState(12000);

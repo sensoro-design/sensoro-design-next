@@ -14,7 +14,7 @@ title:
 Often used together with `Grid` on the overview page of systems.
 
 ```js
-import { Card, Grid, Link } from '@arco-design/web-react';
+import { Card, Grid, Link } from '@sensoro-design/react';
 
 const { Row, Col } = Grid;
 

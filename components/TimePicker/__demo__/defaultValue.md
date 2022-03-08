@@ -14,7 +14,7 @@ title:
 TimePicker has a default value.
 
 ```js
-import { TimePicker } from '@arco-design/web-react';
+import { TimePicker } from '@sensoro-design/react';
 
 const { RangePicker } = TimePicker;
 

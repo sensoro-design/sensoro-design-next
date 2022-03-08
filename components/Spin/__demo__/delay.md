@@ -15,7 +15,7 @@ Use `delay` to delay the switch of loading status, which effectively avoids scre
 
 ```js
 import { useState } from 'react';
-import { Spin, Card, Button } from '@arco-design/web-react';
+import { Spin, Card, Button } from '@sensoro-design/react';
 
 function Demo() {
   const [loading, setLoading] = useState(true);

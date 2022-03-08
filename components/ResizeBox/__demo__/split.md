@@ -14,7 +14,7 @@ title:
 Divide a panel into two parts with adjustable width or height. Use `direction` to control the direction of the split.
 
 ```js
-import { ResizeBox, Typography } from '@arco-design/web-react';
+import { ResizeBox, Typography } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

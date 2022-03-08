@@ -14,7 +14,7 @@ title:
 Time display. Use [dayjs](https://github.com/iamkun/dayjs) to format the time, `format` is the format of dayjs.
 
 ```js
-import { Statistic, Grid } from '@arco-design/web-react';
+import { Statistic, Grid } from '@sensoro-design/react';
 
 const Row = Grid.Row;
 const Col = Grid.Col;

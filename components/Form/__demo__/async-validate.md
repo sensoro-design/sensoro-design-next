@@ -18,7 +18,7 @@ Customize the `validator` method in `rules` and return a `Promise` to achieve as
 p.s: If using `lodash.debounce` does not work, it is recommended to use `debounce.promise`, which returns a `promise`.
 
 ```js
-import { Form, Input, Button, Message, InputNumber } from '@arco-design/web-react';
+import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

@@ -15,7 +15,7 @@ Dynamically add or subtract tabs. Only effective when `type=card | card-gutter`.
 
 ```js
 import { useState } from 'react';
-import { Tabs, Typography } from '@arco-design/web-react';
+import { Tabs, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 

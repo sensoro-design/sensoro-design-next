@@ -15,8 +15,8 @@ Multiple panels can be split through `SplitGroup`, and it also supports quick co
 
 ```js
 import { useState } from 'react'
-import { ResizeBox, Typography } from '@arco-design/web-react';
-import { IconDoubleLeft, IconDoubleRight } from '@arco-design/web-react/icon';
+import { ResizeBox, Typography } from '@sensoro-design/react';
+import { IconDoubleLeft, IconDoubleRight } from '@sensoro-design/react/icon';
 const { Paragraph, Text } = Typography;
 
 const panes = [

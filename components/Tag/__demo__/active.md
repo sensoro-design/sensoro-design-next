@@ -15,8 +15,8 @@ Can add and delete tags dynamically.
 
 ```js
 import { useState } from 'react';
-import { Tag, Button, Input, Message } from '@arco-design/web-react';
-import { IconPlus } from '@arco-design/web-react/icon';
+import { Tag, Button, Input, Message } from '@sensoro-design/react';
+import { IconPlus } from '@sensoro-design/react/icon';
 
 function Demo() {
   const [tags, setTags] = useState(['Tag 1', 'Tag 2', 'Tag 3']);

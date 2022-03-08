@@ -16,7 +16,7 @@ By specifying `type: 'dot'`, you can use dotted step bar.
 **Note**: The label of the horizontal step bar can only be located below it, and the label of the vertical step bar can only be located to the right of it
 
 ```js
-import { Steps } from '@arco-design/web-react';
+import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

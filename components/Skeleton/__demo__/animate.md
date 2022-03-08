@@ -14,7 +14,7 @@ title:
 Display animation effects.
 
 ```js
-import { Skeleton, Switch, Avatar, Typography } from '@arco-design/web-react';
+import { Skeleton, Switch, Avatar, Typography } from '@sensoro-design/react';
 
 class DemoSkeleton extends React.Component {
   constructor(props) {

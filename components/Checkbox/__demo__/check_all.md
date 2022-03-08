@@ -15,7 +15,7 @@ The indeterminate effect can be achieved with `indeterminate=true`
 
 ```js
 import { useState } from 'react';
-import { Checkbox } from '@arco-design/web-react';
+import { Checkbox } from '@sensoro-design/react';
 
 const CheckboxGroup = Checkbox.Group;
 const options = ['Option 1', 'Option 2', 'Option 3'];

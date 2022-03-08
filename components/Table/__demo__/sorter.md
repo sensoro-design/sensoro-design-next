@@ -24,7 +24,7 @@ Configure the `filters` of `Column` to filter the table.
 **Default sort and filter**: You can specify the default sort and filter by specifying `defaultFilters` and `defaultSortOrder`.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

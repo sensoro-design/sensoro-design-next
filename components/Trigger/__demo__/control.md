@@ -16,7 +16,7 @@ Control the visibility of the popup.
 
 
 ```js
-import { Trigger, Button, Input, Skeleton } from '@arco-design/web-react';
+import { Trigger, Button, Input, Skeleton } from '@sensoro-design/react';
 
 function Popup() {
   return <div className="demo-trigger-popup" style={{width: 300}}>

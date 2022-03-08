@@ -15,7 +15,7 @@ Through the combination of `filterOption` and `onSearch`, you can search user fr
 
 ```js
 import { useState, useRef, useCallback } from 'react';
-import { Select, Spin, Avatar } from '@arco-design/web-react';
+import { Select, Spin, Avatar } from '@sensoro-design/react';
 import debounce from 'lodash/debounce';
 
 function Demo() {

@@ -14,7 +14,7 @@ title:
 Where to place the label, the default `horizontal` is placed on the right side of the icon, and the optional `vertical` is placed below the icon.
 
 ```js
-import { Steps, Divider } from '@arco-design/web-react';
+import { Steps, Divider } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

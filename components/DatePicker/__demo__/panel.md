@@ -15,7 +15,7 @@ Only use panel, hide input selection.
 
 ```js
 import { useState } from 'react';
-import { DatePicker, Button } from '@arco-design/web-react';
+import { DatePicker, Button } from '@sensoro-design/react';
 
 function Demo() {
   const [value, setValue] = useState();

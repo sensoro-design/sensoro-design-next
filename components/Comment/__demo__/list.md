@@ -14,14 +14,14 @@ title:
 Display the comments list with List component.
 
 ```js
-import { Comment, List } from '@arco-design/web-react';
+import { Comment, List } from '@sensoro-design/react';
 import {
   IconHeart,
   IconMessage,
   IconHeartFill,
   IconStarFill,
   IconStar,
-} from '@arco-design/web-react/icon';
+} from '@sensoro-design/react/icon';
 
 const Demo = () => {
   const [likes, setLikes] = React.useState([]);

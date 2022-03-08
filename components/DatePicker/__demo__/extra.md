@@ -14,7 +14,7 @@ title:
 Add an extra footer to meet the needs of some customized information.
 
 ```js
-import { DatePicker } from '@arco-design/web-react';
+import { DatePicker } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

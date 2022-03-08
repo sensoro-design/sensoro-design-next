@@ -13,8 +13,8 @@ title:
 Customize the display of uploaded files
 
 ```js
-import { Upload, Card, Modal } from '@arco-design/web-react';
-import { IconEye, IconDelete } from '@arco-design/web-react/icon';
+import { Upload, Card, Modal } from '@sensoro-design/react';
+import { IconEye, IconDelete } from '@sensoro-design/react/icon';
 
 function Demo () {
   const renderUploadList = (filesList, props) => (

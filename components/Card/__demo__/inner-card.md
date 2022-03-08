@@ -14,7 +14,7 @@ title:
 Other card components can be nested in the card.
 
 ```js
-import { Card, Link } from '@arco-design/web-react';
+import { Card, Link } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Card title="Arco Card">

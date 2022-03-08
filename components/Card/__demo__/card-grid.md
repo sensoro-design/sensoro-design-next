@@ -14,7 +14,7 @@ title:
 Use `Card.Grid` to enable the card content segmentation mode.
 
 ```js
-import { Card, Link } from '@arco-design/web-react';
+import { Card, Link } from '@sensoro-design/react';
 
 const { Grid } = Card;
 

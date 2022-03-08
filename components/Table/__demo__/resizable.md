@@ -15,7 +15,7 @@ With `react-resizable`, the effect of resize columns can be achieved.
 
 ```js
 import { useState } from 'react';
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 import { Resizable } from 'react-resizable';
 
 const originColumns = [

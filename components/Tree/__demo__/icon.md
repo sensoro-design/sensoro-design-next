@@ -14,8 +14,8 @@ title:
 The property `icon` of `TreeNode` can specify an icon for the node.
 
 ```js
-import { Tree } from '@arco-design/web-react';
-import {  IconStar } from '@arco-design/web-react/icon';
+import { Tree } from '@sensoro-design/react';
+import {  IconStar } from '@sensoro-design/react/icon';
 
 const TreeNode = Tree.Node;
 

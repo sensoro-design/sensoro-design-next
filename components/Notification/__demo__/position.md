@@ -14,7 +14,7 @@ title:
 Notification has 4 different positions, `Top Left`, `Top Right (default)`, `Bottom Left`, `Bottom Right`.
 
 ```js
-import { Notification, Button, Space } from '@arco-design/web-react';
+import { Notification, Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

@@ -14,7 +14,7 @@ title:
 Specify optional options by passing in `options`.
 
 ```js
-import { Select, Message, Space } from '@arco-design/web-react';
+import { Select, Message, Space } from '@sensoro-design/react';
 
 const options = ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Chengdu', 'Wuhan'];
 

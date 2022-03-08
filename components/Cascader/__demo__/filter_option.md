@@ -14,7 +14,7 @@ title:
 Customize the search logic.
 
 ```js
-import { Cascader, Space } from '@arco-design/web-react';
+import { Cascader, Space } from '@sensoro-design/react';
 
 const options = [
   {

@@ -15,7 +15,7 @@ title:
 Use `renderTag` to customize tag rendering
 
 ```js
-import { InputTag, Tag } from '@arco-design/web-react';
+import { InputTag, Tag } from '@sensoro-design/react';
 
 const options = ['arcoblue', 'orange', 'lime'];
 

@@ -14,7 +14,7 @@ title:
 By specifying the `id`, the existing Message can be updated.
 
 ```js
-import { Message, Button } from '@arco-design/web-react';
+import { Message, Button } from '@sensoro-design/react';
 
 function updateMessage() {
   Message.loading({

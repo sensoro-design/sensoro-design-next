@@ -14,7 +14,7 @@ Ellipsis and related configuration controlled cases
 
 ```js
 import { useState } from 'react';
-import { Typography, Button, Switch, Input, Form, Descriptions, Space } from '@arco-design/web-react';
+import { Typography, Button, Switch, Input, Form, Descriptions, Space } from '@sensoro-design/react';
 
 const defaultText = `A design is a plan or specification for the construction of an object or system or for the
 implementation of an activity or process. A design is a plan or specification for the

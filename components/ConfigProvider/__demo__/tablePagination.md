@@ -15,7 +15,7 @@ Configure global table pagination parameters. For example, you can set `tablePag
 
 ```js
 import { useState } from 'react';
-import { ConfigProvider, Table, Switch, Space, Typography } from '@arco-design/web-react';
+import { ConfigProvider, Table, Switch, Space, Typography } from '@sensoro-design/react';
 
 const columns = [
   {

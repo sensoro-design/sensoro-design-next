@@ -14,7 +14,7 @@ title:
 The vertical time axis.
 
 ```js
-import { Timeline, Grid, Radio, Typography } from '@arco-design/web-react';
+import { Timeline, Grid, Radio, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
 const { Row, Col } = Grid;

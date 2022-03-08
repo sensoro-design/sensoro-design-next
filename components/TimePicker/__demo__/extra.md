@@ -14,7 +14,7 @@ title:
 Show extra content.
 
 ```js
-import { TimePicker } from '@arco-design/web-react';
+import { TimePicker } from '@sensoro-design/react';
 
 ReactDOM.render(
   <TimePicker extra="Extra Footer" style={{ width: 194 }} />,

@@ -14,7 +14,7 @@ title:
 Use `style` to customize style of panel.
 
 ```js
-import { Collapse, Divider } from '@arco-design/web-react';
+import { Collapse, Divider } from '@sensoro-design/react';
 
 const CollapseItem = Collapse.Item;
 

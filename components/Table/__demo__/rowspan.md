@@ -14,7 +14,7 @@ title:
 Used for cell merging, the header can only be column merged.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

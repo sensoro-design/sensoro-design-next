@@ -14,8 +14,8 @@ title:
 When the task state is happening and the recording is still in progress, ghost nodes can be used to represent the current time node, and its pivot point can be customized through `pendingDot`.
 
 ```js
-import { Timeline, Grid, Checkbox } from '@arco-design/web-react';
-import { IconFire } from '@arco-design/web-react/icon';
+import { Timeline, Grid, Checkbox } from '@sensoro-design/react';
+import { IconFire } from '@sensoro-design/react/icon';
 
 const TimelineItem = Timeline.Item;
 const { Row } = Grid;

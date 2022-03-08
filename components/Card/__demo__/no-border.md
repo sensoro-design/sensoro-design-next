@@ -14,7 +14,7 @@ title:
 Set `bordered` to `false` to use borderless cards.
 
 ```js
-import { Card, Link } from '@arco-design/web-react';
+import { Card, Link } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div

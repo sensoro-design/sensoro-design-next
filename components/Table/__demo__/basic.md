@@ -14,7 +14,7 @@ title:
 The simplest usage.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

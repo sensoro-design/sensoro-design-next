@@ -30,7 +30,7 @@ import {
   Message,
   InputNumber,
   DatePicker,
-} from '@arco-design/web-react';
+} from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

@@ -14,7 +14,7 @@ title:
 Use `Rate` with text description.
 
 ```js
-import { Rate, Typography } from '@arco-design/web-react';
+import { Rate, Typography } from '@sensoro-design/react';
 import { useState } from 'react';
 
 function Demo() {

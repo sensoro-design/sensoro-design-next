@@ -14,7 +14,7 @@ title:
 You can set the spacing in the vertical direction.
 
 ```js
-import { Space, Button } from '@arco-design/web-react';
+import { Space, Button } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space direction="vertical">

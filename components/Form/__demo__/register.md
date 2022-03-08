@@ -14,7 +14,7 @@ title:
 Fill in the necessary information to register a new user
 
 ```js
-import { Form, Input, Button, Message } from '@arco-design/web-react';
+import { Form, Input, Button, Message } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

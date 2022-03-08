@@ -14,7 +14,7 @@ title:
 A typical page layout.
 
 ```js
-import { Layout } from '@arco-design/web-react';
+import { Layout } from '@sensoro-design/react';
 
 const Sider = Layout.Sider;
 const Header = Layout.Header;

@@ -14,7 +14,7 @@ title:
 Components can be nested.
 
 ```js
-import { Tabs, Typography } from '@arco-design/web-react';
+import { Tabs, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 

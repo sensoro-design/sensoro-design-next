@@ -22,7 +22,7 @@ At present, the virtual scrolling table is more limited. After the virtual scrol
 **Note:** After enabling virtual scrolling, do not set the width for each column. Make sure that one column is adaptive, otherwise there may be misalignment between the header and the body.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

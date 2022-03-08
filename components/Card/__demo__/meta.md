@@ -14,7 +14,7 @@ title:
 Use `Card.Meta` to support more flexible content (cover, avatar, title, description)
 
 ```js
-import { Card } from '@arco-design/web-react';
+import { Card } from '@sensoro-design/react';
 
 const { Meta } = Card;
 

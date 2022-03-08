@@ -17,8 +17,8 @@ If `droplist` is `Menu`, you can also prevent menu hiding by returning `false` i
 
 ```js
 import { useState, useRef } from 'react';
-import { Dropdown, Menu, Button, Space } from '@arco-design/web-react';
-import { IconDown } from '@arco-design/web-react/icon';
+import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
+import { IconDown } from '@sensoro-design/react/icon';
 
 function DemoWithPopupVisible() {
   const [popupVisible, setPopupVisible] = useState(false);

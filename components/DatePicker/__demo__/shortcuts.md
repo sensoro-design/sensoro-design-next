@@ -14,7 +14,7 @@ title:
 Use `shortcuts` to preset time for quick selection.
 
 ```js
-import { DatePicker } from '@arco-design/web-react';
+import { DatePicker } from '@sensoro-design/react';
 import dayjs from 'dayjs';
 
 const { MonthPicker, RangePicker } = DatePicker;

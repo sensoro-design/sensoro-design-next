@@ -14,7 +14,7 @@ title:
 Basic usage.
 
 ```js
-import { Switch } from '@arco-design/web-react';
+import { Switch } from '@sensoro-design/react';
 
 ReactDOM.render(<Switch />, CONTAINER);
 ```

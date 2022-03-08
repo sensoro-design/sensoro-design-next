@@ -14,8 +14,8 @@ title:
 Multiple sub-items can be embedded in the menu, and the items that are opened by default can be set through `defaultOpenKeys`.
 
 ```js
-import { Menu } from '@arco-design/web-react';
-import { IconApps, IconBug, IconBulb } from '@arco-design/web-react/icon';
+import { Menu } from '@sensoro-design/react';
+import { IconApps, IconBug, IconBulb } from '@sensoro-design/react/icon';
 
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;

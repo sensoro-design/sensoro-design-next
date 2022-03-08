@@ -14,7 +14,7 @@ title:
 By setting `field` to `a.b.c`, you will get `{a:{b:{c: xx}}}`.
 
 ```js
-import { Form, Input, Button, Modal } from '@arco-design/web-react';
+import { Form, Input, Button, Modal } from '@sensoro-design/react';
 
 function Demo() {
   const [values, setValues] = React.useState();

@@ -15,7 +15,7 @@ There are 4 built-in alignment methods, namely `start` `center` `end` `baseline`
 
 ```js
 import { useState } from 'react';
-import { Space, Button, Radio, Typography, Card } from '@arco-design/web-react';
+import { Space, Button, Radio, Typography, Card } from '@sensoro-design/react';
 
 function Demo() {
   const [align, setAlign] = useState('center');

@@ -15,7 +15,7 @@ title:
 Render nodes can be customized by passing a function of type 'children'.
 
 ```js
-import { Checkbox, Tag, Space, Typography } from '@arco-design/web-react';
+import { Checkbox, Tag, Space, Typography } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

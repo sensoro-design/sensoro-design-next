@@ -24,18 +24,18 @@ import {
   Popconfirm,
   Button,
   Modal
-} from '@arco-design/web-react';
-import zhCN from '@arco-design/web-react/es/locale/zh-CN';
-import enUS from '@arco-design/web-react/es/locale/en-US';
-import jaJP from '@arco-design/web-react/es/locale/ja-JP';
-import koKR from '@arco-design/web-react/es/locale/ko-KR';
-import idID from '@arco-design/web-react/es/locale/id-ID';
-import thTH from '@arco-design/web-react/es/locale/th-TH';
-import zhHK from '@arco-design/web-react/es/locale/zh-HK';
-import frFR from '@arco-design/web-react/es/locale/fr-FR';
-import esES from '@arco-design/web-react/es/locale/es-ES';
-import deDE from '@arco-design/web-react/es/locale/de-DE';
-import itIT from '@arco-design/web-react/es/locale/it-IT';
+} from '@sensoro-design/react';
+import zhCN from '@sensoro-design/react/es/locale/zh-CN';
+import enUS from '@sensoro-design/react/es/locale/en-US';
+import jaJP from '@sensoro-design/react/es/locale/ja-JP';
+import koKR from '@sensoro-design/react/es/locale/ko-KR';
+import idID from '@sensoro-design/react/es/locale/id-ID';
+import thTH from '@sensoro-design/react/es/locale/th-TH';
+import zhHK from '@sensoro-design/react/es/locale/zh-HK';
+import frFR from '@sensoro-design/react/es/locale/fr-FR';
+import esES from '@sensoro-design/react/es/locale/es-ES';
+import deDE from '@sensoro-design/react/es/locale/de-DE';
+import itIT from '@sensoro-design/react/es/locale/it-IT';
 
 function Demo() {
   const [locale, setLocale] = useState('zh-CN');

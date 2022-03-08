@@ -19,7 +19,7 @@ For example, when `position` is `'top'`, set popupAlign to `{ top: 20}`, the pop
 
 
 ```js
-import { Trigger, Button, Input, Skeleton } from '@arco-design/web-react';
+import { Trigger, Button, Input, Skeleton } from '@sensoro-design/react';
 
 function Popup () {
   return  <Skeleton className="demo-trigger-popup" style={{width: 300}} />;

@@ -14,7 +14,7 @@ title:
 Use `validate` to enable custom validator for input value
 
 ```js
-import { InputTag, Message } from '@arco-design/web-react';
+import { InputTag, Message } from '@sensoro-design/react';
 
 ReactDOM.render(
   <InputTag

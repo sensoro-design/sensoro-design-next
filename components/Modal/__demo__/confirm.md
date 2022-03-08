@@ -14,7 +14,7 @@ title:
 Use `Modal.confirm()` to quickly pop up a confirmation modal dialog.
 
 ```js
-import { Modal, Message, Button } from '@arco-design/web-react';
+import { Modal, Message, Button } from '@sensoro-design/react';
 
 function confirm() {
   Modal.confirm({

@@ -14,8 +14,8 @@ title:
 Basic usage of Dropdown.
 
 ```js
-import { Dropdown, Menu, Button, Space } from '@arco-design/web-react';
-import { IconDown } from '@arco-design/web-react/icon';
+import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
+import { IconDown } from '@sensoro-design/react/icon';
 
 const dropList = (
   <Menu>

@@ -16,7 +16,7 @@ Set whether to switch automatically through `autoPlay`.
 Set `moveSpeed`, `timingFunc` to achieve different switching slide effects.
 
 ```js
-import { Carousel } from '@arco-design/web-react';
+import { Carousel } from '@sensoro-design/react';
 
 const imageSrc = [
   '//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/cd7a1aaea8e1c5e3d26fe2591e561798.png~tplv-uwbnlip3yd-webp.webp',

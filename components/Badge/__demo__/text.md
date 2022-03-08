@@ -13,8 +13,8 @@ title:
 Customize the content.
 
 ```js
-import { Badge, Avatar, Space } from '@arco-design/web-react';
-import { IconUser } from '@arco-design/web-react/icon';
+import { Badge, Avatar, Space } from '@sensoro-design/react';
+import { IconUser } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space size={40}>

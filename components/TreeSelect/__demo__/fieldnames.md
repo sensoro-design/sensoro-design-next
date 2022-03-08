@@ -15,7 +15,7 @@ You can customize `treeData` by `fieldNames`.
 
 ```js
 import { useState } from 'react';
-import { TreeSelect } from '@arco-design/web-react';
+import { TreeSelect } from '@sensoro-design/react';
 
 const TreeNode = TreeSelect.Node;
 

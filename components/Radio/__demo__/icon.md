@@ -14,8 +14,8 @@ title:
 You can display icons in children.
 
 ```js
-import { Radio } from '@arco-design/web-react';
-import {IconXiguaColor, IconLarkColor, IconTiktokColor} from '@arco-design/web-react/icon';
+import { Radio } from '@sensoro-design/react';
+import {IconXiguaColor, IconLarkColor, IconTiktokColor} from '@sensoro-design/react/icon';
 
 const RadioGroup = Radio.Group;
 

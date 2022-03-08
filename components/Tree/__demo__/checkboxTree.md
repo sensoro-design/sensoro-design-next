@@ -15,7 +15,7 @@ Add the `checkable` attribute to display the checkbox, and you can use `defaultC
 
 ```js
 import { useState } from 'react';
-import { Tree, Checkbox } from '@arco-design/web-react';
+import { Tree, Checkbox } from '@sensoro-design/react';
 
 const TreeNode = Tree.Node;
 

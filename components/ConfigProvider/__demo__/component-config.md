@@ -24,7 +24,7 @@ import {
   Radio,
   Table,
   Tag,
-} from '@arco-design/web-react';
+} from '@sensoro-design/react';
 
 const columns = [
   {

@@ -14,7 +14,7 @@ title:
 Specify the `disabled` field of an `option` as `true` to disable the option.
 
 ```js
-import { Cascader, Space } from '@arco-design/web-react';
+import { Cascader, Space } from '@sensoro-design/react';
 
 const options = [
   {

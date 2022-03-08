@@ -14,7 +14,7 @@ title:
 Basic usage. The anchor will be fixed on the page as the page scrolls.
 
 ```js
-import { Anchor } from '@arco-design/web-react';
+import { Anchor } from '@sensoro-design/react';
 
 const AnchorLink = Anchor.Link;
 

@@ -14,7 +14,7 @@ title:
 Customize style to get different visual styles.
 
 ```js
-import { Pagination } from '@arco-design/web-react';
+import { Pagination } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

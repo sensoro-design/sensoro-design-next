@@ -14,7 +14,7 @@ title:
 Show all configuration items.
 
 ```js
-import { Pagination } from '@arco-design/web-react';
+import { Pagination } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

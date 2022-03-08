@@ -14,8 +14,8 @@ title:
 The `actions` field receives an array of `ReactNode`, which will be displayed at the bottom as button group.
 
 ```js
-import { Card, Avatar, Typography } from '@arco-design/web-react';
-import { IconThumbUp, IconShareInternal, IconMore } from '@arco-design/web-react/icon';
+import { Card, Avatar, Typography } from '@sensoro-design/react';
+import { IconThumbUp, IconShareInternal, IconMore } from '@sensoro-design/react/icon';
 
 const { Meta } = Card;
 

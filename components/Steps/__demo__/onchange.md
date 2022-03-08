@@ -15,7 +15,7 @@ After setting `onChange`, the step bar supports clicking to switch steps.
 
 ```js
 import { useState } from 'react';
-import { Steps } from '@arco-design/web-react';
+import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

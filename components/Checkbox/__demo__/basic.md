@@ -15,7 +15,7 @@ Basic usage.
 
 
 ```js
-import { Checkbox } from '@arco-design/web-react';
+import { Checkbox } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

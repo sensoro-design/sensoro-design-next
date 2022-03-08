@@ -14,7 +14,7 @@ title:
 Through the prop `checkable`, the effect of clicking and selecting can be achieved.
 
 ```js
-import { Tag, Space } from '@arco-design/web-react';
+import { Tag, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

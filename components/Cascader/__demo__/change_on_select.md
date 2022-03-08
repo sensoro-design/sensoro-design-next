@@ -15,7 +15,7 @@ Each selection will change value if set to true. when `mode=multiple`, child nod
 
 
 ```js
-import { Cascader, Space } from '@arco-design/web-react';
+import { Cascader, Space } from '@sensoro-design/react';
 
 const options = [
   {

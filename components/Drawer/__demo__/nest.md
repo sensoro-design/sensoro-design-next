@@ -15,7 +15,7 @@ Nested drawer.
 
 ```js
 import { useState } from 'react';
-import { Drawer, Button } from '@arco-design/web-react';
+import { Drawer, Button } from '@sensoro-design/react';
 
 function Demo() {
   const [visible, setVisible] = useState(false);

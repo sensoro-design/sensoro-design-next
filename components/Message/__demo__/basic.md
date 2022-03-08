@@ -14,7 +14,7 @@ title:
 The simplest usage.
 
 ```js
-import { Message, Button } from '@arco-design/web-react';
+import { Message, Button } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Button

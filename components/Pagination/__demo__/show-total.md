@@ -14,7 +14,7 @@ title:
 Set `showTotal` to show the total number of data.
 
 ```js
-import { Pagination } from '@arco-design/web-react';
+import { Pagination } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

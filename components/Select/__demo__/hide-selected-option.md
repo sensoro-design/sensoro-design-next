@@ -15,7 +15,7 @@ Hide selected items in the drop-down menu.
 
 ```js
 import { useState } from 'react';
-import { Select } from '@arco-design/web-react';
+import { Select } from '@sensoro-design/react';
 
 const Option = Select.Option;
 

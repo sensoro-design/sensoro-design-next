@@ -7,7 +7,7 @@ title:
 
 
 ```js
-import { Tree, Radio } from '@arco-design/web-react';
+import { Tree, Radio } from '@sensoro-design/react';
 
 const TreeNode = Tree.Node;
 

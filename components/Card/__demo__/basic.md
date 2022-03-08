@@ -14,7 +14,7 @@ title:
 Basic usage. Can hold anything from text, lists, pictures, to paragraphs. Normally used for module separation and content overview.
 
 ```js
-import { Card, Link } from '@arco-design/web-react';
+import { Card, Link } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div style={{ display: 'flex' }}>

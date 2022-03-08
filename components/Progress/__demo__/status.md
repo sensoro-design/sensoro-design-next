@@ -16,7 +16,7 @@ title:
 You can set the status of the progress. If `showText` is `false`, the percentage text will not be displayed.
 
 ```js
-import { Progress, Slider } from '@arco-design/web-react';
+import { Progress, Slider } from '@sensoro-design/react';
 
 function Demo() {
   const [value, setValue] = React.useState(30);

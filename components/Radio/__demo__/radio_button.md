@@ -14,7 +14,7 @@ title:
 The combination of radio button style.
 
 ```js
-import { Radio } from '@arco-design/web-react';
+import { Radio } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 

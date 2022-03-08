@@ -14,7 +14,7 @@ title:
 Set `Switch` to be disabled by `disabled`.
 
 ```js
-import { Switch, Space } from '@arco-design/web-react';
+import { Switch, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

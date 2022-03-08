@@ -14,8 +14,8 @@ title:
 After setting the `trigger` property of `Menu.Sider` to `null`, the built-in trigger of `Sider` will not be displayed. At this time, you can customize the collapse button.
 
 ```js
-import { Layout, Menu, Breadcrumb, Button, Message } from '@arco-design/web-react';
-import { IconHome, IconCalendar, IconCaretRight, IconCaretLeft } from '@arco-design/web-react/icon';
+import { Layout, Menu, Breadcrumb, Button, Message } from '@sensoro-design/react';
+import { IconHome, IconCalendar, IconCaretRight, IconCaretLeft } from '@sensoro-design/react/icon';
 
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;

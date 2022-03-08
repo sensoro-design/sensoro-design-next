@@ -14,7 +14,7 @@ title:
 Set whether to be disabled via `disabled`, and set whether to be readonly via `readOnly` property.
 
 ```js
-import { Mentions, Space } from '@arco-design/web-react';
+import { Mentions, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size={40}>

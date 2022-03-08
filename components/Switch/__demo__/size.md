@@ -14,7 +14,7 @@ title:
 You can get switches of different sizes by specifying `size`.
 
 ```js
-import { Switch, Space } from '@arco-design/web-react';
+import { Switch, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

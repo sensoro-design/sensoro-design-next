@@ -14,7 +14,7 @@ title:
 Use `tip` property to customize the tip when loading.
 
 ```js
-import { Spin, Card, Link } from '@arco-design/web-react';
+import { Spin, Card, Link } from '@sensoro-design/react';
 
 function Demo() {
   return (

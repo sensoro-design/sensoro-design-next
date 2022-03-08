@@ -14,7 +14,7 @@ title:
 Render as Accordion.
 
 ```js
-import { Collapse } from '@arco-design/web-react';
+import { Collapse } from '@sensoro-design/react';
 
 const CollapseItem = Collapse.Item;
 

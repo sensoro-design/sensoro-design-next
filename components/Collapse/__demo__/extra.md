@@ -14,8 +14,8 @@ title:
 The extra node on the far right can be set by `extra`.
 
 ```js
-import { Collapse } from '@arco-design/web-react';
-import { IconMoreVertical } from '@arco-design/web-react/icon';
+import { Collapse } from '@sensoro-design/react';
+import { IconMoreVertical } from '@sensoro-design/react/icon';
 
 const CollapseItem = Collapse.Item;
 

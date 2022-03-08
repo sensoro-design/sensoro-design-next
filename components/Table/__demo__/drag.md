@@ -15,7 +15,7 @@ Can cooperate with `react-sortable-hoc` to drag rows.
 
 ```js
 import { useState } from 'react';
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 import { sortableContainer, sortableElement } from 'react-sortable-hoc';
 
 const arrayMoveMutate = (array, from, to) => {

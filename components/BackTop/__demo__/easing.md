@@ -16,8 +16,8 @@ Of course, we provide richer functions for use. You can specify the transition e
 
 ```js
 import { useState } from 'react';
-import { BackTop, Button, Select, Input, Typography } from '@arco-design/web-react';
-import { IconCaretUp } from '@arco-design/web-react/icon';
+import { BackTop, Button, Select, Input, Typography } from '@sensoro-design/react';
+import { IconCaretUp } from '@sensoro-design/react/icon';
 
 const { Paragraph, Text } = Typography;
 

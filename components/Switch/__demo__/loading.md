@@ -14,7 +14,7 @@ title:
 The `Switch` is in the loading state and cannot be clicked.
 
 ```js
-import { Switch, Divider, Space } from '@arco-design/web-react';
+import { Switch, Divider, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large" direction="vertical">

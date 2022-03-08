@@ -14,7 +14,7 @@ title:
 The return value will be displayed in the input box
 
 ```js
-import { Cascader } from '@arco-design/web-react';
+import { Cascader } from '@sensoro-design/react';
 
 const options = [
   {

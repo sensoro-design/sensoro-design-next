@@ -14,7 +14,7 @@ title:
 The basic usage. The popup layer has no style by default.
 
 ```js
-import { Trigger, Button, Tooltip, Input, Skeleton, Typography } from '@arco-design/web-react';
+import { Trigger, Button, Tooltip, Input, Skeleton, Typography } from '@sensoro-design/react';
 
 function Element(props) {
   return (

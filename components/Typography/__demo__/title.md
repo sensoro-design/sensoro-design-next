@@ -14,7 +14,7 @@ title:
 Show titles of different levels.
 
 ```js
-import { Typography } from '@arco-design/web-react';
+import { Typography } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Typography>

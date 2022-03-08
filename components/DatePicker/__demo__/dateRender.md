@@ -14,7 +14,7 @@ title:
 Use `dateRender` to customize date cells.
 
 ```js
-import { DatePicker } from '@arco-design/web-react';
+import { DatePicker } from '@sensoro-design/react';
 
 const highlightStyle = {
   border: '1px solid rgb(var(--arcoblue-6))',

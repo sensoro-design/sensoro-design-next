@@ -14,7 +14,7 @@ title:
 Example of custom axis.
 
 ```js
-import { Timeline, Typography } from '@arco-design/web-react';
+import { Timeline, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
 

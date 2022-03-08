@@ -14,7 +14,7 @@ title:
 An example that `Mentions` is used with `Form`,
 
 ```js
-import { Form, Input, Button, Mentions } from '@arco-design/web-react';
+import { Form, Input, Button, Mentions } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

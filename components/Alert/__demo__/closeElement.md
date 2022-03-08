@@ -14,8 +14,8 @@ title:
 Use `closeElement` to customize the close element. `closeElement` can receive `onClick`, has its own `close` parameter, and can be closed by calling `close()`.
 
 ```js
-import { Alert, Grid } from '@arco-design/web-react';
-import { IconCheck } from '@arco-design/web-react/icon';
+import { Alert, Grid } from '@sensoro-design/react';
+import { IconCheck } from '@sensoro-design/react/icon';
 
 const { Row, Col } = Grid;
 

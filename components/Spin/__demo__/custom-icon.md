@@ -14,8 +14,8 @@ title:
 By specifying `icon`, you can specify a custom icon as a loading component.
 
 ```js
-import { Spin, Card, Link } from '@arco-design/web-react';
-import { IconLoading } from '@arco-design/web-react/icon';
+import { Spin, Card, Link } from '@sensoro-design/react';
+import { IconLoading } from '@sensoro-design/react/icon';
 
 function Demo() {
   return (

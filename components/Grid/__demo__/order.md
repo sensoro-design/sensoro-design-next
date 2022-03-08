@@ -14,7 +14,7 @@ title:
 Sort items by `order`.
 
 ```js
-import { Grid } from '@arco-design/web-react';
+import { Grid } from '@sensoro-design/react';
 
 const Row = Grid.Row;
 const Col = Grid.Col;

@@ -21,7 +21,7 @@ After setting `marks`, the `Slider` is actually divided into multiple intervals,
 
 ```js
 import { useState } from 'react';
-import { Slider, Switch, Form, Typography } from '@arco-design/web-react';
+import { Slider, Switch, Form, Typography } from '@sensoro-design/react';
 
 const defaultConfig = {
   showTicks: false,

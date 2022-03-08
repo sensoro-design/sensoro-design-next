@@ -14,7 +14,7 @@ title:
 You can add extra content on the right side of the tabs through `extra`.
 
 ```js
-import { Tabs, Button, Typography } from '@arco-design/web-react';
+import { Tabs, Button, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 

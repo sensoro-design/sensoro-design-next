@@ -15,8 +15,8 @@ By setting `mode` to `popButton`, you can use a button group style floating menu
 
 ```js
 import { useState } from 'react';
-import { Menu, Trigger } from '@arco-design/web-react';
-import { IconMessage, IconClose, IconBug, IconBulb } from '@arco-design/web-react/icon';
+import { Menu, Trigger } from '@sensoro-design/react';
+import { IconMessage, IconClose, IconBug, IconBulb } from '@sensoro-design/react/icon';
 
 const MenuItem = Menu.Item;
 

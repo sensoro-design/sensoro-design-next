@@ -15,7 +15,7 @@ There are four sizes.
 
 ```js
 import { useState } from 'react';
-import { TimePicker, Radio } from '@arco-design/web-react';
+import { TimePicker, Radio } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 

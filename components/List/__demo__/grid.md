@@ -14,7 +14,7 @@ title:
 Use `grid.span` to set the number of columns expected to occupy.
 
 ```js
-import { List, Card } from '@arco-design/web-react';
+import { List, Card } from '@sensoro-design/react';
 
 const data = [
   {

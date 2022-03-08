@@ -15,7 +15,7 @@ The content can be customized through `title` and `footer`. When set to `null`, 
 
 ```js
 import { useState } from 'react';
-import { Drawer, Button, Checkbox } from '@arco-design/web-react';
+import { Drawer, Button, Checkbox } from '@sensoro-design/react';
 
 function Demo() {
   const [visible, setVisible] = useState(false);

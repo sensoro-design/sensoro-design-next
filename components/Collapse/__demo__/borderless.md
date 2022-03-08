@@ -14,7 +14,7 @@ title:
 Pass in `bordered=false` to use simple style without borders.
 
 ```js
-import { Collapse, Divider } from '@arco-design/web-react';
+import { Collapse, Divider } from '@sensoro-design/react';
 
 const CollapseItem = Collapse.Item;
 

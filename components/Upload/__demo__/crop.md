@@ -15,8 +15,8 @@ The function will be executed before each file upload. Uploading will be aborted
 
 ```js
 import React, { useState, CSSProperties } from 'react';
-import { Upload, Button, Message, Modal, Grid, Slider } from '@arco-design/web-react';
-import { IconMinus, IconPlus, IconRotateLeft, IconUpload } from '@arco-design/web-react/icon';
+import { Upload, Button, Message, Modal, Grid, Slider } from '@sensoro-design/react';
+import { IconMinus, IconPlus, IconRotateLeft, IconUpload } from '@sensoro-design/react/icon';
 import EasyCropper from 'react-easy-crop';
 
 async function _getCroppedImg(url, pixelCrop, rotation = 0) {

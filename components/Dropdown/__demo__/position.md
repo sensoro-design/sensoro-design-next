@@ -14,7 +14,7 @@ title:
 Six popup `position` are available: `top`, `tl` (top-left), `tr` (top-right), `bottom (default)`, `bl` (bottom-left), `br` (bottom-right)。
 
 ```js
-import { Dropdown, Menu, Button, Space } from '@arco-design/web-react';
+import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
 
 const positions = ['bl', 'bottom', 'br', 'tl', 'top', 'tr'];
 const descriptions = ['BottomLeft', 'BottomCenter', 'BottomRight', 'TopLeft', 'Top', 'TopRight'];

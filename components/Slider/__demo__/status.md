@@ -14,7 +14,7 @@ title:
 Default state and disabled state.
 
 ```js
-import { Slider } from '@arco-design/web-react';
+import { Slider } from '@sensoro-design/react';
 
 function Demo () {
   return (

@@ -15,7 +15,7 @@ title:
 Set `lineless` to hide the connection line.
 
 ```js
-import { Steps } from '@arco-design/web-react';
+import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

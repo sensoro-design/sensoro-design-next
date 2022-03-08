@@ -14,7 +14,7 @@ title:
 Basic usage. Two separation options are available: separated with icon and separated with slash.
 
 ```js
-import { Breadcrumb } from '@arco-design/web-react';
+import { Breadcrumb } from '@sensoro-design/react';
 
 const BreadcrumbItem = Breadcrumb.Item;
 

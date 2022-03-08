@@ -14,7 +14,7 @@ title:
 Basic usage of spacing components.
 
 ```js
-import { Space, Button, Switch, Typography, Tag } from '@arco-design/web-react';
+import { Space, Button, Switch, Typography, Tag } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space>

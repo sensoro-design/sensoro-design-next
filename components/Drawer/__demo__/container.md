@@ -15,7 +15,7 @@ Use `getPopupContainer` to specify the parent node where the drawer should mount
 
 ```js
 import { useState, useRef } from 'react';
-import { Drawer, Button } from '@arco-design/web-react';
+import { Drawer, Button } from '@sensoro-design/react';
 
 const wrapperStyle = {
   width: '100%',

@@ -14,7 +14,7 @@ title:
 Specify `allowCreate` as `true` to create entries that do not exist in the options.
 
 ```js
-import { Select, Space } from '@arco-design/web-react';
+import { Select, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
 const options = [];

@@ -15,7 +15,7 @@ the `trigger` property can be an array.
 
 
 ```js
-import { Trigger, Button, Input, Skeleton, Typography } from '@arco-design/web-react';
+import { Trigger, Button, Input, Skeleton, Typography } from '@sensoro-design/react';
 
 function Popup() {
   return <div className="demo-trigger-popup" style={{ width: 300 }}>

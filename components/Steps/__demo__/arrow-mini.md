@@ -14,7 +14,7 @@ title:
 By specifying `type:'arrow', size:'small'`, you can use mini-arrow type step bar. However, only horizontal step bar are supported. And `description` will be ignored.
 
 ```js
-import { Steps } from '@arco-design/web-react';
+import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

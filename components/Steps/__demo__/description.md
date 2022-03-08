@@ -14,7 +14,7 @@ title:
 Use `description` to add description information.
 
 ```js
-import { Steps } from '@arco-design/web-react';
+import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

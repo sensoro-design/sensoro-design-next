@@ -14,7 +14,7 @@ title:
 Show loading effect in dialog.
 
 ```js
-import { Modal, Button, Table, Spin } from '@arco-design/web-react';
+import { Modal, Button, Table, Spin } from '@sensoro-design/react';
 
 function getDataFromServer() {
   return new Promise((resolve, reject) => {

@@ -15,7 +15,7 @@ If the avatar content is text, the font size will be automatically adjusted to f
 
 ```js
 import { useState } from 'react';
-import { Avatar, Button } from '@arco-design/web-react';
+import { Avatar, Button } from '@sensoro-design/react';
 
 function Demo() {
   const [index, setIndex] = useState(0);

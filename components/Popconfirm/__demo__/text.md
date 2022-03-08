@@ -14,7 +14,7 @@ title:
 Custom button text.
 
 ```js
-import { Popconfirm, Message, Button } from '@arco-design/web-react';
+import { Popconfirm, Message, Button } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

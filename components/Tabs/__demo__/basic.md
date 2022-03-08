@@ -14,7 +14,7 @@ title:
 Basic usage example.
 
 ```js
-import { Tabs, Typography } from '@arco-design/web-react';
+import { Tabs, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 

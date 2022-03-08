@@ -14,7 +14,7 @@ title:
 There are four types of message modal dialog: `info`, `success`, `warning`, and `error`. Only a button is provided to close message modal dialog.
 
 ```js
-import { Modal, Button, Space } from '@arco-design/web-react';
+import { Modal, Button, Space } from '@sensoro-design/react';
 
 function info() {
   Modal.info({

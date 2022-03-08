@@ -14,7 +14,7 @@ title:
 Use `Statistics` when you need to highlight a certain number or group of numbers or display statistical data with descriptions.
 
 ```js
-import { Statistic } from '@arco-design/web-react';
+import { Statistic } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

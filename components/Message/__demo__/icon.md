@@ -14,8 +14,8 @@ title:
 Set `icon` to customize the icon.
 
 ```js
-import { Message, Button, Icon, Space } from '@arco-design/web-react';
-import { IconFaceSmileFill } from '@arco-design/web-react/icon';
+import { Message, Button, Icon, Space } from '@sensoro-design/react';
+import { IconFaceSmileFill } from '@sensoro-design/react/icon';
 
 const IconFont = Icon.addFromIconFontCn({ src: '//at.alicdn.com/t/font_180975_26f1p759rvn.js' });
 

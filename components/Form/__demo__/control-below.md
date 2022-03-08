@@ -27,7 +27,7 @@ You can also perform Form validation. In other words, you don't need to add even
 Set the initial value by setting initialValue to Form.Control instead of defaultValue.
 
 ```js
-import { Form, Input, InputNumber, Message } from '@arco-design/web-react';
+import { Form, Input, InputNumber, Message } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 const FormControl = Form.Control;

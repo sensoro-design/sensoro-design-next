@@ -14,7 +14,7 @@ title:
 The basic usage of TimePicker.
 
 ```js
-import { TimePicker } from '@arco-design/web-react';
+import { TimePicker } from '@sensoro-design/react';
 
 ReactDOM.render(<TimePicker style={{ width: 194 }} />, CONTAINER);
 ```

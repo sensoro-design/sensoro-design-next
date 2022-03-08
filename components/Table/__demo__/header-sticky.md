@@ -14,7 +14,7 @@ title:
 Cooperate with `react-sticky` to achieve the effect of header sticky.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 const columns = [

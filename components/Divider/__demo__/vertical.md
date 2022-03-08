@@ -14,7 +14,7 @@ title:
 Specify `type` as `vertical` to make it vertical. Vertical dividers can't contain texts.
 
 ```js
-import { Divider, Typography } from '@arco-design/web-react';
+import { Divider, Typography } from '@sensoro-design/react';
 
 const { Text } = Typography;
 

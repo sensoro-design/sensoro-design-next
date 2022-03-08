@@ -14,8 +14,8 @@ title:
 Specify `icon` to customize the icon of the node.
 
 ```js
-import { Steps } from '@arco-design/web-react';
-import { IconHome, IconLoading, IconThumbUp } from '@arco-design/web-react/icon';
+import { Steps } from '@sensoro-design/react';
+import { IconHome, IconLoading, IconThumbUp } from '@sensoro-design/react/icon';
 
 const Step = Steps.Step;
 

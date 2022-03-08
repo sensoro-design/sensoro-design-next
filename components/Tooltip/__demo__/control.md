@@ -16,7 +16,7 @@ Use `popupVisible` and `onVisibleChange` to control the expansion and collapse o
 The specific trigger timing of onVisibleChange can be found in the [Trigger](/react/components/trigger#controlled-usage) component document
 
 ```js
-import { Tooltip, Button, Switch, Typography } from '@arco-design/web-react';
+import { Tooltip, Button, Switch, Typography } from '@sensoro-design/react';
 
 const { Text } = Typography;
 

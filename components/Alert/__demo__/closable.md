@@ -14,7 +14,7 @@ title:
 Use `closable = true` to turn on the close button.
 
 ```js
-import { Alert, Grid } from '@arco-design/web-react';
+import { Alert, Grid } from '@sensoro-design/react';
 
 const { Row, Col } = Grid;
 

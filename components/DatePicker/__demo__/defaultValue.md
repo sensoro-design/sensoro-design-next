@@ -14,7 +14,7 @@ title:
 DatePicker has a default value.
 
 ```js
-import { DatePicker } from '@arco-design/web-react';
+import { DatePicker } from '@sensoro-design/react';
 import dayjs from 'dayjs';
 
 const { YearPicker, MonthPicker, WeekPicker, RangePicker } = DatePicker;

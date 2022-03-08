@@ -14,8 +14,8 @@ title:
 The extra operations are set by `actions` and arranged horizontally by default. If you have more operation buttons, we also provide the `simple` mode to put the buttons in a drop-down box. Note that in the `simple` mode, the description will be unable to display.
 
 ```js
-import { Image, Tooltip } from '@arco-design/web-react';
-import { IconEye, IconDownload, IconInfoCircle } from '@arco-design/web-react/icon';
+import { Image, Tooltip } from '@sensoro-design/react';
+import { IconEye, IconDownload, IconInfoCircle } from '@sensoro-design/react/icon';
 
 function DemoImage(props) {
   const [visible, setVisible] = React.useState(false);

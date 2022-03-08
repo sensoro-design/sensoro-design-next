@@ -14,7 +14,7 @@ title:
 By changing the value of `total`, solve the situation where the total number of pages cannot be calculated.
 
 ```js
-import { Pagination } from '@arco-design/web-react';
+import { Pagination } from '@sensoro-design/react';
 
 class Demo extends React.Component {
   constructor(props) {

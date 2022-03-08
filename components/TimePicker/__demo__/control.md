@@ -15,7 +15,7 @@ title:
 
 ```js
 import { useState } from 'react';
-import { TimePicker } from '@arco-design/web-react';
+import { TimePicker } from '@sensoro-design/react';
 
 function Demo() {
   const [value, setValue] = useState();

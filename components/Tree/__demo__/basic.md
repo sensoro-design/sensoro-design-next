@@ -14,7 +14,7 @@ title:
 Give each `TreeNode` node a globally unique `key` (required), and the `title` is the content to be displayed on the node.
 
 ```js
-import { Tree } from '@arco-design/web-react';
+import { Tree } from '@sensoro-design/react';
 
 const TreeNode = Tree.Node;
 

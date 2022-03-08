@@ -14,7 +14,7 @@ title:
 Limit the maximum number of uploaded files.
 
 ```js
-import { Upload, Message } from '@arco-design/web-react';
+import { Upload, Message } from '@sensoro-design/react';
 
 function Demo () {
   return (

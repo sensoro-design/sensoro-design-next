@@ -14,8 +14,8 @@ title:
 You can pass in custom icons through the `icon` parameter, and `description` to modify the description.
 
 ```js
-import { Empty } from '@arco-design/web-react';
-import { IconExclamation } from '@arco-design/web-react/icon';
+import { Empty } from '@sensoro-design/react';
+import { IconExclamation } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Empty

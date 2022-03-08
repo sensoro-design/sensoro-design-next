@@ -14,7 +14,7 @@ title:
 Customize the action items through `action`.
 
 ```js
-import { Alert, Button, Space } from '@arco-design/web-react';
+import { Alert, Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

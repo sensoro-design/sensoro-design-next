@@ -39,7 +39,7 @@ exports.site = (config, env) => {
   config.module.rules[1].use[1].options.demoDir = '__demo__';
 
   config.module.rules[1].use[1].options.autoHelmet = {
-    formatTitle: (value) => `${value} | ArcoDesign`,
+    formatTitle: (value) => `${value} | SensoroDesign`,
   };
 
   // esbuild
@@ -57,7 +57,7 @@ exports.site = (config, env) => {
   config.plugins[0] = new HtmlWebpackPlugin({
     template: path.resolve(__dirname, '../site/public/index.ejs'),
     templateParameters: {
-      title: 'Arco Design - 企业级产品的完整设计和开发解决方案',
+      title: 'Senosro Design - 企业级产品的完整设计和开发解决方案',
       lang: 'zh',
     },
     chunks: ['react'],
@@ -69,13 +69,14 @@ exports.site = (config, env) => {
       template: path.resolve(__dirname, '../site/public/index.ejs'),
       templateParameters: {
         title:
-          'Arco Design - Complete design and development solutions for enterprise-level products',
+          'Senosro Design - Complete design and development solutions for enterprise-level products',
         lang: 'en',
       },
       chunks: ['react-en'],
     })
   );
 
+  config.resolve.alias['@sensoro-design/react'] = path.resolve(__dirname, '..');
   config.resolve.alias['@arco-design/web-react'] = path.resolve(__dirname, '..');
   // config.resolve.alias['dayjs$'] = 'moment-timezone';
 

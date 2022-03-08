@@ -14,7 +14,7 @@ title:
 Set `mode` as `button` to use a numeric input box with buttons.
 
 ```js
-import { InputNumber } from '@arco-design/web-react';
+import { InputNumber } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

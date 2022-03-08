@@ -14,7 +14,7 @@ title:
 A simple progress bar.
 
 ```js
-import { Progress } from '@arco-design/web-react';
+import { Progress } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

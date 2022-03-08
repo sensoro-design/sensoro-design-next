@@ -16,7 +16,7 @@ Specify `fixed: "left"` or `fixed: "right"` in `column` to fix the column to the
 **Note:** To be used with `scroll={{ x: number }}`, there needs to be a column in `columns` that does not set the width and is adaptive, otherwise there will be style problems.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

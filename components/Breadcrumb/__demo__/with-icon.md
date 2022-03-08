@@ -14,8 +14,8 @@ title:
 Customize icons in content.
 
 ```js
-import { Breadcrumb, Space } from '@arco-design/web-react';
-import { IconHome } from '@arco-design/web-react/icon';
+import { Breadcrumb, Space } from '@sensoro-design/react';
+import { IconHome } from '@sensoro-design/react/icon';
 
 const BreadcrumbItem = Breadcrumb.Item;
 

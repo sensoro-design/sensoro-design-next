@@ -14,7 +14,7 @@ title:
 Basic usage of skeleton screen.
 
 ```js
-import { Skeleton } from '@arco-design/web-react';
+import { Skeleton } from '@sensoro-design/react';
 
 ReactDOM.render(<Skeleton></Skeleton>, CONTAINER);
 ```

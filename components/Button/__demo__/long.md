@@ -14,8 +14,8 @@ title:
 The button width adapts to the container width.
 
 ```js
-import { Button, Space } from '@arco-design/web-react';
-import { IconUpload } from '@arco-design/web-react/icon';
+import { Button, Space } from '@sensoro-design/react';
+import { IconUpload } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space

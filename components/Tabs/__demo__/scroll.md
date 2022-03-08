@@ -15,7 +15,7 @@ Support scrolling operation via scroll wheel or touch pad.
 
 ```js
 import { useState } from 'react';
-import { Tabs, Radio } from '@arco-design/web-react';
+import { Tabs, Radio } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 

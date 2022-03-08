@@ -14,7 +14,7 @@ title:
 Use `alignCenter` combined with `style` to set the position of the dialog.
 
 ```js
-import { Modal, Button } from '@arco-design/web-react';
+import { Modal, Button } from '@sensoro-design/react';
 
 function Demo() {
   const [visible, setVisible] = React.useState(false);

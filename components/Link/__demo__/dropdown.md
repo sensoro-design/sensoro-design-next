@@ -15,8 +15,8 @@ Display a drop-down menu by the Dropdown component.
 
 
 ```js
-import { Link, Dropdown, Menu, Divider } from '@arco-design/web-react';
-import { IconDown } from '@arco-design/web-react/icon';
+import { Link, Dropdown, Menu, Divider } from '@sensoro-design/react';
+import { IconDown } from '@sensoro-design/react/icon';
 
 const Droplist = (
   <Menu>

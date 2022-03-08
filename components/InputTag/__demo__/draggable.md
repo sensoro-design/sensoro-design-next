@@ -14,7 +14,7 @@ title:
 Specify the `dragToSort` property to allow sort the entered values by dragging.
 
 ```js
-import { InputTag } from '@arco-design/web-react';
+import { InputTag } from '@sensoro-design/react';
 
 ReactDOM.render(
   <InputTag style={{ maxWidth: 350 }} allowClear dragToSort defaultValue={['a', 'b', 'c', 'd']} />,

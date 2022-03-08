@@ -20,7 +20,7 @@ import { useRef, useEffect, useState } from 'react';
 import {
   Form, AutoComplete, Input, Select, Button, Tooltip, Checkbox, Switch, Radio,
   Cascader, Message, InputNumber, Rate, Slider, Upload, Grid, DatePicker, Modal
-} from '@arco-design/web-react';
+} from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

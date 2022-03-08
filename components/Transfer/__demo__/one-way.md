@@ -14,7 +14,7 @@ title:
 Specify `oneWay` to only allow one-way movement
 
 ```js
-import { Transfer } from '@arco-design/web-react';
+import { Transfer } from '@sensoro-design/react';
 
 function Demo() {
   const dataSource = new Array(8).fill(null).map((_, index) => ({

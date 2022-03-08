@@ -7,7 +7,7 @@ skip: true
 自动调整弹出层位置。
 
 ```js
-import { Button, Popconfirm, Message, ResizeBox } from '@arco-design/web-react';
+import { Button, Popconfirm, Message, ResizeBox } from '@sensoro-design/react';
 
 const props = {
   getPopupContainer: () => document.querySelector('.popup-container'),

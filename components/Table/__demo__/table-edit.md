@@ -15,7 +15,7 @@ Editable cell.
 
 ```js
 import React, { useState, useRef, useEffect, useContext, useCallback } from 'react';
-import { Button, Table, Input, Select, Form } from '@arco-design/web-react';
+import { Button, Table, Input, Select, Form } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

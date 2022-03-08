@@ -14,8 +14,8 @@ title:
 This is an example including paging, content on the right, and list operations.
 
 ```js
-import { List, Avatar } from '@arco-design/web-react';
-import { IconHeart, IconMessage, IconStar } from '@arco-design/web-react/icon';
+import { List, Avatar } from '@sensoro-design/react';
+import { IconHeart, IconMessage, IconStar } from '@sensoro-design/react/icon';
 
 const names = ['Socrates', 'Balzac', 'Plato'];
 

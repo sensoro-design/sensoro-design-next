@@ -15,7 +15,7 @@ Coordinating the selection of provinces and cities is a common use case.
 
 ```js
 import { useEffect, useState } from 'react';
-import { Select, Space } from '@arco-design/web-react';
+import { Select, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
 

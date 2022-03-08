@@ -15,8 +15,8 @@ A variety of status are available: `default`, `processing`, `success`, `warning`
 
 
 ```js
-import { Badge, Divider, Space } from '@arco-design/web-react';
-import { IconMessage } from '@arco-design/web-react/icon';
+import { Badge, Divider, Space } from '@sensoro-design/react';
+import { IconMessage } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <Space size="large" direction="vertical">

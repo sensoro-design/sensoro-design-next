@@ -13,8 +13,8 @@ title:
 All features.
 
 ```js
-import { Result, Button, Typography } from '@arco-design/web-react';
-import { IconFaceFrownFill } from '@arco-design/web-react/icon';
+import { Result, Button, Typography } from '@sensoro-design/react';
+import { IconFaceFrownFill } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <div >

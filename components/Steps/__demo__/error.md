@@ -14,7 +14,7 @@ title:
 The error status is specified by the parameter `status`.
 
 ```js
-import { Steps } from '@arco-design/web-react';
+import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

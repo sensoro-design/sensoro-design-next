@@ -14,7 +14,7 @@ title:
 The element will be fixed when it scrolls down to a certain distance from the top of the viewport.
 
 ```js
-import { Affix, Button } from '@arco-design/web-react';
+import { Affix, Button } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Affix offsetTop={80}>

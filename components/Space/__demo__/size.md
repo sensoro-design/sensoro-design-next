@@ -15,7 +15,7 @@ Built-in 4 sizes, `mini-4px` `small-8px (default)` `medium-16px` `large-24px`, a
 
 ```js
 import { useState } from 'react';
-import { Space, Button, Radio } from '@arco-design/web-react';
+import { Space, Button, Radio } from '@sensoro-design/react';
 
 function Demo() {
   const [size, setSize] = useState('small');

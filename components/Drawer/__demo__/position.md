@@ -15,8 +15,8 @@ Use `placement` to customize the position where the drawer will slide out from.
 
 ```js
 import { useState } from 'react';
-import { Drawer, Trigger, Skeleton, Button, Radio } from '@arco-design/web-react';
-import { IconExclamationCircleFill } from '@arco-design/web-react/icon';
+import { Drawer, Trigger, Skeleton, Button, Radio } from '@sensoro-design/react';
+import { IconExclamationCircleFill } from '@sensoro-design/react/icon';
 
 const RadioGroup = Radio.Group;
 

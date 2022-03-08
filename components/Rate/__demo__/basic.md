@@ -14,7 +14,7 @@ title:
 Basic usage of Rate.
 
 ```js
-import { Rate } from '@arco-design/web-react';
+import { Rate } from '@sensoro-design/react';
 
 ReactDOM.render(<Rate />, CONTAINER);
 ```

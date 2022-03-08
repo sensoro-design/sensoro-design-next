@@ -14,8 +14,8 @@ title:
 A basic comment component with author, avatar, time and actions.
 
 ```js
-import { Comment, Avatar  } from '@arco-design/web-react';
-import { IconHeart, IconMessage, IconStar, IconStarFill, IconHeartFill } from '@arco-design/web-react/icon';
+import { Comment, Avatar  } from '@sensoro-design/react';
+import { IconHeart, IconMessage, IconStar, IconStarFill, IconHeartFill } from '@sensoro-design/react/icon';
 
 const Demo = () => {
   const [like, setLike] = React.useState();

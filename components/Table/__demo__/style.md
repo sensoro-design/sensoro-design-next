@@ -14,7 +14,7 @@ title:
 There are many ways to customize the row and column styles. `rowClassName` can customize the style of each row, and `Column.className` can customize the style of columns. In addition, there are `headerCellStyle` and `bodyCellStyle` to customize the styles of the columns of the table header and table body.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

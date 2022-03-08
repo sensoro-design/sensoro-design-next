@@ -14,8 +14,8 @@ title:
 Custom rendering of each item through `render`.
 
 ```js
-import { Transfer } from '@arco-design/web-react';
-import { IconStar } from '@arco-design/web-react/icon';
+import { Transfer } from '@sensoro-design/react';
+import { IconStar } from '@sensoro-design/react/icon';
 
 function Demo() {
   const dataSource = new Array(8).fill(null).map((_, index) => ({

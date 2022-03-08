@@ -14,7 +14,7 @@ title:
 Basic usage of the step bar component.
 
 ```js
-import { Steps, Divider } from '@arco-design/web-react';
+import { Steps, Divider } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 

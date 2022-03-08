@@ -15,8 +15,8 @@ Vertical step bar.
 
 ```js
 import { useState, useRef } from 'react';
-import { Steps, Button } from '@arco-design/web-react';
-import { IconLeft, IconRight } from '@arco-design/web-react/icon';
+import { Steps, Button } from '@sensoro-design/react';
+import { IconLeft, IconRight } from '@sensoro-design/react/icon';
 
 const Step = Steps.Step;
 

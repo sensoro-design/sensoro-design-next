@@ -14,7 +14,7 @@ title:
 There is a `children` field in `data`, or set as a custom field by `childrenColumnName` to display tree data.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {

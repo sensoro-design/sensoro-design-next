@@ -14,7 +14,7 @@ title:
 In addition to the default head switch, it also supports dropdown selection of heads for faster positioning.
 
 ```js
-import { Calendar } from '@arco-design/web-react';
+import { Calendar } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div style={{width: '100%', overflow: 'auto'}}>

@@ -14,7 +14,7 @@ title:
 Collapse is used to group and hide complex content areas. You can decide which panels to be expanded.
 
 ```js
-import { Collapse, Divider } from '@arco-design/web-react';
+import { Collapse, Divider } from '@sensoro-design/react';
 
 const CollapseItem = Collapse.Item;
 

@@ -14,7 +14,7 @@ title:
 Customize the return value through the `treeCheckStrategy` property.
 
 ```js
-import { TreeSelect, Radio } from '@arco-design/web-react';
+import { TreeSelect, Radio } from '@sensoro-design/react';
 import { useState } from 'react';
 
 

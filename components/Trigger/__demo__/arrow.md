@@ -17,7 +17,7 @@ Show arrow node.
 **The popup layer has no style by default.**
 
 ```js
-import { Trigger, Button, Input, Skeleton } from '@arco-design/web-react';
+import { Trigger, Button, Input, Skeleton } from '@sensoro-design/react';
 
 function Demo () {
 

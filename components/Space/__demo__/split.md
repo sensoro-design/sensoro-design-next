@@ -14,7 +14,7 @@ title:
 Set separators for adjacent child elements.
 
 ```js
-import { Space, Link, Divider } from '@arco-design/web-react';
+import { Space, Link, Divider } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space split={<Divider type="vertical" />}>

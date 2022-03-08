@@ -14,7 +14,7 @@ title:
 Used for password input.
 
 ```js
-import { Input, Space } from '@arco-design/web-react';
+import { Input, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space wrap>

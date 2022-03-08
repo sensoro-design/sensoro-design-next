@@ -14,7 +14,7 @@ title:
 Basic usage.
 
 ```js
-import { Radio, Message, Space } from '@arco-design/web-react';
+import { Radio, Message, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size={40}>

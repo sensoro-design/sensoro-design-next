@@ -14,8 +14,8 @@ title:
 The function buttons on the control preview control bar can be sorted and filtered through `actionLayout`. Among them, `extra` represents the buttons in `actions`, and the `key` in `actions` also supports separate sorting.
 
 ```js
-import { Image, Tooltip } from '@arco-design/web-react';
-import { IconDownload, IconInfoCircle } from '@arco-design/web-react/icon';
+import { Image, Tooltip } from '@sensoro-design/react';
+import { IconDownload, IconInfoCircle } from '@sensoro-design/react/icon';
 
 function Demo() {
   return (

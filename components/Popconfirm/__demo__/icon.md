@@ -14,8 +14,8 @@ title:
 Customize icon.
 
 ```js
-import { Popconfirm, Message, Button } from '@arco-design/web-react';
-import { IconFaceSmileFill } from '@arco-design/web-react/icon';
+import { Popconfirm, Message, Button } from '@sensoro-design/react';
+import { IconFaceSmileFill } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <div>

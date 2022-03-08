@@ -14,7 +14,7 @@ title:
 By specifying `gutter` on `Row`, the area interval of the grid can be changed.
 
 ```js
-import { Grid, Divider } from '@arco-design/web-react';
+import { Grid, Divider } from '@sensoro-design/react';
 
 const Row = Grid.Row;
 const Col = Grid.Col;

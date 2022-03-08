@@ -14,7 +14,7 @@ title:
 Use `tooltips` to provide hint information for each rating when the mouse is hovering.
 
 ```js
-import { Rate } from '@arco-design/web-react';
+import { Rate } from '@sensoro-design/react';
 
 ReactDOM.render(
   <div>

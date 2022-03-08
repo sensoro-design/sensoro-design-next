@@ -14,7 +14,7 @@ title:
 The Popconfirm supports 12 different directions. They are: `top left`, `top`, `top right`, `bottom left`, `bottom`, `bottom right`, `left top`, `left`, `left bottom`, `right top`, `right` , `bottom right`.
 
 ```js
-import { Popconfirm, Button, Message } from '@arco-design/web-react';
+import { Popconfirm, Button, Message } from '@sensoro-design/react';
 
 const props = {
   title: 'Are you sure you want to delete? ',

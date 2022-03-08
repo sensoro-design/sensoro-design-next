@@ -16,7 +16,7 @@ You can use 'validateLevel' to set form validation failures to 'warning' and not
 
 
 ```js
-import { Form, Input, Button, Message, InputNumber } from '@arco-design/web-react';
+import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

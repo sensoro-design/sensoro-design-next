@@ -14,7 +14,7 @@ title:
 Message has 2 different positions.
 
 ```js
-import { Message, Button, Space } from '@arco-design/web-react';
+import { Message, Button, Space } from '@sensoro-design/react';
 
 ReactDOM.render(
   <Space size="large">

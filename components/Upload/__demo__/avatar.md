@@ -13,8 +13,8 @@ title:
 Click to upload user's avatar, and validate size and format of picture with beforeUpload.
 
 ```js
-import { Upload, Progress } from '@arco-design/web-react';
-import { IconPlus, IconEdit } from '@arco-design/web-react/icon';
+import { Upload, Progress } from '@sensoro-design/react';
+import { IconPlus, IconEdit } from '@sensoro-design/react/icon';
 
 function Demo () {
   const [file, setFile] = React.useState()

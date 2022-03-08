@@ -16,7 +16,7 @@ Specify `showSearch=true` to search for the expanded options, and cooperate with
 When the search box is focused, the entered content will be cleared by default, however the content can be retained by specifying `showSearch={ retainInputValue: true }`.
 
 ```js
-import { Select, Space } from '@arco-design/web-react';
+import { Select, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
 const cities = ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Chengdu', 'Wuhan'];

@@ -16,7 +16,7 @@ The 'form.provider' component allows you to manage data from multiple forms. ` 2
 
 
 ```js
-import { Form, Grid, Input, Button, Modal, Message, Tag, Typography, Table, Select, InputNumber, Space } from '@arco-design/web-react';
+import { Form, Grid, Input, Button, Modal, Message, Tag, Typography, Table, Select, InputNumber, Space } from '@sensoro-design/react';
 
 
 const defaultData = [...(new Array(5))].map((_, index) => {

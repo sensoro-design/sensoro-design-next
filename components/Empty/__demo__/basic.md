@@ -14,7 +14,7 @@ title:
 Basic usage of `Empty` component.
 
 ```js
-import { Empty } from '@arco-design/web-react';
+import { Empty } from '@sensoro-design/react';
 
 ReactDOM.render(<Empty />, CONTAINER);
 ```

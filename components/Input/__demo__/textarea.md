@@ -14,7 +14,7 @@ title:
 A textarea input example.
 
 ```js
-import { Input, Space } from '@arco-design/web-react';
+import { Input, Space } from '@sensoro-design/react';
 
 const TextArea = Input.TextArea;
 

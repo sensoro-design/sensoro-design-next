@@ -14,7 +14,7 @@ title:
 Examples of nested tables, click the expand button to display the sub tables in the expanded area.
 
 ```js
-import { Table } from '@arco-design/web-react';
+import { Table } from '@sensoro-design/react';
 
 const columns = [
   {
