@@ -16,7 +16,7 @@ npm i @arco-design/theme-line
 
 ### step1 移除对 Arco 组件库默认样式的引用
 
-确定移除项目中对`@arco-design/web-react` 组件库样式文件的引用，例如 `@arco-design/web-react/dist/css/arco.css`或`@arco-design/web-react/dist/index.less`
+确定移除项目中对`@sensoro-design/react` 组件库样式文件的引用，例如 `@sensoro-design/react/dist/css/arco.css`或`@sensoro-design/react/dist/index.less`
 
 ### step2 添加配置项
 

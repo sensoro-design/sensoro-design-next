@@ -81,7 +81,7 @@ Since the material platform takes the form of rendering Demo at runtime, by defa
 - lodash
 - date-fns
 - @bytedesign/web-react
-- @arco-design/web-react
+- @sensoro-design/react
 - NPM package corresponding to the material itself
 
 If dependencies other than the above must be introduced to ensure the normal operation of Demo, we provide a special way to meet this demand. Follow the steps below:

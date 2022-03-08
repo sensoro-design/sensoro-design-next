@@ -79,7 +79,7 @@ export { default as Basic } from './basic';
 - lodash
 - date-fns
 - @bytedesign/web-react
-- @arco-design/web-react
+- @sensoro-design/react
 - 物料本身对应的 NPM 包
 
 如果必须引入上述之外的依赖才能保证 Demo 的正常运行，我们提供了一种特殊的方式来满足这一需求。按照以下步骤操作：

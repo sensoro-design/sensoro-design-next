@@ -24,19 +24,19 @@ import ACCard from '../src/widget/Card';
 
 ```bash
 // npm
-npm i @arco-design/web-react
+npm i @sensoro-design/react
 
 // yarn
-yarn add @arco-design/web-react
+yarn add @sensoro-design/react
 ```
 
 ### 通过 CDN 使用
 
 除了可以通过 npm 安装之外，你也可以直接使用 CDN 资源，我们提供了 umd 格式的代码产物。
 
-* 开发环境: https://unpkg.com/@arco-design/web-react@latest/dist/arco.development.js
-* 生产环境: https://unpkg.com/@arco-design/web-react@latest/dist/arco.min.js
-  * 图标: https://unpkg.com/@arco-design/web-react@latest/dist/arco-icon.min.js
+* 开发环境: https://unpkg.com/@sensoro-design/react@latest/dist/arco.development.js
+* 生产环境: https://unpkg.com/@sensoro-design/react@latest/dist/arco.min.js
+  * 图标: https://unpkg.com/@sensoro-design/react@latest/dist/arco-icon.min.js
 
 不过，我们不建议通过 CDN 使用，因为 CDN 会引入全量的组件代码，这样会影响页面加载速度。
 
@@ -47,8 +47,8 @@ yarn add @arco-design/web-react
 ```js
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button } from "@arco-design/web-react";
-import "@arco-design/web-react/dist/css/arco.css";
+import { Button } from "@sensoro-design/react";
+import "@sensoro-design/react/dist/css/arco.css";
 
 ReactDOM.render(
   <Button type="primary">Hello Arco</Button>,
@@ -71,7 +71,7 @@ ReactDOM.render(
 
 ### tree shaking
 
-`@arco-design/web-react` 默认支持 `tree shaking`。直接引入 `import { Button } from '@arco-design/web-react';` 即可按需加载。
+`@sensoro-design/react` 默认支持 `tree shaking`。直接引入 `import { Button } from '@sensoro-design/react';` 即可按需加载。
 
 ### ArcoWebpackPlugin
 
@@ -112,7 +112,7 @@ plugins: [
   [
     'babel-plugin-import',
     {
-      libraryName: '@arco-design/web-react',
+      libraryName: '@sensoro-design/react',
       libraryDirectory: 'es',
       camel2DashComponentName: false,
       style: true, // 样式按需加载
@@ -130,7 +130,7 @@ plugins: [
   [
     'babel-plugin-import',
     {
-      libraryName: '@arco-design/web-react/icon',
+      libraryName: '@sensoro-design/react/icon',
       libraryDirectory: 'react-icon',
       camel2DashComponentName: false,
     },

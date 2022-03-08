@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '@arco-design/web-react';
+import { Link } from '@sensoro-design/react';
 import IconDesignLab from '../../assets/logo/logo_DesignLab.svg';
 import IconIconBox from '../../assets/logo/logo_IconBox.svg';
 import IconArcoPro from '../../assets/logo/logo_ArcoPro.svg';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Button, Slider, Select, Space } from '@arco-design/web-react';
+import { Typography, Button, Slider, Select, Space } from '@sensoro-design/react';
 import {
   IconUndo,
   IconNav,
@@ -49,7 +49,7 @@ import {
   IconVideoCamera,
   IconWoman,
   IconCopyright,
-} from '@arco-design/web-react/icon';
+} from '@sensoro-design/react/icon';
 import styles from './index.module.less';
 import useLocale from '../../hooks/useLocale';
 

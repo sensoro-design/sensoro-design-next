@@ -11,8 +11,8 @@ import {
   Button,
   Modal,
   Typography,
-} from '@arco-design/web-react';
-import * as icons from '@arco-design/web-react/icon/index.es.js';
+} from '@sensoro-design/react';
+import * as icons from '@sensoro-design/react/icon/index.es.js';
 
 const RadioGroup = Radio.Group;
 const { Paragraph } = Typography;

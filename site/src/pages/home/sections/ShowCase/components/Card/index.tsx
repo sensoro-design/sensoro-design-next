@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconArrowRight } from '@arco-design/web-react/icon';
+import { IconArrowRight } from '@sensoro-design/react/icon';
 import styles from './index.module.less';
 import { ShowCaseCardProps } from '../../../../../../hooks/useShowCase';
 

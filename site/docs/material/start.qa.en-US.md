@@ -74,7 +74,7 @@ In order to support users to load the Arco component styles on which materials d
 import'./index.less';
 
 // If the material uses Arco components, declare its dependencies
-import'@arco-design/web-react/es/Button/style';
+import'@sensoro-design/react/es/Button/style';
 
 // If the material uses other materials, also declare its style dependency
 import'@namespace/some-other-material/es/style';
@@ -107,8 +107,8 @@ One possible solution is to explicitly declare the reference to the CommonJS mod
 
 ```javascript
 // change
-import {Button} from'@arco-design/web-react';
+import {Button} from'@sensoro-design/react';
 
 // to
-import {Button} from'@arco-design/web-react/lib';
+import {Button} from'@sensoro-design/react/lib';
 ```

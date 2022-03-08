@@ -8,7 +8,7 @@
 
 ## NPM 包名改变
 
-此次升级，组件库由 ByteDesign 更名为 **ArcoDesign**，包名更新为 **@arco-design/web-react**。
+此次升级，组件库由 ByteDesign 更名为 **ArcoDesign**，包名更新为 **@sensoro-design/react**。
 
 **迁移步骤：** 
 
@@ -17,35 +17,35 @@
 > 由于组件库包名变更，为了避免误引用旧的组件库包，最好将 @bytedesign/web-react 卸载掉。
 
 ```bash
-npm remove @bytedesign/web-react && npm i @arco-design/web-react
+npm remove @bytedesign/web-react && npm i @sensoro-design/react
 ```
 
-2. 项目中所有用到的包名全局替换：@bytedesign/web-react -> @arco-design/web-react
+2. 项目中所有用到的包名全局替换：@bytedesign/web-react -> @sensoro-design/react
 
 > 这一步可利用编辑器的全局替换功能。
 
 ```diff
 - import { Transfer } from '@bytedesign/web-react';
-+ import { Transfer } from '@arco-design/web-react';
++ import { Transfer } from '@sensoro-design/react';
 
 - import { IconRight, IconLeft } from '@bytedesign/web-react/icon';
-+ import { IconRight, IconLeft } from '@arco-design/web-react/icon';
++ import { IconRight, IconLeft } from '@sensoro-design/react/icon';
 
 - @import '~@bytedesign/web-react/dist/css/byteui.css';
-+ @import '~@arco-design/web-react/dist/css/byteui.css';
++ @import '~@sensoro-design/react/dist/css/byteui.css';
 
 - import '@bytedesign/web-react/dist/css/byteui.css';
-+ import '@arco-design/web-react/dist/css/byteui.css';
++ import '@sensoro-design/react/dist/css/byteui.css';
 ```
 
 3. 替换 css 的文件名：byteui -> arco
 
 ```diff
-- @import '~@arco-design/web-react/dist/css/byteui.css';
-+ @import '~@arco-design/web-react/dist/css/arco.css';
+- @import '~@sensoro-design/react/dist/css/byteui.css';
++ @import '~@sensoro-design/react/dist/css/arco.css';
 
-- import '@arco-design/web-react/dist/css/byteui.css';
-+ import '@arco-design/web-react/dist/css/arco.css';
+- import '@sensoro-design/react/dist/css/byteui.css';
++ import '@sensoro-design/react/dist/css/arco.css';
 ```
 
 ## CSS 类名前缀改变

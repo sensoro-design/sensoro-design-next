@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from 'react';
-import { Grid } from '@arco-design/web-react';
+import { Grid } from '@sensoro-design/react';
 import ResizeObserver from '../../utils/resizeObserver';
 import Chart from './chart';
 import * as chartData from './chartData';

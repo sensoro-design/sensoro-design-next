@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconArrowRight } from '@arco-design/web-react/icon';
+import { IconArrowRight } from '@sensoro-design/react/icon';
 import IcContact1 from '../../assets/ic_contact_1.svg';
 import IcContact2 from '../../assets/ic_contact_2.svg';
 import styles from './style/index.module.less';

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Message } from '@arco-design/web-react';
+import { Message } from '@sensoro-design/react';
 
 const chat = (link) => {
   const aLink = document.createElement('a');

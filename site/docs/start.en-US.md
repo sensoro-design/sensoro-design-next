@@ -24,19 +24,19 @@ import ACCard from '../src/widget/Card';
 
 ```bash
 // npm
-npm i @arco-design/web-react
+npm i @sensoro-design/react
 
 // yarn
-yarn add @arco-design/web-react
+yarn add @sensoro-design/react
 ```
 
 ### CDN
 
 In addition to installing through npm, you can also directly use CDN resources. We provide umd format code.
 
-* Development: https://unpkg.com/@arco-design/web-react@latest/dist/arco.development.js
-* Production: https://unpkg.com/@arco-design/web-react@latest/dist/arco.min.js
-   * Icon: https://unpkg.com/@arco-design/web-react@latest/dist/arco-icon.min.js
+* Development: https://unpkg.com/@sensoro-design/react@latest/dist/arco.development.js
+* Production: https://unpkg.com/@sensoro-design/react@latest/dist/arco.min.js
+   * Icon: https://unpkg.com/@sensoro-design/react@latest/dist/arco-icon.min.js
 
 However, we do not recommend using CDN, because CDN will download the entire library, which will affect the page loading speed.
 
@@ -47,8 +47,8 @@ Take Button component as an example:
 ```js
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button } from "@arco-design/web-react";
-import "@arco-design/web-react/dist/css/arco.css";
+import { Button } from "@sensoro-design/react";
+import "@sensoro-design/react/dist/css/arco.css";
 
 ReactDOM.render(
   <Button type="primary">Hello Arco</Button>,
@@ -71,7 +71,7 @@ ReactDOM.render(
 
 ### tree shaking
 
-`@arco-design/web-react` supports `tree shaking` by default. You can load on demand through importing `import { Button } from '@arco-design/web-react';`.
+`@sensoro-design/react` supports `tree shaking` by default. You can load on demand through importing `import { Button } from '@sensoro-design/react';`.
 
 ### ArcoWebpackPlugin
 
@@ -112,7 +112,7 @@ plugins: [
   [
     'babel-plugin-import',
     {
-      libraryName: '@arco-design/web-react',
+      libraryName: '@sensoro-design/react',
       libraryDirectory: 'es',
       camel2DashComponentName: false,
       style: true, // style
@@ -130,7 +130,7 @@ plugins: [
   [
     'babel-plugin-import',
     {
-      libraryName: '@arco-design/web-react/icon',
+      libraryName: '@sensoro-design/react/icon',
       libraryDirectory: 'react-icon',
       camel2DashComponentName: false,
     },

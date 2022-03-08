@@ -14,7 +14,7 @@ title:
 You can also add items in `iconfont.cn` to the `type` of the `Icon` component. Call the method `Icon.addFromIconfontCn` exposed by the component library, and pass the code of exporting `symbol` from the website into the `src` property to load the project icon library.
 
 ```js
-import { Icon } from '@arco-design/web-react';
+import { Icon } from '@sensoro-design/react';
 
 const IconFont = Icon.addFromIconFontCn({ src: '//at.alicdn.com/t/font_180975_ue66sq60vyd.js' });
 

@@ -10,7 +10,7 @@ exports.component = (config) => {
   config.plugins.pop();
   config.plugins.push(
     new webpack.BannerPlugin({
-      banner: `ArcoDesign v${version}\n\nCopyright 2019-present, Bytedance, Inc.\nAll rights reserved.\n`,
+      banner: `SensoroDesign v${version}\n\nCopyright 2019-present, SensoroFE, Inc.\nAll rights reserved.\n`,
     })
   );
 };
@@ -20,7 +20,7 @@ exports.icon = (config) => {
   config.plugins.pop();
   config.plugins.push(
     new webpack.BannerPlugin({
-      banner: `ArcoDesign v${version}\n\nCopyright 2019-present, Bytedance, Inc.\nAll rights reserved.\n`,
+      banner: `SensoroDesign v${version}\n\nCopyright 2019-present, SensoroFE, Inc.\nAll rights reserved.\n`,
     })
   );
 };

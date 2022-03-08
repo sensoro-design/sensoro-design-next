@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useContext } from 'react';
-import { Menu, Badge } from '@arco-design/web-react';
+import { Menu, Badge } from '@sensoro-design/react';
 import { useHistory } from 'react-router-dom';
 import NProgress from 'nprogress';
 import { GlobalNoticeContext } from '../../context';

@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { Button } from '@arco-design/web-react';
+import { Button } from '@sensoro-design/react';
 import cs from '../../utils/classNames';
 import styles from './style/index.module.less';
 import useLocale from '../../hooks/useLocale';

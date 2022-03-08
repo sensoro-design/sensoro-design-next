@@ -1,6 +1,6 @@
 import React from 'react';
-import { Result, Button, Typography } from '@arco-design/web-react';
-import { IconHome } from '@arco-design/web-react/icon';
+import { Result, Button, Typography } from '@sensoro-design/react';
+import { IconHome } from '@sensoro-design/react/icon';
 
 function NotFound() {
   return (

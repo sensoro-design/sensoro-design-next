@@ -8,7 +8,7 @@ const demo1Html = `
 &nbsp;&nbsp;Card<span class="token punctuation">,</span> <br/>
 &nbsp;&nbsp;Statistic<span class="token punctuation">,</span> <br/>
 &nbsp;&nbsp;Typography <br/>
-<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@arco-design/web-react'</span><span class="token punctuation">;</span><br/>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@sensoro-design/react'</span><span class="token punctuation">;</span><br/>
 `;
 const demo2Html = `
 
@@ -23,8 +23,8 @@ const demo2Html = `
 &nbsp;&nbsp;Message<span class="token punctuation">,</span><br/>
 &nbsp;&nbsp;Select<span class="token punctuation">,</span><br/>
 &nbsp;&nbsp;Grid<span class="token punctuation">,</span><br/>
-<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@arco-design/web-react'</span><span class="token punctuation">;</span><br/>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> IconCamera<span class="token punctuation">,</span> IconPlus <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@arco-design/web-react/icon'</span><span class="token punctuation">;</span><br/>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@sensoro-design/react'</span><span class="token punctuation">;</span><br/>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> IconCamera<span class="token punctuation">,</span> IconPlus <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@sensoro-design/react/icon'</span><span class="token punctuation">;</span><br/>
 `;
 
 type DemoType = 'demo1' | 'demo2';

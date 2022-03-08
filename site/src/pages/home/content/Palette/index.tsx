@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { IconMoonFill, IconSunFill } from '@arco-design/web-react/icon';
+import { IconMoonFill, IconSunFill } from '@sensoro-design/react/icon';
 import { generate } from '@arco-design/color';
 import useTheme from '../../hooks/useTheme';
 import styles from './index.module.less';

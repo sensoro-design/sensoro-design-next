@@ -18,7 +18,7 @@ npm i @arco-design/theme-line
 
 ### step1 Remove the reference to the default style of the Arco component library
 
-Make sure to remove references to the `@arco-design/web-react` component library style files in the project, such as `@arco-design/web-react/dist/css/arco.css` or `@arco-design/web -react/dist/index.less`
+Make sure to remove references to the `@sensoro-design/react` component library style files in the project, such as `@sensoro-design/react/dist/css/arco.css` or `@arco-design/web -react/dist/index.less`
 
 ### step2 Add configuration items
 

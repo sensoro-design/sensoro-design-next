@@ -336,13 +336,13 @@ export default function beforeAll({ language }: Params) {
 
 ## Specify Arco version
 
-By default, we have already externalized `@arco-design/web-react` when building the site, so the packaged product does not contain the Arco component library code and styles, they will be injected globally by the site page. You can configure the Arco component library version it uses in [Material Platform-Team Page-Team Site].
+By default, we have already externalized `@sensoro-design/react` when building the site, so the packaged product does not contain the Arco component library code and styles, they will be injected globally by the site page. You can configure the Arco component library version it uses in [Material Platform-Team Page-Team Site].
 
 ![](https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/cc7585da8cb507694e28f1d30d7d557a.png~tplv-uwbnlip3yd-webp.webp)
 
 > When you use the `arco preview` command to preview the site locally, you can specify the Arco component library version by adding a Query parameter of `arcoVersion=2.12.0` to the URL.
 
-By modifying the webpack configuration, you can avoid externalizing `@arco-design/web-react`, but we generally do not recommend this approach (the materials should be available in all Arco versions as much as possible).If you do not need to use the globally injected Arco component library, you can choose "Do not inject Arco".
+By modifying the webpack configuration, you can avoid externalizing `@sensoro-design/react`, but we generally do not recommend this approach (the materials should be available in all Arco versions as much as possible).If you do not need to use the globally injected Arco component library, you can choose "Do not inject Arco".
 
 ## Transformation of own projects
 

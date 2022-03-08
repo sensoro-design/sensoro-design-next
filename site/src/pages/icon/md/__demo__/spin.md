@@ -14,7 +14,7 @@ title:
 By specifying the `spin` field, the icon can be set to the spinning state.
 
 ```js
-import { IconSync } from '@arco-design/web-react/icon';
+import { IconSync } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <div style={{ color: 'var(--color-text-1)' }}>

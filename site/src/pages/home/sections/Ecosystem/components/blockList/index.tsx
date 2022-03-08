@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Message } from '@arco-design/web-react';
+import { Message } from '@sensoro-design/react';
 import { gsap, ScrollTrigger } from 'gsap/all';
 import Block from '../block';
 import styles from './index.module.less';

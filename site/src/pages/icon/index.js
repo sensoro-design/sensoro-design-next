@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import ClipboardJS from 'clipboard';
-import { Message, Tag } from '@arco-design/web-react';
+import { Message, Tag } from '@sensoro-design/react';
 import { Helmet } from 'react-helmet';
 import IconDemo from '../../../../icon/demo';
 import FooterEN from './md/footer.en-US.md';

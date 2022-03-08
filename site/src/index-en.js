@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '@arco-materials/site-navbar';
-import { ConfigProvider } from '@arco-design/web-react';
-import enUS from '@arco-design/web-react/es/locale/en-US';
+import { ConfigProvider } from '@sensoro-design/react';
+import enUS from '@sensoro-design/react/es/locale/en-US';
 import App from './App';
 import ScrollToTop from './widget/scrollTop';
 import { GlobalContext, GlobalNoticeContext } from './context';
@@ -34,7 +34,7 @@ function Index() {
   }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar.NavbarThemeProvider>
         <GlobalContext.Provider value={{ lang: 'en-US', locale, user }}>
           <ScrollToTop />
@@ -50,7 +50,7 @@ function Index() {
           </ConfigProvider>
         </GlobalContext.Provider>
       </Navbar.NavbarThemeProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

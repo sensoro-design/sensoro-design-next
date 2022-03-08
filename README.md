@@ -38,14 +38,14 @@
 
 # 安装
 
-[npm package](https://www.npmjs.com/package/@arco-design/web-react)
+[npm package](https://www.npmjs.com/package/@sensoro-design/react)
 
 ```bash
 // npm
-npm install @arco-design/web-react
+npm install @sensoro-design/react
 
 // yarn
-yarn add @arco-design/web-react
+yarn add @sensoro-design/react
 ```
 
 # 例子
@@ -54,7 +54,7 @@ yarn add @arco-design/web-react
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from '@sensoro-design/react';
-import '@arco-design/web-react/dist/css/arco.css';
+import '@sensoro-design/react/dist/css/arco.css';
 
 function App() {
   return (

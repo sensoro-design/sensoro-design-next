@@ -9,9 +9,9 @@ import {
   Message,
   Select,
   Grid,
-} from '@arco-design/web-react';
-import { FormInstance } from '@arco-design/web-react/es/Form';
-import { IconCamera } from '@arco-design/web-react/icon';
+} from '@sensoro-design/react';
+import { FormInstance } from '@sensoro-design/react/es/Form';
+import { IconCamera } from '@sensoro-design/react/icon';
 import ResizeObserver from '../../utils/resizeObserver';
 import styles from './style/form.module.less';
 import useLocale from '../../hooks/useLocale';

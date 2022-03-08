@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Button } from '@arco-design/web-react';
+import { Button } from '@sensoro-design/react';
 import styles from './index.module.less';
 import cs from '../../../../utils/classNames';
 import { EcosystemItem, TabItem } from '../../interface';

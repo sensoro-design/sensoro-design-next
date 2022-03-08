@@ -63,8 +63,8 @@ export default function QuickStart() {
   const renderCodeContent = () => {
     return (
       <CodeCopy
-        code={'npm i <span class="token-package">@arco-design/web-react</span>'}
-        copyText="npm i @arco-design/web-react"
+        code={'npm i <span class="token-package">@sensoro-design/react</span>'}
+        copyText="npm i @sensoro-design/react"
       />
     );
   };

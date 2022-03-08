@@ -18,8 +18,8 @@ You can use Icon by `<IconXXX />`.
 **Note:** Use camel case nomenclature. For example, the name of the icon is `arrow-back`, then the corresponding Icon name is `IconArrowBack`.
 
 ```js
-import { Tooltip } from '@arco-design/web-react';
-import { IconStar } from '@arco-design/web-react/icon';
+import { Tooltip } from '@sensoro-design/react';
+import { IconStar } from '@sensoro-design/react/icon';
 
 ReactDOM.render(
   <div style={{ color: 'var(--color-text-1)' }}>

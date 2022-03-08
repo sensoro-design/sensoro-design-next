@@ -12,8 +12,8 @@ import {
   Message,
   Tag,
   Typography,
-} from '@arco-design/web-react';
-import { IconSkin, IconLink, IconClose } from '@arco-design/web-react/icon';
+} from '@sensoro-design/react';
+import { IconSkin, IconLink, IconClose } from '@sensoro-design/react/icon';
 import locale from './locale';
 import { apiBasename } from '../../utils/config';
 
@@ -52,7 +52,7 @@ function ThemeBox({ lang = 'zh-CN' }) {
   async function fetchThemeList(current = currentPage) {
     setLoading(true);
     const data = await axios.get(
-      `${apiBasename}/themes/api/open/themes/list?pageSize=6&currentPage=${current}&depLibrary=@arco-design/web-react`
+      `${apiBasename}/themes/api/open/themes/list?pageSize=6&currentPage=${current}&depLibrary=@sensoro-design/react`
     );
     setLoading(false);
     setList(data.data.list);

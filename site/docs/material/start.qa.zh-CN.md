@@ -72,7 +72,7 @@ Arco 官方提供了多种项目模板供你选择：
 import './index.less';
 
 // 如果物料使用到了 Arco 组件，声明它的依赖
-import '@arco-design/web-react/es/Button/style';
+import '@sensoro-design/react/es/Button/style';
 
 // 如果物料使用到了其他物料，也声明它的样式依赖
 import '@namespace/some-other-material/es/style';
@@ -105,8 +105,8 @@ plugins: [
 
 ```javascript
 // change
-import { Button } from '@arco-design/web-react';
+import { Button } from '@sensoro-design/react';
 
 // to
-import { Button } from '@arco-design/web-react/lib';
+import { Button } from '@sensoro-design/react/lib';
 ```

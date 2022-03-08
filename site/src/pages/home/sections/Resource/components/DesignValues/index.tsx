@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { Space } from '@arco-design/web-react';
+import { Space } from '@sensoro-design/react';
 import styles from './index.module.less';
 import IconArcoA from '../../../../assets/arco_a.svg';
 import IconArcoR from '../../../../assets/arco_r.svg';

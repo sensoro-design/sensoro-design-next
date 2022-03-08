@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio } from '@arco-design/web-react';
+import { Radio } from '@sensoro-design/react';
 
 function MenuHeader(props) {
   const { style } = props;

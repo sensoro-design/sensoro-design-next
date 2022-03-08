@@ -4,8 +4,8 @@ const BASE_JEST_CONFIG = {
   // Find component demos' dependencies from /site/node_modules
   modulePaths: ['<rootDir>/site/node_modules'],
   moduleNameMapper: {
-    '^@arco-design/web-react/(.+)$': '<rootDir>/$1',
-    '^@arco-design/web-react$': '<rootDir>',
+    '^@sensoro-design/react/(.+)$': '<rootDir>/$1',
+    '^@sensoro-design/react$': '<rootDir>',
   },
 };
 

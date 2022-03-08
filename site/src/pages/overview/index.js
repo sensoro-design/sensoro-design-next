@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import Helmet from 'react-helmet';
-import { Typography, Grid } from '@arco-design/web-react';
-import { IconRight } from '@arco-design/web-react/icon';
+import { Typography, Grid } from '@sensoro-design/react';
+import { IconRight } from '@sensoro-design/react/icon';
 import getMeta from './meta';
 import { underscored } from '../../utils/case';
 import lazyLoad from '../../utils/lazyload';

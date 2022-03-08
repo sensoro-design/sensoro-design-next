@@ -9,14 +9,14 @@ import {
   Switch,
   Badge,
   Space,
-} from '@arco-design/web-react';
+} from '@sensoro-design/react';
 import {
   IconCommon,
   IconSubscribe,
   IconSubscribeAdd,
   IconSubscribed,
   IconUser,
-} from '@arco-design/web-react/icon';
+} from '@sensoro-design/react/icon';
 import cs from '../../utils/classNames';
 import IconBall from '../../assets/banner/ic_ball.svg';
 import IconArcoDesign from '../../assets/ic_arco.design.svg';

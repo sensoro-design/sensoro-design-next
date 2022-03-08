@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { IconCopy, IconCheckCircleFill } from '@arco-design/web-react/icon';
+import { IconCopy, IconCheckCircleFill } from '@sensoro-design/react/icon';
 import ClipboardJS from 'clipboard';
 import style from './style/index.module.less';
 

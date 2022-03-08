@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@arco-design/web-react';
+import { Button } from '@sensoro-design/react';
 import { teaLog } from '@arco-design/arco-site-utils';
 import styles from './style/content.module.less';
 import useLocale from '../../hooks/useLocale';
