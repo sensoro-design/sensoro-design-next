@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '@arco-materials/site-navbar';
 import { ConfigProvider } from '@arco-design/web-react';
@@ -33,7 +33,7 @@ function Index() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar.NavbarThemeProvider>
         <GlobalContext.Provider value={{ lang: 'zh-CN', locale, user }}>
           <ScrollToTop />
@@ -49,7 +49,7 @@ function Index() {
           </ConfigProvider>
         </GlobalContext.Provider>
       </Navbar.NavbarThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
