@@ -178,6 +178,7 @@
 @font-size-caption: 12px;
 
 /******** fontWeight ********/
+
 @font-weight-100: 100;
 @font-weight-200: 200;
 @font-weight-300: 300;
@@ -261,6 +262,34 @@
 @radius-large: var(~'@{arco-cssvars-prefix}-border-radius-large');
 @radius-circle: var(~'@{arco-cssvars-prefix}-border-radius-circle');
 
+// -------- Primary -----------
+
+@primary-color: @color-primary-6;
+@primary-color-hover: @color-primary-5;
+@primary-color-active: @color-primary-7;
+@primary-color-disabled: @color-primary-3;
+
+// -------- Success -----------
+
+@success-color: @color-success-6;
+@success-color-hover: @color-success-5;
+@success-color-active: @color-success-7;
+@success-color-disabled: @color-success-3;
+
+// -------- Warning -----------
+
+@warning-color: @color-warning-6;
+@warning-color-hover: @color-warning-5;
+@warning-color-active: @color-warning-7;
+@warning-color-disabled: @color-warning-3;
+
+// -------- Danger -----------
+
+@danger-color: @color-danger-6;
+@danger-color-hover: @color-danger-5;
+@danger-color-active: @color-danger-7;
+@danger-color-disabled: @color-danger-3;
+
 // Other
 @color-white: #ffffff;
 @dark-color-white: fade(#fff, 90%); // 在亮色模式下所有白色文字对应。对应 @color-white;
@@ -310,10 +339,12 @@
 @color-primary-light-2: rgb(var(~'@{arco-cssvars-prefix}-primary-2'));
 @color-primary-light-3: rgb(var(~'@{arco-cssvars-prefix}-primary-3'));
 @color-primary-light-4: rgb(var(~'@{arco-cssvars-prefix}-primary-4'));
+
 @color-secondary: var(~'@{arco-cssvars-prefix}-color-neutral-2');
 @color-secondary-hover: var(~'@{arco-cssvars-prefix}-color-neutral-3');
 @color-secondary-active: var(~'@{arco-cssvars-prefix}-color-neutral-4');
 @color-secondary-disabled: var(~'@{arco-cssvars-prefix}-color-neutral-1');
+
 @color-danger-light-1: rgb(var(~'@{arco-cssvars-prefix}-danger-1'));
 @color-danger-light-2: rgb(var(~'@{arco-cssvars-prefix}-danger-2'));
 @color-danger-light-3: rgb(var(~'@{arco-cssvars-prefix}-danger-3'));
