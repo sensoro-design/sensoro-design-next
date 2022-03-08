@@ -1,7 +1,7 @@
 {
   "name": "@sensoro-design/react",
   "version": "1.0.0",
-  "description": "Arco Design React UI Library.",
+  "description": "Sensoro Design React UI Library.",
   "module": "./es/index.js",
   "main": "./lib/index.js",
   "types": "./es/index.d.ts",
