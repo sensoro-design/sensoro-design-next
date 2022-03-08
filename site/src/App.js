@@ -84,8 +84,10 @@ export default function App() {
         history={history}
         isHome={isHome}
         style={isHome ? navbarBorderStyle : {}}
-        user={user}
         {...navbarProps}
+        hideUser
+        hideMessageBox
+        hideGitHub
       />
       <Navbar.GlobalNotice onHeightChange={setNoticeHeight} lang={lang} />
       <Switch>

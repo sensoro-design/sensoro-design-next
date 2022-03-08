@@ -19,19 +19,6 @@ function Index() {
   const [user, setUser] = useState();
   const [noticeHeight, setNoticeHeight] = useState(0);
 
-  async function getUser() {
-    try {
-      const { data } = await axios.get(`${requestDomain}/api/auth/userInfo`, {
-        withCredentials: true,
-      });
-      setUser(data.result);
-    } catch (err) {}
-  }
-
-  useEffect(() => {
-    getUser();
-  }, []);
-
   return (
     <BrowserRouter>
       <Navbar.NavbarThemeProvider>
