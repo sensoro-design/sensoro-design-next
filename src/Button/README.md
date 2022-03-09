@@ -23,14 +23,29 @@ group:
 
 <code src="./__demo__/icon.demo.tsx" />
 
-
-### 图标按钮
+### 按钮尺寸
 
 <code src="./__demo__/size.demo.tsx" />
 
-### 按钮尺寸
+### 按钮状态
+
+<code src="./__demo__/status.demo.tsx" />
+
+### 禁用按钮
+
+<code src="./__demo__/disabled.demo.tsx" />
+
+### 加载中按钮
+
+<code src="./__demo__/loading.demo.tsx" />
+
+### 组合按钮
 
 <code src="./__demo__/button-group.demo.tsx" />
+
+### 长按钮
+
+<code src="./__demo__/long.demo.tsx" />
 
 ## API
 

@@ -1,24 +1,12 @@
----
-order: 6
-title: 
-  zh-CN: 加载中按钮
-  en-US: Loading
----
-
-## zh-CN
-
-通过设置`loading`可以让一个按钮处于加载中状态。处于加载中状态的按钮不会触发点击事件。
-
-## en-US
-
-A button can be on loading state by setting `loading`. Click events are not triggered when buttons are on loading state.
-
-```js
+/**
+ * title: 加载中按钮
+ * desc: 通过设置`loading`可以让一个按钮处于加载中状态。处于加载中状态的按钮不会触发点击事件。
+ */
 import { useState } from 'react';
 import { Button, Divider } from '@sensoro-design/react';
 import { IconPlus } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const [loading1, setLoading1] = useState(false);
   const [loading2, setLoading2] = useState(false);
   const [loading3, setLoading3] = useState(false);
@@ -46,9 +34,9 @@ function Demo() {
 
   return (
     <div>
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(3, 100px)', 
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 100px)',
         gridRowGap: 24,
         gridColumnGap: 24,
         marginLeft: 24,
@@ -79,6 +67,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
