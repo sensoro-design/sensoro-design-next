@@ -95,7 +95,7 @@ class Trigger extends PureComponent<TriggerProps, TriggerState> {
 
   static contextType = ConfigContext;
 
-  context: React.ContextType<typeof ConfigContext>;
+  static context: typeof ConfigContext = ConfigContext;
 
   static getDerivedStateFromProps(nextProps, state) {
     if ('popupVisible' in nextProps && nextProps.popupVisible !== state.popupVisible) {

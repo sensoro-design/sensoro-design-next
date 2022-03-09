@@ -8,6 +8,56 @@ nav:
 
 基本表单组件，并在原生控件基础上进行了功能扩展，可以组合使用。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 输入框状态
+
+<code src="./__demo__/status.demo.tsx" />
+
+### 四种尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 前置、后置标签
+
+<code src="./__demo__/addon.demo.tsx" />
+
+### 前后缀
+
+<code src="./__demo__/prefix_suffix.demo.tsx" />
+
+### 搜索框
+
+<code src="./__demo__/search.demo.tsx" />
+
+### 搜索框 Loading
+
+<code src="./__demo__/search_loading.demo.tsx" />
+
+### 输入框组合
+
+<code src="./__demo__/group.demo.tsx" />
+
+### 字数统计
+
+<code src="./__demo__/max-length.demo.tsx" />
+
+### 文本域
+
+<code src="./__demo__/textarea.demo.tsx" />
+
+### 适应文本高度文本域
+
+<code src="./__demo__/textarea_autosize.demo.tsx" />
+
+### 密码输入
+
+<code src="./__demo__/password.demo.tsx" />
+
 ## API
 
 ### Input

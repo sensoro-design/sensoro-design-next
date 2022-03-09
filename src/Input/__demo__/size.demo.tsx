@@ -1,19 +1,8 @@
----
-order: 2
-title:
-  zh-CN: 四种尺寸
-  en-US: Size
----
-
-## zh-CN
-
-输入框定义了四种默认尺寸（`mini`,`small`, `default`, `large`），分别为24px，28px，32px，36px。
-
-## en-US
-
-Input defines four sizes (`mini`, `small`, `default`, `large`), which are 24px, 28px, 32px, and 36px.
-
-```js
+/**
+ * title: 四种尺寸
+ * desc: 输入框定义了四种默认尺寸（`mini`,`small`, `default`, `large`），分别为24px，28px，32px，36px。
+ */
+import React from 'react';
 import { Input, Radio, Select, Slider, Typography } from '@sensoro-design/react';
 import { IconClockCircle, IconSearch, IconInfoCircle } from '@sensoro-design/react/icon';
 
@@ -144,5 +133,4 @@ class Demo extends React.Component {
   }
 }
 
-ReactDOM.render(<Demo />, CONTAINER);
-```
+export default Demo;
