@@ -1,158 +1,160 @@
 
-> English | [简体中文](./CONTRIBUTING.zh-CN.md)
-# Contributing
+> [English](./CONTRIBUTING.md) | 简体中文
 
-Thank you for taking your time to contribute and make this project better! Here are some guidelines to help you get started. Please make sure to take a moment and read through them before submitting your contributions.
+# 贡献指南
 
-## Code of Conduct
+感谢你的宝贵时间。你的贡献将使这个项目变得更好！在提交贡献之前，请务必花点时间阅读下面的入门指南。
 
-This project is governed by the [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to adhere to it.
+## 行为准则
 
-## Open Development
+该项目有一份 [行为准则](./CODE_OF_CONDUCT.md)，希望参与项目的贡献者都能严格遵守。
 
-All work happens directly on GitHub. Both core team members and external contributors send pull requests which go through the same review process.
+## 透明的开发
 
-## Semantic Versioning
+所有工作都直接透明地在 GitHub 上进行。核心团队成员和外部贡献者的 pull requests 都需要经过相同的 review 流程。
 
-This project follows semantic versioning. We release patch versions for bug fixes or other changes that do not change the behavior of the API, minor versions for new features that are backward-compatible, and major versions for any breaking changes.
+## 语义化版本
 
-Every significant change is documented in the changelog file.
+该项目遵循语义化版本。我们对重要的漏洞修复发布修订号，对新特性或不重要的变更发布次版本号，对重大且不兼容的变更发布主版本号。
 
-## Reporting Issues
+每个重大更改都将记录在 changelog 中。
 
-We use [Github issues](https://github.com/arco-design/arco-design/issues) for bug reports and feature requests. Before reporting an issue, please make sure you have searched for similar [issues](https://github.com/arco-design/arco-design/issues) as they may have been already answered or being fixed. A new issue should be submitted via [issue helper](https://arco.design/issue-helper?repo=arco-design). For bug reporting, please include the minimum code that can be used to reproduce the problem. For feature request, please specify what changes you want and what behavior you expect.
+## 报告 Issues
 
-## Sending a pull request
+我们使用 [Github issues](https://github.com/arco-design/arco-design/issues) 进行 bug 报告和新 feature 建议。在报告 bug 之前，请确保已经搜索过类似的 [问题](https://github.com/arco-design/arco-design/issues)，因为它们可能已经得到解答或正在被修复。新问题应通过 [问题助手](https://arco.design/issue-helper?repo=arco-design) 提交。对于 bug 报告，请包含可用于重现问题的代码。对于新 feature 建议，请指出你想要的更改以及期望的行为。
 
-**This project uses [Yarn](https://yarnpkg.com/) for package management. Please install Yarn before development.**
+## 提交 Pull Request
 
-1. Fork [the repository](https://github.com/arco-design/arco-design) and create your branch from `main`. For new feature, please submit your changes directly to the `feature` branch. Other changes should go against `main` branch.
-1. Run `yarn run init` in the repository root.
-1. Run `yarn start` to start and preview site.
-1. Make changes to the codebase. Please add tests if applicable.
-1. Make sure the test suite passes with `yarn test`. To watch for specific changes in development, use `yarn test --watch TestName`.
+**本项目使用 [Yarn](https://yarnpkg.com/) 进行包管理，请在开发前准备你的 Yarn 环境。**
 
-    Note: Running `yarn test` on your personal computer may be CPU-burning and even system-crashing. An alternative approach is:
-    1. Enable Github Action in your fork
-    2. Create a PR **within your fork** to trigger CI
-    3. View the test result in your fork
+1. Fork [此仓库](https://github.com/arco-design/arco-design)，从 `main` 创建分支。新功能实现请发 pull request 到 `feature` 分支。其他更改发到 `main` 分支。
+1. 在仓库根目录下执行 `yarn run init`。
+1. 执行 `yarn start` 启动和预览站点.
+1. 对代码库进行更改。如果适用的话，请确保写了相应的测试。
+1. 确认执行 `yarn test` 后所有的测试都是通过的。开发过程中可以用 `yarn test --watch TestName` 来运行指定的测试。
 
-1. If you made any `props` changes (i.e. `interface.ts` file), DON'T manually update `README` file under the component. Instead, run `yarn docgen` to generate the `README` file automatically.
-1. Commit your changes, adhering to the [Commit Guidelines](#commit-guidelines)
-1. Open a new pull request, [referencing corresponding issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) if available.
+    注意: 在个人电脑运行 `yarn test` 可能导致资源高占用、甚至系统卡死。另一种测试方法是：
+    1. 在你的 fork 中启用 Github Action
+    2. 在你的 fork 内创建一个**内部 PR** 以触发 CI
+    3. 在你的 fork 中查看测试结果
 
-### Commonly used npm scripts
+
+1. 如果进行了任何 `props` 更改（即 `interface.ts` 文件），请不要手动更新组件下的 `README` 文件。运行 `yarn docgen` 会自动生成 `README` 文件。
+1. 提交 git commit, 请同时遵守 [Commit 规范](#commit-指南)。
+1. 提交 pull request, 如果有对应的 issue，请进行[关联](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)。
+
+### 常用的命令
 
 ```bash
-# start and preview site locally
+# 本地启动和预览站点
 $ yarn dev:site
 
-# checks the javascript code style.
+# 检查 javascript 代码规范
 $ yarn eslint
 
-# checks the css code style
+# 检查 样式 代码规范
 $ yarn stylelint
 
-# automatically generate docs
+# 自动化生成文档
 $ yarn docgen
 
-# format code with prettier
+# 格式化代码
 $ yarn format
 
-# create a build of the components
+# 组件构建
 $ yarn build
 
-# run the complete test suite
+# 运行完整的单元测试
 $ yarn test
 
-# start Storybook (no hot reload. To reflect changes, do `yarn build` first)
+# 启动 Storybook 以预览或调试组件 （无热加载，需要先 `yarn build` 才能使用变更后代码）
 $ yarn demo
 ```
 
-## Commit Guidelines
+## Commit 指南
 
-Commit messages are required to follow the [conventional-changelog standard](https://www.conventionalcommits.org/en/v1.0.0/):
+Commit messages 请遵循[conventional-changelog 标准](https://www.conventionalcommits.org/en/v1.0.0/)：
 
 ```bash
-<type>[optional scope]: <description>
+<类型>[可选 范围]: <描述>
 
-[optional body]
+[可选 正文]
 
-[optional footer(s)]
+[可选 脚注]
 ```
 
-### Commit types
+### Commit 类型
 
-The following is a list of commit types:
+以下是 commit 类型列表:
 
-- feat: A new feature or functionality
-- fix: A bug fix
-- docs: Documentation only changes
-- style: Code formatting or component style changes
-- refactor: Code changes that neither fixes a bug nor adds a feature.
-- perf: Improve performance.
-- test: Add missing or correct existing tests.
-- chore: Other commits that don’t modify src or test files.
+- feat: 新特性或功能
+- fix: 缺陷修复
+- docs: 文档更新
+- style: 代码风格或者组件样式更新
+- refactor: 代码重构，不引入新功能和缺陷修复
+- perf: 性能优化
+- test: 单元测试
+- chore: 其他不修改 src 或测试文件的提交
 
-## Project Structure
+## 项目结构
 
-### Component directory
+### 组件目录
 
 > components/componentName
 
 ```
-├── README.zh-CN.md (Note：Don't edit this file, it's generated by script)
-├── README.en-US.md (Note：Don't edit this file, it's generated by script)
-├── __template__ （Template used to generate README file）
-│   ├── index.en-US.md (EN template)
-│   └── index.zh-CN.md （CN template）
-├── __changelog__ 
-│   ├── index.en-US.md (Note: Don't edit this file manually, it's generated by script on release)
-│   └── index.zh-CN.md (Note: Don't edit this file manually, it's generated by script on release)
+├── README.zh-CN.md (注意：不要编辑这个文件，它是由脚本自动生成的)
+├── README.en-US.md (注意：不要编辑这个文件，它是由脚本自动生成的)
+├── __template__ （用于生成 README 文件的模板）
+│   ├── index.en-US.md (英文模版)
+│   └── index.zh-CN.md （中文模版）
+├── __changelog__
+│   ├── index.en-US.md (注意：不要手动编辑这个文件，它是在发版时由脚本自动生成的)
+│   └── index.zh-CN.md (注意：不要手动编辑这个文件，它是在发版时由脚本自动生成的)
 ├── __test__
 │   ├── __snapshots__
-│   │   └── demo.test.js.snap （Snapshot）
-│   ├── demo.test.ts (Snapshot test)
-│   └── index.test.ts （Unit test）
-├── __demo__ （Demos for each component）
+│   │   └── demo.test.js.snap
+│   ├── demo.test.ts (快照测试)
+│   └── index.test.ts （单元测试）
+├── __demo__ （组件演示）
 │   ├── basic.md
 │   └── advanced.md
-├── index.tsx（Component export）
+├── index.tsx（组件导出）
 └── style
-    └── index.less（Component style）
-    └── index.ts (Component style entry)
+    └── index.less（组件样式）
+    └── index.ts (组件样式导出)
 ```
 
-### Template
+### 模版
 
-Template in `__template__` directory is used to generate component's README with `yarn docgen` command. It should follow the structure below:
+`__template__` 目录中的模板用于通过 `yarn docgen` 命令生成组件的 README。它遵循以下结构：
 
 ~~~markdown
 ---
-file: index (Inform react-docgen-typescript where to look up interfaces information)
+file: interface (指定查找 interface 信息的位置，用于生成 props)
 ---
 
 `````
-Component / Feedback
+组件 / 反馈
 
-# Alert
+# 警告提示 Alert
 
-Used to display warning information in a way that attracts attention.
+向用户显示警告的信息时，通过警告提示，展现需要关注的信息。
 `````
 
-%%Content%% (Placeholder for demos)
+%%Content%% (演示占位符)
 
-## Props
+## API
 
-%%Props%% (Placeholder for props)
+%%Props%% (Props 占位符)
 ~~~
 
-Please note that if you make changes that will affect README (e.g. `props` changes), make sure to run `yarn docgen` to update README of the component.
+请注意: 如果进行了会影响 README 的变更（例如 `props` 变更），请确保运行 `yarn docgen` 来更新组件的 README。
 
 ### Changelog
 
-Changelogs in `__changelog__` are generated automatically by script on release. Please don't edit the files manually.
+`__changelog__` 目录中的更新日志文件是在发版时由脚本自动生成的。 请勿手动编辑这些文件。
 
 ## License
 
-By contributing your code to the repository, you agree to license your contribution under the [MIT license](./LICENSE).
+[MIT 协议](./LICENSE).

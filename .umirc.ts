@@ -13,6 +13,7 @@ export default {
       'src/Button'
     ]
   },
+  outputPath: 'site',
   alias: {
     '@sensoro-design/react/icon': join(__dirname, 'icon')
   },
@@ -34,10 +35,6 @@ export default {
   ignoreMomentLocale: true,
   dynamicImport: {},
   hash: true,
-  nodeModulesTransform: {
-    type: 'none',
-    exclude: []
-  },
   extraBabelPlugins: [
     [
       'import',
@@ -53,5 +50,6 @@ export default {
         camel2DashComponentName: false,
       },
     ],
-  ]
+  ],
+  webpack5: {}
 };
