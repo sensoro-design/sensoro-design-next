@@ -1,19 +1,7 @@
----
-order: 5
-title: useCheckbox
----
-
-## zh-CN
-
-使用 `useCheckbox` 快捷管理复选框数据
-
-## en-US
-
-`useCheckbox` hook offers an efficient way to manage checkbox state.
-
-
-```js
-import { useState } from 'react';
+/**
+ * title: useCheckbox
+ * desc: 使用 `useCheckbox` 快捷管理复选框数据
+ */
 import { Checkbox, Divider, Button, Typography } from '@sensoro-design/react';
 
 const CheckboxGroup = Checkbox.Group;
@@ -159,15 +147,17 @@ function Demo3() {
   );
 }
 
-ReactDOM.render(<div>
-    <Typography.Paragraph style={{ margin: '20px 0'}}>Checkbox group</Typography.Paragraph>
-    <Demo1 />
-    <Divider />
-    <Typography.Paragraph style={{ margin: '20px 0'}}>Checkbox</Typography.Paragraph>
-    <Demo2 />
-    <Divider />
-    <Typography.Paragraph>Checkbox group with disabled items</Typography.Paragraph>
-    <Demo3 />
-  </div>
-  , CONTAINER);
-```
+export default () => {
+  return (
+    <div>
+      <Typography.Paragraph style={{ margin: '20px 0'}}>Checkbox group</Typography.Paragraph>
+      <Demo1 />
+      <Divider />
+      <Typography.Paragraph style={{ margin: '20px 0'}}>Checkbox</Typography.Paragraph>
+      <Demo2 />
+      <Divider />
+      <Typography.Paragraph>Checkbox group with disabled items</Typography.Paragraph>
+      <Demo3 />
+    </div>
+  )
+}

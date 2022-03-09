@@ -1,26 +1,14 @@
----
-order: 4
-title:
-  zh-CN: 全选
-  en-US: Check all
----
-
-## zh-CN
-
-通过 `indeterminate` 属性可以实现半选效果。
-
-## en-US
-
-The indeterminate effect can be achieved with `indeterminate=true`
-
-```js
+/**
+ * title: 全选
+ * desc:通过 `indeterminate` 属性可以实现半选效果。
+ */
 import { useState } from 'react';
 import { Checkbox } from '@sensoro-design/react';
 
 const CheckboxGroup = Checkbox.Group;
 const options = ['Option 1', 'Option 2', 'Option 3'];
 
-function Demo() {
+export default () => {
   const [indeterminate, setIndeterminate] = useState(true);
   const [checkAll, setCheckAll] = useState(false);
   const [value, setValue] = useState([0, 1]);
@@ -60,6 +48,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```

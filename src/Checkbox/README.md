@@ -8,6 +8,40 @@ nav:
 
 在一组数据中，用户可通过复选框选择一个或多个数据。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 禁用
+
+<code src="./__demo__/disabled.demo.tsx" />
+
+### 受控
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 复选框组
+
+<code src="./__demo__/group.demo.tsx" />
+
+### 全选
+
+<code src="./__demo__/check_all.demo.tsx" />
+
+### 布局
+
+<code src="./__demo__/group_jsx.demo.tsx" />
+
+### 自定义节点内容
+
+<code src="./__demo__/custom_render.demo.tsx" />
+
+### useCheckbox
+
+<code src="./__demo__/useCheckbox.demo.tsx" />
+
 ## API
 
 ### Checkbox

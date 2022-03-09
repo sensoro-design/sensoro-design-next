@@ -1,25 +1,13 @@
----
-order: 4
-title:
-  zh-CN: 布局
-  en-US: Layout
----
-
-## zh-CN
-
-可以通过 `children` 传入 `checkbox`，配合`Grid`组件实现灵活的布局。
-
-## en-US
-
-We can use Checkbox and Grid in Checkbox.Group, to implement complex layout.
-
-```js
+/**
+ * title: 布局
+ * desc: 可以通过 `children` 传入 `checkbox`，配合`Grid`组件实现灵活的布局。
+ */
 import { useState } from 'react';
 import { Checkbox, Grid } from '@sensoro-design/react';
 
 const { Col, Row } = Grid;
 
-function Demo() {
+export default () => {
   const [value, setValue] = useState(['Option 1', 'Option 2']);
 
   return (
@@ -44,6 +32,3 @@ function Demo() {
     </Checkbox.Group>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
