@@ -8,6 +8,37 @@ nav:
 
 在一组相关且互斥数据中，用户仅能选择一个选项。
 
+
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 单选框组
+
+<code src="./__demo__/radio_group.demo.tsx" />
+
+### 竖直单选组
+
+<code src="./__demo__/direction.demo.tsx" />
+
+### 带图标的单选框
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 按钮类型
+
+<code src="./__demo__/radio_button.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 自定义节点内容
+
+<code src="./__demo__/custom_render.demo.tsx" />
+
 ## API
 
 ### Radio

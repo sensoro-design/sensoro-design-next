@@ -17,7 +17,7 @@ const Droplist = (
 export default () => {
   return (
     <div>
-      {/* <Dropdown droplist={Droplist} position='bl'>
+      <Dropdown droplist={Droplist} position='bl'>
         <Link style={{ marginRight: 40 }}>
           City
           <IconDown style={{ fontSize: 12, marginLeft: 6 }} />
@@ -29,7 +29,7 @@ export default () => {
           City
           <IconDown style={{ fontSize: 12, marginLeft: 6 }} />
         </Link>
-      </Dropdown> */}
+      </Dropdown>
     </div>
   )
 }
