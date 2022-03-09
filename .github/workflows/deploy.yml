@@ -37,10 +37,13 @@ jobs:
           steps.cache-node-modules.outputs.cache-hit != 'true'
 
       - name: Build icon
-        run: yarn run icon
+        run: yarn icon
 
-      - name: site
-        run: yarn run site
+      - name: Build
+        run: yarn build
+
+      - name: Build Site
+        run: yarn site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
