@@ -1,6 +1,6 @@
 module.exports = function StyleConfig(config) {
   config.less.cssJsEntry = ['src/**/style/index.ts'];
-  config.less.output.dist.cssFileName = 'sensoro.min.css';
+  config.less.output.dist.cssFileName = 'sen.min.css';
   config.less.watch = [
     'src/**/*.{less,woff,woff2,png,jpg}',
     'src/style/theme/color/*.js',

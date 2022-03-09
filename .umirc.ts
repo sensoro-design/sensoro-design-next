@@ -1,5 +1,6 @@
 import { join } from 'path';
 
+const isProduction = process.env.NODE_ENV === 'production';
 const logo = 'https://cdn.jsdelivr.net/gh/wangxingkang/pictures@latest/imgs/sensoro-design.svg';
 
 export default {
@@ -33,7 +34,7 @@ export default {
     }
   ],
   ignoreMomentLocale: true,
-  dynamicImport: {},
+  // dynamicImport: {},
   hash: true,
   extraBabelPlugins: [
     [
@@ -51,5 +52,11 @@ export default {
       },
     ],
   ],
-  webpack5: {}
+  webpack5: {},
+  copy: isProduction ? [
+    './dist/css/sen.min.css'
+  ] : [],
+  links: isProduction ? [
+    { rel: 'stylesheet', href: 'sen.min.css' },
+  ]: [],
 };
