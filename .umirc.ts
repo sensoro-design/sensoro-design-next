@@ -11,7 +11,7 @@ export default {
   resolve: {
     includes: [
       'docs',
-      'src/Button'
+      'src',
     ]
   },
   outputPath: 'site',
@@ -36,6 +36,111 @@ export default {
   ignoreMomentLocale: true,
   // dynamicImport: {},
   hash: true,
+  menus: {
+    '/components': [
+      {
+        title: '通用',
+        children: [
+          'Button/README.md',
+          'Link/README.md',
+          'Typography/README.md',
+        ],
+      },
+      {
+        title: '布局',
+        children: [
+          'Divider/README.md',
+          'Grid/README.md',
+          'Layout/README.md',
+          'Space/README.md',
+        ],
+      },
+      {
+        title: '数据展示',
+        children: [
+          'Avatar/README.md',
+          'Badge/README.md',
+          'Calendar/README.md',
+          'Card/README.md',
+          'Carousel/README.md',
+          'Collapse/README.md',
+          'Comment/README.md',
+          'Descriptions/README.md',
+          'Empty/README.md',
+          'Image/README.md',
+          'List/README.md',
+          'Popover/README.md',
+          'Statistic/README.md',
+          'Table/README.md',
+          'Tabs/README.md',
+          'Tag/README.md',
+          'Timeline/README.md',
+          'Tooltip/README.md',
+          'Tree/README.md',
+        ],
+      },
+      {
+        title: '数据输入',
+        children: [
+          'AutoComplete/README.md',
+          'Cascader/README.md',
+          'Checkbox/README.md',
+          'DatePicker/README.md',
+          'Form/README.md',
+          'Input/README.md',
+          'InputTag/README.md',
+          'InputNumber/README.md',
+          'Mentions/README.md',
+          'Radio/README.md',
+          'Rate/README.md',
+          'Select/README.md',
+          'Slider/README.md',
+          'Switch/README.md',
+          'TimePicker/README.md',
+          'Transfer/README.md',
+          'TreeSelect/README.md',
+          'Upload/README.md',
+        ]
+      },
+      {
+        title: '反馈',
+        children: [
+          'Alert/README.md',
+          'Drawer/README.md',
+          'Message/README.md',
+          'Modal/README.md',
+          'Notification/README.md',
+          'Popconfirm/README.md',
+          'Progress/README.md',
+          'Result/README.md',
+          'Spin/README.md',
+          'Skeleton/README.md',
+        ],
+      },
+      {
+        title: '导航',
+        children: [
+          'Breadcrumb/README.md',
+          'Dropdown/README.md',
+          'Menu/README.md',
+          'PageHeader/README.md',
+          'Pagination/README.md',
+          'Steps/README.md',
+        ],
+      },
+      {
+        title: '其他',
+        children: [
+          'Affix/README.md',
+          'Anchor/README.md',
+          'ConfigProvider/README.md',
+          'BackTop/README.md',
+          'ResizeBox/README.md',
+          'Trigger/README.md',
+        ],
+      },
+    ]
+  },
   extraBabelPlugins: [
     [
       'import',

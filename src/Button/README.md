@@ -1,15 +1,10 @@
 ---
-title: Button 按钮
 nav:
   title: 组件
   path: /components
-group:
-  title: 通用
-  path: /general
-  order: 1
 ---
 
-# Button 按钮
+# 按钮 Button
 
 按钮是一种命令组件，可发起一个即时操作。
 
