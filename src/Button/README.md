@@ -13,7 +13,24 @@ group:
 
 按钮是一种命令组件，可发起一个即时操作。
 
+## 代码演示
+
+### 基本用法
+
 <code src="./__demo__/basic.demo.tsx" />
+
+### 图标按钮
+
+<code src="./__demo__/icon.demo.tsx" />
+
+
+### 图标按钮
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 按钮尺寸
+
+<code src="./__demo__/button-group.demo.tsx" />
 
 ## API
 

@@ -13,6 +13,9 @@ export default {
       'src/Button'
     ]
   },
+  alias: {
+    '@sensoro-design/react/icon': join(__dirname, 'icon')
+  },
   navs: [
     null,
     {
