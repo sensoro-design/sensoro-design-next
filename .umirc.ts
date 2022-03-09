@@ -52,7 +52,6 @@ export default {
       },
     ],
   ],
-  webpack5: {},
   copy: isProduction ? [
     './dist/css/sen.min.css'
   ] : [],
