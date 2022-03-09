@@ -8,6 +8,29 @@ nav:
 
 将页面元素钉在可视范围。当内容区域比较长，需要滚动页面时，固钉可以将内容固定在屏幕上。常用于侧边菜单和按钮组合。
 
+
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 顶部固定
+
+<code src="./__demo__/top.demo.tsx" />
+
+### 底部固定
+
+<code src="./__demo__/bottom.demo.tsx" />
+
+### 固定状态改变回调
+
+<code src="./__demo__/fixChange.demo.tsx" />
+
+### 滚动容器
+
+<code src="./__demo__/container.demo.tsx" />
+
 ## API
 
 ### Affix
