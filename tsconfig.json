@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "outDir": "es",
     "jsx": "react",
     "module": "es6",
@@ -13,8 +14,12 @@
     "esModuleInterop": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@sensoro-design/react": ["src/index.ts"],
+      "@sensoro-design/react/es/*": ["src/*"]
+    }
   },
-  "include": ["components/**/*.ts", "components/**/*.tsx"],
-  "exclude": ["node_modules", "components/**/*.test.tsx", "components/**/*.test.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "src/**/*.test.tsx", "src/**/*.test.ts", "src/**/*.demo.tsx"]
 }
