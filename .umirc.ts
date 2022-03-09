@@ -56,6 +56,6 @@ export default {
     './dist/css/sen.min.css'
   ] : [],
   links: isProduction ? [
-    { rel: 'stylesheet', href: 'sen.min.css' },
+    { rel: 'stylesheet', href: '/sen.min.css' },
   ]: [],
 };
