@@ -8,6 +8,28 @@ nav:
 
 页面的基础布局框架，常与组件嵌套使用，构建页面整体布局。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自定义按钮 Icon
+
+<code src="./__demo__/customIcon.demo.tsx" />
+
+### 自定义收起按钮
+
+<code src="./__demo__/collapsed.demo.tsx" />
+
+### 响应式侧边栏
+
+<code src="./__demo__/breakpoint.demo.tsx" />
+
+### 可伸缩侧边栏
+
+<code src="./__demo__/resize.demo.tsx" />
+
 ## API
 
 ### Layout

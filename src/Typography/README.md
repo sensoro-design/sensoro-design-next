@@ -6,6 +6,39 @@ nav:
 
 # 排版 Typography
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 标题
+
+<code src="./__demo__/title.demo.tsx" />
+
+### 文本
+
+<code src="./__demo__/text.demo.tsx" />
+
+### 段落
+
+<code src="./__demo__/paragraph.demo.tsx" />
+
+### 可交互
+
+<code src="./__demo__/operations.demo.tsx" />
+
+### 省略
+
+<code src="./__demo__/ellipsis.demo.tsx" />
+
+### 省略受控
+
+<code src="./__demo__/ellipsis-controlled.demo.tsx" />
+
+
+# 排版 Typography
+
 ## API
 
 ### Typography

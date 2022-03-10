@@ -8,6 +8,44 @@ nav:
 
 可以折叠 / 展开的内容区域。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 手风琴模式
+
+<code src="./__demo__/accordion.demo.tsx" />
+
+### 嵌套面板
+
+<code src="./__demo__/inline.demo.tsx" />
+
+### 简洁面板
+
+<code src="./__demo__/borderless.demo.tsx" />
+
+### 自定义面板样式
+
+<code src="./__demo__/customStyle.demo.tsx" />
+
+### 额外节点
+
+<code src="./__demo__/extra.demo.tsx" />
+
+### 展开图标位置
+
+<code src="./__demo__/iconPosition.demo.tsx" />
+
+### Lazyload
+
+<code src="./__demo__/lazyload.demo.tsx" />
+
+### 隐藏时销毁
+
+<code src="./__demo__/destoryOnHide.demo.tsx" />
+
 ## API
 
 ### Collapse

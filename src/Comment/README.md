@@ -8,6 +8,28 @@ nav:
 
 展示评论信息
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 对齐
+
+<code src="./__demo__/align.demo.tsx" />
+
+### 嵌套评论
+
+<code src="./__demo__/inline.demo.tsx" />
+
+### 配合List使用
+
+<code src="./__demo__/list.demo.tsx" />
+
+### 回复框
+
+<code src="./__demo__/editor.demo.tsx" />
+
 ## API
 
 ### Comment

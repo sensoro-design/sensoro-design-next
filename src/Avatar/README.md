@@ -8,6 +8,28 @@ nav:
 
 用作头像显示，可以为图片、图标或字符形式展示。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 大小和形状
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 头像组
+
+<code src="./__demo__/group.demo.tsx" />
+
+### 交互按钮
+
+<code src="./__demo__/triggerIcon.demo.tsx" />
+
+### 自动调整字体大小
+
+<code src="./__demo__/autoFixFontSize.demo.tsx" />
+
 ## API
 
 ### Avatar

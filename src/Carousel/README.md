@@ -8,6 +8,36 @@ nav:
 
 用于展示多张图片、视频或内嵌框架等内容的循环播放，支持系统自动播放或用户手动切换。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自动切换
+
+<code src="./__demo__/auto.demo.tsx" />
+
+### 指示器
+
+<code src="./__demo__/indicator.demo.tsx" />
+
+### 切换方向
+
+<code src="./__demo__/vertical.demo.tsx" />
+
+### 卡片化
+
+<code src="./__demo__/animation-card.demo.tsx" />
+
+### 渐隐切换
+
+<code src="./__demo__/animation-fade.demo.tsx" />
+
+### 自定义子元素
+
+<code src="./__demo__/selfComponent.demo.tsx" />
+
 ## API
 
 ### Carousel

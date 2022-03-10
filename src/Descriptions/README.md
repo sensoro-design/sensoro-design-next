@@ -8,6 +8,36 @@ nav:
 
 一般用于详情页的信息展示。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 单列样式
+
+<code src="./__demo__/single.demo.tsx" />
+
+### 标签文本对齐
+
+<code src="./__demo__/align.demo.tsx" />
+
+### 带边框展示
+
+<code src="./__demo__/border.demo.tsx" />
+
+### 不同排列模式
+
+<code src="./__demo__/layout.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 响应式排列
+
+<code src="./__demo__/responsive.demo.tsx" />
+
 ## API
 
 ### Descriptions

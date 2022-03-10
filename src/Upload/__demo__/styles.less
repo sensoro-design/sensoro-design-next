@@ -1,0 +1,109 @@
+.reactEasyCrop_Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+  cursor: move;
+}
+
+.reactEasyCrop_Image,
+.reactEasyCrop_Video {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  will-change: transform; /* this improves performances and prevent painting issues on iOS Chrome */
+}
+
+.reactEasyCrop_CropArea {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 0 0 9999em;
+  color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.reactEasyCrop_CropAreaRound {
+  border-radius: 50%;
+}
+
+.reactEasyCrop_CropAreaGrid::before {
+  content: ' ';
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 33.33%;
+  right: 33.33%;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.reactEasyCrop_CropAreaGrid::after {
+  content: ' ';
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: 33.33%;
+  bottom: 33.33%;
+  left: 0;
+  right: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.upload-demo-trigger .trigger {
+  background-color: var(--color-fill-2);
+  color: var(--color-text-1);
+  border: 1px dashed var(--color-fill-4);
+  height: 158px;
+  width: 380px;
+  border-radius: 2;
+  line-height: 158px;
+  text-align: center;
+}
+
+.custom-upload-progress .arco-upload-list-item-text-content {
+  flex-wrap: wrap;
+}
+
+.custom-upload-progress .arco-upload-list-start-icon,
+.custom-upload-progress .arco-upload-list-cancel-icon {
+  right: 0;
+  left: unset;
+  top: -22px;
+  transform: none;
+}
+
+.custom-upload-progress .arco-upload-list-status {
+  display: block;
+}
+
+.custom-upload-progress .arco-upload-list-progress {
+  display: block;
+  height: 0;
+  margin-top: 0;
+  transition: all 0.2s ease;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.custom-upload-progress .arco-upload-list-item-uploading .arco-upload-list-progress {
+  margin-top: 8px;
+  opacity: 1;
+  height: 16px;
+}
+

@@ -7,6 +7,12 @@ nav:
 
 用于对元素添加 hover, click, focus 等事件，并且弹出下拉框。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
 ## API
 
 ### Trigger

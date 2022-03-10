@@ -8,6 +8,48 @@ nav:
 
 栅格可以有效的保证页面的一致性、逻辑性、加强团队协作和统一。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 栅格偏移
+
+<code src="./__demo__/offset.demo.tsx" />
+
+### 栅格排序
+
+<code src="./__demo__/push_pull.demo.tsx" />
+
+### 区块间隔
+
+<code src="./__demo__/gutter.demo.tsx" />
+
+### 水平布局
+
+<code src="./__demo__/flex-justify.demo.tsx" />
+
+### 垂直布局
+
+<code src="./__demo__/flex-align.demo.tsx" />
+
+### 排序
+
+<code src="./__demo__/order.demo.tsx" />
+
+### 响应式布局
+
+<code src="./__demo__/adaptation.demo.tsx" />
+
+### 其他属性的响应式
+
+<code src="./__demo__/adaptation_object.demo.tsx" />
+
+## Flex 用法
+
+<code src="./__demo__/flex.demo.tsx" />
+
 ## API
 
 ### Row

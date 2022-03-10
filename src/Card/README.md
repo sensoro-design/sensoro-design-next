@@ -8,6 +8,56 @@ nav:
 
 将信息分类后分标题、详情等区域聚合展现，一般作为简洁介绍或者信息的大盘和入口。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 鼠标悬浮样式
+
+<code src="./__demo__/hoverable.demo.tsx" />
+
+### 鼠标悬浮样式
+
+<code src="./__demo__/hoverable.demo.tsx" />
+
+### 无边框卡片
+
+<code src="./__demo__/no-border.demo.tsx" />
+
+### 简洁卡片
+
+<code src="./__demo__/only-content.demo.tsx" />
+
+### 更灵活的内容展示
+
+<code src="./__demo__/meta.demo.tsx" />
+
+### 栅格卡片
+
+<code src="./__demo__/with-row.demo.tsx" />
+
+### 预加载的卡片
+
+<code src="./__demo__/with-skeleton.demo.tsx" />
+
+### 网络型内嵌卡片
+
+<code src="./__demo__/card-grid.demo.tsx" />
+
+### 内部卡片
+
+<code src="./__demo__/inner-card.demo.tsx" />
+
+### 带页签的卡片
+
+<code src="./__demo__/with-tab.demo.tsx" />
+
+### 支持更多内容配置
+
+<code src="./__demo__/with-actions.demo.tsx" />
+
 ## API
 
 ### Card

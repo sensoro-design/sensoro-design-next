@@ -1,0 +1,38 @@
+
+/**
+ * title:
+ * desc:
+ */
+---
+order: 7
+title:
+  zh-CN: 自定义icon
+  en-US: Custom icon
+---
+
+## zh-CN
+
+通过`Icon`属性自定义图标
+
+## en-US
+
+Custom icon.
+
+```js
+import { Result, Button } from '@sensoro-design/react';
+import { IconFaceSmileFill } from '@sensoro-design/react/icon';
+
+ReactDOM.render(
+  <div >
+    <Result
+      status={null}
+      icon={<IconFaceSmileFill style={{color: 'rgb(var(--arcoblue-6))'}} />}
+      title="Your operation has been performed."
+      extra={<Button type="primary">Back</Button>}
+    >
+    </Result>
+  </div>,
+  CONTAINER
+);
+```
+

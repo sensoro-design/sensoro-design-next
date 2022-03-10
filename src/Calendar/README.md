@@ -8,6 +8,25 @@ nav:
 
 日历组件。
 
+
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 下拉选择的头部
+
+<code src="./__demo__/select-header.demo.tsx" />
+
+### 下拉选择的头部
+
+<code src="./__demo__/select-header.demo.tsx" />
+
+### 下拉选择的头部
+
+<code src="./__demo__/panel.demo.tsx" />
+
 ## API
 
 ### Calendar

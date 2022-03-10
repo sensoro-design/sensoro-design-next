@@ -7,7 +7,7 @@ import FormList from './form-list';
 import FormProvider from './form-provider';
 import useForm from './useForm';
 
-export { FormInstance, FormProps, FormItemProps, FormProviderProps };
+export type { FormInstance, FormProps, FormItemProps, FormProviderProps };
 
 type RefForm = typeof Form;
 

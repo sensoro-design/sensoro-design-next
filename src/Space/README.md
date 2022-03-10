@@ -7,6 +7,32 @@ nav:
 
 设置组件之间的间距。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 垂直间距
+
+<code src="./__demo__/vertical.demo.tsx" />
+
+### 尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 对齐
+
+<code src="./__demo__/align.demo.tsx" />
+
+### 环绕间距
+
+<code src="./__demo__/wrap.demo.tsx" />
+
+### 分隔符
+
+<code src="./__demo__/split.demo.tsx" />
+
 ## API
 
 ### Space

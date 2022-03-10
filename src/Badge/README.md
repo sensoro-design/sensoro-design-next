@@ -8,6 +8,40 @@ nav:
 
 一般出现在图标或文字的右上角。提供及时、重要的信息提示。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 独立使用
+
+<code src="./__demo__/no-children.demo.tsx" />
+
+### 小红点
+
+<code src="./__demo__/dot.demo.tsx" />
+
+### 文本内容
+
+<code src="./__demo__/text.demo.tsx" />
+
+### 文本内容
+
+<code src="./__demo__/max_count.demo.tsx" />
+
+### 状态值
+
+<code src="./__demo__/status.demo.tsx" />
+
+### 颜色
+
+<code src="./__demo__/color.demo.tsx" />
+
+### 动画效果
+
+<code src="./__demo__/animate.demo.tsx" />
+
 ## API
 
 ### Badge

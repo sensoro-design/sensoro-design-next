@@ -8,6 +8,20 @@ nav:
 
 划分内容区域，对模块做分隔。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 带有文字的分割线
+
+<code src="./__demo__/with-text.demo.tsx" />
+
+### 竖直分割线
+
+<code src="./__demo__/vertical.demo.tsx" />
+
 ## API
 
 ### Divider
