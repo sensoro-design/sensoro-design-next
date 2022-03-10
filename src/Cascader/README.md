@@ -8,7 +8,85 @@ nav:
 
 指在选择器选项数量较多时，采用多级分类的方式将选项进行分隔。
 
-## 属性/Props
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 允许清除
+
+<code src="./__demo__/clear.demo.tsx" />
+
+### 格式化展示选中值
+
+<code src="./__demo__/format.demo.tsx" />
+
+### 自定义选择框
+
+<code src="./__demo__/custom_children.demo.tsx" />
+
+### 选择即改变
+
+<code src="./__demo__/change_on_select.demo.tsx" />
+
+### 支持多选
+
+<code src="./__demo__/multiple.demo.tsx" />
+
+### 允许搜索
+
+<code src="./__demo__/search.demo.tsx" />
+
+### 自定义搜索
+
+<code src="./__demo__/filter_option.demo.tsx" />
+
+### 动态加载
+
+<code src="./__demo__/loadmore.demo.tsx" />
+
+### 选项禁用
+
+<code src="./__demo__/disabled.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 自定义Option
+
+<code src="./__demo__/render_option.demo.tsx" />
+
+### 自定义footer
+
+<code src="./__demo__/footer.demo.tsx" />
+
+### 展示空数据
+
+<code src="./__demo__/showEmptyChildren.demo.tsx" />
+
+### 控制下拉框的展开收起
+
+<code src="./__demo__/visible.demo.tsx" />
+
+### 自定义下拉菜单的展示
+
+<code src="./__demo__/dropdown.demo.tsx" />
+
+### 自定义字段名
+
+<code src="./__demo__/filedNames.demo.tsx" />
+
+### 远程搜索
+
+<code src="./__demo__/onSearch.demo.tsx" />
+
+## API
 
 ### Cascader
 
