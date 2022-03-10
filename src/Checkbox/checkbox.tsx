@@ -92,7 +92,6 @@ function Checkbox<T extends React.ReactText>(baseProps: CheckboxProps<T>, ref) {
         ref={inputRef}
         checked={!!checked}
         onChange={onChange}
-        // To avoid triggering onChange twice in Select if it's used in Select option.
         onClick={(e) => e.stopPropagation()}
         type="checkbox"
       />
@@ -104,7 +103,7 @@ function Checkbox<T extends React.ReactText>(baseProps: CheckboxProps<T>, ref) {
           <Hover
             prefix={prefixCls}
             className={`${prefixCls}-mask-wrapper`}
-            disabled={checked || disabled || indeterminate}
+            disabled
           >
             <div className={`${prefixCls}-mask`}>
               <IconCheck className={`${prefixCls}-mask-icon`} />

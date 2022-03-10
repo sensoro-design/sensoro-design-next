@@ -95,7 +95,7 @@ function Radio(baseProps: PropsWithChildren<RadioProps>) {
           <IconHover
             prefix={prefixCls}
             className={`${prefixCls}-mask-wrapper`}
-            disabled={checked || disabled}
+            disabled
           >
             <div className={`${prefixCls}-mask`} />
           </IconHover>
