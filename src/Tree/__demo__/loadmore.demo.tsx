@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 动态加载
+ * desc: 动态加载节点。
  */
----
-order: 6
-title:
-  zh-CN: 动态加载
-  en-US: Dynamic Loading
----
-
-## zh-CN
-
-动态加载节点。
-
-## en-US
-
-Load nodes dynamically.
-
-```js
+import React from 'react';
 import { Tree } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
-
 
 const defaultTreeData = [
   {
@@ -41,7 +23,7 @@ const defaultTreeData = [
   },
 ];
 
-function Demo() {
+export default () => {
   const [treeData, setTreeData] = React.useState(defaultTreeData);
 
   const loadMore = (treeNode) => {
@@ -57,12 +39,6 @@ function Demo() {
   };
 
   return (
-    <Tree defaultSelectedKeys={['node1']} loadMore={loadMore} treeData={treeData}>
-
-    </Tree>
+    <Tree defaultSelectedKeys={['node1']} loadMore={loadMore} treeData={treeData} />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

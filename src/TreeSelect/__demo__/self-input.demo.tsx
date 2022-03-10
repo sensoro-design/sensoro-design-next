@@ -1,30 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义显示
+ * desc: 设置 `triggerElement` 可以自定义显示。
  */
----
-order: 8
-title: 
-  zh-CN: 自定义显示
-  en-US: Customize Trigger
----
-
-## zh-CN
-
-设置 `triggerElement` 可以自定义显示。
-
-## en-US
-
-Set `triggerElement` to customize the display.
-
-```js
 import { useState } from 'react';
 import { TreeSelect, Typography, Link } from '@sensoro-design/react';
 
 const TreeNode = TreeSelect.Node;
 
-const DemoTreeSelect = () => {
+export default () => {
   const [text, setText] = useState('node1');
 
   return (
@@ -53,7 +37,3 @@ const DemoTreeSelect = () => {
     </TreeSelect>
   );
 }
-
-ReactDOM.render(<DemoTreeSelect/>,CONTAINER);
-```
-

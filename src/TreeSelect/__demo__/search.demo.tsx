@@ -1,26 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 搜索
+ * desc: 设置 `showSearch=true` 启用搜索功能。动态加载时候只能在已加载数据中进行搜索。默认的关键字搜索是从`value`字段匹配。也可以传入 `filterTreeNode`自定义过滤方式。
  */
----
-order: 5
-title:
-  zh-CN: 搜索
-  en-US: Search
----
-
-## zh-CN
-
-设置 `showSearch=true` 启用搜索功能。动态加载时候只能在已加载数据中进行搜索。默认的关键字搜索是从`value`字段匹配。也可以传入 `filterTreeNode`自定义过滤方式。
-
-## en-US
-
-Set `showSearch=true` to enable the search function. You can only search in the loaded data during dynamic loading. The default keyword search is to match from the `value` field. You can also pass in `filterTreeNode` to customize the filtering method.
-
-```js
+import React from 'react';
 import { TreeSelect, Space } from '@sensoro-design/react';
-import { IconCalendar } from '@sensoro-design/react/icon';
 
 const treeData = [
   {
@@ -80,7 +64,7 @@ const treeData = [
   },
 ];
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   handleChange = (value) => {
     console.log(value);
     this.setState({ value });
@@ -124,7 +108,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

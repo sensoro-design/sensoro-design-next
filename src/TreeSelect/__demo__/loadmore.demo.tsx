@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 动态加载
+ * desc: 可以通过 `loadMore` 进行动态加载。此时可设置 `isLeaf` 来标示叶子节点。
  */
----
-order: 4
-title: 
-  zh-CN: 动态加载
-  en-US: Dynamic Loading
----
-
-## zh-CN
-
-可以通过 `loadMore` 进行动态加载。此时可设置 `isLeaf` 来标示叶子节点。
-
-## en-US
-
-Load nodes dynamically via `loadMore`. At this time, `isLeaf` can be set to indicate leaf nodes.
-
-```js
 import { useState } from 'react';
 import { TreeSelect } from '@sensoro-design/react';
 
@@ -56,7 +40,7 @@ const defaultData = [
   },
 ];
 
-function Demo() {
+export default () => {
   const [treeData, setTreeData] = useState(defaultData);
   const [value, setValue] = useState('node2');
 
@@ -88,7 +72,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

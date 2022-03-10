@@ -1,27 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 复选框多选
+ * desc: 可以通过设置 `treeCheckable` 属性开启复选框勾选。
  */
----
-order: 10
-title:
-  zh-CN: 复选框多选
-  en-US: Checkable
----
-
-## zh-CN
-
-可以通过设置 `treeCheckable` 属性开启复选框勾选。
-
-## en-US
-
-The `treeCheckable` property can display checkbox.
-
-```js
 import { TreeSelect, Checkbox } from '@sensoro-design/react';
 import { useState } from 'react';
-
 
 const treeData = [
   {
@@ -81,7 +64,7 @@ const treeData = [
   },
 ];
 
-function Demo () {
+export default () => {
   const [treeCheckStrictly, setTreeCheckStrictly] = useState(false)
   const [value, setValue] = useState(['0-1']);
 
@@ -109,7 +92,3 @@ function Demo () {
     />
   </div>
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

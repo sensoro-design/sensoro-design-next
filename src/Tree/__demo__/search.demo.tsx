@@ -1,21 +1,10 @@
 
 /**
- * title:
+ * title: 搜索树
  * desc:
  */
----
-order: 15
-title:
-  zh-CN: 搜索树
-  en-US: Searchable
----
-
-
-```js
 import { useState, useEffect } from 'react';
 import { Tree, Input } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 const TreeData = [
   {
@@ -88,7 +77,7 @@ function searchData (inputValue) {
   return loop(TreeData);
 }
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = useState(TreeData)
   const [inputValue, setInputValue] = useState('');
 
@@ -128,10 +117,3 @@ function Demo () {
     </Tree>
   </div>
 }
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-

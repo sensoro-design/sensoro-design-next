@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 显示连接线
+ * desc: 为 `Tree` 添加 `showLine` 属性即可使树具有连接线
  */
----
-order: 9
-title:
-  zh-CN: 显示连接线
-  en-US: Show Line
----
-
-## zh-CN
-
-为 `Tree` 添加 `showLine` 属性即可使树具有连接线
-
-## en-US
-
-Add the `showLine` property to `Tree` to display the connecting line.
-
-```js
 import { useState } from 'react';
 import { Tree, Switch, Typography } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 const TreeData = [
   {
@@ -77,9 +59,9 @@ const TreeData = [
       },
     ],
   },
-];
+]
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = useState(TreeData)
   const [checked, setChecked] = useState(true)
 
@@ -97,10 +79,3 @@ function Demo () {
     </Tree>
   </div>
 }
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-

@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 栅格列表
+ * desc: 通过 `grid.span` 设置期望每行展示的列数。
  */
----
-order: 5
-title:
-  zh-CN: 栅格列表
-  en-US: Grid List
----
-
-## zh-CN
-
-通过 `grid.span` 设置期望每行展示的列数。
-
-## en-US
-
-Use `grid.span` to set the number of columns expected to occupy.
-
-```js
 import { List, Card } from '@sensoro-design/react';
 
 const data = [
@@ -39,27 +22,26 @@ const data = [
     data: ['Button', 'Breadcrumb', 'Transfer'],
   },
 ];
-
-ReactDOM.render(
-  <List
-    grid={{
-      gutter: 0,
-      span: 6,
-    }}
-    dataSource={data}
-    bordered={false}
-    render={(item, index) => (
-      <List.Item key={index}>
-        <List
-          size="small"
-          header={item.title}
-          dataSource={item.data}
-          render={(item, index) => <List.Item key={index}>{item}</List.Item>}
-        />
-      </List.Item>
-    )}
-  />,
-  CONTAINER
-);
-```
+export default () => {
+  return (
+    <List
+      grid={{
+        gutter: 0,
+        span: 6,
+      }}
+      dataSource={data}
+      bordered={false}
+      render={(item, index) => (
+        <List.Item key={index}>
+          <List
+            size="small"
+            header={item.title}
+            dataSource={item.data}
+            render={(item, index) => <List.Item key={index}>{item}</List.Item>}
+          />
+        </List.Item>
+      )}
+    />
+  )
+}
 

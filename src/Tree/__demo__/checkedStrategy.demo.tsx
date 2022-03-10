@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 设置回填方式
+ * desc: 为 `Tree` 添加 `checkedStrategy` 可以设置选中时的回填方式
  */
----
-order: 8
-title: 
-  zh-CN: 设置回填方式
-  en-US: Checked Strategy
----
-
-## zh-CN
-
-为 `Tree` 添加 `checkedStrategy` 可以设置选中时的回填方式
-
-## en-US
-
-Add `checkedStrategy` to set the return value when selected.
-
-```js
 import { useState } from 'react';
 import { Tree, Radio, Typography } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 const TreeData = [
   {
@@ -71,7 +53,7 @@ const TreeData = [
   },
 ];
 
-function Demo () {
+export default () => {
   const [checkedKeys, setCheckedKeys] = useState(['0-0', '0-1'])
   const [checkedStrategy, setCheckedStrategy] = useState(Tree.SHOW_ALL)
   return <div>
@@ -104,13 +86,6 @@ function Demo () {
         setCheckedKeys(value)
       }}
       treeData={TreeData}
-    ></Tree>
+    />
   </div>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

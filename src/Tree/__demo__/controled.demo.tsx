@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 受控模式
+ * desc: 可以指定树的 `selectedKeys` 或 `checkedKeys` 或 `expandedKeys` 属性使树变为受控模式，在对应的 `onSelect` / `onCheck` / `onExpand` 回调中对返回值进行操作。
  */
----
-order: 5
-title: 
-  zh-CN: 受控模式
-  en-US: Controlled
----
-
-## zh-CN
-
-可以指定树的 `selectedKeys` 或 `checkedKeys` 或 `expandedKeys` 属性使树变为受控模式，在对应的 `onSelect` / `onCheck` / `onExpand` 回调中对返回值进行操作。
-
-## en-US
-
-You can specify the `selectedKeys` or `checkedKeys` or `expandedKeys` property of the tree to turn the tree into a controlled mode, and operate on the return value in the `onSelect` / `onCheck` / `onExpand` callback.
-
-```js
 import { useState } from 'react';
 import { Tree, Button } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 
 const TreeData = [
@@ -62,7 +44,7 @@ const TreeData = [
   },
 ];
 
-function Demo() {
+export default () => {
   const allCheckedKeys = ['0-0', '0-0-1', '0-0-2', '0-0-2-1', '0-1', '0-1-1', '0-1-2'];
   const allExpandedKeys = ['0-0', '0-1', '0-0-2'];
 
@@ -107,11 +89,6 @@ function Demo() {
         setExpandedKeys(keys, extra)
       }}
       treeData={TreeData}
-    >
-    </Tree>
+    />
   </div>;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,31 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 定制组件图标
+ * desc: 通过`icons` 属性即可设置组件 `loadingIcon`,`dragIcon`,`switcherIcon`。
  */
----
-order: 13
-title: 
-  zh-CN: 定制组件图标
-  en-US: Component Icons
----
-
-## zh-CN
-
-通过`icons` 属性即可设置组件 `loadingIcon`,`dragIcon`,`switcherIcon`。
-
-## en-US
-
-The components `loadingIcon`, `dragIcon`, and `switcherIcon` can be set through the `icons` property.
-
-```js
 import { Tree } from '@sensoro-design/react';
-import {  IconDown, IconDragArrow, IconDriveFile } from '@sensoro-design/react/icon';
+import { IconDown, IconDragArrow, IconDriveFile } from '@sensoro-design/react/icon';
 
 const TreeNode = Tree.Node;
 
-function Demo () {
-
+export default () => {
   return (
     <Tree
       icons={{
@@ -45,10 +28,3 @@ function Demo () {
     </Tree>
   )
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

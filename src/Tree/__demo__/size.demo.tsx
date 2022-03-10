@@ -1,22 +1,14 @@
 
 /**
- * title:
+ * title: 不同尺寸
  * desc:
  */
----
-order: 10
-title: 
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-
-```js
+import React from 'react';
 import { Tree, Radio } from '@sensoro-design/react';
 
 const TreeNode = Tree.Node;
 
-function Demo () {
+export default () => {
   const [size, setSize] = React.useState('default')
 
   return (
@@ -43,10 +35,3 @@ function Demo () {
     </div>
   )
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

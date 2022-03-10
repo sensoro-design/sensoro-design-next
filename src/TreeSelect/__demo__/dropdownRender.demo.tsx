@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 扩展下拉菜单
+ * desc: 使用 `dropdownRender` 对下拉菜单进行自由扩展。
  */
----
-order: 12
-title: 
-  zh-CN: 扩展下拉菜单
-  en-US: Customize Dropdown
----
-
-## zh-CN
-
-使用 `dropdownRender` 对下拉菜单进行自由扩展。
-
-## en-US
-
-Use `dropdownRender` to freely expand the drop-down menu.
-
-```js
+import React from 'react';
 import { useState } from 'react';
 import { TreeSelect, Divider, Input, Button } from '@sensoro-design/react';
 import { IconPlus } from '@sensoro-design/react/icon';
@@ -51,7 +36,7 @@ const defaultTreeData = [
   },
 ];
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = React.useState(defaultTreeData);
   const [inputValue, setInputValue] = useState('');
 
@@ -101,10 +86,3 @@ function Demo () {
   >
   </TreeSelect>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

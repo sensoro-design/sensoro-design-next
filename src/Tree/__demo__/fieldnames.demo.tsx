@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义 TreeData 的字段名称
+ * desc: 通过 `fieldNames` 字段可以自定义 TreeData 的字段名。
  */
----
-order: 16
-title:
-  zh-CN: 自定义 TreeData 的字段名称
-  en-US: Customize treeData
----
-
-## zh-CN
-
-通过 `fieldNames` 字段可以自定义 TreeData 的字段名。
-
-## en-US
-
-You can customize `treeData` by `fieldNames`.
-
-```js
 import { useState } from 'react';
 import { Tree } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 const TreeData = [
   {
@@ -72,7 +54,7 @@ const TreeData = [
   },
 ];
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = useState(TreeData)
 
   return <div>
@@ -84,14 +66,6 @@ function Demo () {
         title: 'label',
         children: 'items'
       }}
-    >
-    </Tree>
+    />
   </div>
 }
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-

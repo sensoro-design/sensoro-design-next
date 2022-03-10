@@ -1,25 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 虚拟列表
+ * desc: 通过指定 `treeProps.virtualListProps` 来开启虚拟列表，在大量数据时获得高性能表现。
  */
----
-order: 14
-title:
-  zh-CN: 虚拟列表
-  en-US: Virtual List
----
-
-## zh-CN
-
-通过指定 `treeProps.virtualListProps` 来开启虚拟列表，在大量数据时获得高性能表现。
-
-## en-US
-
-By specifying `treeProps.virtualListProps` to turn on the virtual list, high performance can be obtained when a large amount of data is used.
-
-```js
-import { Tree, Button, TreeSelect, Select } from '@sensoro-design/react';
+import React from 'react';
+import { TreeSelect } from '@sensoro-design/react';
 
 function loop(path = '0', level = 2) {
   const list = [];
@@ -41,7 +26,7 @@ function loop(path = '0', level = 2) {
 
 const treeData = loop();
 
-function Demo() {
+export default () => {
   const treeRef = React.useRef();
 
   return (
@@ -58,7 +43,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,26 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 竖排列表样式
+ * desc: 这是一个包括分页、右侧内容、下方列表操作的示例。
  */
----
-order: 4
-title:
-  zh-CN: 竖排列表样式
-  en-US: Vertical List
----
-
-## zh-CN
-
-这是一个包括分页、右侧内容、下方列表操作的示例。
-
-## en-US
-
-This is an example including paging, content on the right, and list operations.
-
-```js
 import { List, Avatar } from '@sensoro-design/react';
 import { IconHeart, IconMessage, IconStar } from '@sensoro-design/react/icon';
+import './styles.less';
 
 const names = ['Socrates', 'Balzac', 'Plato'];
 
@@ -47,8 +32,9 @@ const dataSource = new Array(15).fill(null).map((_, index) => {
   };
 });
 
-ReactDOM.render(
-  <List
+export default () => {
+  return (
+    <List
     className="list-demo-action-layout"
     wrapperStyle={{ maxWidth: 830 }}
     bordered={false}
@@ -92,25 +78,6 @@ ReactDOM.render(
         />
       </List.Item>
     )}
-  />,
-  CONTAINER
-);
-```
-
-```css
-.list-demo-action-layout .image-area {
-  width: 183px;
-  height: 119px;
-  border-radius: 2px;
-  overflow: hidden;
+  />
+  )
 }
-
-.list-demo-action-layout .image-area img {
-  width: 100%;
-}
-
-.list-demo-action-layout .arco-list-item-action .arco-icon {
-  margin-right: 4px;
-}
-```
-

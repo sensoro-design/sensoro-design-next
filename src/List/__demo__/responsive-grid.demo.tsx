@@ -1,26 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 响应式栅格
+ * desc: 通过 `grid.sm` 等响应式参数动态设置每个单项横跨的列数，注意此时不要设置 `grid.span`。
  */
----
-order: 6
-title:
-  zh-CN: 响应式栅格
-  en-US: Responsive List Grid
----
-
-## zh-CN
-
-通过 `grid.sm` 等响应式参数动态设置每个单项横跨的列数，注意此时不要设置 `grid.span`。
-
-## en-US
-
-
-Dynamically set the number of columns occupied by each item through parameters such as `grid.sm`. Be careful not to set `grid.span` at this time.
-
-```js
-import { List, Card } from '@sensoro-design/react';
+import { List } from '@sensoro-design/react';
 
 const data = [
   {
@@ -61,27 +44,26 @@ const data = [
   },
 ];
 
-ReactDOM.render(
-  <List
-    grid={{
-      sm: 24,
-      md: 12,
-      lg: 8,
-      xl: 6,
-    }}
-    dataSource={data}
-    bordered={false}
-    render={(item, index) => (
-      <List.Item key={index}>
-        <List
-          header={item.title}
-          dataSource={item.data}
-          render={(item, index) => <List.Item key={index}>{item}</List.Item>}
-        />
-      </List.Item>
-    )}
-  />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <List
+      grid={{
+        sm: 24,
+        md: 12,
+        lg: 8,
+        xl: 6,
+      }}
+      dataSource={data}
+      bordered={false}
+      render={(item, index) => (
+        <List.Item key={index}>
+          <List
+            header={item.title}
+            dataSource={item.data}
+            render={(item, index) => <List.Item key={index}>{item}</List.Item>}
+          />
+        </List.Item>
+      )}
+    />
+  )
+}

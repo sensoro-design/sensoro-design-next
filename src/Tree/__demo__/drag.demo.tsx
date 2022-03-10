@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 拖拽
+ * desc: 可拖拽的树节点。
  */
----
-order: 7
-title: 
-  zh-CN: 拖拽
-  en-US: Draggable
----
-
-## zh-CN
-
-可拖拽的树节点。
-
-## en-US
-
-Draggable nodes.
-
-```js
 import { useState } from 'react'
 import { Tree, Checkbox } from '@sensoro-design/react'
-
-const TreeNode = Tree.Node
 
 const TreeData = [
   {
@@ -74,7 +56,7 @@ const TreeData = [
   },
 ]
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = useState(TreeData)
   const [checkedKeys, setCheckedKeys] = useState([])
   const [checked, setChecked] = useState(false)
@@ -127,30 +109,6 @@ function Demo () {
         }, 1000)
       }}
       treeData={treeData}
-    ></Tree>
+    />
   </div>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-)
-```
-
-```css
-.tree-node-dropover > .arco-tree-node-title,
-.tree-node-dropover > .arco-tree-node-title:hover {
-  animation: blinkBg 0.4s 2;
-}
-
-@keyframes blinkBg {
-  0% {
-    background-color: transparent;
-  }
-
-  100% {
-    background-color: var(--color-primary-light-1);
-  }
-}
-```
-

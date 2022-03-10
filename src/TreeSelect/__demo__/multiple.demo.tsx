@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 多选
+ * desc: 多选
  */
----
-order: 9
-title: 
-  zh-CN: 多选
-  en-US: Multiple Selection
----
-
-## zh-CN
-
-多选
-
-## en-US
-
-Multiple Selection
-
-```js
+import React from 'react';
 import { TreeSelect, Space } from '@sensoro-design/react';
 import { IconCalendar } from '@sensoro-design/react/icon';
 
@@ -51,7 +36,7 @@ const treeData = [
   },
 ];
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   state = {
     value: [],
   };
@@ -89,7 +74,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,30 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 设置 `size` 可以使用三种尺寸（`small`, `default`, `large`）的列表，可根据业务需求自行选择。
  */
----
-order: 1
-title:
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-## zh-CN
-
-设置 `size` 可以使用三种尺寸（`small`, `default`, `large`）的列表，可根据业务需求自行选择。
-
-## en-US
-
-There are three sizes (`small` `default` `large`) that you can select according to your need.
-
-```js
 import { useState } from 'react';
 import { List, Radio } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 
-function Demo() {
+export default () => {
   const [size, setSize] = useState('default');
 
   return (
@@ -56,7 +40,3 @@ function Demo() {
     </>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

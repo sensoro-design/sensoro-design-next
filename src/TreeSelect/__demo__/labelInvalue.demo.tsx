@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 设置 value 格式
+ * desc: `labelInValue` 为 `true` 时，`value` 格式为： `{ label: string, value: string }`。
  */
----
-order: 1
-title: 
-  zh-CN: 设置 value 格式
-  en-US: Value Format
----
-
-## zh-CN
-
-`labelInValue` 为 `true` 时，`value` 格式为： `{ label: string, value: string }`。
-
-## en-US
-
-When `labelInValue` is `true`, the format of `value` is: `{ label: string, value: string }`.
-
-```js
+import React from 'react';
 import { TreeSelect } from '@sensoro-design/react';
 import { IconCalendar } from '@sensoro-design/react/icon';
 
@@ -51,7 +36,7 @@ const treeData = [
   },
 ];
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   handleChange = (value) => {
     console.log(value);
   };
@@ -68,7 +53,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

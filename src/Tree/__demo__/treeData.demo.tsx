@@ -1,21 +1,10 @@
 
 /**
- * title:
+ * title: 由treeData直接生成
  * desc:
  */
----
-order: 1
-title: 
-  zh-CN: 由treeData直接生成
-  en-US: From TreeData
----
-
-
-```js
 import { useState } from 'react';
 import { Tree } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 const TreeData = [
   {
@@ -65,7 +54,7 @@ const TreeData = [
   },
 ];
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = useState(TreeData)
 
   return <div>
@@ -76,10 +65,3 @@ function Demo () {
     </Tree>
   </div>
 }
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-

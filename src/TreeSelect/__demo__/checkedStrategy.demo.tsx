@@ -1,27 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 定制回填方式
+ * desc: 可以通过`treeCheckStrategy`属性定制回填方式。
  */
----
-order: 11
-title: 
-  zh-CN: 定制回填方式
-  en-US: Check Strategy
----
-
-## zh-CN
-
-可以通过`treeCheckStrategy`属性定制回填方式。
-
-## en-US
-
-Customize the return value through the `treeCheckStrategy` property.
-
-```js
 import { TreeSelect, Radio } from '@sensoro-design/react';
 import { useState } from 'react';
-
 
 const treeData = [
   {
@@ -82,7 +65,7 @@ const treeData = [
 ];
 
 
-function Demo () {
+export default () => {
   const [treeCheckedStrategy, setTreeCheckedStrategy] = useState(TreeSelect.SHOW_CHILD)
   const [value, setValue] = useState(['0-0']);
 
@@ -119,7 +102,3 @@ function Demo () {
     />
   </div>
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,31 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 定制额外节点
+ * desc: 为 `Tree` 设置 `renderExtra` 可以自定义树节点的展示。
  */
----
-order: 12
-title: 
-  zh-CN: 定制额外节点
-  en-US: Extra Node
----
-
-## zh-CN
-
-为 `Tree` 设置 `renderExtra` 可以自定义树节点的展示。
-
-## en-US
-
-The `renderExtra` property of `Tree` can customize node content.
-
-```js
 import { useState } from 'react';
-import { Tree, Checkbox } from '@sensoro-design/react';
+import { Tree } from '@sensoro-design/react';
 import { IconPlus } from '@sensoro-design/react/icon';
 
-const TreeNode = Tree.Node;
-
-// 从treedata 生成 treenode
 const generatorTreeNodes = (treeData) => {
   return treeData.map((item) => {
     const { children, key, ...rest } = item;
@@ -84,8 +65,8 @@ const TreeData = [
   },
 ];
 
-function Demo () {
-  const [treeData, setTreeData] = React.useState(TreeData)
+export default () => {
+  const [treeData, setTreeData] = useState(TreeData)
 
   return <div style={{width: 500, padding: 2, overflow: 'auto' }}>
     <Tree
@@ -116,10 +97,3 @@ function Demo () {
     </Tree>
   </div>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

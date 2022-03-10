@@ -1,31 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 设置 `size` 可以使用四种尺寸（small, default, large, huge）的选择器。高度分别对应 24px、32px、36px、40px。
  */
----
-order: 7
-title: 
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-## zh-CN
-
-设置 `size` 可以使用四种尺寸（small, default, large, huge）的选择器。高度分别对应 24px、32px、36px、40px。
-
-## en-US
-
-Four sizes (small, default, large, huge) can be selected through `size`. The height corresponds to 24px, 32px, 36px, 40px.
-
-```js
 import { useState } from 'react';
 import { TreeSelect, Radio } from '@sensoro-design/react';
 
 const TreeNode = TreeSelect.Node;
 const RadioGroup = Radio.Group;
 
-function Demo() {
+export default () => {
   const [size, setSize] = useState('default');
 
   return (
@@ -56,7 +40,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

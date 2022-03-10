@@ -1,27 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 远程搜索
+ * desc: 当传入 `onSearch` 为函数时，启用自定义搜索，可以从远程加载数据。
  */
----
-order: 6
-title: 
-  zh-CN: 远程搜索
-  en-US: Remote search
----
-
-## zh-CN
-
-当传入 `onSearch` 为函数时，启用自定义搜索，可以从远程加载数据。
-
-## en-US
-
-Custom search can be enabled when the passed `onSearch` is a function, and data can be loaded remotely.
-
-```js
+import React from 'react';
 import { TreeSelect, Spin } from '@sensoro-design/react';
-import { IconCalendar } from '@sensoro-design/react/icon';
-
 
 const TreeData = [
   {
@@ -94,7 +77,7 @@ function searchData (inputValue) {
   return loop(TreeData);
 }
 
-function Demo () {
+export default () => {
   const [treeData, setTreeData] = React.useState(TreeData);
   const [loading, setLoading] = React.useState(false);
 
@@ -116,7 +99,3 @@ function Demo () {
       />
     );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

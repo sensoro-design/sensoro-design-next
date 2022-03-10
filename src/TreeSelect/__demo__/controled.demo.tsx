@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 受控模式
+ * desc: 受控模式。
  */
----
-order: 3
-title: 
-  zh-CN: 受控模式
-  en-US: Controlled
----
-
-## zh-CN
-
-受控模式。
-
-## en-US
-
-Controlled mode.
-
-```js
+import React from 'react';
 import { TreeSelect } from '@sensoro-design/react';
 import { IconCalendar } from '@sensoro-design/react/icon';
 
@@ -51,7 +36,7 @@ const treeData = [
   },
 ];
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   state = {
     value: 'node2',
   };
@@ -72,7 +57,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

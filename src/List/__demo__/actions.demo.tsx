@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 增加操作项
+ * desc: 通过 `actions` 来为列表添加操作项。
  */
----
-order: 3
-title:
-  zh-CN: 增加操作项
-  en-US: With Actions
----
-
-## zh-CN
-
-通过 `actions` 来为列表添加操作项。
-
-## en-US
-
-Use `actions` to add operation items to the list.
-
-```js
 import { useState } from 'react';
 import { List, Avatar } from '@sensoro-design/react';
 import { IconEdit, IconDelete, IconDown, IconLoading } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const dataSource = new Array(4).fill({
     title: 'Beijing Bytedance Technology Co., Ltd.',
     description: 'Beijing ByteDance Technology Co., Ltd. is an enterprise located in China.',
@@ -95,46 +79,3 @@ function Demo() {
     </>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.list-demo-actions-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  transition: all 0.1s;
-}
-
-.list-demo-actions-icon:hover {
-  background-color: var(--color-fill-3);
-}
-
-.list-demo-actions-button {
-  position: relative;
-  padding: 0 4px;
-  border-radius: 2px;
-  color: rgb(var(--arcoblue-6));
-  cursor: pointer;
-  transition: all 0.1s;
-}
-
-.list-demo-actions-button:hover {
-  background-color: var(--color-fill-3);
-}
-
-.list-demo-actions  .arco-list-item-action li:not(:last-child) .list-demo-actions-button::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  width: 1px;
-  height: 12px;
-  background-color: var(--color-fill-3);
-}
-```
-

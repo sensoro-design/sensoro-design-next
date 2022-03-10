@@ -1,28 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 多选
+ * desc: `Tree` 设置 `multiple` 属性为`true`，可以启用多选。
  */
----
-order: 3
-title: 
-  zh-CN: 多选
-  en-US: Multiple Selection
----
-
-## zh-CN
-
-`Tree` 设置 `multiple` 属性为`true`，可以启用多选。
-
-## en-US
-
-Add `multiple={true}` to `Tree` to enable multiple selection.
-
-```js
 import { useState } from 'react';
 import { Tree, Checkbox, Typography } from '@sensoro-design/react';
-
-const TreeNode = Tree.Node;
 
 const TreeData = [
   {
@@ -73,7 +55,7 @@ const TreeData = [
   },
 ];
 
-function Demo () {
+export default () => {
   const [selectedKeys, setSelectedKeys] = useState([])
   const [checked, setChecked] = useState(true)
   return <div>
@@ -102,10 +84,3 @@ function Demo () {
     ></Tree>
   </div>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-
