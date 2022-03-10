@@ -1,26 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 额外操作
+ * desc: 额外操作通过 `actions` 设置，默认情况下水平排列，如果您的操作按钮比较多，我们也提供了 `simple` 模式将按钮收入一个下拉框中，但是需要注意的是在 `simple` 模式下，描述将不显示。
  */
----
-order: 2
-title:
-  zh-CN: 额外操作
-  en-US: Extra operations
----
-
-## zh-CN
-
-额外操作通过 `actions` 设置，默认情况下水平排列，如果您的操作按钮比较多，我们也提供了 `simple` 模式将按钮收入一个下拉框中，但是需要注意的是在 `simple` 模式下，描述将不显示。
-
-## en-US
-
-The extra operations are set by `actions` and arranged horizontally by default. If you have more operation buttons, we also provide the `simple` mode to put the buttons in a drop-down box. Note that in the `simple` mode, the description will be unable to display.
-
-```js
 import { Image, Tooltip } from '@sensoro-design/react';
 import { IconEye, IconDownload, IconInfoCircle } from '@sensoro-design/react/icon';
+import './styles.less';
 
 function DemoImage(props) {
   const [visible, setVisible] = React.useState(false);
@@ -46,8 +31,7 @@ function DemoImage(props) {
   />
 }
 
-function Demo() {
-
+export default () => {
   return <div>
     <div>
       <DemoImage
@@ -72,22 +56,4 @@ function Demo() {
     </div>
   </div>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-
-```css
-.image-demo-action-item {
-  padding: 5px 4px;
-  display: inline-block;
-}
-
-.image-demo-props table:nth-of-type(2) thead th:last-child,
-.image-demo-props table:nth-of-type(3) thead th:last-child {
-  width: 20%;
-}
-```
 

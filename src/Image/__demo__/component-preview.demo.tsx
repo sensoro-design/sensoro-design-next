@@ -1,27 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 单独使用预览组件
+ * desc: `Image.Preview` 可单独使用，需要配置 `src`，并控制 `visible`。
  */
----
-order: 8
-title:
-  zh-CN: 单独使用预览组件
-  en-US: Use Preview alone
----
-
-## zh-CN
-
-`Image.Preview` 可单独使用，需要配置 `src`，并控制 `visible`。
-
-## en-US
-
-`Image.Preview` can be used alone, you need to set `src` and control `visible`.
-
-```js
+import React from 'react';
 import { Image, Button } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = React.useState(false);
 
   return (
@@ -35,10 +20,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

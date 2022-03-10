@@ -1,27 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 多图预览
+ * desc: 用 `<Image.PreviewGroup>` 包裹 `<Image>` 组件即可进行多图预览。
  */
----
-order: 7
-title:
-  zh-CN: 多图预览
-  en-US: Multi-image preview
----
-
-## zh-CN
-
-用 `<Image.PreviewGroup>` 包裹 `<Image>` 组件即可进行多图预览。
-
-## en-US
-
-Use `<Image.PreviewGroup>` to wrap the `<Image>` component to preview multiple images.
-
-```js
 import { Image, Space } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const srcList = [
     '//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/a8c8cdb109cb051163646151a4a5083b.png~tplv-uwbnlip3yd-webp.webp',
     '//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/e278888093bef8910e829486fb45dd69.png~tplv-uwbnlip3yd-webp.webp',
@@ -41,10 +25,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

@@ -8,6 +8,55 @@ nav:
 
 展示和预览图片。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 显示 Caption
+
+<code src="./__demo__/caption.demo.tsx" />
+
+### 额外操作
+
+<code src="./__demo__/extra-actions.demo.tsx" />
+
+### 错误状态
+
+<code src="./__demo__/error.demo.tsx" />
+
+### 加载状态
+
+<code src="./__demo__/loader.demo.tsx" />
+
+### 渐进加载
+
+<code src="./__demo__/progressive-loader.demo.tsx" />
+
+### 自定义预览控制条
+
+<code src="./__demo__/custom-preview-actions.demo.tsx" />
+
+### 多图预览
+
+<code src="./__demo__/preview-group.demo.tsx" />
+
+### 单独使用预览组件
+
+<code src="./__demo__/component-preview.demo.tsx" />
+
+### 单独使用多图预览组件
+
+<code src="./__demo__/component-preview-group.demo.tsx" />
+
+### 挂载节点
+
+<code src="./__demo__/preview-get-popup-container.demo.tsx" />
+
+## API
+
+
 <div class="image-demo-props">
 
 ### Image

@@ -1,27 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 渐进加载
+ * desc: 大图可通过给 `loader` 传递一个小一些的图片，让其在原图未被加载成功时显示，以此来模拟渐进加载。
  */
----
-order: 5
-title:
-  zh-CN: 渐进加载
-  en-US: Progressive Loading
----
-
-## zh-CN
-
-大图可通过给 `loader` 传递一个小一些的图片，让其在原图未被加载成功时显示，以此来模拟渐进加载。
-
-## en-US
-
-When you need to display a large image, you can pass a smaller image to `loader` to display it when the original image is not successfully loaded to simulate progressive loading.
-
-```js
 import { Image, Button } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [timestamp, setTimestamp] = React.useState('');
 
   return (
@@ -46,10 +30,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

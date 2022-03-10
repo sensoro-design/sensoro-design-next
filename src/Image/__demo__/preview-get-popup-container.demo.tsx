@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 挂载节点
+ * desc: 可以通过 `getPopupContainer` 指定预览挂载的父级节点。
  */
----
-order: 10
-title:
-  zh-CN: 挂载节点
-  en-US: Popup container
----
-
-## zh-CN
-
-可以通过 `getPopupContainer` 指定预览挂载的父级节点。
-
-## en-US
-
-Use `getPopupContainer` to specify the parent node where the preview should mount to.
-
-```js
+import React from 'react';
 import { Image } from '@sensoro-design/react';
 
 const wrapperStyle = {
@@ -31,7 +16,7 @@ const wrapperStyle = {
   textAlign: 'center',
 };
 
-function Demo() {
+export default () => {
   const ref = React.useRef();
   return (
     <div style={wrapperStyle} ref={ref}>
@@ -46,7 +31,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

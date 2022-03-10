@@ -1,34 +1,18 @@
 
 /**
- * title:
- * desc:
+ * title: 错误状态
+ * desc: 当加载图片失败的时候显示的内容。
  */
----
-order: 3
-title: 
-  zh-CN: 错误状态
-  en-US: Error state
----
-
-## zh-CN
-
-当加载图片失败的时候显示的内容。
-
-## en-US
-
-Content displayed when the image fails to load. 
-
-```js
 import { Image, Space } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   return <Space size={20}>
-    <Image 
+    <Image
       width={400}
       height={300}
       src="some-error.png"
     />
-    <Image 
+    <Image
       width={400}
       height={300}
       src="some-error.png"
@@ -36,10 +20,3 @@ function Demo() {
     />
   </Space>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-
