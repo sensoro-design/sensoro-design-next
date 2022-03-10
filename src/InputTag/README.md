@@ -8,6 +8,32 @@ nav:
 
 标签输入。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 获取选项的文本
+
+<code src="./__demo__/labelInValue.demo.tsx" />
+
+### 失焦时保存
+
+<code src="./__demo__/save-on-blur.demo.tsx" />
+
+### 自定义标签节点
+
+<code src="./__demo__/render-tag.demo.tsx" />
+
+### 拖拽排序
+
+<code src="./__demo__/draggable.demo.tsx" />
+
 ## API
 
 ### InputTag

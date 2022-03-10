@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 通过设置 `size` 来指定大小。
  */
----
-order: 1
-title: 
-  zh-CN: 不同尺寸 
-  en-US: Different sizes
----
-
-## zh-CN
-
-通过设置 `size` 来指定大小。
-
-## en-US
-
-Use `size` to specify the size of InputTag
-
-```js
 import { InputTag, Radio } from '@sensoro-design/react';
 import { useState } from 'react';
 const RadioGroup = Radio.Group;
 
-function Demo() {
+export default () => {
   const [size, setSize] = useState('default');
   return (
     <div>
@@ -50,7 +34,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

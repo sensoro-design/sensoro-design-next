@@ -1,29 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 拖拽排序
+ * desc: 指定 `dragToSort` 属性以允许对已输入的值进行拖拽排序。
  */
----
-order: 6
-title:
-  zh-CN: 拖拽排序
-  en-US: Draggable
----
-
-## zh-CN
-
-指定 `dragToSort` 属性以允许对已输入的值进行拖拽排序。
-
-## en-US
-
-Specify the `dragToSort` property to allow sort the entered values by dragging.
-
-```js
 import { InputTag } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <InputTag style={{ maxWidth: 350 }} allowClear dragToSort defaultValue={['a', 'b', 'c', 'd']} />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <InputTag style={{ maxWidth: 350 }} allowClear dragToSort defaultValue={['a', 'b', 'c', 'd']} />
+  )
+}

@@ -1,25 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义标签节点
+ * desc: 指定 `renderTag` 来自定义标签节点。
  */
----
-order: 5
-title:
-  zh-CN: 自定义标签节点
-  en-US: Render tag
----
-
-
-## zh-CN
-
-指定 `renderTag` 来自定义标签节点。
-
-## en-US
-
-Use `renderTag` to customize tag rendering
-
-```js
 import { InputTag, Tag } from '@sensoro-design/react';
 
 const options = ['arcoblue', 'orange', 'lime'];
@@ -39,15 +22,15 @@ function tagRender(props) {
   );
 }
 
-ReactDOM.render(
-  <InputTag
-    allowClear
-    placeholder="Please input"
-    defaultValue={options}
-    renderTag={tagRender}
-    style={{ maxWidth: 350 }}
-  />,
-  CONTAINER
-);
-```
+export default () => {
+  return (
+    <InputTag
+      allowClear
+      placeholder="Please input"
+      defaultValue={options}
+      renderTag={tagRender}
+      style={{ maxWidth: 350 }}
+    />
+  )
+}
 
