@@ -8,6 +8,36 @@ nav:
 
 互斥性的操作控件，用户可打开或关闭某个功能。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 不同类型
+
+<code src="./__demo__/type.demo.tsx" />
+
+### 禁用状态
+
+<code src="./__demo__/disabled.demo.tsx" />
+
+### 不同尺寸的开关
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 自定义文案
+
+<code src="./__demo__/checked_text.demo.tsx" />
+
+### 带图标的开关
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 加载中
+
+<code src="./__demo__/loading.demo.tsx" />
+
 ## API
 
 ### Switch
