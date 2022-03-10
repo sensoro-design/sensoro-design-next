@@ -1,30 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 四种尺寸
+ * desc: 设置 `size` 可以使用四种尺寸（`mini`, `small`, `default`, `large`）的数字输入框。高度分别对应`24px`、`28px`、`32px`、`36px`。
  */
----
-order: 2
-title: 
-  zh-CN: 四种尺寸
-  en-US: Size
----
-
-## zh-CN
-
-设置 `size` 可以使用四种尺寸（`mini`, `small`, `default`, `large`）的数字输入框。高度分别对应`24px`、`28px`、`32px`、`36px`。
-
-## en-US
-
-Setting `size` can use four sizes (`mini`, `small`, `default`, `large`) number input box. The corresponding heights are `24px`, `28px`, `32px`, and `36px` respectively.
-
-```js
 import { useState } from 'react';
 import { InputNumber, Radio } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 
-function Demo() {
+export default () => {
   const [size, setSize] = useState('default');
 
   return (
@@ -59,7 +43,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,27 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 前缀及后缀
+ * desc: 可以添加前缀和后缀。
  */
----
-order: 5
-title: 
-  zh-CN: 前缀及后缀
-  en-US: Prefix and Suffix
----
-
-## zh-CN
-
-可以添加前缀和后缀。
-
-## en-US
-
-You can add a prefix or a suffix.
-
-```js
 import { InputNumber } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   return (
     <div>
       <InputNumber
@@ -49,7 +33,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

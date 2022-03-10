@@ -8,6 +8,32 @@ nav:
 
 仅允许输入数字格式的输入框。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 按钮模式
+
+<code src="./__demo__/mode.demo.tsx" />
+
+### 精度和步长
+
+<code src="./__demo__/precision.demo.tsx" />
+
+### 格式化展示值
+
+<code src="./__demo__/format.demo.tsx" />
+
+### 前缀及后缀
+
+<code src="./__demo__/suffix.demo.tsx" />
+
 ## API
 
 ### InputNumber

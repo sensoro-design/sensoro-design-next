@@ -1,28 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 格式化展示值
+ * desc: 通过 `formatter`、 `parser` 配合使用可以定义输入框展示值。
  */
----
-order: 4
-title: 
-  zh-CN: 格式化展示值
-  en-US: Format
----
-
-## zh-CN
-
-通过 `formatter`、 `parser` 配合使用可以定义输入框展示值。
-
-## en-US
-
-The display value of the input box can be defined through the use of `formatter` and `parser` together.
-
-```js
 import { useState } from 'react';
 import { InputNumber } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [value, setValue] = useState(12000);
   return (
     <InputNumber
@@ -38,7 +22,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
