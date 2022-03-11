@@ -1,29 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 滚动加载选项
+ * desc: 当动态加载时，可通过`onPopupScroll`来监听滚动事件
  */
----
-order: 11
-title:
-  zh-CN: 滚动加载选项
-  en-US: Load Data While Scrolling
----
-
-## zh-CN
-
-当动态加载时，可通过`onPopupScroll`来监听滚动事件
-
-## en-US
-
-When loading dynamically, you can monitor scroll events through `onPopupScroll`.
-
-```js
 import { useRef, useCallback, useState } from 'react';
 import { Select, Spin, Avatar } from '@sensoro-design/react';
 import debounce from 'lodash/debounce';
 
-function Demo() {
+export default () => {
   const [options, setOptions] = useState([]);
   const [fetching, setFetching] = useState(false);
 
@@ -97,7 +80,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,26 +1,10 @@
 
 /**
- * title:
+ * title: 搜索
  * desc:
+ * 指定`showSearch=true`，可以对展开的选项进行搜索，配合 `filterOption` 可以自定义搜索。
+ * 搜索框聚焦时默认会清空已输入的内容，通过指定 `showSearch={ retainInputValue: true }` 来保留内容。
  */
----
-order: 4
-title:
-  zh-CN: 搜索
-  en-US: Search
----
-
-## zh-CN
-
-指定`showSearch=true`，可以对展开的选项进行搜索，配合 `filterOption` 可以自定义搜索。
-搜索框聚焦时默认会清空已输入的内容，通过指定 `showSearch={ retainInputValue: true }` 来保留内容。
-
-## en-US
-
-Specify `showSearch=true` to search for the expanded options, and cooperate with `filterOption` to customize the search.
-When the search box is focused, the entered content will be cleared by default, however the content can be retained by specifying `showSearch={ retainInputValue: true }`.
-
-```js
 import { Select, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
@@ -52,8 +36,9 @@ const foods = [
   },
 ];
 
-ReactDOM.render(
-  <Space size="large">
+export default () => {
+  return (
+    <Space size="large">
     <Select placeholder="Select city" style={{ width: 154 }} allowClear showSearch>
       {cities.map((option, index) => (
         <Option key={option} disabled={index === 3} value={option}>
@@ -89,8 +74,6 @@ ReactDOM.render(
         </Option>
       ))}
     </Select>
-  </Space>,
-  CONTAINER
-);
-```
-
+  </Space>
+  )
+}

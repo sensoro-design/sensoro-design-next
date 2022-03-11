@@ -8,6 +8,97 @@ nav:
 
 当用户需要从一组同类数据中选择一个或多个时，可以使用下拉选择器，点击后选择对应项。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 允许清除
+
+<code src="./__demo__/clear.demo.tsx" />
+
+### 多选模式
+
+<code src="./__demo__/multiple.demo.tsx" />
+
+### 允许创建
+
+<code src="./__demo__/allow-create.demo.tsx" />
+
+### 搜索
+
+<code src="./__demo__/show-search.demo.tsx" />
+
+### 远程搜索
+
+<code src="./__demo__/async-data.demo.tsx" />
+
+### 自定义弹出框宽度
+
+<code src="./__demo__/custom-popup-width.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 定制回显内容
+
+<code src="./__demo__/render-format.demo.tsx" />
+
+### 分组
+
+<code src="./__demo__/group.demo.tsx" />
+
+### 指定可选项
+
+<code src="./__demo__/options.demo.tsx" />
+
+### 滚动加载选项
+
+<code src="./__demo__/on-popup-scroll.demo.tsx" />
+
+### 自动分词
+
+<code src="./__demo__/token-separators.demo.tsx" />
+
+### 自定义触发节点
+
+<code src="./__demo__/custom-trigger.demo.tsx" />
+
+### 自定义触发节点
+
+<code src="./__demo__/custom-trigger.demo.tsx" />
+
+### 扩展菜单
+
+<code src="./__demo__/dropdown-render.demo.tsx" />
+
+### 扩展菜单
+
+<code src="./__demo__/no-border.demo.tsx" />
+
+### 自定义标签样式
+
+<code src="./__demo__/render-tag.demo.tsx" />
+
+### 联动
+
+<code src="./__demo__/relative.demo.tsx" />
+
+### 隐藏已选择项
+
+<code src="./__demo__/hide-selected-option.demo.tsx" />
+
+### 大数据
+
+<code src="./__demo__/virtual-list.demo.tsx" />
+
+### 拖拽排序
+
+<code src="./__demo__/darggable.demo.tsx" />
+
+
 ## API
 
 ### Select

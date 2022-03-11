@@ -1,32 +1,16 @@
-
 /**
- * title:
- * desc:
+ * title: 基础用法
+ * desc: 基础选择器。
  */
----
-order: 0
-title:
-  zh-CN: 基础用法
-  en-US: Basic
----
-
-## zh-CN
-
-基础选择器。
-
-## en-US
-
-Basic usage of Select.
-
-```js
 import { Select, Message, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
 
 const options = ['Beijing', 'Shanghai', 'Guangzhou', 'Disabled'];
 
-ReactDOM.render(
-  <Space size="large">
+export default () => {
+  return (
+    <Space size="large">
     <Select
       placeholder="Please select"
       style={{ width: 154 }}
@@ -50,8 +34,6 @@ ReactDOM.render(
         </Option>
       ))}
     </Select>
-  </Space>,
-  CONTAINER
-);
-```
-
+  </Space>
+  )
+}

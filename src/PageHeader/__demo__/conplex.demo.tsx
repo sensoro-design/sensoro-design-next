@@ -1,28 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 组合示例
+ * desc: 组件提供的完整能力
  */
----
-order: 3
-title: 
-  zh-CN: 组合示例
-  en-US: Conplex
----
-
-## zh-CN
-
-组件提供的完整能力
-
-## en-US
-
-Complete capabilities provided by components
-
-```js
 import { PageHeader, Button, Tag, Message, Typography } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <div style={{ background: 'var(--color-fill-2)', padding: 40 }}>
+export default () => {
+  return (
+    <div style={{ background: 'var(--color-fill-2)', padding: 40 }}>
     <PageHeader
       style={{ background: 'var(--color-bg-2)' }}
       title="ArcoDesign"
@@ -78,8 +62,6 @@ ReactDOM.render(
         blueprints,engineering drawings, business processes, circuit diagrams, and sewing patterns.
       </Typography.Paragraph>
     </PageHeader>
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

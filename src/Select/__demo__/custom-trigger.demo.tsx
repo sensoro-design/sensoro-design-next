@@ -1,30 +1,13 @@
-
 /**
- * title:
- * desc:
+ * title: 自定义触发节点
+ * desc: 设置 `triggerElement` 可以自定义触发下拉框的节点。
  */
----
-order: 13
-title:
-  zh-CN: 自定义触发节点
-  en-US: Custom Trigger
----
-
-## zh-CN
-
-设置 `triggerElement` 可以自定义触发下拉框的节点。
-
-## en-US
-
-Set `triggerElement` to customize the node that triggers the drop-down box.
-
-```js
 import { useState } from 'react';
 import { Select, Typography, Link } from '@sensoro-design/react';
 
 const Option = Select.Option;
 
-const DemoSelect = () => {
+export default () => {
   const [text, setText] = useState('None');
 
   return (
@@ -51,7 +34,3 @@ const DemoSelect = () => {
     </div>
   );
 };
-
-ReactDOM.render(<DemoSelect />, CONTAINER);
-```
-

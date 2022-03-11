@@ -1,31 +1,14 @@
-
 /**
- * title:
- * desc:
+ * title: 扩展菜单
+ * desc: 使用 `dropdownRender` 对下拉菜单进行自由扩展。
  */
----
-order: 14
-title:
-  zh-CN: 扩展菜单
-  en-US: Customize Dropdown
----
-
-## zh-CN
-
-使用 `dropdownRender` 对下拉菜单进行自由扩展。
-
-## en-US
-
-Use `dropdownRender` to freely customize the drop-down menu.
-
-```js
 import { useState } from 'react';
 import { Select, Divider, Input, Button } from '@sensoro-design/react';
 import { IconPlus } from '@sensoro-design/react/icon';
 
 const Option = Select.Option;
 
-function Demo() {
+export default () => {
   const [options, setOptions] = useState(['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen']);
   const [inputValue, setInputValue] = useState('');
 
@@ -73,7 +56,3 @@ function Demo() {
     </Select>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

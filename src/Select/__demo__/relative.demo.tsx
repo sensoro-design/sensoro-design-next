@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 联动
+ * desc: 省市联动示例。
  */
----
-order: 17
-title:
-  zh-CN: 联动
-  en-US: Coordinate
----
-
-## zh-CN
-
-省市联动示例。
-
-## en-US
-
-Coordinating the selection of provinces and cities is a common use case.
-
-```js
 import { useEffect, useState } from 'react';
 import { Select, Space } from '@sensoro-design/react';
 
@@ -30,7 +13,7 @@ const data = {
   Guangdong: ['Guangzhou', 'Shenzhen', 'Shantou']
 };
 
-function Demo() {
+export default () => {
   const provinces = Object.keys(data);
   const defaultProvince = provinces[0];
 
@@ -73,7 +56,3 @@ function Demo() {
     </Space>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

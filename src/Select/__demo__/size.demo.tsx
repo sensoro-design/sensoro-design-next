@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 通过 `size` 选择 Select 的尺寸（`mini`, `small`, `default`, `large`），高度分别对应`24px`、`28px`、`32px`、`36px`。
  */
----
-order: 7
-title:
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-## zh-CN
-
-通过 `size` 选择 Select 的尺寸（`mini`, `small`, `default`, `large`），高度分别对应`24px`、`28px`、`32px`、`36px`。
-
-## en-US
-
-Use `size` to select the size of Select (`mini`, `small`, `default`, `large`), the height corresponds to `24px`, `28px`, `32px`, `36px`.
-
-```js
+import React from 'react';
 import { Select, Radio } from '@sensoro-design/react';
 
 const Option = Select.Option;
@@ -26,7 +11,7 @@ const RadioGroup = Radio.Group;
 
 const options = ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Chengdu', 'Wuhan'];
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   state = {
     value: 'default',
   };
@@ -80,7 +65,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

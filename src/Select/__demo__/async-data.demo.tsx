@@ -1,29 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 远程搜索
+ * desc: 通过 `filterOption` 和 `onSearch` 结合，可以使用远程搜索功能。
  */
----
-order: 5
-title:
-  zh-CN: 远程搜索
-  en-US: Search Users
----
-
-## zh-CN
-
-通过 `filterOption` 和 `onSearch` 结合，可以使用远程搜索功能。
-
-## en-US
-
-Through the combination of `filterOption` and `onSearch`, you can search user from origin and select them.
-
-```js
 import { useState, useRef, useCallback } from 'react';
 import { Select, Spin, Avatar } from '@sensoro-design/react';
 import debounce from 'lodash/debounce';
 
-function Demo() {
+export default () => {
   const [options, setOptions] = useState([]);
   const [fetching, setFetching] = useState(false);
 
@@ -82,7 +65,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

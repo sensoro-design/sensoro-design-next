@@ -8,6 +8,24 @@ nav:
 
 页头位于页容器中，页容器顶部，起到了内容概览和引导页级操作的作用。包括由面包屑、标题等内容
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 带有面包屑
+
+<code src="./__demo__/breadcrumb.demo.tsx" />
+
+### 底色透明
+
+<code src="./__demo__/background.demo.tsx" />
+
+### 组合示例
+
+<code src="./__demo__/conplex.demo.tsx" />
+
 ## API
 
 ### PageHeader

@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 允许创建
+ * desc: 指定 `allowCreate` 为 `true`，即可创建选项中不存在的条目。
  */
----
-order: 3
-title:
-  zh-CN: 允许创建
-  en-US: Allow-Create
----
-
-## zh-CN
-
-指定 `allowCreate` 为 `true`，即可创建选项中不存在的条目。
-
-## en-US
-
-Specify `allowCreate` as `true` to create entries that do not exist in the options.
-
-```js
 import { Select, Space } from '@sensoro-design/react';
 
 const Option = Select.Option;
@@ -27,7 +10,7 @@ for (let i = 10; i < 24; i++) {
   options.push(i.toString(36) + i);
 }
 
-function Demo() {
+export default () => {
   return (
     <Space size="large">
       <Select allowCreate placeholder="Create an item" allowClear style={{ width: 345 }}>
@@ -37,7 +20,7 @@ function Demo() {
           </Option>
         ))}
       </Select>
-      
+
       <Select
         allowCreate
         mode="multiple"
@@ -55,7 +38,3 @@ function Demo() {
     </Space>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
