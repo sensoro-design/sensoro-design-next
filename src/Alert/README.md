@@ -8,6 +8,40 @@ nav:
 
 向用户显示警告的信息时，通过警告提示，展现需要关注的信息。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 不同类型
+
+<code src="./__demo__/type.demo.tsx" />
+
+### 可关闭
+
+<code src="./__demo__/closable.demo.tsx" />
+
+### 自定义关闭元素
+
+<code src="./__demo__/closeElement.demo.tsx" />
+
+### 含有标题
+
+<code src="./__demo__/with-title.demo.tsx" />
+
+### 不含图标
+
+<code src="./__demo__/without-icon.demo.tsx" />
+
+### 顶部公告
+
+<code src="./__demo__/banner.demo.tsx" />
+
+### 操作项
+
+<code src="./__demo__/action.demo.tsx" />
+
 ## API
 
 ### Alert
