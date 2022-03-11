@@ -1,30 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 改变每页展示条目
+ * desc: 可定义每页展示条目数量。
  */
----
-order: 2
-title:
-  zh-CN: 改变每页展示条目
-  en-US: Change pageSize
----
-
-## zh-CN
-
-可定义每页展示条目数量。
-
-## en-US
-
-The pageSize of Pagination can be changed.
-
-```js
 import { Pagination } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <Pagination total={200} sizeCanChange />,
-  CONTAINER
-);
-```
-
-
+export default () => {
+  return (
+    <Pagination total={200} sizeCanChange />
+  )
+}

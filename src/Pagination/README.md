@@ -8,7 +8,53 @@ nav:
 
 采用分页控制单页内的信息数量，也可进行页面跳转。
 
-## 属性/Props
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 更多页码
+
+<code src="./__demo__/count-more.demo.tsx" />
+
+### 改变每页展示条目
+
+<code src="./__demo__/change-size.demo.tsx" />
+
+### 跳转
+
+<code src="./__demo__/jumper.demo.tsx" />
+
+### 尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 简洁
+
+<code src="./__demo__/simple.demo.tsx" />
+
+### 展示总数
+
+<code src="./__demo__/show-total.demo.tsx" />
+
+### 受控的数据总数
+
+<code src="./__demo__/show-more.demo.tsx" />
+
+### 全部展示
+
+<code src="./__demo__/all-options.demo.tsx" />
+
+### 样式定制
+
+<code src="./__demo__/style.demo.tsx" />
+
+### 上一步和下一步
+
+<code src="./__demo__/itemRender.demo.tsx" />
+
+## API
 
 ### Pagination
 

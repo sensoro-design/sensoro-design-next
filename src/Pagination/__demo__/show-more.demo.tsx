@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 受控的数据总数
+ * desc: 通过改变 `total` 的值，解决无法计算页码总数的情景。
  */
----
-order: 7
-title:
-  zh-CN: 受控的数据总数
-  en-US: Count under control
----
-
-## zh-CN
-
-通过改变 `total` 的值，解决无法计算页码总数的情景。
-
-## en-US
-
-By changing the value of `total`, solve the situation where the total number of pages cannot be calculated.
-
-```js
+import React from 'react';
 import { Pagination } from '@sensoro-design/react';
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -56,7 +40,3 @@ class Demo extends React.Component {
     />;
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

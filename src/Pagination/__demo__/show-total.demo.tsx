@@ -1,32 +1,14 @@
-
 /**
- * title:
- * desc:
+ * title: 展示总数
+ * desc: 您可以通过设置 `showTotal` 来显示数据总数。
  */
----
-order: 6
-title:
-  zh-CN: 展示总数
-  en-US: Show Total
----
-
-## zh-CN
-
-您可以通过设置 `showTotal` 来显示数据总数。
-
-## en-US
-
-Set `showTotal` to show the total number of data.
-
-```js
 import { Pagination } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <div>
-    <Pagination showTotal total={50} style={{ marginBottom: 20 }} />
-    <Pagination showTotal={(total, range) => <span>{`${range[0]} - ${range[1]} of ${total} items`}</span>} total={200} />
-  </div>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <div>
+      <Pagination showTotal total={50} style={{ marginBottom: 20 }} />
+      <Pagination showTotal={(total, range) => <span>{`${range[0]} - ${range[1]} of ${total} items`}</span>} total={200} />
+    </div>
+  )
+}
