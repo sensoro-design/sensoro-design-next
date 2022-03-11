@@ -8,7 +8,34 @@ nav:
 
 突出展示某个或某组数字、带描述的统计类数据。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 前缀后缀/自定义样式
+
+<code src="./__demo__/prefix_suffix.demo.tsx" />
+
+### 数值动效
+
+<code src="./__demo__/countUp.demo.tsx" />
+
+### 计时组件
+
+<code src="./__demo__/countdown.demo.tsx" />
+
+### 计时组件
+
+<code src="./__demo__/time.demo.tsx" />
+
+### 加载中
+
+<code src="./__demo__/loading.demo.tsx" />
+
 ## API
+
 ### Statistic
 
 |参数名|描述|类型|默认值|版本|

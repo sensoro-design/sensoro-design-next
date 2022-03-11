@@ -1,31 +1,16 @@
 
 /**
- * title:
- * desc:
+ * title: 计时组件
+ * desc: 倒计时组件。可以通过 `now` 来传入 `Date.now()`，用于修复初始值显示的小误差问题。
  */
----
-order: 2
-title:
-  zh-CN: 计时组件
-  en-US: Countdown
----
-
-## zh-CN
-
-倒计时组件。可以通过 `now` 来传入 `Date.now()`，用于修复初始值显示的小误差问题。
-
-## en-US
-
-Countdown component. You can use `now` to correct the initialization time.
-
-```js
+import React from 'react';
 import { Statistic, Message, Button } from '@sensoro-design/react';
 
 const Countdown = Statistic.Countdown;
 
 const now = Date.now();
 
-function Demo () {
+export default () => {
   const [start, setStart] = React.useState(false)
 
   const _now = Date.now();
@@ -77,7 +62,3 @@ function Demo () {
     </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

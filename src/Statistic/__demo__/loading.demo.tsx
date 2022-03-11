@@ -1,28 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 加载中
+ * desc: 通过 `loading` 可以控制是否显示加载中状态。
  */
----
-order: 5
-title:
-  zh-CN: 加载中
-  en-US: Loading
----
-
-## zh-CN
-
-通过 `loading` 可以控制是否显示加载中状态。
-
-## en-US
-
-You can control whether to display the loading status through `loading`.
-
-```js
 import { useState } from 'react';
 import { Statistic, Switch, Typography } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [loading, setLoading] = useState(true);
   return (
     <div>
@@ -34,7 +18,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

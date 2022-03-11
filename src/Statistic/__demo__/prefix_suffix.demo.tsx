@@ -1,29 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 前缀后缀/自定义样式
+ * desc: 这个示例展示了添加前缀后缀，并且可以自定义数值显示的样式。
  */
----
-order: 1
-title:
-  zh-CN: 前缀后缀/自定义样式
-  en-US: Custom Style
----
-
-## zh-CN
-
-这个示例展示了添加前缀后缀，并且可以自定义数值显示的样式。
-
-## en-US
-
-This example shows the addition of prefix and suffix, and the style of displaying values can be customized.
-
-```js
 import { Statistic } from '@sensoro-design/react';
 import { IconArrowRise, IconArrowFall } from '@sensoro-design/react/icon';
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
+    <div>
     <Statistic
       title="New Users"
       value={192393}
@@ -45,8 +30,6 @@ ReactDOM.render(
       styleValue={{ color: '#ee4d38' }}
       style={{ marginRight: 60, marginBottom: 20 }}
     />
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}
