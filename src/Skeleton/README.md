@@ -8,6 +8,20 @@ nav:
 
 将加载中的数据用灰色占位。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 文本行数和宽度
+
+<code src="./__demo__/rows.demo.tsx" />
+
+### 动画
+
+<code src="./__demo__/animate.demo.tsx" />
+
 ## API
 
 ### Skeleton

@@ -7,6 +7,36 @@ nav:
 
 由用户的操作触发的轻量级全局反馈。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 不同类型
+
+<code src="./__demo__/type.demo.tsx" />
+
+### 自定义图标
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 更新全局提醒内容
+
+<code src="./__demo__/update_message.demo.tsx" />
+
+### 更新延时
+
+<code src="./__demo__/update_duration.demo.tsx" />
+
+### 手动控制关闭
+
+<code src="./__demo__/hide.demo.tsx" />
+
+### 显示关闭按钮
+
+<code src="./__demo__/closable.demo.tsx" />
+
 ## API
 
 ### Message

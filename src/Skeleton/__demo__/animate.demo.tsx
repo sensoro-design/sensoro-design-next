@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 动画
+ * desc: 骨架屏显示动画效果。
  */
----
-order: 2
-title: 
-  zh-CN: 动画
-  en-US: Animation
----
-
-## zh-CN
-
-骨架屏显示动画效果。
-
-## en-US
-
-Display animation effects.
-
-```js
+import React from 'react';
 import { Skeleton, Switch, Avatar, Typography } from '@sensoro-design/react';
 
-class DemoSkeleton extends React.Component {
+export default class DemoSkeleton extends React.Component {
   constructor(props) {
     super(props);
 
@@ -69,7 +53,3 @@ class DemoSkeleton extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<DemoSkeleton />, CONTAINER);
-```
-
