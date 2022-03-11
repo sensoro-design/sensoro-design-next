@@ -6,7 +6,7 @@
 import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = React.useState(false);
   const [visible1, setVisible1] = React.useState(false);
 

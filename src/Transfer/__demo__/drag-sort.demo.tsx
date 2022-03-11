@@ -1,28 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 拖拽排序
+ * desc: 指定 `draggable` 属性为 `true`，可拖拽排序左右面板。
  */
----
-order: 9
-title:
-  zh-CN: 拖拽排序
-  en-US: Drag
----
-
-## zh-CN
-
-指定 `draggable` 属性为 `true`，可拖拽排序左右面板。
-
-## en-US
-
-Specify `draggable` as `true`, and the left and right panels can be sorted by dragging.
-
-```js
 import { useState } from 'react';
 import { Transfer } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const swapArrayItem = (arr, index1, index2) => {
     arr = [...arr];
     arr.splice(index1, 1, ...arr.splice(index2, 1, arr[index1]));
@@ -51,7 +34,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

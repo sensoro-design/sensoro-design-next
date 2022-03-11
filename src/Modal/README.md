@@ -8,6 +8,66 @@ nav:
 
 在当前页面打开一个浮层，承载相关操作。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 异步关闭
+
+<code src="./__demo__/async_close.demo.tsx" />
+
+### 自定义页脚
+
+<code src="./__demo__/footer.demo.tsx" />
+
+### 自定义标题
+
+<code src="./__demo__/header.demo.tsx" />
+
+### 确认对话框
+
+<code src="./__demo__/confirm.demo.tsx" />
+
+### 消息提示
+
+<code src="./__demo__/confirm_type.demo.tsx" />
+
+### 定制按钮文字
+
+<code src="./__demo__/custom_button_text.demo.tsx" />
+
+### 手动更新和移除
+
+<code src="./__demo__/update.demo.tsx" />
+
+### 自定义位置
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 数据请求加载
+
+<code src="./__demo__/load_data.demo.tsx" />
+
+### 带有通知对话框
+
+<code src="./__demo__/with_alert.demo.tsx" />
+
+### 带有步骤条对话框
+
+<code src="./__demo__/with_step.demo.tsx" />
+
+### 自定义渲染对话框
+
+<code src="./__demo__/modal_render.demo.tsx" />
+
+### Hooks 用法
+
+<code src="./__demo__/useModal.demo.tsx" />
+
+## API
+
 ### Modal
 
 |参数名|描述|类型|默认值|版本|

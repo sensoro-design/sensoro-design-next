@@ -1,27 +1,10 @@
-
 /**
- * title:
- * desc:
+ * title: 高级用法
+ * desc: 穿梭框高级用法，可配置操作文案，可定制宽高。
  */
----
-order: 3
-title:
-  zh-CN: 高级用法
-  en-US: Advanced
----
-
-## zh-CN
-
-穿梭框高级用法，可配置操作文案，可定制宽高。
-
-## en-US
-
-Advanced usage of shuttle frame, configurable operation copy, and customizable width and height.
-
-```js
 import { Transfer } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const dataSource = new Array(10).fill(null).map((_, index) => ({
     key: `${index + 1}`,
     value: `Option ${index + 1}`,
@@ -39,7 +22,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

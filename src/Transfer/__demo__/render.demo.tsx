@@ -1,28 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 自定义渲染行数据
+ * desc: 通过 `render` 自定义渲染每一个项目，可用于渲染复杂数据。
  */
----
-order: 5
-title:
-  zh-CN: 自定义渲染行数据
-  en-US: Custom Render
----
-
-## zh-CN
-
-通过 `render` 自定义渲染每一个项目，可用于渲染复杂数据。
-
-## en-US
-
-Custom rendering of each item through `render`.
-
-```js
 import { Transfer } from '@sensoro-design/react';
 import { IconStar } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const dataSource = new Array(8).fill(null).map((_, index) => ({
     key: `${index + 1}`,
     value: `Option ${index + 1}`,
@@ -45,7 +28,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

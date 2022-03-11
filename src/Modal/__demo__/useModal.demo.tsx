@@ -5,7 +5,7 @@
 import { createContext } from 'react';
 import { Modal, Button, Space } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [modal, contextHolder] = Modal.useModal();
 
   const ConfigContext = createContext({});

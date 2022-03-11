@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 位置
+ * desc: Tooltip 支持 12 个不同的方位。分别为：`上左` `上` `上右` `下左` `下` `下右` `左上` `左` `左下` `右上` `右` `右下`。
  */
----
-order: 2
-title: 
-  zh-CN: 位置
-  en-US: Position
----
-
-## zh-CN
-
-Tooltip 支持 12 个不同的方位。分别为：`上左` `上` `上右` `下左` `下` `下右` `左上` `左` `左下` `右上` `右` `右下`。
-
-## en-US
-
-Tooltip supports 12 different positions. They are: `upper left` `upper` `upper right` `lower left` `down` `lower right` `upper left` `left` `lower left` `upper right` `right` `lower right`.
-
-```js
 import { Tooltip, Button } from '@sensoro-design/react';
 
 function getStyle(top, left) {
@@ -30,8 +13,9 @@ function getStyle(top, left) {
   };
 }
 
-ReactDOM.render(
-  <div style={{ position: 'relative', width: 440, height: 280 }}>
+export default () => {
+  return (
+    <div style={{ position: 'relative', width: 440, height: 280 }}>
     <Tooltip position="tl" trigger="hover" content="This is a Tooltip">
       <Button style={getStyle(0, 70)}>TL</Button>
     </Tooltip>
@@ -68,8 +52,6 @@ ReactDOM.render(
     <Tooltip position="br" trigger="hover" content="This is a Tooltip">
       <Button style={getStyle(240, 290)}>BR</Button>
     </Tooltip>
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

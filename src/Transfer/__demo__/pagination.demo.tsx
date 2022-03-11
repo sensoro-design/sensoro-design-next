@@ -1,27 +1,10 @@
-
 /**
- * title:
- * desc:
+ * title: 分页
+ * desc: 数据量大时，指定 `pagination` 来使用分页。
  */
----
-order: 4
-title:
-  zh-CN: 分页
-  en-US: Pagination
----
-
-## zh-CN
-
-数据量大时，指定 `pagination` 来使用分页。
-
-## en-US
-
-When the amount of data is large, specify `pagination` to display the data in pages.
-
-```js
 import { Transfer } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const dataSource = new Array(30).fill(null).map((_, index) => ({
     key: `${index + 1}`,
     value: `Option ${index + 1}`,
@@ -37,7 +20,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

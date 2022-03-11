@@ -1,27 +1,10 @@
-
 /**
- * title:
- * desc:
+ * title: 单向模式
+ * desc: 指定 `oneWay` 使用单向模式的穿梭框。
  */
----
-order: 2
-title:
-  zh-CN: 单向模式
-  en-US: One Way
----
-
-## zh-CN
-
-指定 `oneWay` 使用单向模式的穿梭框。
-
-## en-US
-
-Specify `oneWay` to only allow one-way movement
-
-```js
 import { Transfer } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const dataSource = new Array(8).fill(null).map((_, index) => ({
     key: `${index + 1}`,
     value: `Option ${index + 1}`,
@@ -38,7 +21,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

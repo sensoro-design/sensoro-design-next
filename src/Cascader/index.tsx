@@ -3,6 +3,6 @@ import { NodeProps } from './base/node';
 
 export default Cascader;
 
-export { NodeProps };
+export type { NodeProps };
 
 export * from './interface';

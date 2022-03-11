@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 树穿梭框
+ * desc: 使用 `Tree` 组件作为自定义渲染列表。
  */
----
-order: 7
-title:
-  zh-CN: 树穿梭框
-  en-US: With Tree
----
-
-## zh-CN
-
-使用 `Tree` 组件作为自定义渲染列表。
-
-## en-US
-
-Use `Tree` component as a custom rendering list.
-
-```js
 import { useState } from 'react';
 import { Transfer, Tree } from '@sensoro-design/react';
 
@@ -103,7 +86,7 @@ const treeData = [
   { key: '4', title: 'Trunk 4' },
 ];
 
-const Demo = () => {
+export default () => {
   const [targetKeys, setTargetKeys] = useState(['2-1', '2-2', '2-3', '4']);
   const onChange = (keys) => {
     setTargetKeys(keys);
@@ -117,7 +100,3 @@ const Demo = () => {
     />
   );
 };
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

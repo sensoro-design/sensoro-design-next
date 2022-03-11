@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 表格穿梭框
+ * desc: 使用 `Table` 组件作为自定义渲染列表。
  */
----
-order: 6
-title:
-  zh-CN: 表格穿梭框
-  en-US: With Table
----
-
-## zh-CN
-
-使用 `Table` 组件作为自定义渲染列表。
-
-## en-US
-
-Use `Table` component as a custom rendering list.
-
-```js
 import { useState } from 'react';
 import { Transfer, Table } from '@sensoro-design/react';
 
@@ -107,7 +90,7 @@ const tableColumns = [
   },
 ];
 
-function Demo() {
+export default () => {
   const [targetKeys, setTargetKeys] = useState([]);
   return (
     <TableTransfer
@@ -121,18 +104,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.transfer-demo-with-table .arco-table-container {
-  border: none !important;
-  border-radius: 0 !important;
-}
-
-.transfer-demo-with-table .arco-table-th {
-  background-color: var(--color-bg-2);
-}
-```
-

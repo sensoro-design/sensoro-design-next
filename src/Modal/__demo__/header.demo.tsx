@@ -32,7 +32,7 @@ export default () => {
 
 
         <Button onClick={() => setVisible1(true)} type="primary" style={{ marginLeft: 24 }}>
-           Center align title
+          Center align title
         </Button>
         <Modal
           title="Modal Title"
