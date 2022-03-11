@@ -1,30 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 动态增减表单项
+ * desc: 通过`Form.List`管理数组类型的表单结构。
  */
----
-order: 8
-title:
-  zh-CN: 动态增减表单项
-  en-US: List
----
-
-## zh-CN
-
-通过`Form.List`管理数组类型的表单结构。
-
-## en-US
-
-Provides array management for fields.
-
-```js
-
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Form, Input, Button, Grid } from '@sensoro-design/react';
 import { IconArrowRise, IconArrowFall, IconDelete } from '@sensoro-design/react/icon';
 
-function Demo () {
+export default () => {
   const formRef = useRef();
 
   return (
@@ -122,7 +105,3 @@ function Demo () {
   </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

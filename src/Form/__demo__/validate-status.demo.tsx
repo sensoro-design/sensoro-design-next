@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义表单校验状态
+ * desc: `Form.Item` 支持通过  hasFeedback`validateStatus` 和 `help` 属性自定义表单校验状态及校验文案。
  */
----
-order: 16
-title:
-  zh-CN: 自定义表单校验状态
-  en-US: Validate status
----
-
-## zh-CN
-
-`Form.Item` 支持通过  hasFeedback`validateStatus` 和 `help` 属性自定义表单校验状态及校验文案。
-
-## en-US
-
-`Form.Item` supports customizing the form verification status and verification copy through the hasFeedback`validateStatus` and `help` attributes.
-
-```js
 import { Form, AutoComplete, Input, Select, Cascader, InputNumber, Grid, DatePicker, TreeSelect, TimePicker, Radio } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [status, setStatus] = React.useState('error')
   const [size, setSize] = React.useState('default')
   return (
@@ -89,7 +73,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

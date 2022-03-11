@@ -1,33 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 表单控件嵌套
+ * desc: `Form.Item` 可以互相嵌套。
  */
----
-order: 6
-title:
-  zh-CN: 表单控件嵌套
-  en-US: Nest Form.Item
----
-
-## zh-CN
-
-`Form.Item` 可以互相嵌套。
-
-## en-US
-
-`Form.Item` can be nested.
-
-```js
-
-import { Form, Input, Button, Grid, Select, InputNumber, Tooltip } from '@sensoro-design/react';
+import { Form, Input, Button, Grid, Select, Tooltip } from '@sensoro-design/react';
 import { IconExclamationCircle } from '@sensoro-design/react/icon';
 
 import { useRef, useState } from 'react';
 
-function Demo() {
+export default () => {
   const formRef = useRef();
-  const [values, setValues] = useState({});
 
   return (
     <div>
@@ -96,9 +78,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-
-
-```
-

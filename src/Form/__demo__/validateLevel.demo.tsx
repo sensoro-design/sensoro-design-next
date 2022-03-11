@@ -1,26 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 表单校验失败不阻塞提交
+ * desc: 可以通过 `validateLevel` 设置表单校验失败是显示为 `warning` 状态，不阻塞表单提交。
  */
----
-order: 19
-title:
-  zh-CN: 表单校验失败不阻塞提交
-  en-US: validate level
----
-
-## zh-CN
-
-可以通过 `validateLevel` 设置表单校验失败是显示为 `warning` 状态，不阻塞表单提交。
-
-
-## en-US
-
-You can use 'validateLevel' to set form validation failures to 'warning' and not block form submission.
-
-
-```js
 import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
@@ -94,10 +76,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

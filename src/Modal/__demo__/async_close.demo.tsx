@@ -1,31 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 异步关闭
+ * desc: 在对话框中使用表单时，如提交表单，点击确定后异步关闭对话框。
  */
----
-order: 1
-title: 
-  zh-CN: 异步关闭
-  en-US: Async Close
----
-
-## zh-CN
-
-在对话框中使用表单时，如提交表单，点击确定后异步关闭对话框。
-
-
-## en-US
-
-When using a form in a dialog, such as submitting a form, click OK to close the dialog asynchronously.
-
-```js
 import { useState } from 'react';
 import { Modal, Button, Form, Input, Select, Message } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [form] = Form.useForm();
@@ -78,7 +61,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

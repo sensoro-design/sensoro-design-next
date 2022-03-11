@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 基础用法
+ * desc: 文本信息对话框。
  */
----
-order: 0
-title:
-  zh-CN: 基础用法
-  en-US: Basic
----
-
-## zh-CN
-
-文本信息对话框。
-
-## en-US
-
-Dialog with text.
-
-```js
+import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = React.useState(false);
 
   return (
@@ -45,7 +29,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

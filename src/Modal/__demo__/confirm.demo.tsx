@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 确认对话框
+ * desc: 使用`Modal.confirm()`，可以快速弹出对话框。
  */
----
-order: 4
-title:
-  zh-CN: 确认对话框
-  en-US: Confirm Modal
----
-
-## zh-CN
-
-使用`Modal.confirm()`，可以快速弹出对话框。
-
-## en-US
-
-Use `Modal.confirm()` to quickly pop up a confirmation modal dialog.
-
-```js
 import { Modal, Message, Button } from '@sensoro-design/react';
 
 function confirm() {
@@ -38,11 +21,10 @@ function confirm() {
   });
 }
 
-ReactDOM.render(
-  <Button type="primary" onClick={confirm}>
-    Confirm
-  </Button>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Button type="primary" onClick={confirm}>
+      Confirm
+    </Button>
+  )
+}

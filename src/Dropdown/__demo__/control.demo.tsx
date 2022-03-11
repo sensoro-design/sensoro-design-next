@@ -1,26 +1,10 @@
 
 /**
- * title:
+ * title: 隐藏菜单
  * desc:
+ * 通过 `popupVisible` 和 `onVisibleChange` 控制下拉框的展开和收起。具体 `onVisibleChange` 的触发时机可查看[Trigger](/react/components/trigger#受控用法)组件文档。
+ * 如果 `droplist` 是 `Menu`，可以通过在 `onClickMenuItem` 中返回 `false` 来避免菜单自动隐藏。
  */
----
-order: 7
-title:
-  zh-CN: 隐藏菜单
-  en-US: Control visibility of menu
----
-
-## zh-CN
-
-通过 `popupVisible` 和 `onVisibleChange` 控制下拉框的展开和收起。具体 `onVisibleChange` 的触发时机可查看[Trigger](/react/components/trigger#受控用法)组件文档。
-如果 `droplist` 是 `Menu`，可以通过在 `onClickMenuItem` 中返回 `false` 来避免菜单自动隐藏。
-
-## en-US
-
-Use `popupVisible` and `onVisibleChange` to control the visibility of the dropdown menu. Refer to [Trigger](/react/components/trigger#Controlled) for more details about trigger timing of `onVisibleChange`.
-If `droplist` is `Menu`, you can also prevent menu hiding by returning `false` in `onClickMenuItem`.
-
-```js
 import { useState, useRef } from 'react';
 import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
@@ -89,23 +73,11 @@ function DemoWithOnClickMenuItem() {
   );
 }
 
-ReactDOM.render(
-  <Space size="large" className="dropdown-demo">
-    <DemoWithPopupVisible />
-    <DemoWithOnClickMenuItem />
-  </Space>,
-  CONTAINER
-);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
+export default () => {
+  return (
+    <Space size="large" className="dropdown-demo">
+      <DemoWithPopupVisible />
+      <DemoWithOnClickMenuItem />
+    </Space>
+  )
 }
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-

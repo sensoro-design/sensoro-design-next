@@ -1,27 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 定制按钮文字
+ * desc: 设置 `okText` 与 `cancelText` 以自定义按钮文字。
  */
----
-order: 6
-title: 
-  zh-CN: 定制按钮文字
-  en-US: Customize Button Text
----
-
-## zh-CN
-
-设置 `okText` 与 `cancelText` 以自定义按钮文字。
-
-## en-US
-
-Set `okText` and `cancelText` to customize the button text.
-
-```js
+import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
 
   function confirm() {
@@ -63,7 +48,3 @@ function Demo () {
       </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

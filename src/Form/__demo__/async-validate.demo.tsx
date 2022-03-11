@@ -1,33 +1,14 @@
-
 /**
- * title:
+ * title: 表单异步校验
  * desc:
+ * 在 `rules` 中自定义 `validator` 方法，并返回一个 `Promise` 即可实现表单的异步校验。
+ * p.s: 如果用 `lodash.debounce` 不生效，建议使用 `debounce.promise` ，它返回的是一个 `promise`。
  */
----
-order: 18
-title:
-  zh-CN: 表单异步校验
-  en-US: async validate
----
-
-## zh-CN
-
-在 `rules` 中自定义 `validator` 方法，并返回一个 `Promise` 即可实现表单的异步校验。
-
-p.s: 如果用 `lodash.debounce` 不生效，建议使用 `debounce.promise` ，它返回的是一个 `promise`。
-
-## en-US
-
-Customize the `validator` method in `rules` and return a `Promise` to achieve asynchronous validation of the form.
-
-p.s: If using `lodash.debounce` does not work, it is recommended to use `debounce.promise`, which returns a `promise`.
-
-```js
 import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [form] = Form.useForm();
 
   return (
@@ -76,10 +57,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

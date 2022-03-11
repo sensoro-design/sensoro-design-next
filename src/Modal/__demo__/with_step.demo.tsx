@@ -1,29 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 带有步骤条对话框
+ * desc: 带有横向步骤条的对话框。
  */
----
-order: 11
-title: 
-  zh-CN: 带有步骤条对话框
-  en-US: Dialog with Steps
----
-
-## zh-CN
-
-带有横向步骤条的对话框。
-
-## en-US
-
-Dialog with horizontal step bar.
-
-```js
-import { Modal, Button, Table, Alert, Steps, Divider } from '@sensoro-design/react';
+import React from 'react';
+import { Modal, Button, Table, Steps, Divider } from '@sensoro-design/react';
+import './styles.less';
 
 const Step = Steps.Step;
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
   // table
   const columns = [
@@ -93,14 +79,14 @@ function Demo () {
         <Divider style={{ margin: 0 }}/>
         <div style={{ padding: '24px 20px' }}>
           <p>
-            You can select multiple plugins for the current project so that our app will verify that the plugins are installed and enabled. 
+            You can select multiple plugins for the current project so that our app will verify that the plugins are installed and enabled.
           </p>
           <p style={{ marginTop: 20, marginBottom: 8, fontWeight: 600 }}>
             List of plugins
           </p>
-          <Table 
-            columns={columns} 
-            data={data} 
+          <Table
+            columns={columns}
+            data={data}
             pagination={false}
             border={{ headerCell: true, wrapper: true, }}
             rowKey='id'
@@ -111,13 +97,3 @@ function Demo () {
     </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.modal-demo-without-content-spacing .arco-modal-content {
-  padding: 0;
-}
-```
-

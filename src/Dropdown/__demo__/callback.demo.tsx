@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 触发事件
+ * desc: 通过 `Menu.onClickMenuItem` 来为菜单指定点击菜单项时触发的回调函数。
  */
----
-order: 4
-title:
-  zh-CN: 触发事件
-  en-US: Callback for MenuItem
----
-
-## zh-CN
-
-通过 `Menu.onClickMenuItem` 来为菜单指定点击菜单项时触发的回调函数。
-
-## en-US
-
-Use `Menu.onClickMenuItem` to specify the callback function to be triggered when the menu item is clicked.
-
-```js
 import { Dropdown, Menu, Button, Message } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
 
@@ -30,7 +14,7 @@ const dropList = (
   </Menu>
 );
 
-function Demo() {
+export default () => {
   return (
     <div className="dropdown-demo">
       <Dropdown droplist={dropList} position="bl" triggerProps={{ autoAlignPopupWidth: true }}>
@@ -41,18 +25,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
-}
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-

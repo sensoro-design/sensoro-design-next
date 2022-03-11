@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 自定义页脚
+ * desc: 传入 `okButtonProps` 和 `cancelButtonProps` 可分别自定义确定按钮和取消按钮的 props。如果 `okButtonProps` 、 `cancelButtonProps` 仍然不能满足需要的话，可以直接传入`footer`来自定义页脚内容。
  */
----
-order: 2
-title: 
-  zh-CN: 自定义页脚
-  en-US: Customize Footer
----
-
-## zh-CN
-
-传入 `okButtonProps` 和 `cancelButtonProps` 可分别自定义确定按钮和取消按钮的 props。如果 `okButtonProps` 、 `cancelButtonProps` 仍然不能满足需要的话，可以直接传入`footer`来自定义页脚内容。
-
-## en-US
-
-Pass in `okButtonProps` and `cancelButtonProps` to customize the props of the OK button and the cancel button respectively. If `okButtonProps` and `cancelButtonProps` still cannot meet your needs, you can directly pass in `footer` to customize the footer content.
-
-```js
+import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
 
   const [visible1, setVisible1] = React.useState(false);
@@ -50,7 +34,7 @@ function Demo () {
         </Modal>
 
         <Button onClick={() => {setVisible1(true);}} type="primary" style={{ marginBottom: 20, marginRight: 24 }}>
-           Open Modal with customized footer
+          Open Modal with customized footer
         </Button>
         <Modal
           title="Modal Title"
@@ -82,7 +66,7 @@ function Demo () {
         </Modal>
 
         <Button onClick={() => {setVisible2(true);}} type="primary" style={{ marginBottom: 20, }}>
-           Open Modal without footer
+          Open Modal without footer
         </Button>
         <Modal
           title="Modal Title"
@@ -99,7 +83,3 @@ function Demo () {
       </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

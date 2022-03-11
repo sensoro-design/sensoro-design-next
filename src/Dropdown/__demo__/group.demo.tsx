@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 分组菜单
+ * desc: 通过 `Menu.ItemGroup` 使用分组。
  */
----
-order: 8
-title:
-  zh-CN: 分组菜单
-  en-US: Grouped menu
----
-
-## zh-CN
-
-通过 `Menu.ItemGroup` 使用分组。
-
-## en-US
-
-Group menu items by `Menu.ItemGroup`.
-
-```js
 import { Dropdown, Menu, Button } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
 
@@ -36,7 +19,7 @@ const dropList = (
   </Menu>
 );
 
-function Demo() {
+export default () => {
   return (
     <div className="dropdown-demo">
       <Dropdown
@@ -52,18 +35,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
-}
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-

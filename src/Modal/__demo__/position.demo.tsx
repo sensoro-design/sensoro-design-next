@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义位置
+ * desc: 使用 `alignCenter` 结合 `style` 来设置对话框位置。
  */
----
-order: 8
-title: 
-  zh-CN: 自定义位置
-  en-US: Customize Position
----
-
-## zh-CN
-
-使用 `alignCenter` 结合 `style` 来设置对话框位置。
-
-## en-US
-
-Use `alignCenter` combined with `style` to set the position of the dialog.
-
-```js
+import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 
 function Demo() {
@@ -61,7 +46,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

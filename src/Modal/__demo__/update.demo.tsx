@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 手动更新和移除
+ * desc: 手动更新和关闭通过 Modal的方法创建的对话框。
  */
----
-order: 7
-title: 
-  zh-CN: 手动更新和移除
-  en-US: Update and Close
----
-
-## zh-CN
-
-手动更新和关闭通过 Modal的方法创建的对话框。
-
-## en-US
-
-Manually update and close the dialog which created by `Modal`.
-
-```js
 import { Modal, Button, Spin } from '@sensoro-design/react';
 import { IconCheckCircleFill, IconInfoCircleFill } from '@sensoro-design/react/icon';
 
@@ -30,7 +14,7 @@ const sleep = async (time) => {
   })
 }
 
-function Demo() {
+export default () => {
   return <div>
     <Button
       type="primary"
@@ -61,7 +45,3 @@ function Demo() {
     </Button>
   </div>
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

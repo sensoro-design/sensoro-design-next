@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 复杂类型的数据
+ * desc: 通过设置 `field` 为 `a.b.c` 格式，可以得到 `{a:{b:{c: xx}}}`。
  */
----
-order: 5
-title:
-  zh-CN: 复杂类型的数据
-  en-US: Object value
----
+import React from 'react';
+import { Form, Input } from '@sensoro-design/react';
 
-## zh-CN
-
-通过设置 `field` 为 `a.b.c` 格式，可以得到 `{a:{b:{c: xx}}}`。
-
-## en-US
-
-By setting `field` to `a.b.c`, you will get `{a:{b:{c: xx}}}`.
-
-```js
-import { Form, Input, Button, Modal } from '@sensoro-design/react';
-
-function Demo() {
+export default () => {
   const [values, setValues] = React.useState();
 
   return (
@@ -67,7 +51,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

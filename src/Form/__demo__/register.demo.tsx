@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 注册表单
+ * desc: 填写必须的信息以注册新用户
  */
----
-order: 13
-title:
-  zh-CN: 注册表单
-  en-US: Register
----
-
-## zh-CN
-
-填写必须的信息以注册新用户
-
-## en-US
-
-Fill in the necessary information to register a new user
-
-```js
 import { Form, Input, Button, Message } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [form] = Form.useForm();
 
   return (
@@ -59,10 +43,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

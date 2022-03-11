@@ -1,20 +1,12 @@
 
 /**
- * title:
+ * title: 滚动到指定表单字段
  * desc:
  */
----
-order: 19
-title:
-  zh-CN: 滚动到指定表单字段
-  en-US: Scroll To Field
----
-
-```js
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Form, Input, Button } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
   const formRef = useRef();
 
   return (
@@ -49,7 +41,3 @@ function Demo () {
   </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

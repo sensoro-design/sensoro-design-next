@@ -1,32 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 表单布局
+ * desc: `Form` 支持三种排列方式：
  */
----
-order: 1
-title:
-  zh-CN: 表单布局
-  en-US: Layout
----
-
-## zh-CN
-
-`Form` 支持三种排列方式：
-
-horizontal 水平排列 (**默认**)、 vertical 垂直排列、 inline 行内排列
-
-## en-US
-
-`Form` supports three layout: horizontal (**default**), vertical, inline.
-
-```js
+import React from 'react';
 import { Form, Input, Checkbox, Button, Radio } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 const RadioGroup = Radio.Group;
 
-function Demo() {
+export default () => {
   const [layout, setLayout] = React.useState('horizontal')
   return (
     <Form
@@ -60,7 +43,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

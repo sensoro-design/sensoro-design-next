@@ -1,28 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 表单控件联动
+ * desc: 可以通过`shouldUpdate` 实现控件间的联动。
  */
----
-order: 7
-title:
-  zh-CN: 表单控件联动
-  en-US: shouldUpdate
----
+import { Form, Input, Radio, Button, Select } from '@sensoro-design/react';
 
-## zh-CN
-
-可以通过`shouldUpdate` 实现控件间的联动。
-
-## en-US
-
-Dynamically change the field of the form by `shouldUpdate`.
-
-```js
-import { useRef, useState, useEffect } from 'react';
-import { Form, Input, Message, Radio, Button, Select } from '@sensoro-design/react';
-
-function Demo() {
+export default () => {
   const [form] = Form.useForm();
 
   return (
@@ -32,7 +15,7 @@ function Demo() {
         style={{ maxWidth: 650 }}
         onValuesChange={(_, vs) => {console.log(vs)}}
       >
-       <Form.Item field="type" label="Type" >
+        <Form.Item field="type" label="Type" >
           <Radio.Group options={['A', 'B']}></Radio.Group>
         </Form.Item>
         <Form.Item shouldUpdate noStyle >
@@ -75,7 +58,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

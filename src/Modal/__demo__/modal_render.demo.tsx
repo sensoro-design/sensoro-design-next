@@ -1,28 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义渲染对话框
+ * desc: 可以通过 `modalRender` 来自定义渲染对话框，实现拖拽功能。
  */
----
-order: 12
-title: 
-  zh-CN: 自定义渲染对话框
-  en-US: Customize Rendering
----
-
-## zh-CN
-
-可以通过 `modalRender` 来自定义渲染对话框，实现拖拽功能。
-
-## en-US
-
-You can customize the rendering dialog through `modalRender` to realize the drag and drop function.
-
-```js
+import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 import Draggable from 'react-draggable';
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
   const [disabled, setDisabled] = React.useState(true);
 
@@ -53,7 +38,3 @@ function Demo () {
       </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

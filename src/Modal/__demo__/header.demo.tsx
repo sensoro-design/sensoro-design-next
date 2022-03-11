@@ -1,34 +1,19 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义标题
+ * desc: `title` 支持传入文字或者 react 节点，支持各种场景的标题栏展示。
  */
----
-order: 3
-title: 
-  zh-CN: 自定义标题
-  en-US: Customize Title
----
-
-## zh-CN
-
-`title` 支持传入文字或者 react 节点，支持各种场景的标题栏展示。
-
-## en-US
-
-The `title` parameter supports text or react nodes, which can support title bar display in various scenarios.
-
-```js
+import React from 'react';
 import { Modal, Button } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
   const [visible1, setVisible1] = React.useState(false);
 
   return (
       <div>
         <Button onClick={() => setVisible(true)} type="primary">
-           Left align title
+          Left align title
         </Button>
         <Modal
           title={(
@@ -64,7 +49,3 @@ function Demo () {
       </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

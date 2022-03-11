@@ -1,27 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 通过 `size` 属性可以设置不同尺寸的表单
  */
----
-order: 15
-title:
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-## zh-CN
-
-通过 `size` 属性可以设置不同尺寸的表单
-
-
-## en-US
-
-The `size` attribute allows you to set forms of different sizes
-
-
-```js
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import {
   Form,
@@ -95,7 +77,7 @@ const noLabelLayout = {
   },
 };
 
-function Demo() {
+export default () => {
   const formRef = useRef();
   const [size, setSize] = useState('default');
 
@@ -164,7 +146,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

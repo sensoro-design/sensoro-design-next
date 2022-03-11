@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 带有通知对话框
+ * desc: 对话框中显示 Notification。
  */
----
-order: 10
-title: 
-  zh-CN: 带有通知对话框
-  en-US: Dialog with Notification
----
-
-## zh-CN
-
-对话框中显示 Notification。
-
-## en-US
-
-Show Notification in dialog.
-
-```js
+import React from 'react';
 import { Modal, Button, Table, Alert } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
   // table
   const columns = [
@@ -69,20 +53,20 @@ function Demo () {
         onOk={() => setVisible(false)}
         onCancel={() => setVisible(false)}
       >
-        <Alert 
+        <Alert
           closable
-          type='info' 
+          type='info'
           content='This message displays only once.' />
         <div style={{ padding: 20 }}>
           <p>
-            You can select multiple plugins for the current project so that our app will verify that the plugins are installed and enabled. 
+            You can select multiple plugins for the current project so that our app will verify that the plugins are installed and enabled.
           </p>
           <p style={{ marginTop: 20, marginBottom: 8, fontWeight: 600 }}>
             List of plugins
           </p>
-          <Table 
-            columns={columns} 
-            data={data} 
+          <Table
+            columns={columns}
+            data={data}
             pagination={false}
             border={{ headerCell: true, wrapper: true, }}
             rowKey='id'
@@ -93,13 +77,3 @@ function Demo () {
     </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.modal-demo-without-content-spacing .arco-modal-content {
-  padding: 0;
-}
-```
-

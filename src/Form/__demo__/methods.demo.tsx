@@ -1,30 +1,13 @@
-
 /**
- * title:
- * desc:
+ * title: 表单方法调用
+ * desc: 在函数式组件里可以使用`Form.useForm`获取表单实例。通过该实例调用表单方法，例如设置表单字段值，重置表单等。
+ * 在类组件里可以使用`ref` 获取表单实例。
  */
----
-order: 3
-title:
-  zh-CN: 表单方法调用
-  en-US: Methods
----
-
-## zh-CN
-
-在函数式组件里可以使用`Form.useForm`获取表单实例。通过该实例调用表单方法，例如设置表单字段值，重置表单等。
-在类组件里可以使用`ref` 获取表单实例。
-
-## en-US
-
-In functional components, you can use `Form.useForm` to get a form instance, You can call all form methods through this instance, such as setting form value, reset form, etc. If you are using class component, you can get it by `ref`.
-
-```js
 import { Form, Input, Button, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [form] = Form.useForm();
 
   return (
@@ -77,10 +60,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

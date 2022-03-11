@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 触发方式
+ * desc: 通过 `trigger` 指定触发方式。
  */
----
-order: 3
-title:
-  zh-CN: 触发方式
-  en-US: Trigger mode
----
-
-## zh-CN
-
-通过 `trigger` 指定触发方式。
-
-## en-US
-
-Specify the trigger mode by `trigger`.
-
-```js
 import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
 
@@ -30,7 +13,7 @@ const dropList = (
   </Menu>
 );
 
-function Demo() {
+export default () => {
   return (
     <Space size="large" className="dropdown-demo">
       <Dropdown droplist={dropList} position="br">
@@ -48,18 +31,3 @@ function Demo() {
     </Space>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
-}
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-

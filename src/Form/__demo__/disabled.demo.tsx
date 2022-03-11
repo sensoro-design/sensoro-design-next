@@ -1,30 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 全局禁用
+ * desc: 给 `Form` 组件设置 `disabled` 可以全局禁用所有表单控件。
  */
----
-order: 14
-title:
-  zh-CN: 全局禁用
-  en-US: Disabled
----
-
-## zh-CN
-
-给 `Form` 组件设置 `disabled` 可以全局禁用所有表单控件。
-
-## en-US
-
-Set `disabled` to the `Form` component to globally disable all form controls.
-
-
-```js
 import { useRef, useEffect, useState } from 'react';
-
 import {
-  Form, AutoComplete, Input, Select, Button, Tooltip, Checkbox, Switch, Radio,
-  Cascader, Message, InputNumber, Rate, Slider, Upload, Grid, DatePicker, Modal
+  Form, AutoComplete, Input, Select, Button, Checkbox, Switch, Radio,
+  Cascader, Message, InputNumber, Rate, Slider, Upload, DatePicker, Modal
 } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
@@ -85,7 +67,7 @@ const noLabelLayout = {
   },
 };
 
-function Demo() {
+export default () => {
   const formRef = useRef();
   const [size, setSize] = useState('default');
 
@@ -339,7 +321,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

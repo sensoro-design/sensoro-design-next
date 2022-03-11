@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 带图标的菜单
+ * desc: 菜单项前可以添加图标。
  */
----
-order: 10
-title:
-  zh-CN: 带图标的菜单
-  en-US: Menu with icons
----
-
-## zh-CN
-
-菜单项前可以添加图标。
-
-## en-US
-
-You can add icons before menu items.
-
-```js
 import { Dropdown, Menu, Button } from '@sensoro-design/react';
 import { IconDown, IconLocation } from '@sensoro-design/react/icon';
 
@@ -45,7 +28,7 @@ const dropList = (
   </Menu>
 );
 
-function Demo() {
+export default () => {
   return (
     <div className="dropdown-demo">
       <Dropdown droplist={dropList} trigger="click" position="bl">
@@ -56,18 +39,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
-}
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-

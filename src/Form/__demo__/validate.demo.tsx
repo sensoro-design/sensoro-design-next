@@ -1,27 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 表单校验
+ * desc: 可以通过 `form.validate` 方法进行表单字段的校验。可以通过参数指定校验特定字段。
  */
----
-order: 17
-title:
-  zh-CN: 表单校验
-  en-US: validate
----
-
-## zh-CN
-
-可以通过 `form.validate` 方法进行表单字段的校验。可以通过参数指定校验特定字段。
-
-
-## en-US
-
-
-The form field can be validated through the `form.validate` method. You can specify to verify specific fields through parameters.
-
-
-```js
 import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
@@ -93,10 +74,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

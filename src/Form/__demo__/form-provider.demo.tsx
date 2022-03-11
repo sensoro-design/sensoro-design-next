@@ -1,26 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 多表单联动
+ * desc: 可以通过 `Form.Provider` 组件管理多个表单的数据。`2.30.0` 支持。需要想要获得对应的表单实例，需要为 `Form` 组件设置 `id` 属性。
  */
----
-order: 20
-title:
-  zh-CN: 多表单联动
-  en-US: Manage multiple form data
----
-
-## zh-CN
-
-可以通过 `Form.Provider` 组件管理多个表单的数据。`2.30.0` 支持。需要想要获得对应的表单实例，需要为 `Form` 组件设置 `id` 属性。
-
-
-## en-US
-
-The 'form.provider' component allows you to manage data from multiple forms. ` 2.30.0 ` support. To get the corresponding Form instance, you need to set the ID property for the Form component.
-
-
-```js
 import { Form, Grid, Input, Button, Modal, Message, Tag, Typography, Table, Select, InputNumber, Space } from '@sensoro-design/react';
 
 
@@ -65,7 +47,7 @@ function RefreshForm () {
   )
 }
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = React.useState(false);
 
   return (
@@ -164,10 +146,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 数据请求加载
+ * desc: 对话框中显示 loading 效果。
  */
----
-order: 9
-title: 
-  zh-CN: 数据请求加载
-  en-US: Request Data
----
-
-## zh-CN
-
-对话框中显示 loading 效果。
-
-## en-US
-
-Show loading effect in dialog.
-
-```js
+import React from 'react';
 import { Modal, Button, Table, Spin } from '@sensoro-design/react';
 
 function getDataFromServer() {
@@ -48,7 +33,7 @@ function getDataFromServer() {
   });
 }
 
-function Demo () {
+export default () => {
   const [visible, setVisible] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   // table
@@ -105,14 +90,14 @@ function Demo () {
           <Spin tip='loading Data...' loading={loading}>
             <div style={{ height: 266, visibility: !loading ? 'visible' : 'hidden' }}>
               <p>
-                You can select multiple plugins for the current project so that our app will verify that the plugins are installed and enabled. 
+                You can select multiple plugins for the current project so that our app will verify that the plugins are installed and enabled.
               </p>
               <p style={{ marginTop: 20, marginBottom: 8, fontWeight: 600 }}>
                 List of plugins
               </p>
-              <Table 
-                columns={columns} 
-                data={data} 
+              <Table
+                columns={columns}
+                data={data}
                 pagination={false}
                 border={{ headerCell: true, wrapper: true, }}
                 rowKey='id'
@@ -124,7 +109,3 @@ function Demo () {
       </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

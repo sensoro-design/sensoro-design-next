@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 其他元素
+ * desc: 设置 Menu 禁用项和插入分割线。
  */
----
-order: 2
-title:
-  zh-CN: 其他元素
-  en-US: Extra node
----
-
-## zh-CN
-
-设置 Menu 禁用项和插入分割线。
-
-## en-US
-
-Disable menu items and insert dividing lines.
-
-```js
 import { Dropdown, Menu, Button, Divider } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
 
@@ -34,7 +17,7 @@ const dropList = (
   </Menu>
 );
 
-function Demo() {
+export default () => {
   return (
     <div className="dropdown-demo">
       <Dropdown droplist={dropList} position="br">
@@ -45,18 +28,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
-}
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-

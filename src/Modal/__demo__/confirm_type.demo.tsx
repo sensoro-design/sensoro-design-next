@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 消息提示
+ * desc: 有 `info`, `success`, `warning`, `error` 四种类型的消息提示，仅提供一个确认按钮用于关闭消息提示对话框。
  */
----
-order: 5
-title: 
-  zh-CN: 消息提示
-  en-US: Message Modal Dialog
----
-
-## zh-CN
-
-有 `info`, `success`, `warning`, `error` 四种类型的消息提示，仅提供一个确认按钮用于关闭消息提示对话框。
-
-## en-US
-
-There are four types of message modal dialog: `info`, `success`, `warning`, and `error`. Only a button is provided to close message modal dialog.
-
-```js
 import { Modal, Button, Space } from '@sensoro-design/react';
 
 function info() {
@@ -48,20 +32,19 @@ function error() {
   });
 }
 
-ReactDOM.render(
-  <Space size="large">
-    <Button type="primary" onClick={info}>
-      Info
-    </Button>
-    <Button type='primary' status="success" onClick={success}>
-      Success
-    </Button>
-    <Button type='primary' status="warning" onClick={warning}>
-      Warning
-    </Button>
-    <Button type='primary' status="danger" onClick={error}>Error</Button>
-  </Space>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Space size="large">
+      <Button type="primary" onClick={info}>
+        Info
+      </Button>
+      <Button type='primary' status="success" onClick={success}>
+        Success
+      </Button>
+      <Button type='primary' status="warning" onClick={warning}>
+        Warning
+      </Button>
+      <Button type='primary' status="danger" onClick={error}>Error</Button>
+    </Space>
+  )
+}

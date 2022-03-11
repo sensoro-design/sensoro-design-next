@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: Hooks 用法
+ * desc: 可以通过 `useModal` 去创建可以读取 `context` 的对话框。
  */
----
-order: 13
-title:
-  zh-CN: Hooks 用法
-  en-US: Hooks Usage
----
-
-## zh-CN
-
-可以通过 `useModal` 去创建可以读取 `context` 的对话框。
-
-## en-US
-
-useModal。
-
-```js
 import { createContext } from 'react';
 import { Modal, Button, Space } from '@sensoro-design/react';
 
@@ -58,7 +41,3 @@ function Demo() {
     </ConfigContext.Provider>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

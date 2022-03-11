@@ -1,30 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 动态增减嵌套类型的表单项
+ * desc: 通过`Form.List`管理数组类型的表单结构。可以通过对 `field` 进行一些处理，实现动态增减复杂类型的表单项
  */
----
-order: 9
-title:
-  zh-CN: 动态增减嵌套类型的表单项
-  en-US: Nest List
----
+import { useRef } from 'react';
+import { Form, Space, Input, Button } from '@sensoro-design/react';
+import { IconDelete } from '@sensoro-design/react/icon';
 
-## zh-CN
-
-通过`Form.List`管理数组类型的表单结构。可以通过对 `field` 进行一些处理，实现动态增减复杂类型的表单项
-
-## en-US
-
-Provides array management for fields.
-
-```js
-
-import { useRef, useState } from 'react';
-import { Form, Space, Input, Button, Grid } from '@sensoro-design/react';
-import { IconArrowRise, IconArrowFall, IconDelete } from '@sensoro-design/react/icon';
-
-function Demo () {
+export default () => {
   const formRef = useRef();
 
   return (
@@ -87,7 +70,3 @@ function Demo () {
   </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 控制表单项错误状态
+ * desc: 通过 `setFields` 方法的 `error` 参数，可以在外部控制表单项的错误状态。
  */
----
-order: 4
-title:
-  zh-CN: 控制表单项错误状态
-  en-US: Set Error status
----
-
-## zh-CN
-
-通过 `setFields` 方法的 `error` 参数，可以在外部控制表单项的错误状态。
-
-## en-US
-
-You can externally control the error status of form entries by using the `error` parameter of the `setFields` method.
-
-```js
 import { Form, Input, Button, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
@@ -83,10 +67,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

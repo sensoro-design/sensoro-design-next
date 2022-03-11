@@ -1,28 +1,10 @@
-
 /**
- * title:
- * desc:
+ * title: 右键菜单
+ * desc: 移入区域后，可点击鼠标右键触发。
  */
----
-order: 9
-title:
-  zh-CN: 右键菜单
-  en-US: Right click menu
----
-
-## zh-CN
-
-移入区域后，可点击鼠标右键触发。
-
-## en-US
-
-Right click to trigger menu.
-
-```js
-import { useState } from 'react';
 import { Dropdown, Menu, Grid } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   return (
     <Dropdown
       trigger="contextMenu"
@@ -50,7 +32,3 @@ function Demo() {
     </Dropdown>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

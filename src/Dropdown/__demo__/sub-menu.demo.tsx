@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 多级菜单
+ * desc: 带有多级菜单的下拉框。
  */
----
-order: 6
-title:
-  zh-CN: 多级菜单
-  en-US: With SubMenu
----
-
-## zh-CN
-
-带有多级菜单的下拉框。
-
-## en-US
-
-Dropdown with SubMenu.
-
-```js
 import { Dropdown, Menu, Button } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
 
@@ -53,7 +36,7 @@ const dropList = (
   </Menu>
 );
 
-function Demo() {
+export default () => {
   return (
     <div className="dropdown-demo">
       <Dropdown trigger="click" droplist={dropList} position="bl">
@@ -65,18 +48,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.dropdown-demo > .arco-btn {
-  padding: 0 8px;
-  font-weight: normal;
-}
-
-.dropdown-demo .arco-dropdown-popup-visible .arco-icon-down {
-  transform: rotate(180deg);
-}
-```
-
