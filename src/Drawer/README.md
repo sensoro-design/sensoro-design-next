@@ -8,7 +8,38 @@ nav:
 
 触发命令后，从屏幕一侧滑出的抽屉式的面板。
 
+## 代码演示
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自定义位置
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 自定义节点
+
+<code src="./__demo__/nofooter.demo.tsx" />
+
+### 抽屉表单
+
+<code src="./__demo__/drawer_form.demo.tsx" />
+
+### 多层抽屉
+
+<code src="./__demo__/nest.demo.tsx" />
+
+### 信息预览抽屉
+
+<code src="./__demo__/preview.demo.tsx" />
+
+### 挂载节点
+
+<code src="./__demo__/container.demo.tsx" />
+
 ## API
+
 ### Drawer
 
 |参数名|描述|类型|默认值|版本|
