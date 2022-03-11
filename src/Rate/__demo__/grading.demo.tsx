@@ -1,31 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 笑脸分级
+ * desc: 通过 `grading` 指定使用笑脸分级。
  */
----
-order: 7
-title:
-  zh-CN: 笑脸分级
-  en-US: Smiley Icon
----
-
-## zh-CN
-
-通过 `grading` 指定使用笑脸分级。
-
-## en-US
-
-Use `grading` to show score with smiley icons.
-
-```js
 import { Rate } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
     <Rate grading />
-  </div>,
-  CONTAINER
-);
-```
-
+  )
+}

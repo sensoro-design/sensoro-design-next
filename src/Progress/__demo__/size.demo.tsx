@@ -1,30 +1,14 @@
-
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 设置`size`为 `small`、`default`、`large`，可设置小、中、大三种尺寸。
  */
----
-order: 3
-title:
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-## zh-CN
-
-设置`size`为 `small`、`default`、`large`，可设置小、中、大三种尺寸。
-
-## en-US
-
-There are four sizes available: `min`, `small`, `default`, `large`.
-
-```js
+import React from 'react';
 import { Progress, Slider, Grid, Radio, Typography } from '@sensoro-design/react';
 
 const Row = Grid.Row;
 const Col = Grid.Col;
 
-function Demo () {
+export default () => {
   const [value, setValue] = React.useState(90);
   const [size, setSize] = React.useState('default');
 
@@ -86,7 +70,3 @@ function Demo () {
     </div>
   </div>
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

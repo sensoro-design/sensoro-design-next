@@ -1,27 +1,10 @@
-
 /**
- * title:
- * desc:
+ * title: 剩余进度条
+ * desc: 可以通过 `trailColor` 设置剩余进度条的颜色
  */
----
-order: 7
-title:
-  zh-CN: 剩余进度条
-  en-US: trail color
----
-
-## zh-CN
-
-可以通过 `trailColor` 设置剩余进度条的颜色
-
-## en-US
-
-You can use 'trailColor' to set the color of the remaining progress bar.
-
-```js
 import { Progress } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   return (
     <div >
       <div style={{width: '40%',  marginBottom: 20}}>
@@ -34,7 +17,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

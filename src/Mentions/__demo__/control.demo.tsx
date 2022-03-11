@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 受控模式
+ * desc: `Mentions` 在 `Form` 中的使用。
  */
----
-order: 2
-title:
-  zh-CN: 受控模式
-  en-US: Controlled
----
-
-## zh-CN
-
-`Mentions` 在 `Form` 中的使用。
-
-## en-US
-
-An example that `Mentions` is used with `Form`,
-
-```js
 import { Form, Input, Button, Mentions } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const onValuesChange = (changeValue, values) => {
     console.log('onValuesChange: ', changeValue, values);
   };
@@ -60,7 +44,3 @@ function Demo() {
     </Form>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

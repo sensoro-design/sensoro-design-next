@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 更新全局提醒内容
+ * desc: 通过指定 `id`，可以更新已经存在的全局提示。
  */
----
-order: 3
-title:
-  zh-CN: 更新全局提醒内容
-  en-US: Update
----
-
-## zh-CN
-
-通过指定 `id`，可以更新已经存在的全局提示。
-
-## en-US
-
-By specifying the `id`, the existing Message can be updated.
-
-```js
 import { Message, Button } from '@sensoro-design/react';
 
 function updateMessage() {
@@ -34,11 +18,10 @@ function updateMessage() {
   }, 2000);
 }
 
-ReactDOM.render(
-  <Button onClick={updateMessage} type="primary">
-    Update message
-  </Button>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Button onClick={updateMessage} type="primary">
+      Update message
+    </Button>
+  )
+}

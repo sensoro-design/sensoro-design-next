@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 更新延时
+ * desc: 通过指定 `id`，可以更新已经存在的全局提示的`duration` 属性。
  */
----
-order: 4
-title:
-  zh-CN: 更新延时
-  en-US: Update duration
----
-
-## zh-CN
-
-通过指定 `id`，可以更新已经存在的全局提示的`duration` 属性。
-
-## en-US
-
-By specifying the `id`, the `duration` attribute of the existing Message can be updated.
-
-```js
 import { Message, Button } from '@sensoro-design/react';
 
 function updateMessage() {
@@ -36,11 +20,10 @@ function updateMessage() {
   }, 2000);
 }
 
-ReactDOM.render(
-  <Button onClick={updateMessage} type="primary">
-    Update message
-  </Button>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Button onClick={updateMessage} type="primary">
+      Update message
+    </Button>
+  )
+}

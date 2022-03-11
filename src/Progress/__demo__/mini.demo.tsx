@@ -1,27 +1,10 @@
-
 /**
- * title:
- * desc:
+ * title: 微型进度条
+ * desc: `size = mini` 时，将会展示微型进度条。
  */
----
-order: 3
-title:
-  zh-CN: 微型进度条
-  en-US: Mini progress bar
----
+import { Progress } from '@sensoro-design/react';
 
-## zh-CN
-
-`size = mini` 时，将会展示微型进度条。
-
-## en-US
-
-A mini progress bar.
-
-```js
-import { Progress, Slider } from '@sensoro-design/react';
-
-function Demo () {
+export default () => {
   return (
     <div>
       <div>
@@ -39,7 +22,3 @@ function Demo () {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

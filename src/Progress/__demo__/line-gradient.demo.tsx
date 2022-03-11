@@ -1,31 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 渐变色进度条
+ * desc: `color`传入对象时， 会作为 linear-gradient 的属性值设置渐变色。
  */
----
-order: 5
-title:
-  zh-CN: 渐变色进度条
-  en-US: linear gradient
----
-
-## zh-CN
-
-`color`传入对象时， 会作为 linear-gradient 的属性值设置渐变色。
-
-## en-US
-
-linear-gradient progress bar.
-
-
-
-
-```js
 import { Progress } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
+    <div>
     <Progress
       percent={80}
       color={{
@@ -64,8 +45,6 @@ ReactDOM.render(
       }}
       percent={100}
     />
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

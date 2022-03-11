@@ -1,28 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 不同类型
+ * desc: 全局提示有 5 种不同的类型，分别为：`info`, `success`, `warning`, `error`, `normal`。
  */
----
-order: 1
-title:
-  zh-CN: 不同类型
-  en-US: Type
----
-
-## zh-CN
-
-全局提示有 5 种不同的类型，分别为：`info`, `success`, `warning`, `error`, `normal`。
-
-## en-US
-
-There are 5 different types of Message, `info`, `success`, `warning`, `error`, `normal`.
-
-```js
 import { Message, Button, Space } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <Space size="large">
+export default () => {
+  return (
+    <Space size="large">
     <Button
       onClick={() => Message.info('This is an info message!')}
       type="primary"
@@ -51,8 +35,6 @@ ReactDOM.render(
       Error
     </Button>
     <Button type="secondary" onClick={() => Message.normal('This is a message!')}>Normal</Button>
-  </Space>,
-  CONTAINER
-);
-```
-
+  </Space>
+  )
+}

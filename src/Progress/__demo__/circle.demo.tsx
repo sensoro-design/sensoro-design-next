@@ -1,27 +1,11 @@
-
 /**
- * title:
- * desc:
+ * title: 环形进度条
+ * desc: `type = circle` 时候，将会展示环形进度条。
  */
----
-order: 2
-title:
-  zh-CN: 环形进度条
-  en-US: Circular progress bar
----
-
-## zh-CN
-
-`type = circle` 时候，将会展示环形进度条。
-
-## en-US
-
-A circular progress bar.
-
-```js
+import React from 'react';
 import { Progress, Slider } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [value, setValue] = React.useState(20);
 
   return (
@@ -36,7 +20,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

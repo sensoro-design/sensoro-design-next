@@ -1,26 +1,9 @@
-
 /**
- * title:
- * desc:
+ * title: 基础用法
+ * desc: 基础评分。
  */
----
-order: 0
-title:
-  zh-CN: 基础用法
-  en-US: Basic
----
-
-## zh-CN
-
-基础评分。
-
-## en-US
-
-Basic usage of Rate.
-
-```js
 import { Rate } from '@sensoro-design/react';
 
-ReactDOM.render(<Rate />, CONTAINER);
-```
-
+export default () => {
+  return <Rate />
+}
