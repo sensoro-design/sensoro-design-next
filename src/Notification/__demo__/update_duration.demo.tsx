@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 更新延迟
+ * desc: 通过指定参数 `id`，可以更新已经存在的通知提醒框。
  */
----
-order: 3
-title:
-  zh-CN: 更新延迟
-  en-US: Update duration
----
-
-## zh-CN
-
-通过指定参数 `id`，可以更新已经存在的通知提醒框。
-
-## en-US
-
-Specifying `id` to update the existing notification's duration.
-
-```js
 import { Notification, Button } from '@sensoro-design/react';
 
 function updateNotification() {
@@ -38,11 +22,10 @@ function updateNotification() {
   }, 2000);
 }
 
-ReactDOM.render(
-  <Button onClick={updateNotification} type="primary">
-    Update Notification
-  </Button>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Button onClick={updateNotification} type="primary">
+      Update Notification
+    </Button>
+  )
+}

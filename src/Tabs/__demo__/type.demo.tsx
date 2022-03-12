@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 不同类型
+ * desc: 使用 `type` 属性设置不同类型的页签。
  */
----
-order: 2
-title: 
-  zh-CN: 不同类型
-  en-US: Type
----
-
-## zh-CN
-
-使用 `type` 属性设置不同类型的页签。
-
-## en-US
-
-Use `type` to set the type of the tab.
-
-```js
 import { useState } from 'react';
 import { Tabs, Radio, Typography } from '@sensoro-design/react';
 
@@ -26,8 +10,7 @@ const TabPane = Tabs.TabPane;
 
 const style = { textAlign: 'center', marginTop: 20 };
 
-
-function Demo() {
+export default () => {
   const [type, setType] = useState('line');
 
   return (
@@ -58,7 +41,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

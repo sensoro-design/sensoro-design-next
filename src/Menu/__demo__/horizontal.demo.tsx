@@ -1,30 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 顶部导航菜单
+ * desc: 设置 `mode` 为 `horizontal` 时，使用水平菜单。
  */
----
-order: 0
-title:
-  zh-CN: 顶部导航菜单
-  en-US: Horizontal
----
-
-## zh-CN
-
-设置 `mode` 为 `horizontal` 时，使用水平菜单。
-
-## en-US
-
-By setting `mode` to `horizontal`, you can use the horizontal menu.
-
-```js
 import { Menu } from '@sensoro-design/react';
 
 const MenuItem = Menu.Item;
-const SubMenu = Menu.SubMenu;
 
-function Demo() {
+export default () => {
   return (
     <div className="menu-demo">
       <Menu mode="horizontal" defaultSelectedKeys={['1']}>
@@ -47,20 +30,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.menu-demo {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 40px;
-  background-color: var(--color-neutral-2);
-}
-
-.menu-demo .arco-menu-inner {
-  overflow-y: auto;
-}
-```
-

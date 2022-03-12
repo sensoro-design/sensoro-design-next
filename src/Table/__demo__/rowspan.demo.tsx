@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 单元格合并
+ * desc: 用于单元格合并，表头只能进行列合并。
  */
----
-order: 15
-title:
-  zh-CN: 单元格合并
-  en-US: Cell merge
----
-
-## zh-CN
-
-用于单元格合并，表头只能进行列合并。
-
-## en-US
-
-Used for cell merging, the header can only be column merged.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -113,6 +97,6 @@ const data = [
   },
 ];
 
-ReactDOM.render(<Table border borderCell hover columns={columns} data={data} />, CONTAINER);
-```
-
+export default () => {
+  return <Table border borderCell hover columns={columns} data={data} />
+}

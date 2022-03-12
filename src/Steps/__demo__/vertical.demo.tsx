@@ -1,31 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 竖直步骤条
+ * desc: 竖直方向的步骤条。
  */
----
-order: 5
-title: 
-  zh-CN: 竖直步骤条
-  en-US: Vertical Step Bar
----
-
-## zh-CN
-
-竖直方向的步骤条。
-
-## en-US
-
-Vertical step bar.
-
-```js
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Steps, Button } from '@sensoro-design/react';
 import { IconLeft, IconRight } from '@sensoro-design/react/icon';
 
 const Step = Steps.Step;
 
-function Demo() {
+export default () => {
   const [current, setCurrent] = useState(1);
 
   function renderContent(step) {
@@ -68,7 +52,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

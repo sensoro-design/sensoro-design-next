@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 滚动偏移位置
+ * desc: 支持设置 `scrollPosition` 来改变选中的选项卡的滚动位置
  */
----
-order: 12
-title:
-  zh-CN: 滚动偏移位置
-  en-US: The active tab's scroll  position
----
-
-## zh-CN
-
-支持设置 `scrollPosition` 来改变选中的选项卡的滚动位置
-
-## en-US
-
-Support scrolling operation via scroll wheel or touch pad.
-
-```js
 import { useState } from 'react';
 import { Tabs, Radio, Space } from '@sensoro-design/react';
 
@@ -37,7 +21,7 @@ const tabs = [...new Array(30)].map((x, i) => ({
   content: `标签${i + 1}内容`,
 }));
 
-function Demo() {
+export default () => {
   const [direction, setDirection] = useState('horizontal');
   const [position, setPosition] = useState("auto");
 
@@ -75,7 +59,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

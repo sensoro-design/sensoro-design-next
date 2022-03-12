@@ -1,31 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 悬浮按钮菜单
+ * desc: 指定 `mode` 为 `popButton` 使用按钮组样式的悬浮菜单。
  */
----
-order: 6
-title:
-  zh-CN: 悬浮按钮菜单
-  en-US: Floating Button Menu
----
-
-## zh-CN
-
-指定 `mode` 为 `popButton` 使用按钮组样式的悬浮菜单。
-
-## en-US
-
-By setting `mode` to `popButton`, you can use a button group style floating menu.
-
-```js
 import { useState } from 'react';
 import { Menu, Trigger } from '@sensoro-design/react';
 import { IconMessage, IconClose, IconBug, IconBulb } from '@sensoro-design/react/icon';
 
 const MenuItem = Menu.Item;
 
-function Demo() {
+export default () => {
   const renderMenu = () => {
     return (
       <Menu
@@ -77,60 +61,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.menu-demo {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 40px;
-  background-color: var(--color-neutral-2);
-}
-
-.menu-demo .arco-menu-inner {
-  overflow-y: auto;
-}
-
-.menu-demo-button {
-  position: relative;
-  width: 660px;
-  height: 300px;
-  background-color: var(--color-fill-2);
-}
-
-.button-trigger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 80px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 14px;
-  color: var(--color-white);
-  cursor: pointer;
-  transition: all 0.1s;
-}
-
-.button-trigger:nth-child(1) {
-  left: 150px;
-  background-color: var(--color-neutral-5);
-}
-
-.button-trigger:nth-child(1).button-trigger-active {
-  background-color: var(--color-neutral-4);
-}
-
-.button-trigger:nth-child(2) {
-  left: 372px;
-  background-color: rgb(var(--arcoblue-6));
-}
-
-.button-trigger:nth-child(2).button-trigger-active {
-  background-color: var(--color-primary-light-4);
-}
-```
-

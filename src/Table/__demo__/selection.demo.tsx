@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 开启选择
+ * desc: 表格开启选择，可以设置 `rowSelection.type` 来使用复选框和单选框。 `checkbox` - 复选框。 `radio` - 单选框。
  */
----
-order: 1
-title:
-  zh-CN: 开启选择
-  en-US: Selection
----
-
-## zh-CN
-
-表格开启选择，可以设置 `rowSelection.type` 来使用复选框和单选框。 `checkbox` - 复选框。 `radio` - 单选框。
-
-## en-US
-
-Table enable selection, you can set `rowSelection.type` to use checkbox and radio.
-
-```js
 import { useState } from 'react';
 import { Table, Radio } from '@sensoro-design/react';
 
@@ -79,7 +63,7 @@ const data = [
   },
 ];
 
-function Demo() {
+export default () => {
   const [type, setType] = useState('checkbox');
   const [selectedRowKeys, setSelectedRowKeys] = useState(['4']);
 
@@ -116,7 +100,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

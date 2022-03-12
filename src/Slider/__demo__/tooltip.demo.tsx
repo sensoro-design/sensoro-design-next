@@ -1,19 +1,11 @@
 
 /**
- * title:
+ * title: 控制 tooltip 的展示
  * desc:
  */
----
-order: 8
-title: 
-  zh-CN: 控制 tooltip 的展示
-  en-US: Control Tooltip
----
-
-```js
 import { Slider } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   return (
       <div>
         <Slider
@@ -37,7 +29,3 @@ function Demo() {
       </div>
     );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

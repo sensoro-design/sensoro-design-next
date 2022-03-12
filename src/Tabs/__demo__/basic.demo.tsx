@@ -1,43 +1,29 @@
-
 /**
- * title:
- * desc:
+ * title: 基础用法
+ * desc: 最简单的使用。
  */
----
-order: 0
-title: 
-  zh-CN: 基础用法
-  en-US: Basic
----
-
-## zh-CN
-
-最简单的使用。
-
-## en-US
-
-Basic usage example.
-
-```js
+import React from 'react';
 import { Tabs, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 
-const style = { textAlign: 'center', marginTop: 20 };
+const style: React.CSSProperties = {
+  textAlign: 'center',
+  marginTop: 20
+};
 
-ReactDOM.render(
-  <Tabs defaultActiveTab="1" >
-    <TabPane key="1" title="Tab 1">
-      <Typography.Paragraph style={style}>Content of Tab Panel 1</Typography.Paragraph>
-    </TabPane>
-    <TabPane key="2" title="Tab 2" disabled>
-      <Typography.Paragraph style={style}>Content of Tab Panel 2</Typography.Paragraph>
-    </TabPane>
-    <TabPane key="3" title="Tab 3">
-      <Typography.Paragraph style={style}>Content of Tab Panel 3</Typography.Paragraph>
-    </TabPane>
-  </Tabs>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Tabs defaultActiveTab="1" >
+      <TabPane key="1" title="Tab 1">
+        <Typography.Paragraph style={style}>Content of Tab Panel 1</Typography.Paragraph>
+      </TabPane>
+      <TabPane key="2" title="Tab 2" disabled>
+        <Typography.Paragraph style={style}>Content of Tab Panel 2</Typography.Paragraph>
+      </TabPane>
+      <TabPane key="3" title="Tab 3">
+        <Typography.Paragraph style={style}>Content of Tab Panel 3</Typography.Paragraph>
+      </TabPane>
+    </Tabs>
+  )
+}

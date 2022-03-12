@@ -1,31 +1,16 @@
 
 /**
- * title:
- * desc:
+ * title: 十二小时制
+ * desc: 通过设置 `use12Hours`，可以定制需要显示的时、分、秒。
  */
----
-order: 8
-title:
-  zh-CN: 十二小时制
-  en-US: 12 hours
----
-
-## zh-CN
-
-通过设置 `use12Hours`，可以定制需要显示的时、分、秒。
-
-## en-US
-
-By setting `use12Hours`, you can customize the hours, minutes, and seconds.
-
-```js
 import { TimePicker } from '@sensoro-design/react';
 import dayjs from 'dayjs';
 
 const style = { width: 194, margin: '0 24px 24px 0' };
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
+    <div>
     <TimePicker
       use12Hours
       format="hh:mm:ss A"
@@ -54,8 +39,6 @@ ReactDOM.render(
       placeholder="请选择时间"
       style={{ ...style, width: 300 }}
     />
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

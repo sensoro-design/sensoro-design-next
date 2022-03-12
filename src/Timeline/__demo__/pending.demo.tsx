@@ -1,31 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 幽灵节点
+ * desc: 当任务状态正在发生，还在记录过程中，可用幽灵节点来表示当前的时间节点，通过`pendingDot`定制其轴点。
  */
----
-order: 3
-title: 
-  zh-CN: 幽灵节点
-  en-US: Pending
----
-
-## zh-CN
-
-当任务状态正在发生，还在记录过程中，可用幽灵节点来表示当前的时间节点，通过`pendingDot`定制其轴点。
-
-## en-US
-
-When the task state is happening and the recording is still in progress, ghost nodes can be used to represent the current time node, and its pivot point can be customized through `pendingDot`.
-
-```js
 import { Timeline, Grid, Checkbox } from '@sensoro-design/react';
 import { IconFire } from '@sensoro-design/react/icon';
 
 const TimelineItem = Timeline.Item;
 const { Row } = Grid;
 
-function Demo() {
+export default () => {
   const [pendingProps, setPendingProps] = React.useState({});
 
   return (
@@ -84,7 +68,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

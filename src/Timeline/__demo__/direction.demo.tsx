@@ -1,30 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 横向时间轴
+ * desc: 可以通过 `direction` 设置展示横向时间轴
  */
----
-order: 6
-title: 
-  zh-CN: 横向时间轴
-  en-US: Direction
----
-
-## zh-CN
-
-可以通过 `direction` 设置展示横向时间轴
-
-## en-US
-
-You can set the display horizontal timeline through `direction`
-
-```js
+import React from 'react';
 import { Timeline, Grid, Radio, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
 const { Row } = Grid;
 
-function Demo() {
+export default () => {
   const [mode, setMode] = React.useState('top');
 
   return (
@@ -85,7 +70,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

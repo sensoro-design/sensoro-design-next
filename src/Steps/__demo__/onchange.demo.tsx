@@ -1,30 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 可点击切换步骤
+ * desc: 设置 `onChange` 之后，步骤条支持点击切换步骤。
  */
----
-order: 11
-title: 
-  zh-CN: 可点击切换步骤
-  en-US: Click to Switch Steps
----
-
-## zh-CN
-
-设置 `onChange` 之后，步骤条支持点击切换步骤。
-
-## en-US
-
-After setting `onChange`, the step bar supports clicking to switch steps.
-
-```js
 import { useState } from 'react';
 import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 
-function Demo() {
+export default () => {
   const [current, setCurrent] = useState(1);
 
   return <div>
@@ -44,7 +28,3 @@ function Demo() {
     </Steps>
   </div>;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

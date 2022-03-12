@@ -1,30 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 纵向时间轴
+ * desc: 竖直方向的时间轴。
  */
----
-order: 5
-title: 
-  zh-CN: 纵向时间轴
-  en-US: Vertical
----
-
-## zh-CN
-
-竖直方向的时间轴。
-
-## en-US
-
-The vertical time axis.
-
-```js
+import React from 'react';
 import { Timeline, Grid, Radio, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
-const { Row, Col } = Grid;
+const { Row } = Grid;
 
-function Demo () {
+export default () => {
   const [mode, setMode] = React.useState('left')
 
   return (
@@ -73,10 +58,3 @@ function Demo () {
     </div>
   )
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
-

@@ -1,30 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 尺寸
+ * desc: 有四种尺寸可供选择。
  */
----
-order: 2
-title:
-  zh-CN: 尺寸
-  en-US: Size
----
-
-## zh-CN
-
-有四种尺寸可供选择。
-
-## en-US
-
-There are four sizes.
-
-```js
 import { useState } from 'react';
 import { TimePicker, Radio } from '@sensoro-design/react';
 
 const RadioGroup = Radio.Group;
 
-function Demo() {
+export default () => {
   const [size, setSize] = useState('default');
 
   return <div>
@@ -39,12 +23,3 @@ function Demo() {
     <TimePicker style={{ width: 194 }} size={size} placeholder="请选择时间" />
   </div>
 }
-
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-
-

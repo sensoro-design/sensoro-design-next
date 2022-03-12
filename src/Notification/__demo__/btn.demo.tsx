@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义操作按钮
+ * desc: 通过指定 `btn` 字段，可以添加操作按钮。
  */
----
-order: 4
-title:
-  zh-CN: 自定义操作按钮
-  en-US: Custom action buttons
----
-
-## zh-CN
-
-通过指定 `btn` 字段，可以添加操作按钮。
-
-## en-US
-
-You can add operation buttons by specifying the `btn` field.
-
-```js
 import { Notification, Button } from '@sensoro-design/react';
 
 function updateNotification() {
@@ -39,11 +23,10 @@ function updateNotification() {
   });
 }
 
-ReactDOM.render(
-  <Button onClick={updateNotification} type="primary">
+export default () => {
+  return (
+    <Button onClick={updateNotification} type="primary">
     Open Notification
-  </Button>,
-  CONTAINER
-);
-```
-
+  </Button>
+  )
+}

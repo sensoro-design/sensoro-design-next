@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义单元格内容
+ * desc: 通过 `columns` 中的 `render` 字段，可以自定义单元格的内容
  */
----
-order: 11
-title:
-  zh-CN: 自定义单元格内容
-  en-US: Custom cell content
----
-
-## zh-CN
-
-通过 `columns` 中的 `render` 字段，可以自定义单元格的内容
-
-## en-US
-
-The content of the cell can be customized through the `render` field in `columns`.
-
-```js
 import { Table, Tag } from '@sensoro-design/react';
 
 const columns = [
@@ -75,6 +59,6 @@ const data = [{
   email: 'william.smith@example.com'
 }];
 
-ReactDOM.render(<Table columns={columns} data={data} />, CONTAINER);
-```
-
+export default () => {
+  return <Table columns={columns} data={data} />
+}

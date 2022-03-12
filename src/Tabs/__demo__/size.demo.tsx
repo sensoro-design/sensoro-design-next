@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 不同尺寸
+ * desc: 使用 `size` 属性设置不同尺寸的页签。
  */
----
-order: 7
-title: 
-  zh-CN: 不同尺寸
-  en-US: Size
----
-
-## zh-CN
-
-使用 `size` 属性设置不同尺寸的页签。
-
-## en-US
-
-Use `Size` to set the size of the tab.
-
-```js
 import { useState } from 'react';
 import { Tabs, Radio, Typography } from '@sensoro-design/react';
 
@@ -26,7 +9,7 @@ const TabPane = Tabs.TabPane;
 
 const style = { textAlign: 'center', marginTop: 20 };
 
-function Demo() {
+export default () => {
   const [type, setType] = useState('line');
   const [size, setSize] = useState('default');
 
@@ -67,7 +50,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

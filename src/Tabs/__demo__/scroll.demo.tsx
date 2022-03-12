@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 滚动
+ * desc: 支持通过滚轮或者触摸板进行滚动操作。
  */
----
-order: 11
-title:
-  zh-CN: 滚动
-  en-US: Scrollable
----
-
-## zh-CN
-
-支持通过滚轮或者触摸板进行滚动操作。
-
-## en-US
-
-Support scrolling operation via scroll wheel or touch pad.
-
-```js
 import { useState } from 'react';
 import { Tabs, Radio } from '@sensoro-design/react';
 
@@ -37,7 +20,7 @@ const tabs = [...new Array(30)].map((x, i) => ({
   content: `标签${i + 1}内容`,
 }));
 
-function Demo() {
+export default () => {
   const [direction, setDirection] = useState('horizontal');
 
   return (
@@ -60,7 +43,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

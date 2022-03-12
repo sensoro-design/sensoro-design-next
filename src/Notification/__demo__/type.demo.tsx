@@ -1,28 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 不同类型的通知
+ * desc: 通知提醒框有 5 种不同的类型，分别为：`info`, `success`, `warning`, `error`, `normal`。
  */
----
-order: 1
-title:
-  zh-CN: 不同类型的通知
-  en-US: Type
----
-
-## zh-CN
-
-通知提醒框有 5 种不同的类型，分别为：`info`, `success`, `warning`, `error`, `normal`。
-
-## en-US
-
-There are 5 different types of Notification: `info`, `success`, `warning`, `error`, `normal`.
-
-```js
 import { Notification, Button, Space } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <Space size="large">
+export default () => {
+  return (
+    <Space size="large">
     <Button
       onClick={() => Notification.info({ title: 'Normal', content: 'This is an error Notification!' })}
       type="primary"
@@ -56,8 +41,6 @@ ReactDOM.render(
     >
       Normal
     </Button>
-  </Space>,
-  CONTAINER
-);
-```
-
+  </Space>
+  )
+}

@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 动态编辑标签
+ * desc: 可动态添加和删除标签。
  */
----
-order: 4
-title: 
-  zh-CN: 动态编辑标签
-  en-US: Active
----
-
-## zh-CN
-
-可动态添加和删除标签。
-
-## en-US
-
-Can add and delete tags dynamically.
-
-```js
 import { useState } from 'react';
 import { Tag, Button, Input, Message } from '@sensoro-design/react';
 import { IconPlus } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const [tags, setTags] = useState(['Tag 1', 'Tag 2', 'Tag 3']);
   const [showInput, setShowInput] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -83,7 +67,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

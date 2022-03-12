@@ -1,31 +1,16 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义图标
+ * desc: 设置 `icon` 来自定义图标。
  */
----
-order: 5
-title:
-  zh-CN: 自定义图标
-  en-US: Customize icon
----
-
-## zh-CN
-
-设置 `icon` 来自定义图标。
-
-## en-US
-
-Set `icon` to customize the icon.
-
-```js
 import { Notification, Button, Icon, Space } from '@sensoro-design/react';
 import { IconFaceSmileFill } from '@sensoro-design/react/icon';
 
 const IconFont = Icon.addFromIconFontCn({ src: '//at.alicdn.com/t/font_180975_26f1p759rvn.js' });
 
-ReactDOM.render(
-  <Space size="large">
+export default () => {
+  return (
+    <Space size="large">
     <Button
       onClick={() => Notification.info({ icon: <IconFont type="icon-info" />, title: 'Upgrade', content: 'Ready to upgrade ArcoDesign 2.0' })}
       type="primary"
@@ -64,8 +49,6 @@ ReactDOM.render(
     >
       Smile
     </Button>
-  </Space>,
-  CONTAINER
-);
-```
-
+  </Space>
+  )
+}

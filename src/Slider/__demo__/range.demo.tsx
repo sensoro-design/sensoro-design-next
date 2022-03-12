@@ -1,28 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 范围选择
+ * desc: 设置 `range = true` 即可开启范围选择，此时 `value` 为数组。
  */
----
-order: 3
-title: 
-  zh-CN: 范围选择
-  en-US: Range
----
-
-## zh-CN
-
-设置 `range = true` 即可开启范围选择，此时 `value` 为数组。
-
-## en-US
-
-Set `range = true` to enable range selection, at this time `value` is an array.
-
-```js
 import { useState } from 'react';
 import { Slider } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [value, setValue] = useState([0, 50]);
   return (
     <div style={{ width: 200 }}>
@@ -30,7 +14,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

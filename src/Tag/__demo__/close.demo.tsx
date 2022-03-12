@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 可关闭标签
+ * desc: 可设置 `closable` 属性控制标签是否可关闭，可关闭标签可通过 `onClose` 事件执行一些关闭后操作。也可通过 `visible` 属性控制标签的显示隐藏。
  */
----
-order: 1
-title: 
-  zh-CN: 可关闭标签
-  en-US: Close
----
-
-## zh-CN
-
-可设置 `closable` 属性控制标签是否可关闭，可关闭标签可通过 `onClose` 事件执行一些关闭后操作。也可通过 `visible` 属性控制标签的显示隐藏。
-
-## en-US
-
-The `closable` attribute can be set to control whether the label can be closed, and the closed label can perform some post-closing operations through the `onClose` event. You can also control the display and hide of the label through the `visible` property.
-
-```js
 import { useState } from 'react';
 import { Tag, Button, Switch, Typography } from '@sensoro-design/react';
 import { IconStar } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = useState(true);
 
   function onClose() {
@@ -50,7 +34,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

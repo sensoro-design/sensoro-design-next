@@ -1,24 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 表格属性
+ * desc: 在这里，你可以方便的打开或关闭表格的属性，来看一下吧。
  */
----
-order: 7
-title:
-  zh-CN: 表格属性
-  en-US: Attributes
----
-
-## zh-CN
-
-在这里，你可以方便的打开或关闭表格的属性，来看一下吧。
-
-## en-US
-
-You can easily open or close the properties of the table.
-
-```js
+import React from 'react';
 import { Table, Grid, Switch, Form, Radio } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
@@ -77,7 +62,7 @@ const defaultData = [{
 
 let data = defaultData;
 
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -222,7 +207,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

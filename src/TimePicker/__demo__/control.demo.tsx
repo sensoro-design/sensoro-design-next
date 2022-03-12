@@ -1,28 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 受控组件
+ * desc: `value` 和 `onChange` 需要配合使用。
  */
----
-order: 1
-title:
-  zh-CN: 受控组件
-  en-US: Under Control
----
-
-## zh-CN
-
-`value` 和 `onChange` 需要配合使用。
-
-## en-US
-
-`value` and `onChange` need to be used together.
-
-```js
 import { useState } from 'react';
 import { TimePicker } from '@sensoro-design/react';
 
-function Demo() {
+export default () => {
   const [value, setValue] = useState();
 
   return (
@@ -33,7 +17,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

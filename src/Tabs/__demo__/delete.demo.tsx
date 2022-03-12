@@ -1,24 +1,7 @@
-
 /**
- * title:
- * desc:
+ * title: 动态增减页签
+ * desc: 动态增减页签。仅在 `type=card | card-gutter`的时候生效。
  */
----
-order: 4
-title: 
-  zh-CN: 动态增减页签
-  en-US: Dynamic Tab
----
-
-## zh-CN
-
-动态增减页签。仅在 `type=card | card-gutter`的时候生效。
-
-## en-US
-
-Dynamically add or subtract tabs. Only effective when `type=card | card-gutter`.
-
-```js
 import { useState } from 'react';
 import { Tabs, Typography } from '@sensoro-design/react';
 
@@ -35,7 +18,7 @@ const initTabs = [...new Array(count)].map((x, i) => ({
   content: `${i + 1}`,
 }));
 
-function Demo() {
+export default () => {
   const [tabs, setTabs] = useState(initTabs);
   const [activeTab, setActiveTab] = useState('key2');
 
@@ -79,7 +62,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

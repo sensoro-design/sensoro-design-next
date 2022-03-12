@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 总结栏
+ * desc: 总结栏 summary 的用法。
  */
----
-order: 23
-title:
-  zh-CN: 总结栏
-  en-US: Summary
----
-
-## zh-CN
-
-总结栏 summary 的用法。
-
-## en-US
-
-The usage of summary.
-
-```js
 import { Table, Typography, Button } from '@sensoro-design/react';
 
 const columns = [
@@ -95,8 +79,9 @@ function summary(currentData) {
   );
 };
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
+    <div>
     <Table
       columns={columns}
       data={data}
@@ -160,8 +145,6 @@ ReactDOM.render(
         </Table.Summary>
       )}
     />
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

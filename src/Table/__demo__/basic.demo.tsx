@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 基础用法
+ * desc: 最基础的用法。
  */
----
-order: 0
-title:
-  zh-CN: 基础用法
-  en-US: Basic
----
-
-## zh-CN
-
-最基础的用法。
-
-## en-US
-
-The simplest usage.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -78,6 +62,6 @@ const data = [
   },
 ];
 
-ReactDOM.render(<Table columns={columns} data={data} />, CONTAINER);
-```
-
+export default () => {
+  return <Table columns={columns} data={data} />
+}

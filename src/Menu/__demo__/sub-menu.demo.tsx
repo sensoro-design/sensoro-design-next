@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 内嵌菜单
+ * desc: 菜单内可以嵌入多个子项，通过 `defaultOpenKeys` 可以设置默认打开的子项。
  */
----
-order: 3
-title:
-  zh-CN: 内嵌菜单
-  en-US: Sub Menu
----
-
-## zh-CN
-
-菜单内可以嵌入多个子项，通过 `defaultOpenKeys` 可以设置默认打开的子项。
-
-## en-US
-
-Multiple sub-items can be embedded in the menu, and the items that are opened by default can be set through `defaultOpenKeys`.
-
-```js
 import { Menu } from '@sensoro-design/react';
 import { IconApps, IconBug, IconBulb } from '@sensoro-design/react/icon';
 
@@ -26,8 +10,9 @@ const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-ReactDOM.render(
-  <div
+export default () => {
+  return (
+    <div
     className="menu-demo"
     style={{
       height: 600,
@@ -83,21 +68,6 @@ ReactDOM.render(
         </MenuItemGroup>
       </SubMenu>
     </Menu>
-  </div>,
-  CONTAINER
-);
-```
-
-```css:silent
-.menu-demo {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 40px;
-  background-color: var(--color-neutral-2);
+  </div>
+  )
 }
-
-.menu-demo .arco-menu-inner {
-  overflow-y: auto;
-}
-```
-

@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 更新通知内容
+ * desc: 通过指定参数 `key`，可以更新已经存在的通知提醒框。
  */
----
-order: 2
-title:
-  zh-CN: 更新通知内容
-  en-US: Update
----
-
-## zh-CN
-
-通过指定参数 `key`，可以更新已经存在的通知提醒框。
-
-## en-US
-
-Specifying `id` to update the existing notification.
-
-```js
 import { Notification, Button } from '@sensoro-design/react';
 
 function updateNotification() {
@@ -36,11 +20,10 @@ function updateNotification() {
   }, 2000);
 }
 
-ReactDOM.render(
-  <Button onClick={updateNotification} type="primary">
-    Update Notification
-  </Button>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Button onClick={updateNotification} type="primary">
+      Update Notification
+    </Button>
+  )
+}

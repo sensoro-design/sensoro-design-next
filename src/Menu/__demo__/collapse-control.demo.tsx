@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 缩起内嵌菜单
+ * desc: 通过 `collapse` 来指定菜单收起。
  */
----
-order: 2
-title:
-  zh-CN: 缩起内嵌菜单
-  en-US: Collapsed Menu
----
-
-## zh-CN
-
-通过 `collapse` 来指定菜单收起。
-
-## en-US
-
-Use `collapse` to specify the menu to collapse.
-
-```js
 import { useState } from 'react';
 import { Menu, Button } from '@sensoro-design/react';
 import {
@@ -32,7 +16,7 @@ import {
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 
-function Demo() {
+export default () => {
   const [collapse, setCollapse] = useState(false);
 
   return (

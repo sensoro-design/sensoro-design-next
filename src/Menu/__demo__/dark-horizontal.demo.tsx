@@ -1,30 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 深色模式导航
+ * desc: 通过 `theme` 指定主题，分为 `light` 和 `dark` 两种。
  */
----
-order: 1
-title:
-  zh-CN: 深色模式导航
-  en-US: Dark Theme
----
-
-## zh-CN
-
-通过 `theme` 指定主题，分为 `light` 和 `dark` 两种。
-
-## en-US
-
-The theme is specified by `theme`, which can be divided into two types: `light` and `dark`.
-
-```js
 import { Menu } from '@sensoro-design/react';
 
 const MenuItem = Menu.Item;
-const SubMenu = Menu.SubMenu;
 
-function Demo() {
+export default () => {
   return (
     <div className="menu-demo">
       <Menu mode="horizontal" theme="dark" defaultSelectedKeys={['1']}>
@@ -46,20 +29,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.menu-demo {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 40px;
-  background-color: var(--color-neutral-2);
-}
-
-.menu-demo .arco-menu-inner {
-  overflow-y: auto;
-}
-```
-

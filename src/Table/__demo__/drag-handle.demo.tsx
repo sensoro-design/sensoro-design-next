@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 拖拽锚点排序
+ * desc: 可以配合 `react-sortable-hoc` 可以实现拖拽锚点排序。
  */
----
-order: 21
-title:
-  zh-CN: 拖拽锚点排序
-  en-US: Drag Anchor
----
-
-## zh-CN
-
-可以配合 `react-sortable-hoc` 可以实现拖拽锚点排序。
-
-## en-US
-
-It can be used with `react-sortable-hoc` to drag the anchor to sort table.
-
-```js
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
 import { IconDragDotVertical } from '@sensoro-design/react/icon';
@@ -102,7 +86,7 @@ const SortableItem = sortableElement((props) => {
   return <tr {...props} />
 });
 
-function Demo() {
+export default () => {
   const [data, setData] = useState(initialData);
 
   function onSortEnd({ oldIndex, newIndex }) {
@@ -180,7 +164,3 @@ function Demo() {
     rowSelection={{ type: 'checkbox' }}
   />;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

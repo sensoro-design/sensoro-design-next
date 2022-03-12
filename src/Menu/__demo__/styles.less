@@ -1,0 +1,104 @@
+.menu-demo {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--color-neutral-2);
+}
+
+.menu-demo .arco-menu-inner {
+  overflow-y: auto;
+}
+
+.menu-demo-button {
+  position: relative;
+  width: 660px;
+  height: 300px;
+  background-color: var(--color-fill-2);
+}
+
+.button-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.button-trigger:nth-child(1) {
+  left: 150px;
+  background-color: var(--color-neutral-5);
+}
+
+.button-trigger:nth-child(1).button-trigger-active {
+  background-color: var(--color-neutral-4);
+}
+
+.button-trigger:nth-child(2) {
+  left: 372px;
+  background-color: rgb(var(--arcoblue-6));
+}
+
+.button-trigger:nth-child(2).button-trigger-active {
+  background-color: var(--color-primary-light-4);
+}
+
+.menu-demo-round {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--color-neutral-2);
+}
+
+.menu-demo-round .arco-menu-inner {
+  overflow-y: auto;
+}
+
+.menu-demo-round .arco-menu {
+  height: 100%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.menu-demo-round .arco-menu:not(.arco-menu-collapse) .arco-menu-collapse-button {
+  right: 0;
+  bottom: 8px;
+  transform: translateX(50%);
+}
+
+.menu-demo-round .arco-menu:not(.arco-menu-collapse)::before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: inherit;
+  box-shadow: -4px 0 2px var(--color-bg-2), 0 0 1px rgba(0, 0, 0, 0.3);
+  transform: translateX(50%);
+}
+
+.menu-demo-round .arco-menu-collapse {
+  height: auto;
+  padding-top: 24px;
+  padding-bottom: 138px;
+  border-radius: 22px;
+}
+
+.menu-demo-round .arco-menu-collapse-button {
+  right: 8px;
+  bottom: 8px;
+}
+
+.menu-demo-round .arco-menu-collapse-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+

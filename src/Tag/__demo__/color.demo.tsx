@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 多色标签
+ * desc: 我们提供多种预设色彩的标签样式，通过 `color` 设置不同颜色。如果预设值不能满足你的需求，`color` 字段也可以设置自定义色值。
  */
----
-order: 3
-title: 
-  zh-CN: 多色标签
-  en-US: Color
----
-
-## zh-CN
-
-我们提供多种预设色彩的标签样式，通过 `color` 设置不同颜色。如果预设值不能满足你的需求，`color` 字段也可以设置自定义色值。
-
-## en-US
-
-We provide a variety of label styles with preset colors, and set different colors through `color`. If the preset value cannot meet your needs, you can also set a custom color value in the `color` field.
-
-```js
 import { Tag } from '@sensoro-design/react';
 
 const COLORS = [
@@ -53,13 +37,12 @@ const COLORS_CUSTOM = [
   '#ff5722',
 ];
 
-ReactDOM.render(
-  <div>
-    {COLORS.map((color, i) => <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>{color}</Tag>)}
-    <h3 style={{color: 'var(--color-text-2)'}}>Custom Color</h3>
-    {COLORS_CUSTOM.map((color, i) => <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>{color}</Tag>)}
-  </div>,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <div>
+      {COLORS.map((color, i) => <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>{color}</Tag>)}
+      <h3 style={{color: 'var(--color-text-2)'}}>Custom Color</h3>
+      {COLORS_CUSTOM.map((color, i) => <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>{color}</Tag>)}
+    </div>
+  )
+}

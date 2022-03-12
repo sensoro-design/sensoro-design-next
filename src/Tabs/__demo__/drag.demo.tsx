@@ -1,24 +1,8 @@
-
 /**
- * title:
- * desc:
+ * title: 可拖拽页签
+ * desc: 通过 `react-dnd` 可以实现页签的拖拽。
  */
----
-order: 9
-title:
-  zh-CN: 可拖拽页签
-  en-US: Draggable
----
-
-## zh-CN
-
-通过 `react-dnd` 可以实现页签的拖拽。
-
-## en-US
-
-Use `react-dnd` to realize the drag and drop of tabs.
-
-```js
+import React from 'react';
 import { useState, useRef } from 'react';
 import { Tabs } from '@sensoro-design/react';
 import { DndProvider, DragSource, DropTarget, createDndContext } from 'react-dnd';
@@ -105,19 +89,18 @@ function DraggableTabs(props) {
   );
 }
 
-ReactDOM.render(
-  <DraggableTabs>
-    <TabPane title="tab 1" key="1">
-      Content of Tab Pane 1
-    </TabPane>
-    <TabPane title="tab 2" key="2">
-      Content of Tab Pane 2
-    </TabPane>
-    <TabPane title="tab 3" key="3">
-      Content of Tab Pane 3
-    </TabPane>
-  </DraggableTabs>,
-  CONTAINER,
-);
-```
-
+export default () => {
+  return (
+    <DraggableTabs>
+      <TabPane title="tab 1" key="1">
+        Content of Tab Pane 1
+      </TabPane>
+      <TabPane title="tab 2" key="2">
+        Content of Tab Pane 2
+      </TabPane>
+      <TabPane title="tab 3" key="3">
+        Content of Tab Pane 3
+      </TabPane>
+    </DraggableTabs>
+  )
+}

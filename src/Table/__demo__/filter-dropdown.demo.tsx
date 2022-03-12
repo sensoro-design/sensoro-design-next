@@ -1,26 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义筛选菜单
+ * desc: 自定义筛选菜单。
  */
----
-order: 9
-title:
-  zh-CN: 自定义筛选菜单
-  en-US: Custom filter dropdown
----
-
-## zh-CN
-
-自定义筛选菜单。
-
-## en-US
-
-Custom filter dropdown.
-
-```js
-import { useState, useRef } from 'react';
-import { Table, Input, Button } from '@sensoro-design/react';
+import { useRef } from 'react';
+import { Table, Input } from '@sensoro-design/react';
 import { IconSearch } from '@sensoro-design/react/icon';
 
 const data = [
@@ -61,7 +45,7 @@ const data = [
   },
 ];
 
-function Demo() {
+export default () => {
   const inputRef = useRef(null);
   const columns = [
     {
@@ -109,15 +93,3 @@ function Demo() {
 
   return <Table columns={columns} data={data} />;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.arco-table-custom-filter {
-  padding: 10px;
-  background-color: var(--color-bg-5);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-}
-```
-

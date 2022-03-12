@@ -1,27 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 多个面板分割
+ * desc: 可以通过 `SplitGroup` 进行多个面板分割，同时还支持快速收缩及手动收缩
  */
----
-order: 6
-title:
-  zh-CN: 多个面板分割
-  en-US: Panel Split Group
----
-
-## zh-CN
-
-可以通过 `SplitGroup` 进行多个面板分割，同时还支持快速收缩及手动收缩
-
-## en-US
-
-Multiple panels can be split through `SplitGroup`, and it also supports quick collapse and manual drag;
-
-```js
 import { useState } from 'react'
 import { ResizeBox, Typography } from '@sensoro-design/react';
 import { IconDoubleLeft, IconDoubleRight } from '@sensoro-design/react/icon';
+import './styles.less';
+
 const { Paragraph, Text } = Typography;
 
 const panes = [
@@ -105,7 +90,7 @@ const VerticalSplitGroup = () => {
   );
 };
 
-function Demo() {
+export default () => {
   return (
     <ResizeBox.SplitGroup
       direction="vertical"
@@ -114,42 +99,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.resizebox-split-group-demo {
-  border: 1px solid var(--color-neutral-4);
-  height: 400px;
-}
-
-.resizebox-split-group-demo-content {
-  text-align: center;
-  padding: 20px 0;
-  min-width: 130px;
-  overflow-x: auto;
-}
-
-.resizebox-split-group-demo-trigger {
-  background-color: rgba(var(--arcoblue-6), 0.9);
-  height: 100%;
-  width: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.resizebox-split-group-demo-trigger .arco-resizebox-trigger-icon {
-  color: #ffffff;
-}
-
-.resizebox-split-group-demo-horizontal {
-  height: 100%;
-}
-
-.resizebox-split-group-demo-vertical {
-  height: 237px;
-}
-```
-

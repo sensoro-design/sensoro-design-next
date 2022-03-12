@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 浮层内关闭
+ * desc: 控制浮层显示。更多示例可查看 [Trigger](/react/components/trigger)组件。
  */
----
-order: 3
-title:
-  zh-CN: 浮层内关闭
-  en-US: Manual close
----
-
-## zh-CN
-
-控制浮层显示。更多示例可查看 [Trigger](/react/components/trigger)组件。
-
-## en-US
-
-Manual close popover. For more examples, see the [Trigger](/react/components/trigger) component.
-
-```js
 import { Popover, Button, Link } from '@sensoro-design/react';
 
 const style = { margin: 0 };
 
-function Demo() {
+export default () => {
   const [visible, setVisible] = React.useState(false)
   const [visible2, setVisible2] = React.useState(false)
 
@@ -66,15 +50,9 @@ function Demo() {
       }
     >
       <Button type="primary">
-         Will not close when moved out
+        Will not close when moved out
       </Button>
     </Popover>
   </div>
 }
-
-ReactDOM.render(
-  <Demo/>,
-  CONTAINER
-);
-```
 

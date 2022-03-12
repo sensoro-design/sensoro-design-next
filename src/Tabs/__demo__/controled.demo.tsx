@@ -1,33 +1,18 @@
-
 /**
- * title:
- * desc:
+ * title: 受控模式
+ * desc: 通过 `activeTab` 开启受控模式。
  */
----
-order: 5
-title: 
-  zh-CN: 受控模式
-  en-US: Controlled
----
-
-## zh-CN
-
-通过 `activeTab` 开启受控模式。
-
-## en-US
-
-Open the controlled mode through `activeTab`.
-
-```js
+import React from 'react';
 import { useState } from 'react';
 import { Tabs, Typography } from '@sensoro-design/react';
 
 const TabPane = Tabs.TabPane;
 
-const style = { textAlign: 'center', marginTop: 20 };
+const style: React.CSSProperties = { textAlign: 'center', marginTop: 20 };
 
-function Demo() {
+export default () => {
   const [activeTab, setActiveTab] = useState('1');
+
   return (
     <Tabs activeTab={activeTab} onChange={setActiveTab}>
       <TabPane key="1" title="Tab 1">
@@ -42,7 +27,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

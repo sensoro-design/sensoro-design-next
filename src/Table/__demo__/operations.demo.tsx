@@ -1,27 +1,10 @@
 
 /**
- * title:
- * desc:
+ * title: 定制前置操作列
+ * desc: 可以通过 `components` 来定制前置操作列，包括新增列、调整列的顺序等。
  */
----
-order: 19
-title:
-  zh-CN: 定制前置操作列
-  en-US: Custom operation column
----
-
-## zh-CN
-
-可以通过 `components` 来定制前置操作列，包括新增列、调整列的顺序等。
-
-## en-US
-
-You can customize the operation column through `components`, including adding new columns, adjusting the order of columns, etc.
-
-```js
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
-import { IconDragDotVertical } from '@sensoro-design/react/icon';
 
 const columns = [
   {
@@ -115,7 +98,7 @@ const components = {
   },
 };
 
-function Demo() {
+export default () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState(['4']);
   return (
     <Table
@@ -145,7 +128,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

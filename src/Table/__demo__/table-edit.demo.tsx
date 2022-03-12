@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 可编辑单元格
+ * desc: 可编辑单元格。
  */
----
-order: 16
-title:
-  zh-CN: 可编辑单元格
-  en-US: Editable cell
----
-
-## zh-CN
-
-可编辑单元格。
-
-## en-US
-
-Editable cell.
-
-```js
 import React, { useState, useRef, useEffect, useContext, useCallback } from 'react';
 import { Button, Table, Input, Select, Form } from '@sensoro-design/react';
 
@@ -138,7 +122,7 @@ function EditableCell(props) {
   );
 }
 
-function EditableTable() {
+export default () => {
   const [count, setCount] = useState(5);
   const [data, setData] = useState([
     {
@@ -263,20 +247,3 @@ function EditableTable() {
     </>
   );
 }
-
-ReactDOM.render(<EditableTable />, CONTAINER);
-```
-
-```css
-.table-demo-editable-cell .editable-row .editable-cell {
-  display: inline-block;
-  padding: 5px 11px;
-}
-
-.table-demo-editable-cell .editable-row .editable-cell:hover {
-  border-radius: 4px;
-  border: 1px solid var(--color-border);
-  padding: 4px 10px;
-}
-```
-

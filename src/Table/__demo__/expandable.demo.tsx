@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 展开行
+ * desc: 当内容过长，可以通过`expandedRowRender`设置展开行。如果返回值是 `null`，不会渲染展开按钮。
  */
----
-order: 3
-title:
-  zh-CN: 展开行
-  en-US: Expandable row
----
-
-## zh-CN
-
-当内容过长，可以通过`expandedRowRender`设置展开行。如果返回值是 `null`，不会渲染展开按钮。
-
-## en-US
-
-When the content is too long, you can set the expanded row by `expandedRowRender`. If the return value is `null`, the expand button will not be rendered.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -78,22 +62,21 @@ const data = [
   },
 ];
 
-ReactDOM.render(
-  <Table
-    columns={columns}
-    data={data}
-    expandedRowRender={(record) => {
-      return `This is No.${record.key} description.`;
-    }}
-    onExpand={(detail, expanded) => {
-      console.log(detail, expanded);
-    }}
-    onExpandedRowsChange={(expandedRows) => {
-      console.log(expandedRows);
-    }}
-    expandProps={{ expandRowByClick: true, rowExpandable: (record) => record.key !== '4' }}
-  />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      expandedRowRender={(record) => {
+        return `This is No.${record.key} description.`;
+      }}
+      onExpand={(detail, expanded) => {
+        console.log(detail, expanded);
+      }}
+      onExpandedRowsChange={(expandedRows) => {
+        console.log(expandedRows);
+      }}
+      expandProps={{ expandRowByClick: true, rowExpandable: (record) => record.key !== '4' }}
+    />
+  )
+}

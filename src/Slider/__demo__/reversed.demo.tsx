@@ -1,29 +1,12 @@
 
 /**
- * title:
- * desc:
+ * title: 反向
+ * desc: 设置 `reverse={true}` ，可以交换滑动条的起点和终点。
  */
----
-order: 12
-title:
-  zh-CN: 反向
-  en-US: Reverse
----
-
-## zh-CN
-
-设置 `reverse={true}` ，可以交换滑动条的起点和终点。
-
-## en-US
-
-Set `reverse={true}` to swap the start and end points of the slider.
-
-```js
 import { useState } from 'react';
 import { Slider, Switch, Typography } from '@sensoro-design/react';
-import { IconSound, IconMute } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const [reverse, setReverse] = useState(true);
 
   return (
@@ -48,7 +31,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

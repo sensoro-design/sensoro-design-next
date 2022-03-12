@@ -1,28 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 通知提醒位置
+ * desc: 通知提醒框有 4 种不同的弹出位置，分别为：`左上角`, `右上角 (默认)`, `左下角`, `右下角`。
  */
----
-order: 7
-title:
-  zh-CN: 通知提醒位置
-  en-US: Position
----
-
-## zh-CN
-
-通知提醒框有 4 种不同的弹出位置，分别为：`左上角`, `右上角 (默认)`, `左下角`, `右下角`。
-
-## en-US
-
-Notification has 4 different positions, `Top Left`, `Top Right (default)`, `Bottom Left`, `Bottom Right`.
-
-```js
 import { Notification, Button, Space } from '@sensoro-design/react';
 
-ReactDOM.render(
-  <Space size="large">
+export default () => {
+  return (
+    <Space size="large">
     <Button
       onClick={() =>
         Notification.success({
@@ -75,8 +60,6 @@ ReactDOM.render(
     >
       Bottom Right
     </Button>
-  </Space>,
-  CONTAINER
-);
-```
-
+  </Space>
+  )
+}

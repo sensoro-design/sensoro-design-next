@@ -1,30 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 触发方式
+ * desc: 通过设置 `trigger`，可以指定不同的触发方式。
  */
----
-order: 1
-title:
-  zh-CN: 触发方式
-  en-US: Trigger
----
-
-## zh-CN
-
-通过设置 `trigger`，可以指定不同的触发方式。
-
-## en-US
-
-By setting `trigger`, you can specify different trigger methods.
-
-```js
 import { Popover, Button } from '@sensoro-design/react';
 
 const style = { margin: 0 };
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
+     <div>
     <Popover
       trigger="hover"
       title="Title"
@@ -61,8 +46,6 @@ ReactDOM.render(
     >
       <Button>Focus</Button>
     </Popover>
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

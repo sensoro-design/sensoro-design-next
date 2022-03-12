@@ -1,29 +1,10 @@
 
 /**
- * title:
+ * title: 定制展开参数
  * desc:
+ * 可以通过 `expandProps` 定制展开列的图标，宽度，标题，是否展开等。
+ * **Tip:** 正常情况下，是否展开是由 `expandedRowRender` 返回值决定的，如果过多的 `expandedRowRender` 计算导致卡顿，建议使用 `expandProps.rowExpandable`。
  */
----
-order: 4
-title:
-  zh-CN: 定制展开参数
-  en-US: Expand props
----
-
-## zh-CN
-
-可以通过 `expandProps` 定制展开列的图标，宽度，标题，是否展开等。
-
-**Tip:** 正常情况下，是否展开是由 `expandedRowRender` 返回值决定的，如果过多的 `expandedRowRender` 计算导致卡顿，建议使用 `expandProps.rowExpandable`。
-
-## en-US
-
-The icon, width, title, expandable etc. of the expanded column can be customized through `expandProps`.
-
-**Tip:** whether to expandable or not is determined by the return value of `expandedRowRender`.
-If too many `expandedRowRender` calculations block page render, it is recommended to use `expandProps.rowExpandable`.
-
-```js
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
 import { IconRight, IconDown } from '@sensoro-design/react/icon';
@@ -79,7 +60,7 @@ const data = [{
   email: 'william.smith@example.com'
 }];
 
-function Demo() {
+export default () => {
   const [expandedRowKeys, setExpandedRowKeys] = useState([]);
 
   function addExpandedRowKey(key) {
@@ -105,10 +86,3 @@ function Demo() {
     }}
   />;
 }
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-

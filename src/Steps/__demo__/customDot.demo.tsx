@@ -1,31 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义节点
+ * desc: 通过设置 `customDot` 可以自定义节点，可以给节点添加弹出或任意自定义操作。
  */
----
-order: 10
-title: 
-  zh-CN: 自定义节点
-  en-US: Customize Node
----
-
-## zh-CN
-
-通过设置 `customDot` 可以自定义节点，可以给节点添加弹出或任意自定义操作。
-
-## en-US
-
-You can customize the node by setting `customDot`, and you can add pop-up or any custom operation to the node.
-
-```js
 import { useState } from 'react';
 import { Button, Steps, Popover } from '@sensoro-design/react';
 import { IconLeft, IconRight } from '@sensoro-design/react/icon';
 
 const Step = Steps.Step;
 
-function Demo() {
+export default () => {
   const [current, setCurrent] = useState(2);
 
   const customDot = (dot, { status, index, title, description }) => {
@@ -58,7 +42,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

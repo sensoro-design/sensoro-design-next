@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 表头分组
+ * desc: `columns` 内可以嵌套 `children`，用于表头分组。
  */
----
-order: 14
-title:
-  zh-CN: 表头分组
-  en-US: Group columns
----
-
-## zh-CN
-
-`columns` 内可以嵌套 `children`，用于表头分组。
-
-## en-US
-
-`children` can be nested in `columns` for group columns.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -133,14 +117,13 @@ const data = [
   },
 ];
 
-ReactDOM.render(
-  <Table
-    scroll={{ x: 1200 }}
-    border={{ wrapper: true, cell: true }}
-    columns={columns}
-    data={data}
-  />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Table
+      scroll={{ x: 1200 }}
+      border={{ wrapper: true, cell: true }}
+      columns={columns}
+      data={data}
+    />
+  )
+}

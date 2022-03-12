@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 位置
+ * desc: `Popover` 支持 12 个不同的方位。分别为：`上左` `上` `上右` `下左` `下` `下右` `左上` `左` `左下` `右上` `右` `右下`。
  */
----
-order: 2
-title:
-  zh-CN: 位置
-  en-US: Position
----
-
-## zh-CN
-
-`Popover` 支持 12 个不同的方位。分别为：`上左` `上` `上右` `下左` `下` `下右` `左上` `左` `左下` `右上` `右` `右下`。
-
-## en-US
-
-`Popover` supports 12 different positions. `top left` `top` `top right` `bottom left` `bottom` `bottom right` `top left` `left` `bottom left` `top right` `right` `bottom right`.
-
-```js
 import { Popover, Button } from '@sensoro-design/react';
 
 const style = { margin: 0 };
@@ -37,8 +21,9 @@ const content = <span>
   <p style={style}>Here is the text content</p>
 </span>;
 
-ReactDOM.render(
-  <div style={{ position: 'relative', width: 440, height: 280 }}>
+export default () => {
+  return (
+     <div style={{ position: 'relative', width: 440, height: 280 }}>
     <Popover position="tl" title="Title" content={content}>
       <Button style={getStyle(0, 70)}>TL</Button>
     </Popover>
@@ -75,8 +60,6 @@ ReactDOM.render(
     <Popover position="br" title="Title" content={content}>
       <Button style={getStyle(240, 290)}>BR</Button>
     </Popover>
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

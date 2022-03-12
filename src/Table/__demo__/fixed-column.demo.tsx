@@ -1,26 +1,10 @@
 
 /**
- * title:
+ * title: 固定列
  * desc:
+ * 在 `column` 中指定 `fixed: "left"` 或 `fixed: "right"`，可将列固定到左侧或右侧，设置 `fixed` 的列，也需要设置 `width`。
+ * **注意：** 要配合 `scroll={{ x: number }}` 使用，`columns` 中需要有一列不设置宽度，自适应，不然会有样式问题。
  */
----
-order: 12
-title:
-  zh-CN: 固定列
-  en-US: Fixed columns
----
-
-## zh-CN
-
-在 `column` 中指定 `fixed: "left"` 或 `fixed: "right"`，可将列固定到左侧或右侧，设置 `fixed` 的列，也需要设置 `width`。
-**注意：** 要配合 `scroll={{ x: number }}` 使用，`columns` 中需要有一列不设置宽度，自适应，不然会有样式问题。
-
-## en-US
-
-Specify `fixed: "left"` or `fixed: "right"` in `column` to fix the column to the left or right. To set the column of `fixed`, you also need to set `width`.
-**Note:** To be used with `scroll={{ x: number }}`, there needs to be a column in `columns` that does not set the width and is adaptive, otherwise there will be style problems.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -99,15 +83,14 @@ const data = [
   },
 ];
 
-ReactDOM.render(
-  <Table
-    columns={columns}
-    data={data}
-    expandedRowRender={(record) => `${record.name}'s address is ${record.address}`}
-    rowSelection={{}}
-    scroll={{ x: 1600, y: 400 }}
-  />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      expandedRowRender={(record) => `${record.name}'s address is ${record.address}`}
+      rowSelection={{}}
+      scroll={{ x: 1600, y: 400 }}
+    />
+  )
+}

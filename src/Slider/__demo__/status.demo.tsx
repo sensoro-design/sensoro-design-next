@@ -1,27 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 基础状态
+ * desc: 默认态、禁用态。
  */
----
-order: 1
-title: 
-  zh-CN: 基础状态
-  en-US: State
----
-
-## zh-CN
-
-默认态、禁用态。
-
-## en-US
-
-Default state and disabled state.
-
-```js
 import { Slider } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
   return (
     <div>
       <Slider defaultValue={30} style={{ width: 200 }}/>
@@ -29,7 +13,3 @@ function Demo () {
     </div>
   )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

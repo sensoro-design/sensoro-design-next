@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 树形数据展示
+ * desc: 树形数据展示的例子，`data` 里有 `children` 字段, 或者通过 `childrenColumnName` 设置成自定义字段。
  */
----
-order: 6
-title:
-  zh-CN: 树形数据展示
-  en-US: Tree Data
----
-
-## zh-CN
-
-树形数据展示的例子，`data` 里有 `children` 字段, 或者通过 `childrenColumnName` 设置成自定义字段。
-
-## en-US
-
-There is a `children` field in `data`, or set as a custom field by `childrenColumnName` to display tree data.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -97,18 +81,17 @@ const data = [
   },
 ];
 
-ReactDOM.render(
-  <Table
-    rowSelection={{
-      type: 'checkbox',
-      onChange: (selectedRowKeys, selectedRows) => {
-        console.log(selectedRowKeys, selectedRows);
-      },
-    }}
-    columns={columns}
-    data={data}
-  />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return (
+    <Table
+      rowSelection={{
+        type: 'checkbox',
+        onChange: (selectedRowKeys, selectedRows) => {
+          console.log(selectedRowKeys, selectedRows);
+        },
+      }}
+      columns={columns}
+      data={data}
+    />
+  )
+}

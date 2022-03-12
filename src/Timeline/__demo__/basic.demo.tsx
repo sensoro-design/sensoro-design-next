@@ -1,29 +1,12 @@
-
 /**
- * title:
- * desc:
+ * title: 基础用法
+ * desc: 基本用法
  */
----
-order: 0
-title: 
-  zh-CN: 基础用法
-  en-US: Basic
----
-
-## zh-CN
-
-基本用法
-
-## en-US
-
-Basic usage
-
-```js
+import React from 'react';
 import { Switch, Timeline, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
-
-class Demo extends React.Component {
+export default class Demo extends React.Component {
   state = {
     reverse: false,
   };
@@ -52,7 +35,3 @@ class Demo extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Demo></Demo>, CONTAINER);
-```
-

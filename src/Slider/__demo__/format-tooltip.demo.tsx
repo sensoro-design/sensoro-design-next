@@ -1,27 +1,11 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义提示
+ * desc: 使用 `formatterTooltip` 可以格式化 Tooltip 的内容。
  */
----
-order: 9
-title: 
-    zh-CN: 自定义提示
-    en-US: Customize Tooltip
----
-
-## zh-CN
-
-使用 `formatterTooltip` 可以格式化 Tooltip 的内容。
-
-## en-US
-
-Use `formatterTooltip` to format the content of Tooltip.
-
-```js
 import { Slider } from '@sensoro-design/react';
 
-function Demo () {
+export default () => {
 
     function formatTooltip (val) {
         return <span>{val}%</span>;
@@ -36,7 +20,3 @@ function Demo () {
         </div>
     )
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 不同大小菜单
+ * desc: 通过 `style` 自由指定菜单的宽度和菜单项的高度。
  */
----
-order: 4
-title:
-  zh-CN: 不同大小菜单
-  en-US: Custom Size
----
-
-## zh-CN
-
-通过 `style` 自由指定菜单的宽度和菜单项的高度。
-
-## en-US
-
-Freely specify width of menu and height of menu item through `style`.
-
-```js
 import { useState } from 'react';
 import { Menu, Slider } from '@sensoro-design/react';
 import { IconApps, IconBug, IconBulb } from '@sensoro-design/react/icon';
@@ -26,7 +10,7 @@ import { IconApps, IconBug, IconBulb } from '@sensoro-design/react/icon';
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 
-function Demo() {
+export default () => {
   const [width, setWidth] = useState(240);
   return (
     <div
@@ -91,20 +75,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.menu-demo {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 40px;
-  background-color: var(--color-neutral-2);
-}
-
-.menu-demo .arco-menu-inner {
-  overflow-y: auto;
-}
-```
-

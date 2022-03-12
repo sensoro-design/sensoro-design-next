@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 表头吸顶
+ * desc: 配合 `react-sticky` 可以实现表头吸顶的效果。
  */
----
-order: 18
-title:
-  zh-CN: 表头吸顶
-  en-US: Header Sticky
----
-
-## zh-CN
-
-配合 `react-sticky` 可以实现表头吸顶的效果。
-
-## en-US
-
-Cooperate with `react-sticky` to achieve the effect of header sticky.
-
-```js
 import { Table } from '@sensoro-design/react';
 import { StickyContainer, Sticky } from 'react-sticky';
 
@@ -97,7 +81,7 @@ const components = {
   },
 };
 
-function Demo() {
+export default () => {
   return (
     <StickyContainer>
       <Table
@@ -110,7 +94,3 @@ function Demo() {
     </StickyContainer>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

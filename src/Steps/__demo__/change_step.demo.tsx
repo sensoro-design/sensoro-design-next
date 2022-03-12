@@ -1,31 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 步骤切换
+ * desc: 通过改变 `current` 参数，可以跳转到不同的步骤。
  */
----
-order: 8
-title: 
-  zh-CN: 步骤切换
-  en-US: Switch Steps
----
-
-## zh-CN
-
-通过改变 `current` 参数，可以跳转到不同的步骤。
-
-## en-US
-
-You can jump to different steps by modifying the `current` parameter.
-
-```js
 import { useState } from 'react';
 import { Steps, Button } from '@sensoro-design/react';
 import { IconLeft, IconRight } from '@sensoro-design/react/icon';
 
 const Step = Steps.Step;
 
-function Demo() {
+export default () => {
   const [current, setCurrent] = useState(1);
 
   function renderContent(step) {
@@ -64,7 +48,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

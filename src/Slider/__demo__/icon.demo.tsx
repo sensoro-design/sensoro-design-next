@@ -1,29 +1,13 @@
 
 /**
- * title:
- * desc:
+ * title: 带有icon的滑动输入条
+ * desc: 两边带有 icon 表示状态。
  */
----
-order: 6
-title:
-  zh-CN: 带有icon的滑动输入条
-  en-US: With Icon
----
-
-## zh-CN
-
-两边带有 icon 表示状态。
-
-## en-US
-
-There are icons on both sides of the slider to indicate status.
-
-```js
 import { useState } from 'react';
 import { Slider, Space } from '@sensoro-design/react';
 import { IconSound, IconMute } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const [value, setValue] = useState(10);
 
   return <Space>
@@ -46,7 +30,3 @@ function Demo() {
     </Space>
   </Space>
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

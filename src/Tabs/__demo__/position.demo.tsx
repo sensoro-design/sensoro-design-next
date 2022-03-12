@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 位置
+ * desc: 通过 `position` 设置位置。
  */
----
-order: 2
-title: 
-  zh-CN: 位置
-  en-US: Position
----
-
-## zh-CN
-
-通过 `position` 设置位置。
-
-## en-US
-
-Set the position of tabs by `position`.
-
-```js
 import { useState } from 'react';
 import { Tabs, Radio, Typography } from '@sensoro-design/react';
 
@@ -27,7 +11,7 @@ const TabPane = Tabs.TabPane;
 const style = { textAlign: 'center', marginTop: 20 };
 
 
-function Demo() {
+export default () => {
   const [position, setPosition] = useState('top');
 
   return (
@@ -56,7 +40,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

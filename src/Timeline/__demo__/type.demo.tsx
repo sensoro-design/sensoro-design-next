@@ -1,30 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义轴线样式
+ * desc: 自定义轴线样式
  */
----
-order: 2
-title: 
-  zh-CN: 自定义轴线样式
-  en-US: Type
----
-
-## zh-CN
-
-自定义轴线的示例。
-
-## en-US
-
-Example of custom axis.
-
-```js
 import { Timeline, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
 
-ReactDOM.render(
-  <div>
+export default () => {
+  return (
+    <div>
     <Timeline>
       <TimelineItem label="2017-03-10" lineType="dashed">
         The first milestone
@@ -48,8 +33,6 @@ ReactDOM.render(
         </Typography.Text>
       </TimelineItem>
     </Timeline>
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

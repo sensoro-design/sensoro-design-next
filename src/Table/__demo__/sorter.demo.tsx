@@ -1,34 +1,13 @@
 
 /**
- * title:
+ * title: 排序和筛选
  * desc:
+ * 配置 `Column` 的 `sorter`，可以对表格进行排序。
+ * 配置 `Column` 的 `filters`，可以对表格进行筛选。
+ * `sorter` 为一个排序函数，当然，你也可以指定 `sorter` 为 `true`，这样你可以通过 `Table` 的 `onChange` 事件进行自定义排序。
+ * `filters` 为一个数组，包含着要筛选的信息，需要配合 `onFilter` 使用。当然也可以配合 `Table` 的 `onChange` 事件进行自定义筛选或者服务端筛选。
+ * **默认排序和筛选**：通过指定 `defaultFilters` 和 `defaultSortOrder` 可以指定默认的排序和筛选。
  */
----
-order: 8
-title:
-  zh-CN: 排序和筛选
-  en-US: Sort and filter
----
-
-## zh-CN
-
-配置 `Column` 的 `sorter`，可以对表格进行排序。
-配置 `Column` 的 `filters`，可以对表格进行筛选。
-`sorter` 为一个排序函数，当然，你也可以指定 `sorter` 为 `true`，这样你可以通过 `Table` 的 `onChange` 事件进行自定义排序。
-`filters` 为一个数组，包含着要筛选的信息，需要配合 `onFilter` 使用。当然也可以配合 `Table` 的 `onChange` 事件进行自定义筛选或者服务端筛选。
-
-**默认排序和筛选**：通过指定 `defaultFilters` 和 `defaultSortOrder` 可以指定默认的排序和筛选。
-
-## en-US
-
-Configure the `sorter` of `Column` to sort the table.
-Configure the `filters` of `Column` to filter the table.
-`sorter` is a sorting function. You can also specify `sorter` to `true`, so that you can customize the sorting through the `onChange` event of `Table`.
-`filters` is an array containing the information to be filtered, which needs to be used with `onFilter`. You can also use the `onChange` event of the `Table` for custom filtering or server-side filtering.
-
-**Default sort and filter**: You can specify the default sort and filter by specifying `defaultFilters` and `defaultSortOrder`.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -117,6 +96,6 @@ const data = [
   },
 ];
 
-ReactDOM.render(<Table columns={columns} data={data} />, CONTAINER);
-```
-
+export default () => {
+  return <Table columns={columns} data={data} />
+}

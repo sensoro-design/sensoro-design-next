@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 嵌套子表格
+ * desc: 嵌套子表格的例子，点击展开按钮可以在展开区域展示子表格。
  */
----
-order: 5
-title:
-  zh-CN: 嵌套子表格
-  en-US: Nested Table
----
-
-## zh-CN
-
-嵌套子表格的例子，点击展开按钮可以在展开区域展示子表格。
-
-## en-US
-
-Examples of nested tables, click the expand button to display the sub tables in the expanded area.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -72,10 +56,7 @@ const data = [{
   email: 'william.smith@example.com'
 }];
 
-function expandedRowRender() {
+
+export default () => {
   return <Table columns={columns} data={data} pagination={false} />;
 }
-
-ReactDOM.render(<Table indentSize={60} expandedRowRender={expandedRowRender} columns={columns} data={data} />, CONTAINER);
-```
-

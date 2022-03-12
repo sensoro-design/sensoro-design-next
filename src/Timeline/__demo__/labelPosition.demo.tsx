@@ -1,30 +1,15 @@
 
 /**
- * title:
- * desc:
+ * title: 标签文本位置
+ * desc: 通过 `labelPosition` 可以设置标签文本的位置。
  */
----
-order: 7
-title: 
-  zh-CN: 标签文本位置
-  en-US: Label Position
----
-
-## zh-CN
-
-通过 `labelPosition` 可以设置标签文本的位置。
-
-## en-US
-
-The position of the label text can be set by `labelPosition`.
-
-```js
+import React from 'react';
 import { Timeline, Grid, Radio, Typography } from '@sensoro-design/react';
 
 const TimelineItem = Timeline.Item;
-const { Row, Col } = Grid;
+const { Row } = Grid;
 
-function Demo() {
+export default () => {
   const [mode, setMode] = React.useState('left');
   const [pos, setLabelPos] = React.useState('same');
 
@@ -67,7 +52,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

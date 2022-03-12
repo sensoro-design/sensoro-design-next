@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义样式
+ * desc: 有多种方式定制行列样式，`rowClassName` 可以对每一行进行样式定制，`Column.className` 可以对列进行样式定制。此外，还有 `headerCellStyle`, `bodyCellStyle`， 对表头和表格主体的列进行样式定制。
  */
----
-order: 13
-title:
-  zh-CN: 自定义样式
-  en-US: Customize style
----
-
-## zh-CN
-
-有多种方式定制行列样式，`rowClassName` 可以对每一行进行样式定制，`Column.className` 可以对列进行样式定制。此外，还有 `headerCellStyle`, `bodyCellStyle`， 对表头和表格主体的列进行样式定制。
-
-## en-US
-
-There are many ways to customize the row and column styles. `rowClassName` can customize the style of each row, and `Column.className` can customize the style of columns. In addition, there are `headerCellStyle` and `bodyCellStyle` to customize the styles of the columns of the table header and table body.
-
-```js
 import { Table } from '@sensoro-design/react';
 
 const columns = [
@@ -84,9 +68,6 @@ const data = [{
   email: 'william.smith@example.com'
 }];
 
-ReactDOM.render(
-  <Table columns={columns} data={data} border={{ wrapper: true, headerCell: true }} />,
-  CONTAINER
-);
-```
-
+export default () => {
+  return  <Table columns={columns} data={data} border={{ wrapper: true, headerCell: true }} />
+}

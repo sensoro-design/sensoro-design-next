@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 拖拽排序
+ * desc: 可以配合 `react-sortable-hoc` 实现拖拽排序。
  */
----
-order: 20
-title:
-  zh-CN: 拖拽排序
-  en-US: Drag
----
-
-## zh-CN
-
-可以配合 `react-sortable-hoc` 实现拖拽排序。
-
-## en-US
-
-Can cooperate with `react-sortable-hoc` to drag rows.
-
-```js
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
 import { sortableContainer, sortableElement } from 'react-sortable-hoc';
@@ -97,7 +81,7 @@ const SortableItem = sortableElement((props) => {
   return <tr style={{ cursor: 'move' }} {...props} />
 });
 
-function Demo() {
+export default () => {
   const [data, setData] = useState(initialData);
 
   function onSortEnd({ oldIndex, newIndex }) {
@@ -136,7 +120,3 @@ function Demo() {
 
   return <Table className="arco-drag-table-container" components={components} columns={columns} data={data} />;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

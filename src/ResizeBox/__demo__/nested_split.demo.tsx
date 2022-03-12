@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 面板分割嵌套
+ * desc: 面板分割可以嵌套使用。
  */
----
-order: 5
-title: 
-  zh-CN: 面板分割嵌套
-  en-US: Panel Split Nesting
----
-
-## zh-CN
-
-面板分割可以嵌套使用。
-
-## en-US
-
-Panel split can be nested.
-
-```js
 import { ResizeBox, Typography } from '@sensoro-design/react';
 
 const rightPane = (
@@ -35,17 +19,17 @@ const rightPane = (
   </div>
 );
 
-ReactDOM.render(
-  <div>
-    <ResizeBox.Split
-      style={{height: 200, width: 500, border: '1px solid var(--color-border)'}}
-      panes={[
-        (<Typography.Paragraph>Right</Typography.Paragraph>),
-        (rightPane)
-      ]}
-    >
-    </ResizeBox.Split>
-  </div>,
-  CONTAINER
-);
-```
+export default () => {
+  return (
+    <div>
+      <ResizeBox.Split
+        style={{height: 200, width: 500, border: '1px solid var(--color-border)'}}
+        panes={[
+          (<Typography.Paragraph>Right</Typography.Paragraph>),
+          (rightPane)
+        ]}
+      >
+      </ResizeBox.Split>
+    </div>
+  )
+}

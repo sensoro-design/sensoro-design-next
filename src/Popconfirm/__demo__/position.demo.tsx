@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 位置
+ * desc: 气泡确认框支持 12 个不同的方位。分别为：`上左`、 `上`、 `上右`、`下左`、 `下`、 `下右`、 `左上`、 `左`、 `左下`、 `右上`、 `右`、 `右下`。
  */
----
-order: 2
-title:
-  zh-CN: 位置
-  en-US: Position
----
-
-## zh-CN
-
-气泡确认框支持 12 个不同的方位。分别为：`上左`、 `上`、 `上右`、`下左`、 `下`、 `下右`、 `左上`、 `左`、 `左下`、 `右上`、 `右`、 `右下`。
-
-## en-US
-
-The Popconfirm supports 12 different directions. They are: `top left`, `top`, `top right`, `bottom left`, `bottom`, `bottom right`, `left top`, `left`, `left bottom`, `right top`, `right` , `bottom right`.
-
-```js
 import { Popconfirm, Button, Message } from '@sensoro-design/react';
 
 const props = {
@@ -31,8 +15,9 @@ const props = {
   },
 };
 
-ReactDOM.render(
-  <div style={{ position: 'relative', width: 400, height: 300 }}>
+export default () => {
+  return (
+    <div style={{ position: 'relative', width: 400, height: 300 }}>
     <Popconfirm position="tl" {...props}>
       <Button style={{ position: 'absolute', width: 80, top: 20, left: 70 }}>TL</Button>
     </Popconfirm>
@@ -69,8 +54,6 @@ ReactDOM.render(
     <Popconfirm position="br" {...props}>
       <Button style={{ position: 'absolute', width: 80, top: 226, left: 290 }}>BR</Button>
     </Popconfirm>
-  </div>,
-  CONTAINER
-);
-```
-
+  </div>
+  )
+}

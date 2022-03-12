@@ -1,29 +1,13 @@
 
 /**
- * title:
+ * title: 竖直滑动条
  * desc:
  */
----
-order: 7
-title: 
-  zh-CN: 竖直滑动条
-  en-US: Vertical
----
-
-## zh-CN
-
-设置 `vertical` 为 `true`，将会显示竖直的滑动条
-
-## en-US
-
-Display vertical slider by setting `vertical={true}`.
-
-```js
 import { useState } from 'react';
 import { Slider } from '@sensoro-design/react';
 import { IconSound, IconMute } from '@sensoro-design/react/icon';
 
-function Demo() {
+export default () => {
   const [value, setValue] = useState(10);
 
   return (
@@ -51,7 +35,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

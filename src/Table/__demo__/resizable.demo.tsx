@@ -1,24 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 可伸缩列
+ * desc: 配合 `react-resizable` 可以实现可伸缩列的效果。
  */
----
-order: 17
-title:
-  zh-CN: 可伸缩列
-  en-US: Resizable
----
-
-## zh-CN
-
-配合 `react-resizable` 可以实现可伸缩列的效果。
-
-## en-US
-
-With `react-resizable`, the effect of resize columns can be achieved.
-
-```js
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
 import { Resizable } from 'react-resizable';
@@ -104,7 +88,7 @@ const ResizableTitle = props => {
   );
 };
 
-function Demo() {
+export default () => {
   const [columns, setColumns] = useState(
     originColumns.map((column, index) => {
       if (column.width) {
@@ -148,24 +132,3 @@ function Demo() {
     data={data}
   />;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css
-.table-demo-resizable-column .react-resizable {
-  position: relative;
-  background-clip: padding-box;
-}
-
-.table-demo-resizable-column .react-resizable-handle {
-  position: absolute;
-  width: 10px;
-  height: 100%;
-  bottom: 0;
-  right: -5px;
-  cursor: col-resize;
-  z-index: 1;
-}
-```
-

@@ -1,25 +1,9 @@
 
 /**
- * title:
- * desc:
+ * title: 自定义分页
+ * desc: 自定义分页，通过设置 `total`，`pageSize`，通过 `onChange` 来动态更新表格数据。当分页设置 `simple` 为 `true` 时，会应用简单分页样式。关于 `pagination` 的具体设置可查看[pagination 组件](/react/components/Pagination)文档。通过 `renderPagination` 可以自定义分页渲染部分。
  */
----
-order: 10
-title:
-  zh-CN: 自定义分页
-  en-US: Custom pagination
----
-
-## zh-CN
-
-自定义分页，通过设置 `total`，`pageSize`，通过 `onChange` 来动态更新表格数据。当分页设置 `simple` 为 `true` 时，会应用简单分页样式。关于 `pagination` 的具体设置可查看[pagination 组件](/react/components/Pagination)文档。通过 `renderPagination` 可以自定义分页渲染部分。
-
-## en-US
-
-Custom pagination, by setting `total`, `pageSize`, and `onChange` to dynamically update table data. When the pagination setting `simple` is `true`, the simple pagination style will be applied. For the specific settings of `pagination`, please refer to the [pagination component](/react/components/Pagination) document. Through `renderPagination`, you can customize the pagination render.
-
-```js
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Table, Space, Button } from '@sensoro-design/react';
 
 const columns = [
@@ -51,7 +35,7 @@ const allData = Array(200)
     email: `kevin.sandra_${index}@example.com`,
   }));
 
-function Demo() {
+export default () => {
   const [data, setData] = useState(allData);
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
   const [pagination, setPagination] = useState({
@@ -106,7 +90,3 @@ function Demo() {
     />
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

@@ -1,30 +1,13 @@
-
 /**
- * title:
- * desc:
+ * title: 导航步骤条
+ * desc: 导航类型的步骤条。
  */
----
-order: 12
-title: 
-  zh-CN: 导航步骤条
-  en-US: Navigation Step Bar
----
-
-## zh-CN
-
-导航类型的步骤条。
-
-## en-US
-
-Step bar of navigation type.
-
-```js
 import { useState } from 'react';
 import { Steps } from '@sensoro-design/react';
 
 const Step = Steps.Step;
 
-function Demo() {
+export default () => {
   const [current, setCurrent] = useState(1);
 
   return (
@@ -47,7 +30,3 @@ function Demo() {
     </div>
   );
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-

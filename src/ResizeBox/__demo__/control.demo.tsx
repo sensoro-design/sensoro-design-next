@@ -1,29 +1,14 @@
 
 /**
- * title:
- * desc:
+ * title: 受控的高宽
+ * desc: `ResizeBox` 的高宽都支持受控，分别对应属性 `width` 和 `height`，通过 `onChange` 得到拖动中的高宽值。
  */
----
-order: 2
-title: 
-  zh-CN: 受控的高宽
-  en-US: Controlled Size
----
-
-## zh-CN
-
-`ResizeBox` 的高宽都支持受控，分别对应属性 `width` 和 `height`，通过 `onChange` 得到拖动中的高宽值。
-
-## en-US
-
-The height and width of the `ResizeBox` can be controlled, corresponding to the attributes `width` and `height`, and the height and width values during dragging can be obtained through `onChange`.
-
-```js
+import React from 'react';
 import { ResizeBox, Divider, Typography } from '@sensoro-design/react';
 
 const { Paragraph } = Typography;
 
-function Demo() {
+export default () => {
   const [width, setWidth] = React.useState(500);
   const [height, setHeight] = React.useState(200);
   return (
@@ -50,10 +35,3 @@ function Demo() {
   </div>
   );
 }
-
-ReactDOM.render(
-  <Demo />,
-  CONTAINER
-);
-```
-
