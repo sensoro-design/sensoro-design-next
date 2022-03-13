@@ -1,4 +1,3 @@
-
 /**
  * title: 上传前校验
  * desc: `beforeUpload` 会在每一个文件上传之前执行。如果返回 false 或者 Promise.reject， 那么将会取消当前文件的上传。

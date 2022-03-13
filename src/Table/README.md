@@ -9,6 +9,98 @@ nav:
 
 ## API
 
+### 表格属性
+
+<code src="./__demo__/attribution.demo.tsx" />
+
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 树形数据展示
+
+<code src="./__demo__/data-children.demo.tsx" />
+
+### 拖拽锚点排序
+
+<code src="./__demo__/drag-handle.demo.tsx" />
+
+### 拖拽排序
+
+<code src="./__demo__/drag.demo.tsx" />
+
+### 嵌套子表格
+
+<code src="./__demo__/expand-sub-table.demo.tsx" />
+
+### 展开行
+
+<code src="./__demo__/expandable.demo.tsx" />
+
+### 定制展开参数
+
+<code src="./__demo__/expandprops.demo.tsx" />
+
+### 自定义筛选菜单
+
+<code src="./__demo__/filter-dropdown.demo.tsx" />
+
+### 固定列
+
+<code src="./__demo__/fixed-column.demo.tsx" />
+
+### 表头分组
+
+<code src="./__demo__/group-columns.demo.tsx" />
+
+### 表头吸顶
+
+<code src="./__demo__/header-sticky.demo.tsx" />
+
+### 定制前置操作列
+
+<code src="./__demo__/operations.demo.tsx" />
+
+### 自定义分页
+
+<code src="./__demo__/pagination.demo.tsx" />
+
+### 自定义单元格内容
+
+<code src="./__demo__/render.demo.tsx" />
+
+### 可伸缩列
+
+<code src="./__demo__/resizable.demo.tsx" />
+
+### 单元格合并
+
+<code src="./__demo__/rowspan.demo.tsx" />
+
+### 开启选择
+
+<code src="./__demo__/selection.demo.tsx" />
+
+### 排序和筛选
+
+<code src="./__demo__/sorter.demo.tsx" />
+
+### 自定义样式
+
+<code src="./__demo__/style.demo.tsx" />
+
+### 总结栏
+
+<code src="./__demo__/summary.demo.tsx" />
+
+### 可编辑单元格
+
+<code src="./__demo__/table-edit.demo.tsx" />
+
+### 大数据
+
+<code src="./__demo__/virtualized.demo.tsx" />
+
 ### Table
 
 |参数名|描述|类型|默认值|版本|

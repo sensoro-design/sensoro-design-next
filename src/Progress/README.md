@@ -10,6 +10,42 @@ nav:
 
 ## API
 
+### 动画效果
+
+<code src="./__demo__/animate.demo.tsx" />
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 环形进度条
+
+<code src="./__demo__/circle.demo.tsx" />
+
+### 渐变色进度条
+
+<code src="./__demo__/line-gradient.demo.tsx" />
+
+### 微型进度条
+
+<code src="./__demo__/mini.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 进度条状态
+
+<code src="./__demo__/status.demo.tsx" />
+
+### 步骤进度条
+
+<code src="./__demo__/steps.demo.tsx" />
+
+### 剩余进度条
+
+<code src="./__demo__/trailColor.demo.tsx" />
+
 ### Progress
 
 |参数名|描述|类型|默认值|版本|

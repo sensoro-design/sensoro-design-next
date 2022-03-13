@@ -10,6 +10,30 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 显示省略
+
+<code src="./__demo__/max-count.demo.tsx" />
+
+### 自定义分隔符
+
+<code src="./__demo__/separator.demo.tsx" />
+
+### 自定义尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 带有下拉菜单
+
+<code src="./__demo__/with-dropdown.demo.tsx" />
+
+### 自定义图标
+
+<code src="./__demo__/with-icon.demo.tsx" />
+
 ### Breadcrumb
 
 |参数名|描述|类型|默认值|

@@ -10,6 +10,58 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/controled.demo.tsx" />
+
+### 动态增减页签
+
+<code src="./__demo__/delete.demo.tsx" />
+
+### 可拖拽页签
+
+<code src="./__demo__/drag.demo.tsx" />
+
+### 附加
+
+<code src="./__demo__/extra.demo.tsx" />
+
+### 带图标的页签
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 嵌套使用
+
+<code src="./__demo__/inline.demo.tsx" />
+
+### 位置
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 自定义选项卡头部
+
+<code src="./__demo__/renderTabbar.demo.tsx" />
+
+### 滚动
+
+<code src="./__demo__/scroll.demo.tsx" />
+
+### 滚动偏移位置
+
+<code src="./__demo__/scrollPosition.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 不同类型
+
+<code src="./__demo__/type.demo.tsx" />
+
 ### Tabs
 
 |参数名|描述|类型|默认值|版本|

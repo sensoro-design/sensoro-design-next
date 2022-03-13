@@ -10,6 +10,74 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 节点占一行
+
+<code src="./__demo__/blocknode.demo.tsx" />
+
+### 带复选框的树
+
+<code src="./__demo__/checkboxTree.demo.tsx" />
+
+### 设置回填方式
+
+<code src="./__demo__/checkedStrategy.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/controled.demo.tsx" />
+
+### 拖拽
+
+<code src="./__demo__/drag.demo.tsx" />
+
+### 自定义 TreeData 的字段名称
+
+<code src="./__demo__/fieldnames.demo.tsx" />
+
+### 定制节点图标
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 定制组件图标
+
+<code src="./__demo__/icons.demo.tsx" />
+
+### 显示连接线
+
+<code src="./__demo__/line.demo.tsx" />
+
+### 动态加载
+
+<code src="./__demo__/loadmore.demo.tsx" />
+
+### 多选
+
+<code src="./__demo__/multiple.demo.tsx" />
+
+### 定制额外节点
+
+<code src="./__demo__/renderTreeNode.demo.tsx" />
+
+### 搜索树
+
+<code src="./__demo__/search.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 由treeData直接生成
+
+<code src="./__demo__/treeData.demo.tsx" />
+
+### 虚拟列表
+
+<code src="./__demo__/virtual.demo.tsx" />
+
 ### Tree
 
 |参数名|描述|类型|默认值|版本|

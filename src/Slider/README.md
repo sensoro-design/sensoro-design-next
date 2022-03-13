@@ -10,6 +10,62 @@ nav:
 
 ## API
 
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 竖直滑动条
+
+<code src="./__demo__/direction.demo.tsx" />
+
+### 范围刻度可拖拽
+
+<code src="./__demo__/fixed.demo.tsx" />
+
+### 自定义提示
+
+<code src="./__demo__/format-tooltip.demo.tsx" />
+
+### 带有icon的滑动输入条
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 显示输入框
+
+<code src="./__demo__/input.demo.tsx" />
+
+### 分段输入条
+
+<code src="./__demo__/interval.demo.tsx" />
+
+### 添加标签文本
+
+<code src="./__demo__/marks.demo.tsx" />
+
+### 范围选择
+
+<code src="./__demo__/range.demo.tsx" />
+
+### 反向
+
+<code src="./__demo__/reversed.demo.tsx" />
+
+### 设置范围
+
+<code src="./__demo__/set-range.demo.tsx" />
+
+### 基础状态
+
+<code src="./__demo__/status.demo.tsx" />
+
+### 设置步长
+
+<code src="./__demo__/step.demo.tsx" />
+
+### 控制 tooltip 的展示
+
+<code src="./__demo__/tooltip.demo.tsx" />
+
 ### Slider
 
 |参数名|描述|类型|默认值|版本|

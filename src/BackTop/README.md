@@ -10,6 +10,18 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自定义按钮
+
+<code src="./__demo__/custom_button.demo.tsx" />
+
+### 滚动类型和滚动时间
+
+<code src="./__demo__/easing.demo.tsx" />
+
 ### BackTop
 
 |参数名|描述|类型|默认值|

@@ -10,6 +10,26 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 组件配置
+
+<code src="./__demo__/component-config.demo.tsx" />
+
+### 空元素
+
+<code src="./__demo__/renderEmpty.demo.tsx" />
+
+### 表格分页配置
+
+<code src="./__demo__/tablePagination.demo.tsx" />
+
+### 主题配置
+
+<code src="./__demo__/theme.demo.tsx" />
+
 ### ConfigProvider
 
 |参数名|描述|类型|默认值|版本|

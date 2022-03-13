@@ -10,6 +10,22 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 浮层内关闭
+
+<code src="./__demo__/popupVisible.demo.tsx" />
+
+### 位置
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 触发方式
+
+<code src="./__demo__/trigger.demo.tsx" />
+
 ### Popover
 
 |参数名|描述|类型|默认值|版本|

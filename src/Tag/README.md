@@ -10,6 +10,42 @@ nav:
 
 ## API
 
+### 动态编辑标签
+
+<code src="./__demo__/active.demo.tsx" />
+
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 带边框的标签
+
+<code src="./__demo__/bordered.demo.tsx" />
+
+### 可选中
+
+<code src="./__demo__/check.demo.tsx" />
+
+### 异步关闭
+
+<code src="./__demo__/close-async.demo.tsx" />
+
+### 可关闭标签
+
+<code src="./__demo__/close.demo.tsx" />
+
+### 多色标签
+
+<code src="./__demo__/color.demo.tsx" />
+
+### 带图标的标签
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
 ### Tag
 
 |参数名|描述|类型|默认值|版本|

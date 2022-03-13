@@ -10,6 +10,42 @@ nav:
 
 ## API
 
+### 支持清除
+
+<code src="./__demo__/allow-clear.demo.tsx" />
+
+### 半选
+
+<code src="./__demo__/allowHalf.demo.tsx" />
+
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 其他评分字符
+
+<code src="./__demo__/character.demo.tsx" />
+
+### 任意长度的评分
+
+<code src="./__demo__/count.demo.tsx" />
+
+### 笑脸分级
+
+<code src="./__demo__/grading.demo.tsx" />
+
+### 只读
+
+<code src="./__demo__/readonly.demo.tsx" />
+
+### 显示提示信息
+
+<code src="./__demo__/tooltips.demo.tsx" />
+
+### 附有文案
+
+<code src="./__demo__/with-description.demo.tsx" />
+
 ### Rate
 
 |参数名|描述|类型|默认值|

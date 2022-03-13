@@ -10,6 +10,66 @@ nav:
 
 ## API
 
+### 迷你箭头步骤条
+
+<code src="./__demo__/arrow-mini.demo.tsx" />
+
+### 箭头步骤条
+
+<code src="./__demo__/arrow.demo.tsx" />
+
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 步骤切换
+
+<code src="./__demo__/change_step.demo.tsx" />
+
+### 自定义节点
+
+<code src="./__demo__/customDot.demo.tsx" />
+
+### 展示描述信息
+
+<code src="./__demo__/description.demo.tsx" />
+
+### 点状步骤条
+
+<code src="./__demo__/dot.demo.tsx" />
+
+### 步骤错误
+
+<code src="./__demo__/error.demo.tsx" />
+
+### 自定义图标
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 标签放置位置
+
+<code src="./__demo__/label-placement.demo.tsx" />
+
+### 隐藏连接线
+
+<code src="./__demo__/lineless.demo.tsx" />
+
+### 小型步骤条
+
+<code src="./__demo__/mini.demo.tsx" />
+
+### 导航步骤条
+
+<code src="./__demo__/navigation.demo.tsx" />
+
+### 可点击切换步骤
+
+<code src="./__demo__/onchange.demo.tsx" />
+
+### 竖直步骤条
+
+<code src="./__demo__/vertical.demo.tsx" />
+
 ### Steps
 
 |参数名|描述|类型|默认值|

@@ -10,6 +10,50 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 触发事件
+
+<code src="./__demo__/callback.demo.tsx" />
+
+### 隐藏菜单
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 按钮下拉框
+
+<code src="./__demo__/dropdown-button.demo.tsx" />
+
+### 其他元素
+
+<code src="./__demo__/extra-element.demo.tsx" />
+
+### 分组菜单
+
+<code src="./__demo__/group.demo.tsx" />
+
+### 带图标的菜单
+
+<code src="./__demo__/item-icon.demo.tsx" />
+
+### 弹出方向
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 右键菜单
+
+<code src="./__demo__/right-click.demo.tsx" />
+
+### 多级菜单
+
+<code src="./__demo__/sub-menu.demo.tsx" />
+
+### 触发方式
+
+<code src="./__demo__/trigger.demo.tsx" />
+
 ### Dropdown
 
 |参数名|描述|类型|默认值|版本|

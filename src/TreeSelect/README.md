@@ -9,6 +9,70 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 复选框多选
+
+<code src="./__demo__/checkable.demo.tsx" />
+
+### 定制回填方式
+
+<code src="./__demo__/checkedStrategy.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/controled.demo.tsx" />
+
+### 扩展下拉菜单
+
+<code src="./__demo__/dropdownRender.demo.tsx" />
+
+### 自定义 TreeData 的字段名称
+
+<code src="./__demo__/fieldnames.demo.tsx" />
+
+### 设置 value 格式
+
+<code src="./__demo__/labelInvalue.demo.tsx" />
+
+### 动态加载
+
+<code src="./__demo__/loadmore.demo.tsx" />
+
+### 多选
+
+<code src="./__demo__/multiple.demo.tsx" />
+
+### 远程搜索
+
+<code src="./__demo__/onSearch.demo.tsx" />
+
+### 控制下拉框的展开收起
+
+<code src="./__demo__/popupVisible.demo.tsx" />
+
+### 搜索
+
+<code src="./__demo__/search.demo.tsx" />
+
+### 自定义显示
+
+<code src="./__demo__/self-input.demo.tsx" />
+
+### 不同尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 通过数据生成树结构
+
+<code src="./__demo__/treeData.demo.tsx" />
+
+### 虚拟列表
+
+<code src="./__demo__/virtual.demo.tsx" />
+
 ### TreeSelect
 
 |参数名|描述|类型|默认值|版本|

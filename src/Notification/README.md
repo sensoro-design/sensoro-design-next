@@ -10,6 +10,38 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自定义操作按钮
+
+<code src="./__demo__/btn.demo.tsx" />
+
+### 自定义图标
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 通知提醒位置
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 自定义样式
+
+<code src="./__demo__/style.demo.tsx" />
+
+### 不同类型的通知
+
+<code src="./__demo__/type.demo.tsx" />
+
+### 更新延迟
+
+<code src="./__demo__/update_duration.demo.tsx" />
+
+### 更新通知内容
+
+<code src="./__demo__/update_notification.demo.tsx" />
+
 ### Notification
 
 |参数名|描述|类型|默认值|

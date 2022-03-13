@@ -10,6 +10,34 @@ nav:
 
 ## API
 
+### 悬浮按钮菜单
+
+<code src="./__demo__/button.demo.tsx" />
+
+### 缩起内嵌菜单
+
+<code src="./__demo__/collapse-control.demo.tsx" />
+
+### 深色模式导航
+
+<code src="./__demo__/dark-horizontal.demo.tsx" />
+
+### 顶部导航菜单
+
+<code src="./__demo__/horizontal.demo.tsx" />
+
+### 悬浮菜单
+
+<code src="./__demo__/pop.demo.tsx" />
+
+### 不同大小菜单
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 内嵌菜单
+
+<code src="./__demo__/sub-menu.demo.tsx" />
+
 ### Menu
 
 |参数名|描述|类型|默认值|版本|

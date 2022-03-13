@@ -9,6 +9,26 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 不同颜色
+
+<code src="./__demo__/color.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 迷你尺寸
+
+<code src="./__demo__/mini.demo.tsx" />
+
+### 位置
+
+<code src="./__demo__/position.demo.tsx" />
+
 ### Tooltip
 
 |参数名|描述|类型|默认值|版本|

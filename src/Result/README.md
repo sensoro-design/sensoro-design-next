@@ -10,6 +10,42 @@ nav:
 
 ## API
 
+### 403
+
+<code src="./__demo__/403.demo.tsx" />
+
+### 404
+
+<code src="./__demo__/404.demo.tsx" />
+
+### 500
+
+<code src="./__demo__/500.demo.tsx" />
+
+### 完整功能
+
+<code src="./__demo__/all.demo.tsx" />
+
+### Success
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### Error
+
+<code src="./__demo__/error.demo.tsx" />
+
+### 自定义icon
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### Info
+
+<code src="./__demo__/info.demo.tsx" />
+
+### warning
+
+<code src="./__demo__/warning.demo.tsx" />
+
 ### Result
 
 |参数名|描述|类型|默认值|

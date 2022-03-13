@@ -10,6 +10,34 @@ nav:
 
 ## API
 
+### 复杂用法
+
+<code src="./__demo__/advance.demo.tsx" />
+
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自定义输入组件
+
+<code src="./__demo__/custom-input.demo.tsx" />
+
+### 自定义选项
+
+<code src="./__demo__/options.demo.tsx" />
+
+### 区分大小写
+
+<code src="./__demo__/strict.demo.tsx" />
+
+### 查询模式 确定类目
+
+<code src="./__demo__/with-group.demo.tsx" />
+
+### 查询模式 不确定类目
+
+<code src="./__demo__/without-group.demo.tsx" />
+
 ### AutoComplete
 
 |参数名|描述|类型|默认值|版本|

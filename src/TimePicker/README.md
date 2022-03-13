@@ -10,6 +10,62 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 受控组件
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 默认值
+
+<code src="./__demo__/defaultValue.demo.tsx" />
+
+### 禁用确认
+
+<code src="./__demo__/disableConfirm.demo.tsx" />
+
+### 禁用
+
+<code src="./__demo__/disabled.demo.tsx" />
+
+### 禁用部分时间选项
+
+<code src="./__demo__/disabledTime.demo.tsx" />
+
+### 附加内容
+
+<code src="./__demo__/extra.demo.tsx" />
+
+### 定制时分
+
+<code src="./__demo__/format.demo.tsx" />
+
+### 范围选择器
+
+<code src="./__demo__/rangepicker.demo.tsx" />
+
+### 尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 定制步长
+
+<code src="./__demo__/step.demo.tsx" />
+
+### 时区
+
+<code src="./__demo__/timezone.demo.tsx" />
+
+### 十二小时制
+
+<code src="./__demo__/use-12-hours.demo.tsx" />
+
+### UTC 时间
+
+<code src="./__demo__/utcOffset.demo.tsx" />
+
 ### Picker
 
 `TimePicker` 和 `RangePicker` 的通用属性

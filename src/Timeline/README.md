@@ -10,6 +10,42 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 横向时间轴
+
+<code src="./__demo__/direction.demo.tsx" />
+
+### 自定义节点
+
+<code src="./__demo__/dot.demo.tsx" />
+
+### 自定义节点内容
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 标签文本位置
+
+<code src="./__demo__/labelPosition.demo.tsx" />
+
+### 时间轴展示类型
+
+<code src="./__demo__/mode.demo.tsx" />
+
+### 幽灵节点
+
+<code src="./__demo__/pending.demo.tsx" />
+
+### 自定义轴线样式
+
+<code src="./__demo__/type.demo.tsx" />
+
+### 纵向时间轴
+
+<code src="./__demo__/vertical.demo.tsx" />
+
 **注意: 非 `Timeline.Item` 组件将会被过滤掉，不会被展示**
 
 ### Timeline

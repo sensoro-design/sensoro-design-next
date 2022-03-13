@@ -10,6 +10,26 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 自定义icon
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 异步关闭
+
+<code src="./__demo__/loading.demo.tsx" />
+
+### 位置
+
+<code src="./__demo__/position.demo.tsx" />
+
+### 国际化
+
+<code src="./__demo__/text.demo.tsx" />
+
 ### Popconfirm
 
 |参数名|描述|类型|默认值|版本|

@@ -10,6 +10,90 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 定制日期单元格
+
+<code src="./__demo__/dateRender.demo.tsx" />
+
+### 默认值
+
+<code src="./__demo__/defaultValue.demo.tsx" />
+
+### 动态控制选取范围
+
+<code src="./__demo__/disabled-date-advance.demo.tsx" />
+
+### 不可选取的时间
+
+<code src="./__demo__/disabled-date.demo.tsx" />
+
+### 禁用
+
+<code src="./__demo__/disabled.demo.tsx" />
+
+### 额外的页脚
+
+<code src="./__demo__/extra.demo.tsx" />
+
+### 月份选择器
+
+<code src="./__demo__/month.demo.tsx" />
+
+### 只使用面板
+
+<code src="./__demo__/panel.demo.tsx" />
+
+### 季度选择器
+
+<code src="./__demo__/quarter.demo.tsx" />
+
+### 范围选择器
+
+<code src="./__demo__/range.demo.tsx" />
+
+### 定制预设范围位置
+
+<code src="./__demo__/shortcuts-placement-left.demo.tsx" />
+
+### 预设时间快捷选择
+
+<code src="./__demo__/shortcuts.demo.tsx" />
+
+### 带时间的日期选择
+
+<code src="./__demo__/showtime.demo.tsx" />
+
+### 尺寸
+
+<code src="./__demo__/size.demo.tsx" />
+
+### 设置时区
+
+<code src="./__demo__/timezone.demo.tsx" />
+
+### 自定义触发元素
+
+<code src="./__demo__/triggerElement.demo.tsx" />
+
+### UTC 时间
+
+<code src="./__demo__/utcOffset.demo.tsx" />
+
+### 周选择器
+
+<code src="./__demo__/week.demo.tsx" />
+
+### 年份选择器
+
+<code src="./__demo__/year.demo.tsx" />
+
 **Picker 为所有组件共有的属性**
 
 ### Picker Props

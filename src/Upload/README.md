@@ -9,6 +9,74 @@ nav:
 
 ## API
 
+### 用户头像上传
+
+<code src="./__demo__/avatar.demo.tsx" />
+
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 上传前校验
+
+<code src="./__demo__/beforeUpload.demo.tsx" />
+
+### 上传前裁剪
+
+<code src="./__demo__/crop.demo.tsx" />
+
+### 自定义上传实现
+
+<code src="./__demo__/customRequest.demo.tsx" />
+
+### 文件夹上传
+
+<code src="./__demo__/directory.demo.tsx" />
+
+### 拖拽上传
+
+<code src="./__demo__/drag.demo.tsx" />
+
+### 自定义图标
+
+<code src="./__demo__/icon.demo.tsx" />
+
+### 限制上传数量
+
+<code src="./__demo__/limit.demo.tsx" />
+
+### 手动上传
+
+<code src="./__demo__/manully.demo.tsx" />
+
+### 移除前校验
+
+<code src="./__demo__/onRemove.demo.tsx" />
+
+### 图片列表样式
+
+<code src="./__demo__/pictureList.demo.tsx" />
+
+### 照片墙
+
+<code src="./__demo__/preview.demo.tsx" />
+
+### 自定义进度条
+
+<code src="./__demo__/progress.demo.tsx" />
+
+### 自定义文件上传列表展示
+
+<code src="./__demo__/renderUploadList.demo.tsx" />
+
+### 自定义上传节点
+
+<code src="./__demo__/trigger.demo.tsx" />
+
+### 已上传的文件列表
+
+<code src="./__demo__/uploadList.demo.tsx" />
+
 ### Upload
 
 |参数名|描述|类型|默认值|版本|

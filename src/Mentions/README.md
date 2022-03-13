@@ -10,6 +10,22 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 受控模式
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 自定义触发字符
+
+<code src="./__demo__/prefix.demo.tsx" />
+
+### 无效或只读
+
+<code src="./__demo__/status.demo.tsx" />
+
 ### Mentions
 
 |参数名|描述|类型|默认值|版本|

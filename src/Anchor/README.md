@@ -8,8 +8,31 @@ nav:
 
 通过锚点可快速找到信息内容在当前页面的位置。
 
-
 ## API
+
+### 基本用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 固钉样式
+
+<code src="./__demo__/affix.demo.tsx" />
+
+### 设置锚点滚动偏移量
+
+<code src="./__demo__/boundary.demo.tsx" />
+
+### 点击锚点不记录历史
+
+<code src="./__demo__/hash.demo.tsx" />
+
+### 无轴线模式
+
+<code src="./__demo__/lineless.demo.tsx" />
+
+### 静态位置
+
+<code src="./__demo__/static.demo.tsx" />
 
 ### Anchor
 

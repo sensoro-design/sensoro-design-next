@@ -10,6 +10,34 @@ nav:
 
 ## API
 
+### 基础用法
+
+<code src="./__demo__/basic.demo.tsx" />
+
+### 受控的高宽
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 定制伸缩杆内容
+
+<code src="./__demo__/custom-triggers.demo.tsx" />
+
+### 在布局中使用
+
+<code src="./__demo__/layout.demo.tsx" />
+
+### 面板分割嵌套
+
+<code src="./__demo__/nested_split.demo.tsx" />
+
+### 面板分割
+
+<code src="./__demo__/split.demo.tsx" />
+
+### 多个面板分割
+
+<code src="./__demo__/splitGroup.demo.tsx" />
+
 ### ResizeBox
 
 |参数名|描述|类型|默认值|版本|

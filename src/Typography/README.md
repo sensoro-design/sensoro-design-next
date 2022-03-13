@@ -36,9 +36,6 @@ nav:
 
 <code src="./__demo__/ellipsis-controlled.demo.tsx" />
 
-
-# 排版 Typography
-
 ## API
 
 ### Typography
