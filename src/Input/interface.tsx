@@ -2,6 +2,8 @@ import { ReactNode, CSSProperties, InputHTMLAttributes, TextareaHTMLAttributes }
 
 import { Omit } from '../_util/type';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 /**
  * @title Input
  * @zh **Input 接受所有原生的属性值**
@@ -99,7 +101,7 @@ export interface InputProps
    * @en The size of the input box
    * @defaultValue default
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 自定义输入框高度
    * @en Custom input height

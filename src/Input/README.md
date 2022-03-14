@@ -18,7 +18,7 @@ nav:
 
 <code src="./__demo__/status.demo.tsx" />
 
-### 四种尺寸
+### 输入框尺寸
 
 <code src="./__demo__/size.demo.tsx" />
 
