@@ -2,6 +2,8 @@ import { Dayjs } from 'dayjs';
 import { CSSProperties, ReactNode } from 'react';
 import { TriggerProps } from '../Trigger/index';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 export type CalendarValue = Dayjs | Date | string | number;
 
 /**
@@ -105,7 +107,7 @@ export interface PickerProps {
    * @zh 输入框尺寸
    * @en Input box size
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 时间列在滚动的时候自动吸附和选中
    * @en The time column is automatically adsorbed and selected when scrolling
