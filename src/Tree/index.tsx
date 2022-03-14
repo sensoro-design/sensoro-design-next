@@ -71,7 +71,7 @@ class Tree extends Component<TreeProps, TreeState> {
 
   static contextType = ConfigContext;
 
-  context: React.ContextType<typeof ConfigContext>;
+  context: typeof ConfigContext = ConfigContext;
 
   static getDerivedStateFromProps(nextProps: TreeProps, state: TreeState) {
     const newState: TreeState = {};

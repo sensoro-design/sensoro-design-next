@@ -1,25 +1,8 @@
 
 /**
- * title:
- * desc:
+ * title: 多个触发方式
+ * desc: 通过`trigger`传入数组，可以设置多个触发方式。
  */
----
-order: 3
-title:
-  zh-CN: 多个触发方式
-  en-US: multiple trigger
----
-
-## zh-CN
-
-通过`trigger`传入数组，可以设置多个触发方式。
-
-## en-US
-
-the `trigger` property can be an array.
-
-
-```js
 import { Trigger, Button, Input, Skeleton, Typography } from '@sensoro-design/react';
 
 function Popup() {
@@ -46,17 +29,3 @@ function Demo() {
     </Trigger>
   </div>;
 }
-
-ReactDOM.render(<Demo />, CONTAINER);
-```
-
-```css:silent
-.demo-trigger-popup {
-  padding: 10px;
-  width: 300px;
-  text-align: center;
-  background-color: var(--color-bg-popup);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
-}
-```
-
