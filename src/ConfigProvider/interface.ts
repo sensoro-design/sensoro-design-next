@@ -66,7 +66,7 @@ import { TriggerProps } from '../Trigger/interface';
 import { UploadProps } from '../Upload/interface';
 
 /** 组件大小类型 */
-export type SizeType = 'mini' | 'small' | 'default' | 'large';
+export type SizeType = 'small' | 'default' | 'large';
 
 export type ThemeConfig = Record<string, any>;
 

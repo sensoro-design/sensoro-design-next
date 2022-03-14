@@ -18,7 +18,6 @@ export interface BaseButtonProps {
    * 额外的样式
    */
   style?: CSSProperties;
-  children?: ReactNode;
   /**
    * @zh
    * 按钮主要分为六种按钮类型：主要按钮、次级按钮、虚框按钮、文字按钮、线性按钮，`default` 为次级按钮。

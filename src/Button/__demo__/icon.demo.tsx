@@ -10,6 +10,7 @@ export default () => {
     <Space size="large">
       <Button type="primary" icon={<IconPlus />} />
       <Button type="primary" icon={<IconDelete />}> Delete</Button>
+      <Button type="secondary" icon={<IconDelete />}> Delete</Button>
     </Space>
   )
 }
