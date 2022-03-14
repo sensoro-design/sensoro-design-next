@@ -34,5 +34,6 @@ nav:
 |---|---|---|---|
 |style|节点样式|`CSSProperties`|`-`|
 |className|节点类名|`string \| string[]`|`-`|
+|dashed|是否虚线|`boolean`|`false`|
 |type|分割线的类型，是水平还是竖直，分别对应 `horizontal` 和 `vertical`|`'horizontal' \| 'vertical'`|`horizontal`|
 |orientation|分割线文字的位置|`'left' \| 'right' \| 'center'`|`center`|
