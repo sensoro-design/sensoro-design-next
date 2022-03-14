@@ -4,7 +4,7 @@
  * 在 `rules` 中自定义 `validator` 方法，并返回一个 `Promise` 即可实现表单的异步校验。
  * p.s: 如果用 `lodash.debounce` 不生效，建议使用 `debounce.promise` ，它返回的是一个 `promise`。
  */
-import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react';
+import { Form, Input, Button } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 

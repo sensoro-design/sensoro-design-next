@@ -1,4 +1,3 @@
-
 /**
  * title: 表单校验
  * desc: 可以通过 `form.validate` 方法进行表单字段的校验。可以通过参数指定校验特定字段。
@@ -7,7 +6,7 @@ import { Form, Input, Button, Message, InputNumber } from '@sensoro-design/react
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [form] = Form.useForm();
 
   return (

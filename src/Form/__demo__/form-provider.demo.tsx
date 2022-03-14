@@ -1,10 +1,9 @@
-
 /**
  * title: 多表单联动
  * desc: 可以通过 `Form.Provider` 组件管理多个表单的数据。`2.30.0` 支持。需要想要获得对应的表单实例，需要为 `Form` 组件设置 `id` 属性。
  */
+import React from 'react';
 import { Form, Grid, Input, Button, Modal, Message, Tag, Typography, Table, Select, InputNumber, Space } from '@sensoro-design/react';
-
 
 const defaultData = [...(new Array(5))].map((_, index) => {
   return {

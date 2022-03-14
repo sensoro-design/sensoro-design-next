@@ -1,4 +1,3 @@
-
 /**
  * title: 控制表单项错误状态
  * desc: 通过 `setFields` 方法的 `error` 参数，可以在外部控制表单项的错误状态。
@@ -7,7 +6,7 @@ import { Form, Input, Button, InputNumber } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
 
-function Demo() {
+export default () => {
   const [form] = Form.useForm();
 
   return (

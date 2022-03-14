@@ -1,20 +1,16 @@
-
 /**
  * title: 不同尺寸
  * desc: 通过 `size` 属性可以设置不同尺寸的表单
  */
 import { useRef, useState } from 'react';
-
 import {
   Form,
   AutoComplete,
   Input,
   Select,
   TreeSelect,
-  Button,
   Radio,
   Cascader,
-  Message,
   InputNumber,
   DatePicker,
 } from '@sensoro-design/react';
@@ -68,12 +64,6 @@ const formItemLayout = {
   },
   wrapperCol: {
     span: 17,
-  },
-};
-const noLabelLayout = {
-  wrapperCol: {
-    span: 17,
-    offset: 7,
   },
 };
 
