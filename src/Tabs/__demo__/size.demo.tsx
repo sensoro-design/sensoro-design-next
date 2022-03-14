@@ -16,22 +16,25 @@ export default () => {
   return (
     <div>
       <span style={{ marginRight: 20 }}>Size:</span>
-      <Radio.Group name="size" value={size} onChange={setSize} style={{ marginBottom: 24 }}>
-        <Radio value="mini">mini</Radio>
-        <Radio value="small">small</Radio>
-        <Radio value="default">default</Radio>
-        <Radio value="large">large</Radio>
-      </Radio.Group>
+        <Radio.Group
+          type="button"
+          options={['small', 'default', 'large']}
+          name="size"
+          value={size}
+          onChange={setSize}
+          style={{ marginBottom: 24 }}
+        />
       <br/>
       <span style={{ marginRight: 20 }}>Type:</span>
-      <Radio.Group name="type" value={type} onChange={setType} style={{ marginBottom: 40 }}>
-        <Radio value="line">line</Radio>
-        <Radio value="card">card</Radio>
-        <Radio value="card-gutter">card-gutter</Radio>
-        <Radio value="text">text</Radio>
-        <Radio value="rounded">rounded</Radio>
-        <Radio value="capsule">capsule</Radio>
-      </Radio.Group>
+
+      <Radio.Group
+        type="button"
+        options={['line', 'card', 'card-gutter', 'text', 'rounded', 'capsule']}
+        name="type"
+        value={type}
+        onChange={setType}
+        style={{ marginBottom: 24 }}
+      />
 
       <Tabs type={type} size={size}>
         <TabPane key="1" title="Tab 1" >

@@ -492,26 +492,6 @@
   }
 }
 
-// .@{tabs-prefix-cls} {
-//   /* Horizontal */
-//   &-header-nav {
-//     position: relative;
-//     background: #fff;
-//     .@{tabs-prefix-cls}-icon {
-//       line-height: @tab-pane-height;
-//       font-size: 12px;
-//       position: absolute;
-//       color: @color--grey7;
-//       cursor: pointer;
-//       user-select: none;
-
-//       &:hover {
-//         color: @tab-pane-active-color;
-//         color: @color--grey6;
-//       }
-//     }
-//   }
-
 //   /** header */
 
 .@{tabs-prefix-cls} {
@@ -573,7 +553,7 @@
 }
 
 // 不同尺寸
-@sizes: mini, small, large;
+@sizes: small, large;
 
 .for(@data, @i: 1) when(@i =< length(@data)) {
   @size: extract(@data, @i);

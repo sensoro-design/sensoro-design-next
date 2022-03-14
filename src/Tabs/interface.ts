@@ -1,6 +1,8 @@
 import { CSSProperties, ReactNode } from 'react';
 import TabHeader from './tab-header/index';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 /**
  * @title Tabs
  */
@@ -38,7 +40,7 @@ export interface TabsProps {
    * @zh 有四个尺寸供选择，分别为`mini`, `small`, `default`, `large`
    * @en Size of tabs
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 标签选项卡的类型
    * @en Type of tabs
