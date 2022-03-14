@@ -24,6 +24,8 @@ import useForceUpdate from '../_util/hooks/useForceUpdate';
 import IconHover from './icon-hover';
 import { Enter } from '../_util/keycode';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 export interface SelectViewCommonProps
   extends Pick<InputTagProps<unknown>, 'animation' | 'renderTag' | 'dragToSort'> {
   style?: CSSProperties;
@@ -54,7 +56,7 @@ export interface SelectViewCommonProps
    * @zh 分别不同尺寸的选择器。对应 `24px`, `28px`, `32px`, `36px`
    * @en Height of element, `24px` `28px` `32px` `36px`
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 是否为禁用状态。
    * @en Whether is disabled

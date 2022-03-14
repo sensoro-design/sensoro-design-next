@@ -2,6 +2,8 @@ import { CSSProperties, ReactNode } from 'react';
 import { TriggerProps } from '../Trigger';
 import { ButtonProps } from '../Button';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 /**
  * @title Dropdown
  */
@@ -79,7 +81,7 @@ export interface DropdownButtonProps {
    * @zh 等同于 `Button` 的 size
    * @en Same as `size` of ButtonProps
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 等同于 `Button` 的 type
    * @en Same as `type` of ButtonProps

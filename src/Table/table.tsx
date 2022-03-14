@@ -309,6 +309,7 @@ function Table<T extends unknown>(baseProps: TableProps<T>, ref: React.Ref<Table
   function getPaginationProps(_processedData = processedData) {
     const pageSize =
       typeof pagination === 'object' && pagination.pageSize ? pagination.pageSize : innerPageSize;
+    // @ts-ignore
     const paginationSize = size === 'middle' ? 'default' : size;
     let selectPopupPosition: 'top' | 'bottom' = 'top';
 

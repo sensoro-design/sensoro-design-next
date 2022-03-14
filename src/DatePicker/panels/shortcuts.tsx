@@ -34,7 +34,7 @@ function Shortcuts(props: ShortcutsProps, ref) {
   return (
     <div ref={ref} className={`${prefixCls}-shortcuts`}>
       {shouldShowNowBtn && (
-        <Button size="mini" onClick={onSelectNow}>
+        <Button size="small" onClick={onSelectNow}>
           {nowText}
         </Button>
       )}
@@ -43,7 +43,7 @@ function Shortcuts(props: ShortcutsProps, ref) {
           return (
             <Button
               key={index}
-              size="mini"
+              size="small"
               onMouseEnter={() => onMouseEnter(shortcut)}
               onMouseLeave={() => onMouseLeave(shortcut)}
               onClick={(e) => onClick(shortcut, e)}

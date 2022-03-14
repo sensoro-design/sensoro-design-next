@@ -97,6 +97,7 @@ class Tree extends Component<TreeProps, TreeState> {
   dropPosition: 0 | -1 | 1;
 
   getMergedProps = (baseProps?): MergedPropsType => {
+    // @ts-ignore
     const { componentConfig } = this.context;
     const props = baseProps || this.props;
     return needMergeKeys.reduce((_props, key) => {
@@ -286,6 +287,7 @@ class Tree extends Component<TreeProps, TreeState> {
 
   getNodeList = (treedata, prefix?) => {
     this.key2nodeProps = {};
+    // @ts-ignore
     const prefixCls = prefix || this.context.getPrefixCls('tree');
     const nodeList = [];
     let currentIndex = 0;
@@ -723,6 +725,7 @@ class Tree extends Component<TreeProps, TreeState> {
       : {
           threshold: null,
         };
+    // @ts-ignore
     const { getPrefixCls } = this.context;
 
     const prefixCls = getPrefixCls('tree');

@@ -57,7 +57,7 @@ export default function Footer(props) {
             <>
               <Button
                 type="text"
-                size="mini"
+                size="small"
                 onClick={onClickSelectTimeBtn}
                 className={
                   isTimePanel ? `${prefixCls}-btn-select-date` : `${prefixCls}-btn-select-time`
@@ -68,7 +68,7 @@ export default function Footer(props) {
               <Button
                 className={`${prefixCls}-btn-confirm`}
                 type="primary"
-                size="mini"
+                size="small"
                 disabled={disabled}
                 onClick={onClickConfirmBtn}
               >

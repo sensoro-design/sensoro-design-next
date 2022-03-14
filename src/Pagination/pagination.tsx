@@ -123,7 +123,6 @@ function Pagination(baseProps: PaginationProps, ref) {
     sizeCanChange,
     sizeOptions,
     simple,
-    mini,
     showJumper,
     selectProps,
     icons,
@@ -134,8 +133,7 @@ function Pagination(baseProps: PaginationProps, ref) {
 
   const size = props.size || ctxSize;
   const prefixCls = getPrefixCls('pagination');
-  // compatible 1.0
-  const innerSize = mini ? 'mini' : size;
+  const innerSize = size;
   const classNames = cs(
     prefixCls,
     `${prefixCls}-size-${innerSize}`,

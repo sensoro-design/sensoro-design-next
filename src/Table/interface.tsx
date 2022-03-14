@@ -4,6 +4,8 @@ import { SpinProps } from '../Spin';
 import { TriggerProps } from '../Trigger';
 import { TooltipProps } from '../Tooltip';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 export type RowCallbackProps = {
   onClick?: (event) => void;
   onDoubleClick?: (event) => void;
@@ -135,7 +137,7 @@ export interface TableProps<T = any> {
    * @zh 表格尺寸，分为 默认，`默认` `中` `小` `迷你` 四个尺寸
    * @en The table size is divided into four sizes, `default` `medium` `small` `mini`
    */
-  size?: 'default' | 'middle' | 'small' | 'mini';
+  size?: SizeType;
   /**
    * @zh 分页、排序、筛选时的回调
    * @en Callback when pagination, sorting, and filtering changes

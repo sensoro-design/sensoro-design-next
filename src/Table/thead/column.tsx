@@ -183,10 +183,10 @@ function Column<T>({
           })}
         </div>
         <div className={`${prefixCls}-filters-btn`}>
-          <Button onClick={handleFilterReset} size="mini" style={{ marginRight: 8 }}>
+          <Button onClick={handleFilterReset} size="small" style={{ marginRight: 8 }}>
             {locale.Table.resetText}
           </Button>
-          <Button onClick={handleFilter} type="primary" size="mini">
+          <Button onClick={handleFilter} type="primary" size="small">
             {locale.Table.okText}
           </Button>
         </div>

@@ -102,13 +102,13 @@ function Popconfirm(baseProps: PropsWithChildren<PopconfirmProps>, ref) {
   const renderPopconfirmContent = () => {
     const element = (
       <>
-        <Button onClick={onCancelPopconfirm} size="mini" {...cancelButtonProps}>
+        <Button onClick={onCancelPopconfirm} size="small" {...cancelButtonProps}>
           {cancelText || locale!.Popconfirm.cancelText}
         </Button>
         <Button
           loading={buttonLoading}
           onClick={onConfirmPopconfirm}
-          size="mini"
+          size="small"
           type={okType}
           {...okButtonProps}
         >

@@ -194,7 +194,7 @@ export const TransferList = (props: TransferListProps, ref) => {
           pagination
             ? {
                 simple: true,
-                size: 'mini',
+                size: 'small',
                 ...(typeof pagination === 'object' ? pagination : {}),
               }
             : undefined
@@ -203,7 +203,7 @@ export const TransferList = (props: TransferListProps, ref) => {
         paginationInFooter
         footer={
           showFooter === true ? (
-            <Button size="mini" disabled={disabled} onClick={onResetData}>
+            <Button size="small" disabled={disabled} onClick={onResetData}>
               {locale.Transfer.resetText}
             </Button>
           ) : (

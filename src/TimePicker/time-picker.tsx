@@ -260,7 +260,7 @@ function TimePicker(props: InnerTimePickerProps) {
       {!_hideFooter && (
         <div className={`${prefixCls}-footer-btn-wrapper`}>
           {!isRangePicker && showNowBtn ? (
-            <Button size="mini" onClick={onSelectNow}>
+            <Button size="small" onClick={onSelectNow}>
               {locale.TimePicker.now}
             </Button>
           ) : (
@@ -269,7 +269,7 @@ function TimePicker(props: InnerTimePickerProps) {
           {!disableConfirm && (
             <Button
               type="primary"
-              size="mini"
+              size="small"
               onClick={onConfirmTime}
               disabled={confirmBtnDisabled || !valueShow}
             >
