@@ -14,6 +14,9 @@ export default () => {
     <Button type="secondary">
       Secondary
     </Button>
+    <Button type="dashed" bordered={false}>
+      Dashed Hide Bordered
+    </Button>
     <Button type="dashed">
       Dashed
     </Button>

@@ -52,6 +52,7 @@ nav:
 |style|节点样式|`CSSProperties`|`-`|
 |className|节点类名|`string \| string[]`|`-`|
 |type|按钮主要分为六种按钮类型：主要按钮、次级按钮、虚框按钮、文字按钮、线性按钮，`default` 为次级按钮。|`'default' \| 'primary' \| 'secondary' \| 'dashed' \| 'text' \| 'outline'`|`default`|
+|bordered|是否显示边框, 仅当`type=dashed`时生效|`false`|`-`|
 |status|按钮状态|`'warning' \| 'danger' \| 'success' \| 'default'`|`default`|
 |size|按钮的尺寸|`'mini' \| 'small' \| 'default' \| 'large'`|`default`|
 |shape|按钮形状，`circle` - 圆形， `round` - 全圆角， `square` - 长方形|`'circle' \| 'round' \| 'square'`|`square`|

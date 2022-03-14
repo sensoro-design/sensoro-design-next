@@ -48,6 +48,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (ba
     className,
     children,
     htmlType,
+    bordered,
     type,
     status,
     size,
@@ -90,6 +91,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (ba
     `${prefixCls}-size-${size || ctxSize}`,
     `${prefixCls}-shape-${shape}`,
     {
+      [`${prefixCls}-hide-bordered`]: bordered === false && _type === 'dashed',
       [`${prefixCls}-long`]: long,
       [`${prefixCls}-status-${status}`]: status,
       [`${prefixCls}-loading-fixed-width`]: loadingFixedWidth,

@@ -10,14 +10,19 @@ export type ButtonStatus =  'warning' | 'danger' | 'success' | 'default';
 export interface BaseButtonProps {
   /**
    * @zh
-   * 额外的样式类
+   * 节点类名
    */
   className?: string | string[];
   /**
    * @zh
-   * 额外的样式
+   * 节点样式
    */
   style?: CSSProperties;
+  /**
+   * @zh
+   * 是否显示边框
+   */
+  bordered?: false;
   /**
    * @zh
    * 按钮主要分为六种按钮类型：主要按钮、次级按钮、虚框按钮、文字按钮、线性按钮，`default` 为次级按钮。
