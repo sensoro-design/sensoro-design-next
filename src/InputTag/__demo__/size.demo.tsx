@@ -1,4 +1,3 @@
-
 /**
  * title: 不同尺寸
  * desc: 通过设置 `size` 来指定大小。
@@ -18,7 +17,6 @@ export default () => {
         value={size}
         onChange={(value) => setSize(value)}
       >
-        <Radio value="mini">mini</Radio>
         <Radio value="small">small</Radio>
         <Radio value="default">default</Radio>
         <Radio value="large">large</Radio>

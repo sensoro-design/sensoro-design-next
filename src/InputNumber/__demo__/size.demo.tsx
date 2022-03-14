@@ -1,6 +1,6 @@
 
 /**
- * title: 尺寸
+ * title: 不同尺寸
  * desc: 设置 `size` 可以使用四种尺寸（`small`, `default`, `large`）的数字输入框。高度分别对应`24px`、`32px`、`40px`。
  */
 import { useState } from 'react';

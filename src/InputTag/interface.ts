@@ -1,5 +1,7 @@
 import { CSSProperties, ReactNode } from 'react';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 export type ObjectValueType = {
   value?: any;
   label?: ReactNode;
@@ -18,7 +20,7 @@ export interface InputTagProps<T = any> {
    * @zh 不同尺寸
    * @en Different sizes
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 预设文案
    * @en Placeholder of input element
