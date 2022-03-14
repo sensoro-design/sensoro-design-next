@@ -3,6 +3,8 @@ import Select from '../Select';
 import { ConfigContext } from '../ConfigProvider';
 import { SelectProps } from '../Select/interface';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 const noop = () => {};
 const Option = Select.Option;
 const _SizeOptions = [10, 20, 30, 40, 50];
@@ -14,7 +16,7 @@ export interface PageOptionProps {
   sizeOptions?: number[];
   onPageSizeChange?: (value) => void;
   pageSize?: number;
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   selectProps?: Partial<SelectProps>;
 }
 

@@ -26,7 +26,7 @@ nav:
 
 <code src="./__demo__/jumper.demo.tsx" />
 
-### 尺寸
+### 不同尺寸
 
 <code src="./__demo__/size.demo.tsx" />
 
