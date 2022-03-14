@@ -14,6 +14,10 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
+### 虚线
+
+<code src="./__demo__/dashed.demo.tsx" />
+
 ### 带有文字的分割线
 
 <code src="./__demo__/with-text.demo.tsx" />

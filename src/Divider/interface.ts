@@ -8,6 +8,11 @@ export interface DividerProps {
   style?: CSSProperties;
   className?: string | string[];
   /**
+   * @zh 是否虚线
+   * @defaultValue false
+   */
+  dashed?: boolean;
+  /**
    * @zh 分割线的类型，是水平还是竖直，分别对应 `horizontal` 和 `vertical`
    * @en Two types are available: `horizontal` and `vertical`
    * @defaultValue horizontal

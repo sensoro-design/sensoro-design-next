@@ -9,7 +9,7 @@
     min-width: 100%;
     max-width: 100%;
     margin: @divider-margin-vertical 0;
-    border-bottom: @divider-size @divider-line-style @divider-color-bg;
+    border-bottom: @divider-size @divider-line-style @gray-4;
     clear: both;
 
     &.@{divider-prefix-cls}-with-text {
@@ -37,6 +37,11 @@
       flex-basis: @divider-position-text-right;
       flex-grow: 0;
     }
+  }
+
+  &-dashed {
+    border-bottom-style: @border-dashed;
+    border-bottom-color: @gray-5;
   }
 
   &-vertical {

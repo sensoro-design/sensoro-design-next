@@ -1,5 +1,5 @@
 import React, { useContext, forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { DividerProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -12,13 +12,14 @@ const defaultProps: DividerProps = {
 function Divider(baseProps: DividerProps, ref) {
   const { getPrefixCls, componentConfig } = useContext(ConfigContext);
   const props = useMergeProps<DividerProps>(baseProps, defaultProps, componentConfig?.Divider);
-  const { children, style, className, type, orientation } = props;
+  const { children, style, className, dashed, type, orientation } = props;
 
   const prefixCls = getPrefixCls('divider');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${type}`,
     {
+      [`${prefixCls}-dashed`]: dashed,
       [`${prefixCls}-with-text`]: children,
       [`${prefixCls}-with-text-${orientation}`]: children && orientation,
     },
@@ -26,7 +27,7 @@ function Divider(baseProps: DividerProps, ref) {
   );
 
   return (
-    <div ref={ref} className={classNames} style={style}>
+    <div ref={ref} className={classes} style={style}>
       {children && type === 'horizontal' ? (
         <span className={`${prefixCls}-text ${prefixCls}-text-${orientation}`}>{children}</span>
       ) : null}
