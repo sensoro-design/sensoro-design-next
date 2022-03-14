@@ -204,10 +204,6 @@
       }
     }
 
-    // &-draggable {
-    //   margin-top: @tree-draggable-size-gap-height;
-    // }
-
     &-draggable::before {
       content: '';
       display: block;
@@ -293,32 +289,6 @@
 }
 
 /******** size *******/
-
-.@{tree-prefix-cls}-size-mini {
-  .@{tree-prefix-cls}-node-switcher {
-    height: @tree-size-mini-line-height;
-  }
-
-  .@{prefix}-checkbox {
-    line-height: @tree-size-mini-line-height;
-  }
-
-  .@{tree-prefix-cls}-node-title {
-    font-size: @tree-size-mini-font-size;
-    line-height: 1.667;
-    padding-top: (round((@tree-size-mini-line-height - $line-height * $font-size)) / 2);
-    padding-bottom: $padding-top;
-  }
-
-  .@{tree-prefix-cls}-node-indent-block::before {
-    .getLinePos(@tree-size-mini-line-height);
-  }
-
-  .@{tree-prefix-cls}-node-is-leaf:not(.@{tree-prefix-cls}-node-is-tail)
-    .@{tree-prefix-cls}-node-indent::after {
-    .getIndentLinePos(@tree-size-mini-line-height);
-  }
-}
 
 .@{tree-prefix-cls}-size-small {
   .@{tree-prefix-cls}-node-switcher {

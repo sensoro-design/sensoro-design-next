@@ -2,6 +2,8 @@ import { CSSProperties, ReactNode, DragEvent, PropsWithChildren } from 'react';
 import TreeNode from './node';
 import { AvailableVirtualListProps } from '../_class/VirtualList';
 
+import { SizeType } from '../ConfigProvider/interface';
+
 export type NodeInstance = React.ReactElement<PropsWithChildren<NodeProps>, typeof TreeNode>;
 
 export type SHOW_ALL = 'all';
@@ -59,7 +61,7 @@ export interface TreeProps {
    * @zh 不同尺寸
    * @en To set size
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 是否节点占据一行
    * @en Whether to occupy the remaining horizontal space
