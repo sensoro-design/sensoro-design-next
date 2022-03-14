@@ -1,4 +1,3 @@
-
 /**
  * title: 对齐
  * desc: 内置 4 种对齐方式，分别为 `start` `center` `end` `baseline`，在水平模式下默认为 `center`。

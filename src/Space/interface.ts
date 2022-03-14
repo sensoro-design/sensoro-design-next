@@ -2,6 +2,8 @@ import { CSSProperties, ReactNode } from 'react';
 
 export type SpaceSize = 'mini' | 'small' | 'medium' | 'large' | number;
 
+export type SpaceAlign = 'start' | 'end' | 'center' | 'baseline';
+
 /**
  * @title Space
  */
@@ -12,7 +14,7 @@ export interface SpaceProps {
    * @zh 对齐方式
    * @en Alignment of items
    */
-  align?: 'start' | 'end' | 'center' | 'baseline';
+  align?: SpaceAlign;
   /**
    * @zh 间距方向
    * @en The space direction

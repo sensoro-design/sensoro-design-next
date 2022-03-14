@@ -1,7 +1,6 @@
-
 /**
- * title: 尺寸
- * desc: 内置 4 个尺寸，mini - 4px small - 8px (默认) medium - 16px large - 24px，也支持传数字来自定义尺寸。
+ * title: 不同尺寸
+ * desc: 内置 4 个尺寸，mini(4px)、small(8px)(默认)、medium(16px)、large(24px)，也支持传数字来自定义尺寸。
  */
 import { useState } from 'react';
 import { Space, Button, Radio } from '@sensoro-design/react';
