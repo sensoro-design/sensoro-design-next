@@ -1,5 +1,7 @@
 import { CSSProperties, InputHTMLAttributes, ReactNode } from 'react';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 /**
  * @title InputNumber
  */
@@ -74,7 +76,7 @@ export interface InputNumberProps
    * @zh 不同尺寸的数字输入框。分别对应 `24px`, `28px`, `32px`, `36px`
    * @en Different sizes
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 显示前缀
    * @en The prefix for the InputNumber

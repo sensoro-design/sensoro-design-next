@@ -14,9 +14,9 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
-### 基本用法
+### 尺寸
 
-<code src="./__demo__/basic.demo.tsx" />
+<code src="./__demo__/size.demo.tsx" />
 
 ### 按钮模式
 
