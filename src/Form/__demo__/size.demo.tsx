@@ -86,7 +86,6 @@ export default () => {
       >
         <FormItem label="Form size">
           <Radio.Group type="button" value={size} onChange={setSize}>
-            <Radio value="mini">mini</Radio>
             <Radio value="small">small</Radio>
             <Radio value="default">default</Radio>
             <Radio value="large">large</Radio>

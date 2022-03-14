@@ -1,6 +1,8 @@
 import { CSSProperties, ReactNode } from 'react';
 import { SelectProps } from '../Select/interface';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 /**
  * @title Pagination
  */
@@ -66,7 +68,7 @@ export interface PaginationProps {
    * @zh 分页器尺寸
    * @en pager size
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 是否显示数据总数
    * @en Whether to display the total number of data

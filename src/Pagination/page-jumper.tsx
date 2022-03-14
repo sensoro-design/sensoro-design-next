@@ -4,6 +4,8 @@ import { isFunction, isUndefined } from '../_util/is';
 import { ConfigContext } from '../ConfigProvider';
 import { RefInputType } from '../Input/interface';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 export interface PageJumperProps {
   disabled?: boolean;
   rootPrefixCls?: string;
@@ -11,7 +13,7 @@ export interface PageJumperProps {
   current: number;
   simple?: boolean;
   onPageChange?: (value) => void;
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
 }
 
 function PageJumper(props: PageJumperProps) {

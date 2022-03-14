@@ -6,6 +6,8 @@ import { Options as ScrollIntoViewOptions } from 'scroll-into-view-if-needed';
 import { ColProps } from '../Grid/col';
 import Store from './store';
 
+import type { SizeType } from '../ConfigProvider/interface';
+
 export type IndexedObject = { [key: string]: any };
 export type KeyType = string | number | symbol;
 export type ComponentType = keyof JSX.IntrinsicElements | React.ComponentType<any>;
@@ -53,7 +55,7 @@ export interface FormProps<
    * @zh 不同尺寸。
    * @en size of form
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh
    * `<label>`标签布局，同[<Grid.Col>](/react/components/grid)组件接收的参数相同，
