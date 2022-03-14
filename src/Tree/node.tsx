@@ -7,7 +7,7 @@ import React, {
   useCallback,
 } from 'react';
 import Checkbox from '../Checkbox';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { isFunction } from '../_util/is';
 import IconCaretDown from '../../icon/react-icon/IconCaretDown';
 import IconDragDotVertical from '../../icon/react-icon/IconDragDotVertical';
@@ -59,7 +59,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
   } = props;
 
   const prefixCls = getPrefixCls('tree-node');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-selected`]: selected,
@@ -164,11 +164,11 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
 
   return (
     <>
-      <div style={props.style} className={classNames} ref={ref}>
+      <div style={props.style} className={classes} ref={ref}>
         <span className={`${prefixCls}-indent`}>
           {[...Array(props._level)].map((_, i) => (
             <span
-              className={cs(`${prefixCls}-indent-block`, {
+              className={classNames(`${prefixCls}-indent-block`, {
                 [`${prefixCls}-indent-block-lineless`]: props._lineless && props._lineless[i],
               })}
               key={i}
@@ -176,7 +176,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
           ))}
         </span>
         <span
-          className={cs(`${prefixCls}-switcher`, {
+          className={classNames(`${prefixCls}-switcher`, {
             [`${prefixCls}-switcher-expanded`]: expanded,
           })}
         >
@@ -193,7 +193,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
         ) : null}
         <span
           ref={nodeTitleRef}
-          className={cs(`${prefixCls}-title`, {
+          className={classNames(`${prefixCls}-title`, {
             [`${prefixCls}-title-draggable`]: draggable,
             [`${prefixCls}-title-gap-top`]:
               state.isDragOver && state.isAllowDrop && state.dragPosition < 0,

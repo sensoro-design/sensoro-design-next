@@ -9,7 +9,7 @@ import React, {
 import AnchorContext from './context';
 import { AnchorLinkProps } from './interface';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { isString, isObject } from '../_util/is';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
@@ -37,7 +37,7 @@ function Link(baseProps: AnchorLinkPropsWithChildren, ref) {
   const anchorContext = useContext(AnchorContext);
   const { currentLink, addLink, removeLink, onLinkClick } = anchorContext;
   const prefixCls = getPrefixCls('anchor-link');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-active`]: currentLink === href,
@@ -56,7 +56,7 @@ function Link(baseProps: AnchorLinkPropsWithChildren, ref) {
   }, [href]);
 
   return (
-    <div className={classNames} style={style} ref={linkRef}>
+    <div className={classes} style={style} ref={linkRef}>
       <a
         className={`${prefixCls}-title`}
         title={isString(title) ? title : ''}

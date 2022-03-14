@@ -10,7 +10,7 @@ import React, {
 } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { findDOMNode } from 'react-dom';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { on, off, isServerRendering } from '../_util/dom';
 import ResizeObserver from '../_util/resizeObserver';
 import IconLoading from '../../icon/react-icon/IconLoading';

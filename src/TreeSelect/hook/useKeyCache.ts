@@ -1,7 +1,7 @@
 import { useRef, useContext } from 'react';
 import { NodeProps } from '../../Tree/interface';
 import { ConfigContext } from '../../ConfigProvider';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { TreeSelectDataType, DefaultFieldNames } from '../interface';
 import useUpdate from '../../_util/hooks/useUpdate';
 import useForceUpdate from '../../_util/hooks/useForceUpdate';

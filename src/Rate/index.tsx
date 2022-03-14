@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import NP from 'number-precision';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import IconStarFill from '../../icon/react-icon/IconStarFill';
 import IconFaceMehFill from '../../icon/react-icon/IconFaceMehFill';
 import IconFaceSmileFill from '../../icon/react-icon/IconFaceSmileFill';

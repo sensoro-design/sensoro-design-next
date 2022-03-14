@@ -1,10 +1,10 @@
 import React from 'react';
+import cs from '@pansy/classnames';
 import IconLeft from '../../../icon/react-icon/IconLeft';
 import IconRight from '../../../icon/react-icon/IconRight';
 import IconDoubleLeft from '../../../icon/react-icon/IconDoubleLeft';
 import IconDoubleRight from '../../../icon/react-icon/IconDoubleRight';
 import { isArray } from '../../_util/is';
-import cs from '../../_util/classNames';
 
 function PanelHeader(props) {
   const {

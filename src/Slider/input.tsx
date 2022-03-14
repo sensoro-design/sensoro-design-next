@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useState } from 'react';
 import InputNumber from '../InputNumber';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 
 interface InputProps {
   min?: number;

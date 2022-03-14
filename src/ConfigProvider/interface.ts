@@ -65,6 +65,9 @@ import { TriggerProps } from '../Trigger/interface';
 // import { TypographyProps } from '../Typography/interface';
 import { UploadProps } from '../Upload/interface';
 
+/** 组件大小类型 */
+export type SizeType = 'mini' | 'small' | 'default' | 'large';
+
 export type ThemeConfig = Record<string, any>;
 
 export type ComponentConfig = {
@@ -180,7 +183,7 @@ export interface ConfigProviderProps {
    * @en Configure the default size of the component, which will only take effect for components that support the `size` property.
    * @defaultValue default
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 全局组件类名前缀
    * @en Global ClassName prefix

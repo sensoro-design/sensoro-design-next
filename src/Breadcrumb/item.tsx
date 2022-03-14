@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useState } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Dropdown from '../Dropdown';
 import IconDown from '../../icon/react-icon/IconDown';
 import omit from '../_util/omit';

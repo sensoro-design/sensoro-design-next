@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { InputPasswordProps, RefInputType } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Input from './input';
 import IconEye from '../../icon/react-icon/IconEye';
 import IconEyeInvisible from '../../icon/react-icon/IconEyeInvisible';

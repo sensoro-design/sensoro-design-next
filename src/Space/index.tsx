@@ -1,5 +1,5 @@
 import React, { useContext, Fragment, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { isArray, isNumber } from '../_util/is';
 import { SpaceSize, SpaceProps } from './interface';

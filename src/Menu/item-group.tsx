@@ -1,5 +1,5 @@
 import React, { forwardRef, useContext } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { processChildren } from './util';
 import { MenuItemGroupProps } from './interface';
 import MenuContext from './context';

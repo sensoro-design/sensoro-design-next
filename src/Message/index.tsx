@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import BaseNotification from '../_class/notification';
 import Notice from '../_class/notice';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { MessageProps } from './interface';
 
 const messageTypes = ['info', 'success', 'error', 'warning', 'loading', 'normal'];

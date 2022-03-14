@@ -1,6 +1,6 @@
 import React, { useContext, ReactNode } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import cs from '../../_util/classNames';
+import classNames from '@pansy/classnames';
 import PictureItem from './pictureItem';
 import TextItem from './textItem';
 import { ConfigContext } from '../../ConfigProvider';
@@ -16,7 +16,7 @@ export const FileList = (props: UploadListProps) => {
   }
 
   return (
-    <TransitionGroup className={cs(`${prefixCls}-list`, `${prefixCls}-list-type-${listType}`)}>
+    <TransitionGroup className={classNames(`${prefixCls}-list`, `${prefixCls}-list-type-${listType}`)}>
       {fileList.map((file) => {
         let originNode: ReactNode =
           listType === 'picture-card' ? (

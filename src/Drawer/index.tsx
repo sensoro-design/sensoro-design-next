@@ -11,7 +11,7 @@ import { CSSTransition } from 'react-transition-group';
 import FocusLock from 'react-focus-lock';
 import { findDOMNode } from 'react-dom';
 import IconClose from '../../icon/react-icon/IconClose';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Button from '../Button';
 import Portal from '../Portal';
 import ConfigProvider, { ConfigContext } from '../ConfigProvider';

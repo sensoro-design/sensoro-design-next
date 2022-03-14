@@ -6,7 +6,7 @@ import React, {
   useState,
   useRef,
 } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { on, off } from '../_util/dom';
 import ResizeTrigger from './resize-trigger';

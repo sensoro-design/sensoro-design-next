@@ -8,7 +8,7 @@ import React, {
   useRef,
   useMemo,
 } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { on, off } from '../_util/dom';
 import { isFunction } from '../_util/is';
 import Trigger from '../Trigger';

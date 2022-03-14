@@ -3,7 +3,7 @@ import { Dayjs, UnitType } from 'dayjs';
 import merge from 'lodash/merge';
 import { ConfigContext } from '../ConfigProvider';
 import { CalendarProps } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Month, { getAllDaysByTime } from './month';
 import Year from './year';
 import Header from './header/header';

@@ -1,6 +1,6 @@
 import React, { useContext, forwardRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { isObject } from '../_util/is';
 import Count from './count';

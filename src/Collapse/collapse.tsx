@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode, useContext, PropsWithChildren } from 'react';
 import { isFunction } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import CollapseItem from './item';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';

@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, forwardRef, useRef, useMemo } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Item from './item';
 import ItemGroup from './item-group';
 import SubMenu from './sub-menu';

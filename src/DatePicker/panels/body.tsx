@@ -1,6 +1,6 @@
 import React, { useContext, ReactNode } from 'react';
 import { Dayjs } from 'dayjs';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import WeekList from './week-list';
 import useCellClassName from '../hooks/useCellClassName';
 import { CalendarValue } from '../interface';

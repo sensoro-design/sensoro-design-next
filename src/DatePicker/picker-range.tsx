@@ -4,7 +4,7 @@ import Trigger from '../Trigger';
 import DateInputRange from '../_class/picker/input-range';
 import { RangePickerProps, ShortcutType, ModeType } from './interface';
 import { isArray, isDayjs, isObject } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import {
   getDayjsValue,

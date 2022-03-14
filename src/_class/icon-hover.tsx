@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useContext } from 'react';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 
 interface HoverProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -17,7 +17,7 @@ export default function IconHover(props: PropsWithChildren<HoverProps>) {
 
   return (
     <span
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefix}-icon-hover`]: prefix,

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { DraggableItemProps, DragPosition, DragStatus } from './interface';
 
 function Item(props: DraggableItemProps) {

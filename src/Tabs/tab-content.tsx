@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { TabsProps } from './tabs';
 import { TabPaneProps, TabPaneType } from './tab-pane';
 

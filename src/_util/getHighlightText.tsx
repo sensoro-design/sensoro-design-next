@@ -1,6 +1,6 @@
 import React from 'react';
 import { isArray } from './is';
-import cs from './classNames';
+import cs from '@pansy/classnames';
 
 export default function getHighlightText<T>({
   nodeList,

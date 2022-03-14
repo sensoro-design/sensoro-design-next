@@ -1,8 +1,23 @@
 import React, { CSSProperties, HTMLProps, ReactNode } from 'react';
+import Group from './group';
+
+import type { SizeType } from '../ConfigProvider/interface';
+
+export type ButtonType =  'default' | 'primary' | 'secondary' | 'dashed' | 'text' | 'outline';
+
+export type ButtonStatus =  'warning' | 'danger' | 'success' | 'default';
 
 export interface BaseButtonProps {
-  style?: CSSProperties;
+  /**
+   * @zh
+   * 额外的样式类
+   */
   className?: string | string[];
+  /**
+   * @zh
+   * 额外的样式
+   */
+  style?: CSSProperties;
   children?: ReactNode;
   /**
    * @zh
@@ -12,19 +27,19 @@ export interface BaseButtonProps {
    * `text`, `linear` and `default` which is the secondary.
    * @defaultValue default
    */
-  type?: 'default' | 'primary' | 'secondary' | 'dashed' | 'text' | 'outline';
+  type?: ButtonType;
   /**
    * @zh 按钮状态
    * @en Status of the button
    * @defaultValue default
    */
-  status?: 'warning' | 'danger' | 'success' | 'default';
+  status?: ButtonStatus;
   /**
    * @zh 按钮的尺寸
    * @en Size of the button
    * @defaultValue default
    */
-  size?: 'mini' | 'small' | 'default' | 'large';
+  size?: SizeType;
   /**
    * @zh 按钮形状，`circle` - 圆形， `round` - 全圆角， `square` - 长方形
    * @en Three button shapes are available: `circle`, `round` and `square`
@@ -109,4 +124,10 @@ export interface ButtonGroupProps {
   style?: CSSProperties;
   className?: string | string[];
   children?: ReactNode;
+}
+
+export interface CompoundedComponent
+  extends React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>> {
+  Group: typeof Group;
+  __SEN_BUTTON: boolean;
 }

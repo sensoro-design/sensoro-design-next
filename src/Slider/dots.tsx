@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { isObject, isFunction } from '../_util/is';
 import { formatPercent, valueInRange, getIntervalOffset } from './utils';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { IntervalConfig } from './hooks/useInterval';
 
 type MaskType = {

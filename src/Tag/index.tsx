@@ -1,5 +1,5 @@
 import React, { useState, useContext, forwardRef, CSSProperties } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import IconClose from '../../icon/react-icon/IconClose';
 import IconLoading from '../../icon/react-icon/IconLoading';
 import omit from '../_util/omit';

@@ -1,7 +1,7 @@
 import React, { ReactElement, useState, useEffect, useContext, useCallback } from 'react';
 import debounce from 'lodash/debounce';
 import IconLoading from '../../icon/react-icon/IconLoading';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import DotLoading from './dot-loading';
 import { SpinProps } from './interface';

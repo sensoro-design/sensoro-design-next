@@ -1,5 +1,5 @@
 import React, { useContext, useMemo, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isNumber, isObject } from '../_util/is';
 import { ConfigContext } from '../ConfigProvider';
 import { ColProps, FlexType } from './interface';

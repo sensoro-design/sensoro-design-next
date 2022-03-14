@@ -4,7 +4,7 @@ import IconLeft from '../../../icon/react-icon/IconLeft';
 import IconRight from '../../../icon/react-icon/IconRight';
 import IconDoubleLeft from '../../../icon/react-icon/IconDoubleLeft';
 import IconDoubleRight from '../../../icon/react-icon/IconDoubleRight';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { ModeType, IconsType } from '../interface';
 
 export interface HeaderProps {

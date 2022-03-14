@@ -6,7 +6,7 @@ import React, {
   PropsWithChildren,
   useImperativeHandle,
 } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Trigger, { EventsByTriggerNeed } from '../Trigger';
 import { ConfigContext } from '../ConfigProvider';
 import pick from '../_util/pick';

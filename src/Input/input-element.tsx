@@ -1,6 +1,6 @@
 import React, { useState, useRef, useImperativeHandle, useEffect } from 'react';
 import { InputComponentProps, RefInputType } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import omit from '../_util/omit';
 import { Enter } from '../_util/keycode';
 import ResizeObserver from '../_util/resizeObserver';

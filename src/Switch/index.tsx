@@ -1,6 +1,6 @@
 import React, { useState, useContext, forwardRef, ReactElement } from 'react';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isArray, isObject } from '../_util/is';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';

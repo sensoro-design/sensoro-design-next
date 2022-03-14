@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 import BTween from 'b-tween';
 import dayjs, { Dayjs } from 'dayjs';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Countdown from './countdown';
 import { isNumber } from '../_util/is';
 import { ConfigContext } from '../ConfigProvider';

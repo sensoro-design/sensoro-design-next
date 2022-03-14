@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import isEqualWith from 'lodash/isEqualWith';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import Option from './option';
 import { isFunction } from '../../_util/is';
 import { CascaderPanelProps, OptionProps } from '../interface';

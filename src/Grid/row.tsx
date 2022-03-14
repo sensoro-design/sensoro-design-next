@@ -1,5 +1,5 @@
 import React, { useState, useRef, useContext, forwardRef, useEffect } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import ResponsiveObserve, {

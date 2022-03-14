@@ -1,6 +1,6 @@
 import React, { useRef, CSSProperties, useEffect } from 'react';
 import isEqualWith from 'lodash/isEqualWith';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { getRectDiff } from '../utils';
 import throttleByRaf from '../../_util/throttleByRaf';
 

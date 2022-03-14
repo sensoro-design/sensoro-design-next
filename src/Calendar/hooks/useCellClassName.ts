@@ -1,5 +1,5 @@
 import { Dayjs } from 'dayjs';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { isArray } from '../../_util/is';
 import { getNow } from '../../_util/dayjs';
 

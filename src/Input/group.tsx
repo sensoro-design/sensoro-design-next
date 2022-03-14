@@ -1,5 +1,5 @@
 import React, { useContext, PropsWithChildren } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { InputGroupProps } from './interface';
 

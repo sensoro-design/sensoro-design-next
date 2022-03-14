@@ -1,6 +1,6 @@
 import React from 'react';
 import { isArray } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { SkeletonTextProps } from './interface';
 
 export default function text(props: SkeletonTextProps) {

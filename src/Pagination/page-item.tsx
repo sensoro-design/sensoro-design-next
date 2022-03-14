@@ -1,5 +1,5 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import IconLeft from '../../icon/react-icon/IconLeft';
 import IconRight from '../../icon/react-icon/IconRight';
 import IconMore from '../../icon/react-icon/IconMore';

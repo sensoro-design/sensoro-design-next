@@ -25,7 +25,7 @@ import useKeyCache from './hook/useKeyCache';
 import TreeList from './tree-list';
 import { NodeProps } from '../Tree/interface';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
 function isEmptyValue(value) {

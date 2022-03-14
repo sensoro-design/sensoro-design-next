@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, forwardRef, useState, useEffect, useContext, memo } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import BTween from 'b-tween';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import IconToTop from '../../icon/react-icon/IconToTop';
 import { ConfigContext } from '../ConfigProvider';
 import { on, off } from '../_util/dom';

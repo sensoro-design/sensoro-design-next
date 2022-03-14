@@ -5,7 +5,7 @@ import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
 import IconInfoCircleFill from '../../icon/react-icon/IconInfoCircleFill';
 import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
 import IconClose from '../../icon/react-icon/IconClose';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { AlertProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -61,7 +61,7 @@ function Alert(baseProps: AlertProps, ref) {
     onClose && onClose(e);
   }
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${type}`,
     {
@@ -82,7 +82,7 @@ function Alert(baseProps: AlertProps, ref) {
         afterClose && afterClose();
       }}
     >
-      <div ref={ref} style={style} className={classNames}>
+      <div ref={ref} style={style} className={classes}>
         {showIcon && <div className={`${prefixCls}-icon-wrapper`}>{renderIcon(type)}</div>}
         <div className={`${prefixCls}-content-wrapper`}>
           {title && <div className={`${prefixCls}-title`}>{title}</div>}

@@ -5,7 +5,7 @@ import DateInput from '../_class/picker/input';
 import { PickerProps, CalendarValue, ShortcutType, ModeType } from './interface';
 import { TimePickerProps } from '../TimePicker/interface';
 import { isArray, isDayjs, isObject } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import omit from '../_util/omit';
 import {

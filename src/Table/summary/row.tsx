@@ -1,6 +1,6 @@
 import React, { useContext, ReactNode, ReactElement, HTMLAttributes } from 'react';
 import { SummaryContext } from './context';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { Omit } from '../../_util/type';
 
 interface SummaryRowProps extends Omit<HTMLAttributes<HTMLTableRowElement>, 'children'> {

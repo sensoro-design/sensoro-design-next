@@ -5,7 +5,7 @@ import DropdownIcon from './dropdown-icon';
 import TabNavIcon from './tab-nav-icon';
 import TabHeaderTitle from './tab-title';
 import IconPlus from '../../../icon/react-icon/IconPlus';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { setTransformStyle } from '../../_util/style';
 import { getRectDiff, updateScrollOffset } from '../utils';
 import { TabsContext } from '../tabs';

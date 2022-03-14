@@ -16,7 +16,7 @@ import { ConfigContext } from '../ConfigProvider';
 import Store from './base/store';
 import SelectView, { SelectViewHandle } from '../_class/select-view';
 import { CascaderProps, OptionProps } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import useUpdate from '../_util/hooks/useUpdate';
 import { Enter, Tab } from '../_util/keycode';

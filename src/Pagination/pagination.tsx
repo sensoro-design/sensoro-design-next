@@ -2,7 +2,7 @@ import React, { ReactNode, ReactElement, useState, useEffect, useContext, forwar
 import PageItem, { StepType, JumpPager, StepPager } from './page-item';
 import PageOption from './page-options';
 import PageJumper from './page-jumper';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { PaginationProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';

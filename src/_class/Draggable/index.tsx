@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 
 import { ConfigContext } from '../../ConfigProvider';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import Item from './item';
 import { DraggableProps } from './interface';
 

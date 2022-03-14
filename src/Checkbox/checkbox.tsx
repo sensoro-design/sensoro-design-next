@@ -1,6 +1,6 @@
 import React, { useContext, useCallback, useRef, useEffect } from 'react';
 import Group, { CheckboxGroupContext } from './group';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import useCheckbox from './useCheckbox';
 import useMergeValue from '../_util/hooks/useMergeValue';

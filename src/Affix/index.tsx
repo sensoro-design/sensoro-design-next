@@ -10,7 +10,7 @@ import React, {
   useCallback,
 } from 'react';
 import throttleByRaf from '../_util/throttleByRaf';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { on, off } from '../_util/dom';
 import ResizeObserver from '../_util/resizeObserver';
@@ -72,7 +72,7 @@ function Affix(baseProps: PropsWithChildren<AffixProps>, ref) {
   const lastIsFixed = useRef(isFixed);
 
   const prefixCls = getPrefixCls('affix');
-  const classNames = cs({ [prefixCls]: isFixed }, affixClassName);
+  const classes = classNames({ [prefixCls]: isFixed }, affixClassName);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const targetRef = useRef<HTMLElement | Window>(null);
 
@@ -169,10 +169,10 @@ function Affix(baseProps: PropsWithChildren<AffixProps>, ref) {
 
   return (
     <ResizeObserver onResize={updatePosition}>
-      <div className={cs(className)} style={style} ref={wrapperRef}>
+      <div className={classNames(className)} style={style} ref={wrapperRef}>
         {isFixed && <div style={sizeStyles} />}
         <div
-          className={classNames}
+          className={classes}
           style={{ ...fixedStyles, ...(isObject(affixStyle) ? affixStyle : {}) }}
         >
           <ResizeObserver onResize={updatePosition}>{children || <span />}</ResizeObserver>

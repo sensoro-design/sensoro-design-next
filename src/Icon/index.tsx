@@ -1,6 +1,6 @@
 import React, { Component, CSSProperties, SVGAttributes } from 'react';
 import addFromIconFontCn from './addFromIconFontCn';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigConsumer } from '../ConfigProvider';
 
 export interface IconProps extends Omit<SVGAttributes<SVGElement>, 'className'> {

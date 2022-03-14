@@ -1,5 +1,5 @@
 import React, { useContext, PropsWithChildren, useRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Group, { RadioGroupContext } from './group';
 import { ConfigContext } from '../ConfigProvider';
 import omit from '../_util/omit';

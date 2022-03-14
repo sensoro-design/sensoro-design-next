@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { ButtonGroupProps } from './interface';
 
@@ -7,10 +7,10 @@ function Group(props: ButtonGroupProps, ref) {
   const { className, style, children } = props;
   const { getPrefixCls } = useContext(ConfigContext);
   const prefixCls = getPrefixCls('btn-group');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
 
   return (
-    <div ref={ref} className={classNames} style={style}>
+    <div ref={ref} className={classes} style={style}>
       {children}
     </div>
   );

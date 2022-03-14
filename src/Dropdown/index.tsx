@@ -2,7 +2,7 @@ import React, { ReactElement, useContext, useRef } from 'react';
 import Trigger, { EventsByTriggerNeed } from '../Trigger';
 import Button from './button';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import omit from '../_util/omit';
 import pick from '../_util/pick';

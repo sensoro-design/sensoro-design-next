@@ -1,6 +1,6 @@
 import React, { forwardRef, useContext, PropsWithChildren } from 'react';
 import IconLink from '../../icon/react-icon/IconLink';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { LinkProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';

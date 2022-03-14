@@ -12,7 +12,7 @@ import IconDown from '../../icon/react-icon/IconDown';
 import IconPlus from '../../icon/react-icon/IconPlus';
 import IconMinus from '../../icon/react-icon/IconMinus';
 import { isNumber } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ArrowUp, ArrowDown } from '../_util/keycode';
 import { ConfigContext } from '../ConfigProvider';
 import Input from '../Input';

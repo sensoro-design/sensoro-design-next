@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { InternalColumnProps } from '../interface';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { isObject } from '../../_util/is';
 
 // get sticky cell's className

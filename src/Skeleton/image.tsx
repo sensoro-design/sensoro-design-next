@@ -1,6 +1,6 @@
 import React from 'react';
 import { SkeletonImageProps } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 
 export default function image(props: SkeletonImageProps) {
   const { style, shape = 'square', size, position = 'left', className, prefixCls } = props;

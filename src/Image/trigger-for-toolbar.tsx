@@ -1,6 +1,6 @@
 import React, { CSSProperties, PropsWithChildren } from 'react';
 import Trigger, { TriggerProps } from '../Trigger';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 
 interface TriggerForToolbarProps {
   style?: CSSProperties;

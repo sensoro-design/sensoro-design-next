@@ -1,5 +1,5 @@
 import React, { CSSProperties, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import IconMore from '../../icon/react-icon/IconMore';
 import Tooltip from '../Tooltip';
 import { ImagePreviewActionProps } from './interface';

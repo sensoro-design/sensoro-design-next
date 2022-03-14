@@ -1,6 +1,6 @@
 import React, { useContext, forwardRef, PropsWithChildren } from 'react';
 import { isNumber } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import Avatar from './avatar';
 import Popover from '../Popover';

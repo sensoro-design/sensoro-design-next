@@ -7,7 +7,7 @@ import { isFunction } from '../_util/is';
 import { Esc } from '../_util/keycode';
 import Portal from './portal';
 import ResizeObserver from '../_util/resizeObserver';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import getStyle from './getPopupStyle';
 import throttleByRaf from '../_util/throttleByRaf';

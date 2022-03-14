@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useContext } from 'react';
 import { Transition } from 'react-transition-group';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { CollapseContext } from './collapse';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';

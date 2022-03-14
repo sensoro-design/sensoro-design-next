@@ -1,7 +1,7 @@
 import React, { memo, useMemo } from 'react';
 import { plus } from 'number-precision';
 import { formatPercent, getIntervalOffset, valueInRange } from './utils';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { IntervalConfig } from './hooks/useInterval';
 
 interface TicksProps {

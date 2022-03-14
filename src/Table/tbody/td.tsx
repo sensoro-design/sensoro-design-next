@@ -2,7 +2,7 @@ import React, { CSSProperties, ReactNode, memo } from 'react';
 import get from 'lodash/get';
 import pick from '../../_util/pick';
 import { isObject, isString } from '../../_util/is';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import { ComponentsProps, InternalColumnProps, SorterResult } from '../interface';
 

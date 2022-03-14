@@ -1,4 +1,5 @@
 import React, { useState, useContext, useRef, PropsWithChildren } from 'react';
+import classNames from '@pansy/classnames'
 import useIsomorphicLayoutEffect from '../_util/hooks/useIsomorphicLayoutEffect';
 import { ConfigContext } from '../ConfigProvider';
 import {
@@ -8,7 +9,6 @@ import {
   EllipsisConfig,
 } from './interface';
 import Operations from './operations';
-import cs from '../_util/classNames';
 import EditContent from './edit-content';
 import { isObject } from '../_util/is';
 import useResizeObserver from '../_util/hooks/useResizeObserver';
@@ -272,7 +272,7 @@ function Base(props: BaseProps) {
 
     const node = (
       <TextComponent
-        className={cs(
+        className={classNames(
           prefixCls,
           { [`${prefixCls}-simple-ellipsis`]: simpleEllipsis },
           componentClassName,

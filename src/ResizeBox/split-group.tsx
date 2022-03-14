@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import { SplitGroupProps, CollapsedConfig } from './interface';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isFunction, isNumber, isUndefined, isObject } from '../_util/is';
 import ResizeTrigger from './resize-trigger';
 import { on, off } from '../_util/dom';

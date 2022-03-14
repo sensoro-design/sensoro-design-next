@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { RefInputType, InputSearchProps } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Input, { formatValue } from './input';
 import Button from '../Button';
 import IconSearch from '../../icon/react-icon/IconSearch';

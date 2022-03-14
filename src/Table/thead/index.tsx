@@ -2,7 +2,7 @@ import React, { useMemo, CSSProperties, ReactElement } from 'react';
 import { TheadProps } from '../interface';
 import Checkbox from '../../Checkbox';
 import Column from './column';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import { INTERNAL_EXPAND_KEY, INTERNAL_SELECTION_KEY } from '../constant';
 

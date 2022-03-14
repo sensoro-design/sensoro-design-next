@@ -8,7 +8,7 @@ import React, {
   useEffect,
 } from 'react';
 import { isUndefined, isObject } from '../_util/is';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import IconDown from '../../icon/react-icon/IconDown';
 import IconLoading from '../../icon/react-icon/IconLoading';
@@ -361,13 +361,13 @@ export const SelectView = (props: SelectViewProps, ref) => {
         <InputComponent
           ref={refInput}
           disabled={disabled}
-          className={cs(`${prefixCls}-view-input`, {
+          className={classNames(`${prefixCls}-view-input`, {
             [`${prefixCls}-hidden`]: !needShowInput,
           })}
           autoComplete="off"
           {...inputProps}
         />
-        <span className={cs(`${prefixCls}-view-value`, { [`${prefixCls}-hidden`]: needShowInput })}>
+        <span className={classNames(`${prefixCls}-view-value`, { [`${prefixCls}-hidden`]: needShowInput })}>
           {_inputValue}
         </span>
       </>
@@ -436,7 +436,7 @@ export const SelectView = (props: SelectViewProps, ref) => {
     );
   };
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${isMultiple ? 'multiple' : 'single'}`,
     {
@@ -470,7 +470,7 @@ export const SelectView = (props: SelectViewProps, ref) => {
       ref={refWrapper}
       tabIndex={disabled ? -1 : 0}
       style={style}
-      className={classNames}
+      className={classes}
       // When there is an input box, the keyboard events are handled inside the input box to avoid triggering redundant events in the Chinese input method
       onKeyDown={tryTriggerKeyDown}
       onFocus={(event) => {
@@ -487,14 +487,14 @@ export const SelectView = (props: SelectViewProps, ref) => {
     >
       <div
         title={typeof renderedValue === 'string' ? renderedValue : undefined}
-        className={cs(`${prefixCls}-view`, {
+        className={classNames(`${prefixCls}-view`, {
           [`${prefixCls}-view-with-prefix`]: prefix,
         })}
         onClick={(e) => popupVisible && canFocusInput && e.stopPropagation()}
       >
         {prefix && (
           <div
-            className={cs(`${prefixCls}-prefix`)}
+            className={classNames(`${prefixCls}-prefix`)}
             onMouseDown={(event) => focused && keepFocus(event)}
           >
             {prefix}

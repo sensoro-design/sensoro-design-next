@@ -1,5 +1,5 @@
 import React, { useContext, useRef, isValidElement, useState, useImperativeHandle } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Input from '../Input';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';

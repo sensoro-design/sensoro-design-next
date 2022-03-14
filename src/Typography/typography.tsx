@@ -1,5 +1,5 @@
 import React, { useContext, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames'
 import { ConfigContext } from '../ConfigProvider';
 import { TypographyProps } from './interface';
 
@@ -9,10 +9,10 @@ function Typography(props: TypographyProps, ref) {
 
   const { className, style, children } = props;
 
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
 
   return (
-    <article ref={ref} style={style} className={classNames}>
+    <article ref={ref} style={style} className={classes}>
       {children}
     </article>
   );

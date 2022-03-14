@@ -7,7 +7,7 @@ import Input from './input';
 import Ticks from './ticks';
 import { isFunction, isObject } from '../_util/is';
 import { formatPercent, getIntervalOffset } from './utils';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { TooltipPosition, SliderProps } from './interface';
 import useMergeValue from '../_util/hooks/useMergeValue';

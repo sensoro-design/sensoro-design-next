@@ -12,7 +12,7 @@ import { Enter } from '../../_util/keycode';
 import { ConfigContext } from '../../ConfigProvider';
 import IconClose from '../../../icon/react-icon/IconClose';
 import IconHover from '../../_class/icon-hover';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { isArray } from '../../_util/is';
 
 export interface DateInputProps {

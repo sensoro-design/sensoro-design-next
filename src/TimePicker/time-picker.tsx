@@ -3,7 +3,7 @@ import { Dayjs } from 'dayjs';
 import { TimePickerProps, CalendarValue } from './interface';
 import { padStart } from '../_util/pad';
 import { getColumnsFromFormat } from './util';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { dayjs, getNow, getDayjsValue, toLocal } from '../_util/dayjs';
 import Button from '../Button';

@@ -1,5 +1,5 @@
 import React, { useContext, ReactElement, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Step from './step';
 import { ConfigContext } from '../ConfigProvider';
 import { StepsProps } from './interface';

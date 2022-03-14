@@ -1,5 +1,5 @@
 import React, { CSSProperties, forwardRef, useContext } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import LineProgress from './line-progess';
 import CircleProgress from './circle-progress';

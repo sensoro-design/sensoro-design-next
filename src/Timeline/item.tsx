@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useContext, RefObject } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext, ConfigProviderProps } from '../ConfigProvider';
 import { TimelineItemProps } from './interface';
 

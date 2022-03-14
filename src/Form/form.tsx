@@ -7,7 +7,7 @@ import React, {
   useRef,
 } from 'react';
 import scrollIntoView, { Options as ScrollIntoViewOptions } from 'scroll-into-view-if-needed';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import useForm from './useForm';
 import { FormProps, FormInstance, FieldError, KeyType } from './interface';
 import ConfigProvider, { ConfigContext } from '../ConfigProvider';

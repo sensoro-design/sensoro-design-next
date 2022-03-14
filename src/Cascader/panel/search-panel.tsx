@@ -1,7 +1,7 @@
 import React, { useEffect, useState, CSSProperties, ReactNode, useRef } from 'react';
 import isEqualWith from 'lodash/isEqualWith';
 import scrollIntoView from 'scroll-into-view-if-needed';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import IconCheck from '../../../icon/react-icon/IconCheck';
 import { OptionProps } from '../interface';
 import Node from '../base/node';

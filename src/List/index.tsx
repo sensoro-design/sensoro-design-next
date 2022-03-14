@@ -1,9 +1,9 @@
 import React, { useCallback, useContext, useImperativeHandle, useRef, useState } from 'react';
 import throttle from 'lodash/throttle';
+import classNames from '@pansy/classnames';
 import Pagination, { PaginationProps } from '../Pagination';
 import Spin from '../Spin';
 import Item from './item';
-import cs from '../_util/classNames';
 import Row from '../Grid/row';
 import Col from '../Grid/col';
 import { ConfigContext } from '../ConfigProvider';
@@ -246,7 +246,7 @@ function List<T extends unknown = any>(baseProps: ListProps<T>, ref) {
     const paginationElement = pagination ? (
       <Pagination
         {...paginationProps}
-        className={cs(`${prefixCls}-pagination`, paginationProps && paginationProps.className)}
+        className={classNames(`${prefixCls}-pagination`, paginationProps && paginationProps.className)}
       />
     ) : null;
     const paginationElementInsideFooter = paginationInFooter ? paginationElement : null;
@@ -263,11 +263,11 @@ function List<T extends unknown = any>(baseProps: ListProps<T>, ref) {
           refDom.current = ref;
         }}
         style={wrapperStyle}
-        className={cs(`${prefixCls}-wrapper`, wrapperClassName)}
+        className={classNames(`${prefixCls}-wrapper`, wrapperClassName)}
       >
         <div
           style={style}
-          className={cs(
+          className={classNames(
             prefixCls,
             `${prefixCls}-${size}`,
             {

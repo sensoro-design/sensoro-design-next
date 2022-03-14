@@ -11,7 +11,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ConfigContext } from '../ConfigProvider';
 import Tag from '../Tag';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import InputComponent from '../Input/input-element';
 import IconHover from '../_class/icon-hover';
 import IconClose from '../../icon/react-icon/IconClose';

@@ -13,7 +13,7 @@ import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
 import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
 import IconLoading from '../../icon/react-icon/IconLoading';
 import { NotifyType, StoreChangeInfo } from './store';
-import classNames from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { isSyntheticEvent, schemaValidate, ID_SUFFIX } from './utils';
 
 function isFieldMath(field, fields) {

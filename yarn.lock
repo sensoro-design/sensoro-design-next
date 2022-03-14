@@ -1544,6 +1544,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@pansy/classnames@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pansy/classnames/-/classnames-1.0.1.tgz#194f8b900701f5d88e21fb0daf76b3e4139ba91e"
+  integrity sha512-L+8EGUhuqlZhWz1ojVnTcRk8U958QhHvzCy3KHvmAGm+cRiHaX/CyJd5mEEGSKZhAOa/EpPjqTjafPX6TZNvtw==
+
 "@react-dnd/asap@4.0.0", "@react-dnd/asap@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@react-dnd/asap/-/asap-4.0.0.tgz#b300eeed83e9801f51bd66b0337c9a6f04548651"

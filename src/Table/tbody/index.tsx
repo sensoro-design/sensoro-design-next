@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { TbodyProps } from '../interface';
 import { isArray } from '../../_util/is';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import VirtualList from '../../_class/VirtualList';
 import Tr from './tr';

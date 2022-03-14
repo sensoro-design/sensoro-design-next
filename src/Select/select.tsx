@@ -7,7 +7,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ArrowUp, ArrowDown, Enter, Esc, Tab } from '../_util/keycode';
 import Trigger from '../Trigger';
 import OptGroup from './opt-group';

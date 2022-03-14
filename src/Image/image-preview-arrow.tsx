@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import IconLeft from '../../icon/react-icon/IconLeft';
 import IconRight from '../../icon/react-icon/IconRight';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 
 interface ImagePreviewArrowProps {
   current: number;

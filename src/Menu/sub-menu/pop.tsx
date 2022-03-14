@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { MenuSubMenuProps } from '../interface';
 import IconRight from '../../../icon/react-icon/IconRight';
 import IconDown from '../../../icon/react-icon/IconDown';

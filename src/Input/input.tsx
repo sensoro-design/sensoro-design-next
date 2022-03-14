@@ -7,7 +7,7 @@ import React, {
   useMemo,
 } from 'react';
 import { InputProps, RefInputType } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Search from './search';
 import TextArea from './textarea';
 import Password from './password';

@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isFunction } from '../_util/is';
 import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
 

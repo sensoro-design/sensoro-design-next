@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import usePrevious from '../_util/hooks/usePrevious';
 
 export default function Count({ prefixCls, maxCount, count, className, style }) {

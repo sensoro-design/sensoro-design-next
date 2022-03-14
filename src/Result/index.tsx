@@ -1,5 +1,5 @@
 import React, { forwardRef, useContext, PropsWithChildren } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import IconCheck from '../../icon/react-icon/IconCheck';
 import IconExclamation from '../../icon/react-icon/IconExclamation';

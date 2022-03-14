@@ -11,7 +11,7 @@ import React, {
   useRef,
 } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isArray, isFunction, isUndefined, isObject } from '../_util/is';
 import Grid from '../Grid';
 import { FormItemProps, FieldError, KeyType, FormContextProps, VALIDATE_STATUS } from './interface';

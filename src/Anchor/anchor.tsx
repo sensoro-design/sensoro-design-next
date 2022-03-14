@@ -11,7 +11,7 @@ import compute from 'compute-scroll-into-view';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import { isFunction, isNumber, isWindow } from '../_util/is';
 import { on, off } from '../_util/dom';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import useIsFirstRender from '../_util/hooks/useIsFirstRender';
 import Affix from '../Affix';
 import { ConfigContext } from '../ConfigProvider';
@@ -56,7 +56,7 @@ function Anchor(baseProps: AnchorPropsWithChildren, ref) {
     onChange,
   } = props;
   const prefixCls = getPrefixCls('anchor');
-  const classNames = cs(prefixCls, className, {
+  const classes = classNames(prefixCls, className, {
     [`${prefixCls}-lineless`]: lineless,
   });
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -247,7 +247,7 @@ function Anchor(baseProps: AnchorPropsWithChildren, ref) {
   }, [currentLink, lineless]);
 
   const content = (
-    <div className={classNames} style={style} ref={wrapperRef}>
+    <div className={classes} style={style} ref={wrapperRef}>
       {!lineless && currentLink && (
         <div className={`${prefixCls}-line-slider`} ref={sliderLineRef} />
       )}

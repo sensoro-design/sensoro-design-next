@@ -12,7 +12,7 @@ import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
 import BTween from 'b-tween';
 import { isObject, isArray } from '../_util/is';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Spin, { SpinProps } from '../Spin';
 import { TableProps, ColumnProps, SorterResult, GetRowKeyType } from './interface';
 import Thead from './thead/index';

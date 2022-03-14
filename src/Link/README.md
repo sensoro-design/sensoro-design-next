@@ -41,4 +41,4 @@ nav:
 |icon|显示图标，设置为 `true` 时展示默认图标。|`ReactNode \| boolean`|`-`|-|
 |status|不同状态|`'error' \| 'success' \| 'warning'`|`-`|-|
 |disabled|是否禁用|`boolean`|`-`|-|
-|hoverable|悬浮状态是否有底色|`boolean`|`true`|2.23.0|
+|hoverable|悬浮状态是否有底色|`false`|`true`|-|

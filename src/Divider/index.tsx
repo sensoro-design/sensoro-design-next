@@ -1,5 +1,5 @@
 import React, { useContext, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { DividerProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';

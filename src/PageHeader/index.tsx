@@ -1,5 +1,5 @@
 import React, { useContext, PropsWithChildren, useState, useRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import IconLeft from '../../icon/react-icon/IconLeft';
 import Breadcrumb from '../Breadcrumb';

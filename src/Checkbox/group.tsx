@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react';
 import Checkbox from './checkbox';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import { isArray, isObject } from '../_util/is';

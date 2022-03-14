@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, CSSProperties } from 'react';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import { isArray, isObject, isString } from '../../_util/is';
 import Trigger from '../../Trigger';
 import Radio from '../../Radio/radio';

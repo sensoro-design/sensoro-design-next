@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import useStateWithPromise from '../../_util/hooks/useStateWithPromise';
 import { MenuSubMenuProps } from '../interface';
 import IconDown from '../../../icon/react-icon/IconDown';

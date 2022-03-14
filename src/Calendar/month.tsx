@@ -4,7 +4,7 @@ import { CalendarProps } from './interface';
 import { dayjs, methods } from '../_util/dayjs';
 import { newArray } from '../_util/constant';
 import { padStart } from '../_util/pad';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import WeekList from './week-list';
 import useCellClassName from './hooks/useCellClassName';
 

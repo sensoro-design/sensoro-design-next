@@ -1,6 +1,6 @@
 import React, { Component, DragEvent } from 'react';
 import isEqualWith from 'lodash/isEqualWith';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Node from './node';
 import NodeList from './node-list';
 import { isEmptyObject, isFunction } from '../_util/is';

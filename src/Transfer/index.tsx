@@ -1,7 +1,7 @@
 import React, { useContext, useMemo } from 'react';
 import { ConfigContext } from '../ConfigProvider';
 import { TransferProps, TransferListProps, TransferItem, TransferListType } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Button from '../Button';
 import TransferList from './list';
 import IconLeft from '../../icon/react-icon/IconLeft';

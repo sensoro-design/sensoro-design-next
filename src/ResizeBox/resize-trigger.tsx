@@ -1,5 +1,5 @@
 import React, { useContext, CSSProperties, ReactNode, PropsWithChildren } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import ResizeObserver from '../_util/resizeObserver';
 import { ConfigContext } from '../ConfigProvider';
 import IconDragDotVertical from '../../icon/react-icon/IconDragDotVertical';

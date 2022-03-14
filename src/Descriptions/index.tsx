@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef, Fragment } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import ResponsiveObserve, { Breakpoint, responsiveArray } from '../_util/responsiveObserve';
 import { isObject, isArray, isNumber } from '../_util/is';

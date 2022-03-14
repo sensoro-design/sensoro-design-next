@@ -1,5 +1,5 @@
 import React, { forwardRef, useContext, PropsWithChildren } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isObject } from '../_util/is';
 import { SkeletonProps } from './interface';
 import Text from './text';

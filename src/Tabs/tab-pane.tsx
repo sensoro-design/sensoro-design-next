@@ -1,5 +1,5 @@
 import React, { useRef, useContext, PropsWithChildren, ForwardRefExoticComponent } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import { TabPaneProps } from './interface';

@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import { EditContentProps } from './interface';
 import Input from '../Input';
 import mergedToString from '../_util/mergedToString';
 
 export default function EditContent(props: EditContentProps) {
   const { prefixCls, children, setEditing, editableConfig } = props;
-  const className = cs(`${prefixCls}-typography`, `${prefixCls}-edit-content`);
+  const classes = classNames(`${prefixCls}-typography`, `${prefixCls}-edit-content`);
 
   const str = mergedToString(children);
 
@@ -34,7 +34,7 @@ export default function EditContent(props: EditContentProps) {
   }
 
   return (
-    <div className={className}>
+    <div className={classes}>
       <Input.TextArea
         onBlur={onBlur}
         ref={input}

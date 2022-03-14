@@ -2,7 +2,7 @@ import React, { forwardRef, ReactElement } from 'react';
 import Checkbox from '../../Checkbox';
 import Radio from '../../Radio';
 import { isString, isArray } from '../../_util/is';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import IconPlus from '../../../icon/react-icon/IconPlus';
 import IconMinus from '../../../icon/react-icon/IconMinus';

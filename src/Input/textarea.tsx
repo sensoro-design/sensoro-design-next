@@ -7,7 +7,7 @@ import React, {
   useMemo,
 } from 'react';
 import { TextAreaProps } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { Enter } from '../_util/keycode';
 import autoSizeTextAreaHeight from './autoSizeTextAreaHeight';
 import omit from '../_util/omit';

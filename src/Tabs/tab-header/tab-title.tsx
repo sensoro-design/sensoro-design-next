@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import IconClose from '../../../icon/react-icon/IconClose';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 import IconHover from '../../_class/icon-hover';
 import { isFunction } from '../../_util/is';
 

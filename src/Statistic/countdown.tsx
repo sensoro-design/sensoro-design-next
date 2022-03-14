@@ -1,7 +1,7 @@
 import React, { forwardRef, useState, useEffect, useContext, useRef } from 'react';
 import dayjs, { Dayjs } from 'dayjs';
 import { getDayjsValue, getNow } from '../_util/dayjs';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { getDateString } from './util';
 import { ConfigContext } from '../ConfigProvider';
 import { CountdownProps } from './interface';

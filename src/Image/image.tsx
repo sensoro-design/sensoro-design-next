@@ -1,5 +1,5 @@
 import React, { useContext, ImgHTMLAttributes, useEffect, useMemo, LegacyRef, useRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import IconLoading from '../../icon/react-icon/IconLoading';
 import IconImageClose from '../../icon/react-icon/IconImageClose';

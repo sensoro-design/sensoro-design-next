@@ -3,7 +3,7 @@ import IconLeft from '../../icon/react-icon/IconLeft';
 import IconRight from '../../icon/react-icon/IconRight';
 import IconUp from '../../icon/react-icon/IconUp';
 import IconDown from '../../icon/react-icon/IconDown';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { CarouselArrowProps } from './interface';
 

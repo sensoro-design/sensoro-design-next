@@ -2,7 +2,7 @@ import React, { useMemo, useContext } from 'react';
 import merge from 'lodash/merge';
 import { Dayjs } from 'dayjs';
 import { DatePickerProps, DisabledRangeTimeFunc, ModeType, PrivateCType } from '../../interface';
-import cs from '../../../_util/classNames';
+import cs from '@pansy/classnames';
 import { isObject } from '../../../_util/is';
 import { getTimeFormat, methods, getDayjsValue } from '../../../_util/dayjs';
 import { ConfigContext } from '../../../ConfigProvider';

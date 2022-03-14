@@ -6,7 +6,7 @@ import React, {
   useImperativeHandle,
   PropsWithChildren,
 } from 'react';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import UploadList from './list/index';
 import Uploader from './uploader';
 import { isFunction, isArray, isNumber } from '../_util/is';
@@ -205,7 +205,7 @@ const Upload: React.ForwardRefRenderFunction<UploadInstance, PropsWithChildren<U
         'onExceedLimit',
         'beforeUpload',
       ])}
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-type-${listType}`]: listType,

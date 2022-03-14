@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TransferItemProps } from './interface';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import IconHover from '../_class/icon-hover';
 import Checkbox from '../Checkbox';
 import IconClose from '../../icon/react-icon/IconClose';

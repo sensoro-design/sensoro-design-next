@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useContext, ReactElement, RefObject } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Item from './item';
 import { ConfigContext } from '../ConfigProvider';
 import Spin from '../Spin';

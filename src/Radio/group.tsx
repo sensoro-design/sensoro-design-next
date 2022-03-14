@@ -1,5 +1,5 @@
 import React, { createContext, useContext, PropsWithChildren } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import { isArray, isObject } from '../_util/is';
 import Radio from './radio';
 import { ConfigContext } from '../ConfigProvider';

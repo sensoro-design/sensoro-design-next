@@ -4,7 +4,7 @@ import IconRight from '../../../icon/react-icon/IconRight';
 import IconUp from '../../../icon/react-icon/IconUp';
 import IconDown from '../../../icon/react-icon/IconDown';
 import IconHover from '../../_class/icon-hover';
-import cs from '../../_util/classNames';
+import cs from '@pansy/classnames';
 
 const TabNavIcon = (props) => {
   const {

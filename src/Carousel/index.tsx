@@ -7,7 +7,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import CarouselIndicator from './indicator';
 import CarouselArrow from './arrow';
 import { ConfigContext } from '../ConfigProvider';

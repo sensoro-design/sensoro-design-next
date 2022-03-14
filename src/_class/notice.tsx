@@ -1,11 +1,11 @@
 import React, { Component, ReactNode, CSSProperties } from 'react';
+import classNames from '@pansy/classnames';
 import IconClose from '../../icon/react-icon/IconClose';
 import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
 import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
 import IconInfoCircleFill from '../../icon/react-icon/IconInfoCircleFill';
 import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
 import IconLoading from '../../icon/react-icon/IconLoading';
-import cs from '../_util/classNames';
 import IconHover from '../_class/icon-hover';
 
 export interface NoticeProps {
@@ -127,7 +127,7 @@ class Notice extends Component<NoticeProps, {}> {
       closable,
       noticeType,
     } = this.props;
-    const classNames = cs(
+    const classes = classNames(
       prefixCls,
       `${prefixCls}-${type}`,
       {
@@ -151,7 +151,7 @@ class Notice extends Component<NoticeProps, {}> {
           onMouseEnter={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
         >
-          <div className={classNames} style={style}>
+          <div className={classes} style={style}>
             {shouldRenderIcon && this.renderIcon()}
             <span className={`${prefixCls}-content`}>{content}</span>
             {_closable && (
@@ -171,7 +171,7 @@ class Notice extends Component<NoticeProps, {}> {
     if (noticeType === 'notification') {
       return (
         <div onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
-          <div className={classNames} style={style}>
+          <div className={classes} style={style}>
             {shouldRenderIcon && <div className={`${prefixCls}-left`}>{this.renderIcon()}</div>}
             <div className={`${prefixCls}-right`}>
               {title && <div className={`${prefixCls}-title`}>{title}</div>}

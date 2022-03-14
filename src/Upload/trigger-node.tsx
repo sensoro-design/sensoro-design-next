@@ -1,5 +1,5 @@
 import React, { useState, useContext, PropsWithChildren, useEffect } from 'react';
-import cs from '../_util/classNames';
+import classNames from '@pansy/classnames';
 import Button from '../Button';
 import IconUpload from '../../icon/react-icon/IconUpload';
 import IconPlus from '../../icon/react-icon/IconPlus';
@@ -65,7 +65,7 @@ const TriggerNode = (props: PropsWithChildren<TriggerProps>) => {
       }}
     >
       {React.isValidElement(children) ? (
-        <div className={cs({ [`${prefixCls}-trigger-custom-active`]: isDragging })}>
+        <div className={classNames({ [`${prefixCls}-trigger-custom-active`]: isDragging })}>
           {React.cloneElement(children, nodeProps)}
         </div>
       ) : listType === 'picture-card' ? (
@@ -78,7 +78,7 @@ const TriggerNode = (props: PropsWithChildren<TriggerProps>) => {
         </div>
       ) : drag ? (
         <div
-          className={cs(`${prefixCls}-trigger-drag`, {
+          className={classNames(`${prefixCls}-trigger-drag`, {
             [`${prefixCls}-trigger-drag-active`]: isDragging,
           })}
         >

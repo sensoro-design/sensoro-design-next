@@ -1,5 +1,5 @@
 import React, { ReactNode, useContext, PropsWithChildren, forwardRef } from 'react';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import Item from './item';
 import { ConfigContext } from '../ConfigProvider';
 import Menu from '../Menu';

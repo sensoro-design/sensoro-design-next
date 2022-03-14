@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import debounce from 'lodash/debounce';
 import { scrollTo } from './util';
-import cs from '../_util/classNames';
+import cs from '@pansy/classnames';
 import usePrevious from '../_util/hooks/usePrevious';
 
 type ListItem = {

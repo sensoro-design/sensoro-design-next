@@ -3,7 +3,7 @@ import merge from 'lodash/merge';
 import { Dayjs } from 'dayjs';
 import { YearPickerProps } from '../../interface';
 import { dayjs, getNow } from '../../../_util/dayjs';
-import cs from '../../../_util/classNames';
+import cs from '@pansy/classnames';
 import { ConfigContext } from '../../../ConfigProvider';
 import Header from '../header';
 import Body from '../body';
