@@ -197,5 +197,8 @@ export { default as Upload } from './Upload';
 export type { MentionsProps } from './Mentions/interface';
 export { default as Mentions } from './Mentions';
 
+export type { OperationsProps } from './Operations/interface';
+export { default as Operations } from './Operations';
+
 export type { ImageProps, ImagePreviewProps, ImagePreviewActionProps, ImagePreviewGroupProps } from './Image/interface';
 export { default as Image } from './Image';
