@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { ConfigContext } from '../ConfigProvider';
+import React from 'react';
 import Space from '../Space';
 import Button from '../Button';
 import Link from '../Link';
@@ -20,8 +19,6 @@ const defaultProps: OperationsProps = {
 };
 
 export const Operations: React.FC<OperationsProps> = (baseProps) => {
-  const { getPrefixCls, componentConfig } = useContext(ConfigContext);
-
   const {
     maxCount,
     space,
@@ -34,8 +31,6 @@ export const Operations: React.FC<OperationsProps> = (baseProps) => {
 
   let baseOptions: Option[] = [];
   let moreOptions: Option[] = [];
-
-  const prefixCls = getPrefixCls('operations');
 
   if (options.length <= maxCount) {
     baseOptions = options;
@@ -57,6 +52,7 @@ export const Operations: React.FC<OperationsProps> = (baseProps) => {
           icon={option.icon}
           type={index == 0 ? 'primary' : option.type}
           key={key}
+          // @ts-ignore
           icon={option.icon}
           status={option.status === 'error' ? 'danger' : option.status}
           disabled={disabled || option.disabled}
@@ -73,6 +69,7 @@ export const Operations: React.FC<OperationsProps> = (baseProps) => {
       <Link
         icon={option.icon}
         key={key}
+        // @ts-ignore
         icon={option.icon}
         status={option.status}
         disabled={disabled || option.disabled}
