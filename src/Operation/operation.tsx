@@ -9,16 +9,16 @@ import IconDown from '../../icon/react-icon/IconDown';
 
 import useMergeProps from '../_util/hooks/useMergeProps';
 
-import type { OperationsProps, Option } from './interface';
+import type { OperationProps, Option } from './interface';
 
-const defaultProps: OperationsProps = {
+const defaultProps: OperationProps = {
   space: 12,
   maxCount: 3,
   type: 'button',
   position: 'left'
 };
 
-export const Operations: React.FC<OperationsProps> = (baseProps) => {
+export const Operation: React.FC<OperationProps> = (baseProps) => {
   const {
     maxCount,
     space,
@@ -27,7 +27,7 @@ export const Operations: React.FC<OperationsProps> = (baseProps) => {
     position,
     disabled,
     onClick
-  } = useMergeProps<OperationsProps>(baseProps, defaultProps);
+  } = useMergeProps<OperationProps>(baseProps, defaultProps);
 
   let baseOptions: Option[] = [];
   let moreOptions: Option[] = [];

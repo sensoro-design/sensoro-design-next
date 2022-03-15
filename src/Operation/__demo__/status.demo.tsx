@@ -3,7 +3,7 @@
  * desc: 状态分为 警告，危险，成功 三种
  */
 import React from 'react';
-import { Operations, Space } from '@sensoro-design/react';
+import { Operation, Space } from '@sensoro-design/react';
 
 const options = [
   { label: '主操作',value: 'option1' },
@@ -15,17 +15,17 @@ const options = [
 export default () => {
   return (
     <Space direction="vertical">
-      <Operations
+      <Operation
         options={options.slice(0, 3)}
       />
-      <Operations
+      <Operation
         options={options}
       />
-      <Operations
+      <Operation
         options={options.slice(0, 3)}
         type="link"
       />
-      <Operations
+      <Operation
         options={options}
         type="link"
       />

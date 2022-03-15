@@ -11,9 +11,9 @@ export interface Option {
 }
 
 /**
- * @title Operations
+ * @title Operation
  */
-export interface OperationsProps {
+export interface OperationProps {
   /**
    * 左对齐主要按钮在左边，右对齐主要按钮在右边
    * @default 'left'

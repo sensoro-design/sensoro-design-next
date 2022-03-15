@@ -4,7 +4,7 @@ nav:
   path: /components
 ---
 
-# 操作项 Operations
+# 操作项 Operation
 
 操作区命令过多时，可将部分操作收敛到向下展开的浮层容器中。
 

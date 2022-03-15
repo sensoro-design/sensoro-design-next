@@ -3,7 +3,7 @@
  * desc: 通过在操作项配置 icon 字段
  */
 import React from 'react';
-import { Operations, Space } from '@sensoro-design/react';
+import { Operation, Space } from '@sensoro-design/react';
 import { IconPlus, IconUpload } from '@sensoro-design/react/icon';
 
 const options = [
@@ -16,17 +16,17 @@ const options = [
 export default () => {
   return (
     <Space direction="vertical">
-      <Operations
+      <Operation
         options={options.slice(0, 3)}
       />
-      <Operations
+      <Operation
         options={options}
       />
-      <Operations
+      <Operation
         options={options.slice(0, 3)}
         type="link"
       />
-      <Operations
+      <Operation
         options={options}
         type="link"
       />

@@ -3,12 +3,12 @@
  * desc: 链接示例
  */
 import React from 'react';
-import { Operations, Space } from '@sensoro-design/react';
+import { Operation, Space } from '@sensoro-design/react';
 
 export default () => {
   return (
     <Space direction="vertical">
-      <Operations
+      <Operation
         options={[
           { label: '主操作' },
           { label: '次要操作1' },
@@ -17,7 +17,7 @@ export default () => {
         type="link"
       />
 
-      <Operations
+      <Operation
         options={[
           { label: '主操作', value: 'option1' },
           { label: '次要操作1', value: 'option2' },
