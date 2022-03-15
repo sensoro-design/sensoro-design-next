@@ -7,7 +7,7 @@ import { IconEdit } from '@sensoro-design/react/icon';
 
 export default () => {
   return (
-    <Space size={0} direction="vertical">
+    <Space direction="vertical">
       <Space size="large">
         <Link href="#" icon>
           Hyperlinks

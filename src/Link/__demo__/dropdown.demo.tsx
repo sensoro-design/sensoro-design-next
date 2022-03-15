@@ -2,7 +2,7 @@
  * title: 配合dropdown使用
  * desc: 配合下拉菜单实现带下拉选择的链接。
  */
-import { Link, Dropdown, Menu } from '@sensoro-design/react';
+import { Link, Dropdown, Menu, Space } from '@sensoro-design/react';
 import { IconDown } from '@sensoro-design/react/icon';
 
 const Droplist = (
@@ -16,9 +16,9 @@ const Droplist = (
 
 export default () => {
   return (
-    <div>
+    <Space size="large">
       <Dropdown droplist={Droplist} position='bl'>
-        <Link style={{ marginRight: 40 }}>
+        <Link>
           City
           <IconDown style={{ fontSize: 12, marginLeft: 6 }} />
         </Link>
@@ -30,6 +30,6 @@ export default () => {
           <IconDown style={{ fontSize: 12, marginLeft: 6 }} />
         </Link>
       </Dropdown>
-    </div>
+    </Space>
   )
 }

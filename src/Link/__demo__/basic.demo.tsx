@@ -6,7 +6,7 @@ import { Link, Space } from '@sensoro-design/react';
 
 export default () => {
   return (
-    <Space size={40}>
+    <Space size="medium">
       <Link href="#"> Link </Link>
       <Link href="#" disabled> Link </Link>
     </Space>
