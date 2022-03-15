@@ -122,6 +122,7 @@ export default {
         children: [
           'Breadcrumb/README.md',
           'Dropdown/README.md',
+          'Operations/README.md',
           'Menu/README.md',
           'PageHeader/README.md',
           'Pagination/README.md',
