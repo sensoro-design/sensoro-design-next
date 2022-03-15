@@ -2,7 +2,7 @@ import React from 'react';
 import Space from '../Space';
 import Button from '../Button';
 import Link from '../Link';
-import Menu from '../menu';
+import Menu from '../Menu';
 import Dropdown from '../Dropdown';
 import IconMoreVertical from '../../icon/react-icon/IconMoreVertical';
 import IconDown from '../../icon/react-icon/IconDown';
