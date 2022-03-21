@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, ReactNode, forwardRef } from 'react';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import IconLoading from './icon-loading';
 import Group from './group';
 import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
