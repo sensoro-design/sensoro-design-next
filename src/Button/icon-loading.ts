@@ -1,5 +1,6 @@
 import _extends from "@babel/runtime/helpers/extends";
 import _defineProperty from "@babel/runtime/helpers/defineProperty";
+import uniqueId from "lodash/uniqueId";
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
@@ -27,11 +28,12 @@ function IconLoadingComponent(iconProps, ref) {
     props.className = "".concat(props.className, " ").concat(prefixCls, "-icon-loading");
   }
 
+  const id = uniqueId();
+
   delete props.spin;
   delete props.isIcon;
   return /*#__PURE__*/React.createElement(
     "svg", _extends({
-      fill: "none",
       viewBox: "0 0 1024 1024",
       width: "1em",
       height: "1em"
@@ -41,7 +43,7 @@ function IconLoadingComponent(iconProps, ref) {
       {},
       React.createElement('linearGradient',
         {
-          id:"left",
+          id: `linearGradientLeft-${id}`,
           x1: "100%",
           y1:"80%",
           x2: "100%",
@@ -56,7 +58,11 @@ function IconLoadingComponent(iconProps, ref) {
       )),
       React.createElement('linearGradient',
         {
-          id: "right", x1: "0%", y1: "0%", x2: "0%", y2: "80%"
+          id: `linearGradientRight-${id}`,
+          x1: "0%",
+          y1: "0%",
+          x2: "0%",
+          y2: "80%"
         },
         React.createElement('stop', {
           offset:"0%", stopColor:"currentColor", stopOpacity:"0"
@@ -67,11 +73,11 @@ function IconLoadingComponent(iconProps, ref) {
       ))
     ),
     React.createElement("path", {
-      fill: "url(#left)",
+      fill: `url(#linearGradientLeft-${id})`,
       d: "M512.00000004 64v76.032a369.92 369.92 0 0 0-263.04 108.864A370.432 370.432 0 0 0 140.03200004 512a369.92 369.92 0 0 0 108.928 263.04A370.432 370.432 0 0 0 512.00000004 883.968V960A448 448 0 0 1 512.00000004 64z"
     }),
     React.createElement("path", {
-      fill: "url(#right)",
+      fill: `url(#linearGradientRight-${id})`,
       d: "M959.99999996 512a448 448 0 0 1-432.64 447.744L511.99999996 960v-76.032c50.304 0 99.008-9.792 144.64-29.184a372.032 372.032 0 0 0 118.4-79.808A369.088 369.088 0 0 0 883.96799996 512L959.99999996 512.064z"
     })
   );
