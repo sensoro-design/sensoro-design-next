@@ -8,22 +8,22 @@ import { Button, Space } from '@sensoro-design/react';
 export default () => {
   return (
     <Space size="large">
-    <Button type="primary">
-      Primary
-    </Button>
-    <Button type="secondary">
-      Secondary
-    </Button>
-    <Button type="dashed" bordered={false}>
-      Dashed Hide Bordered
-    </Button>
-    <Button type="dashed">
-      Dashed
-    </Button>
-    <Button type="outline">Outline</Button>
-    <Button type="text">
-      Text
-    </Button>
-  </Space>
+      <Button type="primary">
+        Primary
+      </Button>
+      <Button type="secondary">
+        Secondary
+      </Button>
+      <Button type="dashed" bordered={false}>
+        Dashed Hide Bordered
+      </Button>
+      <Button type="dashed">
+        Dashed
+      </Button>
+      <Button type="outline">Outline</Button>
+      <Button type="text">
+        Text
+      </Button>
+    </Space>
   )
 }

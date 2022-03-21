@@ -9,8 +9,10 @@ export default () => {
   return (
     <Space size="large">
       <Button type="primary" icon={<IconPlus />} />
-      <Button type="primary" icon={<IconDelete />}> Delete</Button>
-      <Button type="secondary" icon={<IconDelete />}> Delete</Button>
+      <Button type="primary" icon={<IconDelete />}> Primary </Button>
+      <Button type="secondary" icon={<IconDelete />}> Secondary </Button>
+      <Button type="dashed" bordered={false} icon={<IconDelete />}> Dashed </Button>
+      <Button type="dashed" icon={<IconDelete />}> Dashed </Button>
     </Space>
   )
 }
