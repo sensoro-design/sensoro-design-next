@@ -5,7 +5,8 @@
  */
 import { useRef } from 'react';
 import { Table, Input } from '@sensoro-design/react';
-import { IconSearch } from '@sensoro-design/react/icon';
+
+import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 
 const data = [
   {
@@ -51,7 +52,7 @@ export default () => {
     {
       title: 'Name',
       dataIndex: 'name',
-      filterIcon: <IconSearch />,
+      filterIcon: <SearchOutlined />,
       filterDropdown: ({ filterKeys, setFilterKeys, confirm }) => {
         return (
           <div className="arco-table-custom-filter">

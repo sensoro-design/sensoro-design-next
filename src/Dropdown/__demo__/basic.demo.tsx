@@ -3,7 +3,8 @@
  * desc: 基础下拉菜单。
  */
 import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+
 import './styles.less';
 
 const dropList = (
@@ -19,13 +20,13 @@ export default() => {
     <Space className="dropdown-demo">
       <Dropdown droplist={dropList} position="bl">
         <Button type="text">
-          Hover me <IconDown />
+          Hover me <DownOutlined />
         </Button>
       </Dropdown>
 
       <Dropdown droplist={dropList} position="bl" disabled>
         <Button type="text">
-          Hover me <IconDown />
+          Hover me <DownOutlined />
         </Button>
       </Dropdown>
     </Space>

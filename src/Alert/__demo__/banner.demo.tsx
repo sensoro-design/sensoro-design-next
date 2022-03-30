@@ -6,7 +6,7 @@ import { Alert } from '@sensoro-design/react';
 
 export default () => {
   return (
-    <div>
+    <>
       <Alert
         banner
         type="info"
@@ -31,6 +31,6 @@ export default () => {
         style={{ marginBottom: 20 }}
       />
       <Alert banner type="success" showIcon title="Success text" style={{ marginBottom: 20 }} />
-    </div>
+    </>
   )
 }

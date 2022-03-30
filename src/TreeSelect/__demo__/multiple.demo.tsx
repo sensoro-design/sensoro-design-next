@@ -1,16 +1,15 @@
-
 /**
  * title: 多选
  * desc: 多选
  */
 import React from 'react';
 import { TreeSelect, Space } from '@sensoro-design/react';
-import { IconCalendar } from '@sensoro-design/react/icon';
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
 
 const treeData = [
   {
     key: 'node1',
-    icon: <IconCalendar />,
+    icon: <CalendarOutlined />,
     title: 'Trunk',
     children: [
       {
@@ -22,7 +21,7 @@ const treeData = [
   {
     key: 'node3',
     title: 'Trunk2',
-    icon: <IconCalendar />,
+    icon: <CalendarOutlined />,
     children: [
       {
         key: 'node4',

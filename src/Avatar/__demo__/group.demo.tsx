@@ -1,4 +1,3 @@
-
 /**
  * title: 头像组
  * desc: 使用 `Avatar.Group` 可以使用头像组功能，可通过 `size` 指定头像的大小。

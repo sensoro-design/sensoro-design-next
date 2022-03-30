@@ -1,10 +1,10 @@
-
 /**
  * title: 文本内容
  * desc: 设置 `text`，可设置自定义提示内容。
  */
 import { Badge, Avatar, Space } from '@sensoro-design/react';
-import { IconUser } from '@sensoro-design/react/icon';
+
+import UserOutlined from '@sensoro-design/icons/UserOutlined';
 
 export default () => {
   return (
@@ -12,14 +12,14 @@ export default () => {
       <Badge text="NEW">
         <Avatar shape="square">
           <span>
-            <IconUser />
+            <UserOutlined />
           </span>
         </Avatar>
       </Badge>
       <Badge text="HOT">
         <Avatar shape="square">
           <span>
-            <IconUser />
+            <UserOutlined />
           </span>
         </Avatar>
       </Badge>

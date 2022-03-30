@@ -6,6 +6,9 @@
 import React from 'react';
 import { Comment, Avatar  } from '@sensoro-design/react';
 import { IconHeartFill, IconMessage, IconStarFill, IconHeart, IconStar } from '@sensoro-design/react/icon';
+
+import StarOutlined from '@sensoro-design/icons/StarOutlined';
+
 import './styles.less';
 
 export default () => {

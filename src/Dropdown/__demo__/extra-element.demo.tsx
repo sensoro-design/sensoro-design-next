@@ -3,7 +3,7 @@
  * desc: 设置 Menu 禁用项和插入分割线。
  */
 import { Dropdown, Menu, Button, Divider } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const dropList = (
   <Menu>
@@ -22,7 +22,7 @@ export default () => {
     <div className="dropdown-demo">
       <Dropdown droplist={dropList} position="br">
         <Button type="text">
-          Hover<IconDown />
+          Hover<DownOutlined />
         </Button>
       </Dropdown>
     </div>

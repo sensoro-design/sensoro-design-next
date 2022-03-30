@@ -3,7 +3,8 @@
  * desc: 通过鼠标或键盘输入内容。
  */
 import { Input, Grid, Select, DatePicker } from '@sensoro-design/react';
-import { IconMinus } from '@sensoro-design/react/icon';
+
+import MinusOutlined from '@sensoro-design/icons/MinusOutlined';
 
 const InputSearch = Input.Search;
 
@@ -60,7 +61,7 @@ export default () => {
               value="010"
               readOnly
             />
-            <IconMinus style={{ color: 'var(--color-text-1)' }} />
+            <MinusOutlined style={{ color: 'var(--color-text-1)' }} />
             <Input
               style={{ width: '60%', marginLeft: 8 }}
               defaultValue="8899887"

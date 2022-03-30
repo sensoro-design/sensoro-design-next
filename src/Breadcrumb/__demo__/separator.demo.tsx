@@ -4,7 +4,8 @@
  * desc: 自定义分隔符。
  */
 import { Breadcrumb, Space } from '@sensoro-design/react';
-import { IconRight } from '@sensoro-design/react/icon';
+
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 
 const BreadcrumbItem = Breadcrumb.Item;
 
@@ -16,7 +17,7 @@ export default () => {
         <BreadcrumbItem>Channel</BreadcrumbItem>
         <BreadcrumbItem>News</BreadcrumbItem>
       </Breadcrumb>
-      <Breadcrumb separator={<IconRight />}>
+      <Breadcrumb separator={<RightOutlined />}>
         <BreadcrumbItem>Home</BreadcrumbItem>
         <BreadcrumbItem>Channel</BreadcrumbItem>
         <BreadcrumbItem>News</BreadcrumbItem>

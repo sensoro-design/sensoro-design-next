@@ -1,11 +1,10 @@
-
 /**
  * title: 动态增减嵌套类型的表单项
  * desc: 通过`Form.List`管理数组类型的表单结构。可以通过对 `field` 进行一些处理，实现动态增减复杂类型的表单项
  */
 import { useRef } from 'react';
 import { Form, Space, Input, Button } from '@sensoro-design/react';
-import { IconDelete } from '@sensoro-design/react/icon';
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
 
 export default () => {
   const formRef = useRef();
@@ -46,7 +45,7 @@ export default () => {
                         >
                           <Input />
                         </Form.Item>
-                        <Button icon={<IconDelete />} shape="circle" status="danger" onClick={() => remove(index)}>
+                        <Button icon={<DeleteOutlined />} shape="circle" status="danger" onClick={() => remove(index)}>
                         </Button>
                       </Space>
                     </Form.Item>

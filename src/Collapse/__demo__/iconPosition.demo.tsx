@@ -5,7 +5,9 @@
  */
 import React from 'react';
 import { Collapse, Radio, Grid, Typography } from '@sensoro-design/react';
-import { IconInfoCircle, IconSettings } from '@sensoro-design/react/icon';
+
+import InfoCircleOutlined from '@sensoro-design/icons/InfoCircleOutlined';
+import SettingOutlined from '@sensoro-design/icons/SettingOutlined';
 
 const CollapseItem = Collapse.Item;
 
@@ -35,12 +37,12 @@ export default () => {
         <CollapseItem
           header="Beijing Toutiao Technology Co., Ltd."
           name="1"
-          extra={<IconInfoCircle />}
+          extra={<InfoCircleOutlined />}
         >
           Beijing Toutiao Technology Co., Ltd.
         </CollapseItem>
 
-        <CollapseItem header="Introduce" name="2" extra={<IconSettings />}>
+        <CollapseItem header="Introduce" name="2" extra={<SettingOutlined />}>
           ByteDance's core product, Toutiao ("Headlines"), is a content platform in China and around
           the world. Toutiao started out as a news recommendation engine and gradually evolved into
           a platform delivering content in various formats, such as texts, images,

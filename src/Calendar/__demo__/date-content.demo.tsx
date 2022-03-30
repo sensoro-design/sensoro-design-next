@@ -1,11 +1,16 @@
-
 /**
  * title: 日历内容定制
  * desc: 使用 `dateInnerContent` 可以将自定义元素追加到日历单元格中，可以用来实现日历待办事项等展示。
  */
+import React from 'react';
 import { Calendar, Badge } from '@sensoro-design/react';
 
-const badgeStyle = { width: '100%', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' };
+const badgeStyle: React.CSSProperties = {
+  width: '100%',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis'
+};
 
 export default () => {
   return (

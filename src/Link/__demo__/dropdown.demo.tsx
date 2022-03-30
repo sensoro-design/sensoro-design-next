@@ -3,7 +3,7 @@
  * desc: 配合下拉菜单实现带下拉选择的链接。
  */
 import { Link, Dropdown, Menu, Space } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined'
 
 const Droplist = (
   <Menu>
@@ -20,14 +20,14 @@ export default () => {
       <Dropdown droplist={Droplist} position='bl'>
         <Link>
           City
-          <IconDown style={{ fontSize: 12, marginLeft: 6 }} />
+          <DownOutlined style={{ fontSize: 12, marginLeft: 6 }} />
         </Link>
       </Dropdown>
 
       <Dropdown droplist={Droplist} position='bl' triggerProps={{ disabled: true }}>
         <Link disabled>
           City
-          <IconDown style={{ fontSize: 12, marginLeft: 6 }} />
+          <DownOutlined style={{ fontSize: 12, marginLeft: 6 }} />
         </Link>
       </Dropdown>
     </Space>

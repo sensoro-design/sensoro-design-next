@@ -9,7 +9,7 @@ export default () => {
     <div>
       <Alert
         content="Here is an example text"
-        action={<Button size="mini"type="primary">Detail</Button>}
+        action={<Button size="mini" type="primary">Detail</Button>}
         closable
       />
       <Alert

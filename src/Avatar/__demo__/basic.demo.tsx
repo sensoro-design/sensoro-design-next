@@ -1,19 +1,16 @@
-
 /**
  * title: 基础用法
  * desc: 头像的基础使用。如果头像是文字的话，会自动调节字体大小，来适应头像框。
  */
-import { Avatar, Typography, Space } from '@sensoro-design/react';
-import { IconUser } from '@sensoro-design/react/icon';
-
-const { Text } = Typography;
+import { Avatar, Space } from '@sensoro-design/react';
+import UserOutlined from '@sensoro-design/icons/UserOutlined';
 
 export default () => {
   return (
     <Space size="large">
       <Avatar>A</Avatar>
       <Avatar style={{ backgroundColor: '#3370ff' }}>
-        <IconUser />
+        <UserOutlined />
       </Avatar>
       <Avatar style={{ backgroundColor: '#14a9f8' }}>Arco</Avatar>
       <Avatar style={{ backgroundColor: '#00d0b6' }}>Design</Avatar>

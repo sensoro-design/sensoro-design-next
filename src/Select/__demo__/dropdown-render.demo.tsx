@@ -4,7 +4,8 @@
  */
 import { useState } from 'react';
 import { Select, Divider, Input, Button } from '@sensoro-design/react';
-import { IconPlus } from '@sensoro-design/react/icon';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
 
 const Option = Select.Option;
 
@@ -40,7 +41,7 @@ export default () => {
               size="mini"
               onClick={addItem}
             >
-              <IconPlus />
+              <PlusOutlined />
               Add item
             </Button>
           </div>

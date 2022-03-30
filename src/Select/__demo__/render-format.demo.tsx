@@ -5,7 +5,9 @@
  * **注意：在如远程加载选项数据的场景下，value 中对应的选项可能在某些时刻并不存在，需要判断若 `option` 不存在则返回 `value` 作为显示的内容。**
  */
 import { Select, Space } from '@sensoro-design/react';
-import { IconStar, IconDelete } from '@sensoro-design/react/icon';
+
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
+import StarOutlined from '@sensoro-design/icons/StarOutlined';
 
 const Option = Select.Option;
 
@@ -19,7 +21,7 @@ export default () => {
         renderFormat={(option, value) => {
           return option ? (
             <span>
-              <IconStar style={{ color: '#f7ba1e' }} />
+              <StarOutlined style={{ color: '#f7ba1e' }} />
               {` ${option.value} `}
             </span>
           ) : (
@@ -38,13 +40,13 @@ export default () => {
         placeholder="Select city"
         style={{ width: 345 }}
         mode="multiple"
-        removeIcon={<IconDelete />}
+        removeIcon={<DeleteOutlined />}
         defaultValue={['Beijing', 'Shenzhen']}
         renderFormat={(option, value) => {
           // When labelInValue is true, the value is an object
           return option ? (
             <span>
-              <IconStar style={{ color: '#f7ba1e' }} />
+              <StarOutlined style={{ color: '#f7ba1e' }} />
               {` ${option.value} City `}
             </span>
           ) : (

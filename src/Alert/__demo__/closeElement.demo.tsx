@@ -3,7 +3,7 @@
  * desc: Custom close element
  */
 import { Alert, Grid } from '@sensoro-design/react';
-import { IconCheck } from '@sensoro-design/react/icon';
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined'
 
 const { Row, Col } = Grid;
 
@@ -16,7 +16,7 @@ export default () => {
           style={{ marginBottom: 20 }}
           type="success"
           content="Here is a success text"
-          closeElement={<IconCheck />}
+          closeElement={<CheckOutlined />}
         />
       </Col>
       <Col span={12}>

@@ -7,7 +7,7 @@
  */
 import { useState, useRef } from 'react';
 import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 function DemoWithPopupVisible() {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -39,7 +39,7 @@ function DemoWithPopupVisible() {
     >
       <Button type="text">
         Click
-        <IconDown />
+        <DownOutlined />
       </Button>
     </Dropdown>
   );
@@ -67,7 +67,7 @@ function DemoWithOnClickMenuItem() {
     >
       <Button type="text">
         Click
-        <IconDown />
+        <DownOutlined />
       </Button>
     </Dropdown>
   );

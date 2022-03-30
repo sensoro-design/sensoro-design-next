@@ -1,11 +1,10 @@
-
 /**
  * title: 定制额外节点
  * desc: 为 `Tree` 设置 `renderExtra` 可以自定义树节点的展示。
  */
 import { useState } from 'react';
 import { Tree } from '@sensoro-design/react';
-import { IconPlus } from '@sensoro-design/react/icon';
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined'
 
 const generatorTreeNodes = (treeData) => {
   return treeData.map((item) => {
@@ -73,7 +72,8 @@ export default () => {
       blockNode
       checkable
       renderExtra={(node) => {
-        return <IconPlus
+        return (
+          <PlusOutlined
             style={{
               position: 'absolute',
               right: 8,
@@ -90,7 +90,9 @@ export default () => {
               node.dataRef.children = dataChildren
 
               setTreeData([...treeData])
-            }} />
+            }}
+          />
+        )
       }}
     >
       {generatorTreeNodes(treeData)}

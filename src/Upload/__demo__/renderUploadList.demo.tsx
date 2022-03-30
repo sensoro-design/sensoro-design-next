@@ -1,10 +1,11 @@
-
 /**
  * title: 自定义文件上传列表展示
  * desc: 传入 `renderUploadList` 可以自定义展示文件上传列表。第一个参数是当前上传列表，第二个参数是上传列表相关的属性。详细可参考 `<UploadListProps>`
  */
 import { Upload, Card, Modal } from '@sensoro-design/react';
-import { IconEye, IconDelete } from '@sensoro-design/react/icon';
+
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
+import EyeOutlined from '@sensoro-design/icons/EyeOutlined';
 
 export default () => {
   const renderUploadList = (filesList, props) => (
@@ -27,10 +28,10 @@ export default () => {
                   })
                 }}
                 >
-                <IconEye style={{fontSize: 12}} />
+                <EyeOutlined style={{fontSize: 12}} />
               </div>,
               <div>
-                <IconDelete style={{fontSize: 12}}
+                <DeleteOutlined style={{fontSize: 12}}
                   onClick={() => {
                     props.onRemove(file);
                   }}

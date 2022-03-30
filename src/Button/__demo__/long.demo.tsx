@@ -3,7 +3,6 @@
  * desc: 按钮宽度随着容器宽度进行适配。
  */
 import { Button, Space } from '@sensoro-design/react';
-import { IconUpload } from '@sensoro-design/react/icon';
 
 export default () => {
   return (

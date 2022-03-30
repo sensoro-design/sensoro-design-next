@@ -4,7 +4,10 @@
  */
 import React, { useState } from 'react';
 import { Input, Radio, Select } from '@sensoro-design/react';
-import { IconClockCircle, IconSearch, IconInfoCircle } from '@sensoro-design/react/icon';
+
+import InfoCircleOutlined from '@sensoro-design/icons/InfoCircleOutlined';
+import ClockCircleOutlined from '@sensoro-design/icons/ClockCircleOutlined';
+import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 
 const RadioGroup = Radio.Group;
 const InputSearch = Input.Search;
@@ -37,13 +40,13 @@ export default () => {
         <Input
           size={size}
           style={{ width: 350, marginRight: 24, marginBottom: 24 }}
-          prefix={<IconClockCircle />}
+          prefix={<ClockCircleOutlined />}
           placeholder="Please enter something"
         />
         <Input
           size={size}
           style={{ width: 350, marginBottom: 24 }}
-          suffix={<IconInfoCircle />}
+          suffix={<InfoCircleOutlined />}
           placeholder="Please enter something"
         />
       </div>
@@ -66,9 +69,9 @@ export default () => {
           size={size}
           style={{ width: 350, marginBottom: 24, marginRight: 24 }}
           addBefore="+86"
-          addAfter={<IconSearch />}
-          prefix={<IconClockCircle />}
-          suffix={<IconInfoCircle />}
+          addAfter={<SearchOutlined />}
+          prefix={<ClockCircleOutlined />}
+          suffix={<InfoCircleOutlined />}
           allowClear
           placeholder="Please enter something"
         />

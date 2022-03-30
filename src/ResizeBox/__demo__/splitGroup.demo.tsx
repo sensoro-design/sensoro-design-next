@@ -4,7 +4,10 @@
  */
 import { useState } from 'react'
 import { ResizeBox, Typography } from '@sensoro-design/react';
-import { IconDoubleLeft, IconDoubleRight } from '@sensoro-design/react/icon';
+
+import DoubleLeftOutlined from '@sensoro-design/icons/DoubleLeftOutlined';
+import DoubleRightOutlined from '@sensoro-design/icons/DoubleRightOutlined';
+
 import './styles.less';
 
 const { Paragraph, Text } = Typography;
@@ -17,13 +20,13 @@ const panes = [
     collapsible: {
       prev: {
         // 自定义伸缩杆向前快速收缩触发器
-        icon: <IconDoubleLeft />,
+        icon: <DoubleLeftOutlined />,
         onClick: (_, collapsed, status, activeIndex) => {
           console.log('快速收缩：', collapsed, status, activeIndex);
         },
       },
       next: {
-        icon: <IconDoubleRight />,
+        icon: <DoubleRightOutlined />,
         onClick: (_, collapsed, status, activeIndex) => {
           console.log('快速收缩：', collapsed, status, activeIndex);
         },

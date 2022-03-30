@@ -3,7 +3,7 @@
  * desc: `titleTexts` 允许传入 render 函数以完全自定义 Transfer 的标题栏，函数接收的参数为 `{ countTotal: number; countSelected: number; checkbox: ReactNode; clear: () => void }`。
  */
 import { Transfer } from '@sensoro-design/react';
-import { IconDelete } from '@sensoro-design/react/icon';
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined'
 
 export default () => {
   const dataSource = new Array(8).fill(null).map((_, index) => ({
@@ -31,7 +31,7 @@ export default () => {
           return (
             <div style={styleHeader}>
               {`RIGHT ${countSelected}-${countTotal}`}
-              <IconDelete style={{ cursor: 'pointer' }} onClick={clear} />
+              <DeleteOutlined style={{ cursor: 'pointer' }} onClick={clear} />
             </div>
           );
         },

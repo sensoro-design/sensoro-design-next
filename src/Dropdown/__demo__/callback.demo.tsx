@@ -4,7 +4,7 @@
  * desc: 通过 `Menu.onClickMenuItem` 来为菜单指定点击菜单项时触发的回调函数。
  */
 import { Dropdown, Menu, Button, Message } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const dropList = (
   <Menu onClickMenuItem={(key) => Message.info(`You clicked ${key}`)}>
@@ -19,7 +19,7 @@ export default () => {
     <div className="dropdown-demo">
       <Dropdown droplist={dropList} position="bl" triggerProps={{ autoAlignPopupWidth: true }}>
         <Button type="text">
-          Hover me and click an item <IconDown />
+          Hover me and click an item <DownOutlined />
         </Button>
       </Dropdown>
     </div>

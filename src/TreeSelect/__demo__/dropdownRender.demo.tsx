@@ -1,4 +1,3 @@
-
 /**
  * title: 扩展下拉菜单
  * desc: 使用 `dropdownRender` 对下拉菜单进行自由扩展。
@@ -6,7 +5,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { TreeSelect, Divider, Input, Button } from '@sensoro-design/react';
-import { IconPlus } from '@sensoro-design/react/icon';
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined'
 
 const defaultTreeData = [
   {
@@ -47,7 +46,7 @@ export default () => {
         key: inputValue,
         title: inputValue,
       }
-    ])
+    ] as any)
   }
 
   return <TreeSelect
@@ -73,10 +72,9 @@ export default () => {
             <Button
               style={{ fontSize: 14, padding: '0 6px' }}
               type='text'
-              size='mini'
               onClick={addItem}
             >
-              <IconPlus />
+              <PlusOutlined />
               Add item
             </Button>
         </div>

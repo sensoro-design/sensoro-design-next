@@ -3,7 +3,7 @@
  * desc: 通过 `Menu.ItemGroup` 使用分组。
  */
 import { Dropdown, Menu, Button } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const dropList = (
   <Menu>
@@ -29,7 +29,7 @@ export default () => {
         triggerProps={{ autoAlignPopupWidth: true }}
       >
         <Button type="text">
-          Group Menu <IconDown />
+          Group Menu <DownOutlined />
         </Button>
       </Dropdown>
     </div>

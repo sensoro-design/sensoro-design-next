@@ -1,10 +1,9 @@
-
 /**
  * title: 自定义图标
  * desc: 可以在内容中使用自定义图标
  */
 import { Breadcrumb, Space } from '@sensoro-design/react';
-import { IconHome } from '@sensoro-design/react/icon';
+import HomeOutlined from '@sensoro-design/icons/HomeOutlined';
 
 const BreadcrumbItem = Breadcrumb.Item;
 
@@ -13,14 +12,14 @@ export default () => {
     <Space size={40}>
       <Breadcrumb>
         <BreadcrumbItem>
-          <IconHome/>
+          <HomeOutlined/>
         </BreadcrumbItem>
         <BreadcrumbItem>Channel</BreadcrumbItem>
         <BreadcrumbItem>News</BreadcrumbItem>
       </Breadcrumb>
       <Breadcrumb style={{ fontSize: 12 }}>
         <BreadcrumbItem>
-          <IconHome/>
+          <HomeOutlined/>
         </BreadcrumbItem>
         <BreadcrumbItem>Channel</BreadcrumbItem>
         <BreadcrumbItem>News</BreadcrumbItem>

@@ -5,7 +5,9 @@
  */
 import React from 'react';
 import { Upload, Progress } from '@sensoro-design/react';
-import { IconPlus, IconEdit } from '@sensoro-design/react/icon';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+import EditOutlined from '@sensoro-design/icons/EditOutlined';
 
 export default () => {
   const [file, setFile] = React.useState()
@@ -32,7 +34,7 @@ export default () => {
             <div className='arco-upload-list-item-picture custom-upload-avatar'>
               <img src={file.url} />
               <div className="arco-upload-list-item-picture-mask">
-                <IconEdit/>
+                <EditOutlined />
               </div>
               {file.status === 'uploading' && file.percent < 100 && <Progress
                   percent={file.percent}
@@ -50,7 +52,7 @@ export default () => {
           ) : (
             <div className='arco-upload-trigger-picture'>
               <div className="arco-upload-trigger-picture-text">
-                <IconPlus/>
+                <PlusOutlined/>
                 <div style={{marginTop: 10, fontWeight: 600}}>Upload</div>
               </div>
             </div>

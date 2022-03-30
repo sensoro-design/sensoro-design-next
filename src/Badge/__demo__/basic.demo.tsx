@@ -4,7 +4,8 @@
  * desc: 基础的用法。只需指定 `count`，即可显示徽标。
  */
 import { Badge, Avatar, Space } from '@sensoro-design/react';
-import { IconClockCircle } from '@sensoro-design/react/icon';
+
+import ClockCircleOutlined from '@sensoro-design/icons/ClockCircleOutlined';
 
 export default () => {
   return (
@@ -16,7 +17,7 @@ export default () => {
       <Avatar shape="square" />
     </Badge>
     <Badge
-      count={<IconClockCircle style={{ verticalAlign: 'middle', color: 'var(--color-text-2)' }} />}
+      count={<ClockCircleOutlined style={{ verticalAlign: 'middle', color: 'var(--color-text-2)' }} />}
       dotStyle={{ height: 16, width: 16, fontSize: 14 }}
     >
       <Avatar shape="square" />

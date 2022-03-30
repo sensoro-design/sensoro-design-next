@@ -1,4 +1,3 @@
-
 /**
  * title: 状态点
  * desc: 设置 `status`，可以得到不同的状态点。`default - 默认` `processing - 进行中` `success - 成功` `warning - 提醒` `error - 错误`。

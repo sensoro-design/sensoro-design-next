@@ -1,16 +1,16 @@
-
 /**
  * title: 设置 value 格式
  * desc: `labelInValue` 为 `true` 时，`value` 格式为： `{ label: string, value: string }`。
  */
 import React from 'react';
 import { TreeSelect } from '@sensoro-design/react';
-import { IconCalendar } from '@sensoro-design/react/icon';
+
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
 
 const treeData = [
   {
     key: 'node1',
-    icon: <IconCalendar />,
+    icon: <CalendarOutlined />,
     title: 'Trunk',
     children: [
       {
@@ -22,7 +22,7 @@ const treeData = [
   {
     key: 'node3',
     title: 'Trunk2',
-    icon: <IconCalendar />,
+    icon: <CalendarOutlined />,
     children: [
       {
         key: 'node4',

@@ -4,7 +4,7 @@
  */
 import { useState } from 'react';
 import { Button, Divider } from '@sensoro-design/react';
-import { IconPlus } from '@sensoro-design/react/icon';
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
 
 export default () => {
   const [loading1, setLoading1] = useState(false);
@@ -58,7 +58,7 @@ export default () => {
         Click Me
       </Button>
       <Button type="primary" loading={loading2} onClick={onClickBtn2} style={{ margin: 24 }}>
-        {!loading2 && <IconPlus />}Click Me
+        {!loading2 && <PlusOutlined />}Click Me
       </Button>
       <Divider style={{ width: 440, minWidth: 440 }}>loading fixed width</Divider>
       <Button type="primary" loadingFixedWidth loading={loading3} onClick={onClickBtn3} style={{ margin: 24 }}>

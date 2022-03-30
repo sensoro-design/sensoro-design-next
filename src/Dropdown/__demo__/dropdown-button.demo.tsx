@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import { Dropdown, Menu, Tooltip, Space } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const dropList = (
   <Menu>
@@ -25,7 +25,7 @@ export default () => {
       <Dropdown.Button
         type="primary"
         droplist={dropList}
-        icon={<IconDown />}
+        icon={<DownOutlined />}
       >
         Publish
       </Dropdown.Button>

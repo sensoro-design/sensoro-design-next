@@ -3,7 +3,7 @@
  * desc: 通过 `Icon` 属性设置带图标的链接，设置为 `true`时候显示默认图标。
  */
 import { Link, Space } from '@sensoro-design/react';
-import { IconEdit } from '@sensoro-design/react/icon';
+import FormOutlined from '@sensoro-design/icons/FormOutlined';
 
 export default () => {
   return (
@@ -17,10 +17,10 @@ export default () => {
         </Link>
       </Space>
       <Space size="large">
-        <Link href="#" icon={<IconEdit />}>
+        <Link href="#" icon={<FormOutlined />}>
           Hyperlinks
         </Link>
-        <Link href="#"  icon={<IconEdit />} disabled>
+        <Link href="#"  icon={<FormOutlined />} disabled>
           Hyperlinks
         </Link>
       </Space>

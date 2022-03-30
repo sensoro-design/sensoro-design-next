@@ -1,11 +1,13 @@
-
 /**
  * title: 响应式侧边栏
  * desc: 左侧 Sider 可以结合 Menu 设置为展开/收起状态, 设置 `breakpoint` 可触发响应式收缩。
  */
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Message } from '@sensoro-design/react';
-import { IconHome, IconCalendar } from '@sensoro-design/react/icon';
+
+import HomeOutlined from '@sensoro-design/icons/HomeOutlined';
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
+
 import './styles.less';
 
 const MenuItem = Menu.Item;
@@ -23,18 +25,18 @@ function BaseMenu(props) {
     {...props}
   >
     <MenuItem key="0_1" disabled>
-      <IconHome />
+      <HomeOutlined />
       Menu 1
     </MenuItem>
     <MenuItem key="0_2">
-      <IconCalendar />
+      <CalendarOutlined />
       Menu 2
     </MenuItem>
     <SubMenu
       key="1"
       title={
         <span>
-          <IconCalendar />
+          <CalendarOutlined />
           Navigation 1
         </span>
       }
@@ -55,7 +57,7 @@ function BaseMenu(props) {
       key="4"
       title={
         <span>
-          <IconCalendar />
+          <CalendarOutlined />
           Navigation 4
         </span>
       }

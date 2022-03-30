@@ -1,11 +1,11 @@
-
 /**
  * title: 动态编辑标签
  * desc: 可动态添加和删除标签。
  */
 import { useState } from 'react';
-import { Tag, Button, Input, Message } from '@sensoro-design/react';
-import { IconPlus } from '@sensoro-design/react/icon';
+import { Tag, Input } from '@sensoro-design/react';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined'
 
 export default () => {
   const [tags, setTags] = useState(['Tag 1', 'Tag 2', 'Tag 3']);
@@ -43,7 +43,6 @@ export default () => {
       {showInput ? (
         <Input
           autoFocus
-          size="mini"
           value={inputValue}
           style={{ width: 84 }}
           onPressEnter={addTag}
@@ -52,7 +51,7 @@ export default () => {
         />
       ) : (
         <Tag
-          icon={<IconPlus />}
+          icon={<PlusOutlined />}
           style={{
             width: 84,
             backgroundColor: 'var(--color-fill-2)',

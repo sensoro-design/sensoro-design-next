@@ -4,11 +4,13 @@
  */
 import React from 'react';
 import { Operation, Space } from '@sensoro-design/react';
-import { IconPlus, IconUpload } from '@sensoro-design/react/icon';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+import EditOutlined from '@sensoro-design/icons/EditOutlined';
 
 const options = [
-  { label: '主操作', icon: <IconPlus />,value: 'option1' },
-  { label: '次要操作1', icon: <IconUpload />, value: 'option2' },
+  { label: '主操作', icon: <PlusOutlined />,value: 'option1' },
+  { label: '次要操作1', icon: <EditOutlined />, value: 'option2' },
   { label: '次要操作2', value: 'option3' },
   { label: '次要操作3', value: 'option4' },
 ]

@@ -1,11 +1,12 @@
-
 /**
  * title: 动画效果
  * desc: `count` 改变时候存在动画效果。
  */
 import React from 'react';
 import { Badge, Avatar, Grid, Button, Switch } from '@sensoro-design/react';
-import { IconPlus, IconMinus } from '@sensoro-design/react/icon';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+import MinusOutlined from '@sensoro-design/icons/MinusOutlined';
 
 export default () => {
   const [count, setCount] = React.useState(12);
@@ -23,9 +24,9 @@ export default () => {
         <Avatar shape="square"> </Avatar>
       </Badge>
       <Button.Group>
-        <Button  icon={<IconPlus />} onClick={() => setCount(c => c + 1)}>
+        <Button  icon={<PlusOutlined />} onClick={() => setCount(c => c + 1)}>
         </Button>
-        <Button  icon={<IconMinus />} onClick={() => setCount(c => Math.max(c - 1, 0))}>
+        <Button  icon={<MinusOutlined />} onClick={() => setCount(c => Math.max(c - 1, 0))}>
         </Button>
       </Button.Group>
   </Grid.Row>

@@ -5,5 +5,5 @@
 import { Alert } from '@sensoro-design/react';
 
 export default () => {
-  return (<Alert content="Here is an example text" />)
+  return <Alert content="Here is an example text" />;
 }

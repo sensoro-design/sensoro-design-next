@@ -1,11 +1,10 @@
-
 /**
  * title: 自定义图标
  * desc: `showUploadList` 字段可以设置图标。
  */
 import React from 'react';
 import { Upload, Radio, Typography, Message } from '@sensoro-design/react';
-import { IconFileAudio, IconClose, IconFaceFrownFill, IconUpload, IconEye } from '@sensoro-design/react/icon';
+import { IconFileAudio, IconClose, IconFaceFrownFill, IconUpload } from '@sensoro-design/react/icon';
 
 export default () => {
   const [listType, setListtype] = React.useState('text')
