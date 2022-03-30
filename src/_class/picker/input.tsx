@@ -6,13 +6,14 @@ import React, {
   CSSProperties,
   ReactNode,
 } from 'react';
+import cs from '@pansy/classnames';
 import { Dayjs } from 'dayjs';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+
 import omit from '../../_util/omit';
 import { Enter } from '../../_util/keycode';
 import { ConfigContext } from '../../ConfigProvider';
-import IconClose from '../../../icon/react-icon/IconClose';
 import IconHover from '../../_class/icon-hover';
-import cs from '@pansy/classnames';
 import { isArray } from '../../_util/is';
 
 export interface DateInputProps {
@@ -128,7 +129,7 @@ function DateInput(
       <div className={`${prefixCls}-suffix`}>
         {allowClear && showValue && (
           <IconHover prefix={prefixCls} onClick={onClear} className={`${prefixCls}-clear-icon`}>
-            <IconClose />
+            <CloseOutlined />
           </IconHover>
         )}
         <span className={`${prefixCls}-suffix-icon`}>{suffixIcon}</span>

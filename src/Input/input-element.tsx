@@ -4,7 +4,8 @@ import cs from '@pansy/classnames';
 import omit from '../_util/omit';
 import { Enter } from '../_util/keycode';
 import ResizeObserver from '../_util/resizeObserver';
-import IconClose from '../../icon/react-icon/IconClose';
+
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 import IconHover from '../_class/icon-hover';
 import { isObject } from '../_util/is';
 
@@ -171,7 +172,7 @@ const InputComponent = React.forwardRef<RefInputType, InputComponentProps>(
                   onClear && onClear();
                 }}
               >
-                <IconClose
+                <CloseOutlined
                   // keep focus status
                   onMouseDown={(e) => {
                     e.preventDefault();

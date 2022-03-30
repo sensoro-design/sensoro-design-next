@@ -14,7 +14,7 @@ import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import { formatValue } from './input';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import IconClose from '../../icon/react-icon/IconClose';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined'
 import IconHover from '../_class/icon-hover';
 import { isObject } from '../_util/is';
 import useIsomorphicLayoutEffect from '../_util/hooks/useIsomorphicLayoutEffect';
@@ -177,7 +177,7 @@ const TextArea = (props: TextAreaProps, ref) => {
         {TextAreaElement}
         {showClearIcon ? (
           <IconHover className={`${prefixCls}-clear-icon`}>
-            <IconClose
+            <CloseOutlined
               onClick={handleClearClick}
               // keep focus status
               onMouseDown={(e) => {

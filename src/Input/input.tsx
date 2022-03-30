@@ -7,7 +7,7 @@ import React, {
   useMemo,
 } from 'react';
 import { InputProps, RefInputType } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Search from './search';
 import TextArea from './textarea';
 import Password from './password';
@@ -101,7 +101,7 @@ function Input(baseProps: InputProps, ref) {
   if (trueMaxLength && showWordLimit) {
     suffixElement = (
       <span
-        className={cs(`${prefixCls}-word-limit`, {
+        className={classNames(`${prefixCls}-word-limit`, {
           [`${prefixCls}-word-limit-error`]: lengthError,
         })}
       >
@@ -110,7 +110,7 @@ function Input(baseProps: InputProps, ref) {
     );
   }
 
-  const classnames = cs(
+  const classes = classNames(
     `${prefixCls}-group-wrapper`,
     `${prefixCls}-group-wrapper-${size}`,
     {
@@ -142,7 +142,7 @@ function Input(baseProps: InputProps, ref) {
     />
   );
 
-  const innerWrapperClassnames = cs(`${prefixCls}-inner-wrapper`, {
+  const innerWrapperClassnames = classNames(`${prefixCls}-inner-wrapper`, {
     [`${prefixCls}-inner-wrapper-error`]: props.error || lengthError,
     [`${prefixCls}-inner-wrapper-disabled`]: disabled,
     [`${prefixCls}-inner-wrapper-focus`]: focus,
@@ -152,7 +152,7 @@ function Input(baseProps: InputProps, ref) {
   });
 
   return needWrapper ? (
-    <div className={classnames} style={{ ...style, ...(isCustomHeight ? { height } : {}) }}>
+    <div className={classes} style={{ ...style, ...(isCustomHeight ? { height } : {}) }}>
       <span className={`${prefixCls}-group`}>
         {inputAddon(`${prefixCls}-group-addbefore`, addBefore, beforeStyle)}
         <span
@@ -184,7 +184,7 @@ function Input(baseProps: InputProps, ref) {
     </div>
   ) : allowClear ? (
     <span
-      className={cs(className, innerWrapperClassnames)}
+      className={classNames(className, innerWrapperClassnames)}
       style={{ ...style, ...(isCustomHeight ? { height } : {}) }}
       onMouseDown={keepFocus}
       onClick={() => {
