@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义图片
  * desc: 可以通过 `imgSrc` 参数传入图片 Url。

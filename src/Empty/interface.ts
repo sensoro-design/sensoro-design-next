@@ -1,4 +1,5 @@
-import { ReactNode, CSSProperties } from 'react';
+import type { ReactNode, CSSProperties } from 'react';
+import type { SizeType } from '../ConfigProvider/interface'
 
 /**
  * @title Empty
@@ -11,6 +12,11 @@ export interface EmptyProps {
    * @en Description of empty content
    */
   description?: ReactNode;
+  /**
+   * @zh 大小
+   * @en Description of empty content
+   */
+  size?: SizeType;
   /**
    * @zh 自定义显示图案
    * @en Custom icon

@@ -1,25 +1,35 @@
 import React, { memo, useContext, forwardRef } from 'react';
-import IconEmpty from '../../icon/react-icon/IconEmpty';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
+import NoDataPurely from '@sensoro-design/icons/NoDataPurely';
+
 import { ConfigContext } from '../ConfigProvider';
 import { EmptyProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
+const defaultProps: EmptyProps = {
+  size: 'default',
+};
+
 function Empty(baseProps: EmptyProps, ref) {
   const { getPrefixCls, locale: globalLocale, componentConfig } = useContext(ConfigContext);
-  const props = useMergeProps<EmptyProps>(baseProps, {}, componentConfig?.Empty);
+  const props = useMergeProps<EmptyProps>(baseProps, defaultProps, componentConfig?.Empty);
   const { style, className, description, icon, imgSrc } = props;
 
   const prefixCls = getPrefixCls('empty');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(
+    prefixCls,
+    className,
+    `${prefixCls}-size-${props.size}`
+  );
+
   const noData = globalLocale.Empty.noData;
   const alt = typeof description === 'string' ? description : 'empty';
 
   return (
-    <div ref={ref} className={classNames} style={style}>
+    <div ref={ref} className={classes} style={style}>
       <div className={`${prefixCls}-wrapper`}>
         <div className={`${prefixCls}-image`}>
-          {imgSrc ? <img alt={alt} src={imgSrc} /> : icon || <IconEmpty />}
+          {imgSrc ? <img alt={alt} src={imgSrc} /> : icon || <NoDataPurely />}
         </div>
         <div className={`${prefixCls}-description`}>{description || noData}</div>
       </div>

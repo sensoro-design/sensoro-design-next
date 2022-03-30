@@ -14,9 +14,13 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
+### 不同大小
+
+<code src="./__demo__/size.demo.tsx" />
+
 ### 自定义图标和文案
 
-<code src="./__demo__/custom_icon.demo.tsx" />
+<code src="./__demo__/custom-icon.demo.tsx" />
 
 ### 自定义图片
 
@@ -33,3 +37,4 @@ nav:
 |description|显示文案|`ReactNode`|`-`|
 |icon|自定义显示图案|`ReactNode`|`-`|
 |imgSrc|将图标替换为图片|`string`|`-`|
+|size|大小|`'small' \| 'default' \| 'large'`|`default`|
