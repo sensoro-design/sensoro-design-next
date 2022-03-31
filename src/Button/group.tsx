@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import classNames from '@pansy/classnames';
+
 import { ConfigContext } from '../ConfigProvider';
 import { ButtonGroupProps } from './interface';
 
