@@ -1,8 +1,9 @@
 import React, { useMemo } from 'react';
-import IconDown from '../../../icon/react-icon/IconDown';
 import Dropdown from '../../Dropdown';
 import Menu from '../../Menu';
 import IconHover from '../../_class/icon-hover';
+
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 export default function DropdownIcon(props) {
   const {
@@ -74,7 +75,7 @@ export default function DropdownIcon(props) {
       }
     >
       <IconHover prefix={`${prefixCls}-dropdown`} className={`${prefixCls}-dropdown-icon`}>
-        <IconDown />
+        <DownOutlined />
       </IconHover>
     </Dropdown>
   );

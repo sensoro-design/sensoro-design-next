@@ -1,7 +1,7 @@
 import Avatar from './avatar';
 import Group from './group';
 
-export * from './interface';
+export { AvatarProps, AvatarGroupProps, } from './interface';
 
 type AvatarComponentType = typeof Avatar & {
   Group: typeof Group;

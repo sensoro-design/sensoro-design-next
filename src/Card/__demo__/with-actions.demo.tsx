@@ -1,10 +1,12 @@
-
 /**
  * title: 支持更多内容配置
  * desc: `actions` 字段接收一个 `ReactNode` 数组，用于展示底部按钮组。
  */
 import { Card, Avatar, Typography } from '@sensoro-design/react';
-import { IconThumbUp, IconShareInternal, IconMore } from '@sensoro-design/react/icon';
+
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
+import HeartOutlined from '@sensoro-design/icons/HeartOutlined';
+import StarOutlined from '@sensoro-design/icons/StarOutlined';
 
 const { Meta } = Card;
 
@@ -29,13 +31,13 @@ export default () => {
     }
     actions={[
       <span className="icon-hover">
-        <IconThumbUp />
+        <StarOutlined />
       </span>,
       <span className="icon-hover">
-        <IconShareInternal />
+        <HeartOutlined />
       </span>,
       <span className="icon-hover">
-        <IconMore />
+        <MoreOutlined />
       </span>,
     ]}
   >

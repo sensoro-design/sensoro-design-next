@@ -28,7 +28,7 @@ nav:
 
 ### 标签文本位置
 
-<code src="./__demo__/labelPosition.demo.tsx" />
+<code src="./__demo__/label-position.demo.tsx" />
 
 ### 时间轴展示类型
 

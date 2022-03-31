@@ -3,7 +3,7 @@
  * desc: 一个基本的评论组件，带有作者、头像、时间和操作。
  */
 import React from 'react';
-import { Comment, Avatar  } from '@sensoro-design/react';
+import { Comment, Avatar } from '@sensoro-design/react';
 
 import HeartOutlined from '@sensoro-design/icons/HeartOutlined';
 import MessageOutlined from '@sensoro-design/icons/MessageOutlined';

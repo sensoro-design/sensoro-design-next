@@ -1,4 +1,3 @@
-
 /**
  * title: 切换方向
  * desc: 默认情况下，`direction` 为 `horizontal`。通过设置 `direction` 为 `vertical` 来使用垂直方向切换。

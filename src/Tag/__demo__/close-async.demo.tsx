@@ -1,4 +1,3 @@
-
 /**
  * title: 异步关闭
  * desc:
@@ -10,7 +9,7 @@ export default () => {
     <Tag
       closable
       onClose={() => {
-        return new Promise((resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
           setTimeout(() => {
             if (Math.random() >= 0.5) {
               resolve();

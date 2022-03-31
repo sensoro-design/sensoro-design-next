@@ -1,12 +1,13 @@
 import React, { useState, useContext, forwardRef, ReactElement } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Sider, { SiderContext } from './sider';
 import Header from './header';
 import Footer from './footer';
 import Content from './content';
 import { ConfigContext } from '../ConfigProvider';
-import { LayoutProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import type { LayoutProps } from './interface';
 
 export interface LayoutState {
   siders: string[];
@@ -22,7 +23,7 @@ function Layout(baseProps: LayoutProps, ref) {
   const [siders, setSiders] = useState([]);
 
   const prefixCls = getPrefixCls('layout');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-has-sider`]: typeof hasSider === 'boolean' ? hasSider : siders.length > 0,
@@ -31,7 +32,7 @@ function Layout(baseProps: LayoutProps, ref) {
   );
 
   return (
-    <section ref={ref} {...rest} className={classNames}>
+    <section ref={ref} {...rest} className={classes}>
       {React.Children.map(children, (child: ReactElement) => {
         if (child && child.props && child.props.sign === 'sider') {
           return React.cloneElement(child, {

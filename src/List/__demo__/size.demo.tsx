@@ -1,4 +1,3 @@
-
 /**
  * title: 不同尺寸
  * desc: 设置 `size` 可以使用三种尺寸（`small`, `default`, `large`）的列表，可根据业务需求自行选择。
@@ -6,10 +5,12 @@
 import { useState } from 'react';
 import { List, Radio } from '@sensoro-design/react';
 
+import type { ListProps } from '@sensoro-design/react/es/List';
+
 const RadioGroup = Radio.Group;
 
 export default () => {
-  const [size, setSize] = useState('default');
+  const [size, setSize] = useState<ListProps['size']>('default');
 
   return (
     <>

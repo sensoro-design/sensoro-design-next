@@ -1,6 +1,6 @@
 import React, { Component, DragEvent } from 'react';
 import isEqualWith from 'lodash/isEqualWith';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Node from './node';
 import NodeList from './node-list';
 import { isEmptyObject, isFunction } from '../_util/is';
@@ -327,7 +327,7 @@ class Tree extends Component<TreeProps, TreeState> {
         };
 
         if (totalLength === index + 1) {
-          nodeProps.className = cs(`${prefixCls}-node-is-tail`, nodeProps.className);
+          nodeProps.className = classNames(`${prefixCls}-node-is-tail`, nodeProps.className);
         }
 
         nodeList.push(nodeProps);
@@ -759,7 +759,7 @@ class Tree extends Component<TreeProps, TreeState> {
           ref={(node) => {
             this.nodeListRef = node;
           }}
-          className={cs(
+          className={classNames(
             prefixCls,
             {
               [`${prefixCls}-checkable`]: checkable,

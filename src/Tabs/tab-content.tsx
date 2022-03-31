@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { TabsProps } from './tabs';
 import { TabPaneProps, TabPaneType } from './tab-pane';
 
@@ -22,7 +22,7 @@ export default function TabContent(props: TabContentProps) {
     return null;
   }
 
-  const classNamesContentInner = cs(`${prefixCls}-content-inner`, {
+  const classNamesContentInner = classNames(`${prefixCls}-content-inner`, {
     [`${prefixCls}-animation`]: animation,
   });
 
@@ -40,7 +40,7 @@ export default function TabContent(props: TabContentProps) {
           return (
             <div
               key={child.key as string}
-              className={cs(`${prefixCls}-content-item`, {
+              className={classNames(`${prefixCls}-content-item`, {
                 [`${prefixCls}-content-item-active`]: child.key === activeTab,
               })}
             >

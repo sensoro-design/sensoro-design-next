@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义分页
  * desc: 自定义分页，通过设置 `total`，`pageSize`，通过 `onChange` 来动态更新表格数据。当分页设置 `simple` 为 `true` 时，会应用简单分页样式。关于 `pagination` 的具体设置可查看[pagination 组件](/react/components/Pagination)文档。通过 `renderPagination` 可以自定义分页渲染部分。

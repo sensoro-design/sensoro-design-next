@@ -6,10 +6,7 @@
 import { Layout } from '@sensoro-design/react';
 import './styles.less';
 
-const Sider = Layout.Sider;
-const Header = Layout.Header;
-const Footer = Layout.Footer;
-const Content = Layout.Content;
+const { Sider, Header, Footer, Content, } = Layout;
 
 export default () => {
   return (

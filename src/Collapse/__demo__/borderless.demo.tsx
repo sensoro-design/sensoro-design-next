@@ -1,4 +1,3 @@
-
 /**
  * title: 简洁面板
  * desc: 通过使用 `bordered=false` 来使用没有边框的简洁样式。

@@ -1,4 +1,3 @@
-
 /**
  * title: 渐隐切换
  * desc: 指定 `animation` 为 `fade` 使用渐隐切换效果。

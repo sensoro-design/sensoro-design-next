@@ -1,4 +1,3 @@
-
 /**
  * title: 横向时间轴
  * desc: 可以通过 `direction` 设置展示横向时间轴

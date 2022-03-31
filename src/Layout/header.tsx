@@ -1,5 +1,5 @@
 import React, { useContext, forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { HeaderProps } from './interface';
 
@@ -7,9 +7,10 @@ function Header(props: HeaderProps, ref) {
   const { getPrefixCls } = useContext(ConfigContext);
   const { className, children, ...rest } = props;
   const prefixCls = getPrefixCls('layout-header');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
+
   return (
-    <header ref={ref} {...rest} className={classNames}>
+    <header ref={ref} {...rest} className={classes}>
       {children}
     </header>
   );

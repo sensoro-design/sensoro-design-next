@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useContext, CSSProperties } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isArray, isObject, isString } from '../../_util/is';
 import Trigger from '../../Trigger';
 import Radio from '../../Radio/radio';
 import Button from '../../Button';
 import Tooltip from '../../Tooltip';
-import IconCaretDown from '../../../icon/react-icon/IconCaretDown';
-import IconCaretUp from '../../../icon/react-icon/IconCaretUp';
+
 import IconFilter from '../../../icon/react-icon/IconFilter';
+
+import CaretUpOutlined from '@sensoro-design/icons/CaretUpOutlined';
+import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
+
 import Checkbox from '../../Checkbox';
 import { ColumnComponentProps } from '../interface';
 import { ConfigContext } from '../../ConfigProvider';
@@ -195,14 +198,14 @@ function Column<T>({
   }
 
   const classNameSorter = (direction) => {
-    return cs(`${prefixCls}-sorter-icon`, {
+    return classNames(`${prefixCls}-sorter-icon`, {
       [`${prefixCls}-sorter-icon-active`]:
         currentSorter &&
         currentSorter.direction === direction &&
         currentSorter.field === innerDataIndex,
     });
   };
-  const classNameFilter = cs(`${prefixCls}-filters`, {
+  const classNameFilter = classNames(`${prefixCls}-filters`, {
     [`${prefixCls}-filters-open`]: filterVisible,
     [`${prefixCls}-filters-active`]: currentFilter && currentFilter.length,
   });
@@ -266,18 +269,18 @@ function Column<T>({
             </span>
             {enableSort && (
               <div
-                className={cs(`${prefixCls}-sorter`, {
+                className={classNames(`${prefixCls}-sorter`, {
                   [`${prefixCls}-sorter-direction-one`]: sortDirections.length === 1,
                 })}
               >
                 {sortDirections.indexOf('ascend') !== -1 && (
                   <div className={classNameSorter('ascend')}>
-                    <IconCaretUp />
+                    <CaretUpOutlined />
                   </div>
                 )}
                 {sortDirections.indexOf('descend') !== -1 && (
                   <div className={classNameSorter('descend')}>
-                    <IconCaretDown />
+                    <CaretDownOutlined />
                   </div>
                 )}
               </div>
@@ -306,7 +309,7 @@ function Column<T>({
     </>
   );
 
-  const cellChildrenClassName = cs(`${prefixCls}-th-item`, {
+  const cellChildrenClassName = classNames(`${prefixCls}-th-item`, {
     [`${prefixCls}-cell-text-ellipsis`]: ellipsis,
     [`${prefixCls}-cell-mouseenter`]: isEnter,
     [`${prefixCls}-cell-next-${nextSortDirection}`]: isEnter && nextSortDirection,
@@ -317,7 +320,7 @@ function Column<T>({
   return (
     colSpan !== 0 && (
       <ComponentTh
-        className={cs(
+        className={classNames(
           `${prefixCls}-th`,
           {
             [`${prefixCls}-col-sorted`]:

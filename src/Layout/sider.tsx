@@ -1,7 +1,7 @@
 import React, { forwardRef, useContext, useEffect, createContext, useRef } from 'react';
-import cs from '@pansy/classnames';
-import IconLeft from '../../icon/react-icon/IconLeft';
-import IconRight from '../../icon/react-icon/IconRight';
+import classNames from '@pansy/classnames';
+import MenuFoldOutlined from '@sensoro-design/icons/MenuFoldOutlined';
+import MenuUnfoldOutlined from '@sensoro-design/icons/MenuUnfoldOutlined';
 import { ConfigContext } from '../ConfigProvider';
 import ResizeBox from '../ResizeBox';
 import { isArray } from '../_util/is';
@@ -105,20 +105,20 @@ function Sider(props: SiderProps, ref) {
       trigger ||
       (collapsed ? (
         reverseArrow ? (
-          <IconLeft />
+          <MenuFoldOutlined />
         ) : (
-          <IconRight />
+          <MenuUnfoldOutlined />
         )
       ) : reverseArrow ? (
-        <IconRight />
+        <MenuUnfoldOutlined />
       ) : (
-        <IconLeft />
+        <MenuFoldOutlined />
       ));
 
     return collapsible && trigger !== null ? (
       <div
         style={{ width: siderWidth }}
-        className={cs(`${prefixCls}-trigger`, {
+        className={classNames(`${prefixCls}-trigger`, {
           [`${prefixCls}-trigger-light`]: theme === 'light',
         })}
         onClick={() => {
@@ -151,7 +151,7 @@ function Sider(props: SiderProps, ref) {
           width: siderWidth,
           ...style,
         }}
-        className={cs(
+        className={classNames(
           prefixCls,
           {
             [`${prefixCls}-light`]: theme === 'light',

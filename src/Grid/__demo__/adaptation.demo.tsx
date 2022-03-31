@@ -1,4 +1,3 @@
-
 /**
  * title: 响应式布局
  * desc: 预置六种响应尺寸, 分别为 `xs`, `sm`, `md`, `lg`, `xl`, `xxl`。
@@ -6,8 +5,7 @@
 import { Grid } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 export default () => {
   return (

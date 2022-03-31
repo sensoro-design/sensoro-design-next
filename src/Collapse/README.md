@@ -28,7 +28,7 @@ nav:
 
 ### 自定义面板样式
 
-<code src="./__demo__/customStyle.demo.tsx" />
+<code src="./__demo__/custom-style.demo.tsx" />
 
 ### 额外节点
 
@@ -36,7 +36,7 @@ nav:
 
 ### 展开图标位置
 
-<code src="./__demo__/iconPosition.demo.tsx" />
+<code src="./__demo__/icon-position.demo.tsx" />
 
 ### Lazyload
 
@@ -44,7 +44,7 @@ nav:
 
 ### 隐藏时销毁
 
-<code src="./__demo__/destoryOnHide.demo.tsx" />
+<code src="./__demo__/destory-on-hide.demo.tsx" />
 
 ## API
 

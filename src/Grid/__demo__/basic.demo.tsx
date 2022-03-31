@@ -1,4 +1,3 @@
-
 /**
  * title: 基本用法
  * desc: 展示了最基本的 24 等分应用。
@@ -6,8 +5,7 @@
 import { Grid } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 export default () => {
   return (

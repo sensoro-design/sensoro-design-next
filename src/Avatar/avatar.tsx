@@ -7,7 +7,7 @@ import React, {
   PropsWithChildren,
   forwardRef,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import AvatarContext from './context';
 import { AvatarProps } from './interface';
@@ -65,7 +65,7 @@ const Avatar = forwardRef<HTMLElement, PropsWithChildren<AvatarProps>>(
       }
     }
 
-    const classNames = cs(
+    const classes = classNames(
       prefixCls,
       `${prefixCls}-${shape}`,
       {
@@ -100,7 +100,7 @@ const Avatar = forwardRef<HTMLElement, PropsWithChildren<AvatarProps>>(
           fontSize: isNumber(size) ? size / 2 : '',
           ...style,
         }}
-        className={classNames}
+        className={classes}
       >
         {isImage ? <span className={`${prefixCls}-image`}>{children}</span> : null}
         {!isImage && (

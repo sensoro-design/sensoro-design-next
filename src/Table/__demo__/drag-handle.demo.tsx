@@ -1,4 +1,3 @@
-
 /**
  * title: 拖拽锚点排序
  * desc: 可以配合 `react-sortable-hoc` 可以实现拖拽锚点排序。

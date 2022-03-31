@@ -1,10 +1,11 @@
-
 /**
  * title: 指示器
  * desc: 可以指定指示器类型：`dot` | `line` | `slider` 和位置 `left` | `right` | `top` | `bottom` | `outer`。
  */
+ import { useState } from 'react';
 import { Carousel, Radio } from '@sensoro-design/react';
-import { useState } from 'react';
+
+import { CarouselProps } from '@sensoro-design/react/es/Carousel';
 
 const RadioGroup = Radio.Group;
 
@@ -16,8 +17,8 @@ const imageSrc = [
 ];
 
 export default () => {
-  const [indicatorType, setIndicatorType] = useState('dot');
-  const [indicatorPosition, setIndicatorPosition] = useState('bottom');
+  const [indicatorType, setIndicatorType] = useState<CarouselProps['indicatorType']>('dot');
+  const [indicatorPosition, setIndicatorPosition] = useState<CarouselProps['indicatorPosition']>('bottom');
 
   return (
     <>

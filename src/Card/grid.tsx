@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { CardGridProps } from './interface';
 
@@ -11,7 +11,7 @@ function Grid(props: CardGridProps, ref) {
     <div
       ref={ref}
       style={style}
-      className={cs(prefixCls, { [`${prefixCls}-hoverable`]: hoverable }, className)}
+      className={classNames(prefixCls, { [`${prefixCls}-hoverable`]: hoverable }, className)}
     >
       {children}
     </div>

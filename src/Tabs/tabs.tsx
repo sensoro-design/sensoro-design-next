@@ -5,7 +5,7 @@ import React, {
   useContext,
   PropsWithChildren,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import TabPane, { TabPaneType, TabPaneProps } from './tab-pane';
 import TabHeader from './tab-header/index';
 import TabContent from './tab-content';
@@ -152,7 +152,7 @@ function Tabs(baseProps: TabsProps, ref) {
         'offsetAlign',
       ])}
       style={style}
-      className={cs(
+      className={classNames(
         prefixCls,
         `${prefixCls}-${['left', 'right'].indexOf(tabPosition) > -1 ? 'vertical' : 'horizontal'}`,
         `${prefixCls}-${type}`,

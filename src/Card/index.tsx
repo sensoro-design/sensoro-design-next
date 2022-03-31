@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Meta from './meta';
 import Grid from './grid';
 import { ConfigContext } from '../ConfigProvider';
@@ -65,7 +65,7 @@ function Card(baseProps: CardProps, ref) {
     <div
       {...rest}
       ref={ref}
-      className={cs(
+      className={classNames(
         prefixCls,
         `${prefixCls}-size-${size}`,
         {
@@ -79,7 +79,7 @@ function Card(baseProps: CardProps, ref) {
     >
       {title || extra ? (
         <div
-          className={cs(`${prefixCls}-header`, { [`${prefixCls}-header-no-title`]: !title })}
+          className={classNames(`${prefixCls}-header`, { [`${prefixCls}-header-no-title`]: !title })}
           style={headerStyle}
         >
           {title && <div className={`${prefixCls}-header-title`}>{title}</div>}

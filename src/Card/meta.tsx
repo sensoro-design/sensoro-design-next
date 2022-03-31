@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { CardMetaProps } from './interface';
 
@@ -7,10 +7,10 @@ function Meta(props: CardMetaProps, ref) {
   const { className, title, avatar, description, actionList, ...others } = props;
   const { getPrefixCls } = useContext(ConfigContext);
   const prefixCls = getPrefixCls('card-meta');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
 
   return (
-    <div {...others} ref={ref} className={classNames}>
+    <div {...others} ref={ref} className={classes}>
       {title || description ? (
         <div className={`${prefixCls}-content`}>
           {title && <div className={`${prefixCls}-title`}>{title}</div>}
@@ -19,7 +19,7 @@ function Meta(props: CardMetaProps, ref) {
       ) : null}
       {avatar || actionList ? (
         <div
-          className={cs(`${prefixCls}-footer `, { [`${prefixCls}-footer-only-actions`]: !avatar })}
+          className={classNames(`${prefixCls}-footer `, { [`${prefixCls}-footer-only-actions`]: !avatar })}
         >
           {avatar ? <div className={`${prefixCls}-avatar`}>{avatar}</div> : null}
           {actionList}

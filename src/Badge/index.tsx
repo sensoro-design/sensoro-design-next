@@ -1,6 +1,6 @@
 import React, { useContext, forwardRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { isObject } from '../_util/is';
 import Count from './count';
@@ -60,7 +60,7 @@ function Badge(baseProps: BadgeProps, ref) {
   const getDom = () => {
     if (isObject(count)) {
       return (
-        <span className={cs(`${prefixCls}-custom-dot`, dotClassName)} style={dotStyle}>
+        <span className={classNames(`${prefixCls}-custom-dot`, dotClassName)} style={dotStyle}>
           {count}
         </span>
       );
@@ -70,7 +70,7 @@ function Badge(baseProps: BadgeProps, ref) {
     // display a red dot if color and status are NOT set
     if (text && !color && !status) {
       return (
-        <span className={cs(`${prefixCls}-text`, dotClassName)} style={dotStyle}>
+        <span className={classNames(`${prefixCls}-text`, dotClassName)} style={dotStyle}>
           {text}
         </span>
       );
@@ -79,7 +79,7 @@ function Badge(baseProps: BadgeProps, ref) {
       return (
         <span className={`${prefixCls}-status-wrapper`}>
           <span
-            className={cs(
+            className={classNames(
               `${prefixCls}-status-dot`,
               {
                 [`${prefixCls}-status-${status}`]: status,
@@ -104,7 +104,7 @@ function Badge(baseProps: BadgeProps, ref) {
           unmountOnExit
         >
           <span
-            className={cs(
+            className={classNames(
               `${prefixCls}-dot`,
               {
                 [`${prefixCls}-color-${color}`]: color,
@@ -119,7 +119,7 @@ function Badge(baseProps: BadgeProps, ref) {
     return (
       <Count
         prefixCls={prefixCls}
-        className={cs(`${prefixCls}-number`, dotClassName)}
+        className={classNames(`${prefixCls}-number`, dotClassName)}
         style={{ ...colorStyle, ...dotStyle }}
         maxCount={maxCount}
         count={count}
@@ -129,7 +129,7 @@ function Badge(baseProps: BadgeProps, ref) {
 
   return (
     <span
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-status`]: status,

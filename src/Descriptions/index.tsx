@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef, Fragment } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import ResponsiveObserve, { Breakpoint, responsiveArray } from '../_util/responsiveObserve';
 import { isObject, isArray, isNumber } from '../_util/is';
@@ -187,7 +187,7 @@ function Descriptions(baseProps: DescriptionsProps) {
     return layout === 'vertical' ? renderVerticalItems(d, i) : renderHorizontalItems(d, i);
   }
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-border`]: border,
@@ -199,7 +199,7 @@ function Descriptions(baseProps: DescriptionsProps) {
   );
 
   return (
-    <div className={classNames} style={style}>
+    <div className={classes} style={style}>
       {title && <div className={`${prefixCls}-title`}>{title}</div>}
       <div className={`${prefixCls}-body`}>
         <table className={`${prefixCls}-table`} cellPadding={0} cellSpacing={0}>

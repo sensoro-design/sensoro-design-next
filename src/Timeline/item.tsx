@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useContext, RefObject } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext, ConfigProviderProps } from '../ConfigProvider';
 import { TimelineItemProps } from './interface';
 
@@ -46,7 +46,7 @@ function Item(props: TimelineItemProps, ref: RefObject<HTMLDivElement>) {
     <div
       ref={ref}
       {...rest}
-      className={cs(
+      className={classNames(
         `${prefixCls}-item`,
         {
           [`${prefixCls}-item-${direction}-${position}`]: direction,
@@ -71,7 +71,7 @@ function Item(props: TimelineItemProps, ref: RefObject<HTMLDivElement>) {
             </div>
           ) : (
             <div
-              className={cs(`${prefixCls}-item-dot`, `${prefixCls}-item-dot-${dotType}`)}
+              className={classNames(`${prefixCls}-item-dot`, `${prefixCls}-item-dot-${dotType}`)}
               style={
                 dotType === 'solid' ? { backgroundColor: dotColor } : { borderColor: dotColor }
               }

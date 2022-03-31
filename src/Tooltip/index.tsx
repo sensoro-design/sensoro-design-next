@@ -6,7 +6,7 @@ import React, {
   PropsWithChildren,
   useImperativeHandle,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Trigger, { EventsByTriggerNeed } from '../Trigger';
 import { ConfigContext } from '../ConfigProvider';
 import pick from '../_util/pick';
@@ -125,7 +125,7 @@ function Tooltip(baseProps: PropsWithChildren<TooltipProps>, ref) {
         return (
           <div
             style={{ backgroundColor: color }}
-            className={cs(`${prefixCls}-content`, `${prefixCls}-content-${position}`, {
+            className={classNames(`${prefixCls}-content`, `${prefixCls}-content-${position}`, {
               [`${prefixCls}-mini`]: mini,
             })}
           >

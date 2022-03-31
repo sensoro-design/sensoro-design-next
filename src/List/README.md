@@ -40,7 +40,7 @@ nav:
 
 ### 滚动加载列表
 
-<code src="./__demo__/scrollLoad.demo.tsx" />
+<code src="./__demo__/scroll-load.demo.tsx" />
 
 ### 无限长列表
 

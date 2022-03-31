@@ -36,7 +36,7 @@ nav:
 
 ### 自定义子元素
 
-<code src="./__demo__/selfComponent.demo.tsx" />
+<code src="./__demo__/self-component.demo.tsx" />
 
 ## API
 

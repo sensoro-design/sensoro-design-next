@@ -1,4 +1,3 @@
-
 /**
  * title: 开启选择
  * desc: 表格开启选择，可以设置 `rowSelection.type` 来使用复选框和单选框。 `checkbox` - 复选框。 `radio` - 单选框。

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import usePrevious from '../_util/hooks/usePrevious';
 
 export default function Count({ prefixCls, maxCount, count, className, style }) {
@@ -21,7 +21,7 @@ export default function Count({ prefixCls, maxCount, count, className, style }) 
       }}
     >
       <span className={className} style={style}>
-        <span key={count} className={cs({ [`${prefixCls}-number-text`]: isEntered && isChanged })}>
+        <span key={count} className={classNames({ [`${prefixCls}-number-text`]: isEntered && isChanged })}>
           {maxCount && count > maxCount ? `${maxCount}+` : count}
         </span>
       </span>

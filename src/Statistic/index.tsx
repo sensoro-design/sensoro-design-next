@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 import BTween from 'b-tween';
 import dayjs, { Dayjs } from 'dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Countdown from './countdown';
 import { isNumber } from '../_util/is';
 import { ConfigContext } from '../ConfigProvider';
@@ -117,7 +117,7 @@ function Statistic(baseProps: StatisticProps, ref) {
   }, [format, groupSeparator, precision, value]);
 
   return (
-    <div className={cs(`${prefixCls}`, className)} style={style}>
+    <div className={classNames(`${prefixCls}`, className)} style={style}>
       {title && <div className={`${prefixCls}-title`}>{title}</div>}
       <div className={`${prefixCls}-content`}>
         <Skeleton animation loading={!!loading} text={{ rows: 1, width: '100%' }}>

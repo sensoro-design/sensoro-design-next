@@ -1,8 +1,9 @@
 import React, { ReactNode } from 'react';
-import IconClose from '../../../icon/react-icon/IconClose';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import IconHover from '../../_class/icon-hover';
 import { isFunction } from '../../_util/is';
+
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
 const TabHeaderTitle = (
   {
@@ -29,7 +30,7 @@ const TabHeaderTitle = (
     <div
       ref={ref}
       key={tabKey}
-      className={cs(`${prefixCls}-header-title`, {
+      className={classNames(`${prefixCls}-header-title`, {
         [`${prefixCls}-header-title-active`]: isActive,
         [`${prefixCls}-header-title-editable`]: editable,
         [`${prefixCls}-header-title-disabled`]: disabled,
@@ -50,7 +51,7 @@ const TabHeaderTitle = (
             onDeleteTab(e);
           }}
         >
-          {deleteButton || <IconHover prefix={prefixCls}>{deleteIcon || <IconClose />}</IconHover>}
+          {deleteButton || <IconHover prefix={prefixCls}>{deleteIcon || <CloseOutlined />}</IconHover>}
         </span>
       )}
     </div>,

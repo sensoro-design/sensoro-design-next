@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Meta from './meta';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useMergeProps from '../_util/hooks/useMergeProps';
 import { ListItemProps } from './interface';
 
@@ -49,7 +49,7 @@ function Item(baseProps: ListItemProps, ref) {
     ) : null;
 
   return (
-    <div ref={ref} className={cs(baseClassName, className)} {...rest}>
+    <div ref={ref} className={classNames(baseClassName, className)} {...rest}>
       <div className={`${baseClassName}-main`}>
         {metaContent}
         {content}

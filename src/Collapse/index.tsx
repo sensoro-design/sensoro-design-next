@@ -2,4 +2,4 @@ import Collapse from './collapse';
 
 export default Collapse;
 
-export { CollapseProps, CollapseItemProps } from './interface';
+export type { CollapseProps, CollapseItemProps } from './interface';

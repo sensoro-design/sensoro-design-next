@@ -1,6 +1,6 @@
 import React, { useContext, forwardRef, PropsWithChildren } from 'react';
 import { isNumber } from '../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import Avatar from './avatar';
 import Popover from '../Popover';
@@ -35,7 +35,7 @@ function Group(baseProps: PropsWithChildren<AvatarGroupProps>, ref) {
   } = props;
 
   const prefixCls = getPrefixCls('avatar-group');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
 
   const childrenArr = React.Children.toArray(children);
   const avatarCount = childrenArr.length;
@@ -65,7 +65,7 @@ function Group(baseProps: PropsWithChildren<AvatarGroupProps>, ref) {
   }
 
   return (
-    <div ref={ref} style={style} className={classNames} {...rest}>
+    <div ref={ref} style={style} className={classes} {...rest}>
       {avatarsToRender.map((item, index) => {
         const stackedStyle = {
           zIndex: zIndexAscend ? index + 1 : avatarCount - index,

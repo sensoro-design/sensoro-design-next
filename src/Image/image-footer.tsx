@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ImageProps } from './interface';
 import useShowFooter from './utils/hooks/useShowFooter';
 import IconMore from '../../icon/react-icon/IconMore';
@@ -23,7 +23,7 @@ export const ImageFooter = (props: ImageFooterProps) => {
   if (!showFooter) return null;
 
   const footerPrefixCls = `${prefixCls}-footer`;
-  const classNames = cs(footerPrefixCls, className, {
+  const classes = classNames(footerPrefixCls, className, {
     [`${footerPrefixCls}-with-actions`]: showActions,
   });
 
@@ -43,7 +43,7 @@ export const ImageFooter = (props: ImageFooterProps) => {
       return (
         <div className={`${prefixCls}-actions-list`}>
           <TriggerForToolbar prefixCls={prefixCls} popup={() => actionsList}>
-            <div className={cs(`${prefixCls}-actions-item`, `${prefixCls}-actions-item-trigger`)}>
+            <div className={classNames(`${prefixCls}-actions-item`, `${prefixCls}-actions-item-trigger`)}>
               <span>
                 <IconMore />
               </span>
@@ -56,9 +56,9 @@ export const ImageFooter = (props: ImageFooterProps) => {
   };
 
   return (
-    <div className={classNames} style={style}>
+    <div className={classes} style={style}>
       {showCaption && (
-        <div className={cs(`${footerPrefixCls}-block`, `${prefixCls}-caption`)}>
+        <div className={classNames(`${footerPrefixCls}-block`, `${prefixCls}-caption`)}>
           {title && (
             <div className={`${prefixCls}-caption-title`} title={title}>
               {title}
@@ -72,7 +72,7 @@ export const ImageFooter = (props: ImageFooterProps) => {
         </div>
       )}
       {showActions && (
-        <div className={cs(`${footerPrefixCls}-block`, `${prefixCls}-actions`)}>
+        <div className={classNames(`${footerPrefixCls}-block`, `${prefixCls}-actions`)}>
           {renderActionList()}
         </div>
       )}

@@ -1,4 +1,3 @@
-
 /**
  * title: 不同尺寸
  * desc: 展示不同尺寸下的描述列表。
@@ -31,15 +30,18 @@ const data = [{
 
 export default () => {
   const [size, setSize] = useState('default');
-  return <div>
-    <RadioGroup
-      value={size}
-      options={['mini', 'small', 'medium', 'default', 'large' ]}
-      onChange={(value) => setSize(value)}
-      type="button"
-      style={{ marginBottom: 20 }}
-    />
-    <Descriptions border title="User Info" data={data} size={size} style={{ marginBottom: 20 }} />
-    <Descriptions column={1} title="User Info" data={data} size={size} labelStyle={{ paddingRight: 40 }} />
-  </div>;
+
+  return (
+    <div>
+      <RadioGroup
+        value={size}
+        options={['mini', 'small', 'medium', 'default', 'large' ]}
+        onChange={(value) => setSize(value)}
+        type="button"
+        style={{ marginBottom: 20 }}
+      />
+      <Descriptions border title="User Info" data={data} size={size} style={{ marginBottom: 20 }} />
+      <Descriptions column={1} title="User Info" data={data} size={size} labelStyle={{ paddingRight: 40 }} />
+    </div>
+  );
 }

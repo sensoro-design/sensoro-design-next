@@ -20,7 +20,7 @@ nav:
 
 ### 栅格排序
 
-<code src="./__demo__/push_pull.demo.tsx" />
+<code src="./__demo__/push-pull.demo.tsx" />
 
 ### 区块间隔
 
@@ -44,7 +44,7 @@ nav:
 
 ### 其他属性的响应式
 
-<code src="./__demo__/adaptation_object.demo.tsx" />
+<code src="./__demo__/adaptation-object.demo.tsx" />
 
 ## Flex 用法
 

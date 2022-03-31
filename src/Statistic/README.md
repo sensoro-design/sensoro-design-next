@@ -16,11 +16,11 @@ nav:
 
 ### 前缀后缀/自定义样式
 
-<code src="./__demo__/prefix_suffix.demo.tsx" />
+<code src="./__demo__/prefix-suffix.demo.tsx" />
 
 ### 数值动效
 
-<code src="./__demo__/countUp.demo.tsx" />
+<code src="./__demo__/count-up.demo.tsx" />
 
 ### 计时组件
 

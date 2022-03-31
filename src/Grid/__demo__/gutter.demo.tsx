@@ -1,4 +1,3 @@
-
 /**
  * title: 区块间隔
  * desc: 通过在 `Row` 上指定 `gutter` 可以增加栅格的区域间隔。
@@ -6,8 +5,7 @@
 import { Grid, Divider } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 export default () => {
   return (

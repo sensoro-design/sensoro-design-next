@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import IconLeft from '../../icon/react-icon/IconLeft';
-import IconRight from '../../icon/react-icon/IconRight';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
+
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 
 interface ImagePreviewArrowProps {
   current: number;
@@ -17,14 +18,14 @@ function ImagePreviewArrow(props: ImagePreviewArrowProps) {
   const { getPrefixCls } = useContext(ConfigContext);
 
   const prefixCls = getPrefixCls('image-preview');
-  const classNames = cs(`${prefixCls}-arrow`);
+  const classes = classNames(`${prefixCls}-arrow`);
   const disableLeft = !infinite && current <= 0;
   const disableRight = !infinite && current >= previewCount - 1;
 
   return (
-    <div className={classNames}>
+    <div className={classes}>
       <div
-        className={cs(`${prefixCls}-arrow-left`, {
+        className={classNames(`${prefixCls}-arrow-left`, {
           [`${prefixCls}-arrow-disabled`]: disableLeft,
         })}
         onClick={(e) => {
@@ -32,10 +33,10 @@ function ImagePreviewArrow(props: ImagePreviewArrowProps) {
           !disableLeft && onPrev && onPrev();
         }}
       >
-        <IconLeft />
+        <LeftOutlined />
       </div>
       <div
-        className={cs(`${prefixCls}-arrow-right`, {
+        className={classNames(`${prefixCls}-arrow-right`, {
           [`${prefixCls}-arrow-disabled`]: disableRight,
         })}
         onClick={(e) => {
@@ -43,7 +44,7 @@ function ImagePreviewArrow(props: ImagePreviewArrowProps) {
           !disableRight && onNext && onNext();
         }}
       >
-        <IconRight />
+        <RightOutlined />
       </div>
     </div>
   );

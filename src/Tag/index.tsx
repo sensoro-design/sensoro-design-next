@@ -1,12 +1,13 @@
 import React, { useState, useContext, forwardRef, CSSProperties } from 'react';
-import cs from '@pansy/classnames';
-import IconClose from '../../icon/react-icon/IconClose';
+import classNames from '@pansy/classnames';
 import IconLoading from '../../icon/react-icon/IconLoading';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
 import { TagProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
 // 色板里的 12 个颜色
 const COLORS = [
@@ -89,7 +90,7 @@ function Tag(baseProps: TagProps, ref) {
   const _color: string = color ? (COLORS.indexOf(color) !== -1 ? color : '') : '';
   const _checked = checkable ? mergedChecked : true;
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-loading`]: loading,
@@ -120,12 +121,12 @@ function Tag(baseProps: TagProps, ref) {
   }
 
   return (
-    <div ref={ref} style={colorStyle} className={classNames} {...otherProps}>
+    <div ref={ref} style={colorStyle} className={classes} {...otherProps}>
       {icon && <span className={`${prefixCls}-icon`}>{icon}</span>}
       {children}
       {closable && !loading && closeIcon !== null && (
         <IconHover prefix={prefixCls} className={`${prefixCls}-close-btn`} onClick={onHandleClose}>
-          {closeIcon !== undefined ? closeIcon : <IconClose />}
+          {closeIcon !== undefined ? closeIcon : <CloseOutlined />}
         </IconHover>
       )}
       {loading && (

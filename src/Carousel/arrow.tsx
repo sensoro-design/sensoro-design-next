@@ -1,17 +1,18 @@
 import React, { useContext } from 'react';
-import IconLeft from '../../icon/react-icon/IconLeft';
-import IconRight from '../../icon/react-icon/IconRight';
-import IconUp from '../../icon/react-icon/IconUp';
-import IconDown from '../../icon/react-icon/IconDown';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { CarouselArrowProps } from './interface';
+
+import UpOutlined from '@sensoro-design/icons/UpOutlined';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 
 function CarouselArrow(props: CarouselArrowProps, ref) {
   const { className, direction, showArrow, prev, next, icons } = props;
   const { getPrefixCls } = useContext(ConfigContext);
   const prefixCls = getPrefixCls('carousel');
-  const arrowClass = cs(
+  const arrowClass = classNames(
     `${prefixCls}-arrow`,
     {
       [`${prefixCls}-arrow-hover`]: showArrow === 'hover',
@@ -22,17 +23,17 @@ function CarouselArrow(props: CarouselArrowProps, ref) {
     icons && icons.hasOwnProperty('prev') ? (
       icons.prev
     ) : direction === 'horizontal' ? (
-      <IconLeft />
+      <LeftOutlined />
     ) : (
-      <IconUp />
+      <UpOutlined />
     );
   const iconNext =
     icons && icons.hasOwnProperty('next') ? (
       icons.next
     ) : direction === 'horizontal' ? (
-      <IconRight />
+      <RightOutlined />
     ) : (
-      <IconDown />
+      <DownOutlined />
     );
 
   return (

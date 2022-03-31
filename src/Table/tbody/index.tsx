@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { TbodyProps } from '../interface';
 import { isArray } from '../../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import VirtualList from '../../_class/VirtualList';
 import Tr from './tr';
@@ -110,7 +110,7 @@ function TBody<T>(props: TbodyProps<T>) {
   }
 
   const noDataTr = (
-    <tr className={cs(`${prefixCls}-tr`, `${prefixCls}-empty-row`)}>
+    <tr className={classNames(`${prefixCls}-tr`, `${prefixCls}-empty-row`)}>
       <td className={`${prefixCls}-td`} colSpan={columns.length}>
         <div {...noElementProps}>{noDataElement}</div>
       </td>
@@ -152,7 +152,7 @@ function TBody<T>(props: TbodyProps<T>) {
                 {renderTreeTrs(record, index)}
                 {shouldRenderExpandIcon && (
                   <tr
-                    className={cs(`${prefixCls}-tr`, `${prefixCls}-expand-content`)}
+                    className={classNames(`${prefixCls}-tr`, `${prefixCls}-expand-content`)}
                     key={`${rowK}-expanded`}
                   >
                     <td

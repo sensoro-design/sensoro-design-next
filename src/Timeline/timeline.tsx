@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useContext, ReactElement, RefObject } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Item from './item';
 import { ConfigContext } from '../ConfigProvider';
 import Spin from '../Spin';
@@ -69,7 +69,7 @@ function Timeline(baseProps: PropsWithChildren<TimelineProps>, ref: RefObject<HT
     <div
       {...rest}
       ref={ref}
-      className={cs(
+      className={classNames(
         prefixCls,
         `${prefixCls}-${mode}`,
         `${prefixCls}-direction-${direction}`,
@@ -95,7 +95,7 @@ function Timeline(baseProps: PropsWithChildren<TimelineProps>, ref: RefObject<HT
         }
         return React.cloneElement(child, {
           key: index,
-          className: cs(child.props.className, {
+          className: classNames(child.props.className, {
             [`${prefixCls}-item-last`]: items.length - 1 === index,
           }),
           labelPosition,

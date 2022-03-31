@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, forwardRef, useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { isString, isObject } from '../_util/is';
 import { CommentProps } from './interface';
@@ -36,9 +36,9 @@ function Comment(baseProps: PropsWithChildren<CommentProps>, ref) {
   };
 
   return (
-    <div ref={ref} className={cs(`${prefixCls}`, props.className)} style={props.style}>
+    <div ref={ref} className={classNames(`${prefixCls}`, props.className)} style={props.style}>
       {avatar && (
-        <div className={cs(`${prefixCls}-avatar`)}>
+        <div className={classNames(`${prefixCls}-avatar`)}>
           {isString(avatar) ? <img src={avatar} alt="comment-avatar" /> : avatar}
         </div>
       )}

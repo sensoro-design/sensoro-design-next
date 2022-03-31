@@ -1,6 +1,6 @@
 import React, { useRef, CSSProperties, useEffect } from 'react';
 import isEqualWith from 'lodash/isEqualWith';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { getRectDiff } from '../utils';
 import throttleByRaf from '../../_util/throttleByRaf';
 
@@ -65,7 +65,7 @@ const TabInk = ({
 
   return (
     <div
-      className={cs(`${prefixCls}-header-ink`, {
+      className={classNames(`${prefixCls}-header-ink`, {
         [`${prefixCls}-header-ink-no-animation`]: !animation,
         [`${prefixCls}-header-ink-disabled`]: disabled,
       })}

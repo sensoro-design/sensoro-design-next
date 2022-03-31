@@ -4,8 +4,7 @@ import ResizeObserver from '../../_util/resizeObserver';
 import DropdownIcon from './dropdown-icon';
 import TabNavIcon from './tab-nav-icon';
 import TabHeaderTitle from './tab-title';
-import IconPlus from '../../../icon/react-icon/IconPlus';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { setTransformStyle } from '../../_util/style';
 import { getRectDiff, updateScrollOffset } from '../utils';
 import { TabsContext } from '../tabs';
@@ -15,6 +14,8 @@ import IconHover from '../../_class/icon-hover';
 import useDomSize from '../hook/useDomSize';
 import throttleByRaf from '../../_util/throttleByRaf';
 import useHeaderScroll from '../hook/useHeaderScroll';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
 
 const DIRECTION_VERTICAL = 'vertical';
 const ALIGN_RIGHT = 'right';
@@ -275,7 +276,7 @@ const TabHeader = React.forwardRef<HTMLDivElement, TabsProps>((props, ref) => {
         <div className={`${prefixCls}-add-icon`} onClick={handleAdd}>
           {addButton || (
             <IconHover prefix={`${prefixCls}-add`}>
-              <span className={`${prefixCls}-add`}>{icons?.add || <IconPlus />}</span>
+              <span className={`${prefixCls}-add`}>{icons?.add || <PlusOutlined />}</span>
             </IconHover>
           )}
         </div>
@@ -296,7 +297,7 @@ const TabHeader = React.forwardRef<HTMLDivElement, TabsProps>((props, ref) => {
 
   return (
     <div
-      className={cs(
+      className={classNames(
         `${prefixCls}-header-nav`,
         `${prefixCls}-header-nav-${direction}`,
         `${prefixCls}-header-nav-${tabPosition}`,
@@ -308,7 +309,7 @@ const TabHeader = React.forwardRef<HTMLDivElement, TabsProps>((props, ref) => {
       ref={ref}
     >
       <div
-        className={cs(`${prefixCls}-header-scroll`, {
+        className={classNames(`${prefixCls}-header-scroll`, {
           [`${prefixCls}-header-overflow-scroll`]: isScroll,
           [`${prefixCls}-header-overflow-dropdown`]: isDropdown,
         })}
@@ -331,7 +332,7 @@ const TabHeader = React.forwardRef<HTMLDivElement, TabsProps>((props, ref) => {
           <div className={`${prefixCls}-header-wrapper`} ref={headerWrapperRef}>
             <ResizeObserver onResize={onHeaderResize}>
               <div
-                className={cs(`${prefixCls}-header`, {
+                className={classNames(`${prefixCls}-header`, {
                   [`${prefixCls}-header-no-padding`]:
                     !props.headerPadding &&
                     direction === 'horizontal' &&

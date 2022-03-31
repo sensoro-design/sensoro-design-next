@@ -2,7 +2,7 @@ import React, { CSSProperties, ReactNode, memo } from 'react';
 import get from 'lodash/get';
 import pick from '../../_util/pick';
 import { isObject, isString } from '../../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import { ComponentsProps, InternalColumnProps, SorterResult } from '../interface';
 
@@ -54,7 +54,7 @@ function Td(props: TdType) {
   } = props;
   const { ComponentBodyCell } = useComponent(components);
 
-  const classNameTd = cs(
+  const classNameTd = classNames(
     `${prefixCls}-td`,
     stickyClassName,
     {
@@ -186,7 +186,7 @@ function Td(props: TdType) {
       {...tdProps}
     >
       <div
-        className={cs(`${prefixCls}-cell`, {
+        className={classNames(`${prefixCls}-cell`, {
           [`${prefixCls}-cell-text-ellipsis`]: column.ellipsis,
         })}
         {...titleProps}

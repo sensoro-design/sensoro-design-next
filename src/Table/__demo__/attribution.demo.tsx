@@ -1,13 +1,11 @@
-
 /**
  * title: 表格属性
  * desc: 在这里，你可以方便的打开或关闭表格的属性，来看一下吧。
  */
 import React from 'react';
-import { Table, Grid, Switch, Form, Radio } from '@sensoro-design/react';
+import { Table, Switch, Form, Radio } from '@sensoro-design/react';
 
 const FormItem = Form.Item;
-const { Row, Col } = Grid;
 
 const columns = [
   {

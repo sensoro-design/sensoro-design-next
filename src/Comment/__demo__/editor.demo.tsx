@@ -3,7 +3,7 @@
  * title: 回复框
  * desc: 实现一个评论回复框。
  */
-import { Comment, Button, Input  } from '@sensoro-design/react';
+import { Comment, Button, Input } from '@sensoro-design/react';
 import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
 import './styles.less';
 

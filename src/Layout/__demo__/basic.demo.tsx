@@ -1,4 +1,3 @@
-
 /**
  * title: 基础用法
  * desc: 典型的页面布局。
@@ -6,10 +5,7 @@
 import { Layout } from '@sensoro-design/react';
 import './styles.less';
 
-const Sider = Layout.Sider;
-const Header = Layout.Header;
-const Footer = Layout.Footer;
-const Content = Layout.Content;
+const { Sider, Header, Footer, Content, } = Layout;
 
 export default () => {
   return (

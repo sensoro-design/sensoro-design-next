@@ -1,6 +1,6 @@
 import React, { CSSProperties, PropsWithChildren } from 'react';
 import Trigger, { TriggerProps } from '../Trigger';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 
 interface TriggerForToolbarProps {
   style?: CSSProperties;
@@ -11,9 +11,10 @@ interface TriggerForToolbarProps {
 
 export const TriggerForToolbar = (props: PropsWithChildren<TriggerForToolbarProps>) => {
   const { style, className, prefixCls, popup, children } = props;
-  const classNames = cs(`${prefixCls}-trigger`, className);
+  const classes = classNames(`${prefixCls}-trigger`, className);
+
   return (
-    <Trigger style={style} className={classNames} popup={popup} showArrow>
+    <Trigger style={style} className={classes} popup={popup} showArrow>
       {children}
     </Trigger>
   );

@@ -7,7 +7,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import CarouselIndicator from './indicator';
 import CarouselArrow from './arrow';
 import { ConfigContext } from '../ConfigProvider';
@@ -210,7 +210,7 @@ function Carousel(baseProps: CarouselProps, ref) {
   }
 
   const prefixCls = getPrefixCls('carousel');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-indicator-position-${indicatorPosition}`,
     className
@@ -232,7 +232,7 @@ function Carousel(baseProps: CarouselProps, ref) {
           ref = _ref;
           refDom.current = ref;
         }}
-        className={classNames}
+        className={classes}
         style={style}
         {...omit(rest, ['autoplay', 'autoPlaySpeed'])}
         {...eventHandlers}
@@ -240,7 +240,7 @@ function Carousel(baseProps: CarouselProps, ref) {
         <div
           ref={refSliderWrapper}
           style={computedStyle.sliderWrapper}
-          className={cs(`${prefixCls}-${animation}`, `${prefixCls}-${direction}`, {
+          className={classNames(`${prefixCls}-${animation}`, `${prefixCls}-${direction}`, {
             [`${prefixCls}-negative`]: slideDirection === 'negative',
           })}
         >
@@ -270,7 +270,7 @@ function Carousel(baseProps: CarouselProps, ref) {
                 },
                 childStyle
               ),
-              className: cs(childClassName, {
+              className: classNames(childClassName, {
                 [`${prefixCls}-item-prev`]: isPrev,
                 [`${prefixCls}-item-next`]: isNext,
                 [`${prefixCls}-item-current`]: isCurrent,
@@ -294,7 +294,7 @@ function Carousel(baseProps: CarouselProps, ref) {
         {indicatorType !== 'never' && childrenLength > 1 && (
           <div
             style={computedStyle.indicatorWrapper}
-            className={cs(
+            className={classNames(
               `${prefixCls}-indicator-wrapper`,
               `${prefixCls}-indicator-wrapper-${indicatorPosition}`
             )}

@@ -6,7 +6,7 @@
 import React from 'react';
 import { Image } from '@sensoro-design/react';
 
-const wrapperStyle = {
+const wrapperStyle: React.CSSProperties = {
   width: '100%',
   height: 400,
   backgroundColor: 'var(--color-fill-2)',

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useContext, forwardRef, useEffect } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import ResponsiveObserve, {
@@ -67,7 +67,7 @@ function Row(baseProps: RowProps, ref) {
   }
 
   const prefixCls = getPrefixCls('row');
-  const classNames = cs(
+  const classes = classNames(
     {
       [`${prefixCls}`]: !div,
       [`${prefixCls}-align-${align}`]: align,
@@ -105,7 +105,7 @@ function Row(baseProps: RowProps, ref) {
         ...style,
         ...marginStyle,
       }}
-      className={classNames}
+      className={classes}
     >
       <RowContext.Provider value={{ gutter: [gutterHorizontal, gutterVertical], div }}>
         {children}
@@ -119,5 +119,3 @@ const RowComponent = forwardRef(Row);
 RowComponent.displayName = 'Row';
 
 export default RowComponent;
-
-export { RowProps };

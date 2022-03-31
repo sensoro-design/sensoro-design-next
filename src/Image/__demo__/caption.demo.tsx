@@ -1,4 +1,3 @@
-
 /**
  * title: 显示 Caption
  * desc: 通过设置 `title` 和 `description` 可以将图片的标题和描述显示在图片内部或者底部，显示的位置通过 `footerPosition` 控制。
@@ -10,20 +9,22 @@ export default () => {
   const title = 'A user’s avatar';
   const description = 'Present by Arco Design';
 
-  return <div>
-    <Image
-      width={200}
-      src={src}
-      title={title}
-      description={description}
-    />
-    <Image
-      width={200}
-      src={src}
-      title={title}
-      description={description}
-      footerPosition="outer"
-      style={{ marginLeft: 67, verticalAlign: 'top' }}
-    />
-  </div>
+  return (
+    <div>
+      <Image
+        width={200}
+        src={src}
+        title={title}
+        description={description}
+      />
+      <Image
+        width={200}
+        src={src}
+        title={title}
+        description={description}
+        footerPosition="outer"
+        style={{ marginLeft: 67, verticalAlign: 'top' }}
+      />
+    </div>
+  )
 }

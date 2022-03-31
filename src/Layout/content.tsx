@@ -1,15 +1,17 @@
 import React, { useContext, forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
-import { ContentProps } from './interface';
+
+import type { ContentProps } from './interface';
 
 function Content(props: ContentProps, ref) {
   const { className, children, ...rest } = props;
   const { getPrefixCls } = useContext(ConfigContext);
   const prefixCls = getPrefixCls('layout-content');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
+
   return (
-    <main ref={ref} {...rest} className={classNames}>
+    <main ref={ref} {...rest} className={classes}>
       {children}
     </main>
   );

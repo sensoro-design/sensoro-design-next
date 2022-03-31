@@ -10,9 +10,10 @@ import React, {
 } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { findDOMNode } from 'react-dom';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { on, off, isServerRendering } from '../_util/dom';
 import ResizeObserver from '../_util/resizeObserver';
+
 import IconLoading from '../../icon/react-icon/IconLoading';
 import IconZoomOut from '../../icon/react-icon/IconZoomOut';
 import IconZoomIn from '../../icon/react-icon/IconZoomIn';
@@ -35,6 +36,10 @@ import ImagePreviewArrow from './image-preview-arrow';
 import useOverflowHidden from '../_util/hooks/useOverflowHidden';
 import { Esc } from '../_util/keycode';
 import useUpdate from '../_util/hooks/useUpdate';
+
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import ZoomInOutlined from '@sensoro-design/icons/ZoomInOutlined';
+import ZoomOutOutlined from '@sensoro-design/icons/ZoomOutOutlined';
 
 const ROTATE_STEP = 90;
 
@@ -81,7 +86,7 @@ function Preview(props: ImagePreviewProps, ref) {
   const { getPrefixCls, locale } = globalContext;
   const prefixCls = getPrefixCls('image');
   const previewPrefixCls = `${prefixCls}-preview`;
-  const classNames = cs(
+  const classes = classNames(
     previewPrefixCls,
     {
       [`${previewPrefixCls}-hide`]: !visible,
@@ -385,7 +390,7 @@ function Preview(props: ImagePreviewProps, ref) {
       https://github.com/arco-design/arco-design/issues/387 */}
       <ConfigProvider {...globalContext} getPopupContainer={() => refWrapper.current}>
         <div
-          className={classNames}
+          className={classes}
           style={{
             ...(style || {}),
             ...(isFixed ? {} : { zIndex: 'inherit', position: 'absolute' }),
@@ -424,7 +429,7 @@ function Preview(props: ImagePreviewProps, ref) {
                 >
                   <img
                     ref={refImage}
-                    className={cs(`${previewPrefixCls}-img`, {
+                    className={classNames(`${previewPrefixCls}-img`, {
                       [`${previewPrefixCls}-img-moving`]: moving,
                     })}
                     style={{

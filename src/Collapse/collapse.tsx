@@ -1,14 +1,15 @@
 import React, { createContext, ReactNode, useContext, PropsWithChildren } from 'react';
 import { isFunction } from '../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import CollapseItem from './item';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
-import IconCaretRight from '../../icon/react-icon/IconCaretRight';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import IconCaretLeft from '../../icon/react-icon/IconCaretLeft';
 import { CollapseProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import CaretLeftOutlined from '@sensoro-design/icons/CaretLeftOutlined';
+import CaretRightOutlined from '@sensoro-design/icons/CaretRightOutlined';
 
 const getActiveKeys = (keys: CollapseProps['activeKey'], accordion: boolean): string[] => {
   const res = [].concat(keys);
@@ -33,7 +34,7 @@ export const CollapseContext = createContext<{
   onToggle?: (_key: string, _e) => void;
 }>({
   expandIconPosition: 'left',
-  expandIcon: <IconCaretRight />,
+  expandIcon: <CaretRightOutlined />,
   activeKeys: [],
   onToggle: () => {},
 });
@@ -95,9 +96,9 @@ function Collapse(baseProps: PropsWithChildren<CollapseProps>, ref) {
           'expandIcon' in props ? (
             expandIcon
           ) : expandIconPosition === 'right' ? (
-            <IconCaretLeft />
+            <CaretLeftOutlined />
           ) : (
-            <IconCaretRight />
+            <CaretRightOutlined />
           ),
         destroyOnHide,
         expandIconPosition,
@@ -106,7 +107,7 @@ function Collapse(baseProps: PropsWithChildren<CollapseProps>, ref) {
       <div
         ref={ref}
         {...omit(rest, ['activeKey', 'defaultActiveKey'])}
-        className={cs(prefixCls, `${prefixCls}-${bordered ? 'border' : 'borderless'}`, className)}
+        className={classNames(prefixCls, `${prefixCls}-${bordered ? 'border' : 'borderless'}`, className)}
         style={style}
       >
         {children}

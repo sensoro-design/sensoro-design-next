@@ -13,10 +13,7 @@ import './styles.less';
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 
-const Sider = Layout.Sider;
-const Header = Layout.Header;
-const Footer = Layout.Footer;
-const Content = Layout.Content;
+const { Sider, Header, Footer, Content, } = Layout;
 
 function BaseMenu(props) {
   return <Menu

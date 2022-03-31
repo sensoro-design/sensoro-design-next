@@ -1,4 +1,3 @@
-
 /**
  * title: 基础列表
  * desc: 使用 `List.Item.Meta` 可快速指定头像、标题、文字。

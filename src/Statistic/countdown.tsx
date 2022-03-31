@@ -1,7 +1,7 @@
 import React, { forwardRef, useState, useEffect, useContext, useRef } from 'react';
 import dayjs, { Dayjs } from 'dayjs';
 import { getDayjsValue, getNow } from '../_util/dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { getDateString } from './util';
 import { ConfigContext } from '../ConfigProvider';
 import { CountdownProps } from './interface';
@@ -51,7 +51,7 @@ function Countdown(props: CountdownProps, ref) {
   return (
     <div
       ref={ref}
-      className={cs(`${prefixCls}`, `${prefixCls}-countdown`, className)}
+      className={classNames(`${prefixCls}`, `${prefixCls}-countdown`, className)}
       style={style}
     >
       {title && <div className={`${prefixCls}-title`}>{title}</div>}

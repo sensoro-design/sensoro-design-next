@@ -1,4 +1,3 @@
-
 /**
  * title: 排序
  * desc: 通过 `order` 来进行元素排序。
@@ -6,8 +5,7 @@
 import { Grid } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 export default () => {
   return (

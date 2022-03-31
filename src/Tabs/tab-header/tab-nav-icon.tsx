@@ -1,10 +1,11 @@
 import React from 'react';
-import IconLeft from '../../../icon/react-icon/IconLeft';
-import IconRight from '../../../icon/react-icon/IconRight';
-import IconUp from '../../../icon/react-icon/IconUp';
-import IconDown from '../../../icon/react-icon/IconDown';
 import IconHover from '../../_class/icon-hover';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
+
+import UpOutlined from '@sensoro-design/icons/UpOutlined';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 
 const TabNavIcon = (props) => {
   const {
@@ -72,19 +73,19 @@ const TabNavIcon = (props) => {
       <IconHover
         disabled={disabledPrev}
         prefix={prefixCls}
-        className={cs(`${prefixCls}-up-icon`, {
+        className={classNames(`${prefixCls}-up-icon`, {
           [`${prefixCls}-nav-icon-disabled`]: disabledPrev,
         })}
         onClick={(e) => {
           handleVerticalClick(e, 'up');
         }}
       >
-        <IconUp />
+        <UpOutlined />
       </IconHover>
     ) : (
       <IconHover
         prefix={prefixCls}
-        className={cs(`${prefixCls}-down-icon`, {
+        className={classNames(`${prefixCls}-down-icon`, {
           [`${prefixCls}-nav-icon-disabled`]: disabledNext,
         })}
         disabled={disabledNext}
@@ -92,26 +93,26 @@ const TabNavIcon = (props) => {
           handleVerticalClick(e, 'down');
         }}
       >
-        <IconDown />
+        <DownOutlined />
       </IconHover>
     )
   ) : iconPos === 'prev' ? (
     <IconHover
       prefix={prefixCls}
       disabled={disabledPrev}
-      className={cs(`${prefixCls}-left-icon`, {
+      className={classNames(`${prefixCls}-left-icon`, {
         [`${prefixCls}-nav-icon-disabled`]: disabledPrev,
       })}
       onClick={(e) => {
         handleHozClick(e, 'left');
       }}
     >
-      <IconLeft />
+      <LeftOutlined />
     </IconHover>
   ) : (
     <IconHover
       prefix={prefixCls}
-      className={cs(`${prefixCls}-right-icon`, {
+      className={classNames(`${prefixCls}-right-icon`, {
         [`${prefixCls}-nav-icon-disabled`]: disabledNext,
       })}
       disabled={disabledNext}
@@ -119,7 +120,7 @@ const TabNavIcon = (props) => {
         handleHozClick(e, 'right');
       }}
     >
-      <IconRight />
+      <RightOutlined />
     </IconHover>
   );
 };

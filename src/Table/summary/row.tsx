@@ -1,6 +1,6 @@
 import React, { useContext, ReactNode, ReactElement, HTMLAttributes } from 'react';
 import { SummaryContext } from './context';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { Omit } from '../../_util/type';
 
 interface SummaryRowProps extends Omit<HTMLAttributes<HTMLTableRowElement>, 'children'> {
@@ -43,7 +43,7 @@ function Row(props: SummaryRowProps) {
     return isSummaryCell
       ? React.cloneElement(childElement, {
           ...childElement.props,
-          className: cs(`${prefixCls}-td`, stickyClassName, childClassName),
+          className: classNames(`${prefixCls}-td`, stickyClassName, childClassName),
           style: { ...childStyle, ...stickyStyle },
         })
       : child;

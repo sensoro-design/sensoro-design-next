@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义单元格内容
  * desc: 通过 `columns` 中的 `render` 字段，可以自定义单元格的内容

@@ -1,9 +1,10 @@
 import React, { CSSProperties, forwardRef } from 'react';
-import cs from '@pansy/classnames';
-import IconMore from '../../icon/react-icon/IconMore';
+import classNames from '@pansy/classnames';
 import Tooltip from '../Tooltip';
 import { ImagePreviewActionProps } from './interface';
 import { TriggerForToolbar } from './trigger-for-toolbar';
+
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
 
 interface ImagePreviewToolbarProps {
   style?: CSSProperties;
@@ -49,7 +50,7 @@ const ImagePreviewToolbar = (props: ImagePreviewToolbarProps, ref) => {
     const { content, disabled, key, name, getContainer, onClick, ...rest } = itemData;
     const action = (
       <div
-        className={cs(`${previewPrefixCls}-toolbar-action`, {
+        className={classNames(`${previewPrefixCls}-toolbar-action`, {
           [`${previewPrefixCls}-toolbar-action-disabled`]: disabled,
         })}
         key={key}
@@ -93,7 +94,7 @@ const ImagePreviewToolbar = (props: ImagePreviewToolbarProps, ref) => {
   return (
     <div
       ref={ref}
-      className={cs(
+      className={classNames(
         `${previewPrefixCls}-toolbar`,
         {
           [`${previewPrefixCls}-toolbar-simple`]: simple,
@@ -112,7 +113,7 @@ const ImagePreviewToolbar = (props: ImagePreviewToolbarProps, ref) => {
             key: 'trigger',
             content: (
               <span>
-                <IconMore />
+                <MoreOutlined />
               </span>
             ),
           })}

@@ -1,4 +1,3 @@
-
 /**
  * title: 多图预览
  * desc: 用 `<Image.PreviewGroup>` 包裹 `<Image>` 组件即可进行多图预览。

@@ -1,4 +1,3 @@
-
 /**
  * title: 树形数据展示
  * desc: 树形数据展示的例子，`data` 里有 `children` 字段, 或者通过 `childrenColumnName` 设置成自定义字段。

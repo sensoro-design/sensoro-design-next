@@ -1,4 +1,3 @@
-
 /**
  * title: 可伸缩列
  * desc: 配合 `react-resizable` 可以实现可伸缩列的效果。

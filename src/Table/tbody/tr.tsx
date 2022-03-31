@@ -2,7 +2,7 @@ import React, { forwardRef, ReactElement } from 'react';
 import Checkbox from '../../Checkbox';
 import Radio from '../../Radio';
 import { isString, isArray } from '../../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import IconPlus from '../../../icon/react-icon/IconPlus';
 import IconMinus from '../../../icon/react-icon/IconMinus';
@@ -53,7 +53,7 @@ function Tr<T>(props: TrType<T>, ref) {
   const usedSelectedRowKeys = type === 'radio' ? selectedRowKeys.slice(0, 1) : selectedRowKeys;
   const checked = !!~usedSelectedRowKeys.indexOf(rowK);
   const trKey = rowK || index;
-  const classNameTr = cs(
+  const classNameTr = classNames(
     `${prefixCls}-tr`,
     {
       [`${prefixCls}-row-checked`]: checked,
@@ -64,9 +64,9 @@ function Tr<T>(props: TrType<T>, ref) {
     rowSelection && typeof rowSelection.checkboxProps === 'function'
       ? rowSelection.checkboxProps(record)
       : {};
-  const operationClassName = cs(`${prefixCls}-td`, `${prefixCls}-operation`);
+  const operationClassName = classNames(`${prefixCls}-td`, `${prefixCls}-operation`);
   const getPrefixColClassName = (name) => {
-    return cs(operationClassName, `${prefixCls}-${name}`, {
+    return classNames(operationClassName, `${prefixCls}-${name}`, {
       [`${prefixCls}-selection-col`]: (virtualized && type === 'checkbox') || type === 'radio',
       [`${prefixCls}-expand-icon-col`]: virtualized && expandedRowRender,
     });
@@ -195,7 +195,7 @@ function Tr<T>(props: TrType<T>, ref) {
           return React.cloneElement(operationNode, {
             key: col.key || colIndex,
             ...operationNode.props,
-            className: cs(
+            className: classNames(
               isExtraOperation ? operationClassName : '',
               operationNode?.props?.className,
               stickyClassName

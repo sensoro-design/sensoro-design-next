@@ -1,4 +1,3 @@
-
 /**
  * title: 垂直布局
  * desc: 通过 `align` 来进行垂直布局。
@@ -6,8 +5,7 @@
 import { Grid, Typography } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 const rowStyle = { marginBottom: 40, backgroundColor: 'var(--color-fill-2)' };
 const titleStyle = { fontSize: 12, color: '#141f33' };

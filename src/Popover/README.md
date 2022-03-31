@@ -16,7 +16,7 @@ nav:
 
 ### 浮层内关闭
 
-<code src="./__demo__/popupVisible.demo.tsx" />
+<code src="./__demo__/popup-visible.demo.tsx" />
 
 ### 位置
 

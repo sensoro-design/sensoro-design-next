@@ -1,4 +1,3 @@
-
 /**
  * title: 栅格偏移
  * desc: 指定 `offset` 可以对栅格进行平移操作。
@@ -6,8 +5,7 @@
 import { Grid } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 export default () => {
   return (

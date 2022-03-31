@@ -1,12 +1,12 @@
-
 /**
  * title: 渐进加载
  * desc: 大图可通过给 `loader` 传递一个小一些的图片，让其在原图未被加载成功时显示，以此来模拟渐进加载。
  */
+import React from 'react';
 import { Image, Button } from '@sensoro-design/react';
 
 export default () => {
-  const [timestamp, setTimestamp] = React.useState('');
+  const [timestamp, setTimestamp] = React.useState<any>('');
 
   return (
     <div>

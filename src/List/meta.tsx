@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { ListItemMetaProps } from './interface';
 
@@ -12,7 +12,7 @@ function Meta(props: ListItemMetaProps, ref) {
   const hasContent = !!(title || description);
 
   return (
-    <div ref={ref} {...others} className={cs(baseClassName, className)}>
+    <div ref={ref} {...others} className={classNames(baseClassName, className)}>
       {hasAvatar && <div className={`${baseClassName}-avatar`}>{avatar}</div>}
       {hasContent && (
         <div className={`${baseClassName}-content`}>

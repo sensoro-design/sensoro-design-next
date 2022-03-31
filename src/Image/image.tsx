@@ -1,5 +1,5 @@
 import React, { useContext, ImgHTMLAttributes, useEffect, useMemo, LegacyRef, useRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import IconLoading from '../../icon/react-icon/IconLoading';
 import IconImageClose from '../../icon/react-icon/IconImageClose';
@@ -84,7 +84,7 @@ function Image(baseProps: ImagePropsType, ref: LegacyRef<HTMLDivElement>) {
   ]);
 
   const prefixCls = getPrefixCls('image');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-simple`]: simple,
@@ -164,12 +164,12 @@ function Image(baseProps: ImagePropsType, ref: LegacyRef<HTMLDivElement>) {
 
   const renderLoader = () => {
     if (loader === true) return defaultLoader;
-    if (loaderClassName) return <div className={cs(`${prefixCls}-loader`, loaderClassName)} />;
+    if (loaderClassName) return <div className={classNames(`${prefixCls}-loader`, loaderClassName)} />;
     return loader || null;
   };
 
   return (
-    <div className={classNames} style={Object.assign({ width, height }, style)} ref={ref}>
+    <div className={classes} style={Object.assign({ width, height }, style)} ref={ref}>
       <img
         ref={refImg}
         className={`${prefixCls}-img`}

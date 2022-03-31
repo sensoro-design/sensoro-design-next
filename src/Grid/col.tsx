@@ -1,10 +1,12 @@
 import React, { useContext, useMemo, forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
+
 import { isNumber, isObject } from '../_util/is';
 import { ConfigContext } from '../ConfigProvider';
-import { ColProps, FlexType } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 import { RowContext } from './context';
+
+import type { ColProps, FlexType } from './interface';
 
 const defaultProps: ColProps = {
   span: 24,
@@ -70,7 +72,7 @@ function Col(baseProps: ColProps, ref) {
     [`${prefixCls}-push-${push}`]: push,
   };
   mergeClassName = adaptationGrid(prefixCls, mergeClassName);
-  const classNames = cs(flex ? prefixCls : mergeClassName, className);
+  const classes = classNames(flex ? prefixCls : mergeClassName, className);
 
   const paddingStyle: {
     paddingLeft?: number;
@@ -105,7 +107,7 @@ function Col(baseProps: ColProps, ref) {
         ...paddingStyle,
         ...flexStyle,
       }}
-      className={classNames}
+      className={classes}
     >
       {children}
     </div>
@@ -117,5 +119,3 @@ const ColComponent = forwardRef(Col);
 ColComponent.displayName = 'Col';
 
 export default ColComponent;
-
-export { ColProps };

@@ -9,16 +9,22 @@ import React, {
 import Checkbox from '../Checkbox';
 import classNames from '@pansy/classnames';
 import { isFunction } from '../_util/is';
+
 import IconCaretDown from '../../icon/react-icon/IconCaretDown';
 import IconDragDotVertical from '../../icon/react-icon/IconDragDotVertical';
 import IconLoading from '../../icon/react-icon/IconLoading';
 import IconFile from '../../icon/react-icon/IconFile';
+
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
 import { NodeProps } from './interface';
 import { TreeContext } from './context';
 import AnimationNode from './animation';
 import throttleByRaf from '../_util/throttleByRaf';
+
+import FileTextOutlined from '@sensoro-design/icons/FileTextOutlined';
+import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
+import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
 
 export interface NodeState {
   isDragOver?: boolean;

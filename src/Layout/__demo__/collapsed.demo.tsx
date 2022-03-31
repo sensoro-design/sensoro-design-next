@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义收起按钮
  * desc: 设置 `Menu.Sider` 的 `trigger` 属性为 `null` 后，`Sider` 内置的缩起按钮不会显示。此时可自定义收起按钮。
@@ -11,10 +10,7 @@ import './styles.less';
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 
-const Sider = Layout.Sider;
-const Header = Layout.Header;
-const Footer = Layout.Footer;
-const Content = Layout.Content;
+const { Sider, Header, Footer, Content, } = Layout;
 
 export default class Demo extends React.Component {
   state = {

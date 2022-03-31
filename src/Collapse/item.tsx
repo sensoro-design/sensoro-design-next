@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useContext } from 'react';
 import { Transition } from 'react-transition-group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { CollapseContext } from './collapse';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
@@ -33,7 +33,7 @@ function Item(props: PropsWithChildren<CollapseItemProps>, ref) {
     <div
       ref={ref}
       {...rest}
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-active`]: isExpanded,
@@ -45,7 +45,7 @@ function Item(props: PropsWithChildren<CollapseItemProps>, ref) {
       style={style}
     >
       <div
-        className={cs(`${prefixCls}-header`, `${prefixCls}-header-${ctx.expandIconPosition}`, {
+        className={classNames(`${prefixCls}-header`, `${prefixCls}-header-${ctx.expandIconPosition}`, {
           [`${prefixCls}-header-disabled`]: disabled,
         })}
         onClick={(e) => {
@@ -56,13 +56,13 @@ function Item(props: PropsWithChildren<CollapseItemProps>, ref) {
           <IconHover
             prefix={prefixCls}
             disabled={disabled}
-            className={cs({
+            className={classNames({
               [`${prefixCls}-icon-hover-right`]: ctx.expandIconPosition === 'right',
               [`${prefixCls}-header-icon-right`]: ctx.expandIconPosition === 'right',
             })}
           >
             <span
-              className={cs(`${prefixCls}-header-icon`, {
+              className={classNames(`${prefixCls}-header-icon`, {
                 [`${prefixCls}-header-icon-down`]: isExpanded,
               })}
             >
@@ -114,7 +114,7 @@ function Item(props: PropsWithChildren<CollapseItemProps>, ref) {
         }}
       >
         <div
-          className={cs(`${prefixCls}-content`, {
+          className={classNames(`${prefixCls}-content`, {
             [`${prefixCls}-content-expanded`]: isExpanded,
           })}
         >

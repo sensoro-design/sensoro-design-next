@@ -28,7 +28,7 @@ nav:
 
 ### 文本内容
 
-<code src="./__demo__/max_count.demo.tsx" />
+<code src="./__demo__/max-count.demo.tsx" />
 
 ### 状态值
 

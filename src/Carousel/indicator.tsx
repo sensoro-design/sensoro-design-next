@@ -1,5 +1,5 @@
 import React, { ReactNode, useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { CarouselIndicatorProps } from './interface';
 
@@ -24,7 +24,7 @@ function CarouselIndicator(props: CarouselIndicatorProps, ref) {
       <span
         key={0}
         style={{ width: `${step}%`, left: `${activeIndex * step}%` }}
-        className={cs(`${prefixCls}-item`, `${prefixCls}-item-active`)}
+        className={classNames(`${prefixCls}-item`, `${prefixCls}-item-active`)}
       />
     );
   } else {
@@ -33,7 +33,7 @@ function CarouselIndicator(props: CarouselIndicatorProps, ref) {
         <span
           key={i}
           data-index={i}
-          className={cs(`${prefixCls}-item`, {
+          className={classNames(`${prefixCls}-item`, {
             [`${prefixCls}-item-active`]: i === activeIndex,
           })}
         />
@@ -43,7 +43,7 @@ function CarouselIndicator(props: CarouselIndicatorProps, ref) {
 
   const wrapperProps = {
     ref,
-    className: cs(prefixCls, `${prefixCls}-${type}`, `${prefixCls}-${position}`, className),
+    className: classNames(prefixCls, `${prefixCls}-${type}`, `${prefixCls}-${position}`, className),
     [trigger === 'click' ? 'onClick' : 'onMouseEnter']: (event) => {
       event.preventDefault();
       if (type === 'slider') {

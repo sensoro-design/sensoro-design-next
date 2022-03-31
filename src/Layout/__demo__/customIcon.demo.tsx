@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义按钮 Icon
  * desc: 通过设置 `Menu.Sider` 的 `trigger` 属性，实现自定义收起按钮的图标。
@@ -11,10 +10,7 @@ import './styles.less';
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
 
-const Sider = Layout.Sider;
-const Header = Layout.Header;
-const Footer = Layout.Footer;
-const Content = Layout.Content;
+const { Sider, Header, Footer, Content, } = Layout;
 
 export default class Demo extends React.Component {
   state = {

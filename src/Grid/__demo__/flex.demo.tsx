@@ -1,4 +1,3 @@
-
 /**
  * title: Flex 用法
  * desc: 通过设置 `Col` 组件的 `flex` 属性，可以任意配置 flex 布局。
@@ -6,8 +5,7 @@
 import { Grid } from '@sensoro-design/react';
 import './styles.less';
 
-const Row = Grid.Row;
-const Col = Grid.Col;
+const { Row, Col } = Grid;
 
 export default () => {
   return (

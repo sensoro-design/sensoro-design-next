@@ -1,4 +1,3 @@
-
 /**
  * title: 加载状态
  * desc: 默认情况下，加载效果是不显示的，可通过设置 `loader=true` 显示默认加载效果。如果默认加载效果不符合需求。还可以通过 `loaderClassName` 自行设置加载样式。
@@ -7,7 +6,7 @@ import React from 'react';
 import { Image, Button } from '@sensoro-design/react';
 
 export default () => {
-  const [timestamp, setTimestamp] = React.useState('');
+  const [timestamp, setTimestamp] = React.useState<any>('');
 
   return (
     <div>

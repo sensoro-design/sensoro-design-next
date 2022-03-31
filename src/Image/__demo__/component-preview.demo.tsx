@@ -1,4 +1,3 @@
-
 /**
  * title: 单独使用预览组件
  * desc: `Image.Preview` 可单独使用，需要配置 `src`，并控制 `visible`。
