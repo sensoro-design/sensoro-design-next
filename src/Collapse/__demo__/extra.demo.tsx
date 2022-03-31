@@ -3,7 +3,8 @@
  * desc: 通过 `extra` 可以设置额外节点。
  */
 import { Collapse } from '@sensoro-design/react';
-import { IconMoreVertical } from '@sensoro-design/react/icon';
+
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
 
 const CollapseItem = Collapse.Item;
 
@@ -13,7 +14,7 @@ export default () => {
       <CollapseItem
         header="Beijing Toutiao Technology Co., Ltd."
         name="1"
-        extra={<IconMoreVertical />}
+        extra={<MoreOutlined />}
       >
         Beijing Toutiao Technology Co., Ltd.
       </CollapseItem>
@@ -21,7 +22,7 @@ export default () => {
       <CollapseItem
         header="Beijing Toutiao Technology Co., Ltd."
         name="2"
-        extra={<IconMoreVertical />}
+        extra={<MoreOutlined />}
       >
         ByteDance's core product, Toutiao ("Headlines"), is a content platform in China and around the
         world. Toutiao started out as a news recommendation engine and gradually evolved into a
@@ -32,7 +33,7 @@ export default () => {
       <CollapseItem
         header="Beijing Toutiao Technology Co., Ltd."
         name="3"
-        extra={<IconMoreVertical />}
+        extra={<MoreOutlined />}
       >
         In 2016, ByteDance's AI Lab and Peking University co-developed Xiaomingbot (张小明), an
         artificial intelligence bot that writes news articles. The bot published 450 articles during

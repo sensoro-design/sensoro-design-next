@@ -1,16 +1,17 @@
-
 /**
  * title: 幽灵节点
  * desc: 当任务状态正在发生，还在记录过程中，可用幽灵节点来表示当前的时间节点，通过`pendingDot`定制其轴点。
  */
+import { useState } from 'react';
 import { Timeline, Grid, Checkbox } from '@sensoro-design/react';
-import { IconFire } from '@sensoro-design/react/icon';
+
+import FireOutlined from '@sensoro-design/icons/FireOutlined';
 
 const TimelineItem = Timeline.Item;
 const { Row } = Grid;
 
 export default () => {
-  const [pendingProps, setPendingProps] = React.useState({});
+  const [pendingProps, setPendingProps] = useState({});
 
   return (
     <div>
@@ -48,7 +49,7 @@ export default () => {
             const newProps = { ...pendingProps };
             delete newProps.pendingDot;
             if (v) {
-              newProps.pendingDot = <IconFire style={{ color: '#e70a0a' }} />;
+              newProps.pendingDot = <FireOutlined style={{ color: '#e70a0a' }} />;
             }
             setPendingProps(newProps);
           }}

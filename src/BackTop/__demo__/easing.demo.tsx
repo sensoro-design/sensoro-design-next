@@ -4,7 +4,9 @@
  */
 import { useState } from 'react';
 import { BackTop, Select, Input, Typography } from '@sensoro-design/react';
-import { IconCaretUp } from '@sensoro-design/react/icon';
+
+import ArrowRightOutlined from '@sensoro-design/icons/ArrowRightOutlined';
+
 import './styles.less';
 
 const { Paragraph, Text } = Typography;
@@ -63,7 +65,7 @@ export default () => {
           target={() => document.getElementById('custom_backtop2')}
         >
           <div className="custom-backtop">
-            <IconCaretUp />
+            <ArrowRightOutlined />
             <br />
             TOP
           </div>
