@@ -3,7 +3,8 @@
  * desc: 通过 `trigger` 指定触发方式。
  */
 import { Dropdown, Menu, Button, Space } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const dropList = (
   <Menu>
@@ -19,13 +20,13 @@ export default () => {
       <Dropdown droplist={dropList} position="br">
         <Button type="text">
           Hover
-          <IconDown />
+          <DownOutlined />
         </Button>
       </Dropdown>
       <Dropdown droplist={dropList} trigger="click" position="br">
         <Button type="text">
           Click
-          <IconDown />
+          <DownOutlined />
         </Button>
       </Dropdown>
     </Space>

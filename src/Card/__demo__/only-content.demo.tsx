@@ -1,10 +1,10 @@
-
 /**
  * title: 简洁卡片
  * desc: 卡片可以只有内容区域。
  */
 import { Card, Avatar, Link, Typography } from '@sensoro-design/react';
-import { IconArrowRight } from '@sensoro-design/react/icon';
+import ArrowRightOutlined from '@sensoro-design/icons/ArrowRightOutlined';
+
 import './styles.less';
 
 const Content = ({ children }) => {
@@ -32,7 +32,7 @@ export default () => {
       <Card className="card-with-icon-hover" hoverable style={{ width: 360 }}>
         <Content>
           <span className="icon-hover">
-            <IconArrowRight style={{ cursor: 'pointer' }} />
+            <ArrowRightOutlined style={{ cursor: 'pointer' }} />
           </span>
         </Content>
       </Card>

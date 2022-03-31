@@ -4,14 +4,14 @@
  * desc: 实现一个评论回复框。
  */
 import { Comment, Button, Input  } from '@sensoro-design/react';
-import { IconMessage } from '@sensoro-design/react/icon';
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
 import './styles.less';
 
 export default () => {
   return (
     <Comment
       align="right"
-      actions={<span className="custom-comment-action"><IconMessage /> Reply</span>}
+      actions={<span className="custom-comment-action"><MessageOutlined /> Reply</span>}
       author="Balzac"
       avatar='//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/9eeb1800d9b78349b24682c3518ac4a3.png~tplv-uwbnlip3yd-webp.webp'
       content={

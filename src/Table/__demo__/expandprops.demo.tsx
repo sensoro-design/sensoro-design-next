@@ -7,7 +7,9 @@
  */
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
-import { IconRight, IconDown } from '@sensoro-design/react/icon';
+
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const columns = [
   {
@@ -78,8 +80,8 @@ export default () => {
     expandedRowRender={(record) => record.email}
     expandProps={{
       icon: ({ expanded, record }) => expanded
-        ? <button onClick={() => removeExpandedRowKey(record.key)}><IconDown /></button>
-        : <button onClick={() => addExpandedRowKey(record.key)}><IconRight /></button>,
+        ? <button onClick={() => removeExpandedRowKey(record.key)}><DownOutlined /></button>
+        : <button onClick={() => addExpandedRowKey(record.key)}><RightOutlined /></button>,
       width: 60,
       columnTitle: 'Expand',
       rowExpandable: (record) => record.key !== '4',

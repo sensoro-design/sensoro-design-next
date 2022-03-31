@@ -4,7 +4,11 @@
  * desc: 这是一个包括分页、右侧内容、下方列表操作的示例。
  */
 import { List, Avatar } from '@sensoro-design/react';
-import { IconHeart, IconMessage, IconStar } from '@sensoro-design/react/icon';
+
+import HeartOutlined from '@sensoro-design/icons/HeartOutlined';
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
+import StarOutlined from '@sensoro-design/icons/StarOutlined';
+
 import './styles.less';
 
 const names = ['Socrates', 'Balzac', 'Plato'];
@@ -49,15 +53,15 @@ export default () => {
         actionLayout="vertical"
         actions={[
           <span key={1}>
-            <IconHeart />
+            <HeartOutlined />
             {83}
           </span>,
           <span key={2}>
-            <IconStar />
+            <StarOutlined />
             {item.index}
           </span>,
           <span key={3}>
-            <IconMessage />
+            <MessageOutlined />
             Reply
           </span>,
         ]}

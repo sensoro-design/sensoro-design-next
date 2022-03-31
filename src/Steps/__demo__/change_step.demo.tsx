@@ -1,11 +1,12 @@
-
 /**
  * title: 步骤切换
  * desc: 通过改变 `current` 参数，可以跳转到不同的步骤。
  */
 import { useState } from 'react';
 import { Steps, Button } from '@sensoro-design/react';
-import { IconLeft, IconRight } from '@sensoro-design/react/icon';
+
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
 
 const Step = Steps.Step;
 
@@ -27,10 +28,10 @@ export default () => {
 
         <div>
           <Button type="secondary" disabled={current <= 1} onClick={() => setCurrent(current - 1)} style={{ paddingLeft: 8 }}>
-            <IconLeft />Back
+            <LeftOutlined />Back
           </Button>
           <Button disabled={current >= 3} onClick={() => setCurrent(current + 1)} style={{ marginLeft: 20, paddingRight: 8 }} type="primary">
-            Next<IconRight />
+            Next<RightOutlined />
           </Button>
         </div>
       </div>

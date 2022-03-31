@@ -1,10 +1,10 @@
-
 /**
  * title: 自定义节点内容
  * desc: 自定义节点内容
  */
 import { Timeline } from '@sensoro-design/react';
-import { IconExclamationCircleFill } from '@sensoro-design/react/icon';
+
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
 
 const TimelineItem = Timeline.Item;
 
@@ -15,7 +15,7 @@ export default () => {
       <TimelineItem label="2018-05-22" >The second milestone</TimelineItem>
       <TimelineItem label="2020-06-22" dotColor="#F53F3F">
         The third milestone
-        <IconExclamationCircleFill style={{color: 'F53F3F', fontSize: 12, marginLeft: 4 }}/>
+        <ExclamationCircleFilled style={{color: 'F53F3F', fontSize: 12, marginLeft: 4 }}/>
       </TimelineItem>
       <TimelineItem label="2020-09-30" dotColor="#C9CDD4" >The fourth milestone</TimelineItem>
     </Timeline>

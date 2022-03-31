@@ -5,7 +5,9 @@
  */
 import { useState } from 'react';
 import { Steps, Button } from '@sensoro-design/react';
-import { IconLeft, IconRight } from '@sensoro-design/react/icon';
+
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 
 const Step = Steps.Step;
 
@@ -27,10 +29,10 @@ export default () => {
 
         <div>
           <Button type="secondary" disabled={current <= 1} onClick={() => setCurrent(current - 1)} style={{ paddingLeft: 8 }}>
-            <IconLeft />Back
+            <LeftOutlined />Back
           </Button>
           <Button disabled={current >= 3} onClick={() => setCurrent(current + 1)} style={{ marginLeft: 20, paddingRight: 8 }} type="primary">
-            Next<IconRight />
+            Next<RightOutlined />
           </Button>
         </div>
       </div>

@@ -1,12 +1,16 @@
-
 /**
  * title: 上传前裁剪
  * desc: `beforeUpload` 会在每一个文件上传之前执行。如果返回 false 或者 Promise.reject， 那么将会取消当前文件的上传。
  */
 import React, { useState } from 'react';
 import { Upload, Button, Message, Modal, Grid, Slider } from '@sensoro-design/react';
-import { IconMinus, IconPlus, IconRotateLeft } from '@sensoro-design/react/icon';
 import EasyCropper from 'react-easy-crop';
+
+import { IconRotateLeft } from '@sensoro-design/react/icon';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+import MinusOutlined from '@sensoro-design/icons/MinusOutlined';
+
 import './styles.less'
 
 async function _getCroppedImg(url, pixelCrop, rotation = 0) {
@@ -94,7 +98,7 @@ const Cropper = (props) => {
       </div>
       <Grid.Row justify="space-between" style={{ marginTop: 20, marginBottom: 20 }}>
         <Grid.Row style={{ flex: 1, marginLeft: 12, marginRight: 12 }}>
-          <IconMinus
+          <MinusOutlined
             style={{ marginRight: 10 }}
             onClick={() => {
               setZoom(Math.max(1, zoom - 0.1));
@@ -110,7 +114,7 @@ const Cropper = (props) => {
             min={0.8}
             max={3}
           />
-          <IconPlus
+          <PlusOutlined
             style={{ marginLeft: 10 }}
             onClick={() => {
               setZoom(Math.min(3, zoom + 0.1));

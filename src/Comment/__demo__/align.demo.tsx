@@ -1,13 +1,15 @@
-
 /**
  * title: 对齐
  * desc: 通过 `align` 属性可以设置 `datetime` 和 `actions` 的对齐方式.
  */
 import React from 'react';
 import { Comment, Avatar  } from '@sensoro-design/react';
-import { IconHeartFill, IconMessage, IconStarFill, IconHeart, IconStar } from '@sensoro-design/react/icon';
 
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
+import HeartOutlined from '@sensoro-design/icons/HeartOutlined';
 import StarOutlined from '@sensoro-design/icons/StarOutlined';
+import StarFilled from '@sensoro-design/icons/StarFilled';
+import HeartFilled from '@sensoro-design/icons/HeartFilled';
 
 import './styles.less';
 
@@ -21,7 +23,7 @@ export default () => {
       key="heart"
       onClick={() => setLike(!like) }
     >
-      { like ? <IconHeartFill style={{color: '#f53f3f'}} /> : <IconHeart  />}
+      { like ? <HeartFilled style={{color: '#f53f3f'}} /> : <HeartOutlined  />}
       {' '}{83 + (like ? 1 : 0)}
     </span>,
     <span
@@ -29,10 +31,10 @@ export default () => {
       key="star"
       onClick={() => setStar(!star) }
     >
-      {star ? <IconStarFill style={{color: '#ffb400'}} /> : <IconStar  />}
+      {star ? <StarFilled style={{color: '#ffb400'}} /> : <StarOutlined  />}
       {' '}{3 + (star ? 1 : 0)}
     </span>,
-    <span className="custom-comment-action" key="reply"><IconMessage /> Reply</span>,
+    <span className="custom-comment-action" key="reply"><MessageOutlined /> Reply</span>,
   ];
 
   return (

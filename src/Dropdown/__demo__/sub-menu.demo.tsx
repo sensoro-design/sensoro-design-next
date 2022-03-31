@@ -3,7 +3,8 @@
  * desc: 带有多级菜单的下拉框。
  */
 import { Dropdown, Menu, Button } from '@sensoro-design/react';
-import { IconDown } from '@sensoro-design/react/icon';
+
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 const SubMenu = Menu.SubMenu;
 const MenuItem = Menu.Item;
@@ -42,7 +43,7 @@ export default () => {
       <Dropdown trigger="click" droplist={dropList} position="bl">
         <Button type="text">
           Click
-          <IconDown />
+          <DownOutlined />
         </Button>
       </Dropdown>
     </div>

@@ -3,11 +3,11 @@
  * desc: Comments 组件可以嵌套。
  */
 import { Comment } from '@sensoro-design/react';
-import { IconMessage } from '@sensoro-design/react/icon';
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
 import './styles.less';
 
 export default () => {
-  const actions = <span className="custom-comment-action"><IconMessage /> Reply</span>;
+  const actions = <span className="custom-comment-action"><MessageOutlined /> Reply</span>;
 
   return (
     <Comment

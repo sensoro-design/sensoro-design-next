@@ -1,15 +1,19 @@
-
 /**
  * title: 基础用法
  * desc: 一个基本的评论组件，带有作者、头像、时间和操作。
  */
 import React from 'react';
 import { Comment, Avatar  } from '@sensoro-design/react';
-import { IconHeart, IconMessage, IconStar, IconStarFill, IconHeartFill } from '@sensoro-design/react/icon';
+
+import HeartOutlined from '@sensoro-design/icons/HeartOutlined';
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
+import StarOutlined from '@sensoro-design/icons/StarOutlined';
+import HeartFilled from '@sensoro-design/icons/HeartFilled';
+import StarFilled from '@sensoro-design/icons/StarFilled';
 
 export default () => {
-  const [like, setLike] = React.useState();
-  const [star, setStar] = React.useState();
+  const [like, setLike] = React.useState<boolean>();
+  const [star, setStar] = React.useState<boolean>();
 
   const actions = [
     <span
@@ -17,7 +21,7 @@ export default () => {
       key="heart"
       onClick={() => setLike(!like) }
     >
-      { like ? <IconHeartFill style={{color: '#f53f3f'}} /> : <IconHeart  />}
+      { like ? <HeartFilled style={{color: '#f53f3f'}} /> : <HeartOutlined  />}
       {' '}{83 + (like ? 1 : 0)}
     </span>,
     <span
@@ -25,10 +29,10 @@ export default () => {
       key="star"
       onClick={() => setStar(!star) }
     >
-      {star ? <IconStarFill style={{color: '#ffb400'}} /> : <IconStar  />}
+      {star ? <StarFilled style={{color: '#ffb400'}} /> : <StarOutlined  />}
       {' '}{3 + (star ? 1 : 0)}
     </span>,
-    <span className="custom-comment-action" key="reply"><IconMessage /> Reply</span>,
+    <span className="custom-comment-action" key="reply"><MessageOutlined /> Reply</span>,
   ];
 
   return (
