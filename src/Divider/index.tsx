@@ -1,5 +1,6 @@
 import React, { useContext, forwardRef } from 'react';
 import classNames from '@pansy/classnames';
+
 import { ConfigContext } from '../ConfigProvider';
 import { DividerProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -41,4 +42,4 @@ DividerComponent.displayName = 'Divider';
 
 export default DividerComponent;
 
-export { DividerProps };
+export type { DividerProps };

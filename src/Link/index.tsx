@@ -1,6 +1,7 @@
 import React, { forwardRef, useContext, PropsWithChildren } from 'react';
-import IconLink from '../../icon/react-icon/IconLink';
 import classNames from '@pansy/classnames';
+import LinkOutlined from '@sensoro-design/icons/LinkOutlined';
+
 import { ConfigContext } from '../ConfigProvider';
 import { LinkProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -43,7 +44,7 @@ function Link(baseProps: PropsWithChildren<LinkProps>, ref) {
       }}
     >
       {icon ? (
-        <span className={`${prefixCls}-icon`}>{icon === true ? <IconLink /> : icon}</span>
+        <span className={`${prefixCls}-icon`}>{icon === true ? <LinkOutlined /> : icon}</span>
       ) : null}
       {children}
     </TagWrapper>
