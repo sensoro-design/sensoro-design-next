@@ -24,7 +24,7 @@ nav:
 
 ### 抽屉表单
 
-<code src="./__demo__/drawer_form.demo.tsx" />
+<code src="./__demo__/drawer-form.demo.tsx" />
 
 ### 多层抽屉
 

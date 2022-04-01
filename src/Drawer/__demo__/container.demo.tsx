@@ -1,12 +1,11 @@
-
 /**
  * title: 挂载节点
  * desc: 可以通过 `getPopupContainer` 指定抽屉挂载的父级节点。
  */
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Drawer, Button } from '@sensoro-design/react';
 
-const wrapperStyle = {
+const wrapperStyle: React.CSSProperties = {
   width: '100%',
   height: 300,
   backgroundColor: 'var(--color-fill-2)',

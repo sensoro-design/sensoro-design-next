@@ -3,7 +3,8 @@
  * desc: 设置 `icon` 来自定义图标。
  */
 import { Message, Button, Icon, Space } from '@sensoro-design/react';
-import { IconFaceSmileFill } from '@sensoro-design/react/icon';
+
+import SmileFilled from '@sensoro-design/icons/SmileFilled';
 
 const IconFont = Icon.addFromIconFontCn({ src: '//at.alicdn.com/t/font_180975_26f1p759rvn.js' });
 
@@ -38,7 +39,7 @@ export default () => {
       Error (Light)
     </Button>
     <Button
-      onClick={() => Message.info({ icon: <IconFaceSmileFill />, content: 'This is a message!' })}
+      onClick={() => Message.info({ icon: <SmileFilled />, content: 'This is a message!' })}
       type="secondary"
     >
       Smile

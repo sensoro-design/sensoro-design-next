@@ -1,10 +1,12 @@
 import React, { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 import Modal, { ModalProps } from './modal';
-import IconInfoCircleFill from '../../icon/react-icon/IconInfoCircleFill';
-import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
-import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
-import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
+
+import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';
+import CloseCircleFilled from '@sensoro-design/icons/CloseCircleFilled';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
+import InfoCircleFilled from '@sensoro-design/icons/InfoCircleFilled';
+
 import { getModalConfig, destroyList, getConfigProviderProps } from './config';
 import ConfigProvider from '../ConfigProvider';
 
@@ -31,16 +33,16 @@ export const normalizeConfig = (_config: ConfirmProps): ConfirmProps => {
     if (!icon && icon !== null) {
       switch (_config.noticeType) {
         case 'info':
-          icon = <IconInfoCircleFill />;
+          icon = <InfoCircleFilled />;
           break;
         case 'success':
-          icon = <IconCheckCircleFill />;
+          icon = <CheckCircleFilled />;
           break;
         case 'warning':
-          icon = <IconExclamationCircleFill />;
+          icon = <ExclamationCircleFilled />;
           break;
         case 'error':
-          icon = <IconCloseCircleFill />;
+          icon = <CloseCircleFilled />;
           break;
         default:
           break;
@@ -56,7 +58,7 @@ export const normalizeConfig = (_config: ConfirmProps): ConfirmProps => {
   } else {
     _config.title = (
       <span>
-        {_config.icon !== null && (_config.icon || <IconExclamationCircleFill />)}
+        {_config.icon !== null && (_config.icon || <ExclamationCircleFilled />)}
         {_config.title}
       </span>
     );

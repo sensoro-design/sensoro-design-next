@@ -10,7 +10,6 @@ import React, {
 import { CSSTransition } from 'react-transition-group';
 import FocusLock from 'react-focus-lock';
 import { findDOMNode } from 'react-dom';
-import IconClose from '../../icon/react-icon/IconClose';
 import cs from '@pansy/classnames';
 import Button from '../Button';
 import Portal from '../Portal';
@@ -22,6 +21,8 @@ import { isObject } from '../_util/is';
 import useOverflowHidden from '../_util/hooks/useOverflowHidden';
 import { DrawerProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
 const defaultProps: DrawerProps = {
   placement: 'right',
@@ -139,7 +140,7 @@ function Drawer(baseProps: DrawerProps, ref) {
       )}
       {closable && (
         <IconHover onClick={props.onCancel} className={`${prefixCls}-close-icon`}>
-          <IconClose />
+          <CloseOutlined />
         </IconHover>
       )}
 

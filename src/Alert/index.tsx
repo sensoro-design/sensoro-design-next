@@ -1,14 +1,15 @@
 import React, { useState, useContext, ReactNode, forwardRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
-import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
-import IconInfoCircleFill from '../../icon/react-icon/IconInfoCircleFill';
-import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
-import IconClose from '../../icon/react-icon/IconClose';
 import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { AlertProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import InfoCircleFilled from '@sensoro-design/icons/InfoCircleFilled';
+import CloseCircleFilled from '@sensoro-design/icons/CloseCircleFilled';
+import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
 
 const defaultProps: AlertProps = {
   showIcon: true,
@@ -44,13 +45,13 @@ function Alert(baseProps: AlertProps, ref) {
     }
     switch (type) {
       case 'info':
-        return <IconInfoCircleFill />;
+        return <InfoCircleFilled />;
       case 'success':
-        return <IconCheckCircleFill />;
+        return <CheckCircleFilled />;
       case 'warning':
-        return <IconExclamationCircleFill />;
+        return <ExclamationCircleFilled />;
       case 'error':
-        return <IconCloseCircleFill />;
+        return <CloseCircleFilled />;
       default:
         return null;
     }
@@ -91,7 +92,7 @@ function Alert(baseProps: AlertProps, ref) {
         {action && <div className={`${prefixCls}-action`}>{action}</div>}
         {_closable && (
           <button onClick={onHandleClose} className={`${prefixCls}-close-btn`}>
-            {closeElement || <IconClose />}
+            {closeElement || <CloseOutlined />}
           </button>
         )}
       </div>

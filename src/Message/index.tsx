@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import BaseNotification from '../_class/notification';
 import Notice from '../_class/notice';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { MessageProps } from './interface';
 
 const messageTypes = ['info', 'success', 'error', 'warning', 'loading', 'normal'];
@@ -129,10 +129,10 @@ class Message extends BaseNotification {
     const { notices, position } = this.state;
     const prefixClsMessage = prefixCls ? `${prefixCls}-message` : 'arco-message';
 
-    const classNames = cs(`${prefixClsMessage}-wrapper`, `${prefixClsMessage}-wrapper-${position}`);
+    const classes = classNames(`${prefixClsMessage}-wrapper`, `${prefixClsMessage}-wrapper-${position}`);
 
     return (
-      <div className={classNames}>
+      <div className={classes}>
         <TransitionGroup component={null}>
           {notices.map((notice) => (
             <CSSTransition

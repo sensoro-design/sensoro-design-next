@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义位置
  * desc: 自定义位置，点击触发按钮抽屉从相应的位置滑出。
@@ -9,7 +8,7 @@ import { Drawer, Button, Radio } from '@sensoro-design/react';
 const RadioGroup = Radio.Group;
 
 export default () => {
-  const [visible, setVisible] = useState();
+  const [visible, setVisible] = useState<boolean>();
   const [placement, setPlacement] = useState('right');
 
   return (

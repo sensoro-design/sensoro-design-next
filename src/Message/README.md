@@ -23,11 +23,11 @@ nav:
 
 ### 更新全局提醒内容
 
-<code src="./__demo__/update_message.demo.tsx" />
+<code src="./__demo__/update-message.demo.tsx" />
 
 ### 更新延时
 
-<code src="./__demo__/update_duration.demo.tsx" />
+<code src="./__demo__/update-duration.demo.tsx" />
 
 ### 手动控制关闭
 
