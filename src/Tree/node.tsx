@@ -22,9 +22,9 @@ import { TreeContext } from './context';
 import AnimationNode from './animation';
 import throttleByRaf from '../_util/throttleByRaf';
 
-import FileTextOutlined from '@sensoro-design/icons/FileTextOutlined';
-import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
-import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
+// import FileTextOutlined from '@sensoro-design/icons/FileTextOutlined';
+// import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
+// import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
 
 export interface NodeState {
   isDragOver?: boolean;

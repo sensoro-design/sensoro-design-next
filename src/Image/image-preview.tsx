@@ -37,9 +37,9 @@ import useOverflowHidden from '../_util/hooks/useOverflowHidden';
 import { Esc } from '../_util/keycode';
 import useUpdate from '../_util/hooks/useUpdate';
 
-import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
-import ZoomInOutlined from '@sensoro-design/icons/ZoomInOutlined';
-import ZoomOutOutlined from '@sensoro-design/icons/ZoomOutOutlined';
+// import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+// import ZoomInOutlined from '@sensoro-design/icons/ZoomInOutlined';
+// import ZoomOutOutlined from '@sensoro-design/icons/ZoomOutOutlined';
 
 const ROTATE_STEP = 90;
 

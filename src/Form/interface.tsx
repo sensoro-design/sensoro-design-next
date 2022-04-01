@@ -3,7 +3,7 @@
 
 import { ReactNode, CSSProperties, HTMLAttributes, FormHTMLAttributes } from 'react';
 import { Options as ScrollIntoViewOptions } from 'scroll-into-view-if-needed';
-import { ColProps } from '../Grid/col';
+import { ColProps } from '../Grid';
 import Store from './store';
 
 import type { SizeType } from '../ConfigProvider/interface';
