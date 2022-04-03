@@ -24,7 +24,7 @@ nav:
 
 ### 固定状态改变回调
 
-<code src="./__demo__/fixChange.demo.tsx" />
+<code src="./__demo__/fix-change.demo.tsx" />
 
 ### 滚动容器
 

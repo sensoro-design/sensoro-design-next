@@ -1,10 +1,17 @@
 import React from 'react';
-import { SkeletonImageProps } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 
-export default function image(props: SkeletonImageProps) {
-  const { style, shape = 'square', size, position = 'left', className, prefixCls } = props;
-  const classNames = cs(
+import type { SkeletonImageProps } from './interface';
+
+export default function image({
+  className,
+  prefixCls,
+  style,
+  size,
+  shape = 'square',
+  position = 'left',
+} : SkeletonImageProps) {
+  const classes = classNames(
     `${prefixCls}-image`,
     {
       [`${prefixCls}-image-${position}`]: position,
@@ -13,5 +20,6 @@ export default function image(props: SkeletonImageProps) {
     },
     className
   );
-  return <div className={classNames} style={style} />;
+
+  return <div className={classes} style={style} />;
 }

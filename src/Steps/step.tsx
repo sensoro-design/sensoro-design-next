@@ -1,8 +1,9 @@
 import React, { forwardRef } from 'react';
 import cs from '@pansy/classnames';
-import IconCheck from '../../icon/react-icon/IconCheck';
-import IconClose from '../../icon/react-icon/IconClose';
 import { StepProps } from './interface';
+
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
 function Step(props: StepProps, ref) {
   const {
@@ -36,9 +37,9 @@ function Step(props: StepProps, ref) {
     if (icon) {
       content = icon;
     } else if (currentStatus === 'finish') {
-      content = <IconCheck />;
+      content = <CheckOutlined />;
     } else if (currentStatus === 'error') {
-      content = <IconClose />;
+      content = <CloseOutlined />;
     }
 
     return <div className={`${prefixCls}-icon`}>{content}</div>;

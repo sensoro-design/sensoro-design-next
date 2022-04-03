@@ -1,7 +1,7 @@
 import React, { useContext, PropsWithChildren, useState, useRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
-import IconLeft from '../../icon/react-icon/IconLeft';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
 import Breadcrumb from '../Breadcrumb';
 import IconHover from '../_class/icon-hover';
 import ResizeObserver from '../_util/resizeObserver';
@@ -32,7 +32,7 @@ function PageHeader(baseProps: PropsWithChildren<PageHeaderProps>) {
     >
       <div
         ref={pageRef}
-        className={cs(
+        className={classNames(
           `${prefixCls}`,
           {
             [`${prefixCls}-with-breadcrumb`]: breadcrumb,
@@ -49,7 +49,7 @@ function PageHeader(baseProps: PropsWithChildren<PageHeaderProps>) {
 
           <div className={`${prefixCls}-head`}>
             <div
-              className={cs(`${prefixCls}-head-main`, {
+              className={classNames(`${prefixCls}-head-main`, {
                 [`${prefixCls}-head-main-with-back`]: backIcon,
               })}
             >
@@ -60,7 +60,7 @@ function PageHeader(baseProps: PropsWithChildren<PageHeaderProps>) {
                   onClick={props.onBack}
                 >
                   <span className={`${prefixCls}-back-icon`}>
-                    {backIcon === true ? <IconLeft /> : backIcon}
+                    {backIcon === true ? <LeftOutlined /> : backIcon}
                   </span>
                 </IconHover>
               )}

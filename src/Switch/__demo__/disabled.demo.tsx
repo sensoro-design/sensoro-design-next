@@ -1,4 +1,3 @@
-
 /**
  * title: 禁用状态
  * desc: 通过 `disabled` 设置 `Switch` 为禁用状态。

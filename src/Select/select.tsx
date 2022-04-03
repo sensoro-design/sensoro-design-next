@@ -7,7 +7,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ArrowUp, ArrowDown, Enter, Esc, Tab } from '../_util/keycode';
 import Trigger from '../Trigger';
 import OptGroup from './opt-group';
@@ -480,7 +480,7 @@ function Select(baseProps: SelectProps, ref) {
     const eleOptionList = childrenList.length ? (
       <VirtualList
         style={dropdownMenuStyle}
-        className={cs(`${prefixCls}-popup-inner`, dropdownMenuClassName)}
+        className={classNames(`${prefixCls}-popup-inner`, dropdownMenuClassName)}
         ref={refWrapper}
         data={childrenList}
         height={null}
@@ -530,7 +530,7 @@ function Select(baseProps: SelectProps, ref) {
     const eleNoOptionPlaceholder = mergedNotFoundContent ? (
       <div
         style={dropdownMenuStyle}
-        className={cs(`${prefixCls}-popup-inner`, dropdownMenuClassName)}
+        className={classNames(`${prefixCls}-popup-inner`, dropdownMenuClassName)}
       >
         {mergedNotFoundContent}
       </div>
@@ -538,7 +538,7 @@ function Select(baseProps: SelectProps, ref) {
 
     return (
       <div
-        className={cs(`${prefixCls}-popup`, {
+        className={classNames(`${prefixCls}-popup`, {
           [`${prefixCls}-popup-hidden`]: eleOptionList === null && eleNoOptionPlaceholder === null,
           [`${prefixCls}-popup-multiple`]: isMultipleMode,
         })}

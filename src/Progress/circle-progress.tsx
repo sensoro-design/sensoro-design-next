@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo } from 'react';
 import { isFunction, isObject } from '../_util/is';
-import IconCheck from '../../icon/react-icon/IconCheck';
-import IconExclamation from '../../icon/react-icon/IconExclamation';
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
+import ExclamationOutlined from '@sensoro-design/icons/ExclamationOutlined';
 import Tooltip from '../Tooltip';
 import { ProgressProps } from './interface';
 
@@ -50,9 +50,9 @@ const CircleProgress = (
       }
       switch (status) {
         case 'success':
-          return <IconCheck />;
+          return <CheckOutlined />;
         case 'error':
-          return <IconExclamation />;
+          return <ExclamationOutlined />;
         default:
           return `${percent}%`;
       }
@@ -116,7 +116,7 @@ const CircleProgress = (
   if (size === 'mini' && status === 'success' && props.type === 'circle') {
     dom = (
       <div className={`${cls}-wrapper`} style={{ width, height: width }}>
-        <IconCheck style={{ fontSize: width - 2, color }} />
+        <CheckOutlined  style={{ fontSize: width - 2, color }} />
       </div>
     );
   }

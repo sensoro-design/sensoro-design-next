@@ -11,10 +11,10 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { ConfigContext } from '../ConfigProvider';
 import Tag from '../Tag';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import InputComponent from '../Input/input-element';
 import IconHover from '../_class/icon-hover';
-import IconClose from '../../icon/react-icon/IconClose';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 import { isObject, isArray } from '../_util/is';
 import getHotkeyHandler from '../_util/getHotkeyHandler';
 import { Backspace } from '../_util/keycode';
@@ -235,7 +235,7 @@ function InputTag(baseProps: InputTagProps<string | ObjectValueType>, ref) {
     return (
       <Tag
         visible
-        className={cs(`${prefixCls}-tag`, {
+        className={classNames(`${prefixCls}-tag`, {
           [tagClassName]: tagClassName,
         })}
         closable={closable}
@@ -268,7 +268,7 @@ function InputTag(baseProps: InputTagProps<string | ObjectValueType>, ref) {
         }}
         onMouseDown={keepFocus}
       >
-        {(icon && icon.clearIcon) || <IconClose />}
+        {(icon && icon.clearIcon) || <CloseOutlined />}
       </IconHover>
     ) : null;
 
@@ -278,7 +278,7 @@ function InputTag(baseProps: InputTagProps<string | ObjectValueType>, ref) {
     <div
       {...pickTriggerPropsFromRest(props)}
       style={style}
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-size-${size}`]: size,

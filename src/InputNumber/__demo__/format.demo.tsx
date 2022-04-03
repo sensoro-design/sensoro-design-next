@@ -1,4 +1,3 @@
-
 /**
  * title: 格式化展示值
  * desc: 通过 `formatter`、 `parser` 配合使用可以定义输入框展示值。

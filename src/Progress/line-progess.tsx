@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isFunction, isObject } from '../_util/is';
 import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
 
@@ -76,7 +76,7 @@ function LineProgress(props) {
           />
         )}
         <div
-          className={cs(`${cls}-inner`, { [`${cls}-inner-animate`]: animation })}
+          className={classNames(`${cls}-inner`, { [`${cls}-inner-animate`]: animation })}
           style={{
             width: `${percent}%`,
             ...getBackground(color, percent),
@@ -84,7 +84,7 @@ function LineProgress(props) {
         />
       </div>
       {showText && (
-        <div className={cs(`${cls}-text`, { [`${cls}-text-with-icon`]: status })}>{getText()}</div>
+        <div className={classNames(`${cls}-text`, { [`${cls}-text-with-icon`]: status })}>{getText()}</div>
       )}
     </div>
   );

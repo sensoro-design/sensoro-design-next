@@ -1,5 +1,5 @@
 import React, { useContext, PropsWithChildren, useRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Group, { RadioGroupContext } from './group';
 import { ConfigContext } from '../ConfigProvider';
 import omit from '../_util/omit';
@@ -32,7 +32,7 @@ function Radio(baseProps: PropsWithChildren<RadioProps>) {
     defaultValue: mergeProps.defaultChecked,
   });
 
-  const classNames = cs(
+  const classes = classNames(
     `${prefixCls}${context.type === 'button' ? '-button' : ''}`,
     {
       [`${prefixCls}-checked`]: checked,
@@ -71,7 +71,7 @@ function Radio(baseProps: PropsWithChildren<RadioProps>) {
       {...omit(rest, ['checked', 'onChange'])}
       onClick={onLabelClick}
       style={style}
-      className={classNames}
+      className={classes}
     >
       <input
         ref={inputRef}

@@ -28,19 +28,19 @@ nav:
 
 ### 全选
 
-<code src="./__demo__/check_all.demo.tsx" />
+<code src="./__demo__/check-all.demo.tsx" />
 
 ### 布局
 
-<code src="./__demo__/group_jsx.demo.tsx" />
+<code src="./__demo__/group-jsx.demo.tsx" />
 
 ### 自定义节点内容
 
-<code src="./__demo__/custom_render.demo.tsx" />
+<code src="./__demo__/custom-render.demo.tsx" />
 
 ### useCheckbox
 
-<code src="./__demo__/useCheckbox.demo.tsx" />
+<code src="./__demo__/use-checkbox.demo.tsx" />
 
 ## API
 

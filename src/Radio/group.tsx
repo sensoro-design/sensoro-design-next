@@ -1,5 +1,5 @@
 import React, { createContext, useContext, PropsWithChildren } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isArray, isObject } from '../_util/is';
 import Radio from './radio';
 import { ConfigContext } from '../ConfigProvider';
@@ -32,7 +32,7 @@ function Group(baseProps: PropsWithChildren<RadioGroupProps>) {
   });
   const size = props.size || ctxSize;
   const prefixCls = getPrefixCls('radio');
-  const classNames = cs(
+  const classes = classNames(
     `${prefixCls}-group`,
     {
       [`${prefixCls}-group-type-button`]: type !== 'radio',
@@ -64,7 +64,7 @@ function Group(baseProps: PropsWithChildren<RadioGroupProps>) {
   };
   return (
     <RadioGroupContext.Provider value={contextProp}>
-      <div className={classNames} style={style}>
+      <div className={classes} style={style}>
         {options && isArray(options)
           ? options.map((option, index) => {
               if (isObject(option)) {

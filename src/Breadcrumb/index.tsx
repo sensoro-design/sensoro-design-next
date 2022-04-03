@@ -1,5 +1,5 @@
 import React, { ReactNode, useContext, PropsWithChildren, forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Item from './item';
 import { ConfigContext } from '../ConfigProvider';
 import Menu from '../Menu';
@@ -102,7 +102,7 @@ function Breadcrumb(baseProps: PropsWithChildren<BreadcrumbProps>, ref) {
     <div
       ref={ref}
       style={style}
-      className={cs(prefixCls, className)}
+      className={classNames(prefixCls, className)}
       {...omit(rest, ['itemRender'])}
     >
       {routes && routes.length ? getItemsByRoute() : getItemsByChildren()}

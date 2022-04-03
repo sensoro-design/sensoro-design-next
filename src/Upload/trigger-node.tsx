@@ -1,9 +1,11 @@
 import React, { useState, useContext, PropsWithChildren, useEffect } from 'react';
 import classNames from '@pansy/classnames';
 import Button from '../Button';
-import IconUpload from '../../icon/react-icon/IconUpload';
-import IconPlus from '../../icon/react-icon/IconPlus';
-import { TriggerProps } from './interface';
+
+import DownloadOutlined from '@sensoro-design/icons/DownloadOutlined';
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+
+import type { TriggerProps } from './interface';
 import { ConfigContext } from '../ConfigProvider';
 import { getFiles, loopDirectory } from './util';
 
@@ -72,7 +74,7 @@ const TriggerNode = (props: PropsWithChildren<TriggerProps>) => {
         <div className={`${prefixCls}-trigger-picture-wrapper`}>
           <div className={`${prefixCls}-trigger-picture`}>
             <div className={`${prefixCls}-trigger-picture-text`}>
-              <IconPlus />
+              <PlusOutlined />
             </div>
           </div>
         </div>
@@ -82,7 +84,7 @@ const TriggerNode = (props: PropsWithChildren<TriggerProps>) => {
             [`${prefixCls}-trigger-drag-active`]: isDragging,
           })}
         >
-          <IconPlus />
+          <PlusOutlined />
           <p className={`${prefixCls}-trigger-drag-text`}>
             {isDragging ? locale.Upload.dragHover : locale.Upload.drag}
           </p>
@@ -90,7 +92,7 @@ const TriggerNode = (props: PropsWithChildren<TriggerProps>) => {
         </div>
       ) : (
         <Button {...nodeProps} type="primary" className={`${prefixCls}-trigger-with-icon`}>
-          <IconUpload />
+          <DownloadOutlined />
           {locale.Upload.upload}
         </Button>
       )}

@@ -1,6 +1,6 @@
 import React, { forwardRef, useContext, useEffect, useRef } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Tooltip from '../Tooltip';
 import { MenuItemProps } from './interface';
 import useIsFirstRender from '../_util/hooks/useIsFirstRender';
@@ -75,7 +75,7 @@ function Item(props: MenuItemProps, ref) {
         refElement.current = ref;
       }}
       style={style}
-      className={cs(
+      className={classNames(
         `${prefixCls}-item`,
         {
           [`${prefixCls}-disabled`]: disabled,

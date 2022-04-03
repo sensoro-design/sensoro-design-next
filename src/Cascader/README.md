@@ -24,11 +24,11 @@ nav:
 
 ### 自定义选择框
 
-<code src="./__demo__/custom_children.demo.tsx" />
+<code src="./__demo__/custom-children.demo.tsx" />
 
 ### 选择即改变
 
-<code src="./__demo__/change_on_select.demo.tsx" />
+<code src="./__demo__/change-on-select.demo.tsx" />
 
 ### 支持多选
 
@@ -40,7 +40,7 @@ nav:
 
 ### 自定义搜索
 
-<code src="./__demo__/filter_option.demo.tsx" />
+<code src="./__demo__/filter-option.demo.tsx" />
 
 ### 动态加载
 
@@ -60,7 +60,7 @@ nav:
 
 ### 自定义Option
 
-<code src="./__demo__/render_option.demo.tsx" />
+<code src="./__demo__/render-option.demo.tsx" />
 
 ### 自定义footer
 
@@ -68,7 +68,7 @@ nav:
 
 ### 展示空数据
 
-<code src="./__demo__/showEmptyChildren.demo.tsx" />
+<code src="./__demo__/show-empty-children.demo.tsx" />
 
 ### 控制下拉框的展开收起
 
@@ -84,7 +84,7 @@ nav:
 
 ### 远程搜索
 
-<code src="./__demo__/onSearch.demo.tsx" />
+<code src="./__demo__/on-search.demo.tsx" />
 
 ## API
 

@@ -28,7 +28,7 @@ nav:
 
 ### 前后缀
 
-<code src="./__demo__/prefix_suffix.demo.tsx" />
+<code src="./__demo__/prefix-suffix.demo.tsx" />
 
 ### 搜索框
 
@@ -36,7 +36,7 @@ nav:
 
 ### 搜索框 Loading
 
-<code src="./__demo__/search_loading.demo.tsx" />
+<code src="./__demo__/search-loading.demo.tsx" />
 
 ### 输入框组合
 
@@ -52,7 +52,7 @@ nav:
 
 ### 适应文本高度文本域
 
-<code src="./__demo__/textarea_autosize.demo.tsx" />
+<code src="./__demo__/textarea-autosize.demo.tsx" />
 
 ### 密码输入
 

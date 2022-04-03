@@ -1,7 +1,7 @@
 import React, { ReactElement, useState, useEffect, useContext, useCallback } from 'react';
+import classNames from '@pansy/classnames';
 import debounce from 'lodash/debounce';
 import IconLoading from '../../icon/react-icon/IconLoading';
-import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import DotLoading from './dot-loading';
 import { SpinProps } from './interface';
@@ -41,7 +41,7 @@ function Spin(baseProps: SpinProps, ref) {
     <span className={`${prefixCls}-icon`}>
       {icon
         ? React.cloneElement(icon as ReactElement, {
-            className: cs(`${prefixCls.replace('-spin', '-icon')}-loading`),
+            className: classNames(`${prefixCls.replace('-spin', '-icon')}-loading`),
             style: {
               fontSize: size,
             },
@@ -54,7 +54,7 @@ function Spin(baseProps: SpinProps, ref) {
   return (
     <div
       ref={ref}
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-block`]: block,

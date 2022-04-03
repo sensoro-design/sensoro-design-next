@@ -1,7 +1,8 @@
 import React, { useCallback } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isFunction } from '../_util/is';
-import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
+
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
 
 export const StepsProgress = (props) => {
   const { size, prefixCls, percent, status, color, type, showText, formatText, trailColor } = props;
@@ -18,7 +19,7 @@ export const StepsProgress = (props) => {
       case 'error':
         return (
           <span>
-            {percent}% <IconExclamationCircleFill />
+            {percent}% <ExclamationCircleFilled />
           </span>
         );
       default:
@@ -34,7 +35,7 @@ export const StepsProgress = (props) => {
           return (
             <div
               key={index}
-              className={cs(`${cls}-item`, {
+              className={classNames(`${cls}-item`, {
                 [`${cls}-item-active`]: isActive,
               })}
               style={{
@@ -45,7 +46,7 @@ export const StepsProgress = (props) => {
         })}
       </div>
       {showText && (
-        <div className={cs(`${cls}-text`, { [`${cls}-text-with-icon`]: status })}>{getText()}</div>
+        <div className={classNames(`${cls}-text`, { [`${cls}-text-with-icon`]: status })}>{getText()}</div>
       )}
     </div>
   );

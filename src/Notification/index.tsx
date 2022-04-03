@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import BaseNotification from '../_class/notification';
 import Notice from '../_class/notice';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isNumber } from '../_util/is';
 import { NotificationProps } from './interface';
 
@@ -122,13 +122,13 @@ class Notification extends BaseNotification {
     } else {
       transitionClass = 'slideNoticeRight';
     }
-    const classNames = cs(
+    const classes = classNames(
       `${prefixClsNotification}-wrapper`,
       `${prefixClsNotification}-wrapper-${position}`
     );
 
     return (
-      <div className={classNames}>
+      <div className={classes}>
         <TransitionGroup component={null}>
           {notices.map((notice) => (
             <CSSTransition

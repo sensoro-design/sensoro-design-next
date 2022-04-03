@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import debounce from 'lodash/debounce';
 import { scrollTo } from './util';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import usePrevious from '../_util/hooks/usePrevious';
 
 type ListItem = {
@@ -73,13 +73,13 @@ export default function TimeColumn(props: TimeColumnProps) {
   );
 
   return (
-    <div className={cs(`${prefixCls}-list`)} ref={wrapper} onWheel={scrollSticky && onScrollList}>
+    <div className={classNames(`${prefixCls}-list`)} ref={wrapper} onWheel={scrollSticky && onScrollList}>
       <ul ref={ul}>
         {list.map((item) => {
           return (
             <li
               key={item.value}
-              className={cs(`${prefixCls}-cell`, {
+              className={classNames(`${prefixCls}-cell`, {
                 [`${prefixCls}-cell-disabled`]: item.disabled,
                 [`${prefixCls}-cell-selected`]: item.selected,
               })}

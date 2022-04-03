@@ -10,7 +10,7 @@ import React, {
 import { CSSTransition } from 'react-transition-group';
 import FocusLock from 'react-focus-lock';
 import { findDOMNode } from 'react-dom';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Button from '../Button';
 import Portal from '../Portal';
 import ConfigProvider, { ConfigContext } from '../ConfigProvider';
@@ -147,7 +147,7 @@ function Drawer(baseProps: DrawerProps, ref) {
       <div
         ref={contentWrapperRef}
         style={bodyStyle}
-        className={cs(`${prefixCls}-content`, {
+        className={classNames(`${prefixCls}-content`, {
           [`${prefixCls}-content-nofooter`]: footer === null,
           [`${prefixCls}-content-noheader`]: title === null,
         })}
@@ -200,7 +200,7 @@ function Drawer(baseProps: DrawerProps, ref) {
     <Portal forceRender={!mountOnEnter} visible={visible} getContainer={getPopupContainer}>
       <div
         ref={drawerWrapperRef}
-        className={cs(
+        className={classNames(
           `${prefixCls}-wrapper`,
           {
             [`${prefixCls}-no-mask`]: !mask,
@@ -263,7 +263,7 @@ function Drawer(baseProps: DrawerProps, ref) {
           }}
         >
           <div
-            className={cs(prefixCls, className)}
+            className={classNames(prefixCls, className)}
             style={Object.assign(
               placement === 'left' || placement === 'right' ? { width } : { height },
               { [placement]: 0 },

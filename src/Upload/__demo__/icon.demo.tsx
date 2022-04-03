@@ -4,7 +4,11 @@
  */
 import React from 'react';
 import { Upload, Radio, Typography, Message } from '@sensoro-design/react';
-import { IconFileAudio, IconClose, IconFaceFrownFill, IconUpload } from '@sensoro-design/react/icon';
+
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import DownloadOutlined from '@sensoro-design/icons/DownloadOutlined';
+import SmileFilled from '@sensoro-design/icons/SmileFilled';
+import FileTextOutlined from '@sensoro-design/icons/FileTextOutlined';
 
 export default () => {
   const [listType, setListtype] = React.useState('text')
@@ -23,12 +27,12 @@ export default () => {
         <Upload
           showUploadList={{
             // Please dont remove this comment
-            reuploadIcon: <IconUpload />,
-            cancelIcon: <IconClose />,
-            fileIcon: <IconFileAudio />,
-            removeIcon: <IconClose />,
+            reuploadIcon: <DownloadOutlined />,
+            cancelIcon: <CloseOutlined />,
+            fileIcon: <FileTextOutlined />,
+            removeIcon: <CloseOutlined />,
             previewIcon: null,
-            errorIcon: <IconFaceFrownFill />,
+            errorIcon: <SmileFilled />,
             fileName: file => {
               return <a onClick={() => { Message.info('click ' + file.name) }}>{file.name}</a>
             }

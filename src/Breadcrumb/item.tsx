@@ -1,9 +1,10 @@
 import React, { PropsWithChildren, useState } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Dropdown from '../Dropdown';
-import IconDown from '../../icon/react-icon/IconDown';
 import omit from '../_util/omit';
 import { BreadCrumbItemProps } from './interface';
+
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 
 function Item(props: PropsWithChildren<BreadCrumbItemProps>) {
   const { children, style, className, prefixCls, droplist, dropdownProps } = props;
@@ -12,7 +13,7 @@ function Item(props: PropsWithChildren<BreadCrumbItemProps>) {
   const dom = (
     <div
       style={style}
-      className={cs(
+      className={classNames(
         `${prefixCls}-item`,
         {
           [`${prefixCls}-item-with-dropdown`]: droplist,
@@ -23,11 +24,11 @@ function Item(props: PropsWithChildren<BreadCrumbItemProps>) {
       {children}
       {droplist && (
         <span
-          className={cs(`${prefixCls}-item-dropdown-icon`, {
+          className={classNames(`${prefixCls}-item-dropdown-icon`, {
             [`${prefixCls}-item-dropdown-icon-active`]: dropdownVisible,
           })}
         >
-          <IconDown />
+          <DownOutlined />
         </span>
       )}
     </div>

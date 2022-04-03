@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
+import classNames from '@pansy/classnames';
 import { isObject, isFunction } from '../_util/is';
 import { formatPercent, valueInRange, getIntervalOffset } from './utils';
-import cs from '@pansy/classnames';
 import { IntervalConfig } from './hooks/useInterval';
 
 type MaskType = {
@@ -49,7 +49,7 @@ const Dots = function (props: MaskProps) {
               content.dot
             ) : (
               <div
-                className={cs(`${prefixCls}-dot`, {
+                className={classNames(`${prefixCls}-dot`, {
                   [`${prefixCls}-dot-active`]: valueInRange(key, value),
                 })}
               />

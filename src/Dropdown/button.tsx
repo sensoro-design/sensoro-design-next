@@ -1,16 +1,17 @@
 import React, { ReactNode, ReactElement, forwardRef, useContext } from 'react';
 import ArcoButton from '../Button';
 import Dropdown from './index';
-import IconMore from '../../icon/react-icon/IconMore';
 import { DropdownButtonProps } from './interface';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
 
 const defaultProps: DropdownButtonProps = {
   position: 'br',
   trigger: 'hover',
   type: 'default',
-  icon: <IconMore />,
+  icon: <MoreOutlined />,
   unmountOnExit: true,
 };
 
@@ -31,7 +32,7 @@ function Button(baseProps: DropdownButtonProps, ref) {
     trigger = 'hover',
     type = 'default',
     size,
-    icon = <IconMore />,
+    icon = <MoreOutlined />,
     unmountOnExit = true,
     onClick,
     onVisibleChange,

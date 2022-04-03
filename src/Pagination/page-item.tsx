@@ -1,8 +1,9 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import cs from '@pansy/classnames';
-import IconLeft from '../../icon/react-icon/IconLeft';
-import IconRight from '../../icon/react-icon/IconRight';
-import IconMore from '../../icon/react-icon/IconMore';
+
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
 
 type itemRenderType = (
   page: number,
@@ -97,11 +98,11 @@ function Pager(props: PagerProps) {
 function getIcon(name: string, icons) {
   switch (name) {
     case 'prev':
-      return icons && icons.prev ? icons.prev : <IconLeft />;
+      return icons && icons.prev ? icons.prev : <LeftOutlined />;
     case 'next':
-      return icons && icons.next ? icons.next : <IconRight />;
+      return icons && icons.next ? icons.next : <RightOutlined />;
     case 'more':
-      return icons && icons.more ? icons.more : <IconMore />;
+      return icons && icons.more ? icons.more : <MoreOutlined />;
     default:
       return null;
   }

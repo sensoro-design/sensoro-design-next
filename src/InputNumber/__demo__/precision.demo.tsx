@@ -1,4 +1,3 @@
-
 /**
  * title: 精度和步长
  * desc: 通过 `precision` 来设置数字精度。当 `precision` 小于 `step` 的小数位时，精度取 `step` 的小数个数。

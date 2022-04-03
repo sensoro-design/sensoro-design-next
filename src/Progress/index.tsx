@@ -1,5 +1,5 @@
 import React, { CSSProperties, forwardRef, useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import LineProgress from './line-progess';
 import CircleProgress from './circle-progress';
@@ -34,7 +34,7 @@ function Progress(baseProps: ProgressProps, ref) {
   return (
     <div
       ref={ref}
-      className={cs(
+      className={classNames(
         prefixCls,
         `${prefixCls}-${type}`,
         `${prefixCls}-${size}`,

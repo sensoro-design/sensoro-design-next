@@ -1,5 +1,5 @@
 import React, { forwardRef, useContext } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { processChildren } from './util';
 import { MenuItemGroupProps } from './interface';
 import MenuContext from './context';
@@ -13,7 +13,7 @@ function ItemGroup(props: MenuItemGroupProps, ref) {
   const childrenList = processChildren(children, { level: childrenLevel });
 
   return (
-    <div ref={ref} className={cs(`${prefixCls}-group`, className)} style={style}>
+    <div ref={ref} className={classNames(`${prefixCls}-group`, className)} style={style}>
       <div className={`${prefixCls}-group-title`}>
         <MenuIndent level={level} prefixCls={prefixCls} levelIndent={levelIndent} />
         <span>{title}</span>

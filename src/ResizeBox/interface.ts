@@ -265,3 +265,32 @@ export interface SplitGroupPane {
    */
   trigger?: (prevNode: ReactNode, resizeNode: ReactNode, nextNode: ReactNode) => ReactNode;
 }
+
+export interface ResizeTriggerProps {
+  style?: CSSProperties;
+  className?: string | string[];
+  /** 方向，可选值为水平 `horizontal`，垂直 `vertical` */
+  direction: string;
+  /** 定制图标 */
+  icon?: ReactNode;
+  /** 鼠标按下的事件 */
+  onMouseDown?: (e) => void;
+  /** resize 事件 */
+  onResize?: (e) => void;
+  /** 支持伸缩 */
+  resizable?: boolean;
+  /** 支持快速收缩 */
+  collapsible?: {
+    prev?: {
+      icon?: ReactNode;
+      onClick?: (e) => void;
+      collapsed?: boolean;
+    };
+    next?: {
+      icon?: ReactNode;
+      onClick?: (e) => void;
+      collapsed?: boolean;
+    };
+  };
+  renderChildren?: (prev: ReactNode, trigger: ReactNode, next: ReactNode) => ReactNode;
+}

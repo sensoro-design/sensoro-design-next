@@ -12,8 +12,8 @@ import React, {
 } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import FocusLock from 'react-focus-lock';
-import IconClose from '../../icon/react-icon/IconClose';
-import cs from '@pansy/classnames';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import classNames from '@pansy/classnames';
 import { on, off, isServerRendering } from '../_util/dom';
 import { Esc } from '../_util/keycode';
 import Button from '../Button';
@@ -255,7 +255,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
           </span>
         ) : (
           <IconHover tabIndex={-1} onClick={onCancel} className={`${prefixCls}-close-icon`}>
-            <IconClose />
+            <CloseOutlined />
           </IconHover>
         ))}
     </ConfigProvider>
@@ -263,7 +263,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
 
   const modalDom = (
     <div
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-simple`]: simple,
@@ -331,7 +331,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
             'prefixCls',
           ])}
           ref={modalWrapperRef}
-          className={cs(
+          className={classNames(
             `${prefixCls}-wrapper`,
             {
               [`${prefixCls}-wrapper-no-mask`]: !mask,

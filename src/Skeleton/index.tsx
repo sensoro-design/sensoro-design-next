@@ -1,5 +1,5 @@
 import React, { forwardRef, useContext, PropsWithChildren } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isObject } from '../_util/is';
 import { SkeletonProps } from './interface';
 import Text from './text';
@@ -28,7 +28,7 @@ function Skeleton(baseProps: PropsWithChildren<SkeletonProps>, ref) {
   const imageProps = getComponentProps(image);
   const textProps = getComponentProps(text);
   const prefixCls = getPrefixCls('skeleton');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-animate`]: animation,
@@ -59,7 +59,7 @@ function Skeleton(baseProps: PropsWithChildren<SkeletonProps>, ref) {
   return (
     <React.Fragment>
       {loading ? (
-        <div className={classNames} style={style} ref={ref}>
+        <div className={classes} style={style} ref={ref}>
           {imageProps.position !== 'right' && renderImage()}
           {renderText()}
           {imageProps.position === 'right' && renderImage()}

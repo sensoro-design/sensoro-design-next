@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import NP from 'number-precision';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import IconStarFill from '../../icon/react-icon/IconStarFill';
 import IconFaceMehFill from '../../icon/react-icon/IconFaceMehFill';
 import IconFaceSmileFill from '../../icon/react-icon/IconFaceSmileFill';
@@ -44,7 +44,7 @@ function Rate(baseProps: RateProps, ref) {
   const [animation, setAnimation] = useState<boolean>();
 
   const prefixCls = getPrefixCls('rate');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-readonly`]: readonly,
@@ -101,7 +101,7 @@ function Rate(baseProps: RateProps, ref) {
         _usedCharacter = <IconFaceMehFill />;
       }
     }
-    const classNames = cs(`${prefixCls}-character`, {
+    const classes = classNames(`${prefixCls}-character`, {
       [`${prefixCls}-character-half`]: allowHalf && index + 0.5 === _usedIndex,
       [`${prefixCls}-character-full`]: index + 1 <= _usedIndex,
       [`${prefixCls}-character-scale`]: animation && index + 1 < mergedValue,
@@ -127,7 +127,7 @@ function Rate(baseProps: RateProps, ref) {
     return (
       <CharacterWrapper key={index} {...tooltipProps}>
         <div
-          className={classNames}
+          className={classes}
           style={animation ? { animationDelay: `${50 * index}ms` } : {}}
           onAnimationEnd={() => {
             if (animation && index + 1 >= mergedValue - 1) {
@@ -151,7 +151,7 @@ function Rate(baseProps: RateProps, ref) {
       ref={ref}
       {...omit(restProps, ['error'])}
       style={style}
-      className={classNames}
+      className={classes}
       onMouseLeave={resetHoverIndex}
     >
       <div className={`${prefixCls}-inner`}>

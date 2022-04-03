@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { RefInputType, InputSearchProps } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Input, { formatValue } from './input';
 import Button from '../Button';
-import IconSearch from '../../icon/react-icon/IconSearch';
+import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
@@ -21,7 +21,7 @@ const Search = React.forwardRef<RefInputType, InputSearchProps>((props: InputSea
   const { className, style, placeholder, disabled, searchButton, loading, defaultValue, ...rest } =
     props;
   const prefixCls = getPrefixCls('input-search');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-button`]: searchButton,
@@ -38,7 +38,7 @@ const Search = React.forwardRef<RefInputType, InputSearchProps>((props: InputSea
     <Input
       {...omit(rest, ['onSearch'])}
       disabled={disabled}
-      className={classNames}
+      className={classes}
       style={style}
       ref={ref}
       placeholder={placeholder}
@@ -52,13 +52,13 @@ const Search = React.forwardRef<RefInputType, InputSearchProps>((props: InputSea
             onClick={onSearch}
             loading={loading}
             loadingFixedWidth
-            icon={searchButton === true && !loading && <IconSearch />}
+            icon={searchButton === true && !loading && <SearchOutlined />}
           >
             {searchButton !== true && searchButton}
           </Button>
         ) : null
       }
-      suffix={!searchButton && (loading ? <IconLoading /> : <IconSearch onClick={onSearch} />)}
+      suffix={!searchButton && (loading ? <IconLoading /> : <SearchOutlined onClick={onSearch} />)}
       onChange={(value, e) => {
         setValue(value);
         props.onChange && props.onChange(value, e);

@@ -2,7 +2,7 @@ import React, { ReactElement, useContext, useRef } from 'react';
 import Trigger, { EventsByTriggerNeed } from '../Trigger';
 import Button from './button';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import omit from '../_util/omit';
 import pick from '../_util/pick';
@@ -114,7 +114,7 @@ function Dropdown(baseProps: DropdownProps, _) {
       {React.isValidElement(children)
         ? React.cloneElement(children, {
             disabled,
-            className: cs(
+            className: classNames(
               {
                 [`${prefixCls}-popup-visible`]: popupVisible,
               },

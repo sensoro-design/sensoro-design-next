@@ -1,9 +1,8 @@
-
 /**
  * title: 已上传的文件列表
  * desc: 默认的文件上传列表
  */
-import { Upload, Radio, Modal } from '@sensoro-design/react';
+import { Upload } from '@sensoro-design/react';
 
 const defaultFileList = [
   {

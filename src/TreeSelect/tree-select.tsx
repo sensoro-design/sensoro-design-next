@@ -10,6 +10,7 @@ import React, {
   useCallback,
   ForwardRefRenderFunction,
 } from 'react';
+import classNames from '@pansy/classnames';
 import debounce from 'lodash/debounce';
 import useStateValue, { parseValue } from './hook/useStateValue';
 import { normalizeValueToArray } from './utils';
@@ -25,7 +26,6 @@ import useKeyCache from './hook/useKeyCache';
 import TreeList from './tree-list';
 import { NodeProps } from '../Tree/interface';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import cs from '@pansy/classnames';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
 function isEmptyValue(value) {
@@ -225,7 +225,7 @@ const TreeSelect: ForwardRefRenderFunction<
       popupAlign={{ bottom: 4 }}
       unmountOnExit={props.unmountOnExit}
       {...props.triggerProps}
-      className={cs(`${prefixCls}-trigger`, props.triggerProps && props.triggerProps.className)}
+      className={classNames(`${prefixCls}-trigger`, props.triggerProps && props.triggerProps.className)}
       popup={() => {
         const dropdownRender = props.dropdownRender;
         const dom =

@@ -28,7 +28,7 @@ nav:
 
 ### 自定义文案
 
-<code src="./__demo__/checked_text.demo.tsx" />
+<code src="./__demo__/checked-text.demo.tsx" />
 
 ### 带图标的开关
 

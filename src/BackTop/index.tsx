@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, forwardRef, useState, useEffect, useContext, memo } from 'react';
+import React, { forwardRef, useState, useEffect, useContext, memo } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import BTween from 'b-tween';
 import cs from '@pansy/classnames';
@@ -8,6 +8,8 @@ import { on, off } from '../_util/dom';
 import throttleByRaf from '../_util/throttleByRaf';
 import { BackTopProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import type { PropsWithChildren } from 'react';
 
 const defaultProps: BackTopProps = {
   visibleHeight: 400,
@@ -91,4 +93,4 @@ BackTopRef.displayName = 'BackTop';
 
 export default memo(BackTopRef);
 
-export { BackTopProps };
+export type { BackTopProps };

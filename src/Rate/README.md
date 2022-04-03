@@ -16,7 +16,7 @@ nav:
 
 ### 半选
 
-<code src="./__demo__/allowHalf.demo.tsx" />
+<code src="./__demo__/allow-half.demo.tsx" />
 
 ### 基础用法
 

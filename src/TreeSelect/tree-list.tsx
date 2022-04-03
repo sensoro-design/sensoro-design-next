@@ -1,4 +1,10 @@
-import React, { useRef, useCallback, useMemo, useImperativeHandle, forwardRef } from 'react';
+import React, {
+  useRef,
+  useCallback,
+  useMemo,
+  useImperativeHandle,
+  forwardRef,
+} from 'react';
 import Tree from '../Tree';
 import { isFunction, isString } from '../_util/is';
 import { TreeSelectProps, LabelValue } from './interface';

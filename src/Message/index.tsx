@@ -1,10 +1,10 @@
 import React from 'react';
+import classNames from '@pansy/classnames';
 import ReactDOM from 'react-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import BaseNotification from '../_class/notification';
 import Notice from '../_class/notice';
-import classNames from '@pansy/classnames';
-import { MessageProps } from './interface';
+import type { MessageProps } from './interface';
 
 const messageTypes = ['info', 'success', 'error', 'warning', 'loading', 'normal'];
 let messageInstance: object = {};
@@ -179,4 +179,4 @@ messageTypes.forEach((type) => {
 
 export default Message;
 
-export { MessageProps };
+export type { MessageProps };

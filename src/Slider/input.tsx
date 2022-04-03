@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useState } from 'react';
+import classNames from '@pansy/classnames';
 import InputNumber from '../InputNumber';
-import cs from '@pansy/classnames';
 
 interface InputProps {
   min?: number;
@@ -37,7 +37,7 @@ const Input = function (props: InputProps) {
 
   return (
     <div
-      className={cs(`${prefixCls}-input`, { [`${prefixCls}-input-group`]: range })}
+      className={classNames(`${prefixCls}-input`, { [`${prefixCls}-input-group`]: range })}
       onBlur={handleBlur}
     >
       {range && [

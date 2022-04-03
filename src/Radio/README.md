@@ -16,7 +16,7 @@ nav:
 
 ### 单选框组
 
-<code src="./__demo__/radio_group.demo.tsx" />
+<code src="./__demo__/radio-group.demo.tsx" />
 
 ### 竖直单选组
 
@@ -28,7 +28,7 @@ nav:
 
 ### 按钮类型
 
-<code src="./__demo__/radio_button.demo.tsx" />
+<code src="./__demo__/radio-button.demo.tsx" />
 
 ### 不同尺寸
 
@@ -36,7 +36,7 @@ nav:
 
 ### 自定义节点内容
 
-<code src="./__demo__/custom_render.demo.tsx" />
+<code src="./__demo__/custom-render.demo.tsx" />
 
 ## API
 

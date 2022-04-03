@@ -1,5 +1,5 @@
 import React, { useContext, useRef, isValidElement, useState, useImperativeHandle } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Input from '../Input';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
@@ -116,7 +116,7 @@ function AutoComplete(baseProps: AutoCompleteProps, ref) {
         originRef(node);
       }
     },
-    className: cs(`${prefixCls}`, inputProps && inputProps.className, className),
+    className: classNames(`${prefixCls}`, inputProps && inputProps.className, className),
     style,
     value,
     placeholder,

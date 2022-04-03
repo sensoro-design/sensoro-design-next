@@ -7,12 +7,14 @@ import React, {
   useState,
 } from 'react';
 import NP from 'number-precision';
-import IconUp from '../../icon/react-icon/IconUp';
-import IconDown from '../../icon/react-icon/IconDown';
-import IconPlus from '../../icon/react-icon/IconPlus';
-import IconMinus from '../../icon/react-icon/IconMinus';
+
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+import MinusOutlined from '@sensoro-design/icons/MinusOutlined';
+import UpOutlined from '@sensoro-design/icons/UpOutlined';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+
 import { isNumber } from '../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ArrowUp, ArrowDown } from '../_util/keycode';
 import { ConfigContext } from '../ConfigProvider';
 import Input from '../Input';
@@ -266,7 +268,7 @@ function InputNumber(baseProps: InputNumberProps, ref) {
   const renderStepButton = (method: StepMethods, icon) => {
     return (
       <div
-        className={cs(`${prefixCls}-step-button`, {
+        className={classNames(`${prefixCls}-step-button`, {
           [`${prefixCls}-step-button-disabled`]:
             disabled || (method === 'plus' ? +value >= +max : +value <= +min),
         })}
@@ -282,7 +284,7 @@ function InputNumber(baseProps: InputNumberProps, ref) {
       {...omit(rest, ['allowClear'])}
       {...inputEventHandlers}
       style={style}
-      className={cs(
+      className={classNames(
         prefixCls,
         `${prefixCls}-mode-${mode}`,
         `${prefixCls}-size-${mergedSize}`,
@@ -304,8 +306,8 @@ function InputNumber(baseProps: InputNumberProps, ref) {
         <>
           {shouldRenderLayer && (
             <div className={`${prefixCls}-step-layer`}>
-              {renderStepButton('plus', icons && icons.up ? icons.up : <IconUp />)}
-              {renderStepButton('minus', icons && icons.down ? icons.down : <IconDown />)}
+              {renderStepButton('plus', icons && icons.up ? icons.up : <UpOutlined />)}
+              {renderStepButton('minus', icons && icons.down ? icons.down : <DownOutlined />)}
             </div>
           )}
           {suffix && <div className={`${prefixCls}-suffix`}>{suffix}</div>}
@@ -313,11 +315,11 @@ function InputNumber(baseProps: InputNumberProps, ref) {
       }
       addBefore={
         shouldRenderButton &&
-        renderStepButton('minus', icons && icons.minus ? icons.minus : <IconMinus />)
+        renderStepButton('minus', icons && icons.minus ? icons.minus : <MinusOutlined />)
       }
       addAfter={
         shouldRenderButton &&
-        renderStepButton('plus', icons && icons.plus ? icons.plus : <IconPlus />)
+        renderStepButton('plus', icons && icons.plus ? icons.plus : <PlusOutlined />)
       }
     />
   );

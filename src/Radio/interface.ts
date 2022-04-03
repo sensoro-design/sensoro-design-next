@@ -1,4 +1,4 @@
-import { CSSProperties, ChangeEvent, ReactNode } from 'react';
+import type { CSSProperties, ChangeEvent, ReactNode } from 'react';
 
 /**
  * @title Radio

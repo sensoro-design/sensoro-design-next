@@ -13,6 +13,34 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
+### 受控用法
+
+<code src="./__demo__/control.demo.tsx" />
+
+### 多层嵌套
+
+<code src="./__demo__/nest.demo.tsx" />
+
+### 多个触发方式
+
+<code src="./__demo__/triggers.demo.tsx" />
+
+### 跟随鼠标显示弹出层
+
+<code src="./__demo__/align-point.demo.tsx" />
+
+### 更新位置
+
+<code src="./__demo__/mouse.demo.tsx" />
+
+### 展示箭头元素
+
+<code src="./__demo__/arrow.demo.tsx" />
+
+### 设置弹窗位置偏移量
+
+<code src="./__demo__/popup-align.demo.tsx" />
+
 ## API
 
 ### Trigger

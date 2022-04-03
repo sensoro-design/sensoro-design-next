@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { InputPasswordProps, RefInputType } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Input from './input';
-import IconEye from '../../icon/react-icon/IconEye';
-import IconEyeInvisible from '../../icon/react-icon/IconEyeInvisible';
+import EyeOutlined from '@sensoro-design/icons/EyeOutlined';
+import EyeInvisibleOutlined from '@sensoro-design/icons/EyeInvisibleOutlined';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import omit from '../_util/omit';
@@ -18,7 +18,7 @@ const Password = React.forwardRef<RefInputType, InputPasswordProps>(
     const { className, visibilityToggle, onVisibilityChange, ...rest } = props;
 
     const prefixCls = getPrefixCls('input-password');
-    const classNames = cs(
+    const classes = classNames(
       prefixCls,
       {
         [`${prefixCls}-visibility`]: visibilityToggle,
@@ -46,7 +46,7 @@ const Password = React.forwardRef<RefInputType, InputPasswordProps>(
       if (props.suffix) {
         icon = <span {...IconProps}>{props.suffix}</span>;
       } else {
-        const IconComponent = visibility ? IconEye : IconEyeInvisible;
+        const IconComponent = visibility ? EyeOutlined : EyeInvisibleOutlined;
 
         icon = <IconComponent {...IconProps} />;
       }
@@ -56,7 +56,7 @@ const Password = React.forwardRef<RefInputType, InputPasswordProps>(
       <Input
         {...omit(rest, ['visibility', 'defaultVisibility'])}
         type={visibility ? 'text' : 'password'}
-        className={classNames}
+        className={classes}
         ref={ref}
         suffix={icon}
       />

@@ -20,7 +20,7 @@ nav:
 
 ### 获取选项的文本
 
-<code src="./__demo__/labelInValue.demo.tsx" />
+<code src="./__demo__/label-in-value.demo.tsx" />
 
 ### 失焦时保存
 

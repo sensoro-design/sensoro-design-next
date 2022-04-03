@@ -4,7 +4,6 @@ import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { AlertProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
-
 import InfoCircleFilled from '@sensoro-design/icons/InfoCircleFilled';
 import CloseCircleFilled from '@sensoro-design/icons/CloseCircleFilled';
 import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';

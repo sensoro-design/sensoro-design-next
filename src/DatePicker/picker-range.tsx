@@ -4,7 +4,7 @@ import Trigger from '../Trigger';
 import DateInputRange from '../_class/picker/input-range';
 import { RangePickerProps, ShortcutType, ModeType } from './interface';
 import { isArray, isDayjs, isObject } from '../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import {
   getDayjsValue,
@@ -18,8 +18,8 @@ import {
   toLocal,
   isValidTimeString,
 } from '../_util/dayjs';
-import IconCalendar from '../../icon/react-icon/IconCalendar';
-import IconCalendarClock from '../../icon/react-icon/IconCalendarClock';
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
+import ClockCircleOutlined from '@sensoro-design/icons/ClockCircleOutlined';
 import RangePickerPanel from './panels/range';
 import Footer from './panels/footer';
 import Shortcuts from './panels/shortcuts';
@@ -711,7 +711,7 @@ const Picker = (baseProps: RangePickerProps) => {
   }
 
   function renderPopup(panelOnly?: boolean) {
-    const classNames = cs(
+    const classes = classNames(
       `${prefixCls}-container`,
       {
         [`${prefixCls}-panel-only`]: panelOnly,
@@ -779,7 +779,7 @@ const Picker = (baseProps: RangePickerProps) => {
     );
 
     return (
-      <div className={classNames} onClick={() => focusInput()} style={panelOnly ? style : {}}>
+      <div className={classes} onClick={() => focusInput()} style={panelOnly ? style : {}}>
         {shortcutsPlacementLeft ? (
           <>
             <Shortcuts ref={refShortcuts} {...shortcutsProps} />
@@ -800,7 +800,7 @@ const Picker = (baseProps: RangePickerProps) => {
   const suffixIcon =
     icons && icons.inputSuffix === null
       ? null
-      : (icons && icons.inputSuffix) || (showTime ? <IconCalendarClock /> : <IconCalendar />);
+      : (icons && icons.inputSuffix) || (showTime ? <ClockCircleOutlined /> : <CalendarOutlined />);
 
   const baseInputProps = {
     style,

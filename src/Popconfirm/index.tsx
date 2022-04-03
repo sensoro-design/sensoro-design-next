@@ -2,7 +2,7 @@ import React, { useState, forwardRef, PropsWithChildren, useContext, useEffect }
 import FocusLock from 'react-focus-lock';
 import Tooltip from '../Tooltip';
 import Button from '../Button';
-import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import { PopconfirmProps } from './interface';
@@ -11,7 +11,7 @@ import useMergeProps from '../_util/hooks/useMergeProps';
 const defaultProps: PopconfirmProps = {
   position: 'top',
   okType: 'primary',
-  icon: <IconExclamationCircleFill />,
+  icon: <ExclamationCircleFilled />,
   blurToHide: true,
   unmountOnExit: true,
   trigger: 'click',

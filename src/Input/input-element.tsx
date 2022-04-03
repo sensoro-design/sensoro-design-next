@@ -1,6 +1,6 @@
 import React, { useState, useRef, useImperativeHandle, useEffect } from 'react';
 import { InputComponentProps, RefInputType } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import omit from '../_util/omit';
 import { Enter } from '../_util/keycode';
 import ResizeObserver from '../_util/resizeObserver';
@@ -55,7 +55,7 @@ const InputComponent = React.forwardRef<RefInputType, InputComponentProps>(
     const mergedMaxLength =
       isObject(propMaxLength) && propMaxLength.errorOnly ? undefined : maxLength;
 
-    const inputClassNames = cs(
+    const inputClassNames = classNames(
       prefixCls,
       prefixCls && {
         [`${prefixCls}-size-${size}`]: size,

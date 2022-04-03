@@ -1,7 +1,6 @@
-import { CSSProperties, ReactNode } from 'react';
-import { TriggerProps } from '../Trigger';
-import { ButtonProps } from '../Button';
-
+import type { CSSProperties, ReactNode } from 'react';
+import type { TriggerProps } from '../Trigger';
+import type { ButtonProps } from '../Button';
 import type { SizeType } from '../ConfigProvider/interface';
 
 /**

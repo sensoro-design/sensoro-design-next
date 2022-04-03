@@ -6,7 +6,7 @@ import React, {
   useState,
   useRef,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { on, off } from '../_util/dom';
 import ResizeTrigger from './resize-trigger';
@@ -58,7 +58,7 @@ function ResizeBox(baseProps: PropsWithChildren<ResizeBoxProps>, ref) {
   } = props;
 
   const prefixCls = getPrefixCls('resizebox');
-  const classNames = cs(prefixCls, className);
+  const classes = classNames(prefixCls, className);
   const [paddingStyles, setPaddingStyles] = useState({});
   const [width, setWidth] = useMergeValue(undefined, { value: propWidth });
   const [height, setHeight] = useMergeValue(undefined, { value: propHeight });
@@ -202,7 +202,7 @@ function ResizeBox(baseProps: PropsWithChildren<ResizeBoxProps>, ref) {
   };
   const Tag = component as any;
   return (
-    <Tag style={wrapperStyles} className={classNames} ref={wrapperRef}>
+    <Tag style={wrapperStyles} className={classes} ref={wrapperRef}>
       {children}
       {directions.map((direction) => {
         if (allDirections.indexOf(direction) !== -1) {

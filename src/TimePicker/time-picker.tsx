@@ -3,7 +3,7 @@ import { Dayjs } from 'dayjs';
 import { TimePickerProps, CalendarValue } from './interface';
 import { padStart } from '../_util/pad';
 import { getColumnsFromFormat } from './util';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { dayjs, getNow, getDayjsValue, toLocal } from '../_util/dayjs';
 import Button from '../Button';
@@ -241,7 +241,7 @@ function TimePicker(props: InnerTimePickerProps) {
   }
 
   const { list } = getColumnsFromFormat(format);
-  const classNames = cs(prefixCls);
+  const classes = classNames(prefixCls);
 
   const _hideFooter =
     hideFooter ||
@@ -250,7 +250,7 @@ function TimePicker(props: InnerTimePickerProps) {
 
   return (
     <>
-      <div className={classNames}>
+      <div className={classes}>
         {(list.indexOf('H') !== -1 || list.indexOf('h') !== -1) && renderHours()}
         {list.indexOf('m') !== -1 && renderMinutes()}
         {list.indexOf('s') !== -1 && renderSeconds()}

@@ -7,14 +7,14 @@ import React, {
   useMemo,
 } from 'react';
 import { TextAreaProps } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { Enter } from '../_util/keycode';
 import autoSizeTextAreaHeight from './autoSizeTextAreaHeight';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import { formatValue } from './input';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import CloseOutlined from '@sensoro-design/icons/CloseOutlined'
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 import IconHover from '../_class/icon-hover';
 import { isObject } from '../_util/is';
 import useIsomorphicLayoutEffect from '../_util/hooks/useIsomorphicLayoutEffect';
@@ -131,7 +131,7 @@ const TextArea = (props: TextAreaProps, ref) => {
     return false;
   }, [valueLength, trueMaxLength, mergedMaxLength]);
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-error`]: error || lengthError,
@@ -146,7 +146,7 @@ const TextArea = (props: TextAreaProps, ref) => {
       maxLength={mergedMaxLength}
       ref={textareaRef}
       style={{ ...style, ...textAreaStyle }}
-      className={classNames}
+      className={classes}
       placeholder={placeholder}
       disabled={disabled}
       onChange={handleChange}
@@ -169,7 +169,7 @@ const TextArea = (props: TextAreaProps, ref) => {
     const showClearIcon = !disabled && allowClear && value;
     return (
       <div
-        className={cs(`${prefixCls}-wrapper`, {
+        className={classNames(`${prefixCls}-wrapper`, {
           [`${prefixCls}-clear-wrapper`]: allowClear,
         })}
         style={wrapperStyle}
@@ -188,7 +188,7 @@ const TextArea = (props: TextAreaProps, ref) => {
         ) : null}
         {trueMaxLength && showWordLimit && (
           <span
-            className={cs(`${prefixCls}-word-limit`, {
+            className={classNames(`${prefixCls}-word-limit`, {
               [`${prefixCls}-word-limit-error`]: lengthError,
             })}
           >

@@ -1,5 +1,5 @@
 import React from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Checkbox from '../Checkbox';
 import { OptionProps } from './interface';
 import omit from '../_util/omit';
@@ -31,7 +31,7 @@ function Option(props: OptionProps, ref) {
 
   const optionLabelProps = {
     style,
-    className: cs(
+    className: classNames(
       `${prefixCls}-option`,
       {
         [`${prefixCls}-option-selected`]: isChecked,
@@ -54,7 +54,7 @@ function Option(props: OptionProps, ref) {
     return (
       <li
         ref={ref}
-        className={cs(
+        className={classNames(
           `${prefixCls}-option-wrapper`,
           {
             [`${prefixCls}-option-wrapper-selected`]: isChecked,

@@ -20,11 +20,11 @@ nav:
 
 ### 默认值
 
-<code src="./__demo__/defaultValue.demo.tsx" />
+<code src="./__demo__/default-value.demo.tsx" />
 
 ### 禁用确认
 
-<code src="./__demo__/disableConfirm.demo.tsx" />
+<code src="./__demo__/disable-confirm.demo.tsx" />
 
 ### 禁用
 
@@ -32,7 +32,7 @@ nav:
 
 ### 禁用部分时间选项
 
-<code src="./__demo__/disabledTime.demo.tsx" />
+<code src="./__demo__/disabled-time.demo.tsx" />
 
 ### 附加内容
 
@@ -64,7 +64,7 @@ nav:
 
 ### UTC 时间
 
-<code src="./__demo__/utcOffset.demo.tsx" />
+<code src="./__demo__/utc-offset.demo.tsx" />
 
 ### Picker
 

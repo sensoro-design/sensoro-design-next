@@ -1,6 +1,6 @@
 import React, { useState, useContext, forwardRef, ReactElement } from 'react';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isArray, isObject } from '../_util/is';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
@@ -52,7 +52,7 @@ function Switch(baseProps: SwitchProps, ref) {
     onChange && onChange(!mergedChecked, event);
   };
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     size === 'small' ? `${prefixCls}-${size}` : undefined,
     {
@@ -83,7 +83,7 @@ function Switch(baseProps: SwitchProps, ref) {
       ref={ref}
       {...extraProps}
       style={style}
-      className={classNames}
+      className={classes}
       disabled={disabled}
       onClick={onHandleClick}
       type="button"

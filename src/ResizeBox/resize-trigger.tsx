@@ -1,43 +1,19 @@
-import React, { useContext, CSSProperties, ReactNode, PropsWithChildren } from 'react';
-import cs from '@pansy/classnames';
+import React, { useContext, PropsWithChildren } from 'react';
+import classNames from '@pansy/classnames';
 import ResizeObserver from '../_util/resizeObserver';
 import { ConfigContext } from '../ConfigProvider';
-import IconDragDotVertical from '../../icon/react-icon/IconDragDotVertical';
+
 import IconDragDot from '../../icon/react-icon/IconDragDot';
-import IconCaretRight from '../../icon/react-icon/IconCaretRight';
-import IconCaretLeft from '../../icon/react-icon/IconCaretLeft';
-import IconCaretDown from '../../icon/react-icon/IconCaretDown';
-import IconCareUp from '../../icon/react-icon/IconCaretUp';
+
+import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
+import CaretRightOutlined from '@sensoro-design/icons/CaretRightOutlined';
+import CaretUpOutlined from '@sensoro-design/icons/CaretUpOutlined';
+import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
+import CaretLeftOutlined from '@sensoro-design/icons/CaretLeftOutlined';
+
 import { isFunction, isObject } from '../_util/is';
 
-export interface ResizeTriggerProps {
-  style?: CSSProperties;
-  className?: string | string[];
-  /** 方向，可选值为水平 `horizontal`，垂直 `vertical` */
-  direction: string;
-  /** 定制图标 */
-  icon?: ReactNode;
-  /** 鼠标按下的事件 */
-  onMouseDown?: (e) => void;
-  /** resize 事件 */
-  onResize?: (e) => void;
-  /** 支持伸缩 */
-  resizable?: boolean;
-  /** 支持快速收缩 */
-  collapsible?: {
-    prev?: {
-      icon?: ReactNode;
-      onClick?: (e) => void;
-      collapsed?: boolean;
-    };
-    next?: {
-      icon?: ReactNode;
-      onClick?: (e) => void;
-      collapsed?: boolean;
-    };
-  };
-  renderChildren?: (prev: ReactNode, trigger: ReactNode, next: ReactNode) => ReactNode;
-}
+import type { ResizeTriggerProps } from './interface';
 
 export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProps>) {
   const {
@@ -54,7 +30,7 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
   const { getPrefixCls } = useContext(ConfigContext);
   const prefixCls = getPrefixCls('resizebox-trigger');
   const isHorizontal = direction === 'horizontal';
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${isHorizontal ? 'horizontal' : 'vertical'}`,
     { [`${prefixCls}-not-resizable`]: !resizable },
@@ -64,13 +40,13 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
   const prevCollapsedConfig: ResizeTriggerProps['collapsible']['prev'] = isObject(collapsible.prev)
     ? {
         ...collapsible.prev,
-        icon: collapsible.prev.icon || (isHorizontal ? <IconCareUp /> : <IconCaretLeft />),
+        icon: collapsible.prev.icon || (isHorizontal ? <CaretUpOutlined /> : <CaretLeftOutlined />),
       }
     : {};
   const nextCollapsedConfig: ResizeTriggerProps['collapsible']['next'] = isObject(collapsible.next)
     ? {
         ...collapsible.next,
-        icon: collapsible.next.icon || (isHorizontal ? <IconCaretDown /> : <IconCaretRight />),
+        icon: collapsible.next.icon || (isHorizontal ? <CaretDownOutlined /> : <CaretRightOutlined />),
       }
     : {};
 
@@ -83,14 +59,14 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
     ) {
       return (
         <span
-          className={cs(`${prefixCls}-icon`, cs(`${prefixCls}-prev`))}
+          className={classNames(`${prefixCls}-icon`, `${prefixCls}-prev`)}
           onClick={prevCollapsedConfig.onClick}
         >
           {prevCollapsedConfig.icon}
         </span>
       );
     }
-    return <span className={cs(`${prefixCls}-icon-empty`)} />;
+    return <span className={classNames(`${prefixCls}-icon-empty`)} />;
   };
 
   const renderNextCollapsedTrigger = () => {
@@ -100,25 +76,25 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
     ) {
       return (
         <span
-          className={cs(`${prefixCls}-icon`, cs(`${prefixCls}-next`))}
+          className={classNames(`${prefixCls}-icon`, classNames(`${prefixCls}-next`))}
           onClick={nextCollapsedConfig.onClick}
         >
           {nextCollapsedConfig.icon}
         </span>
       );
     }
-    return <span className={cs(`${prefixCls}-icon-empty`)} />;
+    return <span className={classNames(`${prefixCls}-icon-empty`)} />;
   };
 
   const renderResizeTrigger = () => {
     if (resizable) {
       return (
         <span className={`${prefixCls}-icon`}>
-          {icon || (isHorizontal ? <IconDragDot /> : <IconDragDotVertical />)}
+          {icon || (isHorizontal ? <IconDragDot /> : <HolderOutlined />)}
         </span>
       );
     }
-    return <span className={cs(`${prefixCls}-icon-empty`)} />;
+    return <span className={classNames(`${prefixCls}-icon-empty`)} />;
   };
 
   const prev = renderPrevCollapsedTrigger();
@@ -137,7 +113,7 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
 
   if (!resizable) {
     return (
-      <div className={classNames}>
+      <div className={classes}>
         {isFunction(renderChildren)
           ? renderChildren(prev, trigger, next)
           : children || renderIcon()}
@@ -147,7 +123,7 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
 
   return (
     <ResizeObserver onResize={onResize}>
-      <div className={classNames} onMouseDown={onMouseDown}>
+      <div className={classes} onMouseDown={onMouseDown}>
         {isFunction(renderChildren)
           ? renderChildren(prev, trigger, next)
           : children || renderIcon()}

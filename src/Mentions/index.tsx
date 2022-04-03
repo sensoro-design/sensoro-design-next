@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import Input from '../Input';
 import Select from '../Select';
@@ -145,7 +145,7 @@ function Mentions(baseProps: MentionsProps, ref) {
     <div
       ref={ref}
       style={style}
-      className={cs(`${prefixCls}`, { [`${prefixCls}-align-textarea`]: alignTextarea }, className)}
+      className={classNames(`${prefixCls}`, { [`${prefixCls}-align-textarea`]: alignTextarea }, className)}
     >
       <TextArea
         ref={refTextarea}

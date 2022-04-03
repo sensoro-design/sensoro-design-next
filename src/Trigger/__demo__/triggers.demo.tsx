@@ -1,4 +1,3 @@
-
 /**
  * title: 多个触发方式
  * desc: 通过`trigger`传入数组，可以设置多个触发方式。
@@ -11,7 +10,7 @@ function Popup() {
   </div>;
 }
 
-function Demo() {
+export default () => {
   return <div>
     <Trigger popup={() => <Popup />} trigger={['click', 'hover']} clickToClose={false} classNames="zoomInTop">
       <Button style={{ marginRight: 40 }}>Click/Hover Me</Button>

@@ -1,5 +1,5 @@
-import { CSSProperties, ReactNode } from 'react';
-import { ProgressProps } from '../Progress';
+import type { CSSProperties, ReactNode } from 'react';
+import type { ProgressProps } from '../Progress';
 
 export const STATUS: {
   [key: string]: UploadStatus;

@@ -8,9 +8,11 @@ import { FormControlProps, FieldError, FormItemContextProps, KeyType } from './i
 import { FormItemContext } from './context';
 import { isArray, isFunction } from '../_util/is';
 import warn from '../_util/warning';
-import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
-import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
-import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
+
+import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';
+import CloseCircleFilled from '@sensoro-design/icons/CloseCircleFilled';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
+
 import IconLoading from '../../icon/react-icon/IconLoading';
 import { NotifyType, StoreChangeInfo } from './store';
 import classNames from '@pansy/classnames';
@@ -337,9 +339,9 @@ export default class Control<
 
             {validateStatus && hasFeedback && (
               <div className={`${prefixCls}-item-feedback`}>
-                {validateStatus === 'warning' && <IconExclamationCircleFill />}
-                {validateStatus === 'success' && <IconCheckCircleFill />}
-                {validateStatus === 'error' && <IconCloseCircleFill />}
+                {validateStatus === 'warning' && <ExclamationCircleFilled />}
+                {validateStatus === 'success' && <CheckCircleFilled />}
+                {validateStatus === 'error' && <CloseCircleFilled />}
                 {validateStatus === 'validating' && <IconLoading />}
               </div>
             )}

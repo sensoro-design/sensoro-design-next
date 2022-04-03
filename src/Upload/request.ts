@@ -1,5 +1,6 @@
-import { RequestOptions, UploadRequest } from './interface';
 import { NOOP } from '../_util/constant';
+
+import type { RequestOptions, UploadRequest } from './interface';
 
 function getBody(xhr: XMLHttpRequest) {
   const text = xhr.responseText || xhr.response;

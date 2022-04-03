@@ -13,7 +13,7 @@ import {
   toLocal,
   toTimezone,
 } from '../_util/dayjs';
-import IconClockCircle from '../../icon/react-icon/IconClockCircle';
+import ClockCircleOutlined from '@sensoro-design/icons/ClockCircleOutlined';
 import Input from '../_class/picker/input';
 import InputRange from '../_class/picker/input-range';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -257,7 +257,7 @@ const Picker = (baseProps: InnerPickerProps) => {
     isRangePicker && isArray(placeholder) ? placeholder : locale.TimePicker.placeholders;
   const inputPlaceHolder = placeholder || locale.TimePicker.placeholder;
 
-  const suffixIcon = (icons && icons.inputSuffix) || <IconClockCircle />;
+  const suffixIcon = (icons && icons.inputSuffix) || <ClockCircleOutlined />;
 
   const baseInputProps = {
     style,

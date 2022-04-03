@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 
 /**
  * @title Affix
@@ -9,14 +9,12 @@ export interface AffixProps {
   /**
    * @zh 给 `fixed` 的元素设置 className。
    * @en ClassName of the fixed element.
-   * @version 2.8.0
    */
   affixClassName?: string | string[];
   /**
    * @zh
    * 给 `fixed` 的元素设置 style，注意不要设置 `position` `top` `width` `height`， 因为这几个属性是在元素 fixed 时候用于定位的。
    * @en Style of the fixed elements. Don't set `position` `top` `width` `height` attributes as they are used for positioning when the element is fixed.
-   * @version 2.8.0
    */
   affixStyle?: CSSProperties;
   /**

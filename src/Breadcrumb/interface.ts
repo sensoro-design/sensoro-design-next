@@ -1,5 +1,5 @@
-import { CSSProperties, ReactNode } from 'react';
-import { DropdownProps } from '../Dropdown';
+import type { CSSProperties, ReactNode } from 'react';
+import type { DropdownProps } from '../Dropdown';
 
 export interface RouteProps {
   path: string;

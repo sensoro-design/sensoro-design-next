@@ -68,11 +68,11 @@ nav:
 
 ### 滚动到指定表单字段
 
-<code src="./__demo__/scrollToField.demo.tsx" />
+<code src="./__demo__/scroll-to-field.demo.tsx" />
 
 ### 控制表单项错误状态
 
-<code src="./__demo__/setFields.demo.tsx" />
+<code src="./__demo__/set-fields.demo.tsx" />
 
 ### 不同尺寸
 
@@ -92,7 +92,7 @@ nav:
 
 ### 表单校验失败不阻塞提交
 
-<code src="./__demo__/validateLevel.demo.tsx" />
+<code src="./__demo__/validate-level.demo.tsx" />
 
 ### Form
 

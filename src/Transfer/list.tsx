@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Checkbox, { CheckboxProps } from '../Checkbox';
 import Button from '../Button';
 import Input from '../Input';
 import List from '../List';
 import Item from './item';
 import { TransferItem, TransferListProps } from './interface';
-import IconSearch from '../../icon/react-icon/IconSearch';
-import IconDelete from '../../icon/react-icon/IconDelete';
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
+import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 import IconHover from '../_class/icon-hover';
 import { ConfigContext } from '../ConfigProvider';
 import { isObject } from '../_util/is';
@@ -74,7 +74,7 @@ export const TransferList = (props: TransferListProps, ref) => {
       size="small"
       disabled={disabled}
       placeholder={searchPlaceholder}
-      suffix={<IconSearch />}
+      suffix={<SearchOutlined />}
       {...(isObject(showSearch) ? showSearch : {})}
       onChange={(value, event) => {
         setFilterText(value);
@@ -118,7 +118,7 @@ export const TransferList = (props: TransferListProps, ref) => {
         <span className={`${baseClassName}-header-title`}>{title}</span>
         {!disabled && validKeys.length ? (
           <IconHover className={`${baseClassName}-icon-clear`} onClick={clearItems}>
-            <IconDelete />
+            <DeleteOutlined />
           </IconHover>
         ) : null}
       </>
@@ -215,7 +215,7 @@ export const TransferList = (props: TransferListProps, ref) => {
   };
 
   return (
-    <div ref={ref} className={cs(baseClassName, className)} style={style}>
+    <div ref={ref} className={classNames(baseClassName, className)} style={style}>
       <div className={`${baseClassName}-header`}>{renderHeader()}</div>
 
       {showSearch && <div className={`${baseClassName}-search`}>{searchInput}</div>}

@@ -6,23 +6,24 @@ import React, {
   useImperativeHandle,
   useRef,
 } from 'react';
+import classNames from '@pansy/classnames';
 import throttle from 'lodash/throttle';
 import compute from 'compute-scroll-into-view';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import { isFunction, isNumber, isWindow } from '../_util/is';
 import { on, off } from '../_util/dom';
-import classNames from '@pansy/classnames';
 import useIsFirstRender from '../_util/hooks/useIsFirstRender';
 import Affix from '../Affix';
 import { ConfigContext } from '../ConfigProvider';
-import { AnchorProps } from './interface';
 import AnchorContext from './context';
 import { findNode, slide, getContainer, getContainerElement } from './utils';
 import useStateWithPromise from '../_util/hooks/useStateWithPromise';
 import Link from './link';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
-type AnchorPropsWithChildren = React.PropsWithChildren<AnchorProps>;
+import type { AnchorProps } from './interface';
+
+export type AnchorPropsWithChildren = React.PropsWithChildren<AnchorProps>;
 
 const defaultProps: AnchorProps = {
   animation: true,

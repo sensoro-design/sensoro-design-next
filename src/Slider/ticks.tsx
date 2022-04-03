@@ -1,7 +1,7 @@
 import React, { memo, useMemo } from 'react';
+import classNames from '@pansy/classnames';
 import { plus } from 'number-precision';
 import { formatPercent, getIntervalOffset, valueInRange } from './utils';
-import cs from '@pansy/classnames';
 import { IntervalConfig } from './hooks/useInterval';
 
 interface TicksProps {
@@ -41,7 +41,7 @@ export default memo(function Ticks(props: TicksProps) {
       {steps.map((item, index) => (
         <div
           key={index}
-          className={cs(`${prefixCls}-tick`, { [`${prefixCls}-tick-active`]: item.isActive })}
+          className={classNames(`${prefixCls}-tick`, { [`${prefixCls}-tick-active`]: item.isActive })}
           style={
             vertical
               ? { [reverse ? 'top' : 'bottom']: item.offset }

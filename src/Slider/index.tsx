@@ -1,4 +1,5 @@
 import React, { forwardRef, memo, useContext, CSSProperties, useRef } from 'react';
+import classNames from '@pansy/classnames';
 import { plus } from 'number-precision';
 import SliderButton from './button';
 import Marks from './marks';
@@ -7,7 +8,6 @@ import Input from './input';
 import Ticks from './ticks';
 import { isFunction, isObject } from '../_util/is';
 import { formatPercent, getIntervalOffset } from './utils';
-import cs from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { TooltipPosition, SliderProps } from './interface';
 import useMergeValue from '../_util/hooks/useMergeValue';
@@ -299,7 +299,7 @@ function Slider(baseProps: SliderProps, ref) {
 
   return (
     <div
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-vertical`]: vertical,
@@ -314,7 +314,7 @@ function Slider(baseProps: SliderProps, ref) {
       <div className={`${prefixCls}-wrapper`}>
         <div
           ref={roadRef}
-          className={cs(`${prefixCls}-road`, {
+          className={classNames(`${prefixCls}-road`, {
             [`${prefixCls}-road-disabled`]: disabled,
             [`${prefixCls}-road-vertical`]: vertical,
           })}

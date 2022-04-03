@@ -1,21 +1,24 @@
 import React, { forwardRef, useContext, PropsWithChildren } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
-import IconCheck from '../../icon/react-icon/IconCheck';
-import IconExclamation from '../../icon/react-icon/IconExclamation';
-import IconInfo from '../../icon/react-icon/IconInfo';
-import IconClose from '../../icon/react-icon/IconClose';
+
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import InfoOutlined from '@sensoro-design/icons/InfoOutlined';
+import ExclamationOutlined from '@sensoro-design/icons/ExclamationOutlined';
+
 import Image404 from './404';
 import Image403 from './403';
 import Image500 from './500';
-import { ResultProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
+import type { ResultProps } from './interface';
+
 const defaultIcons = {
-  success: <IconCheck />,
-  info: <IconInfo />,
-  warning: <IconExclamation />,
-  error: <IconClose />,
+  success: <CheckOutlined />,
+  info: <InfoOutlined />,
+  warning: <ExclamationOutlined />,
+  error: <CloseOutlined />,
   '404': <Image404 />,
   '403': <Image403 />,
   '500': <Image500 />,
@@ -51,7 +54,7 @@ function Result(baseProps: PropsWithChildren<ResultProps>, ref) {
   return (
     <div
       ref={ref}
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-is-${status}`]: status,
@@ -64,7 +67,7 @@ function Result(baseProps: PropsWithChildren<ResultProps>, ref) {
       {icon && (
         <div className={`${prefixCls}-icon`}>
           <span
-            className={cs(`${prefixCls}-icon-tip`, {
+            className={classNames(`${prefixCls}-icon-tip`, {
               [`${prefixCls}-icon-${status}`]: status,
               [`${prefixCls}-icon-custom`]: status === null,
             })}
@@ -87,4 +90,4 @@ ResultRef.displayName = 'Result';
 
 export default ResultRef;
 
-export { ResultProps };
+export type { ResultProps };

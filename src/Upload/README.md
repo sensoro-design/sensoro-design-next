@@ -19,7 +19,7 @@ nav:
 
 ### 上传前校验
 
-<code src="./__demo__/beforeUpload.demo.tsx" />
+<code src="./__demo__/before-upload.demo.tsx" />
 
 ### 上传前裁剪
 
@@ -27,7 +27,7 @@ nav:
 
 ### 自定义上传实现
 
-<code src="./__demo__/customRequest.demo.tsx" />
+<code src="./__demo__/custom-request.demo.tsx" />
 
 ### 文件夹上传
 
@@ -51,11 +51,11 @@ nav:
 
 ### 移除前校验
 
-<code src="./__demo__/onRemove.demo.tsx" />
+<code src="./__demo__/on-remove.demo.tsx" />
 
 ### 图片列表样式
 
-<code src="./__demo__/pictureList.demo.tsx" />
+<code src="./__demo__/picture-list.demo.tsx" />
 
 ### 照片墙
 
@@ -67,7 +67,7 @@ nav:
 
 ### 自定义文件上传列表展示
 
-<code src="./__demo__/renderUploadList.demo.tsx" />
+<code src="./__demo__/render-upload-list.demo.tsx" />
 
 ### 自定义上传节点
 
@@ -75,7 +75,7 @@ nav:
 
 ### 已上传的文件列表
 
-<code src="./__demo__/uploadList.demo.tsx" />
+<code src="./__demo__/upload-list.demo.tsx" />
 
 ### Upload
 

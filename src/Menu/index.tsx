@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, forwardRef, useRef, useMemo } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Item from './item';
 import ItemGroup from './item-group';
 import SubMenu from './sub-menu';
@@ -155,7 +155,7 @@ function Menu(baseProps: MenuProps, ref) {
       {...omit(rest, ['isMenu'])}
       ref={ref}
       style={usedStyle}
-      className={cs(
+      className={classNames(
         prefixCls,
         `${prefixCls}-${theme}`,
         `${prefixCls}-${mode === 'horizontal' ? 'horizontal' : 'vertical'}`,

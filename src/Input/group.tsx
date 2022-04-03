@@ -1,5 +1,5 @@
 import React, { useContext, PropsWithChildren } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { InputGroupProps } from './interface';
 
@@ -9,7 +9,7 @@ const Group = React.forwardRef<HTMLDivElement, PropsWithChildren<InputGroupProps
 
     const { className, style, children, compact, ...rest } = props;
     const prefixCls = getPrefixCls('input-group');
-    const classNames = cs(
+    const classes = classNames(
       prefixCls,
       {
         [`${prefixCls}-compact`]: compact,
@@ -18,7 +18,7 @@ const Group = React.forwardRef<HTMLDivElement, PropsWithChildren<InputGroupProps
     );
 
     return (
-      <div ref={ref} className={classNames} style={style} {...rest}>
+      <div ref={ref} className={classes} style={style} {...rest}>
         {children}
       </div>
     );

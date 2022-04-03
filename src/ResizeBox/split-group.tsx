@@ -6,9 +6,9 @@ import React, {
   forwardRef,
   useImperativeHandle,
 } from 'react';
+import classNames from '@pansy/classnames';
 import { SplitGroupProps, CollapsedConfig } from './interface';
 import { ConfigContext } from '../ConfigProvider';
-import cs from '@pansy/classnames';
 import { isFunction, isNumber, isUndefined, isObject } from '../_util/is';
 import ResizeTrigger from './resize-trigger';
 import { on, off } from '../_util/dom';
@@ -44,7 +44,7 @@ function SplitGroup(props: SplitGroupProps, ref) {
   const isHorizontal = direction === DIRECTION_HORIZONTAL;
   const isTriggerHorizontal = !isHorizontal;
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${isHorizontal ? DIRECTION_HORIZONTAL : DIRECTION_VERTICAL}`,
     { [`${prefixCls}-moving`]: isMoving },
@@ -307,7 +307,7 @@ function SplitGroup(props: SplitGroupProps, ref) {
   }, [offsets]);
 
   return (
-    <Tag style={style} className={classNames} ref={wrapperRef}>
+    <Tag style={style} className={classes} ref={wrapperRef}>
       {panes.map((pane, index) => {
         const { content, disabled, trigger, resizable = true, collapsible = {} } = pane;
         const { hasPrev, hasNext } = getCollapsedConfig(index);

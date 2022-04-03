@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TransferItemProps } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import IconHover from '../_class/icon-hover';
 import Checkbox from '../Checkbox';
-import IconClose from '../../icon/react-icon/IconClose';
-import IconDragDotVertical from '../../icon/react-icon/IconDragDotVertical';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
 
 type ActiveStatus = 'none' | 'dragged' | 'dragging';
 
@@ -56,7 +56,7 @@ function TransferItem(props: TransferItemProps) {
     <li
       key={item.key}
       ref={refItem}
-      className={cs(
+      className={classNames(
         baseClassName,
         {
           [`${baseClassName}-disabled`]: _disabled,
@@ -121,7 +121,7 @@ function TransferItem(props: TransferItemProps) {
     >
       {draggable ? (
         <IconHover className={`${baseClassName}-icon-drag`}>
-          <IconDragDotVertical />
+          <HolderOutlined />
         </IconHover>
       ) : null}
 
@@ -133,7 +133,7 @@ function TransferItem(props: TransferItemProps) {
               className={`${baseClassName}-icon-remove`}
               onClick={() => onItemRemove(item.key)}
             >
-              <IconClose />
+              <CloseOutlined />
             </IconHover>
           )}
         </>

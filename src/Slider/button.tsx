@@ -8,7 +8,7 @@ import React, {
   useRef,
   useMemo,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { on, off } from '../_util/dom';
 import { isFunction } from '../_util/is';
 import Trigger from '../Trigger';
@@ -159,7 +159,7 @@ const SliderButton = function (props: SliderButtonProps) {
     const tooltipPrefixCls = getPrefixCls('tooltip');
     return (
       <div
-        className={cs(`${tooltipPrefixCls}-content`, `${tooltipPrefixCls}-content-${position}`)}
+        className={classNames(`${tooltipPrefixCls}-content`, `${tooltipPrefixCls}-content-${position}`)}
         onMouseLeave={handleMouseLeave}
         onMouseEnter={handlePopupMouseEnter}
         onClick={(e) => {
@@ -201,7 +201,7 @@ const SliderButton = function (props: SliderButtonProps) {
       childrenPrefix={getPrefixCls('tooltip')}
     >
       <div
-        className={cs(`${prefixCls}-button`, { [`${prefixCls}-button-active`]: isActive })}
+        className={classNames(`${prefixCls}-button`, { [`${prefixCls}-button-active`]: isActive })}
         onMouseDown={handleMouseDown}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

@@ -6,10 +6,10 @@ import React, {
   useRef,
   isValidElement,
 } from 'react';
+import classNames from '@pansy/classnames';
 import AnchorContext from './context';
 import { AnchorLinkProps } from './interface';
 import { ConfigContext } from '../ConfigProvider';
-import classNames from '@pansy/classnames';
 import { isString, isObject } from '../_util/is';
 import useMergeProps from '../_util/hooks/useMergeProps';
 

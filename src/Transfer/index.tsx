@@ -1,7 +1,7 @@
 import React, { useContext, useMemo } from 'react';
 import { ConfigContext } from '../ConfigProvider';
 import { TransferProps, TransferListProps, TransferItem, TransferListType } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Button from '../Button';
 import TransferList from './list';
 import IconLeft from '../../icon/react-icon/IconLeft';
@@ -168,7 +168,7 @@ function Transfer(baseProps: TransferProps, ref) {
     return simple ? null : (
       <div
         style={operationStyle}
-        className={cs(`${prefixCls}-operations`, {
+        className={classNames(`${prefixCls}-operations`, {
           [`${prefixCls}-operations-words`]: operationTexts,
         })}
       >
@@ -227,7 +227,7 @@ function Transfer(baseProps: TransferProps, ref) {
   return (
     <div
       ref={ref}
-      className={cs(
+      className={classNames(
         prefixCls,
         {
           [`${prefixCls}-simple`]: simple,
