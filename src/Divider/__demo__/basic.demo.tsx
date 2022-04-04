@@ -3,7 +3,9 @@
  * desc: 对不同章节的文本段落进行分割，默认为水平分割线，可在中间加入文字。
  */
 import { Divider, Typography } from '@sensoro-design/react';
-import { IconFileImage, IconUser, IconPen } from '@sensoro-design/react/icon';
+import FileImageOutlined from '@sensoro-design/icons/FileImageOutlined';
+import UserOutlined from '@sensoro-design/icons/UserOutlined';
+import { IconPen } from '@sensoro-design/react/icon';
 import './styles.less';
 
 const { Paragraph, Title } = Typography;
@@ -23,7 +25,7 @@ export default () => {
       <div className="divider-demo" style={{ marginTop: 48 }}>
         <div className="divider-demo-flex-content">
           <span className="avatar">
-            <IconFileImage />
+            <FileImageOutlined />
           </span>
           <div className="content">
             <Title heading={6}>Image</Title>May 4, 2010
@@ -32,7 +34,7 @@ export default () => {
         <Divider className="half-divider" />
         <div className="divider-demo-flex-content">
           <span className="avatar">
-            <IconUser />
+            <UserOutlined />
           </span>
           <div className="content">
             <Title heading={6}>Avatar</Title>May 4, 2010

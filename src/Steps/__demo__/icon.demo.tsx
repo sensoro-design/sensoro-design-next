@@ -3,6 +3,7 @@
  * desc: 指定`icon`可以自定义图标显示。
  */
 import { Steps } from '@sensoro-design/react';
+import HomeOutlined from '@sensoro-design/icons/HomeOutlined';
 import { IconHome, IconLoading, IconThumbUp } from '@sensoro-design/react/icon';
 
 const Step = Steps.Step;

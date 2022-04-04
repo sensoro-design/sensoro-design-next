@@ -7,7 +7,8 @@
  */
 import React from 'react';
 import { Statistic, Grid, Button } from '@sensoro-design/react';
-import { IconArrowRise, IconArrowFall } from '@sensoro-design/react/icon';
+import ArrowUpOutlined from '@sensoro-design/icons/ArrowUpOutlined';
+import ArrowDownOutlined from '@sensoro-design/icons/ArrowDownOutlined';
 
 const Row = Grid.Row;
 const Col = Grid.Col;
@@ -22,7 +23,7 @@ export default class Demo extends React.Component {
             title="User Growth Rate"
             value={50.32}
             precision={2}
-            prefix={<IconArrowRise />}
+            prefix={<ArrowDownOutlined />}
             suffix="%"
             countUp
             styleValue={{ color: '#0fbf60' }}
@@ -43,7 +44,7 @@ export default class Demo extends React.Component {
             title="Population Growth Rate"
             value={2.59}
             precision={2}
-            prefix={<IconArrowFall />}
+            prefix={<ArrowUpOutlined />}
             suffix="%"
             countUp
             styleValue={{ color: '#ee4d38' }}

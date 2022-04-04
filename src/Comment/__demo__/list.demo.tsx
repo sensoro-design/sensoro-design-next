@@ -4,13 +4,11 @@
  */
 import React from 'react';
 import { Comment, List } from '@sensoro-design/react';
-import {
-  IconHeart,
-  IconMessage,
-  IconHeartFill,
-  IconStarFill,
-  IconStar,
-} from '@sensoro-design/react/icon';
+import HeartOutlined from '@sensoro-design/icons/HeartOutlined';
+import StarOutlined from '@sensoro-design/icons/StarOutlined';
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
+import StarFilled from '@sensoro-design/icons/StarFilled';
+import HeartFilled from '@sensoro-design/icons/HeartFilled';
 import './styles.less';
 
 export default () => {
@@ -59,7 +57,7 @@ export default () => {
                     setLikes(like ? likes.filter((x) => x !== item.id) : [...likes, item.id])
                   }
                 >
-                  {like ? <IconHeartFill style={{ color: '#f53f3f' }} /> : <IconHeart />}{' '}
+                  {like ? <HeartFilled style={{ color: '#f53f3f' }} /> : <HeartOutlined />}{' '}
                   {item.like + (like ? 1 : 0)}
                 </span>,
                 <span
@@ -69,11 +67,11 @@ export default () => {
                     setStars(star ? stars.filter((x) => x !== item.id) : [...stars, item.id])
                   }
                 >
-                  {star ? <IconStarFill style={{ color: '#ffb400' }} /> : <IconStar />}{' '}
+                  {star ? <StarFilled style={{ color: '#ffb400' }} /> : <StarOutlined />}{' '}
                   {item.star + (star ? 1 : 0)}
                 </span>,
                 <span className="custom-comment-action" key="reply">
-                  <IconMessage /> Reply
+                  <MessageOutlined /> Reply
                 </span>,
               ]}
             />

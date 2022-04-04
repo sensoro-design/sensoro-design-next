@@ -4,7 +4,7 @@
  * desc: 设置 `icon` 来自定义图标。
  */
 import { Notification, Button, Icon, Space } from '@sensoro-design/react';
-import { IconFaceSmileFill } from '@sensoro-design/react/icon';
+import SmileFilled from '@sensoro-design/icons/SmileFilled';
 
 const IconFont = Icon.addFromIconFontCn({ src: '//at.alicdn.com/t/font_180975_26f1p759rvn.js' });
 
@@ -43,7 +43,7 @@ export default () => {
       Error (Light)
     </Button>
     <Button
-      onClick={() => Notification.info({ icon: <IconFaceSmileFill />, title: 'Upgrade', content: 'Ready to upgrade ArcoDesign 2.0!' })}
+      onClick={() => Notification.info({ icon: <SmileFilled />, title: 'Upgrade', content: 'Ready to upgrade ArcoDesign 2.0!' })}
       type="secondary"
       style={{ marginBottom: 24 }}
     >

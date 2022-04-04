@@ -5,7 +5,10 @@
  */
 import { useState } from 'react';
 import { Menu, Trigger } from '@sensoro-design/react';
-import { IconMessage, IconClose, IconBug, IconBulb } from '@sensoro-design/react/icon';
+import { IconBug, IconBulb } from '@sensoro-design/react/icon';
+
+import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
 const MenuItem = Menu.Item;
 
@@ -43,7 +46,7 @@ export default () => {
         onVisibleChange={(v) => setPopupVisibleOne(v)}
       >
         <div className={`button-trigger ${popupVisibleOne ? 'button-trigger-active' : ''}`}>
-          {popupVisibleOne ? <IconClose /> : <IconMessage />}
+          {popupVisibleOne ? <CloseOutlined /> : <MessageOutlined />}
         </div>
       </Trigger>
 
@@ -55,7 +58,7 @@ export default () => {
         onVisibleChange={(v) => setPopupVisibleTwo(v)}
       >
         <div className={`button-trigger ${popupVisibleTwo ? 'button-trigger-active' : ''}`}>
-          {popupVisibleTwo ? <IconClose /> : <IconMessage />}
+          {popupVisibleTwo ? <CloseOutlined /> : <MessageOutlined />}
         </div>
       </Trigger>
     </div>

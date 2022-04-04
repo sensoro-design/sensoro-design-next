@@ -5,9 +5,7 @@
 import React, { useState } from 'react';
 import { Upload, Button, Message, Modal, Grid, Slider } from '@sensoro-design/react';
 import EasyCropper from 'react-easy-crop';
-
-import { IconRotateLeft } from '@sensoro-design/react/icon';
-
+import RotateLeftOutlined from '@sensoro-design/icons/RotateLeftOutlined';
 import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
 import MinusOutlined from '@sensoro-design/icons/MinusOutlined';
 
@@ -121,7 +119,7 @@ const Cropper = (props) => {
             }}
           />
         </Grid.Row>
-        <IconRotateLeft
+        <RotateLeftOutlined
           onClick={() => {
             setRotation(rotation - 90);
           }}

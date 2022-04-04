@@ -3,14 +3,14 @@
  * desc: 体现全部功能。
  */
 import { Result, Button, Typography } from '@sensoro-design/react';
-import { IconFaceFrownFill } from '@sensoro-design/react/icon';
+import SmileFilled from '@sensoro-design/icons/SmileFilled';
 
 export default () => {
   return (
     <div >
       <Result
         status="error"
-        icon={<IconFaceFrownFill />}
+        icon={<SmileFilled />}
         title='No internet'
         subTitle='DNS_PROBE_FINISHED_NO_INTERNET'
         extra={<Button type='primary'>Refresh</Button>}
