@@ -60,6 +60,8 @@ examples/.gitignore
 site/package-lock.json
 site/package-lock.json
 
+src/**/*.d.ts
+
 # idea file
 /.idea/
 
