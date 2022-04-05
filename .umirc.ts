@@ -15,9 +15,6 @@ export default {
     ]
   },
   outputPath: 'site',
-  alias: {
-    '@sensoro-design/react/icon': join(__dirname, 'icon')
-  },
   navs: [
     null,
     {

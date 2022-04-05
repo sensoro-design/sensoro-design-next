@@ -19,8 +19,8 @@ import {
   toLocal,
   toTimezone,
 } from '../_util/dayjs';
-import IconCalendar from '../../icon/react-icon/IconCalendar';
-import IconCalendarClock from '../../icon/react-icon/IconCalendarClock';
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
+import CalendarClockOutlined from '@sensoro-design/icons/CalendarClockOutlined';
 import Footer from './panels/footer';
 import Shortcuts from './panels/shortcuts';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -508,7 +508,7 @@ const Picker = (baseProps: InnerPickerProps) => {
   const suffixIcon =
     icons && icons.inputSuffix === null
       ? null
-      : (icons && icons.inputSuffix) || (showTime ? <IconCalendarClock /> : <IconCalendar />);
+      : (icons && icons.inputSuffix) || (showTime ? <CalendarClockOutlined /> : <CalendarOutlined />);
 
   const baseInputProps = {
     style,

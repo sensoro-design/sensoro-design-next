@@ -2,11 +2,12 @@ import React, { useState, useRef, useEffect, PropsWithChildren } from 'react';
 import Tooltip from '../Tooltip';
 import { isObject, isArray } from '../_util/is';
 import copy from '../_util/clipboard';
-import IconCopy from '../../icon/react-icon/IconCopy';
-import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
-import IconEdit from '../../icon/react-icon/IconEdit';
-import { OperationsProps } from './interface';
+import EditOutlined from '@sensoro-design/icons/EditOutlined';
+import CopyOutlined from '@sensoro-design/icons/CopyOutlined';
+import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';
 import mergedToString from '../_util/mergedToString';
+
+import type { OperationsProps } from './interface';
 
 export default function Operations(props: PropsWithChildren<OperationsProps>) {
   const {
@@ -63,7 +64,7 @@ export default function Operations(props: PropsWithChildren<OperationsProps>) {
         className={isCopied ? `${prefixCls}-operation-copied` : `${prefixCls}-operation-copy`}
         onClick={onClickCopy}
       >
-        {isCopied ? <IconCheckCircleFill /> : copyConfig.icon || <IconCopy />}
+        {isCopied ? <CheckCircleFilled /> : copyConfig.icon || <CopyOutlined />}
       </span>
     </Tooltip>
   );
@@ -77,7 +78,7 @@ export default function Operations(props: PropsWithChildren<OperationsProps>) {
           setEditing(true);
         }}
       >
-        <IconEdit />
+        <EditOutlined />
       </span>
     </Tooltip>
   );

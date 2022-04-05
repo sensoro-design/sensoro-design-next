@@ -4,8 +4,8 @@ import Radio from '../../Radio';
 import { isString, isArray } from '../../_util/is';
 import classNames from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
-import IconPlus from '../../../icon/react-icon/IconPlus';
-import IconMinus from '../../../icon/react-icon/IconMinus';
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
+import MinusOutlined from '@sensoro-design/icons/MinusOutlined';
 import { TbodyProps } from '../interface';
 import { INTERNAL_EXPAND_KEY, INTERNAL_SELECTION_KEY } from '../constant';
 import Td from './td';
@@ -121,7 +121,7 @@ function Tr<T>(props: TrType<T>, ref) {
         }}
         type="button"
       >
-        {expanded ? <IconMinus /> : <IconPlus />}
+        {expanded ? <MinusOutlined /> : <PlusOutlined />}
       </button>
     );
   }

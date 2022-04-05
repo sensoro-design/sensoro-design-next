@@ -17,7 +17,6 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       "@sensoro-design/react": ["src/index.ts"],
-      "@sensoro-design/react/icon": ["icon"],
       "@sensoro-design/react/es/*": ["src/*"]
     }
   },

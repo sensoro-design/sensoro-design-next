@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 import { Dayjs } from 'dayjs';
-import IconLeft from '../../../icon/react-icon/IconLeft';
-import IconRight from '../../../icon/react-icon/IconRight';
-import IconDoubleLeft from '../../../icon/react-icon/IconDoubleLeft';
-import IconDoubleRight from '../../../icon/react-icon/IconDoubleRight';
+import DoubleLeftOutlined from '@sensoro-design/icons/DoubleLeftOutlined';
+import DoubleRightOutlined from '@sensoro-design/icons/DoubleRightOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
 import cs from '@pansy/classnames';
 import { ModeType, IconsType } from '../interface';
 
@@ -78,23 +78,23 @@ function Header(props: HeaderProps) {
     <div className={`${prefixCls}-header`}>
       {!prevDoubleNull && (
         <div className={getIconClassName(showSuperPrev)} onClick={onSuperPrev}>
-          {showSuperPrev && (prevDoubleNull ? null : icons.prevDouble || <IconDoubleLeft />)}
+          {showSuperPrev && (prevDoubleNull ? null : icons.prevDouble || <DoubleLeftOutlined />)}
         </div>
       )}
       {!prevNull && (
         <div className={getIconClassName(showPrev)} onClick={onPrev}>
-          {showPrev && (prevNull ? null : icons.prev || <IconLeft />)}
+          {showPrev && (prevNull ? null : icons.prev || <LeftOutlined />)}
         </div>
       )}
       <div className={`${prefixCls}-header-value`}>{renderHeaderLabel()}</div>
       {!nextNull && (
         <div className={getIconClassName(showNext)} onClick={onNext}>
-          {showNext && (nextNull ? null : icons.next || <IconRight />)}
+          {showNext && (nextNull ? null : icons.next || <RightOutlined />)}
         </div>
       )}
       {!nextDoubleNull && (
         <div className={getIconClassName(showSuperNext)} onClick={onSuperNext}>
-          {showSuperNext && (nextDoubleNull ? null : icons.nextDouble || <IconDoubleRight />)}
+          {showSuperNext && (nextDoubleNull ? null : icons.nextDouble || <DoubleRightOutlined />)}
         </div>
       )}
     </div>

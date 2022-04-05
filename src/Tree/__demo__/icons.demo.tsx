@@ -6,7 +6,7 @@
 import { Tree } from '@sensoro-design/react';
 import DownOutlined from '@sensoro-design/icons/DownOutlined';
 import FileOutlined from '@sensoro-design/icons/FileOutlined';
-import { IconDragArrow } from '@sensoro-design/react/icon';
+import DragOutlined from '@sensoro-design/icons/DragOutlined';
 
 const TreeNode = Tree.Node;
 
@@ -15,7 +15,7 @@ export default () => {
     <Tree
       icons={{
         switcherIcon: <DownOutlined />,
-        dragIcon: <IconDragArrow />
+        dragIcon: <DragOutlined />
       }}
       showLine
       draggable

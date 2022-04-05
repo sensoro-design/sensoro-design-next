@@ -1,10 +1,10 @@
 import React, { useState, useContext } from 'react';
 import NP from 'number-precision';
 import classNames from '@pansy/classnames';
-import IconStarFill from '../../icon/react-icon/IconStarFill';
-import IconFaceMehFill from '../../icon/react-icon/IconFaceMehFill';
-import IconFaceSmileFill from '../../icon/react-icon/IconFaceSmileFill';
-import IconFaceFrownFill from '../../icon/react-icon/IconFaceFrownFill';
+import StarFilled from '@sensoro-design/icons/StarFilled';
+import FrownFilled from '@sensoro-design/icons/FrownFilled';
+import SmileFilled from '@sensoro-design/icons/SmileFilled';
+import MehFilled from '@sensoro-design/icons/MehFilled';
 import { ConfigContext } from '../ConfigProvider';
 import Tooltip from '../Tooltip';
 import omit from '../_util/omit';
@@ -14,7 +14,7 @@ import useMergeProps from '../_util/hooks/useMergeProps';
 NP.enableBoundaryChecking(false);
 
 const defaultProps: RateProps = {
-  character: <IconStarFill />,
+  character: <StarFilled />,
   count: 5,
 };
 
@@ -91,14 +91,14 @@ function Rate(baseProps: RateProps, ref) {
     let _usedCharacter = typeof character === 'function' ? character(index) : character;
     if (grading) {
       if (_usedIndex <= 2) {
-        _usedCharacter = <IconFaceFrownFill />;
+        _usedCharacter = <FrownFilled />;
       } else if (_usedIndex <= 3) {
-        _usedCharacter = <IconFaceMehFill />;
+        _usedCharacter = <MehFilled />;
       } else {
-        _usedCharacter = <IconFaceSmileFill />;
+        _usedCharacter = <SmileFilled />;
       }
       if (_usedIndex <= index) {
-        _usedCharacter = <IconFaceMehFill />;
+        _usedCharacter = <MehFilled />;
       }
     }
     const classes = classNames(`${prefixCls}-character`, {

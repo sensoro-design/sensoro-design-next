@@ -5,7 +5,9 @@
  */
 import { useState } from 'react';
 import { Menu, Slider } from '@sensoro-design/react';
-import { IconApps, IconBug, IconBulb } from '@sensoro-design/react/icon';
+import AppstoreOutlined from '@sensoro-design/icons/AppstoreOutlined';
+import BugOutlined from '@sensoro-design/icons/BugOutlined';
+import BulbOutlined from '@sensoro-design/icons/BulbOutlined';
 
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
@@ -37,7 +39,7 @@ export default () => {
           key="0"
           title={
             <>
-              <IconApps /> Navigation 1
+              <AppstoreOutlined /> Navigation 1
             </>
           }
         >
@@ -51,7 +53,7 @@ export default () => {
           key="1"
           title={
             <>
-              <IconBug /> Navigation 2
+              <BugOutlined /> Navigation 2
             </>
           }
         >
@@ -63,7 +65,7 @@ export default () => {
           key="2"
           title={
             <>
-              <IconBulb /> Navigation 3
+              <BulbOutlined /> Navigation 3
             </>
           }
         >

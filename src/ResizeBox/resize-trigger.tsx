@@ -2,9 +2,7 @@ import React, { useContext, PropsWithChildren } from 'react';
 import classNames from '@pansy/classnames';
 import ResizeObserver from '../_util/resizeObserver';
 import { ConfigContext } from '../ConfigProvider';
-
-import IconDragDot from '../../icon/react-icon/IconDragDot';
-
+import HolderVerticalOutlined from '@sensoro-design/icons/HolderVerticalOutlined';
 import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
 import CaretRightOutlined from '@sensoro-design/icons/CaretRightOutlined';
 import CaretUpOutlined from '@sensoro-design/icons/CaretUpOutlined';
@@ -90,7 +88,7 @@ export default function ResizeTrigger(props: PropsWithChildren<ResizeTriggerProp
     if (resizable) {
       return (
         <span className={`${prefixCls}-icon`}>
-          {icon || (isHorizontal ? <IconDragDot /> : <HolderOutlined />)}
+          {icon || (isHorizontal ? <HolderVerticalOutlined /> : <HolderOutlined />)}
         </span>
       );
     }

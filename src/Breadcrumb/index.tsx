@@ -3,7 +3,7 @@ import classNames from '@pansy/classnames';
 import Item from './item';
 import { ConfigContext } from '../ConfigProvider';
 import Menu from '../Menu';
-import IconObliqueLine from '../../icon/react-icon/IconObliqueLine';
+import ObliqueLineOutlined from '@sensoro-design/icons/ObliqueLineOutlined';
 import omit from '../_util/omit';
 import { RouteProps, BreadcrumbProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -16,7 +16,7 @@ const defaultItemRender = (route: RouteProps, routes: RouteProps[], paths: strin
 };
 
 const defaultProps: BreadcrumbProps = {
-  separator: <IconObliqueLine />,
+  separator: <ObliqueLineOutlined />,
 };
 
 function Breadcrumb(baseProps: PropsWithChildren<BreadcrumbProps>, ref) {

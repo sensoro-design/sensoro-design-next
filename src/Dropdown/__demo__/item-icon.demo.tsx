@@ -3,7 +3,8 @@
  * desc: 菜单项前可以添加图标。
  */
 import { Dropdown, Menu, Button } from '@sensoro-design/react';
-import { IconDown, IconLocation } from '@sensoro-design/react/icon';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import LocationFilled from '@sensoro-design/icons/LocationFilled';
 
 const iconStyle = {
   marginRight: 8,
@@ -14,15 +15,15 @@ const iconStyle = {
 const dropList = (
   <Menu>
     <Menu.Item key="1">
-      <IconLocation style={iconStyle} />
+      <LocationFilled style={iconStyle} />
       Beijing
     </Menu.Item>
     <Menu.Item key="2">
-      <IconLocation style={iconStyle} />
+      <LocationFilled style={iconStyle} />
       Shanghai
     </Menu.Item>
     <Menu.Item key="3">
-      <IconLocation style={iconStyle} />
+      <LocationFilled style={iconStyle} />
       Guangzhou
     </Menu.Item>
   </Menu>
@@ -33,7 +34,7 @@ export default () => {
     <div className="dropdown-demo">
       <Dropdown droplist={dropList} trigger="click" position="bl">
         <Button type="text">
-          Click me <IconDown />
+          Click me <DownOutlined />
         </Button>
       </Dropdown>
     </div>

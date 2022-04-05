@@ -1,9 +1,9 @@
 import React from 'react';
-import cs from '@pansy/classnames';
-import IconLeft from '../../../icon/react-icon/IconLeft';
-import IconRight from '../../../icon/react-icon/IconRight';
-import IconDoubleLeft from '../../../icon/react-icon/IconDoubleLeft';
-import IconDoubleRight from '../../../icon/react-icon/IconDoubleRight';
+import classNames from '@pansy/classnames';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
+import DoubleLeftOutlined from '@sensoro-design/icons/DoubleLeftOutlined';
+import DoubleRightOutlined from '@sensoro-design/icons/DoubleRightOutlined';
 import { isArray } from '../../_util/is';
 
 function PanelHeader(props) {
@@ -25,7 +25,7 @@ function PanelHeader(props) {
   const showRight = isOperationAvailable('right') && innerMode !== 'year';
 
   const getIconClassName = (isShow) => {
-    return cs(`${prefixCls}-header-icon`, { [`${prefixCls}-header-icon-hidden`]: !isShow });
+    return classNames(`${prefixCls}-header-icon`, { [`${prefixCls}-header-icon-hidden`]: !isShow });
   };
 
   return (
@@ -34,13 +34,13 @@ function PanelHeader(props) {
         className={getIconClassName(showDoubleLeft)}
         onClick={() => showDoubleLeft && changePageShowDate('prev', 'year')}
       >
-        {showDoubleLeft && <IconDoubleLeft />}
+        {showDoubleLeft && <DoubleLeftOutlined />}
       </div>
       <div
         className={getIconClassName(showLeft)}
         onClick={() => showLeft && changePageShowDate('prev', 'month')}
       >
-        {showLeft && <IconLeft />}
+        {showLeft && <LeftOutlined />}
       </div>
       <div className={`${prefixCls}-header-value`}>
         {mergedPageShowDate.format(headerValueFormat)}
@@ -49,13 +49,13 @@ function PanelHeader(props) {
         className={getIconClassName(showRight)}
         onClick={() => showRight && changePageShowDate('next', 'month')}
       >
-        {showRight && <IconRight />}
+        {showRight && <RightOutlined />}
       </div>
       <div
         className={getIconClassName(showDoubleRight)}
         onClick={() => showDoubleRight && changePageShowDate('next', 'year')}
       >
-        {showDoubleRight && <IconDoubleRight />}
+        {showDoubleRight && <DoubleRightOutlined />}
       </div>
     </div>
   );

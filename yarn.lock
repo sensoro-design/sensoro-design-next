@@ -1886,20 +1886,20 @@
   resolved "https://registry.yarnpkg.com/@react-dnd/shallowequal/-/shallowequal-2.0.0.tgz#a3031eb54129f2c66b2753f8404266ec7bf67f0a"
   integrity sha512-Pc/AFTdwZwEKJxFJvlxrSmGe/di+aAOBn60sremrpLo6VI/6cmiUYNNwlI5KNYttg7uypzA3ILPMPgxB2GYZEg==
 
-"@sensoro-design/icons-svg@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sensoro-design/icons-svg/-/icons-svg-1.0.1.tgz#89b3aca34eb9beac8ac0edf6490d611e3695cfd0"
-  integrity sha512-snsMBuBIx0SCT/L/Y9L+jG0Gd9vhUrkaQVvWoRNY0HdvbQYSYn+UB1XgAeY1FuIn0TfqUlhhMWEID8XUqL89Ng==
+"@sensoro-design/icons-svg@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sensoro-design/icons-svg/-/icons-svg-1.2.0.tgz#34518ccd70553ec4727b7d6f992da7a5d02e8658"
+  integrity sha512-/4brFtki9Fi+4+FLp+zg/6DcPJmkkNYHoq9r/yjIsClmOMf3Uz4VacSfGA+kxHKl2ymDMUKcnHC85PXq6dUrvQ==
 
-"@sensoro-design/icons@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sensoro-design/icons/-/icons-1.0.1.tgz#1eea44477d8d6b1c1d5f4166ff41838c0bce067b"
-  integrity sha512-GD9PTkxknoLZp39i4SvTIljhWK1K5YPKHopFbpfUS66ck+loeAxkzRyjoWfU3txS3rulWxZ/brqreioSvwJ1+Q==
+"@sensoro-design/icons@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sensoro-design/icons/-/icons-1.2.0.tgz#f25384a7c89028fdfc670eae9ba2c7b2702a435d"
+  integrity sha512-l0923en6RoxbACPr+3nGm8EGuQrxGuwmNhVh0Yip5L5KlKdnqTVLeMkTQobXRl4HCpRwAHpea5pggmXYssfshQ==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@babel/runtime" "^7.11.2"
     "@pansy/classnames" "^1.0.1"
-    "@sensoro-design/icons-svg" "1.0.1"
+    "@sensoro-design/icons-svg" "1.2.0"
     rc-util "^5.19.3"
 
 "@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0", "@sinonjs/commons@^1.8.1":

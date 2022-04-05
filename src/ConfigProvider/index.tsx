@@ -6,7 +6,7 @@ import Message from '../Message';
 import Notification from '../Notification';
 import Empty from '../Empty';
 import { setConfigProviderProps } from '../Modal/config';
-import { IconContext } from '../../icon/react-icon/context';
+import IconContext from '@sensoro-design/icons/lib/components/Context';
 import { ConfigProviderProps } from './interface';
 import omit from '../_util/omit';
 import useMergeProps from '../_util/hooks/useMergeProps';

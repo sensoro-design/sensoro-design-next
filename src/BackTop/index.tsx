@@ -1,8 +1,8 @@
 import React, { forwardRef, useState, useEffect, useContext, memo } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import BTween from 'b-tween';
-import cs from '@pansy/classnames';
-import IconToTop from '../../icon/react-icon/IconToTop';
+import classNames from '@pansy/classnames';
+import ToTopOutlined from '@sensoro-design/icons/ToTopOutlined';
 import { ConfigContext } from '../ConfigProvider';
 import { on, off } from '../_util/dom';
 import throttleByRaf from '../_util/throttleByRaf';
@@ -72,14 +72,14 @@ function BackTop(baseProps: PropsWithChildren<BackTopProps>, ref) {
   return (
     <div
       ref={ref}
-      className={cs(`${prefixCls}`, props.className)}
+      className={classNames(`${prefixCls}`, props.className)}
       style={props.style}
       onClick={scrollToTop}
     >
       <CSSTransition in={visible} timeout={100} classNames="fadeIn" unmountOnExit>
         {props.children || (
           <button className={`${prefixCls}-button`}>
-            <IconToTop />
+            <ToTopOutlined />
           </button>
         )}
       </CSSTransition>

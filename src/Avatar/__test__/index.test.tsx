@@ -4,7 +4,7 @@ import { act } from 'react-dom/test-utils';
 import mountTest from '../../../tests/mountTest';
 import componentConfigTest from '../../../tests/componentConfigTest';
 import Avatar from '..';
-import IconEdit from '../../../icon/react-icon/IconEdit';
+import EditOutlined from '@sensoro-design/icons/EditOutlined';
 
 const AvatarGroup = Avatar.Group;
 
@@ -66,7 +66,7 @@ describe('Avatar', () => {
 
   it('triggerIcon button', () => {
     act(() => {
-      ReactDOM.render(<Avatar triggerIcon={<IconEdit />}>A</Avatar>, container);
+      ReactDOM.render(<Avatar triggerIcon={<EditOutlined />}>A</Avatar>, container);
     });
 
     const component = container.querySelector('.arco-avatar');
@@ -79,7 +79,7 @@ describe('Avatar', () => {
   it('triggerIcon mask', () => {
     act(() => {
       ReactDOM.render(
-        <Avatar triggerIcon={<IconEdit />} triggerType="mask">
+        <Avatar triggerIcon={<EditOutlined />} triggerType="mask">
           A
         </Avatar>,
         container

@@ -7,7 +7,7 @@ import React, {
   ReactNode,
 } from 'react';
 import { Dayjs } from 'dayjs';
-import IconClose from '../../../icon/react-icon/IconClose';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 import IconHover from '../../_class/icon-hover';
 import cs from '@pansy/classnames';
 import { Enter, Tab } from '../../_util/keycode';
@@ -177,7 +177,7 @@ function DateInput(
       <div className={`${prefixCls}-suffix`}>
         {allowClear && value.length === 2 && (
           <IconHover prefix={prefixCls} onClick={onClear} className={`${prefixCls}-clear-icon`}>
-            <IconClose />
+            <CloseOutlined />
           </IconHover>
         )}
         <span className={`${prefixCls}-suffix-icon`}>{suffixIcon}</span>

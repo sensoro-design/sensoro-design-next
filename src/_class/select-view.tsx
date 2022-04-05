@@ -10,7 +10,7 @@ import React, {
 import { isUndefined, isObject } from '../_util/is';
 import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
-import IconExpand from '../../icon/react-icon/IconExpand';
+import ExpandOutlined from '@sensoro-design/icons/ExpandOutlined';
 import InputTag, { InputTagProps } from '../InputTag';
 import InputComponent from '../Input/input-element';
 import { ObjectValueType } from '../InputTag/interface';
@@ -276,7 +276,7 @@ export const SelectView = (props: SelectViewProps, ref) => {
       )
     ) : canFocusInput ? (
       <div className={`${prefixCls}-expand-icon`}>
-        <IconExpand style={{ transform: 'rotate(-45deg)' }} />
+        <ExpandOutlined style={{ transform: 'rotate(-45deg)' }} />
       </div>
     ) : (
       <div className={`${prefixCls}-arrow-icon`}>

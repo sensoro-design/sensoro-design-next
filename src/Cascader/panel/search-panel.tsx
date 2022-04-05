@@ -1,8 +1,8 @@
 import React, { useEffect, useState, CSSProperties, ReactNode, useRef } from 'react';
 import isEqualWith from 'lodash/isEqualWith';
 import scrollIntoView from 'scroll-into-view-if-needed';
-import cs from '@pansy/classnames';
-import IconCheck from '../../../icon/react-icon/IconCheck';
+import classNames from '@pansy/classnames';
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
 import { OptionProps } from '../interface';
 import Node from '../base/node';
 import Checkbox from '../../Checkbox';
@@ -171,7 +171,7 @@ const SearchPanel = <T extends OptionProps>(props: SearchPanelProps<T>) => {
         onMouseMove={() => {
           isKeyboardHover.current = false;
         }}
-        className={cs(`${prefixCls}-list`, `${prefixCls}-list-search`, {
+        className={classNames(`${prefixCls}-list`, `${prefixCls}-list-search`, {
           [`${prefixCls}-list-multiple`]: multiple,
         })}
         style={style}
@@ -198,7 +198,7 @@ const SearchPanel = <T extends OptionProps>(props: SearchPanelProps<T>) => {
                   refActiveItem.current = node;
                 }
               }}
-              className={cs(`${prefixCls}-list-search-item`, {
+              className={classNames(`${prefixCls}-list-search-item`, {
                 [`${prefixCls}-list-search-item-active`]: isChecked,
                 [`${prefixCls}-list-search-item-hover`]: i === currentHoverIndex,
                 [`${prefixCls}-list-search-item-disabled`]: item.disabled,
@@ -228,7 +228,7 @@ const SearchPanel = <T extends OptionProps>(props: SearchPanelProps<T>) => {
                     {label}
                     {isChecked && (
                       <span className={`${prefixCls}-check-icon`}>
-                        <IconCheck />
+                        <CheckOutlined />
                       </span>
                     )}
                   </>

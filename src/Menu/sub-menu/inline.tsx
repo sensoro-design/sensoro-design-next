@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useStateWithPromise from '../../_util/hooks/useStateWithPromise';
 import { MenuSubMenuProps } from '../interface';
-import IconDown from '../../../icon/react-icon/IconDown';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
 import { processChildren, isChildrenSelected, PROPS_NEED_TO_BE_PASSED_IN_SUBMENU } from '../util';
 import MenuContext from '../context';
 import MenuIndent from '../indent';
@@ -57,7 +57,7 @@ const SubMenuInline = (props: MenuSubMenuProps & { forwardedRef }) => {
 
   const header = (
     <div
-      className={cs(`${baseClassName}-header`, {
+      className={classNames(`${baseClassName}-header`, {
         [`${prefixCls}-active`]: isActive,
         [`${prefixCls}-selected`]: isSelected,
       })}
@@ -66,19 +66,19 @@ const SubMenuInline = (props: MenuSubMenuProps & { forwardedRef }) => {
       <MenuIndent level={level} prefixCls={prefixCls} levelIndent={levelIndent} />
       <span>{title}</span>
       <span className={`${prefixCls}-icon-suffix ${isOpen ? 'is-open' : ''}`}>
-        {icons && icons.horizontalArrowDown ? icons.horizontalArrowDown : <IconDown />}
+        {icons && icons.horizontalArrowDown ? icons.horizontalArrowDown : <DownOutlined />}
       </span>
     </div>
   );
 
   const content = (
-    <div className={cs(`${baseClassName}-content`)} style={{ height }}>
+    <div className={classNames(`${baseClassName}-content`)} style={{ height }}>
       {childrenList}
     </div>
   );
 
   return (
-    <div ref={forwardedRef} className={cs(baseClassName, className)} style={style}>
+    <div ref={forwardedRef} className={classNames(baseClassName, className)} style={style}>
       {header}
       <CSSTransition
         in={isOpen}

@@ -5,12 +5,9 @@ import Trigger from '../../Trigger';
 import Radio from '../../Radio/radio';
 import Button from '../../Button';
 import Tooltip from '../../Tooltip';
-
-import IconFilter from '../../../icon/react-icon/IconFilter';
-
+import FilterOutlined from '@sensoro-design/icons/FilterOutlined';
 import CaretUpOutlined from '@sensoro-design/icons/CaretUpOutlined';
 import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
-
 import Checkbox from '../../Checkbox';
 import { ColumnComponentProps } from '../interface';
 import { ConfigContext } from '../../ConfigProvider';
@@ -303,7 +300,7 @@ function Column<T>({
           onVisibleChange={onVisibleChange}
           {...filterDropdownTriggerProps}
         >
-          <div className={classNameFilter}>{filterIcon || <IconFilter />}</div>
+          <div className={classNameFilter}>{filterIcon || <FilterOutlined />}</div>
         </Trigger>
       )}
     </>

@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import classNames from '@pansy/classnames';
 import { ImageProps } from './interface';
 import useShowFooter from './utils/hooks/useShowFooter';
-import IconMore from '../../icon/react-icon/IconMore';
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
 import { TriggerForToolbar } from './trigger-for-toolbar';
 
 interface ImageFooterProps {
@@ -45,7 +45,7 @@ export const ImageFooter = (props: ImageFooterProps) => {
           <TriggerForToolbar prefixCls={prefixCls} popup={() => actionsList}>
             <div className={classNames(`${prefixCls}-actions-item`, `${prefixCls}-actions-item-trigger`)}>
               <span>
-                <IconMore />
+                <MoreOutlined />
               </span>
             </div>
           </TriggerForToolbar>

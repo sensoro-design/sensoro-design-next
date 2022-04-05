@@ -27,7 +27,6 @@ exports.client = (config) => {
     '/lib/',
     '/es/',
     '/dist/',
-    '/icon/',
     '/components/index.tsx',
     '/components/locale/',
   ];

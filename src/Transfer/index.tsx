@@ -4,8 +4,8 @@ import { TransferProps, TransferListProps, TransferItem, TransferListType } from
 import classNames from '@pansy/classnames';
 import Button from '../Button';
 import TransferList from './list';
-import IconLeft from '../../icon/react-icon/IconLeft';
-import IconRight from '../../icon/react-icon/IconRight';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import { isObject } from '../_util/is';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -177,10 +177,10 @@ function Transfer(baseProps: TransferProps, ref) {
           let _disabled;
 
           if (to === 'source') {
-            Icon = IconLeft;
+            Icon = LeftOutlined;
             _disabled = disabled || !leftActive;
           } else {
-            Icon = IconRight;
+            Icon = RightOutlined;
             _disabled = disabled || !rightActive;
           }
 

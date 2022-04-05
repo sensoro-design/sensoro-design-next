@@ -3,7 +3,7 @@ import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { LoadingOutlined } from '../IconLoading';
 
-import IconImageClose from '../../icon/react-icon/IconImageClose';
+import ImageFilled from '@sensoro-design/icons/ImageFilled';
 import { ImageProps, ImagePreviewProps } from './interface';
 import { ImageFooter } from './image-footer';
 import ImagePreview from './image-preview';
@@ -148,7 +148,7 @@ function Image(baseProps: ImagePropsType, ref: LegacyRef<HTMLDivElement>) {
   const defaultError = (
     <div className={`${prefixCls}-error`}>
       <div className={`${prefixCls}-error-icon`}>
-        <IconImageClose />
+        <ImageFilled />
       </div>
       {alt && <div className={`${prefixCls}-error-alt`}>{alt}</div>}
     </div>

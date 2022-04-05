@@ -4,8 +4,8 @@ import { act } from 'react-dom/test-utils';
 import mountTest from '../../../tests/mountTest';
 import componentConfigTest from '../../../tests/componentConfigTest';
 import Switch from '..';
-import IconCheck from '../../../icon/react-icon/IconCheck';
-import IconClose from '../../../icon/react-icon/IconClose';
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
 mountTest(Switch);
 componentConfigTest(Switch, 'Switch');
@@ -59,7 +59,7 @@ describe('Switch', () => {
   });
 
   it('dot icon', () => {
-    const component = mount(<Switch checkedIcon={<IconCheck />} uncheckedIcon={<IconClose />} />);
+    const component = mount(<Switch checkedIcon={<CheckOutlined />} uncheckedIcon={<CloseOutlined />} />);
 
     expect(
       component.find('.arco-switch-dot .arco-switch-dot-icon svg').hasClass('arco-icon-close')

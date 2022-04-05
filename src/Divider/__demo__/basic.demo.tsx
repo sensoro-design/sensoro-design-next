@@ -5,7 +5,7 @@
 import { Divider, Typography } from '@sensoro-design/react';
 import FileImageOutlined from '@sensoro-design/icons/FileImageOutlined';
 import UserOutlined from '@sensoro-design/icons/UserOutlined';
-import { IconPen } from '@sensoro-design/react/icon';
+import PenOutlined from '@sensoro-design/icons/PenOutlined';
 import './styles.less';
 
 const { Paragraph, Title } = Typography;
@@ -43,7 +43,7 @@ export default () => {
         <Divider className="half-divider" />
         <div className="divider-demo-flex-content">
           <span className="avatar">
-            <IconPen />
+            <PenOutlined />
           </span>
           <div className="content">
             <Title heading={6}>Icon</Title>May 4, 2010

@@ -4,7 +4,11 @@
  * desc: 指定 `mode` 为 `pop` 可以使用悬浮菜
  */
 import { Menu } from '@sensoro-design/react';
-import { IconApps, IconSafe, IconBulb, IconRobot, IconFire } from '@sensoro-design/react/icon';
+import AppstoreOutlined from '@sensoro-design/icons/AppstoreOutlined';
+import BulbOutlined from '@sensoro-design/icons/BulbOutlined';
+import FireOutlined from '@sensoro-design/icons/FireOutlined';
+import SafetyOutlined from '@sensoro-design/icons/SafetyOutlined';
+import RobotOutlined from '@sensoro-design/icons/RobotOutlined';
 
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
@@ -19,14 +23,14 @@ export default () => {
   >
     <Menu style={{ width: 200 }} mode="pop" hasCollapseButton>
       <MenuItem key="0">
-        <IconApps />
+        <AppstoreOutlined />
         Navigation 1
       </MenuItem>
       <SubMenu
         key="1"
         title={
           <>
-            <IconRobot />
+            <RobotOutlined />
             Navigation 2
           </>
         }
@@ -39,7 +43,7 @@ export default () => {
         key="2"
         title={
           <>
-            <IconBulb />
+            <BulbOutlined />
             Navigation 3
           </>
         }
@@ -48,11 +52,11 @@ export default () => {
         <MenuItem key="2_1">Chengdu</MenuItem>
       </SubMenu>
       <MenuItem key="3">
-        <IconSafe />
+        <SafetyOutlined />
         Navigation 4
       </MenuItem>
       <MenuItem key="4">
-        <IconFire />
+        <FireOutlined />
         Navigation 5
       </MenuItem>
     </Menu>

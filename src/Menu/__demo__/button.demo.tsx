@@ -5,7 +5,8 @@
  */
 import { useState } from 'react';
 import { Menu, Trigger } from '@sensoro-design/react';
-import { IconBug, IconBulb } from '@sensoro-design/react/icon';
+import BugOutlined from '@sensoro-design/icons/BugOutlined';
+import BulbOutlined from '@sensoro-design/icons/BulbOutlined';
 
 import MessageOutlined from '@sensoro-design/icons/MessageOutlined';
 import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
@@ -22,11 +23,11 @@ export default () => {
         hasCollapseButton
       >
         <MenuItem key="1">
-          <IconBug />
+          <BugOutlined />
           Bugs
         </MenuItem>
         <MenuItem key="2">
-          <IconBulb />
+          <BulbOutlined />
           Ideas
         </MenuItem>
       </Menu>

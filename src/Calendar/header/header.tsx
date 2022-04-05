@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 import Select from '../../Select';
 import Button from '../../Button';
 import Radio from '../../Radio';
-import IconLeft from '../../../icon/react-icon/IconLeft';
-import IconRight from '../../../icon/react-icon/IconRight';
+import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 import { getNow } from '../../_util/dayjs';
 import { isArray } from '../../_util/is';
 
@@ -80,7 +80,7 @@ function Header(props) {
               className={`${prefixCls}-header-icon`}
               onClick={() => changePageShowDate('prev', innerMode)}
             >
-              <IconLeft />
+              <LeftOutlined />
             </div>
             <div className={`${prefixCls}-header-value`}>
               {mergedPageShowDate.format(headerValueFormat)}
@@ -89,7 +89,7 @@ function Header(props) {
               className={`${prefixCls}-header-icon`}
               onClick={() => changePageShowDate('next', innerMode)}
             >
-              <IconRight />
+              <RightOutlined />
             </div>
           </>
         )}

@@ -3,9 +3,8 @@
  * desc: `Form.Item` 可以互相嵌套。
  */
 import { useRef } from 'react';
-
 import { Form, Input, Button, Grid, Select, Tooltip } from '@sensoro-design/react';
-import { IconExclamationCircle } from '@sensoro-design/react/icon';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
 
 export default () => {
   const formRef = useRef();
@@ -45,7 +44,7 @@ export default () => {
               <Select options={['male', 'female', 'other']} placeholder="please enter you gender" style={{ flex: 1 }}/>
             </Form.Item>
               <Tooltip content="必须填写哦">
-                <IconExclamationCircle style={{ marginLeft: 8, color: 'rgb(var(--arcoblue-6))' }}/>
+                <ExclamationCircleFilled style={{ marginLeft: 8, color: 'rgb(var(--arcoblue-6))' }}/>
               </Tooltip>
           </Grid.Row>
         </Form.Item>

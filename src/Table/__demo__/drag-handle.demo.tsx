@@ -4,7 +4,7 @@
  */
 import { useState } from 'react';
 import { Table } from '@sensoro-design/react';
-import { IconDragDotVertical } from '@sensoro-design/react/icon';
+import HolderVerticalOutlined from '@sensoro-design/icons/HolderVerticalOutlined';
 import { sortableContainer, sortableElement, sortableHandle } from 'react-sortable-hoc';
 
 const arrayMoveMutate = (array, from, to) => {
@@ -74,7 +74,7 @@ const initialData = [{
 }];
 
 const DragHandle = sortableHandle(() => (
-  <IconDragDotVertical style={{ cursor: 'move', color: '#555' }} />
+  <HolderVerticalOutlined style={{ cursor: 'move', color: '#555' }} />
 ));
 
 const SortableContainer = sortableContainer((props) => {

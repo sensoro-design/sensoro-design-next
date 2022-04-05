@@ -4,8 +4,8 @@ import Button from '../Button';
 import Link from '../Link';
 import Menu from '../Menu';
 import Dropdown from '../Dropdown';
-import IconMoreVertical from '../../icon/react-icon/IconMoreVertical';
-import IconDown from '../../icon/react-icon/IconDown';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
 
 import useMergeProps from '../_util/hooks/useMergeProps';
 
@@ -105,10 +105,10 @@ export const Operation: React.FC<OperationProps> = (baseProps) => {
     return (
       <Dropdown droplist={dropList} disabled={disabled}>
         {type === 'button'
-          ? <Button icon={<IconMoreVertical />} />
+          ? <Button icon={<MoreOutlined />} />
           : (
             <Link>
-              更多 <IconDown />
+              更多 <DownOutlined />
             </Link>
           )
         }

@@ -5,13 +5,11 @@
  */
 import { useState } from 'react';
 import { Menu, Button } from '@sensoro-design/react';
-import {
-  IconMenuFold,
-  IconMenuUnfold,
-  IconApps,
-  IconBug,
-  IconBulb,
-} from '@sensoro-design/react/icon';
+import MenuFoldOutlined from '@sensoro-design/icons/MenuFoldOutlined';
+import MenuUnfoldOutlined from '@sensoro-design/icons/MenuUnfoldOutlined';
+import AppstoreOutlined from '@sensoro-design/icons/AppstoreOutlined';
+import BulbOutlined from '@sensoro-design/icons/BulbOutlined';
+import BugOutlined from '@sensoro-design/icons/BugOutlined';
 
 const MenuItem = Menu.Item;
 const SubMenu = Menu.SubMenu;
@@ -26,7 +24,7 @@ export default () => {
         type="primary"
         onClick={() => setCollapse(!collapse)}
       >
-        {collapse ? <IconMenuUnfold /> : <IconMenuFold />}
+        {collapse ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
       </Button>
       <Menu
         style={{ width: 200, borderRadius: 4 }}
@@ -39,7 +37,7 @@ export default () => {
           key="0"
           title={
             <>
-              <IconApps /> Navigation 1
+              <AppstoreOutlined /> Navigation 1
             </>
           }
         >
@@ -52,7 +50,7 @@ export default () => {
           key="1"
           title={
             <>
-              <IconBug /> Navigation 2
+              <BugOutlined /> Navigation 2
             </>
           }
         >
@@ -64,7 +62,7 @@ export default () => {
           key="2"
           title={
             <>
-              <IconBulb /> Navigation 3
+              <BulbOutlined /> Navigation 3
             </>
           }
         >

@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { act } from 'react-test-renderer';
 import Typography from '..';
-import IconCopy from '../../../icon/react-icon/IconCopy';
+import CopyOutlined from '@sensoro-design/icons/CopyOutlined';
 import { sleep } from '../../../tests/util';
 import copy from '../../_util/clipboard';
 
@@ -99,7 +99,7 @@ describe('Typography', () => {
 
   it('support copyable', async () => {
     const onCopy = jest.fn();
-    const wrapper = mount(<Text copyable={{ onCopy, icon: <IconCopy /> }}>copyable test</Text>);
+    const wrapper = mount(<Text copyable={{ onCopy, icon: <CopyOutlined /> }}>copyable test</Text>);
     expect(wrapper.find('IconCopy')).toHaveLength(1);
 
     act(() => {

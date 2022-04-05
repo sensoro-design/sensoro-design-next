@@ -4,7 +4,10 @@
  */
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Message } from '@sensoro-design/react';
-import { IconHome, IconCalendar, IconCaretRight, IconCaretLeft } from '@sensoro-design/react/icon';
+import HomeOutlined from '@sensoro-design/icons/HomeOutlined';
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
+import RotateLeftOutlined from '@sensoro-design/icons/RotateLeftOutlined';
+import RotateRightOutlined from '@sensoro-design/icons/RotateRightOutlined';
 import './styles.less';
 
 const MenuItem = Menu.Item;
@@ -26,7 +29,7 @@ export default class Demo extends React.Component {
   render() {
     return (
       <Layout className="layout-collapse-demo">
-        <Sider collapsed={this.state.collapsed} onCollapse={this.handleCollapsed} collapsible trigger={this.state.collapsed ? <IconCaretRight /> : <IconCaretLeft />} breakpoint="xl">
+        <Sider collapsed={this.state.collapsed} onCollapse={this.handleCollapsed} collapsible trigger={this.state.collapsed ? <RotateRightOutlined /> : <RotateLeftOutlined />} breakpoint="xl">
           <div className="logo" />
           <Menu
             defaultOpenKeys={['1']}
@@ -38,22 +41,22 @@ export default class Demo extends React.Component {
             style={{ width: '100%' }}
           >
             <MenuItem key="0_1" disabled>
-              <IconHome />
+              <HomeOutlined />
               Menu 1
             </MenuItem>
             <MenuItem key="0_2">
-              <IconCalendar />
+              <CalendarOutlined />
               Menu 2
             </MenuItem>
             <MenuItem key="0_3">
-              <IconCalendar />
+              <CalendarOutlined />
               Menu 3
             </MenuItem>
             <SubMenu
               key="1"
               title={
                 <span>
-                  <IconCalendar />
+                  <CalendarOutlined />
                   Navigation 1
                 </span>
               }
@@ -74,7 +77,7 @@ export default class Demo extends React.Component {
               key="4"
               title={
                 <span>
-                  <IconCalendar />
+                  <CalendarOutlined />
                   Navigation 4
                 </span>
               }

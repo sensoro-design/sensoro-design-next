@@ -21,9 +21,8 @@ import ZoomOutOutlined from '@sensoro-design/icons/ZoomOutOutlined';
 import RotateLeftOutlined from '@sensoro-design/icons/RotateLeftOutlined';
 import RotateRightOutlined from '@sensoro-design/icons/RotateRightOutlined';
 
-import IconFullscreen from '../../icon/react-icon/IconFullscreen';
-import IconOriginalSize from '../../icon/react-icon/IconOriginalSize';
-
+import FullscreenOutlined from '@sensoro-design/icons/FullscreenOutlined';
+import OriginalSizeOutlined from '@sensoro-design/icons/OriginalSizeOutlined';
 import ConfigProvider, { ConfigContext } from '../ConfigProvider';
 import { ImagePreviewProps } from './interface';
 import useImageStatus from './utils/hooks/useImageStatus';
@@ -344,7 +343,7 @@ function Preview(props: ImagePreviewProps, ref) {
     {
       key: 'fullScreen',
       name: locale.ImagePreview.fullScreen,
-      content: <IconFullscreen />,
+      content: <FullscreenOutlined />,
       onClick: onFullScreen,
     },
     {
@@ -376,7 +375,7 @@ function Preview(props: ImagePreviewProps, ref) {
     {
       key: 'originalSize',
       name: locale.ImagePreview.originalSize,
-      content: <IconOriginalSize />,
+      content: <OriginalSizeOutlined />,
       onClick: onResetScale,
     },
   ];

@@ -4,7 +4,10 @@
  */
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Button, Message } from '@sensoro-design/react';
-import { IconHome, IconCalendar, IconCaretRight, IconCaretLeft } from '@sensoro-design/react/icon';
+import HomeOutlined from '@sensoro-design/icons/HomeOutlined';
+import CalendarOutlined from '@sensoro-design/icons/CalendarOutlined';
+import CaretRightOutlined from '@sensoro-design/icons/CaretRightOutlined';
+import CaretLeftOutlined from '@sensoro-design/icons/CaretLeftOutlined';
 import './styles.less';
 
 const MenuItem = Menu.Item;
@@ -38,22 +41,22 @@ export default class Demo extends React.Component {
             style={{ width: '100%' }}
           >
             <MenuItem key="0_1" disabled>
-              <IconHome />
+              <HomeOutlined />
               Menu 1
             </MenuItem>
             <MenuItem key="0_2">
-              <IconCalendar />
+              <CalendarOutlined />
               Menu 2
             </MenuItem>
             <MenuItem key="0_3">
-              <IconCalendar />
+              <CalendarOutlined />
               Menu 3
             </MenuItem>
             <SubMenu
               key="1"
               title={
                 <span>
-                  <IconCalendar />
+                  <CalendarOutlined />
                   Navigation 1
                 </span>
               }
@@ -74,7 +77,7 @@ export default class Demo extends React.Component {
               key="4"
               title={
                 <span>
-                  <IconCalendar />
+                  <CalendarOutlined />
                   Navigation 4
                 </span>
               }
@@ -88,7 +91,7 @@ export default class Demo extends React.Component {
         <Layout>
           <Header>
             <Button shape="round" className="trigger" onClick={this.handleCollapsed}>
-              {this.state.collapsed ? <IconCaretRight /> : <IconCaretLeft />}
+              {this.state.collapsed ? <CaretRightOutlined /> : <CaretLeftOutlined />}
             </Button>
           </Header>
           <Layout style={{ padding: '0 24px' }}>

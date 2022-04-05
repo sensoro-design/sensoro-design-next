@@ -10,8 +10,8 @@ import { ConfigContext } from '../ConfigProvider';
 import { MenuProps } from './interface';
 import { SiderContext } from '../Layout';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import IconMenuFold from '../../icon/react-icon/IconMenuFold';
-import IconMenuUnfold from '../../icon/react-icon/IconMenuUnfold';
+import MenuFoldOutlined from '@sensoro-design/icons/MenuFoldOutlined';
+import MenuUnfoldOutlined from '@sensoro-design/icons/MenuUnfoldOutlined';
 import useForceUpdate from '../_util/hooks/useForceUpdate';
 import MenuContext from './context';
 import { useHotkeyListener } from './hotkey';
@@ -115,8 +115,8 @@ function Menu(baseProps: MenuProps, ref) {
     const mergedHasCollapseButton =
       mode !== 'horizontal' && mode !== 'popButton' && !inDropdown && hasCollapseButton;
     const collapseIcon = collapse
-      ? (icons && icons.collapseActive) || <IconMenuUnfold />
-      : (icons && icons.collapseDefault) || <IconMenuFold />;
+      ? (icons && icons.collapseActive) || <MenuUnfoldOutlined />
+      : (icons && icons.collapseDefault) || <MenuFoldOutlined />;
 
     return (
       <>

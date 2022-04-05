@@ -1,16 +1,16 @@
 import React from 'react';
-import IconFile from '../../../icon/react-icon/IconFile';
-import IconFilePdf from '../../../icon/react-icon/IconFilePdf';
-import IconFileImage from '../../../icon/react-icon/IconFileImage';
-import IconFileVideo from '../../../icon/react-icon/IconFileVideo';
-import IconFileAudio from '../../../icon/react-icon/IconFileAudio';
+import FileOutlined from '@sensoro-design/icons/FileOutlined';
+import FilePdfOutlined from '@sensoro-design/icons/FilePdfOutlined';
+import FileImageOutlined from '@sensoro-design/icons/FileImageOutlined';
+import FileVideoOutlined from '@sensoro-design/icons/FileVideoOutlined';
+import FileAudioOutlined from '@sensoro-design/icons/FileAudioOutlined';
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
 import { UploadItem } from '../upload';
 import Tooltip from '../../Tooltip';
 import { STATUS, CustomIconType, UploadListProps } from '../interface';
 import { isObject, isFunction } from '../../_util/is';
 import UploadProgress from './uploadProgress';
-import IconExclamationCircleFill from '../../../icon/react-icon/IconExclamationCircleFill';
-import IconDelete from '../../../icon/react-icon/IconDelete';
 import IconHover from '../../_class/icon-hover';
 import { ConfigProviderProps } from '../../ConfigProvider';
 
@@ -33,18 +33,18 @@ const getIconType = (file: UploadItem) => {
   }
 
   if (type.indexOf('image') > -1) {
-    return IconFileImage;
+    return FileImageOutlined;
   }
   if (type.indexOf('pdf') > -1) {
-    return IconFilePdf;
+    return FilePdfOutlined;
   }
   if (type.indexOf('audio') > -1) {
-    return IconFileAudio;
+    return FileVideoOutlined;
   }
   if (type.indexOf('video') > -1) {
-    return IconFileVideo;
+    return FileAudioOutlined;
   }
-  return IconFile;
+  return FileOutlined;
 };
 
 const TextItem = (
@@ -109,9 +109,9 @@ const TextItem = (
                 <span className={`${props.prefixCls}-list-error-icon`}>
                   {actionIcons.errorIcon ||
                     (props.listType === 'picture-card' ? (
-                      <IconFileImage />
+                      <FileImageOutlined />
                     ) : (
-                      <IconExclamationCircleFill />
+                      <ExclamationCircleFilled />
                     ))}
                 </span>
               </Tooltip>
@@ -136,7 +136,7 @@ const TextItem = (
             }}
           >
             <span className={`${prefixCls}-list-remove-icon`}>
-              {actionIcons.removeIcon || <IconDelete />}
+              {actionIcons.removeIcon || <DeleteOutlined />}
             </span>
           </IconHover>
         )}

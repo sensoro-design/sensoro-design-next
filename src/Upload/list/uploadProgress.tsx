@@ -3,10 +3,10 @@ import { STATUS, UploadListProps, CustomIconType } from '../interface';
 import Progress, { ProgressProps } from '../../Progress';
 import { UploadItem } from '../upload';
 import { ConfigContext } from '../../ConfigProvider';
-import IconCheck from '../../../icon/react-icon/IconCheck';
-import IconUpload from '../../../icon/react-icon/IconUpload';
-import IconPlayArrowFill from '../../../icon/react-icon/IconPlayArrowFill';
-import IconPause from '../../../icon/react-icon/IconPause';
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
+import UploadOutlined from '@sensoro-design/icons/UploadOutlined';
+import PlayOutlined from '@sensoro-design/icons/PlayOutlined';
+import PauseCircleFilled from '@sensoro-design/icons/PauseCircleFilled';
 import Tooltip from '../../Tooltip';
 
 const UploadProgress: FC<
@@ -35,12 +35,12 @@ const UploadProgress: FC<
           }}
         >
           {props.reuploadIcon ||
-            (props.listType === 'picture-card' ? <IconUpload /> : locale.Upload.reupload)}
+            (props.listType === 'picture-card' ? <UploadOutlined /> : locale.Upload.reupload)}
         </span>
       )}
       {status === STATUS.success && props.successIcon !== null && (
         <span className={`${prefixCls}-list-success-icon`}>
-          {props.successIcon || <IconCheck />}
+          {props.successIcon || <CheckOutlined />}
         </span>
       )}
       {status !== STATUS.success && (
@@ -65,7 +65,7 @@ const UploadProgress: FC<
             >
               {props.startIcon || (
                 <Tooltip content={locale.Upload.start}>
-                  <IconPlayArrowFill />
+                  <PlayOutlined />
                 </Tooltip>
               )}
             </span>
@@ -80,7 +80,7 @@ const UploadProgress: FC<
             >
               {props.cancelIcon || (
                 <Tooltip content={locale.Upload.cancel}>
-                  <IconPause />
+                  <PauseCircleFilled />
                 </Tooltip>
               )}
             </span>

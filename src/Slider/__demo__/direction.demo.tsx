@@ -5,7 +5,8 @@
  */
 import { useState } from 'react';
 import { Slider } from '@sensoro-design/react';
-import { IconSound, IconMute } from '@sensoro-design/react/icon';
+import SoundOutlined from '@sensoro-design/icons/SoundOutlined';
+import MuteOutlined from '@sensoro-design/icons/MuteOutlined';
 
 export default () => {
   const [value, setValue] = useState(10);
@@ -15,11 +16,13 @@ export default () => {
       <div style={{ width: 22, textAlign: 'center', marginRight: 92, display: 'inline-block' }}>
         <Slider
           value={value}
-          onChange={setValue}
+          onChange={(val) => {
+            setValue(val as number);
+          }}
           vertical
         />
-        { value ? <IconSound style={{ fontSize: 16, color: 'var(--color-text-1)' }} /> : null }
-        { !value ? <IconMute style={{ fontSize: 16, color: 'var(--color-text-1)' }} /> : null }
+        { value ? <SoundOutlined style={{ fontSize: 16, color: 'var(--color-text-1)' }} /> : null }
+        { !value ? <MuteOutlined style={{ fontSize: 16, color: 'var(--color-text-1)' }} /> : null }
       </div>
       <Slider
         range

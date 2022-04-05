@@ -3,10 +3,10 @@ import { UploadListProps, STATUS, CustomIconType } from '../interface';
 import { UploadItem } from '../upload';
 import { isFunction, isObject } from '../../_util/is';
 import UploadProgress from './uploadProgress';
-import IconImageClose from '../../../icon/react-icon/IconImageClose';
-import IconEye from '../../../icon/react-icon/IconEye';
-import IconDelete from '../../../icon/react-icon/IconDelete';
-import IconUpload from '../../../icon/react-icon/IconUpload';
+import ImageFilled from '@sensoro-design/icons/ImageFilled';
+import UploadOutlined from '@sensoro-design/icons/UploadOutlined';
+import EyeOutlined from '@sensoro-design/icons/EyeOutlined';
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
 
 const PictureItem = (props: UploadListProps & { file: UploadItem }) => {
   const { disabled, prefixCls, file, showUploadList } = props;
@@ -39,7 +39,7 @@ const PictureItem = (props: UploadListProps & { file: UploadItem }) => {
               <div className={`${cls}-error-tip`}>
                 {actionIcons.errorIcon !== null && (
                   <span className={`${prefixCls}-list-error-icon`}>
-                    {actionIcons.errorIcon || <IconImageClose />}
+                    {actionIcons.errorIcon || <ImageFilled />}
                   </span>
                 )}
               </div>
@@ -52,7 +52,7 @@ const PictureItem = (props: UploadListProps & { file: UploadItem }) => {
                     props.onPreview && props.onPreview(file);
                   }}
                 >
-                  {actionIcons.previewIcon || <IconEye />}
+                  {actionIcons.previewIcon || <EyeOutlined />}
                 </span>
               )}
               {file.status === STATUS.fail && actionIcons.reuploadIcon !== null && (
@@ -62,7 +62,7 @@ const PictureItem = (props: UploadListProps & { file: UploadItem }) => {
                     props.onReupload && props.onReupload(file);
                   }}
                 >
-                  {actionIcons.reuploadIcon || <IconUpload />}
+                  {actionIcons.reuploadIcon || <UploadOutlined />}
                 </span>
               )}
               {!disabled && actionIcons.removeIcon !== null && (
@@ -72,7 +72,7 @@ const PictureItem = (props: UploadListProps & { file: UploadItem }) => {
                     props.onRemove && props.onRemove(file);
                   }}
                 >
-                  {actionIcons.removeIcon || <IconDelete />}
+                  {actionIcons.removeIcon || <DeleteOutlined />}
                 </span>
               )}
             </div>

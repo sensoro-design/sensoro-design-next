@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import cs from '@pansy/classnames';
 import { MenuSubMenuProps } from '../interface';
-import IconRight from '../../../icon/react-icon/IconRight';
-import IconDown from '../../../icon/react-icon/IconDown';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 import { isChildrenSelected } from '../util';
 import omit from '../../_util/omit';
 import Dropdown from '../../Dropdown';
@@ -48,9 +48,9 @@ const SubMenuPop = (props: MenuSubMenuProps & { forwardedRef }) => {
   });
 
   const renderSuffix = () => {
-    const MergedIconRight = icons && icons.popArrowRight ? icons.popArrowRight : <IconRight />;
+    const MergedIconRight = icons && icons.popArrowRight ? icons.popArrowRight : <RightOutlined />;
     const MergedIconDown =
-      icons && icons.horizontalArrowDown ? icons.horizontalArrowDown : <IconDown />;
+      icons && icons.horizontalArrowDown ? icons.horizontalArrowDown : <DownOutlined />;
     return (
       <span className={`${prefixCls}-icon-suffix`}>
         {needPopOnBottom ? MergedIconDown : MergedIconRight}
