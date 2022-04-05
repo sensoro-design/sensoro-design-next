@@ -7,6 +7,7 @@
   "types": "./es/index.d.ts",
   "scripts": {
     "start": "dumi dev",
+    "site": "dumi build",
     "build:dist": "arco-scripts build:component:dist",
     "build:dist:dev": "cross-env BUILD_ENV_MODE=development BUILD_ENV_DIST_FILENAME_JS=arco.development.js arco-scripts build:component:dist",
     "build:icon": "arco-scripts build:icon",
@@ -16,8 +17,6 @@
     "build:css:dev": "cross-env BUILD_ENV_MODE=development BUILD_ENV_DIST_FILENAME_CSS=arco.css arco-scripts build:component:css",
     "build:css:vars": "node ./scripts/css-variables.js",
     "build": "arco-scripts build:component && yarn build:dist:dev && yarn build:css:dev",
-    "dev": "arco-scripts dev:component",
-    "site": "dumi build",
     "changelog": "arco-scripts changelog",
     "eslint": "eslint tests/ components/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint '{components,site}/**/*.less'",
