@@ -8,7 +8,7 @@ nav:
 
 两栏布局的多选组件，将元素从一栏即时移到另一栏。
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -53,6 +53,8 @@ nav:
 ### 树穿梭框
 
 <code src="./__demo__/with-tree.demo.tsx" />
+
+## API
 
 ### Transfer
 

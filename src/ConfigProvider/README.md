@@ -8,7 +8,7 @@ nav:
 
 在应用的最外层进行配置，一次设置，全局生效。一般用于设置国际化语言等功能。
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -29,6 +29,8 @@ nav:
 ### 主题配置
 
 <code src="./__demo__/theme.demo.tsx" />
+
+## API
 
 ### ConfigProvider
 

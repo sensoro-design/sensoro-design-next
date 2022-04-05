@@ -8,7 +8,7 @@ nav:
 
 收纳、排列并展示一系列选项的列表。
 
-## API
+## 代码演示
 
 ### 悬浮按钮菜单
 
@@ -37,6 +37,8 @@ nav:
 ### 内嵌菜单
 
 <code src="./__demo__/sub-menu.demo.tsx" />
+
+## API
 
 ### Menu
 

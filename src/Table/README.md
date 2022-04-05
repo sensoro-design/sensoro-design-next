@@ -7,7 +7,7 @@ nav:
 
 用于数据收集展示、分析整理、操作处理。
 
-## API
+## 代码演示
 
 ### 表格属性
 
@@ -100,6 +100,9 @@ nav:
 ### 大数据
 
 <code src="./__demo__/virtualized.demo.tsx" />
+
+
+## API
 
 ### Table
 

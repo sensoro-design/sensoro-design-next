@@ -8,7 +8,7 @@ nav:
 
 可一键返回顶部的按钮。
 
-## API
+## 代码示例
 
 ### 基础用法
 
@@ -21,6 +21,8 @@ nav:
 ### 滚动类型和滚动时间
 
 <code src="./__demo__/easing.demo.tsx" />
+
+## API
 
 ### BackTop
 

@@ -8,7 +8,7 @@ nav:
 
 伸缩框组件。
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -37,6 +37,9 @@ nav:
 ### 多个面板分割
 
 <code src="./__demo__/split-group.demo.tsx" />
+
+
+## API
 
 ### ResizeBox
 

@@ -8,7 +8,7 @@ nav:
 
 点击元素，弹出气泡式的确认框。
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -29,6 +29,8 @@ nav:
 ### 国际化
 
 <code src="./__demo__/text.demo.tsx" />
+
+## API
 
 ### Popconfirm
 

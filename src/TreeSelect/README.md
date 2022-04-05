@@ -7,7 +7,7 @@ nav:
 
 可以对树形结构数据进行选择。目前仅支持单选
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -72,6 +72,8 @@ nav:
 ### 虚拟列表
 
 <code src="./__demo__/virtual.demo.tsx" />
+
+## API
 
 ### TreeSelect
 

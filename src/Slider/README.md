@@ -8,7 +8,7 @@ nav:
 
 滑动型输入器，展示当前值和可选范围。
 
-## API
+## 代码演示
 
 ### 基本用法
 
@@ -65,6 +65,8 @@ nav:
 ### 控制 tooltip 的展示
 
 <code src="./__demo__/tooltip.demo.tsx" />
+
+## API
 
 ### Slider
 

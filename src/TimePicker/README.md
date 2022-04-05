@@ -8,7 +8,7 @@ nav:
 
 在弹出面板上选择时间，以便捷完成时间输入的控件。
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -65,6 +65,8 @@ nav:
 ### UTC 时间
 
 <code src="./__demo__/utc-offset.demo.tsx" />
+
+## API
 
 ### Picker
 

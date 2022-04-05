@@ -7,7 +7,7 @@ nav:
 
 鼠标悬停、聚焦或点击在某个组件时，弹出的文字提示。
 
-## API
+## 代码演示
 
 ### 基础用法
 
@@ -28,6 +28,8 @@ nav:
 ### 位置
 
 <code src="./__demo__/position.demo.tsx" />
+
+## API
 
 ### Tooltip
 

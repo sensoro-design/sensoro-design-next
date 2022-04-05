@@ -8,7 +8,7 @@ nav:
 
 评分打星组件。
 
-## API
+## 代码演示
 
 ### 支持清除
 
@@ -45,6 +45,8 @@ nav:
 ### 附有文案
 
 <code src="./__demo__/with-description.demo.tsx" />
+
+## API
 
 ### Rate
 

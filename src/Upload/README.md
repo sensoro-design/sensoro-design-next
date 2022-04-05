@@ -7,7 +7,7 @@ nav:
 
 用户可传输文件或提交相应的内容。
 
-## API
+## 代码演示
 
 ### 用户头像上传
 
@@ -76,6 +76,8 @@ nav:
 ### 已上传的文件列表
 
 <code src="./__demo__/upload-list.demo.tsx" />
+
+## API
 
 ### Upload
 

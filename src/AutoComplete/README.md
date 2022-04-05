@@ -8,7 +8,7 @@ nav:
 
 输入框或自定义输入控件的自动补全功能。
 
-## API
+## 代码演示
 
 ### 复杂用法
 
@@ -37,6 +37,8 @@ nav:
 ### 查询模式 不确定类目
 
 <code src="./__demo__/without-group.demo.tsx" />
+
+## API
 
 ### AutoComplete
 

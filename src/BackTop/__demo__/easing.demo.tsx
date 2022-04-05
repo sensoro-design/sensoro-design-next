@@ -3,10 +3,8 @@
  * desc: 当然，我们提供了更丰富的功能可供使用，你可以通过指定 `easing` 和 `duration` 来指定滚动到顶部的过度效果和滚动时间。
  */
 import { useState } from 'react';
-import { BackTop, Select, Input, Typography } from '@sensoro-design/react';
-
-import ArrowRightOutlined from '@sensoro-design/icons/ArrowRightOutlined';
-
+import { BackTop, Select, InputNumber, Typography } from '@sensoro-design/react';
+import UpOutlined from '@sensoro-design/icons/UpOutlined';
 import './styles.less';
 
 const { Paragraph, Text } = Typography;
@@ -49,7 +47,7 @@ export default () => {
           ))}
         </Select>
         <Text style={{ margin: '0 8px 0 40px' }}>Time</Text>
-        <Input
+        <InputNumber
           onChange={setDuration}
           style={{ width: 200 }}
           value={duration}
@@ -65,7 +63,7 @@ export default () => {
           target={() => document.getElementById('custom_backtop2')}
         >
           <div className="custom-backtop">
-            <ArrowRightOutlined />
+            <UpOutlined />
             <br />
             TOP
           </div>
@@ -93,4 +91,4 @@ export default () => {
       </div>
     </div>
   );
-}
+};

@@ -8,7 +8,7 @@ nav:
 
 通过锚点可快速找到信息内容在当前页面的位置。
 
-## API
+## 代码示例
 
 ### 基本用法
 
@@ -33,6 +33,8 @@ nav:
 ### 静态位置
 
 <code src="./__demo__/static.demo.tsx" />
+
+## API
 
 ### Anchor
 
