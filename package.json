@@ -20,7 +20,6 @@
     "build": "arco-scripts build:component && yarn build:dist:dev && yarn build:css:dev",
     "dev": "arco-scripts dev:component",
     "site": "dumi build",
-    "demo": "start-storybook -p 6006",
     "changelog": "arco-scripts changelog",
     "eslint": "eslint tests/ components/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint '{components,site}/**/*.less'",
@@ -31,7 +30,8 @@
     "format": "prettier --config .prettierrc --write \"{stories,tests,components}/**/*.{js,jsx,ts,tsx}\"",
     "docgen": "arco-scripts docgen",
     "prepare": "husky install",
-    "pre-commit": "pretty-quick --staged && npm run eslint && npm run stylelint"
+    "pre-commit": "pretty-quick --staged && npm run eslint && npm run stylelint",
+    "release": "semantic-release"
   },
   "keywords": [
     "sensoro",
@@ -75,6 +75,8 @@
   "devDependencies": {
     "@arco-design/arco-scripts": "^1.25.9",
     "@testing-library/react-hooks": "^3.2.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@types/enzyme": "^3.10.5",
     "@types/jest": "^26.0.1",
     "@types/lodash": "^4.14.173",
@@ -88,6 +90,7 @@
     "@walrus/cli-utils": "^2.2.1",
     "chalk": "^2.4.2",
     "concurrently": "^5.2.0",
+    "conventional-changelog-gitmoji-config": "^1.4.3",
     "cross-env": "^7.0.3",
     "dumi": "1.1.40",
     "enzyme": "^3.11.0",
@@ -126,6 +129,7 @@
     "react-sticky": "^6.0.3",
     "react-test-renderer": "^16.7.0",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
     "sinon": "^9.0.1",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",

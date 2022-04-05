@@ -1,18 +1,28 @@
-name: Deploy CI
+name: 🚀 Auto Release
+
+env:
+  NODE_OPTIONS: --max-old-space-size=6144
 
 on:
   push:
     branches:
-      - master
+      - latest # 正式版
+      - beta
+      - alpha
+      - next
 
 jobs:
-  build-and-deploy:
+  release:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]') && startsWith(github.event.head_commit.message , '🔖 chore(release):')"
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x # semantic-release 需要 >= 16 的 Node.js 环境
 
       - name: Cache yarn cache
         uses: actions/cache@v2
@@ -39,12 +49,10 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Build Site
-        run: yarn site
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          cname: sensoro-design.xingkang.wang
+      # 自动发布完成后 触发 github.release.published 事件
+      # 如果是 action 自带的 机器人 token, 出于安全考虑, github 会禁止循环触发, 使用真实用户的 token 可解决这个问题
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.JINKE_GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm release
