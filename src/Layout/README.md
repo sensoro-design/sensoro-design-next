@@ -16,7 +16,7 @@ nav:
 
 ### 自定义按钮 Icon
 
-<code src="./__demo__/customIcon.demo.tsx" />
+<code src="./__demo__/custom-icon.demo.tsx" />
 
 ### 自定义收起按钮
 

@@ -44,7 +44,7 @@ nav:
 
 ### 自定义选项卡头部
 
-<code src="./__demo__/renderTabbar.demo.tsx" />
+<code src="./__demo__/render-tabbar.demo.tsx" />
 
 ### 滚动
 
@@ -52,7 +52,7 @@ nav:
 
 ### 滚动偏移位置
 
-<code src="./__demo__/scrollPosition.demo.tsx" />
+<code src="./__demo__/scroll-position.demo.tsx" />
 
 ### 不同尺寸
 

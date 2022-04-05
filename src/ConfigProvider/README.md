@@ -20,11 +20,11 @@ nav:
 
 ### 空元素
 
-<code src="./__demo__/renderEmpty.demo.tsx" />
+<code src="./__demo__/render-empty.demo.tsx" />
 
 ### 表格分页配置
 
-<code src="./__demo__/tablePagination.demo.tsx" />
+<code src="./__demo__/table-pagination.demo.tsx" />
 
 ### 主题配置
 

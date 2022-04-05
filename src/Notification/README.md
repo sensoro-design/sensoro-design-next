@@ -36,11 +36,11 @@ nav:
 
 ### 更新延迟
 
-<code src="./__demo__/update_duration.demo.tsx" />
+<code src="./__demo__/update-duration.demo.tsx" />
 
 ### 更新通知内容
 
-<code src="./__demo__/update_notification.demo.tsx" />
+<code src="./__demo__/update-notification.demo.tsx" />
 
 ### Notification
 

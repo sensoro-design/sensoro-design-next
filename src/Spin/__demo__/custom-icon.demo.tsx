@@ -4,11 +4,11 @@
  * desc: 通过指定 `icon` 可以指定自定义图标作为加载组件。
  */
 import { Spin, Card, Link } from '@sensoro-design/react';
-import { IconLoading } from '@sensoro-design/react/icon';
+import { LoadingOutlined } from '@sensoro-design/react/es/IconLoading';
 
 export default () => {
   return (
-    <Spin loading={true} size={30} icon={<IconLoading />}>
+    <Spin loading={true} size={30} icon={<LoadingOutlined />}>
       <Card
         style={{ width: 360 }}
         title="Arco Card"

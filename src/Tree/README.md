@@ -20,11 +20,11 @@ nav:
 
 ### 带复选框的树
 
-<code src="./__demo__/checkboxTree.demo.tsx" />
+<code src="./__demo__/checkbox-tree.demo.tsx" />
 
 ### 设置回填方式
 
-<code src="./__demo__/checkedStrategy.demo.tsx" />
+<code src="./__demo__/checked-strategy.demo.tsx" />
 
 ### 受控模式
 
@@ -60,7 +60,7 @@ nav:
 
 ### 定制额外节点
 
-<code src="./__demo__/renderTreeNode.demo.tsx" />
+<code src="./__demo__/render-tree-node.demo.tsx" />
 
 ### 搜索树
 
@@ -72,7 +72,7 @@ nav:
 
 ### 由treeData直接生成
 
-<code src="./__demo__/treeData.demo.tsx" />
+<code src="./__demo__/tree-data.demo.tsx" />
 
 ### 虚拟列表
 

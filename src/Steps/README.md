@@ -24,11 +24,11 @@ nav:
 
 ### 步骤切换
 
-<code src="./__demo__/change_step.demo.tsx" />
+<code src="./__demo__/change-step.demo.tsx" />
 
 ### 自定义节点
 
-<code src="./__demo__/customDot.demo.tsx" />
+<code src="./__demo__/custom-dot.demo.tsx" />
 
 ### 展示描述信息
 

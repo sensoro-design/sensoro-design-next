@@ -24,7 +24,7 @@ nav:
 
 ### 自定义关闭元素
 
-<code src="./__demo__/closeElement.demo.tsx" />
+<code src="./__demo__/close-element.demo.tsx" />
 
 ### 含有标题
 

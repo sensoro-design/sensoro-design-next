@@ -19,7 +19,7 @@ nav:
 
 ### 定制回填方式
 
-<code src="./__demo__/checkedStrategy.demo.tsx" />
+<code src="./__demo__/checked-strategy.demo.tsx" />
 
 ### 受控模式
 
@@ -27,7 +27,7 @@ nav:
 
 ### 扩展下拉菜单
 
-<code src="./__demo__/dropdownRender.demo.tsx" />
+<code src="./__demo__/dropdown-render.demo.tsx" />
 
 ### 自定义 TreeData 的字段名称
 
@@ -35,7 +35,7 @@ nav:
 
 ### 设置 value 格式
 
-<code src="./__demo__/labelInvalue.demo.tsx" />
+<code src="./__demo__/label-invalue.demo.tsx" />
 
 ### 动态加载
 
@@ -47,11 +47,11 @@ nav:
 
 ### 远程搜索
 
-<code src="./__demo__/onSearch.demo.tsx" />
+<code src="./__demo__/on-search.demo.tsx" />
 
 ### 控制下拉框的展开收起
 
-<code src="./__demo__/popupVisible.demo.tsx" />
+<code src="./__demo__/popup-visible.demo.tsx" />
 
 ### 搜索
 
@@ -67,7 +67,7 @@ nav:
 
 ### 通过数据生成树结构
 
-<code src="./__demo__/treeData.demo.tsx" />
+<code src="./__demo__/tree-data.demo.tsx" />
 
 ### 虚拟列表
 

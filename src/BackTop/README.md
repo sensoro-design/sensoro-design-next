@@ -16,7 +16,7 @@ nav:
 
 ### 自定义按钮
 
-<code src="./__demo__/custom_button.demo.tsx" />
+<code src="./__demo__/custom-button.demo.tsx" />
 
 ### 滚动类型和滚动时间
 

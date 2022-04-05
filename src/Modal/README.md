@@ -16,7 +16,7 @@ nav:
 
 ### 异步关闭
 
-<code src="./__demo__/async_close.demo.tsx" />
+<code src="./__demo__/async-close.demo.tsx" />
 
 ### 自定义页脚
 
@@ -32,11 +32,11 @@ nav:
 
 ### 消息提示
 
-<code src="./__demo__/confirm_type.demo.tsx" />
+<code src="./__demo__/confirm-type.demo.tsx" />
 
 ### 定制按钮文字
 
-<code src="./__demo__/custom_button_text.demo.tsx" />
+<code src="./__demo__/custom-button-text.demo.tsx" />
 
 ### 手动更新和移除
 
@@ -48,23 +48,23 @@ nav:
 
 ### 数据请求加载
 
-<code src="./__demo__/load_data.demo.tsx" />
+<code src="./__demo__/load-data.demo.tsx" />
 
 ### 带有通知对话框
 
-<code src="./__demo__/with_alert.demo.tsx" />
+<code src="./__demo__/with-alert.demo.tsx" />
 
 ### 带有步骤条对话框
 
-<code src="./__demo__/with_step.demo.tsx" />
+<code src="./__demo__/with-step.demo.tsx" />
 
 ### 自定义渲染对话框
 
-<code src="./__demo__/modal_render.demo.tsx" />
+<code src="./__demo__/modal-render.demo.tsx" />
 
 ### Hooks 用法
 
-<code src="./__demo__/useModal.demo.tsx" />
+<code src="./__demo__/use-modal.demo.tsx" />
 
 ## API
 

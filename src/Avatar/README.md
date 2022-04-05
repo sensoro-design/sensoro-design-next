@@ -24,11 +24,11 @@ nav:
 
 ### 交互按钮
 
-<code src="./__demo__/triggerIcon.demo.tsx" />
+<code src="./__demo__/trigger-icon.demo.tsx" />
 
 ### 自动调整字体大小
 
-<code src="./__demo__/autoFixFontSize.demo.tsx" />
+<code src="./__demo__/auto-fix-font-size.demo.tsx" />
 
 ## API
 

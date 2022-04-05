@@ -7,7 +7,7 @@ import { List, Avatar } from '@sensoro-design/react';
 import EditOutlined from '@sensoro-design/icons/EditOutlined';
 import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
 import DownOutlined from '@sensoro-design/icons/DownOutlined';
-import { IconLoading } from '@sensoro-design/react/icon';
+import { LoadingOutlined } from '@sensoro-design/react/es/IconLoading';
 
 export default () => {
   const dataSource = new Array(4).fill({
@@ -43,7 +43,7 @@ export default () => {
     >
       {loading ? (
         <span style={{ color: 'var(--color-text-3)' }}>
-          <IconLoading style={{ marginRight: 8, color: 'rgb(var(--arcoblue-6))' }} /> loading...
+          <LoadingOutlined style={{ marginRight: 8, color: 'rgb(var(--arcoblue-6))' }} /> loading...
         </span>
       ) : (
         <span className="list-demo-actions-button" >

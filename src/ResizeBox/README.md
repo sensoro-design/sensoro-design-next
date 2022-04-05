@@ -28,7 +28,7 @@ nav:
 
 ### 面板分割嵌套
 
-<code src="./__demo__/nested_split.demo.tsx" />
+<code src="./__demo__/nested-split.demo.tsx" />
 
 ### 面板分割
 
@@ -36,7 +36,7 @@ nav:
 
 ### 多个面板分割
 
-<code src="./__demo__/splitGroup.demo.tsx" />
+<code src="./__demo__/split-group.demo.tsx" />
 
 ### ResizeBox
 

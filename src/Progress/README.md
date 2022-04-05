@@ -44,7 +44,7 @@ nav:
 
 ### 剩余进度条
 
-<code src="./__demo__/trailColor.demo.tsx" />
+<code src="./__demo__/trail-color.demo.tsx" />
 
 ### Progress
 

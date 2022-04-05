@@ -52,7 +52,7 @@ nav:
 
 ### 上一步和下一步
 
-<code src="./__demo__/itemRender.demo.tsx" />
+<code src="./__demo__/item-render.demo.tsx" />
 
 ## API
 

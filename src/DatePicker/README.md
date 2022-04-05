@@ -20,11 +20,11 @@ nav:
 
 ### 定制日期单元格
 
-<code src="./__demo__/dateRender.demo.tsx" />
+<code src="./__demo__/date-render.demo.tsx" />
 
 ### 默认值
 
-<code src="./__demo__/defaultValue.demo.tsx" />
+<code src="./__demo__/default-value.demo.tsx" />
 
 ### 动态控制选取范围
 
@@ -80,11 +80,11 @@ nav:
 
 ### 自定义触发元素
 
-<code src="./__demo__/triggerElement.demo.tsx" />
+<code src="./__demo__/trigger-element.demo.tsx" />
 
 ### UTC 时间
 
-<code src="./__demo__/utcOffset.demo.tsx" />
+<code src="./__demo__/utc-offset.demo.tsx" />
 
 ### 周选择器
 
