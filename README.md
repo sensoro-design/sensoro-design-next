@@ -16,6 +16,8 @@
 
 
 [npm-image]: http://img.shields.io/npm/v/@sensoro-design/react.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/@sensoro-design/react
 [github-action-image]: https://github.com/sensoro-design/sensoro-design-next/workflows/%E2%9C%85%20test/badge.svg
+[github-action-url]: https://github.com/sensoro-design/sensoro-design-next/actions?query=workflow%3A%22%E2%9C%85+test%22
 [download-image]: https://img.shields.io/npm/dm/@sensoro-design/react.svg?style=flat-square
 [download-url]: https://npmjs.org/package/@sensoro-design/react
