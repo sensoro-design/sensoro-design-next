@@ -27,6 +27,7 @@
     "format": "prettier --config .prettierrc --write \"{stories,tests,components}/**/*.{js,jsx,ts,tsx}\"",
     "docgen": "arco-scripts docgen",
     "prepare": "husky install",
+    "clean:dts": "esno ./scripts/clean-dts.ts",
     "pre-commit": "pretty-quick --staged && npm run eslint && npm run stylelint",
     "release": "semantic-release"
   },
@@ -85,7 +86,6 @@
     "@typescript-eslint/parser": "^4.31.2",
     "@umijs/utils": "^3.5.21",
     "@walrus/cli-utils": "^2.2.1",
-    "chalk": "^2.4.2",
     "concurrently": "^5.2.0",
     "conventional-changelog-gitmoji-config": "^1.4.3",
     "cross-env": "^7.0.3",
