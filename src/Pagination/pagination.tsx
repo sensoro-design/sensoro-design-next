@@ -1,11 +1,13 @@
-import React, { ReactNode, ReactElement, useState, useEffect, useContext, forwardRef } from 'react';
+import React, { useState, useEffect, useContext, forwardRef } from 'react';
+import classNames from '@pansy/classnames';
 import PageItem, { StepType, JumpPager, StepPager } from './page-item';
 import PageOption from './page-options';
 import PageJumper from './page-jumper';
-import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { PaginationProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import type { ReactNode, ReactElement, } from 'react'
 
 export interface PaginationState {
   current: number;

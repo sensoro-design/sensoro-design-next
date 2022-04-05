@@ -6,7 +6,6 @@ import React, {
   ForwardRefExoticComponent,
   useMemo,
 } from 'react';
-import { InputProps, RefInputType } from './interface';
 import classNames from '@pansy/classnames';
 import Search from './search';
 import TextArea from './textarea';
@@ -18,6 +17,8 @@ import InputComponent from './input-element';
 import Group from './group';
 import { contains } from '../_util/dom';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import type { InputProps, RefInputType } from './interface';
 
 const keepFocus = (e) => {
   e.target.tagName !== 'INPUT' && e.preventDefault();

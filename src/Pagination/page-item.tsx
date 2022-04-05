@@ -1,8 +1,10 @@
-import React, { ReactNode, CSSProperties } from 'react';
+import React from 'react';
 import classNames from '@pansy/classnames';
 import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
 import RightOutlined from '@sensoro-design/icons/RightOutlined';
-import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
+import EllipsisOutlined from '@sensoro-design/icons/EllipsisOutlined';
+
+import type { ReactNode, CSSProperties } from 'react';
 
 type itemRenderType = (
   page: number,
@@ -101,7 +103,7 @@ function getIcon(name: string, icons) {
     case 'next':
       return icons && icons.next ? icons.next : <RightOutlined />;
     case 'more':
-      return icons && icons.more ? icons.more : <MoreOutlined />;
+      return icons && icons.more ? icons.more : <EllipsisOutlined />;
     default:
       return null;
   }
