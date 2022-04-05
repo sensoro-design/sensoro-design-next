@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../../Button';
 import Tag from '../../../Tag';
-import { IconSearch } from '../../../../icon';
+import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 import { ColumnProps } from '../../interface';
 import { TestData } from './data';
 import { NOOP } from '../../../_util/constant';
@@ -70,7 +70,7 @@ export const columnsFilterCustom: ColumnProps<TestData>[] = (function () {
     if (d.title === 'Sex') {
       return {
         ...d,
-        filterIcon: <IconSearch />,
+        filterIcon: <SearchOutlined />,
         filterDropdown: ({ setFilterKeys, confirm }) => {
           return (
             <div className="arco-table-custom-filter">

@@ -1,5 +1,3 @@
-import { join } from 'path';
-
 const isProduction = process.env.NODE_ENV === 'production';
 const logo = 'https://cdn.jsdelivr.net/gh/wangxingkang/pictures@latest/imgs/sensoro-design.svg';
 

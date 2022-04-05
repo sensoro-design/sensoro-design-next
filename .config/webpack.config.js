@@ -13,13 +13,3 @@ exports.component = (config) => {
     })
   );
 };
-
-// 图标 dist 打包
-exports.icon = (config) => {
-  config.plugins.pop();
-  config.plugins.push(
-    new webpack.BannerPlugin({
-      banner: `SensoroDesign v${version}\n\nCopyright 2019-present, SensoroFE, Inc.\nAll rights reserved.\n`,
-    })
-  );
-};
