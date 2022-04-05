@@ -10,6 +10,7 @@ exports.component = (config) => {
   config.plugins.push(
     new webpack.BannerPlugin({
       banner: `SensoroDesign v${version}\n\nCopyright 2019-present, SensoroFE, Inc.\nAll rights reserved.\n`,
-    })
+    }),
   );
+  config.output.filename = 'sen.min.js';
 };
