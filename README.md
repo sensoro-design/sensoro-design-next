@@ -10,4 +10,12 @@
 
 <div align="center">
 升哲科技 React UI 组件库。
+
+[![CI status][github-action-image]][github-action-url] [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url]
 </div>
+
+
+[npm-image]: http://img.shields.io/npm/v/@sensoro-design/react.svg?style=flat-square
+[github-action-image]: https://github.com/sensoro-design/sensoro-design-next/workflows/%E2%9C%85%20test/badge.svg
+[download-image]: https://img.shields.io/npm/dm/@sensoro-design/react.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@sensoro-design/react
