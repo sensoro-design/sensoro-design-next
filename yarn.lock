@@ -63,7 +63,7 @@
     prismjs "^1.23.0"
     react-helmet "^6.1.0"
 
-"@arco-design/arco-scripts@^1.25.9":
+"@arco-design/arco-scripts@^1.25.15":
   version "1.25.15"
   resolved "https://registry.yarnpkg.com/@arco-design/arco-scripts/-/arco-scripts-1.25.15.tgz#25bf549d0435e6524691ae9592fc0c677dd693c8"
   integrity sha512-CbKI3SfRT5TafGnTkvLhFoaaPUFA3WgW+BI9B7bwDrbpEGJFlj6FNwqyNsc8lyoDhyrW49OD57rKRHojdoCqdg==
