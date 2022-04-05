@@ -7,7 +7,7 @@ import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 
 const Search = React.forwardRef<RefInputType, InputSearchProps>((props: InputSearchProps, ref) => {
   const { getPrefixCls } = useContext(ConfigContext);
@@ -58,7 +58,7 @@ const Search = React.forwardRef<RefInputType, InputSearchProps>((props: InputSea
           </Button>
         ) : null
       }
-      suffix={!searchButton && (loading ? <IconLoading /> : <SearchOutlined onClick={onSearch} />)}
+      suffix={!searchButton && (loading ? <LoadingOutlined /> : <SearchOutlined onClick={onSearch} />)}
       onChange={(value, e) => {
         setValue(value);
         props.onChange && props.onChange(value, e);

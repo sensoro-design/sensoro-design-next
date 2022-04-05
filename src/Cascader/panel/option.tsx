@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import Checkbox from '../../Checkbox';
-import IconRight from '../../../icon/react-icon/IconRight';
-import IconLoading from '../../../icon/react-icon/IconLoading';
-import IconCheck from '../../../icon/react-icon/IconCheck';
+import { LoadingOutlined } from '../../IconLoading';
+import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
+import RightOutlined from '@sensoro-design/icons/RightOutlined';
 import Node from '../base/node';
 import { OptionProps } from '../interface';
 
@@ -45,11 +45,11 @@ const Option = <T extends OptionProps>(props: CascaderOptionProps<T>) => {
       >
         {renderOption ? renderOption() : option.label}
         {option.isLeaf ? (
-          selected && <IconCheck />
+          selected && <CheckOutlined />
         ) : option.loading ? (
-          <IconLoading />
+          <LoadingOutlined />
         ) : (
-          <IconRight />
+          <RightOutlined />
         )}
       </div>
     </>

@@ -4,7 +4,7 @@ import classNames from '@pansy/classnames';
 import { isArray, isObject } from '../_util/is';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 import { SwitchProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
@@ -105,7 +105,7 @@ function Switch(baseProps: SwitchProps, ref) {
 
         {loading && (
           <span className={`${prefixCls}-dot-icon`}>
-            <IconLoading />
+            <LoadingOutlined />
           </span>
         )}
       </div>

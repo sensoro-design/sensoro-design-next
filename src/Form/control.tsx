@@ -1,4 +1,5 @@
 import React, { Component, ReactElement } from 'react';
+import classNames from '@pansy/classnames';
 import isEqualWith from 'lodash/isEqualWith';
 import has from 'lodash/has';
 import set from 'lodash/set';
@@ -12,10 +13,8 @@ import warn from '../_util/warning';
 import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';
 import CloseCircleFilled from '@sensoro-design/icons/CloseCircleFilled';
 import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
-
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 import { NotifyType, StoreChangeInfo } from './store';
-import classNames from '@pansy/classnames';
 import { isSyntheticEvent, schemaValidate, ID_SUFFIX } from './utils';
 
 function isFieldMath(field, fields) {
@@ -342,7 +341,7 @@ export default class Control<
                 {validateStatus === 'warning' && <ExclamationCircleFilled />}
                 {validateStatus === 'success' && <CheckCircleFilled />}
                 {validateStatus === 'error' && <CloseCircleFilled />}
-                {validateStatus === 'validating' && <IconLoading />}
+                {validateStatus === 'validating' && <LoadingOutlined />}
               </div>
             )}
           </div>

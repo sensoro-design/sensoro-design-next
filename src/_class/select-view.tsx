@@ -10,11 +10,7 @@ import React, {
 import { isUndefined, isObject } from '../_util/is';
 import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
-import IconDown from '../../icon/react-icon/IconDown';
-import IconLoading from '../../icon/react-icon/IconLoading';
-import IconClose from '../../icon/react-icon/IconClose';
 import IconExpand from '../../icon/react-icon/IconExpand';
-import IconSearch from '../../icon/react-icon/IconSearch';
 import InputTag, { InputTagProps } from '../InputTag';
 import InputComponent from '../Input/input-element';
 import { ObjectValueType } from '../InputTag/interface';
@@ -23,6 +19,11 @@ import include from '../_util/include';
 import useForceUpdate from '../_util/hooks/useForceUpdate';
 import IconHover from './icon-hover';
 import { Enter } from '../_util/keycode';
+
+import { LoadingOutlined } from '../IconLoading';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import SearchOutlined from '@sensoro-design/icons/SearchOutlined';
 
 import type { SizeType } from '../ConfigProvider/interface';
 
@@ -279,19 +280,19 @@ export const SelectView = (props: SelectViewProps, ref) => {
       </div>
     ) : (
       <div className={`${prefixCls}-arrow-icon`}>
-        <IconDown />
+        <DownOutlined />
       </div>
     );
 
   const mergedSuffixIcon = loading ? (
     <span className={`${prefixCls}-loading-icon`}>
-      <IconLoading />
+      <LoadingOutlined />
     </span>
   ) : suffixIcon ? (
     <span className={`${prefixCls}-suffix-icon`}>{suffixIcon}</span>
   ) : props.showSearch && popupVisible ? (
     <div className={`${prefixCls}-search-icon`}>
-      <IconSearch />
+      <SearchOutlined />
     </div>
   ) : (
     mergedArrowIcon
@@ -462,7 +463,7 @@ export const SelectView = (props: SelectViewProps, ref) => {
         onClick={onClear}
         onMouseDown={keepFocus}
       >
-        {clearIcon !== undefined && clearIcon !== null ? clearIcon : <IconClose />}
+        {clearIcon !== undefined && clearIcon !== null ? clearIcon : <CloseOutlined />}
       </IconHover>
     ) : null;
 

@@ -14,13 +14,14 @@ import classNames from '@pansy/classnames';
 import { on, off, isServerRendering } from '../_util/dom';
 import ResizeObserver from '../_util/resizeObserver';
 
-import IconLoading from '../../icon/react-icon/IconLoading';
-import IconZoomOut from '../../icon/react-icon/IconZoomOut';
-import IconZoomIn from '../../icon/react-icon/IconZoomIn';
+import { LoadingOutlined } from '../IconLoading';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import ZoomInOutlined from '@sensoro-design/icons/ZoomInOutlined';
+import ZoomOutOutlined from '@sensoro-design/icons/ZoomOutOutlined';
+import RotateLeftOutlined from '@sensoro-design/icons/RotateLeftOutlined';
+import RotateRightOutlined from '@sensoro-design/icons/RotateRightOutlined';
+
 import IconFullscreen from '../../icon/react-icon/IconFullscreen';
-import IconClose from '../../icon/react-icon/IconClose';
-import IconRotateLeft from '../../icon/react-icon/IconRotateLeft';
-import IconRotateRight from '../../icon/react-icon/IconRotateRight';
 import IconOriginalSize from '../../icon/react-icon/IconOriginalSize';
 
 import ConfigProvider, { ConfigContext } from '../ConfigProvider';
@@ -36,10 +37,6 @@ import ImagePreviewArrow from './image-preview-arrow';
 import useOverflowHidden from '../_util/hooks/useOverflowHidden';
 import { Esc } from '../_util/keycode';
 import useUpdate from '../_util/hooks/useUpdate';
-
-// import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
-// import ZoomInOutlined from '@sensoro-design/icons/ZoomInOutlined';
-// import ZoomOutOutlined from '@sensoro-design/icons/ZoomOutOutlined';
 
 const ROTATE_STEP = 90;
 
@@ -353,26 +350,26 @@ function Preview(props: ImagePreviewProps, ref) {
     {
       key: 'rotateRight',
       name: locale.ImagePreview.rotateRight,
-      content: <IconRotateRight />,
+      content: <RotateRightOutlined />,
       onClick: onRotateRight,
     },
     {
       key: 'rotateLeft',
       name: locale.ImagePreview.rotateLeft,
-      content: <IconRotateLeft />,
+      content: <RotateLeftOutlined />,
       onClick: onRotateLeft,
     },
     {
       key: 'zoomIn',
       name: locale.ImagePreview.zoomIn,
-      content: <IconZoomIn />,
+      content: <ZoomInOutlined />,
       onClick: onZoomIn,
       disabled: scale === previewScales.maxScale,
     },
     {
       key: 'zoomOut',
       name: locale.ImagePreview.zoomOut,
-      content: <IconZoomOut />,
+      content: <ZoomOutOutlined />,
       onClick: onZoomOut,
       disabled: scale === previewScales.minScale,
     },
@@ -447,7 +444,7 @@ function Preview(props: ImagePreviewProps, ref) {
                   />
                   {isLoading && (
                     <div className={`${previewPrefixCls}-loading`}>
-                      <IconLoading />
+                      <LoadingOutlined />
                     </div>
                   )}
                 </div>
@@ -474,7 +471,7 @@ function Preview(props: ImagePreviewProps, ref) {
                 )}
                 {closable && (
                   <div className={`${previewPrefixCls}-close-btn`} onClick={onCloseClick}>
-                    <IconClose />
+                    <CloseOutlined />
                   </div>
                 )}
                 {previewGroup && (

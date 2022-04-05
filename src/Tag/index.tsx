@@ -1,6 +1,6 @@
 import React, { useState, useContext, forwardRef, CSSProperties } from 'react';
 import classNames from '@pansy/classnames';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
@@ -131,7 +131,7 @@ function Tag(baseProps: TagProps, ref) {
       )}
       {loading && (
         <span className={`${prefixCls}-loading-icon`}>
-          <IconLoading />
+          <LoadingOutlined />
         </span>
       )}
     </div>

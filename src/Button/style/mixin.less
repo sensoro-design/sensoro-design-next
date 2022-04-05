@@ -65,7 +65,10 @@
     // line-height: calc(~'@{size-@{size}}' - ~'@{btn-size-@{size}-border-width}' * 2);
 
     > svg + span,
-    > span + svg {
+    > span + svg,
+    > span.@{prefix}-icon + span,
+    > span.sen-icon + span.@{prefix}-icon
+    {
       margin-left: ~'@{btn-size-@{size}-icon-spacing}';
     }
   }

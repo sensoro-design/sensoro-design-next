@@ -1,12 +1,13 @@
 import React, { Component, ReactNode, CSSProperties } from 'react';
 import classNames from '@pansy/classnames';
-import IconClose from '../../icon/react-icon/IconClose';
-import IconCheckCircleFill from '../../icon/react-icon/IconCheckCircleFill';
-import IconCloseCircleFill from '../../icon/react-icon/IconCloseCircleFill';
-import IconInfoCircleFill from '../../icon/react-icon/IconInfoCircleFill';
-import IconExclamationCircleFill from '../../icon/react-icon/IconExclamationCircleFill';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 import IconHover from '../_class/icon-hover';
+
+import InfoCircleFilled from '@sensoro-design/icons/InfoCircleFilled';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+import ExclamationCircleFilled from '@sensoro-design/icons/ExclamationCircleFilled';
+import CloseCircleFilled from '@sensoro-design/icons/CloseCircleFilled';
+import CheckCircleFilled from '@sensoro-design/icons/CheckCircleFilled';
 
 export interface NoticeProps {
   style?: CSSProperties;
@@ -84,19 +85,19 @@ class Notice extends Component<NoticeProps, {}> {
     } else if (showIcon) {
       switch (type) {
         case 'info':
-          content = <IconInfoCircleFill />;
+          content = <InfoCircleFilled />;
           break;
         case 'success':
-          content = <IconCheckCircleFill />;
+          content = <CheckCircleFilled />;
           break;
         case 'error':
-          content = <IconCloseCircleFill />;
+          content = <CloseCircleFilled />;
           break;
         case 'warning':
-          content = <IconExclamationCircleFill />;
+          content = <ExclamationCircleFilled />;
           break;
         case 'loading':
-          content = <IconLoading />;
+          content = <LoadingOutlined />;
           break;
         default:
           break;
@@ -160,7 +161,7 @@ class Notice extends Component<NoticeProps, {}> {
                 className={`${prefixCls}-close-btn`}
                 onClick={this.onClose}
               >
-                <IconClose />
+                <CloseOutlined />
               </IconHover>
             )}
           </div>
@@ -184,7 +185,7 @@ class Notice extends Component<NoticeProps, {}> {
                 className={`${prefixCls}-close-btn`}
                 onClick={this.onClose}
               >
-                <IconClose />
+                <CloseOutlined />
               </IconHover>
             )}
           </div>

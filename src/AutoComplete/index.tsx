@@ -9,7 +9,7 @@ import { isSelectOption, isSelectOptGroup } from '../Select/utils';
 import { Enter, Esc } from '../_util/keycode';
 import omit from '../_util/omit';
 import { RefInputType } from '../Input/interface';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 import { AutoCompleteProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
@@ -125,7 +125,7 @@ function AutoComplete(baseProps: AutoCompleteProps, ref) {
     allowClear,
     ...inputProps,
     // Empty tag to ensure the consistency of the dom structure of input, such that input won't accidentally lose focus due to structure change on input.
-    suffix: loading ? <IconLoading /> : inputProps?.suffix || <i />,
+    suffix: loading ? <LoadingOutlined /> : inputProps?.suffix || <i />,
     onFocus: (event) => {
       setIsFocused(true);
       onFocus && onFocus(event);

@@ -1,7 +1,8 @@
 import React, { useContext, ImgHTMLAttributes, useEffect, useMemo, LegacyRef, useRef } from 'react';
 import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
+
 import IconImageClose from '../../icon/react-icon/IconImageClose';
 import { ImageProps, ImagePreviewProps } from './interface';
 import { ImageFooter } from './image-footer';
@@ -156,7 +157,7 @@ function Image(baseProps: ImagePropsType, ref: LegacyRef<HTMLDivElement>) {
   const defaultLoader = (
     <div className={`${prefixCls}-loader`}>
       <div className={`${prefixCls}-loader-spin`}>
-        <IconLoading />
+        <LoadingOutlined />
         <div className={`${prefixCls}-loader-spin-text`}>Loading</div>
       </div>
     </div>

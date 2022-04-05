@@ -4,7 +4,10 @@
  */
 import { useState } from 'react';
 import { List, Avatar } from '@sensoro-design/react';
-import { IconEdit, IconDelete, IconDown, IconLoading } from '@sensoro-design/react/icon';
+import EditOutlined from '@sensoro-design/icons/EditOutlined';
+import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
+import DownOutlined from '@sensoro-design/icons/DownOutlined';
+import { IconLoading } from '@sensoro-design/react/icon';
 
 export default () => {
   const dataSource = new Array(4).fill({
@@ -44,7 +47,7 @@ export default () => {
         </span>
       ) : (
         <span className="list-demo-actions-button" >
-          More <IconDown style={{ marginLeft: 8 }} />
+          More <DownOutlined style={{ marginLeft: 8 }} />
         </span>
       )}
     </div>
@@ -58,10 +61,10 @@ export default () => {
         dataSource={dataSource}
         render={render.bind(null, [
           <span className="list-demo-actions-icon">
-            <IconEdit />
+            <EditOutlined />
           </span>,
           <span className="list-demo-actions-icon">
-            <IconDelete />
+            <DeleteOutlined />
           </span>,
         ])}
         footer={footer}

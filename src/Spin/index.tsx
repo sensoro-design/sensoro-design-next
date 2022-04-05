@@ -1,7 +1,7 @@
 import React, { ReactElement, useState, useEffect, useContext, useCallback } from 'react';
 import classNames from '@pansy/classnames';
 import debounce from 'lodash/debounce';
-import IconLoading from '../../icon/react-icon/IconLoading';
+import { LoadingOutlined } from '../IconLoading';
 import { ConfigContext } from '../ConfigProvider';
 import DotLoading from './dot-loading';
 import { SpinProps } from './interface';
@@ -47,7 +47,7 @@ function Spin(baseProps: SpinProps, ref) {
             },
           })
         : element ||
-          (dot ? <DotLoading size={size} /> : <IconLoading style={{ fontSize: size }} />)}
+          (dot ? <DotLoading size={size} /> : <LoadingOutlined style={{ fontSize: size }} />)}
     </span>
   );
 

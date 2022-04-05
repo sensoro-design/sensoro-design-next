@@ -1,7 +1,6 @@
 import React, { useState, useContext, useEffect, ReactNode, forwardRef } from 'react';
 import classNames from '@pansy/classnames';
-
-import IconLoading from './icon-loading';
+import { LoadingOutlined } from '../IconLoading';
 import Group from './group';
 import { ConfigContext } from '../ConfigProvider';
 import { ButtonProps } from './interface';
@@ -66,7 +65,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (ba
     ...rest
   } = props;
 
-  const iconNode = loading ? <IconLoading /> : icon;
+  const iconNode = loading ? <LoadingOutlined /> : icon;
 
   const [isTwoCNChar, setIsTwoCNChar] = useState(false);
   const buttonRef = (ref as any) || React.createRef<HTMLElement>();

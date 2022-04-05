@@ -6,15 +6,10 @@ import React, {
   PropsWithChildren,
   useCallback,
 } from 'react';
-import Checkbox from '../Checkbox';
 import classNames from '@pansy/classnames';
 import { isFunction } from '../_util/is';
-
-import IconCaretDown from '../../icon/react-icon/IconCaretDown';
-import IconDragDotVertical from '../../icon/react-icon/IconDragDotVertical';
-import IconLoading from '../../icon/react-icon/IconLoading';
-import IconFile from '../../icon/react-icon/IconFile';
-
+import Checkbox from '../Checkbox';
+import { LoadingOutlined } from '../IconLoading';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
 import { NodeProps } from './interface';
@@ -22,9 +17,9 @@ import { TreeContext } from './context';
 import AnimationNode from './animation';
 import throttleByRaf from '../_util/throttleByRaf';
 
-// import FileTextOutlined from '@sensoro-design/icons/FileTextOutlined';
-// import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
-// import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
+import FileOutlined from '@sensoro-design/icons/FileOutlined';
+import CaretDownOutlined from '@sensoro-design/icons/CaretDownOutlined';
+import HolderOutlined from '@sensoro-design/icons/HolderOutlined';
 
 export interface NodeState {
   isDragOver?: boolean;
@@ -109,7 +104,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
 
   const getPrefixIcon = () => {
     if (loading) {
-      return 'loadingIcon' in icons ? icons.loadingIcon : <IconLoading />;
+      return 'loadingIcon' in icons ? icons.loadingIcon : <LoadingOutlined />;
     }
     let icon = null;
     let needIconHover = false;
@@ -117,13 +112,13 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
       const defaultIcon = showLine ? (
         <span className={`${prefixCls}-${expanded ? 'minus' : 'plus'}-icon`} />
       ) : (
-        <IconCaretDown />
+        <CaretDownOutlined />
       );
 
       icon = 'switcherIcon' in icons ? icons.switcherIcon : defaultIcon;
       needIconHover = !showLine;
     } else if (showLine) {
-      icon = 'switcherIcon' in icons ? icons.switcherIcon : <IconFile />;
+      icon = 'switcherIcon' in icons ? icons.switcherIcon : <FileOutlined />;
       needIconHover = true;
     }
 
@@ -284,7 +279,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
 
           {draggable && (
             <span className={`${prefixCls}-icon ${prefixCls}-drag-icon`}>
-              {'dragIcon' in icons ? icons.dragIcon : <IconDragDotVertical />}
+              {'dragIcon' in icons ? icons.dragIcon : <HolderOutlined />}
             </span>
           )}
         </span>
