@@ -50,15 +50,11 @@ jspm_packages
 # my test
 /test
 
-# gh-pages
-examples/.gitignore
-
 # Mac files
 **/.DS_Store
 
 # package file
-site/package-lock.json
-site/package-lock.json
+package-lock.json
 
 src/**/*.d.ts
 
