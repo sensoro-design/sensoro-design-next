@@ -5,7 +5,7 @@ export default function (node: HTMLElement, options?: Options) {
   if (node) {
     scrollIntoView(node, {
       block: 'start',
-      behavior: 'instant',
+      behavior: 'smooth',
       scrollMode: 'if-needed',
       ...options,
     });
