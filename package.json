@@ -150,5 +150,8 @@
     "icon/icons.json",
     "icon/package.json"
   ],
-  "_unpkg": true
+  "_unpkg": true,
+  "publishConfig": {
+    "access": "public"
+  }
 }
