@@ -6,6 +6,7 @@ import { Message, Button } from '@sensoro-design/react';
 
 function updateMessage() {
   const close = Message.info({ content: 'Close after 2 seconds...', duration: 0 });
+
   setTimeout(() => {
     close();
   }, 2000);
@@ -16,5 +17,5 @@ export default () => {
     <Button onClick={updateMessage} type="primary">
       Close after 2 seconds
     </Button>
-  )
-}
+  );
+};

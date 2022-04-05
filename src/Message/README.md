@@ -74,5 +74,5 @@ nav:
 |maxCount|最大通知数量|`number`|`-`|
 |getContainer|放置通知的容器|`() => HTMLElement`|`() => document.body`|
 |duration|通知自动关闭的时间|`number`|`3000`|
-|prefixCls|类名前缀|`string`|`arco`|
+|prefixCls|类名前缀|`string`|`sen`|
 

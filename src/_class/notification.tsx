@@ -5,10 +5,10 @@ function getId(noticeProps) {
   if (noticeProps.id) {
     return noticeProps.id;
   }
-  return `arco_notice_id_${Date.now()}`;
+  return `sen_notice_id_${Date.now()}`;
 }
 
-interface BaseNoticeState {
+export interface BaseNoticeState {
   notices: { [key: string]: any }[];
   position?: string;
 }
@@ -63,7 +63,7 @@ class BaseNotice extends Component<any, BaseNoticeState> {
           return oldNotice;
         });
         this.setState({ notices });
-      }
+      },
     );
   };
 

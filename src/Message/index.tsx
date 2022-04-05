@@ -58,7 +58,7 @@ function addInstance(noticeProps: MessageProps) {
           id = messageInstance[position].add(_noticeProps);
         }}
       />,
-      div
+      div,
     );
   }
 
@@ -127,7 +127,7 @@ class Message extends BaseNotification {
   render() {
     const { transitionClassNames } = this.props;
     const { notices, position } = this.state;
-    const prefixClsMessage = prefixCls ? `${prefixCls}-message` : 'arco-message';
+    const prefixClsMessage = prefixCls ? `${prefixCls}-message` : 'sen-message';
 
     const classes = classNames(`${prefixClsMessage}-wrapper`, `${prefixClsMessage}-wrapper-${position}`);
 
@@ -153,12 +153,7 @@ class Message extends BaseNotification {
                 notice.onClose && notice.onClose();
               }}
             >
-              <Notice
-                {...notice}
-                prefixCls={prefixClsMessage}
-                onClose={this.remove}
-                noticeType="message"
-              />
+              <Notice {...notice} prefixCls={prefixClsMessage} onClose={this.remove} noticeType="message" />
             </CSSTransition>
           ))}
         </TransitionGroup>

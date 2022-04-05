@@ -9,6 +9,7 @@ function updateMessage() {
     id: 'need_update',
     content: 'Will update after 2 seconds...',
   });
+
   setTimeout(() => {
     Message.success({
       id: 'need_update',
@@ -22,5 +23,5 @@ export default () => {
     <Button onClick={updateMessage} type="primary">
       Update message
     </Button>
-  )
-}
+  );
+};
