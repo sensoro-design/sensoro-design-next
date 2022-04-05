@@ -1,11 +1,12 @@
 import React, { ReactInstance } from 'react';
 import ReactDOM from 'react-dom';
+import classNames from '@pansy/classnames';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import BaseNotification from '../_class/notification';
 import Notice from '../_class/notice';
-import classNames from '@pansy/classnames';
 import { isNumber } from '../_util/is';
-import { NotificationProps } from './interface';
+
+import type { NotificationProps } from './interface';
 
 const notificationTypes = ['info', 'success', 'error', 'warning', 'normal'];
 let notificationInstance: object = {};
@@ -63,9 +64,7 @@ class Notification extends BaseNotification {
     });
   };
 
-  static addInstance: (config: NotificationProps) => ReactInstance = (
-    noticeProps: NotificationProps
-  ) => {
+  static addInstance: (config: NotificationProps) => ReactInstance = (noticeProps: NotificationProps) => {
     const { position = 'topRight' } = noticeProps;
     const _noticeProps = {
       duration,
@@ -97,7 +96,7 @@ class Notification extends BaseNotification {
           return instance;
         }}
       />,
-      div
+      div,
     );
   };
 
@@ -115,17 +114,14 @@ class Notification extends BaseNotification {
 
   render() {
     const { notices, position = 'topRight' } = this.state;
-    const prefixClsNotification = prefixCls ? `${prefixCls}-notification` : 'arco-notification';
+    const prefixClsNotification = prefixCls ? `${prefixCls}-notification` : 'sen-notification';
     let transitionClass: string;
     if (position === 'topLeft' || position === 'bottomLeft') {
       transitionClass = 'slideNoticeLeft';
     } else {
       transitionClass = 'slideNoticeRight';
     }
-    const classes = classNames(
-      `${prefixClsNotification}-wrapper`,
-      `${prefixClsNotification}-wrapper-${position}`
-    );
+    const classes = classNames(`${prefixClsNotification}-wrapper`, `${prefixClsNotification}-wrapper-${position}`);
 
     return (
       <div className={classes}>
@@ -149,12 +145,7 @@ class Notification extends BaseNotification {
                 notice.onClose && notice.onClose();
               }}
             >
-              <Notice
-                {...notice}
-                onClose={this.remove}
-                prefixCls={prefixClsNotification}
-                noticeType="notification"
-              />
+              <Notice {...notice} onClose={this.remove} prefixCls={prefixClsNotification} noticeType="notification" />
             </CSSTransition>
           ))}
         </TransitionGroup>
@@ -174,4 +165,4 @@ notificationTypes.forEach((type) => {
 
 export default Notification;
 
-export { NotificationProps };
+export type { NotificationProps };

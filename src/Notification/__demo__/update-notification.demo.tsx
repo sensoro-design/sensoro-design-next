@@ -1,4 +1,3 @@
-
 /**
  * title: 更新通知内容
  * desc: 通过指定参数 `key`，可以更新已经存在的通知提醒框。
@@ -25,5 +24,5 @@ export default () => {
     <Button onClick={updateNotification} type="primary">
       Update Notification
     </Button>
-  )
-}
+  );
+};
