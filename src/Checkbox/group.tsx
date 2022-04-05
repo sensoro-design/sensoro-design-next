@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react';
 import Checkbox from './checkbox';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import { isArray, isObject } from '../_util/is';
@@ -38,7 +38,7 @@ function Group<T extends React.ReactText>(props: PropsWithChildren<CheckboxGroup
   const { getPrefixCls } = useContext(ConfigContext);
   const { disabled, options, style, className, error, children, direction = 'horizontal' } = props;
   const prefixCls = getPrefixCls('checkbox');
-  const classNames = cs(
+  const classes = classNames(
     `${prefixCls}-group`,
     {
       [`${prefixCls}-group-is-error`]: error,
@@ -68,7 +68,7 @@ function Group<T extends React.ReactText>(props: PropsWithChildren<CheckboxGroup
   );
 
   return (
-    <span className={classNames} style={style}>
+    <span className={classes} style={style}>
       <CheckboxGroupContext.Provider
         value={{
           isCheckboxGroup: true,

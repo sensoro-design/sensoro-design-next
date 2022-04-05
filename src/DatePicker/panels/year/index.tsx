@@ -3,7 +3,7 @@ import merge from 'lodash/merge';
 import { Dayjs } from 'dayjs';
 import { YearPickerProps } from '../../interface';
 import { dayjs, getNow } from '../../../_util/dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../../../ConfigProvider';
 import Header from '../header';
 import Body from '../body';
@@ -50,7 +50,7 @@ function YearPicker(props: InnerYearPickerProps) {
 
   const prefixCls = getPrefixCls('panel-year');
 
-  const classNames = cs(prefixCls);
+  const classes = classNames(prefixCls);
 
   const bodyProps = isRangePicker ? { rangeValues } : { value };
 
@@ -93,7 +93,7 @@ function YearPicker(props: InnerYearPickerProps) {
   const headerOperations = { onSuperPrev, onSuperNext };
 
   return (
-    <div className={classNames} style={style}>
+    <div className={classes} style={style}>
       <Header
         prefixCls={getPrefixCls('picker')}
         icons={icons}

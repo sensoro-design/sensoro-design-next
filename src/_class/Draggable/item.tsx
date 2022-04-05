@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { DraggableItemProps, DragPosition, DragStatus } from './interface';
 
 function Item(props: DraggableItemProps) {
@@ -41,7 +41,7 @@ function Item(props: DraggableItemProps) {
       draggable
       ref={refItem}
       style={style}
-      className={cs(`${prefixCls}-item`, {
+      className={classNames(`${prefixCls}-item`, {
         [`${prefixCls}-item-${dragStatus}`]: dragStatus !== 'none',
         [`${prefixCls}-item-gap-${dragPosition}`]: dragPosition,
         [`${prefixCls}-item-disabled`]: disabled,

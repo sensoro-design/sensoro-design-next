@@ -4,7 +4,7 @@ import { CalendarProps } from './interface';
 import { dayjs, methods } from '../_util/dayjs';
 import { newArray } from '../_util/constant';
 import { padStart } from '../_util/pad';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import WeekList from './week-list';
 import useCellClassName from './hooks/useCellClassName';
 
@@ -152,7 +152,7 @@ function Month(props: MonthProps) {
         return (
           <div
             key={index}
-            className={cs(`${prefixCls}-cell`, `${prefixCls}-cell-week`, {
+            className={classNames(`${prefixCls}-cell`, `${prefixCls}-cell-week`, {
               [`${prefixCls}-cell-selected-week`]: selectedWeek,
               [`${prefixCls}-cell-in-range`]: selectedWeek,
             })}
@@ -184,7 +184,7 @@ function Month(props: MonthProps) {
         {pd.map((row, index) => (
           <div
             key={index}
-            className={cs(`${prefixCls}-month-row`, { [`${prefixCls}-row-week`]: isWeek })}
+            className={classNames(`${prefixCls}-month-row`, { [`${prefixCls}-row-week`]: isWeek })}
           >
             {renderDays(row)}
           </div>

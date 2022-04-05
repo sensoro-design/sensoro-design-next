@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { MenuSubMenuProps } from '../interface';
 import DownOutlined from '@sensoro-design/icons/DownOutlined';
 import RightOutlined from '@sensoro-design/icons/RightOutlined';
@@ -84,14 +84,14 @@ const SubMenuPop = (props: MenuSubMenuProps & { forwardedRef }) => {
         duration: 100,
         mouseEnterDelay: 50,
         mouseLeaveDelay: 50,
-        className: cs(`${baseClassName}-trigger`, triggerProps && triggerProps.className),
+        className: classNames(`${baseClassName}-trigger`, triggerProps && triggerProps.className),
         ...omit(triggerProps, ['className']),
       }}
     >
       <div
         ref={forwardedRef}
         style={style}
-        className={cs(
+        className={classNames(
           baseClassName,
           `${baseClassName}-header`,
           {

@@ -6,7 +6,7 @@ import React, {
   useRef,
   useEffect,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import ResizeTrigger from './resize-trigger';
 import { ConfigContext } from '../ConfigProvider';
 import { on, off } from '../_util/dom';
@@ -34,7 +34,7 @@ function Split(props: SplitProps, ref) {
   const prefixCls = getPrefixCls('resizebox-split');
   const isHorizontal = direction === DIRECTION_HORIZONTAL;
   const isTriggerHorizontal = !isHorizontal;
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${isHorizontal ? DIRECTION_HORIZONTAL : DIRECTION_VERTICAL}`,
     className
@@ -163,9 +163,9 @@ function Split(props: SplitProps, ref) {
 
   const Tag = component as any;
   return (
-    <Tag style={style} className={classNames} ref={wrapperRef}>
+    <Tag style={style} className={classes} ref={wrapperRef}>
       <div
-        className={cs(`${prefixCls}-pane`, 'first-pane')}
+        className={classNames(`${prefixCls}-pane`, 'first-pane')}
         style={{ flexBasis: getFirstPaneSize() }}
         ref={(el) => {
           paneContainers.current[0] = el;
@@ -185,7 +185,7 @@ function Split(props: SplitProps, ref) {
         </ResizeTrigger>
       )}
       <div
-        className={cs(`${prefixCls}-pane`, 'second-pane')}
+        className={classNames(`${prefixCls}-pane`, 'second-pane')}
         ref={(el) => {
           paneContainers.current[1] = el;
         }}

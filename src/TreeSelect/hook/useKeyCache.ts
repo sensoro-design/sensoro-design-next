@@ -1,7 +1,7 @@
 import { useRef, useContext } from 'react';
 import { NodeProps } from '../../Tree/interface';
 import { ConfigContext } from '../../ConfigProvider';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { TreeSelectDataType, DefaultFieldNames } from '../interface';
 import useUpdate from '../../_util/hooks/useUpdate';
 import useForceUpdate from '../../_util/hooks/useForceUpdate';
@@ -37,7 +37,7 @@ const getKey2NodeProps = (treedata, prefixCls, fieldNames): KeyCacheType => {
       };
 
       if (totalLength === index + 1) {
-        nodeProps.className = cs(`${prefixCls}-node-is-tail`, nodeProps.className);
+        nodeProps.className = classNames(`${prefixCls}-node-is-tail`, nodeProps.className);
       }
 
       nodeList.push(nodeProps);

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { StepProps } from './interface';
 
 import CheckOutlined from '@sensoro-design/icons/CheckOutlined';
@@ -65,7 +65,7 @@ function Step(props: StepProps, ref) {
     }
   }
 
-  const classNames = cs(
+  const classes = classNames(
     `${prefixCls}-item`,
     `${prefixCls}-item-${currentStatus}`,
     {
@@ -88,7 +88,7 @@ function Step(props: StepProps, ref) {
     : iconNodeWrapped;
 
   return (
-    <div ref={ref} className={classNames} style={style} onClick={onClickStep}>
+    <div ref={ref} className={classes} style={style} onClick={onClickStep}>
       {!lineless && (labelPlacement === 'vertical' || direction === 'vertical') && (
         <div className={`${prefixCls}-item-tail`} />
       )}

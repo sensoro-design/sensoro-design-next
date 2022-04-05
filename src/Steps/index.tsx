@@ -1,5 +1,5 @@
 import React, { useContext, ReactElement, forwardRef } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Step from './step';
 import { ConfigContext } from '../ConfigProvider';
 import { StepsProps } from './interface';
@@ -46,7 +46,7 @@ function Steps(baseProps: StepsProps, ref) {
     innerDirection = 'horizontal';
   }
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-${innerDirection}`,
     `${prefixCls}-label-${innerLabelPlacement}`,
@@ -60,7 +60,7 @@ function Steps(baseProps: StepsProps, ref) {
   );
 
   return (
-    <div ref={ref} style={style} className={classNames}>
+    <div ref={ref} style={style} className={classes}>
       {React.Children.toArray(children)
         .filter(
           (child: ReactElement) =>

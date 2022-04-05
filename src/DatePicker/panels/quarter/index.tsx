@@ -3,7 +3,7 @@ import merge from 'lodash/merge';
 import { Dayjs } from 'dayjs';
 import { QuarterPickerProps, ModeType, PrivateCType } from '../../interface';
 import { dayjs } from '../../../_util/dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../../../ConfigProvider';
 import Header from '../header';
 import Body from '../body';
@@ -53,7 +53,7 @@ function QuarterPicker(props: InnerQuarterPickerProps & PrivateCType) {
 
   const prefixCls = getPrefixCls('panel-quarter');
 
-  const classNames = cs(prefixCls);
+  const classes = classNames(prefixCls);
 
   const bodyProps = isRangePicker ? { rangeValues } : { value };
 
@@ -107,7 +107,7 @@ function QuarterPicker(props: InnerQuarterPickerProps & PrivateCType) {
   }
 
   return (
-    <div className={classNames} style={style}>
+    <div className={classes} style={style}>
       <Header
         {...headerOperations}
         icons={icons}

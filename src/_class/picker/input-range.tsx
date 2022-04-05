@@ -9,7 +9,7 @@ import React, {
 import { Dayjs } from 'dayjs';
 import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 import IconHover from '../../_class/icon-hover';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { Enter, Tab } from '../../_util/keycode';
 import omit from '../../_util/omit';
 import { ConfigContext } from '../../ConfigProvider';
@@ -120,7 +120,7 @@ function DateInput(
   const prefixCls = getPrefixCls('picker');
   const size = propSize || ctxSize;
 
-  const inputClassNames = cs(
+  const inputClassNames = classNames(
     prefixCls,
     `${prefixCls}-range`,
     `${prefixCls}-size-${size}`,
@@ -141,7 +141,7 @@ function DateInput(
   const readOnlyProps = editable ? {} : { readOnly: true };
 
   function getFocusInputClassName(index: number) {
-    return cs(`${prefixCls}-input`, {
+    return classNames(`${prefixCls}-input`, {
       [`${prefixCls}-input-active`]: focusedInputIndex === index,
       [`${prefixCls}-input-placeholder`]: isPlaceholder && focusedInputIndex === index,
     });

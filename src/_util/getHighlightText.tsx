@@ -1,6 +1,6 @@
 import React from 'react';
 import { isArray } from './is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 
 export default function getHighlightText<T>({
   nodeList,
@@ -35,7 +35,7 @@ export default function getHighlightText<T>({
 
             // 当前匹配项
             result.push(
-              <span key={index} className={cs(highlightClassName)}>
+              <span key={index} className={classNames(highlightClassName)}>
                 {match}
               </span>
             );

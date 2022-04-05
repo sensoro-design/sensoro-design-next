@@ -16,7 +16,7 @@ import { ConfigContext } from '../ConfigProvider';
 import Store from './base/store';
 import SelectView, { SelectViewHandle } from '../_class/select-view';
 import { CascaderProps, OptionProps } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useMergeValue from '../_util/hooks/useMergeValue';
 import useUpdate from '../_util/hooks/useUpdate';
 import { Enter, Tab } from '../_util/keycode';
@@ -256,7 +256,7 @@ function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
 
     return (
       <div
-        className={cs(`${prefixCls}-popup`, {
+        className={classNames(`${prefixCls}-popup`, {
           [`${prefixCls}-popup-trigger-hover`]: props.expandTrigger === 'hover',
         })}
       >

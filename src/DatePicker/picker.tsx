@@ -5,7 +5,7 @@ import DateInput from '../_class/picker/input';
 import { PickerProps, CalendarValue, ShortcutType, ModeType } from './interface';
 import { TimePickerProps } from '../TimePicker/interface';
 import { isArray, isDayjs, isObject } from '../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import omit from '../_util/omit';
 import {
@@ -413,7 +413,7 @@ const Picker = (baseProps: InnerPickerProps) => {
   }
 
   function renderPopup(panelOnly?: boolean) {
-    const classNames = cs(
+    const classes = classNames(
       `${prefixCls}-container`,
       {
         [`${prefixCls}-panel-only`]: panelOnly,
@@ -483,7 +483,7 @@ const Picker = (baseProps: InnerPickerProps) => {
 
     return (
       <div
-        className={classNames}
+        className={classes}
         onClick={() => {
           refInput.current && refInput.current.focus && refInput.current.focus();
         }}

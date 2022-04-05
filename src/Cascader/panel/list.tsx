@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import isEqualWith from 'lodash/isEqualWith';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Option from './option';
 import { isFunction } from '../../_util/is';
 import { CascaderPanelProps, OptionProps } from '../interface';
@@ -298,7 +298,7 @@ const ListPanel = <T extends OptionProps>(props: CascaderPanelProps<T>) => {
             <div className={`${prefixCls}-list-column`} style={{ zIndex: menus.length - level }}>
               {dropdownColumnRender(
                 <div
-                  className={cs(`${prefixCls}-list-wrapper`, {
+                  className={classNames(`${prefixCls}-list-wrapper`, {
                     [`${prefixCls}-list-wrapper-with-footer`]: footer !== null,
                   })}
                 >
@@ -307,7 +307,7 @@ const ListPanel = <T extends OptionProps>(props: CascaderPanelProps<T>) => {
                   ) : (
                     <ul
                       ref={(node) => setRefWrapper(node, level)}
-                      className={cs(`${prefixCls}-list`, `${prefixCls}-list-select`, {
+                      className={classNames(`${prefixCls}-list`, `${prefixCls}-list-select`, {
                         [`${prefixCls}-list-multiple`]: multiple,
                       })}
                     >
@@ -319,7 +319,7 @@ const ListPanel = <T extends OptionProps>(props: CascaderPanelProps<T>) => {
                         return (
                           <li
                             key={option.value}
-                            className={cs(`${prefixCls}-list-item`, {
+                            className={classNames(`${prefixCls}-list-item`, {
                               [`${prefixCls}-list-item-active`]: isActive,
                               [`${prefixCls}-list-item-disabled`]: option.disabled,
                             })}

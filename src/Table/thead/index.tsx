@@ -2,7 +2,7 @@ import React, { useMemo, CSSProperties, ReactElement } from 'react';
 import { TheadProps } from '../interface';
 import Checkbox from '../../Checkbox';
 import Column from './column';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import useComponent from '../hooks/useComponent';
 import { INTERNAL_EXPAND_KEY, INTERNAL_SELECTION_KEY } from '../constant';
 
@@ -44,14 +44,14 @@ function THead<T>(props: TheadProps<T>) {
 
   const selectionRowSpanProps = groupColumns.length > 1 ? { rowSpan: groupColumns.length } : {};
 
-  const operationClassName = cs(`${prefixCls}-th`, `${prefixCls}-operation`);
+  const operationClassName = classNames(`${prefixCls}-th`, `${prefixCls}-operation`);
 
   return (
     <ComponentThead>
       {groupColumns.map((row, index) => {
         const headerRowProps = onHeaderRow && onHeaderRow(row, index);
         const selectionNode = (_checkbox || isRadio) && index === 0 && (
-          <th className={cs(operationClassName, `${prefixCls}-${isRadio ? 'radio' : 'checkbox'}`)}>
+          <th className={classNames(operationClassName, `${prefixCls}-${isRadio ? 'radio' : 'checkbox'}`)}>
             <div className={`${prefixCls}-th-item`}>
               {_checkAll && !isRadio ? (
                 <Checkbox
@@ -75,7 +75,7 @@ function THead<T>(props: TheadProps<T>) {
         );
 
         const expandNode = expandedRowRender && (
-          <th className={cs(operationClassName, `${prefixCls}-expand`)}>
+          <th className={classNames(operationClassName, `${prefixCls}-expand`)}>
             {expandColumnTitle && <div className={`${prefixCls}-th-item`}>{expandColumnTitle}</div>}
           </th>
         );
@@ -110,7 +110,7 @@ function THead<T>(props: TheadProps<T>) {
                   key: column.key || colIndex,
                   ...operationNode.props,
                   ...selectionRowSpanProps,
-                  className: cs(
+                  className: classNames(
                     isExtraOperation ? operationClassName : '',
                     operationNode?.props?.className,
                     stickyClassName
@@ -130,7 +130,7 @@ function THead<T>(props: TheadProps<T>) {
 
               const headerCellProps = column.onHeaderCell && column.onHeaderCell(column, colIndex);
 
-              const columnClassName = cs(stickyClassName, column.className);
+              const columnClassName = classNames(stickyClassName, column.className);
 
               const columnFixedStyle: CSSProperties = {};
 

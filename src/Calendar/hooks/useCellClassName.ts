@@ -1,5 +1,5 @@
 import { Dayjs } from 'dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isArray } from '../../_util/is';
 import { getNow } from '../../_util/dayjs';
 
@@ -52,7 +52,7 @@ export default function useClassName(props) {
       isToday = getNow().isSame(cellDateObj.time, 'date');
     }
 
-    return cs(`${prefixCls}-cell`, {
+    return classNames(`${prefixCls}-cell`, {
       [`${prefixCls}-cell-in-view`]: isInView,
       [`${prefixCls}-cell-today`]: isToday,
       [`${prefixCls}-cell-selected`]: mergedValue && isSameTime(cellDateObj.time, mergedValue),

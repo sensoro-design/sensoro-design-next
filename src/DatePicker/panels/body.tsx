@@ -1,6 +1,6 @@
 import React, { useContext, ReactNode } from 'react';
 import { Dayjs } from 'dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import WeekList from './week-list';
 import useCellClassName from '../hooks/useCellClassName';
 import { CalendarValue } from '../interface';
@@ -84,7 +84,7 @@ function Body(props: PanelBodyProps) {
       }
       if ('weekOfYear' in col) {
         return (
-          <div key={index} className={cs(`${prefixCls}-cell`, `${prefixCls}-cell-week`)}>
+          <div key={index} className={classNames(`${prefixCls}-cell`, `${prefixCls}-cell-week`)}>
             <div className={`${prefixCls}-date`}>
               <div className={`${prefixCls}-date-value`}>{col.weekOfYear}</div>
             </div>
@@ -108,7 +108,7 @@ function Body(props: PanelBodyProps) {
         {rows.map((row, index) => (
           <div
             key={index}
-            className={cs(`${prefixCls}-row`, { [`${prefixCls}-row-week`]: isWeek })}
+            className={classNames(`${prefixCls}-row`, { [`${prefixCls}-row-week`]: isWeek })}
           >
             {renderRow(row)}
           </div>

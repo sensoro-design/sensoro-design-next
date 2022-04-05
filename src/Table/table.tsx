@@ -12,7 +12,7 @@ import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
 import BTween from 'b-tween';
 import { isObject, isArray } from '../_util/is';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Spin, { SpinProps } from '../Spin';
 import { TableProps, ColumnProps, SorterResult, GetRowKeyType } from './interface';
 import Thead from './thead/index';
@@ -835,7 +835,7 @@ function Table<T extends unknown>(baseProps: TableProps<T>, ref: React.Ref<Table
   const showHeaderCellBorder = isObject(border) ? border.cell || border.headerCell : borderCell;
   const showBodyCellBorder = isObject(border) ? border.cell || border.bodyCell : borderCell;
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-size-${size}`,
     {
@@ -858,7 +858,7 @@ function Table<T extends unknown>(baseProps: TableProps<T>, ref: React.Ref<Table
   const isPaginationTop =
     pagePosition === 'tl' || pagePosition === 'tr' || pagePosition === 'topCenter';
 
-  const paginationClassName = cs(`${prefixCls}-pagination`, {
+  const paginationClassName = classNames(`${prefixCls}-pagination`, {
     [`${prefixCls}-pagination-left`]: pagePosition === 'tl' || pagePosition === 'bl',
     [`${prefixCls}-pagination-center`]:
       pagePosition === 'topCenter' || pagePosition === 'bottomCenter',
@@ -880,7 +880,7 @@ function Table<T extends unknown>(baseProps: TableProps<T>, ref: React.Ref<Table
   );
 
   return (
-    <div ref={refTable} style={style} className={classNames}>
+    <div ref={refTable} style={style} className={classes}>
       <Spin element={loadingElement || <Spin />} {...loading}>
         {pagination !== false && pageData.length !== 0 && isPaginationTop && paginationEle}
         {renderTable()}

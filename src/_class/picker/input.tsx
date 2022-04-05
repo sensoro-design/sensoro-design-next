@@ -6,7 +6,7 @@ import React, {
   CSSProperties,
   ReactNode,
 } from 'react';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { Dayjs } from 'dayjs';
 import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
 
@@ -99,7 +99,7 @@ function DateInput(
   const readOnlyProps = editable ? {} : { readOnly: true };
 
   const prefixCls = propPrefixCls || getPrefixCls('picker');
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-size-${size}`,
     {
@@ -111,9 +111,9 @@ function DateInput(
   );
 
   return (
-    <div style={style} className={classNames} {...omit(rest, ['onChange', 'onPressEnter'])}>
+    <div style={style} className={classes} {...omit(rest, ['onChange', 'onPressEnter'])}>
       <div
-        className={cs(`${prefixCls}-input`, { [`${prefixCls}-input-placeholder`]: isPlaceholder })}
+        className={classNames(`${prefixCls}-input`, { [`${prefixCls}-input-placeholder`]: isPlaceholder })}
       >
         <input
           ref={input}

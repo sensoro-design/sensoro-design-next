@@ -2,7 +2,7 @@ import React, { useMemo, useContext } from 'react';
 import merge from 'lodash/merge';
 import { Dayjs } from 'dayjs';
 import { DatePickerProps, DisabledRangeTimeFunc, ModeType, PrivateCType } from '../../interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isObject } from '../../../_util/is';
 import { getTimeFormat, methods, getDayjsValue } from '../../../_util/dayjs';
 import { ConfigContext } from '../../../ConfigProvider';
@@ -141,7 +141,7 @@ function DatePicker(props: InnerDatePickerProps & PrivateCType) {
 
   const prefixCls = getPrefixCls(isWeek ? 'panel-week' : 'panel-date');
 
-  const classNames = cs(prefixCls);
+  const classes = classNames(prefixCls);
 
   const bodyProps = isRangePicker ? { rangeValues } : { value };
 
@@ -250,7 +250,7 @@ function DatePicker(props: InnerDatePickerProps & PrivateCType) {
   }
 
   return (
-    <div className={classNames} style={style}>
+    <div className={classes} style={style}>
       {showTime && isTimePanel ? (
         renderTimePicker()
       ) : (

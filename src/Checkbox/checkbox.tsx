@@ -1,6 +1,6 @@
 import React, { useContext, useCallback, useRef, useEffect } from 'react';
 import Group, { CheckboxGroupContext } from './group';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import useCheckbox from './useCheckbox';
 import useMergeValue from '../_util/hooks/useMergeValue';
@@ -35,7 +35,7 @@ function Checkbox<T extends React.ReactText>(baseProps: CheckboxProps<T>, ref) {
     defaultValue: mergeProps.defaultChecked,
   });
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     {
       [`${prefixCls}-disabled`]: !!disabled,
@@ -83,7 +83,7 @@ function Checkbox<T extends React.ReactText>(baseProps: CheckboxProps<T>, ref) {
       ref={ref}
       {...omit(rest, ['onChange'])}
       onClick={onLabelClick}
-      className={classNames}
+      className={classes}
       style={style}
     >
       <input

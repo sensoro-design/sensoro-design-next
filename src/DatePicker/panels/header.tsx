@@ -4,7 +4,7 @@ import DoubleLeftOutlined from '@sensoro-design/icons/DoubleLeftOutlined';
 import DoubleRightOutlined from '@sensoro-design/icons/DoubleRightOutlined';
 import RightOutlined from '@sensoro-design/icons/RightOutlined';
 import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ModeType, IconsType } from '../interface';
 
 export interface HeaderProps {
@@ -40,7 +40,7 @@ function Header(props: HeaderProps) {
   const showSuperNext = typeof onSuperNext === 'function';
 
   const getIconClassName = (isShow) => {
-    return cs(`${prefixCls}-header-icon`, { [`${prefixCls}-header-icon-hidden`]: !isShow });
+    return classNames(`${prefixCls}-header-icon`, { [`${prefixCls}-header-icon-hidden`]: !isShow });
   };
 
   function renderHeaderLabel() {

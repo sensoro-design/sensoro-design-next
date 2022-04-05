@@ -2,7 +2,7 @@ import React, { ReactNode, ReactElement, useState, useEffect, useContext, forwar
 import PageItem, { StepType, JumpPager, StepPager } from './page-item';
 import PageOption from './page-options';
 import PageJumper from './page-jumper';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { ConfigContext } from '../ConfigProvider';
 import { PaginationProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
@@ -134,7 +134,7 @@ function Pagination(baseProps: PaginationProps, ref) {
   const size = props.size || ctxSize;
   const prefixCls = getPrefixCls('pagination');
   const innerSize = size;
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     `${prefixCls}-size-${innerSize}`,
     {
@@ -282,7 +282,7 @@ function Pagination(baseProps: PaginationProps, ref) {
   }
 
   return (
-    <div className={classNames} style={style} ref={ref}>
+    <div className={classes} style={style} ref={ref}>
       {totalElement}
       {renderPager}
       <PageOption

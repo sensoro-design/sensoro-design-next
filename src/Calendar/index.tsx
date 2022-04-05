@@ -3,7 +3,7 @@ import { Dayjs, UnitType } from 'dayjs';
 import merge from 'lodash/merge';
 import { ConfigContext } from '../ConfigProvider';
 import { CalendarProps } from './interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Month, { getAllDaysByTime } from './month';
 import Year from './year';
 import Header from './header/header';
@@ -128,7 +128,7 @@ function Calendar(baseProps: CalendarProps) {
     setMode(mode);
   }
 
-  const classNames = cs(
+  const classes = classNames(
     prefixCls,
     innerMode === 'month' ? `${prefixCls}-mode-month` : `${prefixCls}-mode-year`,
     {
@@ -150,7 +150,7 @@ function Calendar(baseProps: CalendarProps) {
   };
 
   return (
-    <div className={classNames} style={{ ...style, ...baseStyle }}>
+    <div className={classes} style={{ ...style, ...baseStyle }}>
       {typeof headerRender === 'function' ? (
         headerRender({
           value: mergedValue,

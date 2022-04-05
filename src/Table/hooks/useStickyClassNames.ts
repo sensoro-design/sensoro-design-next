@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { InternalColumnProps } from '../interface';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isObject } from '../../_util/is';
 
 // get sticky cell's className
@@ -12,7 +12,7 @@ function useStickyClassNames(
   const colFixed = columns.map((c) => c.fixed);
 
   function getClassNameFromColumn(column, index) {
-    return cs({
+    return classNames({
       [`${prefixCls}-col-fixed-left`]: column.fixed === 'left',
       [`${prefixCls}-col-fixed-right`]: column.fixed === 'right',
       [`${prefixCls}-col-fixed-left-last`]:

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 
 import { ConfigContext } from '../../ConfigProvider';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import Item from './item';
 import { DraggableProps } from './interface';
 
@@ -13,7 +13,7 @@ export default function Draggable(props: DraggableProps) {
   const [dragItemIndex, setDragItemIndex] = useState(null);
 
   return (
-    <div className={cs(prefixCls, className)}>
+    <div className={classNames(prefixCls, className)}>
       {React.Children.map(children, (child, index) => {
         return (
           <Item

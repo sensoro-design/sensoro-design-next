@@ -1,5 +1,5 @@
 import { Dayjs } from 'dayjs';
-import cs from '@pansy/classnames';
+import classNames from '@pansy/classnames';
 import { isArray } from '../../_util/is';
 import { getNow, getSortedDayjsArray } from '../../_util/dayjs';
 import { getAvailableDayjsLength } from '../util';
@@ -105,7 +105,7 @@ export default function useClassName(props) {
         isInRange(hoverRangeEnd, rangeStart, rangeEnd);
     }
 
-    return cs(`${prefixCls}-cell`, {
+    return classNames(`${prefixCls}-cell`, {
       [`${prefixCls}-cell-disabled`]: disabled,
       [`${prefixCls}-cell-hidden`]: hideNotInViewDates && !isInView,
       [`${prefixCls}-cell-in-view`]: isInView,

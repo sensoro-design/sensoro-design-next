@@ -1,6 +1,5 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import cs from '@pansy/classnames';
-
+import classNames from '@pansy/classnames';
 import LeftOutlined from '@sensoro-design/icons/LeftOutlined';
 import RightOutlined from '@sensoro-design/icons/RightOutlined';
 import MoreOutlined from '@sensoro-design/icons/MoreOutlined';
@@ -81,7 +80,7 @@ function Pager(props: PagerProps) {
 
   const prefixCls = `${rootPrefixCls}-item`;
   const isActive = current === pageNum;
-  const classnames = cs(prefixCls, isActive ? `${prefixCls}-active` : '');
+  const classes = classNames(prefixCls, isActive ? `${prefixCls}-active` : '');
 
   let style = pageItemStyle;
   if (isActive) {
@@ -89,7 +88,7 @@ function Pager(props: PagerProps) {
   }
 
   return (
-    <li style={style} className={classnames} data-active={isActive} onClick={onClick}>
+    <li style={style} className={classes} data-active={isActive} onClick={onClick}>
       {itemRender ? itemRender(pageNum, 'page', pageNum) : pageNum}
     </li>
   );
@@ -120,7 +119,7 @@ export const JumpPager = (props: JumpPagerProps) => {
   const nextPage = Math.min(allPages, Math.max(minCurrent, current + jumpPage));
   const prefix = `${rootPrefixCls}-item ${rootPrefixCls}-item-jumper`;
 
-  const cls = cs(prefix);
+  const cls = classNames(prefix);
   const onClick = () => {
     !disabled && props.onClick && props.onClick(nextPage);
   };
@@ -161,7 +160,7 @@ export const StepPager = (props: StepPagerProps) => {
 
   const pageType = StepType.previous === type ? 'prev' : 'next';
 
-  const cls = cs(prefixCls, `${prefixCls}-${pageType}`, {
+  const cls = classNames(prefixCls, `${prefixCls}-${pageType}`, {
     [`${prefixCls}-disabled`]: innerDisabled,
   });
   const onClick = () => {
