@@ -7,7 +7,7 @@ import { Avatar, Button } from '@sensoro-design/react';
 
 export default () => {
   const [index, setIndex] = useState(0);
-  const list = ['B', 'Arco', 'Design', 'Tom', 'AD'];
+  const list = ['B', 'Sensoro', 'Design', 'Tom', 'AD'];
 
   return (
     <div>
