@@ -1,6 +1,7 @@
 /**
  * title: 更灵活的内容展示
  * desc: 使用 `Card.Meta` 支持更加灵活的内容（封面、头像、 标题、描述信息）
+ * background: var(--color-fill-2)
  */
 import { Card } from '@sensoro-design/react';
 

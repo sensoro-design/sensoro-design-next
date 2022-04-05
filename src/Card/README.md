@@ -18,13 +18,9 @@ nav:
 
 <code src="./__demo__/hoverable.demo.tsx" />
 
-### 鼠标悬浮样式
+### 边框卡片
 
-<code src="./__demo__/hoverable.demo.tsx" />
-
-### 无边框卡片
-
-<code src="./__demo__/no-border.demo.tsx" />
+<code src="./__demo__/border.demo.tsx" />
 
 ### 简洁卡片
 
@@ -66,7 +62,7 @@ nav:
 |---|---|---|---|
 |style|节点样式|`CSSProperties`|`-`|
 |className|节点类名|`string \| string[]`|`-`|
-|bordered|是否有边框|`boolean`|`true`|
+|bordered|是否有边框|`boolean`|`false`|
 |loading|是否为加载中|`boolean`|`-`|
 |hoverable|是否可悬浮|`boolean`|`-`|
 |size|卡片尺寸|`'default' \| 'small'`|`default`|

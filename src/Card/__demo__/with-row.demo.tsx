@@ -1,6 +1,7 @@
 /**
  * title: 栅格卡片
  * desc: 在系统概览页面常常和栅格进行配合。
+ * background: var(--color-fill-2)
  */
 import { Card, Grid, Link } from '@sensoro-design/react';
 

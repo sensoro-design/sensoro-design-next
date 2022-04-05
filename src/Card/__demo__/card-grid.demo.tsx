@@ -2,6 +2,7 @@
 /**
  * title: 网络型内嵌卡片
  * desc: 通过 `Card.Grid` 来使用卡片内容区隔模式。
+* background: var(--color-fill-2)
  */
 import { Card, Link } from '@sensoro-design/react';
 import './styles.less';
@@ -10,7 +11,7 @@ const { Grid } = Card;
 
 export default () => {
   return (
-    <Card bordered={false} style={{ width: '100%' }}>
+    <Card style={{ width: '100%' }}>
       {new Array(7).fill(null).map((_, index) => {
         const hoverable = index % 2 === 0;
         return (
@@ -20,7 +21,6 @@ export default () => {
               style={{ width: '100%' }}
               title="Arco Card"
               extra={<Link>More</Link>}
-              bordered={false}
             >
               {new Array(2).fill(null).map((_, index) => (
                 <p style={{ margin: 0 }} key={index}>

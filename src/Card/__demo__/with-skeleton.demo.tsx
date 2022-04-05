@@ -1,6 +1,7 @@
 /**
  * title: 预加载的卡片
  * desc: 结合 `Skeleton` 来在数据读入前显示文本骨架。
+ * background: var(--color-fill-2)
  */
 import { useState } from 'react';
 import { Card, Switch, Skeleton, Avatar, Link, Typography } from '@sensoro-design/react';

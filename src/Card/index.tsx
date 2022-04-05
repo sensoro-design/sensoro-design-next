@@ -9,12 +9,13 @@ import useMergeProps from '../_util/hooks/useMergeProps';
 
 const defaultProps: CardProps = {
   size: 'default',
-  bordered: true,
+  bordered: false,
 };
 
 function Card(baseProps: CardProps, ref) {
   const { getPrefixCls, loadingElement, componentConfig } = useContext(ConfigContext);
   const props = useMergeProps<CardProps>(baseProps, defaultProps, componentConfig?.Card);
+
   const {
     className,
     children,

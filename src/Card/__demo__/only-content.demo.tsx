@@ -1,6 +1,7 @@
 /**
  * title: 简洁卡片
  * desc: 卡片可以只有内容区域。
+ * background: var(--color-fill-2)
  */
 import { Card, Avatar, Link, Typography } from '@sensoro-design/react';
 import ArrowRightOutlined from '@sensoro-design/icons/ArrowRightOutlined';

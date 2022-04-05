@@ -1,6 +1,7 @@
 /**
  * title: 带页签的卡片
  * desc: 举例来说，可以在卡片组件里面使用 `Tabs` 标签页组件。
+ * background: var(--color-fill-2)
  */
 import { Card, Tabs, Link } from '@sensoro-design/react';
 

@@ -1,6 +1,7 @@
 /**
  * title: 支持更多内容配置
  * desc: `actions` 字段接收一个 `ReactNode` 数组，用于展示底部按钮组。
+ * background: var(--color-fill-2)
  */
 import { Card, Avatar, Typography } from '@sensoro-design/react';
 

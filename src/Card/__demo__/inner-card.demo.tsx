@@ -1,6 +1,7 @@
 /**
  * title: 内部卡片
  * desc: 卡片中可以嵌套其他卡片组件。
+ * background: var(--color-fill-2)
  */
 import { Card, Link } from '@sensoro-design/react';
 
