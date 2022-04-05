@@ -6,8 +6,6 @@
   "main": "./lib/index.js",
   "types": "./es/index.d.ts",
   "scripts": {
-    "prepublishOnly": "yarn icon && yarn build",
-    "init": "./scripts/init.sh",
     "start": "dumi dev",
     "build:dist": "arco-scripts build:component:dist",
     "build:dist:dev": "cross-env BUILD_ENV_MODE=development BUILD_ENV_DIST_FILENAME_JS=arco.development.js arco-scripts build:component:dist",
