@@ -6,16 +6,24 @@ import { Alert, Button, Space } from '@sensoro-design/react';
 
 export default () => {
   return (
-    <div>
+    <>
       <Alert
         content="Here is an example text"
-        action={<Button size="mini" type="primary">Detail</Button>}
+        action={
+          <Button size="mini" type="primary">
+            Detail
+          </Button>
+        }
         closable
       />
       <Alert
         title="Example"
         content="Here is an example text"
-        action={<Button size="mini" type="primary">Detail</Button>}
+        action={
+          <Button size="mini" type="primary">
+            Detail
+          </Button>
+        }
         closable
         style={{ marginTop: 10 }}
       />
@@ -24,12 +32,16 @@ export default () => {
         content="Here is an example text"
         action={
           <Space direction="vertical">
-            <Button size="mini" type="primary">Detail</Button>
-            <Button size="mini" type="primary" status="danger">Close</Button>
+            <Button size="mini" type="primary">
+              Detail
+            </Button>
+            <Button size="mini" type="primary" status="danger">
+              Close
+            </Button>
           </Space>
         }
         style={{ marginTop: 10 }}
       />
-    </div>
-  )
-}
+    </>
+  );
+};
