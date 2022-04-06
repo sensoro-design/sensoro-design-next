@@ -10,13 +10,13 @@ nav:
 
 ## 代码演示
 
-### 动态编辑标签
-
-<code src="./__demo__/active.demo.tsx" />
-
 ### 基础用法
 
 <code src="./__demo__/basic.demo.tsx" />
+
+### 动态编辑标签
+
+<code src="./__demo__/active.demo.tsx" />
 
 ### 带边框的标签
 

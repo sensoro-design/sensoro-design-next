@@ -2,7 +2,7 @@
 title: Sensoro Design
 hero:
   title: Sensoro Design
-  desc: 基于 AntDesign 的高质量 React 组件，为提效而生。
+  desc: 企业级产品设计体系，创造高效愉悦的工作体验。
   actions:
     - text: 快速上手 →
       link: /guide/getting-started
@@ -23,10 +23,10 @@ footer: SENSORO FE Team | Copyright © 2020-present
 
 ```
 # 安装依赖
-$ yarn add @sensoro/sensoro-design
+$ yarn add @sensoro-design/react
 
 # 使用
-import { Button } from '@sensoro/sensoro-design';
+import { Button } from '@sensoro-design/react';
 
 const Example = () => {
   return (
