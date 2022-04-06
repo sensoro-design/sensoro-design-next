@@ -17,6 +17,5 @@ export default () => {
       <AnchorLink href="#Scroll-boundary" title="Scroll boundary" />
       <AnchorLink href="#Hash-mode" title="Hash mode" />
     </Anchor>
-  )
-}
-
+  );
+};

@@ -1,17 +1,11 @@
-import React, {
-  forwardRef,
-  useContext,
-  useEffect,
-  useImperativeHandle,
-  useRef,
-  isValidElement,
-} from 'react';
+import React, { forwardRef, useContext, useEffect, useImperativeHandle, useRef, isValidElement } from 'react';
 import classNames from '@pansy/classnames';
 import AnchorContext from './context';
-import { AnchorLinkProps } from './interface';
 import { ConfigContext } from '../ConfigProvider';
 import { isString, isObject } from '../_util/is';
 import useMergeProps from '../_util/hooks/useMergeProps';
+
+import type { AnchorLinkProps } from './interface';
 
 type AnchorLinkHandle = HTMLDivElement;
 
@@ -32,7 +26,7 @@ function Link(baseProps: AnchorLinkPropsWithChildren, ref) {
   const { className, style, href, title, children } = useMergeProps<AnchorLinkPropsWithChildren>(
     baseProps,
     defaultProps,
-    componentConfig?.['Anchor.Link']
+    componentConfig?.['Anchor.Link'],
   );
   const anchorContext = useContext(AnchorContext);
   const { currentLink, addLink, removeLink, onLinkClick } = anchorContext;
@@ -42,7 +36,7 @@ function Link(baseProps: AnchorLinkPropsWithChildren, ref) {
     {
       [`${prefixCls}-active`]: currentLink === href,
     },
-    className
+    className,
   );
   const linkRef = useRef<HTMLDivElement>(null);
 
@@ -70,20 +64,13 @@ function Link(baseProps: AnchorLinkPropsWithChildren, ref) {
       </a>
       {children &&
         React.Children.map(children, (item) => {
-          return (
-            isValidElement(item) &&
-            isNamedComponent(item.type) &&
-            item.type.displayName === DISPLAY_NAME &&
-            item
-          );
+          return isValidElement(item) && isNamedComponent(item.type) && item.type.displayName === DISPLAY_NAME && item;
         })}
     </div>
   );
 }
 
-const AnchorLinkComponent = forwardRef<AnchorLinkHandle, React.PropsWithChildren<AnchorLinkProps>>(
-  Link
-);
+const AnchorLinkComponent = forwardRef<AnchorLinkHandle, React.PropsWithChildren<AnchorLinkProps>>(Link);
 
 AnchorLinkComponent.displayName = DISPLAY_NAME;
 

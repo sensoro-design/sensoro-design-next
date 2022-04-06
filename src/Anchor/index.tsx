@@ -1,6 +1,2 @@
-import Anchor from './anchor';
-import { AnchorProps } from './interface';
-
-export default Anchor;
-
-export { AnchorProps };
+export { default } from './anchor';
+export type { AnchorProps, AnchorLinkProps } from './interface';
