@@ -1,13 +1,15 @@
-import React, { useState, useContext, forwardRef, CSSProperties } from 'react';
+import React, { useState, useContext, forwardRef } from 'react';
 import classNames from '@pansy/classnames';
 import { LoadingOutlined } from '../IconLoading';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
-import { TagProps } from './interface';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
 import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+
+import type { TagProps } from './interface';
+import type { CSSProperties } from 'react';
 
 // 色板里的 12 个颜色
 const COLORS = [
@@ -53,9 +55,7 @@ function Tag(baseProps: TagProps, ref) {
   const prefixCls = getPrefixCls('tag');
 
   const [visible, setVisible] = useState<boolean>('visible' in props ? props.visible : true);
-  const [checked, setChecked] = useState<boolean>(
-    'checked' in props ? props.checked : defaultChecked
-  );
+  const [checked, setChecked] = useState<boolean>('checked' in props ? props.checked : defaultChecked);
   const [loading, setLoading] = useState<boolean>();
 
   // controlled
@@ -102,7 +102,7 @@ function Tag(baseProps: TagProps, ref) {
       [`${prefixCls}-bordered`]: bordered,
       [`${prefixCls}-custom-color`]: _checked && color && !_color,
     },
-    className
+    className,
   );
 
   const colorStyle: CSSProperties = {
@@ -144,4 +144,4 @@ TagComponent.displayName = 'Tag';
 
 export default TagComponent;
 
-export { TagProps };
+export type { TagProps };

@@ -3,7 +3,6 @@
  * desc: 可以将星星替换为其他字符，比如表情、字母，数字，字体图标甚至中文。
  */
 import { Rate } from '@sensoro-design/react';
-
 import HeartFilled from '@sensoro-design/icons/HeartFilled';
 
 function TextWrapper(props) {
@@ -24,12 +23,8 @@ function TextWrapper(props) {
 
 export default () => {
   return (
-    <div>
-      <Rate
-        style={{ display: 'block', margin: '10px 0' }}
-        defaultValue={3}
-        character={<TextWrapper text="A" />}
-      />
+    <>
+      <Rate style={{ display: 'block', margin: '10px 0' }} defaultValue={3} character={<TextWrapper text="A" />} />
       <Rate
         style={{ display: 'block', margin: '10px 0' }}
         defaultValue={3}
@@ -47,6 +42,6 @@ export default () => {
         allowHalf
         character={<TextWrapper text={<HeartFilled style={{ fontSize: 18 }} />} />}
       />
-    </div>
-  )
-}
+    </>
+  );
+};

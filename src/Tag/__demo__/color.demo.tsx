@@ -38,10 +38,18 @@ const COLORS_CUSTOM = [
 
 export default () => {
   return (
-    <div>
-      {COLORS.map((color, i) => <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>{color}</Tag>)}
-      <h3 style={{color: 'var(--color-text-2)'}}>Custom Color</h3>
-      {COLORS_CUSTOM.map((color, i) => <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>{color}</Tag>)}
-    </div>
-  )
-}
+    <>
+      {COLORS.map((color, i) => (
+        <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>
+          {color}
+        </Tag>
+      ))}
+      <h3 style={{ color: 'var(--color-text-2)' }}>Custom Color</h3>
+      {COLORS_CUSTOM.map((color, i) => (
+        <Tag key={i} closable color={color} style={{ margin: '0 16px 16px 0 ' }}>
+          {color}
+        </Tag>
+      ))}
+    </>
+  );
+};
