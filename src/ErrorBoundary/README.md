@@ -12,6 +12,14 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
+### 自定义Result 
+
+<code src="./__demo__/result.demo.tsx" />
+
+### 自定义错误页面
+
+<code src="./__demo__/custom.demo.tsx" />
+
 ## API
 
 ### ErrorBoundary
