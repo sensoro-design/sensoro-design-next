@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import ErrorBoundary from '@ant-design/pro-utils/es/components/ErrorBoundary';
-import { Button } from '@sensoro-design/react';
+import { Button, ErrorBoundary } from '@sensoro-design/react';
 
 const ErrorTriggerTestPage = () => {
   // default to throw error for snapshot test
