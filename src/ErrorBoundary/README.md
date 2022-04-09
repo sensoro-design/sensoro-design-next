@@ -11,3 +11,13 @@ nav:
 ### 基础用法
 
 <code src="./__demo__/basic.demo.tsx" />
+
+## API
+
+### ErrorBoundary
+
+|参数名|描述|类型|默认值|版本|
+|---|---|---|---|---|
+|fallback|自定义节点样式|`ComponentType<{ errorInfo?: ErrorInfo; errorMessage?: string}>`|-|-|
+|resultProps|自定义结果组件|`ResultProps`|-|-|
+|onError|异常触发的回调|`(error: Error, info: ErrorInfo) => void;`|-|-|
