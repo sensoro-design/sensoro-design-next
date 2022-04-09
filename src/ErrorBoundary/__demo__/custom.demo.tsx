@@ -1,23 +1,7 @@
-import React, { useState } from 'react';
-import { Button, ErrorBoundary } from '@sensoro-design/react';
+import React from 'react';
+import { ErrorBoundary } from '@sensoro-design/react';
 
-const ErrorTriggerTestPage = () => {
-  // default to throw error for snapshot test
-  const [error, setError] = useState<boolean>(false);
-
-  if (error) throw new Error('渲染发生了错误');
-
-  return (
-    <Button
-      type="primary"
-      onClick={() => {
-        setError(true);
-      }}
-    >
-      触发错误
-    </Button>
-  );
-};
+import { ErrorTriggerTestPage } from './basic.demo';
 
 const Fallback = () => {
   return <div>页面出错了</div>;
@@ -25,7 +9,13 @@ const Fallback = () => {
 
 export default () => {
   return (
-    <ErrorBoundary fallback={Fallback}>
+    <ErrorBoundary
+      fallback={Fallback}
+      onError={(errorMessage, errorInfo) => {
+        console.log(errorInfo);
+        console.log(errorMessage);
+      }}
+    >
       <ErrorTriggerTestPage />
     </ErrorBoundary>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, ErrorBoundary } from '@sensoro-design/react';
 
-const ErrorTriggerTestPage = () => {
+export const ErrorTriggerTestPage = () => {
   // default to throw error for snapshot test
   const [error, setError] = useState<boolean>(false);
 
