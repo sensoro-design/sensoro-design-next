@@ -7,10 +7,7 @@ export default {
   favicon: logo,
   logo,
   resolve: {
-    includes: [
-      'docs',
-      'src',
-    ]
+    includes: ['docs', 'src'],
   },
   outputPath: 'site',
   navs: [
@@ -20,13 +17,13 @@ export default {
       children: [
         { title: 'AMap', path: 'https://amap.xingkang.wang' },
         { title: 'Watermark', path: 'https://watermark.xingkang.wang' },
-        { title: 'Hooks', path: 'https://hooks.xingkang.wang' }
-      ]
+        { title: 'Hooks', path: 'https://hooks.xingkang.wang' },
+      ],
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/sensoro-design/sensoro-design'
-    }
+      path: 'https://github.com/sensoro-design/sensoro-design',
+    },
   ],
   ignoreMomentLocale: true,
   // dynamicImport: {},
@@ -35,20 +32,11 @@ export default {
     '/components': [
       {
         title: '通用',
-        children: [
-          'Button/README.md',
-          'Link/README.md',
-          'Typography/README.md',
-        ],
+        children: ['Button/README.md', 'Link/README.md', 'Typography/README.md', 'ErrorBoundary/README.md'],
       },
       {
         title: '布局',
-        children: [
-          'Divider/README.md',
-          'Grid/README.md',
-          'Layout/README.md',
-          'Space/README.md',
-        ],
+        children: ['Divider/README.md', 'Grid/README.md', 'Layout/README.md', 'Space/README.md'],
       },
       {
         title: '数据展示',
@@ -95,7 +83,7 @@ export default {
           'Transfer/README.md',
           'TreeSelect/README.md',
           'Upload/README.md',
-        ]
+        ],
       },
       {
         title: '反馈',
@@ -135,7 +123,7 @@ export default {
           'Trigger/README.md',
         ],
       },
-    ]
+    ],
   },
   extraBabelPlugins: [
     [
@@ -144,7 +132,7 @@ export default {
         libraryName: '@sensoro-design/react',
         libraryDirectory: 'es',
         style: (name: string) => {
-          if(name === '@sensoro-design/lib/utils'){
+          if (name === '@sensoro-design/lib/utils') {
             return false;
           }
           return `${name}/style`;
@@ -153,10 +141,6 @@ export default {
       },
     ],
   ],
-  copy: isProduction ? [
-    './dist/css/sen.min.css'
-  ] : [],
-  links: isProduction ? [
-    { rel: 'stylesheet', href: '/sen.min.css' },
-  ]: [],
+  copy: isProduction ? ['./dist/css/sen.min.css'] : [],
+  links: isProduction ? [{ rel: 'stylesheet', href: '/sen.min.css' }] : [],
 };

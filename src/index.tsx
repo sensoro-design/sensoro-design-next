@@ -49,7 +49,14 @@ export { default as Comment } from './Comment';
 export type { ConfigProviderProps } from './ConfigProvider/interface';
 export { default as ConfigProvider } from './ConfigProvider';
 
-export type { DatePickerProps, MonthPickerProps, YearPickerProps, WeekPickerProps, QuarterPickerProps, RangePickerProps } from './DatePicker/interface';
+export type {
+  DatePickerProps,
+  MonthPickerProps,
+  YearPickerProps,
+  WeekPickerProps,
+  QuarterPickerProps,
+  RangePickerProps,
+} from './DatePicker/interface';
 export { default as DatePicker } from './DatePicker';
 
 export type { DescriptionsProps } from './Descriptions/interface';
@@ -134,7 +141,11 @@ export { default as ResizeBox } from './ResizeBox';
 export type { ResultProps } from './Result/interface';
 export { default as Result } from './Result';
 
-export type { SelectProps, OptionProps as SelectOptionProps, OptGroupProps as SelectOptionGroupProps } from './Select/interface';
+export type {
+  SelectProps,
+  OptionProps as SelectOptionProps,
+  OptGroupProps as SelectOptionGroupProps,
+} from './Select/interface';
 export { default as Select } from './Select';
 
 export type { SkeletonProps, SkeletonImageProps, SkeletonTextProps } from './Skeleton/interface';
@@ -158,7 +169,11 @@ export { default as Steps } from './Steps';
 export type { SwitchProps } from './Switch/interface';
 export { default as Switch } from './Switch';
 
-export type { TableProps, RowSelectionProps as TableRowSelectionProps, ColumnProps as TableColumnProps } from './Table/interface';
+export type {
+  TableProps,
+  RowSelectionProps as TableRowSelectionProps,
+  ColumnProps as TableColumnProps,
+} from './Table/interface';
 export { default as Table } from './Table';
 
 export type { TabsProps } from './Tabs/interface';
@@ -188,7 +203,12 @@ export { default as TreeSelect } from './TreeSelect';
 export type { TriggerProps } from './Trigger/interface';
 export { default as Trigger } from './Trigger';
 
-export type { TypographyProps, TypographyTextProps, TypographyParagraphProps, EllipsisConfig } from './Typography/interface';
+export type {
+  TypographyProps,
+  TypographyTextProps,
+  TypographyParagraphProps,
+  EllipsisConfig,
+} from './Typography/interface';
 export { default as Typography } from './Typography';
 
 export type { UploadProps } from './Upload/interface';
@@ -202,3 +222,5 @@ export { default as Operation } from './Operation';
 
 export type { ImageProps, ImagePreviewProps, ImagePreviewActionProps, ImagePreviewGroupProps } from './Image/interface';
 export { default as Image } from './Image';
+
+export { default as ErrorBoundary } from './ErrorBoundary';
