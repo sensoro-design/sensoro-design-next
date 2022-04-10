@@ -17,7 +17,6 @@
     "build:css:dev": "cross-env BUILD_ENV_MODE=development BUILD_ENV_DIST_FILENAME_CSS=arco.css arco-scripts build:component:css",
     "build:css:vars": "node ./scripts/css-variables.js",
     "build": "arco-scripts build:component && yarn build:dist:dev && yarn build:css:dev",
-    "changelog": "arco-scripts changelog",
     "eslint": "eslint tests/ components/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint '{components,site}/**/*.less'",
     "test:client": "arco-scripts test:client",
