@@ -55,6 +55,10 @@ export type AllowDrop = (options: {
 export interface TreeProps {
   style?: CSSProperties;
   className?: string | string[];
+  /**
+   * 是否禁用
+   */
+  disabled?: boolean;
   // 设置后开启虚拟滚动，已废弃，下一大版本移除
   height?: number;
   /**
@@ -222,7 +226,7 @@ export interface TreeProps {
       selectedNodes: NodeInstance[];
       node: NodeInstance;
       e: Event;
-    }
+    },
   ) => void;
   /**
    * @zh 点击树节点复选框的回调
@@ -237,7 +241,7 @@ export interface TreeProps {
       halfCheckedKeys: string[];
       halfCheckedNodes: NodeInstance[];
       e: Event;
-    }
+    },
   ) => void;
   /**
    * @zh 点击展开/关闭的回调
@@ -245,7 +249,7 @@ export interface TreeProps {
    */
   onExpand?: (
     expandedKeys: string[],
-    exra?: { expanded: boolean; node: NodeInstance; expandedNodes: NodeInstance[] }
+    exra?: { expanded: boolean; node: NodeInstance; expandedNodes: NodeInstance[] },
   ) => void;
   /**
    * @zh 节点开始拖拽的回调
@@ -293,7 +297,7 @@ export interface NodeProps {
    * @zh 该节点显示的标题
    * @en Title for node
    */
-  title?: string | ReactNode;
+  label?: string | ReactNode;
   /**
    * @zh 是否允许选中
    * @en Whether it can be selected

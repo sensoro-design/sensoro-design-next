@@ -1,4 +1,3 @@
-
 /**
  * title: 虚拟列表
  * desc: 通过指定 `virtualListProps` 来开启虚拟列表，在大量数据时获得高性能表现。
@@ -11,7 +10,7 @@ function loop(path = '0', level = 2) {
   for (let i = 0; i < 10; i += 1) {
     const key = `${path}-${i}`;
     const treeNode = {
-      title: key,
+      label: key,
       key,
     };
 
@@ -51,4 +50,4 @@ export default () => {
       />
     </div>
   );
-}
+};

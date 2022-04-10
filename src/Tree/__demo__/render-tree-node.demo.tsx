@@ -4,7 +4,7 @@
  */
 import { useState } from 'react';
 import { Tree } from '@sensoro-design/react';
-import PlusOutlined from '@sensoro-design/icons/PlusOutlined'
+import PlusOutlined from '@sensoro-design/icons/PlusOutlined';
 
 const generatorTreeNodes = (treeData) => {
   return treeData.map((item) => {
@@ -19,45 +19,45 @@ const generatorTreeNodes = (treeData) => {
 
 const TreeData = [
   {
-    title: 'Trunk',
+    label: 'Trunk',
     key: '0-0',
     children: [
       {
-        title: 'Leaf',
+        label: 'Leaf',
         key: '0-0-1',
       },
       {
-        title: 'Branch',
+        label: 'Branch',
         key: '0-0-2',
         children: [
           {
-            title: 'Leaf',
-            key: '0-0-2-1'
-          }
-        ]
+            label: 'Leaf',
+            key: '0-0-2-1',
+          },
+        ],
       },
     ],
   },
   {
-    title: 'Trunk',
+    label: 'Trunk',
     key: '0-1',
     children: [
       {
-        title: 'Branch',
+        label: 'Branch',
         key: '0-1-1',
         children: [
           {
-            title: 'Leaf',
+            label: 'Leaf',
             key: '0-1-1-1',
           },
           {
-            title: 'Leaf',
+            label: 'Leaf',
             key: '0-1-1-2',
           },
-        ]
+        ],
       },
       {
-        title: 'Leaf',
+        label: 'Leaf',
         key: '0-1-2',
       },
     ],
@@ -65,37 +65,39 @@ const TreeData = [
 ];
 
 export default () => {
-  const [treeData, setTreeData] = useState(TreeData)
+  const [treeData, setTreeData] = useState(TreeData);
 
-  return <div style={{width: 500, padding: 2, overflow: 'auto' }}>
-    <Tree
-      blockNode
-      checkable
-      renderExtra={(node) => {
-        return (
-          <PlusOutlined
-            style={{
-              position: 'absolute',
-              right: 8,
-              fontSize: 12,
-              top: 10,
-              color: '#3370ff',
-            }}
-            onClick={() => {
-              const dataChildren = node.dataRef.children || []
-              dataChildren.push({
-                title: 'new tree node',
-                key: node._key + '-' + (dataChildren.length + 1)
-              })
-              node.dataRef.children = dataChildren
+  return (
+    <div style={{ width: 500, padding: 2, overflow: 'auto' }}>
+      <Tree
+        blockNode
+        checkable
+        renderExtra={(node) => {
+          return (
+            <PlusOutlined
+              style={{
+                position: 'absolute',
+                right: 8,
+                fontSize: 12,
+                top: 10,
+                color: '#3370ff',
+              }}
+              onClick={() => {
+                const dataChildren = node.dataRef.children || [];
+                dataChildren.push({
+                  title: 'new tree node',
+                  key: node._key + '-' + (dataChildren.length + 1),
+                });
+                node.dataRef.children = dataChildren;
 
-              setTreeData([...treeData])
-            }}
-          />
-        )
-      }}
-    >
-      {generatorTreeNodes(treeData)}
-    </Tree>
-  </div>
-}
+                setTreeData([...treeData]);
+              }}
+            />
+          );
+        }}
+      >
+        {generatorTreeNodes(treeData)}
+      </Tree>
+    </div>
+  );
+};

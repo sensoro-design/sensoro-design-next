@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义 TreeData 的字段名称
  * desc: 通过 `fieldNames` 字段可以自定义 TreeData 的字段名。
@@ -26,13 +25,13 @@ const TreeData = [
                 items: [
                   {
                     label: 'Leaf',
-                    value: '0-0-2-1-0-0'
-                  }
-                ]
+                    value: '0-0-2-1-0-0',
+                  },
+                ],
               },
             ],
-          }
-        ]
+          },
+        ],
       },
     ],
   },
@@ -47,25 +46,27 @@ const TreeData = [
           {
             label: 'Leaf',
             value: '0-1-1-0',
-          }
-        ]
+          },
+        ],
       },
     ],
   },
 ];
 
 export default () => {
-  const [treeData, setTreeData] = useState(TreeData)
+  const [treeData, setTreeData] = useState(TreeData);
 
-  return <div>
-    <Tree
-      defaultSelectedKeys={['0-0-1']}
-      treeData={treeData}
-      fieldNames={{
-        key: 'value',
-        title: 'label',
-        children: 'items'
-      }}
-    />
-  </div>
-}
+  return (
+    <div>
+      <Tree
+        defaultSelectedKeys={['0-0-1']}
+        treeData={treeData}
+        fieldNames={{
+          key: 'value',
+          title: 'label',
+          children: 'items',
+        }}
+      />
+    </div>
+  );
+};

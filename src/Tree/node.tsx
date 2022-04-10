@@ -1,11 +1,4 @@
-import React, {
-  forwardRef,
-  useContext,
-  useRef,
-  useState,
-  PropsWithChildren,
-  useCallback,
-} from 'react';
+import React, { forwardRef, useContext, useRef, useState, PropsWithChildren, useCallback } from 'react';
 import classNames from '@pansy/classnames';
 import { isFunction } from '../_util/is';
 import Checkbox from '../Checkbox';
@@ -45,7 +38,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
   });
   const {
     _key = '',
-    title,
+    label,
     icon,
     checkable,
     selected,
@@ -70,7 +63,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-draggable`]: draggable,
     },
-    props.className
+    props.className,
   );
 
   const icons = (() => {
@@ -87,7 +80,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
       }
       treeContext.onExpand && treeContext.onExpand(newExpand, _key);
     },
-    [expanded, treeContext.onExpand]
+    [expanded, treeContext.onExpand],
   );
 
   const switchExpandStatus = useCallback(async () => {
@@ -152,7 +145,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
       });
       treeContext.onNodeDragOver && treeContext.onNodeDragOver(e, props, position);
     }),
-    [treeContext.onNodeDragOver]
+    [treeContext.onNodeDragOver],
   );
 
   const handleCheck = (checked, e) => {
@@ -196,15 +189,10 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
           ref={nodeTitleRef}
           className={classNames(`${prefixCls}-title`, {
             [`${prefixCls}-title-draggable`]: draggable,
-            [`${prefixCls}-title-gap-top`]:
-              state.isDragOver && state.isAllowDrop && state.dragPosition < 0,
-            [`${prefixCls}-title-gap-bottom`]:
-              state.isDragOver && state.isAllowDrop && state.dragPosition > 0,
+            [`${prefixCls}-title-gap-top`]: state.isDragOver && state.isAllowDrop && state.dragPosition < 0,
+            [`${prefixCls}-title-gap-bottom`]: state.isDragOver && state.isAllowDrop && state.dragPosition > 0,
             [`${prefixCls}-title-highlight`]:
-              !state.isDragging &&
-              state.isDragOver &&
-              state.isAllowDrop &&
-              state.dragPosition === 0,
+              !state.isDragging && state.isDragOver && state.isAllowDrop && state.dragPosition === 0,
             [`${prefixCls}-title-dragging`]: state.isDragging,
             [`${prefixCls}-title-block`]: props.blockNode,
           })}
@@ -274,7 +262,7 @@ function TreeNode(props: PropsWithChildren<NodeProps>, ref) {
         >
           {icon && <span className={`${prefixCls}-icon ${prefixCls}-custom-icon`}>{icon}</span>}
           <span className={`${prefixCls}-title-text`}>
-            {isFunction(treeContext.renderTitle) ? treeContext.renderTitle(props) : title}
+            {isFunction(treeContext.renderTitle) ? treeContext.renderTitle(props) : label}
           </span>
 
           {draggable && (

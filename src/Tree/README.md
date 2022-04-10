@@ -127,7 +127,7 @@ nav:
 |---|---|---|---|
 |style|节点样式|`CSSProperties`|`-`|
 |className|节点类名|`string \| string[]`|`-`|
-|title|该节点显示的标题|`string \| ReactNode`|`-`|
+|label|该节点显示的标题|`string \| ReactNode`|`-`|
 |selectable|是否允许选中|`boolean`|`true`|
 |disabled|是否禁用节点|`boolean`|`-`|
 |disableCheckbox|是否禁用复选框|`boolean`|`-`|

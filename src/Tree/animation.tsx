@@ -1,7 +1,6 @@
 /**
  * 该组件用来切换tree 展开收起时的动画
  */
-
 import React, { PropsWithChildren, useMemo, useContext, useEffect } from 'react';
 
 import { CSSTransition } from 'react-transition-group';

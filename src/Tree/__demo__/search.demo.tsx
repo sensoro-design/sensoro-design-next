@@ -1,4 +1,3 @@
-
 /**
  * title: 搜索树
  * desc:
@@ -8,77 +7,77 @@ import { Tree, Input } from '@sensoro-design/react';
 
 const TreeData = [
   {
-    title: 'Trunk 0-0',
+    label: 'Trunk 0-0',
     key: '0-0',
     children: [
       {
-        title: 'Branch 0-0-1',
+        label: 'Branch 0-0-1',
         key: '0-0-1',
         children: [
           {
-            title: 'Leaf 0-0-1-1',
-            key: '0-0-1-1'
+            label: 'Leaf 0-0-1-1',
+            key: '0-0-1-1',
           },
           {
-            title: 'Leaf 0-0-1-2',
-            key: '0-0-1-2'
-          }
-        ]
+            label: 'Leaf 0-0-1-2',
+            key: '0-0-1-2',
+          },
+        ],
       },
     ],
   },
   {
-    title: 'Trunk 0-1',
+    label: 'Trunk 0-1',
     key: '0-1',
     children: [
       {
-        title: 'Branch 0-1-1',
+        label: 'Branch 0-1-1',
         key: '0-1-1',
         children: [
           {
-            title: 'Leaf 0-1-1-0',
+            label: 'Leaf 0-1-1-0',
             key: '0-1-1-0',
-          }
-        ]
+          },
+        ],
       },
       {
-        title: 'Branch 0-1-2',
+        label: 'Branch 0-1-2',
         key: '0-1-2',
         children: [
           {
-            title: 'Leaf 0-1-2-0',
+            label: 'Leaf 0-1-2-0',
             key: '0-1-2-0',
-          }
-        ]
+          },
+        ],
       },
     ],
   },
 ];
 
-function searchData (inputValue) {
+function searchData(inputValue) {
   const loop = (data) => {
     const result = [];
-    data.forEach(item => {
+    data.forEach((item) => {
       if (item.title.toLowerCase().indexOf(inputValue.toLowerCase()) > -1) {
-        result.push({...item});
+        result.push({ ...item });
       } else if (item.children) {
         const filterData = loop(item.children);
         if (filterData.length) {
           result.push({
             ...item,
-            children: filterData
-          })
+            children: filterData,
+          });
         }
       }
-    })
+    });
     return result;
-  }
+  };
 
   return loop(TreeData);
 }
 
 export default () => {
-  const [treeData, setTreeData] = useState(TreeData)
+  const [treeData, setTreeData] = useState(TreeData);
   const [inputValue, setInputValue] = useState('');
 
   useEffect(() => {
@@ -86,34 +85,38 @@ export default () => {
       setTreeData(TreeData);
     } else {
       const result = searchData(inputValue);
-      setTreeData(result)
+      setTreeData(result);
     }
+  }, [inputValue]);
 
-  }, [inputValue])
+  return (
+    <div>
+      <Input.Search style={{ marginBottom: 8, maxWidth: 240 }} onChange={setInputValue} />
 
-  return <div>
-    <Input.Search  style={{marginBottom: 8, maxWidth: 240}} onChange={setInputValue} />
+      <Tree
+        treeData={treeData}
+        renderTitle={(node) => {
+          const label = node.label as string;
 
-    <Tree
-      treeData={treeData}
-      renderTitle={({title}) => {
-        if (inputValue) {
-          const index = title.toLowerCase().indexOf(inputValue.toLowerCase());
-          if (index === -1) {
-            return title;
+          if (inputValue) {
+            const index = label.toLowerCase().indexOf(inputValue.toLowerCase());
+            if (index === -1) {
+              return label;
+            }
+            const prefix = label.substr(0, index);
+            const suffix = label.substr(index + inputValue.length);
+
+            return (
+              <span>
+                {prefix}
+                <span style={{ color: 'var(--color-primary-light-4)' }}>{label.substr(index, inputValue.length)}</span>
+                {suffix}
+              </span>
+            );
           }
-          const prefix = title.substr(0, index)
-          const suffix = title.substr(index + inputValue.length)
-
-          return <span>
-            {prefix}
-            <span style={{color: 'var(--color-primary-light-4)'}}>{title.substr(index, inputValue.length)}</span>
-            {suffix}
-          </span>
-        }
-        return title
-      }}
-    >
-    </Tree>
-  </div>
-}
+          return label;
+        }}
+      ></Tree>
+    </div>
+  );
+};
