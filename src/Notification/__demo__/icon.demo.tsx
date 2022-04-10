@@ -4,11 +4,6 @@
  */
 import { Notification, Button, Space } from '@sensoro-design/react';
 import SmileFilled from '@sensoro-design/icons/SmileFilled';
-import { createFromIconfontCN } from '@sensoro-design/icons';
-
-const IconFont = createFromIconfontCN({
-  scriptUrl: '//at.alicdn.com/t/font_180975_26f1p759rvn.js',
-});
 
 export default () => {
   return (
@@ -16,7 +11,7 @@ export default () => {
       <Button
         onClick={() =>
           Notification.info({
-            icon: <IconFont type="icon-info" />,
+            icon: <SmileFilled />,
             title: 'Upgrade',
             content: 'Ready to upgrade ArcoDesign 2.0',
           })
@@ -29,7 +24,7 @@ export default () => {
       <Button
         onClick={() =>
           Notification.success({
-            icon: <IconFont type="icon-success" />,
+            icon: <SmileFilled />,
             title: 'Success',
             content: 'ArcoDesign 2.0 upgrade completed!',
           })
@@ -43,7 +38,7 @@ export default () => {
       <Button
         onClick={() =>
           Notification.warning({
-            icon: <IconFont type="icon-warning" />,
+            icon: <SmileFilled />,
             title: 'Warning',
             content: 'Current version is at risk!',
           })
@@ -57,7 +52,7 @@ export default () => {
       <Button
         onClick={() =>
           Notification.error({
-            icon: <IconFont type="icon-error" />,
+            icon: <SmileFilled />,
             title: 'Error',
             content: 'Failed to upgrade ArcoDesign 2.0!',
           })
