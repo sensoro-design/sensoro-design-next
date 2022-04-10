@@ -9,13 +9,13 @@ nav:
 
 ## 代码演示
 
-### 表格属性
-
-<code src="./__demo__/attribution.demo.tsx" />
-
 ### 基础用法
 
 <code src="./__demo__/basic.demo.tsx" />
+
+### 表格属性
+
+<code src="./__demo__/attribution.demo.tsx" />
 
 ### 树形数据展示
 

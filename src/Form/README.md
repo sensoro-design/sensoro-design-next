@@ -10,13 +10,13 @@ nav:
 
 ## 代码演示
 
-### 表单异步校验
-
-<code src="./__demo__/async-validate.demo.tsx" />
-
 ### 基础用法
 
 <code src="./__demo__/basic.demo.tsx" />
+
+### 表单异步校验
+
+<code src="./__demo__/async-validate.demo.tsx" />
 
 ### 受控表单
 

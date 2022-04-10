@@ -1,15 +1,15 @@
 import React, { useState, useContext, forwardRef } from 'react';
 import classNames from '@pansy/classnames';
+import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
+
+import type { CSSProperties } from 'react';
+import type { TagProps } from './interface';
+
 import { LoadingOutlined } from '../IconLoading';
 import omit from '../_util/omit';
 import { ConfigContext } from '../ConfigProvider';
 import IconHover from '../_class/icon-hover';
 import useMergeProps from '../_util/hooks/useMergeProps';
-
-import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
-
-import type { TagProps } from './interface';
-import type { CSSProperties } from 'react';
 
 // 色板里的 12 个颜色
 const COLORS = [

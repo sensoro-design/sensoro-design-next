@@ -2,8 +2,8 @@
  * title: 附有文案
  * desc: 含有文案的评分组件。
  */
+import React, { useState } from 'react';
 import { Rate, Typography } from '@sensoro-design/react';
-import { useState } from 'react';
 
 export default () => {
   const [rate, setRate] = useState(5);
