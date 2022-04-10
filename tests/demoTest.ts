@@ -1,5 +1,5 @@
 import path from 'path';
-import glob from 'glob';
+import { glob } from '@walrus/cli-utils';
 import { render } from 'enzyme';
 import './mockDate';
 import ReactDOM from 'react-dom';
