@@ -80,8 +80,6 @@ export { default as Form } from './Form';
 export type { RowProps, ColProps } from './Grid/interface';
 export { default as Grid } from './Grid';
 
-export { default as Icon } from './Icon';
-
 export type { InputProps, TextAreaProps } from './Input/interface';
 export { default as Input } from './Input';
 
