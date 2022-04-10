@@ -189,7 +189,7 @@ export { default as TimePicker } from './TimePicker';
 export type { TooltipProps } from './Tooltip/interface';
 export { default as Tooltip } from './Tooltip';
 
-export type { TransferProps, TransferItemProps } from './Transfer/interface';
+export type { TransferProps } from './Transfer/interface';
 export { default as Transfer } from './Transfer';
 
 export type { TreeProps, NodeProps as TreeNodeProps } from './Tree/interface';

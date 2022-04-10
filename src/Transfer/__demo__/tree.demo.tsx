@@ -5,39 +5,39 @@ const treeData = [
   {
     label: 'Asia',
     value: 'Asia',
-    key: '0',
+    key: 'Asia',
     children: [
       {
         label: 'China',
         value: 'China',
-        key: '0-0',
+        key: 'China',
         children: [
           {
             label: 'Beijing',
             value: 'Beijing',
-            key: '0-0-0',
+            key: 'Beijing',
           },
           {
             label: 'Shanghai',
             value: 'Shanghai',
-            key: '0-0-1',
+            key: 'Shanghai',
           },
           {
             label: 'Chengdu',
             value: 'Chengdu',
-            key: '0-0-2',
+            key: 'Chengdu',
           },
         ],
       },
       {
         label: 'Japan',
         value: 'Japan',
-        key: '0-1',
+        key: 'Japan',
         children: [
           {
             label: 'Osaka',
             value: 'Osaka',
-            key: '0-1-0',
+            key: 'Osaka',
           },
         ],
       },
@@ -46,28 +46,28 @@ const treeData = [
   {
     label: 'North America',
     value: 'North America',
-    key: '1',
+    key: 'North America',
     children: [
       {
         label: 'United States',
         value: 'United States',
-        key: '1-0',
+        key: 'United States',
       },
       {
         label: 'Canada',
         value: 'Canada',
-        key: '1-1',
+        key: 'Canada',
       },
       {
         label: 'Mexico',
         value: 'Mexico',
         disabled: true,
-        key: '1-2',
+        key: 'Mexico',
       },
       {
         label: 'Cuba',
         value: 'Cuba',
-        key: '1-3',
+        key: 'Cuba',
       },
     ],
   },

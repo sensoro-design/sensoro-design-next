@@ -32,7 +32,7 @@ import type {
   ResolvedDataItem,
   SelectedPanelProps,
 } from './interface';
-import { TreeDataType, TreeProps } from '../Tree/interface';
+// import { TreeDataType } from '../Tree/interface';
 import type { ConfigProviderProps } from '../ConfigProvider';
 import type { Locale } from '../locale/interface';
 
@@ -130,6 +130,8 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
       nextSelectedItemsMap.set(node.key, node);
       return;
     });
+
+    console.log(nextSelectedItemsMap);
 
     if (!this._isControlledComponent()) {
       this.setState({
@@ -406,8 +408,8 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
     const { disabled, dataSource, treeProps } = this.props;
     const { values } = this.getValuesAndItemsFromMap(selectedItems);
 
-    const onChange = (value: TreeDataType) => {
-      // this.foundation.handleSelect(value);
+    const onCheck = (selectedKeys) => {
+      this.handleSelect(selectedKeys);
     };
 
     const restTreeProps = omit(treeProps, ['value', 'ref', 'onChange']);
@@ -417,10 +419,12 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
         disabled={disabled}
         treeData={dataSource as any}
         multiple
+        checkable
         selectedKeys={values}
         autoExpandParent
         ref={(tree) => (this._treeRef = tree)}
         style={{ flex: 1, overflow: 'overlay' }}
+        onCheck={onCheck}
         {...restTreeProps}
       />
     );
