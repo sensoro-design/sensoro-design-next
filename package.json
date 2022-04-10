@@ -24,7 +24,6 @@
     "test": "cross-env NODE_ENV=test npm-run-all build:cjs test:client test:node",
     "color": "node ./scripts/compileColors.js",
     "format": "prettier --config .prettierrc --write \"{stories,tests,components}/**/*.{js,jsx,ts,tsx}\"",
-    "docgen": "arco-scripts docgen",
     "prepare": "husky install",
     "clean:dts": "esno ./scripts/clean-dts.ts",
     "release": "semantic-release",
