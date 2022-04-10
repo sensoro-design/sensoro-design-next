@@ -1,8 +1,6 @@
 @import './token.less';
 @import '../../style/mixin.less';
 
-.icon-hover(@checkbox-prefix-cls, @checkbox-mask-height, @checkbox-mask-bg-height);
-
 .@{checkbox-prefix-cls} {
   display: inline-block;
   cursor: pointer;
@@ -52,6 +50,17 @@
     border-radius: @checkbox-mask-border-radius;
     background-color: @checkbox-mask-color-bg;
     user-select: none;
+
+    &:hover,
+    &:focus {
+      background-color: @checkbox-mask-color-bg_hover;
+      border-color: @checkbox-mask-color-border_hover;
+    }
+
+    &:active {
+      background-color: @checkbox-mask-color-bg_active;
+      border-color: @checkbox-mask-color-border_hover;
+    }
 
     // 半选
     &::after {
