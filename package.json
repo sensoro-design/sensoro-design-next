@@ -27,7 +27,8 @@
     "docgen": "arco-scripts docgen",
     "prepare": "husky install",
     "clean:dts": "esno ./scripts/clean-dts.ts",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "release:manual": "walrus release"
   },
   "keywords": [
     "sensoro",
@@ -82,6 +83,7 @@
     "@typescript-eslint/parser": "^4.31.2",
     "@umijs/utils": "^3.5.21",
     "@walrus/cli-utils": "^2.2.1",
+    "@walrus/plugin-release": "^1.14.3",
     "commitlint": "^16.2.3",
     "conventional-changelog-gitmoji-config": "^1.4.3",
     "cross-env": "^7.0.3",
