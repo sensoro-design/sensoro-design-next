@@ -1846,300 +1846,310 @@
   resolved "https://registry.yarnpkg.com/@pansy/classnames/-/classnames-1.0.1.tgz#194f8b900701f5d88e21fb0daf76b3e4139ba91e"
   integrity sha512-L+8EGUhuqlZhWz1ojVnTcRk8U958QhHvzCy3KHvmAGm+cRiHaX/CyJd5mEEGSKZhAOa/EpPjqTjafPX6TZNvtw==
 
-"@pansy/hook-utils@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/hook-utils/-/hook-utils-0.2.2.tgz#0f1dcd5b08f5d72e0bca8340c3e21284dd982915"
-  integrity sha512-faQw2OpqHVMzQ/zbzOy2zHxKrm8pQqsfyTw5nLrDDSRVu8hSE5VYpMRhbm+zKOj1fi2zma6mwEY6mF3fqXg+3A==
+"@pansy/hook-utils@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/hook-utils/-/hook-utils-0.2.3.tgz#6cc0dfa4f678a9809883bc83571ea40e86534b4c"
+  integrity sha512-z3ngTaw3nJiVvYSe7wssMjsdS7vALTyWOCDr8lXBMi+98ZQn3RSmY8IxdIg6Vi0i67OET06ydZ2FFm0+a1tVMw==
   dependencies:
-    "@pansy/use-memoized-fn" "0.2.2"
-    "@pansy/use-unmount" "0.2.2"
-    "@pansy/use-update-effect" "0.2.1"
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-unmount" "0.2.3"
+    "@pansy/use-update-effect" "0.2.2"
     lodash "^4.17.21"
 
-"@pansy/react-hooks@^0.9.3":
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/@pansy/react-hooks/-/react-hooks-0.9.3.tgz#d01e08c7a06b79840e122bdfcf39cf9e01c6dfa6"
-  integrity sha512-utQVh3vKRaMFnMJCjSvy7dN8fqwR0mI3/UCrAqsWp4pJiz2fJsFKV5LMys01wZLOKkQuVyPf3S0915K7T1krkA==
+"@pansy/react-hooks@^0.9.4":
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/@pansy/react-hooks/-/react-hooks-0.9.4.tgz#e0723082736b7543f922ce43778db55d67d62f66"
+  integrity sha512-F38Al0Q7P3wsIkUEfl8XmaW2sbojgHuxUs6otybUmk8D8HVaOXu0VE2s4M3Zhiqr0vGGgeHlPjycWVZq8PJHrQ==
   dependencies:
-    "@pansy/use-boolean" "0.2.2"
-    "@pansy/use-click-away" "0.2.2"
-    "@pansy/use-controllable-value" "0.2.2"
-    "@pansy/use-document-visibility" "0.2.2"
-    "@pansy/use-event-listener" "0.2.2"
-    "@pansy/use-event-target" "0.2.2"
-    "@pansy/use-external" "0.1.1"
-    "@pansy/use-favicon" "^0.2.1"
-    "@pansy/use-get-state" "0.2.2"
-    "@pansy/use-hover" "0.2.2"
-    "@pansy/use-in-viewport" "0.2.2"
-    "@pansy/use-interval" "0.2.2"
-    "@pansy/use-key-press" "0.1.1"
-    "@pansy/use-latest" "^0.2.1"
-    "@pansy/use-local-storage-state" "0.2.2"
-    "@pansy/use-lock-fn" "^1.0.1"
-    "@pansy/use-memoized-fn" "0.2.2"
-    "@pansy/use-modal" "0.2.2"
-    "@pansy/use-mqtt" "0.1.3"
-    "@pansy/use-previous" "^0.2.1"
-    "@pansy/use-raf-state" "0.2.2"
-    "@pansy/use-scroll" "0.2.2"
-    "@pansy/use-selections" "0.2.2"
-    "@pansy/use-session-storage-state" "0.2.2"
-    "@pansy/use-size" "0.2.2"
-    "@pansy/use-timeout" "0.2.2"
-    "@pansy/use-title" "0.2.2"
-    "@pansy/use-toggle" "^0.2.1"
-    "@pansy/use-unmount" "0.2.2"
-    "@pansy/use-update" "^0.2.1"
-    "@pansy/use-update-effect" "^0.2.1"
-    "@pansy/use-update-layout-effect" "0.2.2"
-    "@pansy/use-watermark" "0.2.2"
-    "@pansy/use-web-socket" "0.1.2"
+    "@pansy/use-boolean" "0.2.3"
+    "@pansy/use-click-away" "0.2.3"
+    "@pansy/use-controllable-value" "0.2.3"
+    "@pansy/use-document-visibility" "0.2.3"
+    "@pansy/use-event-listener" "0.2.3"
+    "@pansy/use-event-target" "0.2.3"
+    "@pansy/use-external" "0.1.2"
+    "@pansy/use-favicon" "0.2.2"
+    "@pansy/use-get-state" "0.2.3"
+    "@pansy/use-hover" "0.2.3"
+    "@pansy/use-in-viewport" "0.2.3"
+    "@pansy/use-interval" "0.2.3"
+    "@pansy/use-key-press" "0.1.2"
+    "@pansy/use-latest" "0.2.2"
+    "@pansy/use-local-storage-state" "0.2.3"
+    "@pansy/use-lock-fn" "1.0.2"
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-modal" "0.2.3"
+    "@pansy/use-mqtt" "0.1.4"
+    "@pansy/use-previous" "0.2.2"
+    "@pansy/use-raf-state" "0.2.3"
+    "@pansy/use-scroll" "0.2.3"
+    "@pansy/use-selections" "0.2.3"
+    "@pansy/use-session-storage-state" "0.2.3"
+    "@pansy/use-size" "0.2.3"
+    "@pansy/use-timeout" "0.2.3"
+    "@pansy/use-title" "0.2.3"
+    "@pansy/use-toggle" "0.2.2"
+    "@pansy/use-unmount" "0.2.3"
+    "@pansy/use-update" "0.2.2"
+    "@pansy/use-update-effect" "0.2.2"
+    "@pansy/use-update-layout-effect" "0.2.3"
+    "@pansy/use-url-state" "0.1.1"
+    "@pansy/use-watermark" "0.2.3"
+    "@pansy/use-web-socket" "0.1.3"
 
-"@pansy/use-boolean@0.2.2":
+"@pansy/use-boolean@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-boolean/-/use-boolean-0.2.3.tgz#0054146b7cefc69f501e454144758d8eddf957e0"
+  integrity sha512-aCJ4Qmbrw13PwUmMZN4VeH880JK+asp7nfTONKirdIgZAiRJVCkoqK927ENhKvcC3NLR6ID1LVf41C0wHyJGtA==
+  dependencies:
+    "@pansy/use-toggle" "0.2.2"
+
+"@pansy/use-click-away@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-click-away/-/use-click-away-0.2.3.tgz#871ac7de4aec26f638b3c4d3d632396cfa81a9db"
+  integrity sha512-NxCvuuvn5t0qAdA5s0Ty2daB7/VmHELFj3JbYEHYrPuLSjcfecl958y5cAmSDLnxpTKz3cHryUB0FiRGZQRTmQ==
+  dependencies:
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-latest" "0.2.2"
+
+"@pansy/use-controllable-value@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-controllable-value/-/use-controllable-value-0.2.3.tgz#a84c317e2eae7ee8253c8620a80d3ffaa79df983"
+  integrity sha512-LUlA56XNtsm2LkLb3aPr7MvvQOTC/zFXrBfcHxnEL8fwNNZFK1YnEc8vxFWupyjtigCG2qU3J0WAUBviytzh7g==
+  dependencies:
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-update" "0.2.2"
+
+"@pansy/use-document-visibility@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-document-visibility/-/use-document-visibility-0.2.3.tgz#5aec8f0b85d5974708c05edd051da153c529ee85"
+  integrity sha512-8TeISI4sl2sktkDqeDGkOBuskIpgY6AZDI8q/OMJqd8dCZGzsiIeo6MEFIt/O3g3HpiEfiabHHfviNUOAfPeeQ==
+  dependencies:
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-event-listener" "0.2.3"
+
+"@pansy/use-event-listener@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-event-listener/-/use-event-listener-0.2.3.tgz#f2a7c4cbfe509b44ab3acc2064a252ae158bf603"
+  integrity sha512-hpBDSz6S3EbJ5vyV6/9qDucori8N0744/0t4Uy96LU+g3A82eGsf80e8SnKIohlQty8iukU07DL3tTvh+BFevQ==
+  dependencies:
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-latest" "0.2.2"
+
+"@pansy/use-event-target@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-event-target/-/use-event-target-0.2.3.tgz#0f0d42ab41efc7a4783c4f4cff5c1de24e41d949"
+  integrity sha512-FwVklBxEyq8sJRoUGYXARsUoSbj6Ac2IilQ6PuoZ+YGWDZ6bRoGCy+KI6Z3xiFhS3RL4i8bSetveGH167zJggg==
+  dependencies:
+    "@pansy/use-latest" "0.2.2"
+
+"@pansy/use-external@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@pansy/use-external/-/use-external-0.1.2.tgz#7ea6bf64793927398ff63bac4de71e7b2e24d2a0"
+  integrity sha512-W/CaYw1nEOLFIcXVXs2MMkVti6iVCmzMiVAvWIoqUQ+auwSLGc85JvNgPqmG2cZ09dA74TfSzq2EH3iLx+129g==
+
+"@pansy/use-favicon@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-boolean/-/use-boolean-0.2.2.tgz#be96db05c02a35143a7599751901c0a0db19f0ee"
-  integrity sha512-Gl/aY10yPELUM0w+QLAftOC0KZEWfFi4wJ5Gzg0G5qxvLvk3jus/fyUj6sleb0m65K5RUC6zbRC5Q7HonkBiGw==
+  resolved "https://registry.yarnpkg.com/@pansy/use-favicon/-/use-favicon-0.2.2.tgz#63b42f5fbb85aed143314642e2aa166a9e3a504e"
+  integrity sha512-i+3O0vq0eDDuVE7MYpXDuAjkgNtKp9elP5kZqCu67e4UGWwyCwJ2X5cA4mdTj7ttWQ2YEUDB0Uh3efxvH5/YDw==
+
+"@pansy/use-get-state@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-get-state/-/use-get-state-0.2.3.tgz#87d138a6203cff8a6ebf4d23e77f1efa169c8e87"
+  integrity sha512-PSON4UXeBVn54sF7wk1VaoPn9GOMn5LMbIvX2qcGW4hv0Q8Ds/C/VhpB8WnXP4t1NQcymmdyPKaZoFm/MK3r8g==
   dependencies:
-    "@pansy/use-toggle" "^0.2.1"
+    "@pansy/use-toggle" "0.2.2"
 
-"@pansy/use-click-away@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-click-away/-/use-click-away-0.2.2.tgz#309b4de2fff82ff835f7114afe1308fc465356c8"
-  integrity sha512-cmhKIaVa8PNfgkb9J+/mQs1+LG15JMDDKyO/EwyaT9q0fVsTeRPQc2UKd0CsOLJQEbb0DSUvPEhswanXXz5v+A==
+"@pansy/use-hover@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-hover/-/use-hover-0.2.3.tgz#16ad2df1a1a770cf46172c377e7f5e5c6fa6dd5c"
+  integrity sha512-lrI3AqsSCUEB8QL2Zo67lcOB3O3dD1W9hzaWs91EDd1zBZXRkf27ulwcN4sd4CcoNs2fY0st2SGaTa1nPAzlsA==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-latest" "^0.2.1"
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-boolean" "0.2.3"
+    "@pansy/use-event-listener" "0.2.3"
 
-"@pansy/use-controllable-value@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-controllable-value/-/use-controllable-value-0.2.2.tgz#6954b81fbb93fe23cc52d6ffe1c6c628f17a7fa7"
-  integrity sha512-V98du3+UzvF+3nmgDxDZRZhebIWz/L/t60wuP9A1FBw9hn+N9Td0xLMWnPovk2/WPZjy82cT9TJsfDaU/2Y7kw==
+"@pansy/use-in-viewport@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-in-viewport/-/use-in-viewport-0.2.3.tgz#0ccce4274e505f80d1db676ce211fae18102355d"
+  integrity sha512-EnYF8SRu/R/rwLv+JpBvMAPaJXExs03nlFMqiqN4P9DNib5uvWiw8R3hLS+ozattrr/1IhZL0xJE2zWCmezAXg==
   dependencies:
-    "@pansy/use-memoized-fn" "0.2.2"
-    "@pansy/use-update" "^0.2.1"
-
-"@pansy/use-document-visibility@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-document-visibility/-/use-document-visibility-0.2.2.tgz#d80898859289862afdf8b8a935cacc1cd94e0d7d"
-  integrity sha512-RswdQX1bcbbsqxiUuwUnAKLpQfXcO1yiFShcAoxS1KxMViqjgTqwdSRTm/AFHBc74RvKktnsFoa845gwUzec7A==
-  dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-event-listener" "0.2.2"
-
-"@pansy/use-event-listener@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-event-listener/-/use-event-listener-0.2.2.tgz#727e2c63306bb44aa206b22148131d902e76401b"
-  integrity sha512-mYnjyI/SXYYRF9qvFaVO5HDuLB5iYqMrdMsX7AjR/crz7yFbd3WB0EByAVZa56DAPzh/apWkK5F49NPem/hLEw==
-  dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-latest" "^0.2.1"
-
-"@pansy/use-event-target@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-event-target/-/use-event-target-0.2.2.tgz#11c973c068574d83fc4d430ea71be844751b289e"
-  integrity sha512-RY+VuIlzRj7WKUjXPAFaATrUZ9H9aQgS+qgKM5J8JUPsUPyjZBEDLNPqykcn8Mzh4f7sangRzCE9RD3or5hOtQ==
-  dependencies:
-    "@pansy/use-latest" "^0.2.1"
-
-"@pansy/use-external@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-external/-/use-external-0.1.1.tgz#f95df32e7d78e4698a46dcaedce6b28e42730e35"
-  integrity sha512-BYvvmwBuEZYHZABDtGzgUKO5A89ToHNS7bsXh6hW8bG8LNPQwRIAW73BvNUoU2a5JkhXatGPE+4H85RhODWQRA==
-
-"@pansy/use-favicon@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-favicon/-/use-favicon-0.2.1.tgz#8c9e1359173d68a4e1f99c16bd9647d63a89c0d8"
-  integrity sha512-RgdDUTEeahKR0VY5uNifB0CIFN9NBhzKYHVMygb/ZR4Craa5bgwgK8R6hOQqg2eqA7/0RLKvvFm9C2RAn5mb7A==
-
-"@pansy/use-get-state@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-get-state/-/use-get-state-0.2.2.tgz#67028e84b036ab6e345b9491e86645b9dd58875b"
-  integrity sha512-td961Y1GfUSEFfamFWwsxaj8zrIBJlQUz+vUJmnE7t4GMePuK7SJU5JV34R6iyAzmQjhQhbp9lhJhpKvrahDug==
-  dependencies:
-    "@pansy/use-toggle" "^0.2.1"
-
-"@pansy/use-hover@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-hover/-/use-hover-0.2.2.tgz#70d537e9c70a7c0491f1546a4083c97af5be2b3f"
-  integrity sha512-ipfvPTWxFuSzSSUirGFtsaJpoNEbpO7Cb77iKjC0ALId07RMg+Fu9dm9MK7QPFm/KaQSAEIPSi+qEk+wCo9oTw==
-  dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-boolean" "0.2.2"
-    "@pansy/use-event-listener" "0.2.2"
-
-"@pansy/use-in-viewport@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-in-viewport/-/use-in-viewport-0.2.2.tgz#2ee123c76224ca489dd630e3e030f30a2625343b"
-  integrity sha512-rJWBPLyx2HsWoR4dxYXOaxsaR3Ih6sZ+5llQ4WkP5x7yvBMGKH1Stj9itIKTgonIF1wShO+ZnUF/2gQJSHkB/w==
-  dependencies:
-    "@pansy/hook-utils" "0.2.2"
+    "@pansy/hook-utils" "0.2.3"
     intersection-observer "^0.12.0"
 
-"@pansy/use-interval@0.2.2":
+"@pansy/use-interval@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-interval/-/use-interval-0.2.3.tgz#3a9db04d554379fd84c37c3c830b2f1146fc4d4f"
+  integrity sha512-DTovQtn68ysthfOa8GVRS8n8x/MUoBmR4uWFB6lA/HhyEcknl3F9sneHo8j9hAli5elZT/u8Fn4eGTtsGOdhJg==
+  dependencies:
+    "@pansy/use-latest" "0.2.2"
+
+"@pansy/use-key-press@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@pansy/use-key-press/-/use-key-press-0.1.2.tgz#74d330527ca13b92e837093e0113dd7410983828"
+  integrity sha512-ogqg0UILhbndWmRFHU+y+hs7HXhaOsu73pzTlEBuncpnpNm6XN13DCneeihMHmrxvkPa4J411he3GNLIv3F+7Q==
+  dependencies:
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-latest" "0.2.2"
+
+"@pansy/use-latest@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-interval/-/use-interval-0.2.2.tgz#41971af8c290ef631ad7cbf5daf5b1588f540a4c"
-  integrity sha512-otwAofk9EYM4UhJoJv2iTtKG/hL6OaPdF0QzUPfLxhkL/EbELva5rh0aZevTw8n/VM4XRRXjfeLrVmMPKEztag==
+  resolved "https://registry.yarnpkg.com/@pansy/use-latest/-/use-latest-0.2.2.tgz#b6bc26542f9d7e9444032b1d5cc38b38f1f436db"
+  integrity sha512-24kyGalAFrzmVJopkWbJBOEPs5u9S8fH5adk/CfQJg1Ps+2DU1dkHzSz+XlFELcxwMWBX+jTAdlYToJVWJfUDA==
+
+"@pansy/use-local-storage-state@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-local-storage-state/-/use-local-storage-state-0.2.3.tgz#34f31bb265298f3b1f28e5815260468078be6440"
+  integrity sha512-6Xgp+6OAq0AopNV0iYNtdmzmijqotMrzNh4cJ7K1gwVNL0Ph0qu8LfQ47bQWXa22Tq+LnasBD9ttqbguekwn+w==
   dependencies:
-    "@pansy/use-latest" "^0.2.1"
+    "@pansy/hook-utils" "0.2.3"
 
-"@pansy/use-key-press@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-key-press/-/use-key-press-0.1.1.tgz#a7273db264113183bfa61d49379383d16a23d50d"
-  integrity sha512-WyhvKj/Tr1qiWQItykmNTnBhtPmNADIUeJ/jILUOtbZxcWu7ANp1iov8+9wwp13ma/RY48tiNxX21qXhrBcqJg==
+"@pansy/use-lock-fn@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@pansy/use-lock-fn/-/use-lock-fn-1.0.2.tgz#10620e2b15d040144e9082177abb83b55eddb8da"
+  integrity sha512-5bFKicpYXk4h/PBoWv8w9cDKI9edEI1y92H6I1tj1W7tkPrL6F0NjZSuM1WicAar43QGlx0jLJ1eDjAwLtJcyg==
+
+"@pansy/use-memoized-fn@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-memoized-fn/-/use-memoized-fn-0.2.3.tgz#6a6eb9800cddbe7c831c34ad4f00c592f13e2537"
+  integrity sha512-0KxnoOvNN71powg59cfXtgxKnsXQkunLu6ZFLwrZeNwM9XtQUI1B1tfMgAtIUMNUrNUohV0O1jSmwLWUhMDiWw==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-latest" "^0.2.1"
+    "@pansy/use-toggle" "0.2.2"
 
-"@pansy/use-latest@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-latest/-/use-latest-0.2.1.tgz#8ae757e4a51508dfc41304eade3f9bbd7a370293"
-  integrity sha512-QS8HQLmq6tTEM0TK/vfqeX2UVscE8JeEWP1dMk0xvGrmi5iVPXwaD76QrotJ+bBcfGldpmghrndfbUKkO0pUZQ==
-
-"@pansy/use-local-storage-state@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-local-storage-state/-/use-local-storage-state-0.2.2.tgz#3c2442e5efa8acbbe7c0944335fff58ff75e48a9"
-  integrity sha512-x3mxVQKRVlAI/RTJzCA5xwpfihECcwuiFgiwYuEOAruSWwf6YPV5UtYTxpsH07xwv1vNW894w9vonVxXGg+vsg==
+"@pansy/use-modal@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-modal/-/use-modal-0.2.3.tgz#aab7f5c28c59e5191a1133d10baacdbd89eb2a96"
+  integrity sha512-1OPy1lJ57CARtVIxdSrbviURDq7HY0lt3NRZHykxN2lMqyPesV+vuo6AdCK9IwWx0QMq8t19P5otJcj9FN1Vxw==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
+    "@pansy/use-boolean" "0.2.3"
+    "@pansy/use-memoized-fn" "0.2.3"
 
-"@pansy/use-lock-fn@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-lock-fn/-/use-lock-fn-1.0.1.tgz#10f3f9c737f42f3e8352936045ac0cb277de4709"
-  integrity sha512-ELf38tz7+BCZmy88Yu5DNq+STirXRCj/iYG6lhUPnIKZb2BUJk8SUXRbYsltnwmDF8bXWivePuWLTJXpUDvZbA==
-
-"@pansy/use-memoized-fn@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-memoized-fn/-/use-memoized-fn-0.2.2.tgz#893e73b90aa6a36a4c96e34f6d9837b0a657188a"
-  integrity sha512-uK7rTFBv34/8au7FXejbdjzCKLe4ds9UsacKt1d8+Cp56t65YoIfJ5kCU7WKZN4zzdw+c+eTaU+pi+LlqfKWag==
+"@pansy/use-mqtt@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@pansy/use-mqtt/-/use-mqtt-0.1.4.tgz#b6e8be7112410c3ea833786f5907aa0fcd7ddb10"
+  integrity sha512-KTmJOTWQkg7nWAQxG8ZMDq244JoYESlnN2d36b1Y/Fb3yMl1382IvWtIN5SBW0L656np5sp4DU3H9hjr0XU+3g==
   dependencies:
-    "@pansy/use-toggle" "^0.2.1"
-
-"@pansy/use-modal@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-modal/-/use-modal-0.2.2.tgz#d1b38908689938d47da1109ee0c155619b67b7f3"
-  integrity sha512-+utuansOdJ8O3227eR9QYJQG/J22xqPUtE6r1a0aQ3fJRmHbcVujbw+7WoSJ2KjcDw/nTs5zFqRKOf23dE+2lw==
-  dependencies:
-    "@pansy/use-boolean" "0.2.2"
-    "@pansy/use-memoized-fn" "0.2.2"
-
-"@pansy/use-mqtt@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@pansy/use-mqtt/-/use-mqtt-0.1.3.tgz#4cb13012169ca9b1e2b44344e9c815a06b36b81d"
-  integrity sha512-Ha+6UnnekBcG1Ota91KwFvDb3VfMcxpnGchEwuJKX6ySH53umAfrZox97JI5sbHcJIdWADddiOcFdH57CiaKxQ==
-  dependencies:
-    "@pansy/use-boolean" "0.2.2"
-    "@pansy/use-latest" "^0.2.1"
-    "@pansy/use-memoized-fn" "0.2.2"
-    "@pansy/use-unmount" "0.2.2"
+    "@pansy/use-boolean" "0.2.3"
+    "@pansy/use-latest" "0.2.2"
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-unmount" "0.2.3"
     mqtt "^4.3.4"
 
-"@pansy/use-previous@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-previous/-/use-previous-0.2.1.tgz#62bd79dc2a631b738ac3732851d123fdbdd65b53"
-  integrity sha512-4yYdLz96I0TaohcatPYhiKX9FzvOYBriyCFzMl/L0s/V6G4Is2rEhX8E+V8zrwpEhv/D75YmcbDZ7kG2fGs0uw==
-
-"@pansy/use-raf-state@0.2.2":
+"@pansy/use-previous@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-raf-state/-/use-raf-state-0.2.2.tgz#4329bfc0d3dce06c92f733783df595c3496cbe32"
-  integrity sha512-w5B4Kb69y8lnIy/y4DJlRtclyJfnanjTS/CfnE/bPhm07oLiQpwLWcQ01di3p6lDmm20HVmGck8HH1u9TAaOQQ==
+  resolved "https://registry.yarnpkg.com/@pansy/use-previous/-/use-previous-0.2.2.tgz#5b9e52634110defb39efa5074957b14a49f294a7"
+  integrity sha512-MXwQ6FzlyNzHoZltRZWnW7/Bt9NO8M0QqCvdsmgR8g4oJk7sbNPtGDFhWfeABfopGIMcxnzmYcNRE9HtI+A6aA==
+
+"@pansy/use-raf-state@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-raf-state/-/use-raf-state-0.2.3.tgz#27d20f791fc531ef3c33b777268f50019860dede"
+  integrity sha512-uuEIXMGtmtkaLwhhjdmYPmh7snjrw2Xf7iQl5RpqZv+O8XGTl7oh6PtBQe7lXNZ60o6PKfAxooLOyRwlkKLB2A==
   dependencies:
-    "@pansy/use-unmount" "0.2.2"
+    "@pansy/use-unmount" "0.2.3"
 
-"@pansy/use-scroll@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-scroll/-/use-scroll-0.2.2.tgz#05096b8b7d3b5aedb36ef8e07e2eeee291767867"
-  integrity sha512-z1e504qZ18ENWcvApZYVeZdRC0FagAV0HiBxGHOmHEYSC1j18unlmh3/mqppFyiPzmkM1LLWVMmxi2ESVrvCRQ==
+"@pansy/use-scroll@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-scroll/-/use-scroll-0.2.3.tgz#044c6cc0a48798d9e0a0af6ac1a113fc7872c582"
+  integrity sha512-1oPJPfn2kS5CpMFSyu3PNxjKHvkudNHYO/MTkaybiiFMrkP8D8GlDJnj0nijctExqmWJdf+aV1gKZd1DjnxJpw==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-latest" "^0.2.1"
-    "@pansy/use-raf-state" "0.2.2"
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-latest" "0.2.2"
+    "@pansy/use-raf-state" "0.2.3"
 
-"@pansy/use-selections@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-selections/-/use-selections-0.2.2.tgz#c5d4d8b71f3911f4a54f3a09240c45a58d5cf37f"
-  integrity sha512-MppsLwv9VSXLf6m8y569g2dY8nygMBUKYuqg4ZuO+WcyYPpwUoM7mEGkiaWQcAdu2ajzEtTsxdSaoMsFBR39uQ==
+"@pansy/use-selections@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-selections/-/use-selections-0.2.3.tgz#42f87e6678e7faf0c86d7db3ee3d88f55c83aa86"
+  integrity sha512-ZFqm38xh80KksRPKaQWh/waa7TAUYbltUb6PmQCI1TL87WcG1DX6FdJCekk1aU6VvyzDVWJBL6//aTP8gJQL0g==
   dependencies:
-    "@pansy/use-memoized-fn" "0.2.2"
+    "@pansy/use-memoized-fn" "0.2.3"
 
-"@pansy/use-session-storage-state@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-session-storage-state/-/use-session-storage-state-0.2.2.tgz#01c8f6f219b6df4d628a07d7b197fa1ab58b5cb2"
-  integrity sha512-ikh+06qbV4x9esif5MYQhQgYrRFa8PgtRrcCx7Himh1Az5xbtoKjyMZk0Vsts77NmSsqNs9CL75WkAccgkRBug==
+"@pansy/use-session-storage-state@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-session-storage-state/-/use-session-storage-state-0.2.3.tgz#f7d88b627b1cfb9e24efc4fde618f534fb652bb0"
+  integrity sha512-EfEG9oSmP+H8N6DdKQHjvrHNL+aNVncldNAxoVpjK8klkytQr9LrdMYRylOUJuC2p0Dl4ES1o4m3ihcqC6hbXA==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
+    "@pansy/hook-utils" "0.2.3"
 
-"@pansy/use-size@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-size/-/use-size-0.2.2.tgz#307aa4b932490eaa7d5f611aa4b779da56b2f0fa"
-  integrity sha512-WS5bw9Hp4t1EicrS0/Jcu3CkkD+/sz34fVx2tIY01Wsbu5Tsfjdh6uHj+3GH6TxJqTku81hU0FVVj9hDZ9oO3Q==
+"@pansy/use-size@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-size/-/use-size-0.2.3.tgz#dac431b356274475fb0bf29d76f618b7a6ede8f2"
+  integrity sha512-AKeWwryw5j7buOebMZTqT2QnnA1e4f1qJqNbMX4iruKdmf8tbw15S95oPaecJZ7B4R0tELlasjfSzfvUBTRmyg==
   dependencies:
     "@juggle/resize-observer" "^3.3.1"
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-raf-state" "0.2.2"
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-raf-state" "0.2.3"
 
-"@pansy/use-timeout@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-timeout/-/use-timeout-0.2.2.tgz#f4709796dbd01dc41a19241472049eaa896fc1c6"
-  integrity sha512-eR/kRJITJCVRPKCQIcl20k1/9q1d2sfLOi8Xh5dObtJEmGgukNZpUjD1QemxbLiK/7+7AAcSvsANP8dlggZvCA==
+"@pansy/use-timeout@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-timeout/-/use-timeout-0.2.3.tgz#b62449c2eaaf3bafb42de2395267d357b5456158"
+  integrity sha512-GZBhLvLe4JrBU6I79O/MC1OzuZiEMT+TEEnre3Pggx1+ErihZXA5auS8jwpUXj+iLuR2KY08DGDXgeHkA30Ydg==
   dependencies:
-    "@pansy/use-latest" "^0.2.1"
+    "@pansy/use-latest" "0.2.2"
 
-"@pansy/use-title@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-title/-/use-title-0.2.2.tgz#480837c35c58ad9854b62b10be7943983d80a8ea"
-  integrity sha512-wjNnvX/o+nhz7mr0SklVfCAk9fXfn9mLX1WGVrRpSHORzXD4zi/G2jTLeYTEhmxYbbLCwxPmxji0AGkePfrZ4g==
+"@pansy/use-title@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-title/-/use-title-0.2.3.tgz#4360fd228b884d5f1f3ae7959bd33a91c61178d6"
+  integrity sha512-3fHgP1qL+iKWqFGeOEeQMbHqfBUiO1IHDy50YEWFwQqqYQ9OtUh+rCwbnlNZh+KnCsNQQfGwvrfHAKXJLAZ3TQ==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-unmount" "0.2.2"
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-unmount" "0.2.3"
 
-"@pansy/use-toggle@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-toggle/-/use-toggle-0.2.1.tgz#b41dea3b6de83bbf474390958480fa6979d91887"
-  integrity sha512-Kb0560KR5h+1LnAEAS/grSU6chHta1YBUGxm9kzJ7OZdmSX5kQfFbHfvxCYAUn9TrLuIlB10DYLgf8qAKHZDpA==
-
-"@pansy/use-unmount@0.2.2":
+"@pansy/use-toggle@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-unmount/-/use-unmount-0.2.2.tgz#a225f5e36440f958a901c6c01e5d29acc5d83b3e"
-  integrity sha512-XTvrKYH4X9xm2cNT60tDPc4MJnDDfrBwZ9ZEdX9Bisc/AySyTvtxvD0iVpLXNEiK6QqZGuMTpexfQJ25abNofQ==
+  resolved "https://registry.yarnpkg.com/@pansy/use-toggle/-/use-toggle-0.2.2.tgz#f3070c407fef2ff712a60b26ebdb80213ce8a357"
+  integrity sha512-e6LbA09ThZj87JoOLE3GgneMI7bEmceDReO4mr078lhJM8nXdDglMElfkeEtRicITDXsatRsDMopAiEHqem6dg==
+
+"@pansy/use-unmount@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-unmount/-/use-unmount-0.2.3.tgz#8bd779b98f6e82591bc59feeb971a6d4054bca40"
+  integrity sha512-l+e78wpXoH+siIJnp0Iir1hsCu0CVTdq9FeFzt8qxZ6XNfLo26GEvB8SJeZxrWzUfW2yoNrVDMegbVmWLl9MWA==
   dependencies:
-    "@pansy/use-latest" "^0.2.1"
+    "@pansy/use-latest" "0.2.2"
 
-"@pansy/use-update-effect@0.2.1", "@pansy/use-update-effect@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-update-effect/-/use-update-effect-0.2.1.tgz#08de044a345ee137b6f421d9d6b4908d58f577fa"
-  integrity sha512-isfKRiZVri6yJI3XI58QoEsd/aqygSGpQrHCmxXR7GKzBeiTuANL53n6eRUx58VMD2bjilGvL8hyyFBXxz6Zbw==
-
-"@pansy/use-update-layout-effect@0.2.2":
+"@pansy/use-update-effect@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-update-layout-effect/-/use-update-layout-effect-0.2.2.tgz#fef126be65846fe95ba9c36a6eb9fb9e7ecbeb6b"
-  integrity sha512-Tb69aYQeRKP6K4tkzIhtrYbcrMs4CuxlctFrYtCiwdT8A2cKoDwWJT/gvC5KL9/oLzSu1pfR6Woe6Cu0XIxzmg==
+  resolved "https://registry.yarnpkg.com/@pansy/use-update-effect/-/use-update-effect-0.2.2.tgz#7bde69a44c368abcc38fc3297534340898c848e1"
+  integrity sha512-W7RYBYTpK2iwfK//LFElxDayUObp7Awei1yH6Ws/SEQAsjhUH+fQqyh9d7C8sM5AK6KV6/2Ho/C4sNvonXAU6Q==
+
+"@pansy/use-update-layout-effect@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-update-layout-effect/-/use-update-layout-effect-0.2.3.tgz#1a2b90dbad2b4f6125830a935604bb3e2b9f4bcd"
+  integrity sha512-yBv5kfI/Eh9lSLaRr3aPiMVM0Nuk7MZlwo0wi8sQquVGktT2vhbLkJ3Pi3tQe1HRoRIjwdvK2KorvbyZ2lhPOA==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
+    "@pansy/hook-utils" "0.2.3"
 
-"@pansy/use-update@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@pansy/use-update/-/use-update-0.2.1.tgz#bb53c044891acdb352835a1a08aba0fead417914"
-  integrity sha512-0VjtZ2+O4grPgw6YH/NEIa5mEnFnLx2qzW7PwSW2tUdel79V6t9gRbe6M+GFoQWdLNAPCbxMQPLu7YFaSgsPHA==
-
-"@pansy/use-watermark@0.2.2":
+"@pansy/use-update@0.2.2":
   version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-watermark/-/use-watermark-0.2.2.tgz#9ce7adf1972f9a32786350da4af25c376ef13b8e"
-  integrity sha512-MM7dEJ/2SHTcuZIbKc1LcXF3IYYOjrc6bJ3QBoPtQJ7b70WL3SIt/KvLSOUHxhCvb1WFK2U2SlVvv71CU+tDCQ==
+  resolved "https://registry.yarnpkg.com/@pansy/use-update/-/use-update-0.2.2.tgz#22cc19ca4d9d6d9b2774103e02bbfc6320edaeb2"
+  integrity sha512-Bbm5HkIFUx08QU6uijUdB6XuUQFHUAFwSfpV4Qx6fzwx5hn6KdqANCyDy9wNazv+ubaD3HG8TpchVTkc0BTIqw==
+
+"@pansy/use-url-state@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@pansy/use-url-state/-/use-url-state-0.1.1.tgz#d41979569f9d1bedcc68b201837ed47a272badf5"
+  integrity sha512-8YsGw2f+yqFDcIFlBCDNXNjI48tEKZeqOULJAVeaJMouj1kTDp7BHsPp51QFX+CdX4u+Y7MM+3/wxMcUhEFyCg==
   dependencies:
-    "@pansy/hook-utils" "0.2.2"
-    "@pansy/use-memoized-fn" "0.2.2"
-    "@pansy/use-unmount" "0.2.2"
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-update" "0.2.2"
+    query-string "^7.1.1"
+
+"@pansy/use-watermark@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-watermark/-/use-watermark-0.2.3.tgz#9d362e6289c8e1bcb8cbd1ccd92f5dabe547a1ef"
+  integrity sha512-Q04yitVVSwtd3mQct2dzokzPRgjridYiS6Ua+MJ+1AJb16283yg34KaCrrAT3IhYT6mdT64TK6/0wWoQ8pAspA==
+  dependencies:
+    "@pansy/hook-utils" "0.2.3"
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-unmount" "0.2.3"
     "@pansy/watermark" "^2.0.10"
 
-"@pansy/use-web-socket@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@pansy/use-web-socket/-/use-web-socket-0.1.2.tgz#7d3bddfa261977dc971c3140bb34353db0a48948"
-  integrity sha512-qKdwR00Zyfq3FUBM6Ffg5mePd8rweVO819iKYPzLq6LPaYrdjRJZBwyRNOfTN3xGnaa+T2vUVRtp+D51B25EeQ==
+"@pansy/use-web-socket@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@pansy/use-web-socket/-/use-web-socket-0.1.3.tgz#053bc9d6feeabaee6bea342e732fee1c24689df3"
+  integrity sha512-5qJNJMLW0DLOpW3ej6NVqNeNluJJMInKYyNeb+/3Zc+jta6Wvg8G5Ah74f3XZ+4ueLZJBJMNzU2hwtWPY4Tozw==
   dependencies:
-    "@pansy/use-latest" "^0.2.1"
-    "@pansy/use-memoized-fn" "0.2.2"
-    "@pansy/use-unmount" "0.2.2"
+    "@pansy/use-latest" "0.2.2"
+    "@pansy/use-memoized-fn" "0.2.3"
+    "@pansy/use-unmount" "0.2.3"
 
 "@pansy/watermark@^2.0.10":
   version "2.0.10"
@@ -2270,20 +2280,20 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@sensoro-design/icons-svg@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sensoro-design/icons-svg/-/icons-svg-1.2.0.tgz#34518ccd70553ec4727b7d6f992da7a5d02e8658"
-  integrity sha512-/4brFtki9Fi+4+FLp+zg/6DcPJmkkNYHoq9r/yjIsClmOMf3Uz4VacSfGA+kxHKl2ymDMUKcnHC85PXq6dUrvQ==
+"@sensoro-design/icons-svg@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@sensoro-design/icons-svg/-/icons-svg-1.3.1.tgz#0a5f46a38071934c767ac71e525c780a1ea8da37"
+  integrity sha512-ODNJu2w7vcCSRqcd2CpVcB4GLGeHADENM/nC6pKaioNnJub2MZaP+MFC/dZnLuk1owtay8AHETMJP2rMAneoYw==
 
-"@sensoro-design/icons@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sensoro-design/icons/-/icons-1.2.0.tgz#f25384a7c89028fdfc670eae9ba2c7b2702a435d"
-  integrity sha512-l0923en6RoxbACPr+3nGm8EGuQrxGuwmNhVh0Yip5L5KlKdnqTVLeMkTQobXRl4HCpRwAHpea5pggmXYssfshQ==
+"@sensoro-design/icons@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@sensoro-design/icons/-/icons-1.3.1.tgz#2a746d6990d59f5276a7c29bf1e807d587e0d53a"
+  integrity sha512-0QsDlx28QQ4n/rWqcFKSqIztL4vBUg5872SgW/h+STqRE1SHeI7zAQnX598FSL+oVm1V4o31Q5UGA1pgRpDmaw==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@babel/runtime" "^7.11.2"
     "@pansy/classnames" "^1.0.1"
-    "@sensoro-design/icons-svg" "1.2.0"
+    "@sensoro-design/icons-svg" "1.3.1"
     rc-util "^5.19.3"
 
 "@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0", "@sinonjs/commons@^1.8.1":
@@ -14125,6 +14135,16 @@ query-string@^6.11.0:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.14.1.tgz#7ac2dca46da7f309449ba0f86b1fd28255b0c86a"
   integrity sha512-XDxAeVmpfu1/6IjyT/gXHOl+S0vQ9owggJ30hhWKdHAsNPOcasn5o9BW0eejZqL2e4vMjhAxoW3jVHcD6mbcYw==
+  dependencies:
+    decode-uri-component "^0.2.0"
+    filter-obj "^1.1.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
+query-string@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.1.tgz#754620669db978625a90f635f12617c271a088e1"
+  integrity sha512-MplouLRDHBZSG9z7fpuAAcI7aAYjDLhtsiVZsevsfaHWDS2IDdORKbSd1kWUA+V4zyva/HZoSfpwnYMMQDhb0w==
   dependencies:
     decode-uri-component "^0.2.0"
     filter-obj "^1.1.0"
