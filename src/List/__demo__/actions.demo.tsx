@@ -7,7 +7,7 @@ import { List, Avatar } from '@sensoro-design/react';
 import EditOutlined from '@sensoro-design/icons/EditOutlined';
 import DeleteOutlined from '@sensoro-design/icons/DeleteOutlined';
 import DownOutlined from '@sensoro-design/icons/DownOutlined';
-import { LoadingOutlined } from '@sensoro-design/react/es/IconLoading';
+import LoadingOutlined from '@sensoro-design/icons/LoadingOutlined';
 
 export default () => {
   const dataSource = new Array(4).fill({
@@ -19,15 +19,7 @@ export default () => {
 
   const render = (actions, item, index) => (
     <List.Item key={index} actions={actions}>
-      <List.Item.Meta
-        avatar={
-          <Avatar shape="square">
-            A
-          </Avatar>
-        }
-        title={item.title}
-        description={item.description}
-      />
+      <List.Item.Meta avatar={<Avatar shape="square">A</Avatar>} title={item.title} description={item.description} />
     </List.Item>
   );
 
@@ -46,7 +38,7 @@ export default () => {
           <LoadingOutlined style={{ marginRight: 8, color: 'rgb(var(--arcoblue-6))' }} /> loading...
         </span>
       ) : (
-        <span className="list-demo-actions-button" >
+        <span className="list-demo-actions-button">
           More <DownOutlined style={{ marginLeft: 8 }} />
         </span>
       )}
@@ -80,4 +72,4 @@ export default () => {
       />
     </>
   );
-}
+};

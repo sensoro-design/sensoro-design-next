@@ -2,11 +2,13 @@
  * title: 自定义图标
  * desc: 设置 `icon` 来自定义图标。
  */
-import { Message, Button, Icon, Space } from '@sensoro-design/react';
+import { Message, Button, Space } from '@sensoro-design/react';
 import SmileFilled from '@sensoro-design/icons/SmileFilled';
+import { createFromIconfontCN } from '@sensoro-design/icons';
 
-const IconFont = Icon.addFromIconFontCn({ src: '//at.alicdn.com/t/font_180975_26f1p759rvn.js' });
-
+const IconFont = createFromIconfontCN({
+  scriptUrl: '//at.alicdn.com/t/font_180975_26f1p759rvn.js',
+});
 export default () => {
   return (
     <Space size="large">

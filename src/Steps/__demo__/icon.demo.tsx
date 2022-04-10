@@ -4,7 +4,7 @@
  */
 import { Steps } from '@sensoro-design/react';
 import HomeOutlined from '@sensoro-design/icons/HomeOutlined';
-import { LoadingOutlined } from '@sensoro-design/react/es/IconLoading';
+import LoadingOutlined from '@sensoro-design/icons/LoadingOutlined';
 import LikeOutlined from '@sensoro-design/icons/LikeOutlined';
 
 const Step = Steps.Step;
@@ -16,5 +16,5 @@ export default () => {
       <Step icon={<LoadingOutlined />} title="Processing" description="This is a description" />
       <Step icon={<LikeOutlined />} title="Pending" description="This is a description" />
     </Steps>
-  )
-}
+  );
+};
