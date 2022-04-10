@@ -6,9 +6,14 @@ import type { TreeProps } from '../Tree';
 export type BaseValue = string | number;
 
 export interface EmptyContent {
-  left: ReactNode;
-  right: ReactNode;
-  search: ReactNode;
+  left?: ReactNode;
+  right?: ReactNode;
+  search?: ReactNode;
+}
+
+export interface OnSortEndProps {
+  oldIndex: number;
+  newIndex: number;
 }
 
 export interface GroupItem {
@@ -21,6 +26,8 @@ export interface GroupItem {
    */
   children?: DataItem[];
 }
+
+export type DataItemMap = Map<number | string, DataItem>;
 
 export type DataSource = DataItem[] | GroupItem[];
 
@@ -110,7 +117,29 @@ export interface SourcePanelProps {
   /* The function that should be called when selecting or deleting a single option */
   onSelectOrRemove: (item: DataItem) => void;
   /* The function that should be called when selecting an option, */
-  onSelect: (value: Array<string | number>) => void;
+  onSelect: (value: BaseValue[]) => void;
+}
+
+export interface ResolvedDataItem extends DataItem {
+  _parent?: {
+    title: string;
+  };
+  _optionKey?: string | number;
+}
+
+export interface HeaderConfig {
+  totalContent: string;
+  allContent: string;
+  onAllClick: () => void;
+  type: string;
+  showButton: boolean;
+}
+
+export interface TransferState {
+  data: ResolvedDataItem[];
+  selectedItems: Map<BaseValue, ResolvedDataItem>;
+  searchResult: Set<BaseValue>;
+  inputValue: string;
 }
 
 export interface TransferProps<D extends DataItem = DataItem> {
@@ -121,7 +150,7 @@ export interface TransferProps<D extends DataItem = DataItem> {
   /**
    * 内联样式
    */
-  style: CSSProperties;
+  style?: CSSProperties;
   /**
    * 是否禁用
    * @default false

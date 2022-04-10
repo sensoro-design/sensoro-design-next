@@ -1,6 +1,6 @@
 /**
- * title: 基础用法
- * desc: 两栏布局的多选穿梭框组件，将元素从一栏即时移到另一栏。
+ * title: 拖拽排序
+ * desc: 将 draggable设为 true，开启拖拽排序功能。
  */
 import { Transfer } from '@sensoro-design/react';
 
@@ -20,6 +20,8 @@ export default () => {
         width: 568,
         height: 416,
       }}
+      draggable
+      defaultValue={[2, 4]}
     />
   );
 };

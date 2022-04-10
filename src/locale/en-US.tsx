@@ -147,7 +147,12 @@ export default {
     unfold: 'Unfold',
   },
   Transfer: {
-    resetText: 'Reset',
+    placeholder: 'Search',
+    clear: 'Clear',
+    selectAll: 'Select all',
+    clearSelectAll: 'Unselect all',
+    total: 'Total ${total} items',
+    selected: '${total} items selected',
   },
   ImagePreview: {
     fullScreen: 'Full Screen',

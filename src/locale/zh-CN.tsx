@@ -147,7 +147,12 @@ export default {
     unfold: '展开',
   },
   Transfer: {
-    resetText: '重置',
+    placeholder: '搜索',
+    clear: '清空',
+    selectAll: '全选',
+    clearSelectAll: '取消全选',
+    total: '共 ${total} 项',
+    selected: '已选 ${total} 项',
   },
   ImagePreview: {
     fullScreen: '全屏',

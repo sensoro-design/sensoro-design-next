@@ -20,6 +20,8 @@ export default () => {
         width: 568,
         height: 416,
       }}
+      disabled
+      defaultValue={[2, 4]}
     />
   );
 };

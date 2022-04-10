@@ -14,45 +14,17 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
-### 自定义标题栏
+### 分组
 
-<code src="./__demo__/custom-header.demo.tsx" />
+<code src="./__demo__/group.demo.tsx" />
+
+### 禁用
+
+<code src="./__demo__/disabled.demo.tsx" />
 
 ### 拖拽排序
 
-<code src="./__demo__/drag-sort.demo.tsx" />
-
-### 高级用法
-
-<code src="./__demo__/more.demo.tsx" />
-
-### 单向模式
-
-<code src="./__demo__/one-way.demo.tsx" />
-
-### 分页
-
-<code src="./__demo__/pagination.demo.tsx" />
-
-### 自定义渲染行数据
-
-<code src="./__demo__/render.demo.tsx" />
-
-### 带搜索框
-
-<code src="./__demo__/show-search.demo.tsx" />
-
-### 简单模式
-
-<code src="./__demo__/simple.demo.tsx" />
-
-### 表格穿梭框
-
-<code src="./__demo__/with-table.demo.tsx" />
-
-### 树穿梭框
-
-<code src="./__demo__/with-tree.demo.tsx" />
+<code src="./__demo__/draggable.demo.tsx" />
 
 ## API
 
