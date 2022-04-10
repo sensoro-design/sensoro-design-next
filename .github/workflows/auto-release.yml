@@ -17,7 +17,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip ci]') && startsWith(github.event.head_commit.message , '🔖 chore(release):')"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -28,7 +28,7 @@ jobs:
           node-version: 16.x # semantic-release 需要 >= 16 的 Node.js 环境
 
       - name: Cache yarn cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
