@@ -140,6 +140,12 @@ export interface TransferState {
   selectedItems: Map<BaseValue, ResolvedDataItem>;
   searchResult: Set<BaseValue>;
   inputValue: string;
+  pagination?: {
+    /** 第几页 */
+    current: number;
+    /** 每页大小 */
+    pageSize: number;
+  };
 }
 
 export interface TransferProps<D extends DataItem = DataItem> {
@@ -203,6 +209,15 @@ export interface TransferProps<D extends DataItem = DataItem> {
    * 当 type 为treeList时，可作为 TreeProps 传入左侧的 Tree 组件
    */
   treeProps?: Omit<TreeProps, 'value' | 'ref' | 'onChange'>;
+  /**
+   * 分页配置
+   * @default true
+   */
+  pagination?:
+    | boolean
+    | {
+        pageSize?: number;
+      };
   /**
    * 自定义左侧单个候选项的渲染
    */

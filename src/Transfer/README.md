@@ -14,6 +14,10 @@ nav:
 
 <code src="./__demo__/basic.demo.tsx" />
 
+### 关闭分页
+
+<code src="./__demo__/close-pagination.demo.tsx" />
+
 ### 分组
 
 <code src="./__demo__/group.demo.tsx" />

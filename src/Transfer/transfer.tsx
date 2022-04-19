@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from '@pansy/classnames';
 import omit from 'lodash/omit';
 import noop from 'lodash/noop';
+import isBoolean from 'lodash/isBoolean';
 import { SortableContainer, SortableElement, SortableHandle } from 'react-sortable-hoc';
 
 import CloseOutlined from '@sensoro-design/icons/CloseOutlined';
@@ -32,6 +33,7 @@ import type {
   ResolvedDataItem,
   SelectedPanelProps,
 } from './interface';
+import Pagination from '../Pagination';
 // import { TreeDataType } from '../Tree/interface';
 import type { ConfigProviderProps } from '../ConfigProvider';
 import type { Locale } from '../locale/interface';
@@ -46,6 +48,7 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
     defaultValue: [] as Array<string | number>,
     emptyContent: {},
     showPath: false,
+    pagination: true,
     onSearch: noop,
     onChange: noop,
     onSelect: noop,
@@ -55,7 +58,11 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
   constructor(props: TransferProps) {
     super(props);
 
-    const { defaultValue = [], dataSource, type } = props;
+    let { defaultValue = [], dataSource, type, pagination } = props;
+
+    if (isBoolean(pagination) && pagination === true) {
+      pagination = {};
+    }
 
     const initState: TransferState = {
       data: [],
@@ -70,6 +77,13 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
 
     if (Boolean(defaultValue) && isArray(defaultValue)) {
       initState.selectedItems = _generateSelectedItems(defaultValue, initState.data);
+    }
+
+    if (pagination) {
+      initState.pagination = {
+        current: 1,
+        pageSize: pagination.pageSize || 10,
+      };
     }
 
     this.state = initState;
@@ -99,6 +113,12 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
     this.props.onSearch(inputVal);
     this.setState({ inputValue: inputVal });
     this.setState({ searchResult });
+    this.setState({
+      pagination: {
+        ...this.state.pagination,
+        current: 1,
+      },
+    });
   };
 
   handleSelect = (values: BaseValue[]) => {
@@ -130,8 +150,6 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
       nextSelectedItemsMap.set(node.key, node);
       return;
     });
-
-    console.log(nextSelectedItemsMap);
 
     if (!this._isControlledComponent()) {
       this.setState({
@@ -457,14 +475,55 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
     );
   }
 
+  renderPagination(total: number) {
+    const { pagination, type, disabled } = this.props;
+    const { data = [] } = this.state;
+
+    if (pagination === false || type === 'treeList') {
+      return null;
+    }
+
+    if (this.state.pagination.pageSize >= total) return null;
+
+    return (
+      <div className={`${this.prefixCls}-pagination`}>
+        <Pagination
+          simple
+          total={total}
+          size="small"
+          disabled={disabled}
+          current={this.state.pagination.current}
+          pageSize={this.state.pagination.pageSize}
+          onChange={(pageNumber: number) => {
+            this.setState({
+              pagination: {
+                ...this.state.pagination,
+                current: pageNumber,
+              },
+            });
+          }}
+        />
+      </div>
+    );
+  }
+
   renderLeft(locale: Locale['Transfer']) {
-    const { data, selectedItems, inputValue, searchResult } = this.state;
     const { loading, type, emptyContent, renderSourcePanel } = this.props;
+    const { data, selectedItems, inputValue, searchResult, pagination } = this.state;
 
     const totalToken = locale.total;
     const inSearchMode = inputValue !== '';
     const showNumber = inSearchMode ? searchResult.size : data.length;
     const filterData = inSearchMode ? data.filter((item) => searchResult.has(item.key)) : data;
+
+    let renderData = [...filterData];
+
+    if (this.props.pagination && type !== 'treeList') {
+      const { current, pageSize } = pagination;
+      renderData = renderData.filter((_, index) => {
+        return index < pageSize * current && index >= pageSize * (current - 1);
+      });
+    }
 
     const totalText = totalToken.replace('${total}', `${showNumber}`);
     const noMatch = inSearchMode && searchResult.size === 0;
@@ -481,6 +540,7 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
 
     const inputCom = this.renderFilter(locale);
     const headerCom = this.renderHeader(headerConfig);
+    const paginationCom = this.renderPagination(filterData.length);
     const emptyCom = this.renderEmpty('left', inputValue ? emptyContent.search : emptyContent.left);
     const loadingCom = <Spin />;
 
@@ -505,7 +565,8 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
         content = (
           <>
             {headerCom}
-            {this.renderLeftList(filterData)}
+            {this.renderLeftList(renderData)}
+            {paginationCom}
           </>
         );
         break;
