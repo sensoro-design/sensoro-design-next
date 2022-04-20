@@ -477,7 +477,6 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
 
   renderPagination(total: number) {
     const { pagination, type, disabled } = this.props;
-    const { data = [] } = this.state;
 
     if (pagination === false || type === 'treeList') {
       return null;
