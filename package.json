@@ -1,6 +1,6 @@
 {
   "name": "@sensoro-design/react",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Sensoro Design React UI Library.",
   "module": "./es/index.js",
   "main": "./lib/index.js",
