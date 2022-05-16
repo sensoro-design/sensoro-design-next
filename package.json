@@ -63,6 +63,7 @@
     "lodash": "^4.17.21",
     "number-precision": "^1.5.2",
     "react-focus-lock": "^2.8.1",
+    "react-sortable-hoc": "^2.0.0",
     "react-transition-group": "^4.4.2",
     "resize-observer-polyfill": "^1.5.1",
     "scroll-into-view-if-needed": "2.2.29"
@@ -117,7 +118,6 @@
     "react-draggable": "^4.4.4",
     "react-easy-crop": "^4.1.4",
     "react-resizable": "^3.0.4",
-    "react-sortable-hoc": "^2.0.0",
     "react-sticky": "^6.0.3",
     "react-test-renderer": "^16.7.0",
     "semantic-release": "^19.0.2",
