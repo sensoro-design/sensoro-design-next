@@ -46,7 +46,7 @@ if (!isServerRendering) {
         cursorPosition = null;
       }, 100);
     },
-    true
+    true,
   );
 }
 
@@ -61,11 +61,7 @@ const defaultProps: ModalProps = {
 
 function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
   const context = useContext(ConfigContext);
-  const props = useMergeProps<PropsWithChildren<ModalProps>>(
-    baseProps,
-    defaultProps,
-    context.componentConfig?.Modal
-  );
+  const props = useMergeProps<PropsWithChildren<ModalProps>>(baseProps, defaultProps, context.componentConfig?.Modal);
   const {
     className,
     style,
@@ -159,7 +155,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
         (e: Error) => {
           setLoading(false);
           console.error(e);
-        }
+        },
       );
     }
   };
@@ -243,7 +239,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
           <div className={`${prefixCls}-title`}>{title}</div>
         </div>
       )}
-      <div ref={contentWrapper} className={`${prefixCls}-content`}>
+      <div ref={contentWrapper} className={`${prefixCls}-body`}>
         {children}
       </div>
       {renderFooter()}
@@ -254,9 +250,12 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
             {closeIcon}
           </span>
         ) : (
-          <IconHover tabIndex={-1} onClick={onCancel} className={`${prefixCls}-close-icon`}>
+          <span onClick={onCancel} className={`${prefixCls}-close-icon`}>
             <CloseOutlined />
-          </IconHover>
+          </span>
+          // <IconHover tabIndex={-1} onClick={onCancel} className={`${prefixCls}-close-icon`}>
+          //   <CloseOutlined />
+          // </IconHover>
         ))}
     </ConfigProvider>
   );
@@ -268,7 +267,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
         {
           [`${prefixCls}-simple`]: simple,
         },
-        className
+        className,
       )}
       style={style}
     >
@@ -337,7 +336,7 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
               [`${prefixCls}-wrapper-no-mask`]: !mask,
               [`${prefixCls}-wrapper-align-center`]: alignCenter,
             },
-            wrapClassName
+            wrapClassName,
           )}
           style={{
             ...(wrapStyle || {}),
@@ -378,17 +377,14 @@ function Modal(baseProps: PropsWithChildren<ModalProps>, ref) {
               inExit.current = false;
             }}
           >
-            {React.cloneElement(
-              (isFunction(modalRender) ? modalRender(modalDom) : modalDom) as ReactElement,
-              {
-                onMouseDown: () => {
-                  maskClickRef.current = false;
-                },
-                onMouseUp: () => {
-                  maskClickRef.current = false;
-                },
-              }
-            )}
+            {React.cloneElement((isFunction(modalRender) ? modalRender(modalDom) : modalDom) as ReactElement, {
+              onMouseDown: () => {
+                maskClickRef.current = false;
+              },
+              onMouseUp: () => {
+                maskClickRef.current = false;
+              },
+            })}
           </CSSTransition>
         </div>
       </div>
