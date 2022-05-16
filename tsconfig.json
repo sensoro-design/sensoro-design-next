@@ -16,7 +16,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@sensoro-design/react": ["src/index.ts"],
+      "@sensoro-design/react": ["src/*"],
       "@sensoro-design/react/es/*": ["src/*"]
     }
   },
