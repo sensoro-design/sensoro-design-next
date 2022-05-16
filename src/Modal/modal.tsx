@@ -20,7 +20,7 @@ import Button from '../Button';
 import Portal from '../Portal';
 import confirm, { ConfirmProps } from './confirm';
 import ConfigProvider, { ConfigContext } from '../ConfigProvider';
-import IconHover from '../_class/icon-hover';
+// import IconHover from '../_class/icon-hover';
 import { setModalConfig, ModalConfigType, destroyList } from './config';
 import { isFunction, isObject } from '../_util/is';
 import omit from '../_util/omit';

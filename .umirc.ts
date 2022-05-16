@@ -1,3 +1,5 @@
+import { join } from 'path';
+
 const isProduction = process.env.NODE_ENV === 'production';
 const logo = 'https://cdn.jsdelivr.net/gh/wangxingkang/pictures@latest/imgs/sensoro-design.svg';
 
@@ -8,6 +10,10 @@ export default {
   logo,
   resolve: {
     includes: ['docs', 'src'],
+  },
+  alias: {
+    '@sensoro-design/react/es': join(__dirname, './src'),
+    '@sensoro-design/react': join(__dirname, './src'),
   },
   outputPath: 'site',
   navs: [
