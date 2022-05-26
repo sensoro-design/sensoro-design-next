@@ -182,15 +182,15 @@
 .zoomModal-enter,
 .zoomModal-appear {
   opacity: 0;
-  transform: scale(0.5, 0.5);
+  transform: scale(0.8, 0.8);
 }
 
 .zoomModal-enter-active,
 .zoomModal-appear-active {
   opacity: 1;
   transform: scale(1, 1);
-  transition: opacity @transition-duration-4 @transition-timing-function-overshoot,
-    transform @transition-duration-4 @transition-timing-function-overshoot;
+  transition: opacity @transition-duration-4 @transition-timing-function-standard,
+    transform @transition-duration-4 @transition-timing-function-standard;
 }
 
 .zoomModal-exit {
