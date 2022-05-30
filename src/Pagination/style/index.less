@@ -7,6 +7,7 @@
   min-width: @@height;
   height: @@height;
   line-height: @@height - (@pagination-border-width * 2);
+  font-weight: 500;
 
   &-prev,
   &-next {
@@ -156,10 +157,9 @@
     color: @pagination-color-text-total;
     margin-right: @pagination-margin-total-spacing;
     font-size: @pagination-size-default-font-size;
-    opacity: .6;
+    opacity: 0.6;
     .total(default);
   }
-
 
   // simple
   &-item-simple-pager {
