@@ -27,7 +27,7 @@
     "prepare": "husky install",
     "clean:dts": "esno ./scripts/clean-dts.ts",
     "release": "semantic-release",
-    "release:manual": "walrus release"
+    "release:manual": "walrus release --commit-message 'chore(release): publish %v'"
   },
   "keywords": [
     "sensoro",
