@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     margin: 8px 16px 0;
-    color: var(--semi-color-text-2);
+    color: rgba(@transfer-item-text-color, 0.6);
 
     .@{prefix}-link {
       font-size: 12px;
@@ -68,6 +68,11 @@
     color: var(--semi-color-text-1);
     cursor: pointer;
 
+    &:hover {
+      .sen-checkbox-text {
+        color: @transfer-item-color_hover;
+      }
+    }
     .sen-checkbox-mask-wrapper {
       top: 0;
     }

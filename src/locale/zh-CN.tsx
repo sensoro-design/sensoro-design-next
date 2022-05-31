@@ -95,7 +95,7 @@ export default {
     cancelText: '取消',
   },
   Empty: {
-    noData: '暂无数据',
+    noData: '暂无内容',
   },
   Modal: {
     okText: '确定',
