@@ -182,7 +182,7 @@
 @btn-secondary-color-text_active: var(~'@{arco-cssvars-prefix}-color-text-1');
 
 @btn-secondary-color-bg: var(~'@{arco-cssvars-prefix}-color-secondary');
-@btn-secondary-color-bg_disabled: @gray-2;
+@btn-secondary-color-bg_disabled: var(~'@{arco-cssvars-prefix}-color-secondary-disabled');
 @btn-secondary-color-bg_hover: var(~'@{arco-cssvars-prefix}-color-secondary-hover');
 @btn-secondary-color-bg_active: var(~'@{arco-cssvars-prefix}-color-secondary-active');
 
@@ -250,7 +250,7 @@
 @btn-dashed-color-text_active: @primary-color;
 
 @btn-dashed-color-bg: var(~'@{arco-cssvars-prefix}-color-secondary');
-@btn-dashed-color-bg_disabled: @gray-2;
+@btn-dashed-color-bg_disabled: var(~'@{arco-cssvars-prefix}-color-neutral-2');
 @btn-dashed-color-bg_hover: var(~'@{arco-cssvars-prefix}-color-secondary-hover');
 @btn-dashed-color-bg_active: var(~'@{arco-cssvars-prefix}-color-secondary-active');
 
@@ -318,8 +318,8 @@
 
 @btn-text-color-bg: @color-transparent;
 @btn-text-color-bg_disabled: @color-transparent;
-@btn-text-color-bg_hover: var(~'@{arco-cssvars-prefix}-color-fill-2');
-@btn-text-color-bg_active: var(~'@{arco-cssvars-prefix}-color-fill-3');
+@btn-text-color-bg_hover: @color-transparent;
+@btn-text-color-bg_active: @color-transparent;
 
 @btn-text-color-border: @color-transparent;
 @btn-text-color-border_disabled: @color-transparent;

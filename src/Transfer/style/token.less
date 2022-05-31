@@ -1,5 +1,6 @@
 @import '../../style/theme/default.less';
 
+@transfer-item-text-color: #0a1c39;
 @transfer-width: 200px;
 @transfer-height: 224px;
 @transfer-height-title: @size-10;
@@ -29,7 +30,7 @@
 @transfer-item-color-bg_hover: var(~'@{arco-cssvars-prefix}-color-fill-2');
 @transfer-item-color-bg_disabled: @color-transparent;
 @transfer-item-color_default: var(~'@{arco-cssvars-prefix}-color-text-1');
-@transfer-item-color_hover: var(~'@{arco-cssvars-prefix}-color-text-1');
+@transfer-item-color_hover: rgba(@transfer-item-text-color, 0.8);
 @transfer-item-color_disabled: var(~'@{arco-cssvars-prefix}-color-text-4');
 @transfer-item-height: @size-9;
 @transfer-item-padding-horizontal: @spacing-5;

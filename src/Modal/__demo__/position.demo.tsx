@@ -1,4 +1,3 @@
-
 /**
  * title: 自定义位置
  * desc: 使用 `alignCenter` 结合 `style` 来设置对话框位置。
@@ -13,7 +12,7 @@ export default () => {
   return (
     <div>
       <Button onClick={() => setVisible(true)} type="primary">
-        Display a modal dialog at 20px to top
+        Display a modal dialog at 40px to top
       </Button>
       <br />
       <br />
@@ -22,7 +21,7 @@ export default () => {
       </Button>
       <Modal
         alignCenter={false}
-        style={{ top: 20 }}
+        style={{ top: 40 }}
         title="Modal Title"
         visible={visible}
         onOk={() => setVisible(false)}
@@ -30,7 +29,7 @@ export default () => {
         autoFocus={false}
         focusLock={true}
       >
-        <p>Display a modal dialog at 20px to top</p>
+        <p>Display a modal dialog at 40px to top</p>
       </Modal>
       <Modal
         title="Modal Title"
@@ -45,4 +44,4 @@ export default () => {
       </Modal>
     </div>
   );
-}
+};

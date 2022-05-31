@@ -299,7 +299,7 @@ export class Transfer extends React.Component<TransferProps, TransferState> {
     );
   }
 
-  renderEmpty(type: string, emptyText: React.ReactNode = <Empty />) {
+  renderEmpty(type: string, emptyText: React.ReactNode = <Empty size="small" />) {
     const classes = classNames({
       [`${this.prefixCls}-empty`]: true,
       [`${this.prefixCls}-empty-right`]: type === 'right',

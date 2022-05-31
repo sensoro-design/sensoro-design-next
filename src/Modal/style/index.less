@@ -67,19 +67,20 @@
   &-header {
     width: 100%;
     box-sizing: border-box;
-    padding: 24px @modal-default-padding-horizontal 0;
+    padding: @modal-default-padding-horizontal;
     display: flex;
     align-items: center;
 
     .@{modal-prefix-cls}-title {
       flex: 1;
       text-align: @modal-default-align-header;
+      min-height: @modal-header-height;
     }
   }
 
   &-body {
     position: relative;
-    padding: @modal-default-padding-content-vertical @modal-default-padding-horizontal 0;
+    padding: @modal-default-padding-content-horizontal @modal-default-padding-horizontal;
     color: @modal-color-content-text;
     font-size: @modal-font-content-size;
   }
@@ -88,7 +89,7 @@
     width: 100%;
     box-sizing: border-box;
     text-align: @modal-default-align-footer;
-    padding: @modal-default-padding-footer-vertical @modal-default-padding-horizontal;
+    padding: @modal-default-padding-footer-vertical;
 
     > .@{prefix}-btn {
       margin-left: @modal-margin-footer-button-left;
@@ -130,19 +131,19 @@
       // round是因为带有小数的时候会抖动一下。 这么计算是为了在修改@modal-font-header-size这个token时，vertical-align跟着调整，保证对齐
       vertical-align: round(-(@modal-size-tip-icon * 0.2)) + ((@modal-font-header-size - 14px) / 2);
 
-      &-info-circle-fill {
+      &.@{prefix}-icon-info-circle {
         color: @color-primary-6;
       }
 
-      &-check-circle-fill {
+      &.@{prefix}-icon-check-circle {
         color: @color-success-6;
       }
 
-      &-exclamation-circle-fill {
+      &.@{prefix}-icon-exclamation-circle {
         color: @color-warning-6;
       }
 
-      &-close-circle-fill {
+      &.@{prefix}-icon-close-circle {
         color: @color-danger-6;
       }
     }
@@ -165,16 +166,11 @@
     margin-bottom: @modal-simple-margin-content-top;
   }
 
-  .@{modal-prefix-cls}-title {
-    text-align: @modal-simple-align-header;
-  }
-
   .@{modal-prefix-cls}-footer {
-    text-align: @modal-simple-align-footer;
     margin-top: @modal-simple-margin-footer-top;
   }
 
-  .@{modal-prefix-cls}-content {
+  .@{modal-prefix-cls}-body {
     padding: 0;
   }
 }
