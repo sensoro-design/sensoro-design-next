@@ -80,8 +80,7 @@ const defaultProps: ConfigProviderProps = {
 const componentConfig = {};
 
 export const ConfigContext = createContext<ConfigProviderProps>({
-  getPrefixCls: (componentName: string, customPrefix?: string) =>
-    `${customPrefix || 'sen'}-${componentName}`,
+  getPrefixCls: (componentName: string, customPrefix?: string) => `${customPrefix || 's'}-${componentName}`,
   ...defaultProps,
 });
 
