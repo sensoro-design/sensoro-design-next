@@ -114,7 +114,7 @@ class Notification extends BaseNotification {
 
   render() {
     const { notices, position = 'topRight' } = this.state;
-    const prefixClsNotification = prefixCls ? `${prefixCls}-notification` : 'sen-notification';
+    const prefixClsNotification = prefixCls ? `${prefixCls}-notification` : 's-notification';
     let transitionClass: string;
     if (position === 'topLeft' || position === 'bottomLeft') {
       transitionClass = 'slideNoticeLeft';
