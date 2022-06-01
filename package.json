@@ -55,7 +55,7 @@
     "@babel/runtime": "^7.17.8",
     "@pansy/classnames": "^1.0.1",
     "@pansy/react-hooks": "^0.9.10",
-    "@sensoro-design/icons": "^1.3.2",
+    "@sensoro-design/icons": "^1.5.0",
     "b-tween": "^0.3.3",
     "b-validate": "^1.3.4",
     "compute-scroll-into-view": "^1.0.17",

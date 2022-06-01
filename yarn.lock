@@ -3812,20 +3812,20 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@sensoro-design/icons-svg@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@sensoro-design/icons-svg/-/icons-svg-1.3.2.tgz#fc78c9599379cdec3d8c0ad976700125ba6eb605"
-  integrity sha512-23JJF9L3mQajqOmYtWjsyfN+H5kOKEnNADvbeN9vvolnH/nfl84/9f02JIcHLOPuss4dMBdcPPm7n3mhDfSZVg==
+"@sensoro-design/icons-svg@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@sensoro-design/icons-svg/-/icons-svg-1.5.1.tgz#360745eeb135daf15bfaa9b78ca1207455fe404e"
+  integrity sha512-i5D7pPLkAFIoz6ISiiYydVtIZKxGVFAM7yLYMVFRM5PzfPdC+xUb+D8PPz28mAK8pU6kg3uMXXCn2Iw3e7AlVg==
 
-"@sensoro-design/icons@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@sensoro-design/icons/-/icons-1.3.2.tgz#fc9cf257f5a7dd027bed7c743b3c2adbb8005cb7"
-  integrity sha512-8EZ+ia67L6F+QpTyKe9IM1rNQNh6IhfH0Fwhl3xHEisoY5jV0KWpcBja0LXazta9wZsTSTkEsB8Nv3UcCkzOBA==
+"@sensoro-design/icons@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@sensoro-design/icons/-/icons-1.5.0.tgz#98d063fd146ac41457d22e1f8ec377c24ef68794"
+  integrity sha512-5cRwiA6fg/Yh2rnI8Qmq7l1lxn1MtEZ+G38UvkxHCVIpT8hyuwAB7bBya9+I2YnvX+7V/B4MTy0071wzBQU8bQ==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@babel/runtime" "^7.11.2"
     "@pansy/classnames" "^1.0.1"
-    "@sensoro-design/icons-svg" "1.3.2"
+    "@sensoro-design/icons-svg" "1.5.1"
     rc-util "^5.19.3"
 
 "@sideway/address@^4.1.3":
