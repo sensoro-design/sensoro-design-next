@@ -33,12 +33,12 @@
  * status: default / disabled _ (hover / focus)
  ************************************************/
 // text color
-@select-color-text_default: var(~'@{arco-cssvars-prefix}-color-text-1');
-@select-color-text_disabled: var(~'@{arco-cssvars-prefix}-color-text-4');
-@select-color-text_focused: var(~'@{arco-cssvars-prefix}-color-text-1');
-@select-color-placeholder_default: var(~'@{arco-cssvars-prefix}-color-text-3');
-@select-color-placeholder_disabled: var(~'@{arco-cssvars-prefix}-color-text-4');
-@select-color-placeholder_focused: var(~'@{arco-cssvars-prefix}-color-text-3');
+@select-color-text_default: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.8);
+@select-color-text_disabled: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.35);
+@select-color-text_focused: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.6);
+@select-color-placeholder_default: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.6);
+@select-color-placeholder_disabled: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.35);
+@select-color-placeholder_focused: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.6);
 
 // icon color
 @select-color-icon_default: var(~'@{arco-cssvars-prefix}-color-text-2');
@@ -47,23 +47,23 @@
 @select-color-icon-bg_hover: var(~'@{arco-cssvars-prefix}-color-fill-4');
 
 // bg color with hover & focus
-@select-color-bg_default: var(~'@{arco-cssvars-prefix}-color-fill-2');
-@select-color-bg_default_hover: var(~'@{arco-cssvars-prefix}-color-fill-3');
-@select-color-bg_default_focus: var(~'@{arco-cssvars-prefix}-color-bg-2');
+@select-color-bg_default: rgba(var(~'@{arco-cssvars-prefix}-color-white'), 0.6);
+@select-color-bg_default_hover: rgba(var(~'@{arco-cssvars-prefix}-color-white'), 0.6);
+@select-color-bg_default_focus: rgba(var(~'@{arco-cssvars-prefix}-color-white'), 0.65);
 @select-color-bg_error_focus: var(~'@{arco-cssvars-prefix}-color-bg-2');
 @select-color-bg_error: var(~'@{arco-cssvars-prefix}-color-danger-light-1');
 @select-color-bg_error_hover: var(~'@{arco-cssvars-prefix}-color-danger-light-2');
-@select-color-bg_disabled: var(~'@{arco-cssvars-prefix}-color-fill-2');
-@select-color-bg_disabled_hover: @select-color-bg_disabled;
+@select-color-bg_disabled: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.04);
+@select-color-bg_disabled_hover: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.04);
 
 // border color with hover & focus
 @select-color-border_default: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.15);
-@select-color-border_default_hover: @color-transparent;
+@select-color-border_default_hover: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.25);
 @select-color-border_default_focus: @color-primary-6;
 @select-color-border_error: @color-transparent;
 @select-color-border_error_hover: @color-transparent;
 @select-color-border_error_focus: @color-danger-6;
-@select-color-border_disabled: @color-transparent;
+@select-color-border_disabled: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.15);
 @select-color-border_disabled_hover: @select-color-border_disabled;
 // shadow
 @select-shadow-distance_default_focus: @shadow-distance-none;
@@ -92,14 +92,14 @@
 @select-multi-popup-option-padding-horizontal: @spacing-2;
 
 @select-popup-option-color-bg_default: var(~'@{arco-cssvars-prefix}-color-bg-popup');
-@select-popup-option-color-bg_hover: var(~'@{arco-cssvars-prefix}-color-fill-2');
+@select-popup-option-color-bg_hover: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.04);
 @select-popup-option-color-bg_selected: var(~'@{arco-cssvars-prefix}-color-bg-popup');
 @select-popup-option-color-bg_disabled: var(~'@{arco-cssvars-prefix}-color-bg-popup');
 
-@select-popup-option-color-text_default: var(~'@{arco-cssvars-prefix}-color-text-1');
+@select-popup-option-color-text_default: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.8);
 @select-popup-option-color-text_hover: var(~'@{arco-cssvars-prefix}-color-text-1');
 @select-popup-option-color-text_selected: @arcoblue-6;
-@select-popup-option-color-text_disabled: var(~'@{arco-cssvars-prefix}-color-text-4');
+@select-popup-option-color-text_disabled: rgba(var(~'@{arco-cssvars-prefix}-gray-10'), 0.35);
 
 @select-popup-option-color-hightlight-text: var(~'@{arco-cssvars-prefix}-color-text-1');
 @select-popup-option-font-hightlight-weight: @font-weight-500;

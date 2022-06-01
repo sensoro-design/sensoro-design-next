@@ -5,7 +5,7 @@ const { version } = require('../package.json');
 
 // 组件 dist 打包
 exports.component = (config) => {
-  config.output.library = 'sen';
+  config.output.library = 's';
   config.entry = path.resolve(__dirname, '../src/index.tsx');
   config.plugins.pop();
   config.plugins.push(
