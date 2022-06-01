@@ -67,7 +67,7 @@ function renderEmpty(componentName?: string) {
 
 const defaultProps: ConfigProviderProps = {
   locale: defaultLocale,
-  prefixCls: 'sen',
+  prefixCls: 's',
   getPopupContainer: () => document.body,
   size: 'default',
   renderEmpty,
@@ -112,7 +112,7 @@ function ConfigProvider(baseProps: ConfigProviderProps) {
 
   let child = children;
 
-  if (prefixCls && prefixCls !== 'sen') {
+  if (prefixCls && prefixCls !== 's') {
     child = <IconContext.Provider value={{ prefixCls }}>{children}</IconContext.Provider>;
   }
 
