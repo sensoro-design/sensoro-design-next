@@ -127,7 +127,7 @@ class Message extends BaseNotification {
   render() {
     const { transitionClassNames } = this.props;
     const { notices, position } = this.state;
-    const prefixClsMessage = prefixCls ? `${prefixCls}-message` : 'sen-message';
+    const prefixClsMessage = prefixCls ? `${prefixCls}-message` : 's-message';
 
     const classes = classNames(`${prefixClsMessage}-wrapper`, `${prefixClsMessage}-wrapper-${position}`);
 
